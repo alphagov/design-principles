@@ -1,1 +1,1 @@
-exclude: ['Rakefile', 'Readme.markdown', 'src', 'Gemfile', 'Gemfile.lock', 'config.rb', 'deploy.yml']
+exclude: ['Rakefile', 'Readme.md', 'Gemfile', 'Gemfile.lock', '.gitignore']
