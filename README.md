@@ -6,5 +6,5 @@ When working on the project you can run the following command:
     rake develop
 
 This will start a web server on port 4000, so visit
-http://localhost:4000 and you should see the site. If you change the
+[localhost:4000](http://localhost:4000) and you should see the site. If you change the
 templates or code you should see the changes straight away.
