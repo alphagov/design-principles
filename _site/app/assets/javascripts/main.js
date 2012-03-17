@@ -1,6 +1,8 @@
 jQuery(document).ready(function() {
 	$("body").addClass("js-enabled");
-
+// on load, set the first one as moving if there's no fragment
+	$("ol li.principle:first").css("position", "absolute");
+	$("ol li.principle:first").addClass("current");	
 
 	// 1. set heights, we want them at least as tall as a view port
 	var portHeight = $(document).height();
@@ -32,50 +34,55 @@ jQuery(document).ready(function() {
 
 
 	// 4. now lets get them moving
-	function setNext(){
+	function setNext(totalPassed){
 
-		var next = $(".current").next()
+		// stop when there's no more nexts
+		var next = $(".current").next();
 
 		$(next).addClass("next");
-		
-		$(".current").removeClass("current");
+	
+		$(".next").css("position", "absolute");
+		$(".next").css("top", totalPassed+"px");
 
-    $(".next").addClass("current").removeClass("next");
+    // class shuffle // needs cleanup
+    $(".current").removeClass("current");
+    $(".next").addClass("current");
+    $(".next").removeClass("next");
 
-    $(".current").css("position", "absolute");
 
     bindMovement();
 	};
 
+
+	var scrolling = function(){
+
+    	var current = $('.current');
+
+    	// for now, track how many have already been seen by checking pos
+    	var totalPassed = 0;
+    	$(".principle").each(function(){
+    		if($(this).css("position") != "fixed"){
+    			totalPassed = totalPassed + $(this).height();
+    		}
+    	})
+    	var checkPosition = current.offset().top+totalPassed;
+
+
+    	if($(window).scrollTop() > totalPassed){
+    			// unbind for this screen
+      	  $(window).unbind('scroll.topin', scrolling);
+      	  // go off and set the next one, and let it know how far down we've got for position
+        	setNext(totalPassed);
+    	}
+  }
+
 	function bindMovement(){
 
-		var current = $('.current');
-
-		$(window).bind('scroll', function(){
-
-    	
-
-    	if($(window).scrollTop() > (current.offset().top+current.height())){
-      	  console.log('out');
-
-      	  $(window).unbind("scroll");
-
-        	setNext();
-    	}
-		});
+		$(window).bind('scroll.topin', scrolling);
 
 	}
 
-
-	// currently viewed needs to be absolutely positioned
-	// anything after should remain fixed, anything before can stay absolute
-
-	// on load, set the first one as moving if there's no fragment
-	$("ol li.principle:first").css("position", "absolute");
-	$("ol li.principle:first").addClass("current");	
-
-	// blaaah.. need to fix this next. it's working through too much stuff. blargh.	
-	//bindMovement();
+	bindMovement();
 
 
 	// if fragment, set that one moving, all previous abs too
