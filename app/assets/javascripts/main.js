@@ -1,63 +1,55 @@
 jQuery(document).ready(function() {
-	$("body").addClass("js-enabled");
-// on load, set the first one as moving if there's no fragment
-	$("ol li.principle:first").css("position", "absolute");
-	$("ol li.principle:first").addClass("current");	
-
-	// 1. set heights, we want them at least as tall as a view port
-	var portHeight = $(document).height();
-		portHeight = portHeight; 
-	$("ol li.principle").css("min-height", portHeight+"px");
-
-	var principles = $("ol li.principle");
-
-	// 2. this'll set the z-indexes of our pages, so they stack in the correct order
-	var i = principles.length,
-		j = 1,
-		len = principles.length;
-
-	while(i--){
-		$(principles[i]).css("z-index", j);
-
-		j++;
-	}
-
-	// 3. set body height so we can keep on scrolling
-	// get all principle heights, add them up, set as body height
-	var bodyHeight = 0;
-	$(principles).each(function(){
-		bodyHeight = bodyHeight + $(this).height();
-	})
-
-	$("body").height(bodyHeight+"px");
-
-
-
-	// 4. now lets get them moving
-	function setNext(totalPassed){
-
-		// stop when there's no more nexts
-		var next = $(".current").next();
-
-		$(next).addClass("next");
 	
-		$(".next").css("position", "absolute");
-		$(".next").css("top", totalPassed+"px");
+	$("body").addClass("js-enabled");
 
-    // class shuffle // needs cleanup
-    $(".current").removeClass("current");
-    $(".next").addClass("current");
-    $(".next").removeClass("next");
+	$("ol li.principle").slide()
+
+});
 
 
-    bindMovement();
-	};
 
 
-	var scrolling = function(){
+(function($) {
+  
+  $.fn.slide = function () {
 
-    	var current = $('.current');
+    var portHeight = $(document).height();
+    var deck = this; // this is the whole set of pages
 
+    
+    // private methods for doing stuff
+    var _setupElements = function() {
+      // on load, set the first one as moving if there's no fragment
+			$(deck[0]).css("position", "absolute");
+			$(deck[0]).addClass("current");	
+
+			// 1. set heights, we want them at least as tall as a view port
+		
+			$(deck).css("min-height", portHeight+"px");
+
+			// 2. this'll set the z-indexes of our pages, so they stack in the correct order
+			var i = deck.length,
+				j = 1,
+				len = deck.length;
+
+			while(i--){
+				$(deck[i]).css("z-index", j);
+				j++;
+			}
+
+			// 3. set body height so we can keep on scrolling
+			// get all principle heights, add them up, set as body height
+			var bodyHeight = 0;
+			$(deck).each(function(){
+				bodyHeight = bodyHeight + $(this).height();
+			})
+
+			$("body").height(bodyHeight+"px");
+			_bindScroll();
+    }
+
+    var _checkPosition = function(){
+			var current = $('.current');
     	// for now, track how many have already been seen by checking pos
     	var totalPassed = 0;
     	$(".principle").each(function(){
@@ -70,25 +62,38 @@ jQuery(document).ready(function() {
 
     	if($(window).scrollTop() > totalPassed){
     			// unbind for this screen
-      	  $(window).unbind('scroll.topin', scrolling);
+      	  $(window).unbind('scroll.topin', _bindScroll);
       	  // go off and set the next one, and let it know how far down we've got for position
-        	setNext(totalPassed);
+        	_setNext(totalPassed);
     	}
+		}
+
+    var _bindScroll = function(){
+    	$(window).bind('scroll.topin', _checkPosition);
+		}
+
+    var _setNext = function(totalPassed) {
+     // stop when there's no more nexts
+			var next = $(".current").next();
+
+			$(next).addClass("next");
+	
+			$(".next").css("position", "absolute");
+			$(".next").css("top", totalPassed+"px");
+
+	    // class shuffle // needs cleanup
+	    $(".current").removeClass("current");
+	    $(".next").addClass("current");
+	    $(".next").removeClass("next");
+
+
+    	_bindScroll();
+    }
+    var _setPrev = function() {
+
+    }
+    
+    _setupElements()
+    return $(this);
   }
-
-	function bindMovement(){
-
-		$(window).bind('scroll.topin', scrolling);
-
-	}
-
-	bindMovement();
-
-
-	// if fragment, set that one moving, all previous abs too
-
-	// on scroll, if the current scrolls out of view, set next as abs
-
-	// on scroll, if prev in view, set next as fixed
-
-});
+})(jQuery);
