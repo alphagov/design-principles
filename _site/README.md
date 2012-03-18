@@ -1,3 +1,5 @@
+About running the design principles site:
+
 Jeykll is a simple static site compiler. We're using it here to build a
 static site which can make use of basic templates.
 

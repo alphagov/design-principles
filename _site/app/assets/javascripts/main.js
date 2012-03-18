@@ -8,7 +8,12 @@ jQuery(document).ready(function() {
 
 
 
+/* 
 
+Call .slide() on an set of elements
+Expects you to do the full width / shadows etc. in your own CSS
+
+*/
 (function($) {
   
   $.fn.slide = function () {
@@ -29,8 +34,7 @@ jQuery(document).ready(function() {
 
 			// 2. this'll set the z-indexes of our pages, so they stack in the correct order
 			var i = deck.length,
-				j = 1,
-				len = deck.length;
+				j = 1;
 
 			while(i--){
 				$(deck[i]).css("z-index", j);
@@ -72,6 +76,15 @@ jQuery(document).ready(function() {
     	$(window).bind('scroll.topin', _checkPosition);
 		}
 
+		var _bindKeyEvents = function(){
+			// on next or back
+			// check current, use set next/prev
+		}
+
+		var _manageURL = function(){
+
+		}
+
     var _setNext = function(totalPassed) {
      // stop when there's no more nexts
 			var next = $(".current").next();
@@ -89,11 +102,14 @@ jQuery(document).ready(function() {
 
     	_bindScroll();
     }
+
     var _setPrev = function() {
 
     }
-    
-    _setupElements()
+
+    _setupElements();
+
     return $(this);
   }
+
 })(jQuery);
