@@ -21,6 +21,7 @@ Expects you to do the full width / shadows etc. in your own CSS
     var portHeight = $(document).height();
     var deck = this; // this is the whole set of pages
 
+//    var deck = $(".principle .content");
     
     // private methods for doing stuff
     var _setupElements = function() {
@@ -56,7 +57,7 @@ Expects you to do the full width / shadows etc. in your own CSS
       var current = $('.current');
       // for now, track how many have already been seen by checking pos
       var totalPassed = 0;
-      $(".principle").each(function(){
+      $(deck).each(function(){
         if($(this).css("position") != "fixed"){
           totalPassed = totalPassed + $(this).height();
         }

@@ -31,9 +31,20 @@ ol li.principle:nth-child(2n){
 	background-color:#C9765C;
 }
 
-.js-enabled li.principle{
+.js-enabled li.principle {
 	position:fixed;
 	top:0;
 	z-index:1;
 	display:block;
 }
+.js-enabled li.principle div.content{}
+
+.js-enabled .current + .principle{
+	
+}
+.js-enabled .current + .principle h1.principle-title{
+	position:absolute;
+	background-color:blue;
+	font-size:30px;
+	bottom:0;
+};
