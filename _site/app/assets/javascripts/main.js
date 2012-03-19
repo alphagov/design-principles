@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   
   $("body").addClass("js-enabled");
 
-  $("ol li.principle").slide()
+  $("ol li.principle").slide();
 
 });
 
@@ -20,8 +20,6 @@ Expects you to do the full width / shadows etc. in your own CSS
 
     var portHeight = $(document).height();
     var deck = this; // this is the whole set of pages
-
-//    var deck = $(".principle .content");
     
     // private methods for doing stuff
     var _setupElements = function() {
@@ -64,17 +62,28 @@ Expects you to do the full width / shadows etc. in your own CSS
       })
       var checkPosition = current.offset().top+totalPassed;
 
-
+      var previous = $(".current").prev().addClass("previous");
+      
       if($(window).scrollTop() > totalPassed){
           // unbind for this screen
-          $(window).unbind('scroll.topin', _bindScroll);
+          $(window).unbind('scroll.slider', _bindScroll);
+          $(window).unbind();
           // go off and set the next one, and let it know how far down we've got for position
           _setNext(totalPassed);
+      }
+      else if(previous.length != 0 && (previous.offset().top) < (totalPassed-previous.height())){
+        //console.log("FIX PLZ")
+        // unbind for this screent
+        $(window).unbind('scroll.slider', _bindScroll);
+        $(window).unbind();
+        // go set the previous tile
+        _setPrev(previous);
+        
       }
     }
 
     var _bindScroll = function(){
-      $(window).bind('scroll.topin', _checkPosition);
+      $(window).bind('scroll.slider', _checkPosition);
     }
 
     var _bindKeyEvents = function(){
@@ -97,6 +106,7 @@ Expects you to do the full width / shadows etc. in your own CSS
       $(".next").css("top", totalPassed+"px");
 
       // class shuffle // needs cleanup
+     // $(".previous").removeClass("previous");
       $(".current").removeClass("current");
       $(".next").addClass("current");
       $(".next").removeClass("next");
@@ -105,8 +115,12 @@ Expects you to do the full width / shadows etc. in your own CSS
       _bindScroll();
     }
 
-    var _setPrev = function() {
+    var _setPrev = function(previous) {
+      //$(previous).css("background-color", "pink");
+   
+      $(".previous").removeClass("previous");
 
+      _bindScroll();
     }
 
     _setupElements();
