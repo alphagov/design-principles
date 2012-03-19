@@ -1,50 +1,74 @@
 /*main.css*/
 
 body{
-	background-color:#EBC879;
-	font-family: Georgia, serif;
-	padding:0;
-	margin:0;
+  background-color:#EBC879;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding:0;
+  margin:0;
 }
 
 h1, h2, h3 {
-	font-weight: normal;
+  font-weight: normal;
 }
+
 ol{
-	margin:0;
-	list-style-type:none;
-	width:100%;
-	padding:0;
+  margin:0;
+  list-style-type:none;
+  width:100%;
+  padding:0;
 }
 ol li.principle{
-	padding:0;
-	margin:0;
-	background-color: #82997F;
-	clear:both;
-	list-style-type:none;
-	width:100%;
-	-moz-box-shadow: 0px 8px 20px #000000;
-	-webkit-box-shadow: 10px 8px 20px #000000;
-	box-shadow: 0px 8px 20px #000000;
+  padding:0;
+  margin:0;
+  background-color: #fff;
+  clear:both;
+  list-style-type:none;
+  width:100%;
+  -moz-box-shadow: 0px 8px 20px #000000;
+  -webkit-box-shadow: 10px 8px 20px #000000;
+  box-shadow: 0px 8px 20px #000000;
+}
+.js-enabled ol li.principle {
+  position:fixed;
+  top:0;
+  z-index:1;
+  display:block;
 }
 ol li.principle:nth-child(2n){
-	background-color:#C9765C;
+  background-color:#f3f3f3;
 }
 
-.js-enabled li.principle {
-	position:fixed;
-	top:0;
-	z-index:1;
-	display:block;
+ol li.principle article {
+  padding: 4em 5%;
 }
-.js-enabled li.principle div.content{}
 
-.js-enabled .current + .principle{
-	
+h1.principle-title {
+  float: left;
+  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
+  font-size: 5em;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+  width: 100%;
 }
-.js-enabled .current + .principle h1.principle-title{
-	position:absolute;
-	background-color:blue;
-	font-size:30px;
-	bottom:0;
-};
+
+p.principle-outline {
+  border-left: solid 4px #333;
+  float: left;
+  font-size: 2em;
+  padding-left: 5%;
+  width: 50%;
+}
+
+section.tips {
+  float: left;
+  width: 55%;
+}
+
+section.examples {
+  background-color: yellow;
+  margin-left: 65%;
+  width: 35%;
+}
