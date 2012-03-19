@@ -119,7 +119,7 @@ Expects you to do the full width / shadows etc. in your own CSS
       //$(previous).css("background-color", "pink");
    
       $(".previous").removeClass("previous");
-
+      //$(".current").css("position", "fixed")
       _bindScroll();
     }
 
