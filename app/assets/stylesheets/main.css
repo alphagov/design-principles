@@ -1,7 +1,7 @@
 /*main.css*/
 
 body{
-  background-color:#EBC879;
+  background-color: #fff;
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.5;
@@ -18,21 +18,16 @@ h1, h2, h3 {
 }
 
 ol.principles{
-  margin:0;
+  margin: 0;
   list-style-type:none;
-  width:100%;
   padding:0;
 }
 ol li.principle{
   padding:0;
-  margin:0;
-  background-color: #fff;
+  margin:0 0 0 5%;
   clear:both;
   list-style-type:none;
-  width:100%;
-  -moz-box-shadow: 0px 8px 20px #000000;
-  -webkit-box-shadow: 10px 8px 20px #000000;
-  box-shadow: 0px 8px 20px #000000;
+  width: 95%;
 }
 .js-enabled ol li.principle {
   position:fixed;
@@ -101,8 +96,88 @@ section.examples img {
 }
 
 nav{
-	display:block;
-	position:fixed;
-	z-index:99;
-	right:0;
+  background-color: #fff;
+	display: block;
+  left: 1%;
+	position: fixed;
+	z-index: 99;
+}
+
+nav ol {
+  padding: 0;
+}
+
+nav ol li {
+  list-style: none;
+}
+
+nav ol li a {
+  background-color: #000;
+  border-radius: 1em;
+  color: #fff;
+  display: block;
+  line-height: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  width: 2em;
+}
+
+/* individual card styling */
+
+#index {
+  background-color: #f5f1d3;
+}
+
+#index h1 {
+  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
+  font-size: 2em;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+#index h1 strong {
+  display: block;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+#first {
+  background-color: #dd322d;
+}
+
+#second {
+  background-color: #f37920;
+}
+
+#third {
+  background-color: #b5892d;
+}
+
+#fourth {
+  background-color: #ffc10e;
+}
+
+#fifth {
+  background-color: #858627;
+}
+
+#sixth {
+  background-color: #00652e;
+}
+
+#seventh {
+  background-color: #2ba197;
+}
+
+#eighth {
+  background-color: #2e8aca;
+}
+
+#ninth {
+  background-color: #6f70b4;
+}
+
+#tenth {
+  background-color: #90278e;
 }
