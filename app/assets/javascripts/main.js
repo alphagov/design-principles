@@ -18,36 +18,39 @@ Expects you to do the full width / shadows etc. in your own CSS
   
   $.fn.slide = function (options) {
 
+    // global vars for plugin
     var portHeight = $(document).height();
-    var deck = this; // this is the whole set of pages
+    var deck = this,
+        slideRegister = new Array; // form of: 0 = id, 1 = height, 2 = position
     
     // private methods for doing stuff
     var _setupElements = function() {
-      // on load, set the first one as moving if there's no fragment
+      // Get everything going
       $(deck[0]).css("position", "absolute");
       $(deck[0]).addClass("current"); 
-
-      // 1. set heights, we want them at least as tall as a view port
     
+      // Force out the min-heights, for a nicer effect 
+      // TODO: make this optional
       $(deck).css("min-height", portHeight+"px");
 
-      // 2. this'll set the z-indexes of our pages, so they stack in the correct order
       var i = deck.length,
         j = 1;
 
+      // Stack the deck in the right order, and max out the body
       while(i--){
         $(deck[i]).css("z-index", j);
         j++;
       }
 
-      // 3. set body height so we can keep on scrolling
-      // get all principle heights, add them up, set as body height
       var bodyHeight = 0;
+      
       $(deck).each(function(){
         bodyHeight = bodyHeight + $(this).height();
       })
 
       $("body").height(bodyHeight+"px");
+
+      // get the scroll events going
       _bindScroll();
     }
 
@@ -73,76 +76,53 @@ Expects you to do the full width / shadows etc. in your own CSS
       $(window).bind('scroll.slider', _checkPosition);
     }
 
+
     var _bindKeyEvents = function(){
       $("nav a").on("click", function(e){
-        console.log(this);
-        console.log($(".current").attr("id"));
 
-
+        var hopTo = $(this).attr("href");
+        var match = hopTo.split("#");
+      
+        // TODO: need to set each along the way, until match?
+        $.each(slideRegister, function(){
+          if(match[1] == this[0]){
+            $("html, body").animate({scrollTop: $(hopTo).offset().top},10);
+     
+          }
+        })
 
         e.preventDefault();
         return false;
       });
-      // on next or back
-      // check current, use set next/prev
-      // scroll to position with nice easing
+
+      //TODO: keyboard events
+     
     }
 
     var _manageURL = function(){
       // replace hashed with pushstate for those that can
     }
 
-    var _setNext = function(totalPassed) {
-     // stop when there's no more nexts
-      var next = $(".current").next();
 
-      $(next).addClass("next");
-  
-      $(".next").css("position", "absolute");
-      $(".next").css("top", totalPassed+"px");
-
-      // class shuffle // needs cleanup
-     // $(".previous").removeClass("previous");
-      $(".current").removeClass("current");
-      $(".next").addClass("current");
-      $(".next").removeClass("next");
-
-
-      _bindScroll();
-    }
-
-    var _setPrev = function(previous) {
-      //$(previous).css("background-color", "pink");
-   
-      $(".previous").removeClass("previous");
-      //$(".current").css("position", "fixed")
-      _bindScroll();
-    }
-
-    var slideRegister = new Array; // form of: 0 = id, 1 = height, 2 = position
+    
     var _registerElements = function(){
       var position = 0,
-        height = 0;
+          height = 0;
 
-      // go through deck
       $(deck).each(function(i){
 
-        height = $(this).height(); // 1020
+        height = $(this).height();
+        position = position + height;
 
-        //if(i != 0){
-          position = position + height;
-        //}
-       
        slideRegister.push([$(this).attr("id"), height, position])
       })
-      
-      // create an array of id + top position + height
-      // on scroll, go through each until top position found within bounds
-      // position abs match, and any matches before match
-      // position fixed post
+
     }
+
+    // lets go!
     _setupElements();
     _registerElements();
+
     // if a nav is specified, set up events for it
     if(options.navigation && $(options.navigation).length != 0){
       _bindKeyEvents();
