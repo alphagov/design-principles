@@ -29,6 +29,10 @@ ol li.principle{
   list-style-type:none;
   width: 95%;
   clear:both;
+
+}
+figure img{
+  height:282px;
 }
 ol li.principle:after {
   clear:both; 

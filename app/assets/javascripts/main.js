@@ -26,8 +26,7 @@ Expects you to do the full width / shadows etc. in your own CSS
     // private methods for doing stuff
     var _setupElements = function() {
       // Get everything going
-      $(deck[0]).css("position", "absolute");
-      $(deck[0]).addClass("current"); 
+      $(deck[0]).css("position", "absolute"); 
     
       // Force out the min-heights, for a nicer effect 
       // TODO: make this optional
@@ -104,25 +103,12 @@ Expects you to do the full width / shadows etc. in your own CSS
           height = 0;
 
       $(deck).each(function(i){
-        /*if(i == 1){
-
-          $(this).css("clear", "both");
-          $(this).css("height", "100%");
-
-          console.log($(this).height())
-          console.log($(this).innerHeight())
-          console.log($(this).css("height"))
-          var elem = document.getElementById($(this).attr("id"));  
-          var calcheight = window.getComputedStyle(elem,null).getPropertyValue("height"); 
-          console.log(calcheight) 
-        }*/
 
         height = $(this).height();
         position = position + height;
 
         slideRegister.push([$(this).attr("id"), height, position])
       })
-
     }
 
     // lets go!
