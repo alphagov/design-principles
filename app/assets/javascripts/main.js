@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   
   $("body").addClass("js-enabled");
 
-  $("ol li.principle").slide({navigation: "nav a"});
+  $("ol li.principle").slidedeck({navigation: "nav a"});
 
 });
 
@@ -10,14 +10,14 @@ jQuery(document).ready(function() {
 
 /* 
 
-Call .slide() on an set of elements
-Expects you to do the full width / shadows etc. in your own CSS
+Call .slidedeck() on a set of elements
+Expects you to do the full width / shadows etc. in your own CSS.
 
 */
 
 (function($) {
   
-  $.fn.slide = function (options) {
+  $.fn.slidedeck = function (options) {
 
     var portHeight = $(document).height();
     var deck = this,
@@ -84,7 +84,7 @@ Expects you to do the full width / shadows etc. in your own CSS
     /*
       If we have a nav element specified, we bind events for those links.
     */
-    var _bindKeyEvents = function(){
+    var _bindNavEvents = function(){
       $(options.navigation).on("click", function(e){
 
         var hopTo = $(this).attr("href");
@@ -96,16 +96,24 @@ Expects you to do the full width / shadows etc. in your own CSS
           }
         });
 
+        // TODO: set a selected state on nav el clicked
+
         e.preventDefault();
        
       });
 
-      //TODO: keyboard events
+      
      
     }
 
+    // TODO: keyboard events. Make this optional.
+    var bindKeyEvents = function(){
+      // TODO: up / down should fast skip to next slide. Maybe also space?
+    }
+
     var _manageURL = function(){
-      // replace hashed with pushstate for those that can
+      // TODO: replace hashed with pushstate for those that can.  
+      // TODO: make this optional.
     }
     
     var _registerSlides = function(){
@@ -125,7 +133,7 @@ Expects you to do the full width / shadows etc. in your own CSS
 
     
     if(options.navigation && $(options.navigation).length != 0){
-      _bindKeyEvents();
+      _bindNavEvents();
     }
 
     return $(this);
