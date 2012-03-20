@@ -60,12 +60,10 @@ Expects you to do the full width / shadows etc. in your own CSS
         if($(window).scrollTop() >= this[2]){
           var pos = (this[2] - this[1]);
      
-          $("#"+this[0]).next().css("position", "absolute");
-          $("#"+this[0]).next().css("top", this[2]+"px");
+          $("#"+this[0]).next().css({"position": "absolute", "top": this[2]+"px"});
         }
         else {
-          $("#"+this[0]).next().css("position", "fixed");
-          $("#"+this[0]).next().css("top", "0px");
+          $("#"+this[0]).next().css({"position": "fixed", "top": "0px"});
         }
 
       })
@@ -83,11 +81,9 @@ Expects you to do the full width / shadows etc. in your own CSS
         var hopTo = $(this).attr("href");
         var match = hopTo.split("#");
       
-        // TODO: need to set each along the way, until match?
         $.each(slideRegister, function(){
           if(match[1] == this[0]){
-            $("html, body").animate({scrollTop: this[2]},1000);
-     
+            $("html, body").animate({scrollTop: this[2] - this[1]},1000);
           }
         })
 
@@ -102,8 +98,6 @@ Expects you to do the full width / shadows etc. in your own CSS
     var _manageURL = function(){
       // replace hashed with pushstate for those that can
     }
-
-
     
     var _registerSlides = function(){
       var position = 0,
