@@ -52,34 +52,20 @@ Expects you to do the full width / shadows etc. in your own CSS
     }
 
     var _checkPosition = function(){
-      var current = $('.current');
-      // for now, track how many have already been seen by checking pos
-      var totalPassed = 0;
-      $(deck).each(function(){
-        if($(this).css("position") != "fixed"){
-          totalPassed = totalPassed + $(this).height();
-        }
-      })
-      var checkPosition = current.offset().top+totalPassed;
-
-      var previous = $(".current").prev().addClass("previous");
       
-      if($(window).scrollTop() > totalPassed){
-          // unbind for this screen
-          $(window).unbind('scroll.slider', _bindScroll);
-          $(window).unbind();
-          // go off and set the next one, and let it know how far down we've got for position
-          _setNext(totalPassed);
-      }
-      else if(previous.length != 0 && (previous.offset().top) < (totalPassed-previous.height())){
-        //console.log("FIX PLZ")
-        // unbind for this screent
-        $(window).unbind('scroll.slider', _bindScroll);
-        $(window).unbind();
-        // go set the previous tile
-        _setPrev(previous);
-        
-      }
+      $.each(slideRegister, function(i){
+        if($(window).scrollTop() >= this[2]){
+          var pos = (this[2] - this[1]);
+     
+          $("#"+this[0]).next().css("position", "absolute");
+          $("#"+this[0]).next().css("top", this[2]+"px");
+        }
+        else {
+          $("#"+this[0]).next().css("position", "fixed");
+        }
+
+      })
+
     }
 
     var _bindScroll = function(){
@@ -90,6 +76,9 @@ Expects you to do the full width / shadows etc. in your own CSS
       $("nav a").on("click", function(e){
         console.log(this);
         console.log($(".current").attr("id"));
+
+
+
         e.preventDefault();
         return false;
       });
@@ -129,8 +118,30 @@ Expects you to do the full width / shadows etc. in your own CSS
       _bindScroll();
     }
 
-    _setupElements();
+    var slideRegister = new Array; // form of: 0 = id, 1 = height, 2 = position
+    var _registerElements = function(){
+      var position = 0,
+        height = 0;
 
+      // go through deck
+      $(deck).each(function(i){
+
+        height = $(this).height(); // 1020
+
+        //if(i != 0){
+          position = position + height;
+        //}
+       
+       slideRegister.push([$(this).attr("id"), height, position])
+      })
+      
+      // create an array of id + top position + height
+      // on scroll, go through each until top position found within bounds
+      // position abs match, and any matches before match
+      // position fixed post
+    }
+    _setupElements();
+    _registerElements();
     // if a nav is specified, set up events for it
     if(options.navigation && $(options.navigation).length != 0){
       _bindKeyEvents();
