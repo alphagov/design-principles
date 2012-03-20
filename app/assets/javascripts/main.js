@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   
   $("body").addClass("js-enabled");
 
-  $("ol li.principle").slide();
+  $("ol li.principle").slide({navigation: "nav"});
 
 });
 
@@ -16,7 +16,7 @@ Expects you to do the full width / shadows etc. in your own CSS
 */
 (function($) {
   
-  $.fn.slide = function () {
+  $.fn.slide = function (options) {
 
     var portHeight = $(document).height();
     var deck = this; // this is the whole set of pages
@@ -87,6 +87,12 @@ Expects you to do the full width / shadows etc. in your own CSS
     }
 
     var _bindKeyEvents = function(){
+      $("nav a").on("click", function(e){
+        console.log(this);
+        console.log($(".current").attr("id"));
+        e.preventDefault();
+        return false;
+      });
       // on next or back
       // check current, use set next/prev
       // scroll to position with nice easing
@@ -124,6 +130,11 @@ Expects you to do the full width / shadows etc. in your own CSS
     }
 
     _setupElements();
+
+    // if a nav is specified, set up events for it
+    if(options.navigation && $(options.navigation).length != 0){
+      _bindKeyEvents();
+    }
 
     return $(this);
   }
