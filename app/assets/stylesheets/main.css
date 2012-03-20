@@ -13,7 +13,7 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
-ol{
+ol.principles{
   margin:0;
   list-style-type:none;
   width:100%;
@@ -71,4 +71,10 @@ section.examples {
   background-color: yellow;
   margin-left: 65%;
   width: 35%;
+}
+nav{
+	display:block;
+	position:fixed;
+	z-index:99;
+	right:0;
 }
