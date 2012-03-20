@@ -14,28 +14,31 @@ Call .slide() on an set of elements
 Expects you to do the full width / shadows etc. in your own CSS
 
 */
+
 (function($) {
   
   $.fn.slide = function (options) {
 
-    // global vars for plugin
     var portHeight = $(document).height();
     var deck = this,
         slideRegister = new Array; // form of: 0 = id, 1 = height, 2 = position
     
-    // private methods for doing stuff
+    /*
+      This sets up each of the slide pages, making them at least as tall as the viewport.
+      It also also sets the bodyHeight to be the total of all pages, so it still scrolls,
+      and uses z-index to stack the pages in the right order.
+    */
     var _setupElements = function() {
-      // Get everything going
+
       $(deck[0]).css("position", "absolute"); 
     
-      // Force out the min-heights, for a nicer effect 
       // TODO: make this optional
       $(deck).css("min-height", portHeight+"px");
 
       var i = deck.length,
         j = 1;
 
-      // Stack the deck in the right order, and max out the body
+     
       while(i--){
         $(deck[i]).css("z-index", j);
         j++;
@@ -49,16 +52,18 @@ Expects you to do the full width / shadows etc. in your own CSS
 
       $("body").height(bodyHeight+"px");
 
-      // get the scroll events going
       _bindScroll();
     }
 
+    /*
+      Each time a scroll event is fired, it looks through our registered slides, 
+      and positions accordingly.
+    */
     var _checkPosition = function(){
       
       $.each(slideRegister, function(i){
         if($(window).scrollTop() >= this[2]){
           var pos = (this[2] - this[1]);
-     
           $("#"+this[0]).next().css({"position": "absolute", "top": this[2]+"px"});
         }
         else {
@@ -69,11 +74,16 @@ Expects you to do the full width / shadows etc. in your own CSS
 
     }
 
+    /*
+      This just binds the event for scrolling.
+    */
     var _bindScroll = function(){
       $(window).bind('scroll.slider', _checkPosition);
     }
 
-
+    /*
+      If we have a nav element specified, we bind events for those links.
+    */
     var _bindKeyEvents = function(){
       $(options.navigation).on("click", function(e){
 
@@ -84,7 +94,7 @@ Expects you to do the full width / shadows etc. in your own CSS
           if(match[1] == this[0]){
             $("html, body").animate({scrollTop: this[2] - this[1]},1000);
           }
-        })
+        });
 
         e.preventDefault();
        
@@ -103,19 +113,17 @@ Expects you to do the full width / shadows etc. in your own CSS
           height = 0;
 
       $(deck).each(function(i){
-
         height = $(this).height();
         position = position + height;
-
         slideRegister.push([$(this).attr("id"), height, position])
-      })
+      });
     }
 
     // lets go!
     _setupElements();
     _registerSlides();
 
-    // if a nav is specified, set up events for it
+    
     if(options.navigation && $(options.navigation).length != 0){
       _bindKeyEvents();
     }
