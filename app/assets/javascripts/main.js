@@ -12,7 +12,8 @@ jQuery(document).ready(function() {
 
 Call .slidedeck() on a set of elements
 Expects you to do the full width / shadows etc. in your own CSS.
-
+For nav to work, your anchors should match your hrefs (which'll still be useful sans JS).
+For best results, specify image heights in CSS/attr to make sure heights are best calced
 */
 
 (function($) {
