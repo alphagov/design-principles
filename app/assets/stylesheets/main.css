@@ -69,9 +69,28 @@ section.tips {
 
 section.examples {
   background-color: yellow;
-  margin-left: 65%;
+  margin-left: 62.5%;
+  margin-right: 2.5%;
   width: 35%;
 }
+
+section.examples ul {
+  padding-left: 0;
+}
+
+section.examples li {
+  list-style: none;
+  margin-bottom: 3em;
+}
+
+section.examples figure {
+  margin: 0;
+}
+
+section.examples img {
+  max-width: 100%;
+}
+
 nav{
 	display:block;
 	position:fixed;
