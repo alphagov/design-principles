@@ -43,7 +43,7 @@ Expects you to do the full width / shadows etc. in your own CSS
       }
 
       var bodyHeight = 0;
-      
+
       $(deck).each(function(){
         bodyHeight = bodyHeight + $(this).height();
       })
@@ -105,12 +105,24 @@ Expects you to do the full width / shadows etc. in your own CSS
 
 
     
-    var _registerElements = function(){
+    var _registerSlides = function(){
       var position = 0,
           height = 0;
 
       $(deck).each(function(i){
+        if(i == 1){
 
+          
+         /* $(this).css("clear", "both");
+          $(this).css("height", "100%");
+
+          console.log($(this).height())
+          console.log($(this).innerHeight())
+          console.log($(this).css("height"))
+          var elem = document.getElementById($(this).attr("id"));  
+          var calcheight = window.getComputedStyle(elem,null).getPropertyValue("height"); 
+          console.log(calcheight) */
+        }
         height = $(this).height();
         position = position + height;
 
@@ -121,7 +133,7 @@ Expects you to do the full width / shadows etc. in your own CSS
 
     // lets go!
     _setupElements();
-    _registerElements();
+    _registerSlides();
 
     // if a nav is specified, set up events for it
     if(options.navigation && $(options.navigation).length != 0){

@@ -28,7 +28,15 @@ ol li.principle{
   clear:both;
   list-style-type:none;
   width: 95%;
+  clear:both;
 }
+ol li.principle:after {
+  clear:both; 
+  content:"."; 
+  display:block; 
+  height:0; 
+  visibility:hidden;
+} 
 .js-enabled ol li.principle {
   position:fixed;
   top:0;
@@ -97,10 +105,10 @@ section.examples img {
 
 nav{
   background-color: #fff;
-	display: block;
+    display: block;
   left: 1%;
-	position: fixed;
-	z-index: 99;
+    position: fixed;
+    z-index: 99;
 }
 
 nav ol {
