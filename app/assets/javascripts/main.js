@@ -91,7 +91,8 @@ Expects you to do the full width / shadows etc. in your own CSS
           }
         })
 
-        
+        e.preventDefault();
+       
       });
 
       //TODO: keyboard events
