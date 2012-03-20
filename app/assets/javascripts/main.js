@@ -62,6 +62,7 @@ Expects you to do the full width / shadows etc. in your own CSS
         }
         else {
           $("#"+this[0]).next().css("position", "fixed");
+          $("#"+this[0]).next().css("top", "0px");
         }
 
       })
