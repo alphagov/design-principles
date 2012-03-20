@@ -13,6 +13,10 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
+.visuallyhidden {
+  display:none;
+}
+
 ol.principles{
   margin:0;
   list-style-type:none;
@@ -49,17 +53,17 @@ h1.principle-title {
   font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
   font-size: 5em;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1;
   margin: 0;
-  width: 100%;
+  width: 60%;
 }
 
 p.principle-outline {
-  border-left: solid 4px #333;
+  border-left: solid 2px #BBB;
   float: left;
-  font-size: 2em;
-  padding-left: 5%;
-  width: 50%;
+  font-size: 1.5em;
+  padding-left: 2.5%;
+  width: 52.5%;
 }
 
 section.tips {
@@ -68,10 +72,15 @@ section.tips {
 }
 
 section.examples {
-  background-color: yellow;
   margin-left: 62.5%;
   margin-right: 2.5%;
   width: 35%;
+}
+
+section h1 {
+  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 section.examples ul {
