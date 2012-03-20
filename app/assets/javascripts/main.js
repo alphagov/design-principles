@@ -86,7 +86,7 @@ Expects you to do the full width / shadows etc. in your own CSS
         // TODO: need to set each along the way, until match?
         $.each(slideRegister, function(){
           if(match[1] == this[0]){
-            $("html, body").animate({scrollTop: this[2]},10);
+            $("html, body").animate({scrollTop: this[2]},1000);
      
           }
         })
