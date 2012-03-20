@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   
   $("body").addClass("js-enabled");
 
-  $("ol li.principle").slide({navigation: "nav"});
+  $("ol li.principle").slide({navigation: "nav a"});
 
 });
 
@@ -78,7 +78,7 @@ Expects you to do the full width / shadows etc. in your own CSS
 
 
     var _bindKeyEvents = function(){
-      $("nav a").on("click", function(e){
+      $(options.navigation).on("click", function(e){
 
         var hopTo = $(this).attr("href");
         var match = hopTo.split("#");
@@ -86,13 +86,12 @@ Expects you to do the full width / shadows etc. in your own CSS
         // TODO: need to set each along the way, until match?
         $.each(slideRegister, function(){
           if(match[1] == this[0]){
-            $("html, body").animate({scrollTop: $(hopTo).offset().top},10);
+            $("html, body").animate({scrollTop: this[2]},10);
      
           }
         })
 
-        e.preventDefault();
-        return false;
+        
       });
 
       //TODO: keyboard events
@@ -110,10 +109,9 @@ Expects you to do the full width / shadows etc. in your own CSS
           height = 0;
 
       $(deck).each(function(i){
-        if(i == 1){
+        /*if(i == 1){
 
-          
-         /* $(this).css("clear", "both");
+          $(this).css("clear", "both");
           $(this).css("height", "100%");
 
           console.log($(this).height())
@@ -121,12 +119,13 @@ Expects you to do the full width / shadows etc. in your own CSS
           console.log($(this).css("height"))
           var elem = document.getElementById($(this).attr("id"));  
           var calcheight = window.getComputedStyle(elem,null).getPropertyValue("height"); 
-          console.log(calcheight) */
-        }
+          console.log(calcheight) 
+        }*/
+
         height = $(this).height();
         position = position + height;
 
-       slideRegister.push([$(this).attr("id"), height, position])
+        slideRegister.push([$(this).attr("id"), height, position])
       })
 
     }
