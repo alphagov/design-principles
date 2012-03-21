@@ -43,7 +43,7 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       while(i--){
         $(deck[i]).css("z-index", j);
         j++;
-      }
+      };
 
       var bodyHeight = 0;
 
@@ -54,7 +54,7 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       $("body").height(bodyHeight+"px");
 
       _bindScroll();
-    }
+    };
 
     /*
       Each time a scroll event is fired, it looks through our registered slides, 
@@ -69,25 +69,26 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
         }
         else {
           $("#"+this[0]).next().css({"position": "fixed", "top": "0px"});
-        }
+        };
 
-      })
+      });
 
-    }
+    };
 
     /*
       This just binds the event for scrolling.
     */
     var _bindScroll = function(){
       $(window).bind('scroll.slider', _checkPosition);
-    }
+    };
 
     /*
       If we have a nav element specified, we bind events for those links.
     */
     var _bindNavEvents = function(){
       $(options.navigation).on("click", function(e){
-
+        $(options.navigation).removeClass("sd-selected");
+        $(this).addClass("sd-selected");
         var hopTo = $(this).attr("href");
         var match = hopTo.split("#");
       
@@ -97,25 +98,20 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
           }
         });
 
-        // TODO: set a selected state on nav el clicked
-
         e.preventDefault();
        
       });
-
-      
-     
-    }
+    };
 
     // TODO: keyboard events. Make this optional.
     var bindKeyEvents = function(){
       // TODO: up / down should fast skip to next slide. Maybe also space?
-    }
+    };
 
     var _manageURL = function(){
       // TODO: replace hashed with pushstate for those that can.  
       // TODO: make this optional.
-    }
+    };
     
     var _registerSlides = function(){
       var position = 0,
@@ -126,7 +122,7 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
         position = position + height;
         slideRegister.push([$(this).attr("id"), height, position])
       });
-    }
+    };
 
     // lets go!
     _setupElements();
@@ -135,9 +131,9 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
     
     if(options.navigation && $(options.navigation).length != 0){
       _bindNavEvents();
-    }
+    };
 
     return $(this);
-  }
+  };
 
 })(jQuery);
