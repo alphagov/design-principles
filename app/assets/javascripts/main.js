@@ -32,7 +32,9 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       hasNavigation = true;
     }
 
-
+    function browserSupportsHtml5HistoryApi() {
+      return !! (history && history.replaceState && history.pushState);
+    };
     var _init = function(){
       // lets go!
       _setupElements();
@@ -44,6 +46,7 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       if(hasKeyEvents){
         _bindKeyEvents();
       }
+      _initializeHistory();
       $(window).resize(function() {
         _init();
       });
@@ -117,17 +120,24 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
     */
     var _bindNavEvents = function(){
       $(options.navigation).on("click", function(e){
-        $(options.navigation).removeClass("sd-selected");
-        $(this).addClass("sd-selected");
         var hopTo = $(this).attr("href");
         var match = hopTo.split("#");
       
         $.each(slideRegister, function(){
           if(match[1] == this[0]){
-            $("html, body").animate({scrollTop: this[2] - this[1]},1000);
+            $("html, body").animate({scrollTop: this[2] - this[1]},1000, function(){
+
+            });
           }
         });
-
+        $(options.navigation).removeClass("sd-selected");
+        $(this).addClass("sd-selected");
+        data = {
+          html_fragment: $(hopTo).html(),
+          title: "Principle",
+          url: hopTo
+        };
+        _manageURL(data);
         e.preventDefault();
        
       });
@@ -150,9 +160,24 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       });
     };
 
-    var _manageURL = function(){
+    function _initializeHistory(data) {
+      if (! browserSupportsHtml5HistoryApi() && window.location.pathname.match(/\/.*\//) ) {
+        addToHistory({url: window.location.pathname});
+      }
+
+      data = {
+        html_fragment: $('.smart_answer section').html(),
+        title: "Question",
+        url: "/"
+      };
+      history.replaceState(data, data['title'], data['url']);
+    };
+
+    var _manageURL = function(data){
+
       // TODO: replace hashed with pushstate for those that can.  
       // TODO: make this optional.
+      history.pushState(data, data['title'], data['url']);
     };
     
     var _registerSlides = function(){
