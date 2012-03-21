@@ -22,8 +22,12 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
 
     var portHeight = $(document).height();
     var deck = this,
-        slideRegister = new Array; // form of: 0 = id, 1 = height, 2 = position
+        slideRegister = new Array,
+        hasNavigation = false; // form of: 0 = id, 1 = height, 2 = position
     
+    if(options.navigation && $(options.navigation).length != 0){
+      hasNavigation = true;
+    }
     /*
       This sets up each of the slide pages, making them at least as tall as the viewport.
       It also also sets the bodyHeight to be the total of all pages, so it still scrolls,
@@ -104,8 +108,16 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
     };
 
     // TODO: keyboard events. Make this optional.
-    var bindKeyEvents = function(){
+    var _bindKeyEvents = function(){
       // TODO: up / down should fast skip to next slide. Maybe also space?
+
+      $(document.documentElement).keyup(function (event) {
+          if (event.keyCode == 37) {
+            $(".sd-selected").parent().prev().children("a").trigger("click");
+          } else if (event.keyCode == 39) {
+            $(".sd-selected").parent().next().children("a").trigger("click");
+          }
+      });
     };
 
     var _manageURL = function(){
@@ -129,8 +141,9 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
     _registerSlides();
 
     
-    if(options.navigation && $(options.navigation).length != 0){
+    if(hasNavigation){
       _bindNavEvents();
+      _bindKeyEvents();
     };
 
     return $(this);
