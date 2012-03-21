@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   
   $("body").addClass("js-enabled");
 
-  $("ol li.principle").slidedeck({navigation: "nav a"});
+  $("ol li.principle").slidedeck({navigation: "nav a", keyevents: true});
 
 });
 
@@ -20,13 +20,34 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
   
   $.fn.slidedeck = function (options) {
 
-    var portHeight = $(document).height();
-    var deck = this,
+    var portHeight = $(document).height(),
+        deck = this,
         slideRegister = new Array,
-        hasNavigation = false; // form of: 0 = id, 1 = height, 2 = position
+        hasNavigation = false,
+        hasKeyEvents = options.keyevents || false,
+        hasNiceURLs = options.urls || true,
+        hasFullHeightPages = options.fullheight || true; // form of: 0 = id, 1 = height, 2 = position
     
     if(options.navigation && $(options.navigation).length != 0){
       hasNavigation = true;
+    }
+
+
+    var _init = function(){
+      // lets go!
+      _setupElements();
+      _registerSlides();
+
+      if(hasNavigation){
+        _bindNavEvents();
+      };
+      if(hasKeyEvents){
+        _bindKeyEvents();
+      }
+      $(window).resize(function() {
+        _init();
+      });
+
     }
     /*
       This sets up each of the slide pages, making them at least as tall as the viewport.
@@ -37,8 +58,9 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
 
       $(deck[0]).css("position", "absolute"); 
     
-      // TODO: make this optional
-      $(deck).css("min-height", portHeight+"px");
+      if(hasFullHeightPages){
+        $(deck).css("min-height", portHeight+"px");
+      };
 
       var i = deck.length,
         j = 1;
@@ -107,9 +129,7 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       });
     };
 
-    // TODO: keyboard events. Make this optional.
     var _bindKeyEvents = function(){
-      // TODO: up / down should fast skip to next slide. Maybe also space?
 
       $(document.documentElement).keyup(function (event) {
           if (event.keyCode == 37) {
@@ -142,15 +162,8 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       });
     };
 
-    // lets go!
-    _setupElements();
-    _registerSlides();
 
-    
-    if(hasNavigation){
-      _bindNavEvents();
-      _bindKeyEvents();
-    };
+    _init();
 
     return $(this);
   };
