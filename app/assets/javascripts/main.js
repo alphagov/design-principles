@@ -118,6 +118,12 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
             $(".sd-selected").parent().next().children("a").trigger("click");
           }
       });
+      $(document.documentElement).keydown(function (event) {
+          if (event.keyCode == 32) {
+           $(".sd-selected").parent().next().children("a").trigger("click");
+           event.preventDefault();
+          }
+      });
     };
 
     var _manageURL = function(){
