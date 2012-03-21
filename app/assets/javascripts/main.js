@@ -57,7 +57,7 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
     var _setupElements = function() {
 
       $(deck[0]).css("position", "absolute"); 
-    
+      
       if(hasFullHeightPages){
         $(deck).css("min-height", portHeight+"px");
       };
@@ -92,13 +92,17 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
         if($(window).scrollTop() >= this[2]){
           var pos = (this[2] - this[1]);
           $("#"+this[0]).next().css({"position": "absolute", "top": this[2]+"px"});
+          if(hasNavigation){
+            $(options.navigation).removeClass("sd-selected");
+            $(options.navigation+"[href*='"+this[0]+"']").parent().next().children("a").addClass("sd-selected");
+          }
         }
         else {
           $("#"+this[0]).next().css({"position": "fixed", "top": "0px"});
         };
 
       });
-
+      // 
     };
 
     /*
