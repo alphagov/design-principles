@@ -134,7 +134,9 @@ nav ol li a {
   text-decoration: none;
   width: 2em;
 }
-
+nav ol li a.sd-selected{
+  background-color:red;
+}
 /* individual card styling */
 
 #index {
