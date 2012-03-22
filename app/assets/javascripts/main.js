@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
   
   $("body").addClass("js-enabled");
 
-  $("ol li.principle").slidedeck({navigation: "nav a", keyevents: true});
+  $("ol li.principle").slidedeck({navigation: "nav a", keyevents: true, urls: false, fullheight: true});
 
 });
 
@@ -22,12 +22,13 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
 
     var portHeight = $(document).height(),
         deck = this,
-        slideRegister = new Array,
+        slideRegister = new Array, 
         hasNavigation = false,
-        hasKeyEvents = options.keyevents || false,
-        hasNiceURLs = options.urls || true,
-        hasFullHeightPages = options.fullheight || true; // form of: 0 = id, 1 = height, 2 = position
-    
+        hasKeyEvents = options.keyevents,
+        hasNiceURLs = options.urls,
+        hasFullHeightPages = options.fullheight; 
+  
+
     if(options.navigation && $(options.navigation).length != 0){
       hasNavigation = true;
     }
@@ -46,7 +47,9 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       if(hasKeyEvents){
         _bindKeyEvents();
       }
-      _initializeHistory();
+      if(hasNiceURLs){
+        _initializeHistory();
+      }
       $(window).resize(function() {
         _init();
       });
@@ -126,18 +129,24 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
         $.each(slideRegister, function(){
           if(match[1] == this[0]){
             $("html, body").animate({scrollTop: this[2] - this[1]},1000, function(){
-
+              $(this).addClass("sd-selected");
             });
           }
         });
         $(options.navigation).removeClass("sd-selected");
-        $(this).addClass("sd-selected");
-        data = {
-          html_fragment: $(hopTo).html(),
-          title: "Principle",
-          url: hopTo
-        };
-        _manageURL(data);
+        
+
+
+        if(hasNiceURLs && !browserSupportsHtml5HistoryApi() && window.location.pathname.match(/\/.*\//) ){
+          data = {
+            html_fragment: $(hopTo).html(),
+            title: "Principle",
+            url: hopTo
+          };
+          _manageURL(data);
+        }
+
+
         e.preventDefault();
        
       });
@@ -154,14 +163,14 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
       });
       $(document.documentElement).keydown(function (event) {
           if (event.keyCode == 32) {
-           $(".sd-selected").parent().next().children("a").trigger("click");
-           event.preventDefault();
+            $(".sd-selected").parent().next().children("a").trigger("click");
+            event.preventDefault();
           }
       });
     };
 
     function _initializeHistory(data) {
-      if (! browserSupportsHtml5HistoryApi() && window.location.pathname.match(/\/.*\//) ) {
+      if (!browserSupportsHtml5HistoryApi() && window.location.pathname.match(/\/.*\//) ) {
         addToHistory({url: window.location.pathname});
       }
 
@@ -176,7 +185,6 @@ For best results, specify image heights in CSS/attr to make sure heights are bes
     var _manageURL = function(data){
 
       // TODO: replace hashed with pushstate for those that can.  
-      // TODO: make this optional.
       history.pushState(data, data['title'], data['url']);
     };
     
