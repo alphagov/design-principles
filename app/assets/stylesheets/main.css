@@ -1,91 +1,137 @@
 /*main.css*/
 
-body{
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1300px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+body {
   background-color: #fff;
-  font-family: Georgia, serif;
+  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
   font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
   padding:0;
   margin:0;
 }
 
 h1, h2, h3 {
-  font-weight: normal;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .visuallyhidden {
   display:none;
 }
 
-ol.principles{
-  margin: 0;
-  list-style-type:none;
-  padding:0;
+ol.principles {
+  margin: 0 0 0 48px;
+  padding: 0;
+  list-style:none;
 }
+
 ol li.principle{
   padding:0;
-  margin:0 0 0 5%;
+  margin:0;
   clear:both;
   list-style-type:none;
-  width: 95%;
-  clear:both;
+  width: 100%;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+/*   background-image: url(../../../../baseline.png); */
+}
 
-}
-figure img{
-  height:282px;
-}
-ol li.principle:after {
-  clear:both; 
-  content:"."; 
-  display:block; 
-  height:0; 
-  visibility:hidden;
-} 
 .js-enabled ol li.principle {
   position:fixed;
   top:0;
+  left: 48px;
+  right: 0;
   z-index:1;
   display:block;
+  width: auto;
 }
+
 ol li.principle:nth-child(2n){
   background-color:#f3f3f3;
 }
 
 ol li.principle article {
-  padding: 4em 5%;
+  padding: 56px 48px;
 }
 
 h1.principle-title {
   float: left;
-  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
-  font-size: 5em;
-  font-weight: 400;
-  line-height: 1;
   margin: 0;
-  width: 60%;
+  width: 50%;
+  font-weight: 500;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1;
+  padding-top: 6px;
+  padding-top: 0.6rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
 
 p.principle-outline {
-  border-left: solid 2px #BBB;
+  margin: 0;
   float: left;
-  font-size: 1.5em;
-  padding-left: 2.5%;
-  width: 52.5%;
+  clear: both;
+  width: 50%;
 }
 
 section.tips {
+  display: none;
   float: left;
-  width: 55%;
+  width: 50%;
 }
 
 section.examples {
+  display: none;
   margin-left: 62.5%;
   margin-right: 2.5%;
   width: 35%;
 }
 
 section h1 {
-  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -107,36 +153,131 @@ section.examples img {
   max-width: 100%;
 }
 
-nav{
-  background-color: #fff;
-    display: block;
-  left: 1%;
-    position: fixed;
-    z-index: 99;
+article .principle-title {
+  color: white;
+}
+
+article .content {
+  color: black;
+}
+
+.really-light article .principle-title {
+  color: black;
+}
+
+.really-light article .content {
+  color: black;
+}
+
+.dark article .principle-title {
+  color: black;
+}
+
+.dark article .content {
+  color: white;
+}
+
+.really-dark article .principle-title {
+  color: white;
+}
+
+.really-dark article .content {
+  color: white;
+}
+
+
+
+
+nav {
+	display: block;
+	position: fixed;
+	z-index: 99;
 }
 
 nav ol {
+  margin: 12px 0 0;
   padding: 0;
 }
 
 nav ol li {
+  padding: 0;
   list-style: none;
+  line-height: 24px;
+  overflow: hidden;
 }
 
-nav ol li a {
-  background-color: #000;
-  border-radius: 1em;
-  color: #fff;
+nav a {
+  position: relative;
+  overflow: hidden;
   display: block;
-  line-height: 2em;
-  margin-bottom: 0.5em;
-  text-align: center;
+  font-size: 16px;
+  padding: 8px 12px;
   text-decoration: none;
-  width: 2em;
 }
-nav ol li a.sd-selected{
-  background-color:red;
+
+@media (max-height: 500px) {
+  nav a {
+    padding: 4px 12px;
+  }
 }
+
+nav .icon {
+  position: relative;
+  float: left;
+  width: 24px;
+  overflow: hidden;
+  height: 21px;
+  padding-top: 3px;
+  top: -3px;
+  opacity: 0.4;
+  background: #555;
+  color: white;
+  text-align: center;
+     -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+       -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
+       border-radius: opacity 0.3s ease;
+     -moz-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+       -o-transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+   border-transition: opacity 0.3s ease;
+
+}
+
+nav a:hover .icon,
+nav a:focus .icon {
+  opacity: 0.7;
+}
+
+nav a:active .icon,
+nav a.sd-selected .icon {
+  opacity: 1;
+}
+
+nav li:first-child .icon {
+  text-indent: -5000%;
+  background-image: url(../images/icon_home.png);
+  background-position: center center;
+}
+
+nav li:nth-child(10) ~ li .icon {
+  letter-spacing: -1px;
+  text-indent: -1px;
+}
+
+nav .caption {
+  position: relative;
+  padding-left: 8px;
+  color: black;
+  white-space: nowrap;
+  display: none;
+/*   opacity: 0; */
+  margin-left: -100%;
+}
+
+
 /* individual card styling */
 
 #index {
@@ -144,54 +285,69 @@ nav ol li a.sd-selected{
 }
 
 #index h1 {
-  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, serif;
-  font-size: 2em;
-  line-height: 1.25;
-  margin-top: 0;
+  float: left;
+  margin: 0;
+  width: 50%;
 }
 
 #index h1 strong {
   display: block;
-  font-size: 2.5em;
   font-weight: 500;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1;
+  padding-top: 6px;
+  padding-top: 0.6rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
 
-#first {
+#first,
+nav li:nth-child(2) a.sd-selected .icon {
   background-color: #dd322d;
 }
 
-#second {
+#second,
+nav li:nth-child(3) a.sd-selected .icon {
   background-color: #f37920;
 }
 
-#third {
+#third,
+nav li:nth-child(4) a.sd-selected .icon {
   background-color: #b5892d;
 }
 
-#fourth {
+#fourth,
+nav li:nth-child(5) a.sd-selected .icon {
   background-color: #ffc10e;
 }
 
-#fifth {
+#fifth,
+nav li:nth-child(6) a.sd-selected .icon {
   background-color: #858627;
 }
 
-#sixth {
-  background-color: #00652e;
+#sixth,
+nav li:nth-child(7) a.sd-selected .icon {
+  background-color: #3c692b;
 }
 
-#seventh {
+#seventh,
+nav li:nth-child(8) a.sd-selected .icon {
   background-color: #2ba197;
 }
 
-#eighth {
+#eighth,
+nav li:nth-child(9) a.sd-selected .icon {
   background-color: #2e8aca;
 }
 
-#ninth {
+#ninth,
+nav li:nth-child(10) a.sd-selected .icon {
   background-color: #6f70b4;
 }
 
-#tenth {
-  background-color: #90278e;
+#tenth,
+nav li:nth-child(11) a.sd-selected .icon {
+  background-color: #7b2f87;
 }
