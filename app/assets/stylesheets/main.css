@@ -248,3 +248,7 @@ article section {
   padding-top: 12px;
   padding-top: 1.2rem;
 }
+
+.js-enabled .content{
+  display:none;
+}
