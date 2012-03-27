@@ -249,6 +249,10 @@ article section {
   padding-top: 1.2rem;
 }
 
-.js-enabled .content{
+/* Frances example stuff for features added by JS */
+.js-enabled .examples .content{
   display:none;
+}
+.js-enabled .content.open-section{
+  display:block;
 }
