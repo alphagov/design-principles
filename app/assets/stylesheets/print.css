@@ -1,11 +1,12 @@
 /*print.css*/
 
 html {
-  font-size: 7px!important;
+  font-size: 9px!important;
 }
 
 header, nav, .principles {
   margin: 0!important;
+  max-width: 88%!important;
 }
 
 article {

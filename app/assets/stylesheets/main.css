@@ -57,26 +57,26 @@ body {
   background: #fff;
   font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-weight: normal;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  padding: 18px 48px 18px 96px;
-  padding: 1.8rem 4.8rem 1.8rem 9.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.4444444444;
+  font-weight: 300;
+  padding: 0 48px 18px 96px;
+  padding: 0 4.8rem 1.8rem 9.6rem;
   margin:0;
 }
 
 header, nav, .principles {
   position: relative;
   margin: 0 auto;
-  max-width: 800px;
-  max-width: 80rem;
+  max-width: 660px;
+  max-width: 66rem;
 }
 
 a {
   color: black;
   text-decoration: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
 a:hover,
@@ -107,7 +107,7 @@ nav a .icon {
 }
 
 nav a .caption {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
 h1 {
@@ -115,9 +115,8 @@ h1 {
   font-size: 4.5rem;
   line-height: 1.1555555556;
   font-weight: 300;
-  letter-spacing: -0.03em;
   padding: 6px 0 8px;
-  padding: 1.4rem 0 0.2rem;
+  padding: 1.8rem 0 0.8rem;
 }
 
 h1 strong,
@@ -127,11 +126,18 @@ article h1 {
   letter-spacing: 0.01em;
 }
 
-nav, article {
+header, article {
+  position: relative;
+  clear: both;
+  padding-bottom: 24px;
+  padding-bottom: 2.4rem;
+  padding-top: 72px;
+  padding-top: 7.2rem;
+}
+
+nav {
   padding-top: 24px;
   padding-top: 2.4rem;
-  padding-bottom: 72px;
-  padding-bottom: 7.2rem;
 }
 
 article h1 {
@@ -193,19 +199,52 @@ article h1:before {
 .outline {
   font-size: 32px;
   font-size: 3.2rem;
-  line-height: 1.25;
+  line-height: 1.21875;
   font-weight: 300;
-  letter-spacing: -0.03em;
-  padding: 2px 0 6px;
-  padding: 0.6rem 0 0.2rem;
+  padding: 14px 0 12px;
+  padding: 1.4rem 0 1.2rem;
+}
+
+.outline img {
+  float: right;
+  clear: both;
+  width:auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.outline img.col-1of2 {
+  width: 50%;
+}
+
+.outline img.col-1of3 {
+  width: 33.3333333333%;
+}
+
+article h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 4px 0 9px;
+  padding: 1.7rem 0 0.9rem;
 }
 
 article .content p {
-  border: 1px solid #ccc;
-  text-align: center;
-  line-height: 100px;
+  letter-spacing: 0;
+  padding: 10px 0 3px;
+  padding: 1rem 0 0.3rem;
 }
 
 article .content p:before {
-  content: "placeholder";
+  content: "Shankle hamburger beef, pork belly meatball swine boudin frankfurter pastrami jerky. Swine bresaola rump, chuck ball tip drumstick andouille cow shankle pork meatloaf pork belly strip steak tri-tip speck. Corned beef pork prosciutto tail brisket pig, spare ribs shank venison pork loin. Short ribs biltong beef, ground round tongue strip steak swine spare ribs fatback bresaola. Jowl swine filet mignon flank, sausage pork loin strip steak t-bone.";
+}
+
+article section {
+  position: relative;
+  overflow: hidden;
+  padding-top: 12px;
+  padding-top: 1.2rem;
 }
