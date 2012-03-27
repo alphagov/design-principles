@@ -1,0 +1,13 @@
+/*print.css*/
+
+html {
+  font-size: 7px!important;
+}
+
+header, nav, .principles {
+  margin: 0!important;
+}
+
+article {
+  page-break-before: always;
+}

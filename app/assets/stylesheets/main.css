@@ -61,8 +61,8 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
-  padding: 18px 24px;
-  padding: 1.8rem 2.4rem;
+  padding: 18px 48px 18px 96px;
+  padding: 1.8rem 4.8rem 1.8rem 9.6rem;
   margin:0;
 }
 
@@ -74,9 +74,20 @@ header, nav, .principles {
 }
 
 a {
-  color: red;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ccc;
+}
+
+a:hover,
+a:focus,
+nav a:hover .caption,
+nav a:focus .caption {
+  border-color: #2E8ACA;
+}
+
+a:active {
+  color: #2E8ACA;
 }
 
 nav a {
@@ -84,14 +95,19 @@ nav a {
 }
 
 nav a .icon {
+  position: relative;
   float: left;
   clear: both;
+  text-align: right;
+  margin-left: -36px;
+  margin-left: -3.6rem;
   width: 24px;
   width: 2.4rem;
+  color: #aaa;
 }
 
 nav a .caption {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ccc;
 }
 
 h1 {
@@ -107,26 +123,31 @@ h1 {
 h1 strong,
 article h1 {
   display: block;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.01em;
 }
 
-.outline {
-  font-size: 32px;
-  font-size: 3.2rem;
-  line-height: 1.25;
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  padding: 2px 0 6px;
-  padding: 0.6rem 0 0.2rem;
+nav, article {
+  padding-top: 24px;
+  padding-top: 2.4rem;
+  padding-bottom: 72px;
+  padding-bottom: 7.2rem;
+}
+
+article h1 {
+  color: #dd322d;
 }
 
 article h1:before {
+  position: relative;
+  float: left;
+  clear: both;
+  text-align: right;
+  margin-left: -72px;
+  margin-left: -7.2rem;
+  width: 48px;
+  width: 4.8rem;
   font-weight: 300;
-  color: red;
-  padding-right: 24px;
-  padding-right: 2.4rem;
 }
 
 #first h1:before {
@@ -167,6 +188,16 @@ article h1:before {
 
 #tenth h1:before {
   content: "10";
+}
+
+.outline {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  padding: 2px 0 6px;
+  padding: 0.6rem 0 0.2rem;
 }
 
 article .content p {
