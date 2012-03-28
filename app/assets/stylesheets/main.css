@@ -323,64 +323,68 @@ article .examples .content {
 
 /* features added by JS */
 
-.js-enabled .examples {
-  padding-top: 26px;
-  padding-top: 2.6rem;
-}
+@media screen {
 
-.js-enabled .examples h2 {
-  float: left;
-  min-width: 12em;
-  margin-bottom: 1px;
-  padding: 13px 39px 9px 13px;
-  padding: 1.3rem 3.9rem 0.9rem 1.3rem;
-  color: white;
-  background: #dd322d url(../images/dropdown_arrow_closed.png) no-repeat right center;
-  cursor: pointer;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-  -webkit-user-select: none;
-         -user-select: none;
-}
+  .js-enabled .examples {
+    padding-top: 26px;
+    padding-top: 2.6rem;
+  }
+  
+  .js-enabled .examples h2 {
+    float: left;
+    min-width: 12em;
+    margin-bottom: 1px;
+    padding: 13px 39px 9px 13px;
+    padding: 1.3rem 3.9rem 0.9rem 1.3rem;
+    color: white;
+    background: #dd322d url(../images/dropdown_arrow_closed.png) no-repeat right center;
+    cursor: pointer;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+    -webkit-user-select: none;
+           -user-select: none;
+  }
+  
+  .js-enabled .open-section h2 {
+    background-image: url(../images/dropdown_arrow_open.png);
+  }
+  
+  .js-enabled .examples h2:before {
+    content: "Show ";
+    font-weight: 300;
+  }
+  
+  .js-enabled .open-section h2:before {
+    content: "Hide ";
+    font-weight: 300;
+  }
+  
+  .js-enabled .examples .content {
+    height: 0;
+  }
+  
+  .js-enabled .open-section .content {
+    height: auto;
+    overflow: visible;
+       -moz-transition: none;
+        -ms-transition: none;
+         -o-transition: none;
+    -webkit-transition: none;
+           -transition: none;
+  }
+  
+  .js-enabled .examples .content > * {
+    opacity: 0;
+       -moz-transition: 0.9s ease;
+        -ms-transition: 0.9s ease;
+         -o-transition: 0.9s ease;
+    -webkit-transition: 0.9s ease;
+           -transition: 0.9s ease;
+  }
+  
+  .js-enabled .open-section .content > * {
+    opacity: 1;
+  }
 
-.js-enabled .open-section h2 {
-  background-image: url(../images/dropdown_arrow_open.png);
-}
-
-.js-enabled .examples h2:before {
-  content: "Show ";
-  font-weight: 300;
-}
-
-.js-enabled .open-section h2:before {
-  content: "Hide ";
-  font-weight: 300;
-}
-
-.js-enabled .examples .content {
-  height: 0;
-}
-
-.js-enabled .open-section .content {
-  height: auto;
-  overflow: visible;
-     -moz-transition: none;
-      -ms-transition: none;
-       -o-transition: none;
-  -webkit-transition: none;
-         -transition: none;
-}
-
-.js-enabled .examples .content > * {
-  opacity: 0;
-     -moz-transition: 0.9s ease;
-      -ms-transition: 0.9s ease;
-       -o-transition: 0.9s ease;
-  -webkit-transition: 0.9s ease;
-         -transition: 0.9s ease;
-}
-
-.js-enabled .open-section .content > * {
-  opacity: 1;
 }
