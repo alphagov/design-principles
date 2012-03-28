@@ -61,16 +61,23 @@ body {
   font-size: 1.8rem;
   line-height: 1.4444444444;
   font-weight: 300;
-  padding: 0 48px 18px 96px;
-  padding: 0 4.8rem 1.8rem 9.6rem;
-  margin:0;
+  padding: 0 52px 13px 104px;
+  padding: 0 5.2rem 1.3rem 10.4rem;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 0 13px 13px 39px;
+    padding: 0 1.3rem 1.3rem 3.9rem;
+  }
 }
 
 header, nav, .principles {
   position: relative;
   margin: 0 auto;
-  max-width: 660px;
-  max-width: 66rem;
+  max-width: 700px;
+  max-width: 70rem;
 }
 
 a {
@@ -99,10 +106,10 @@ nav a .icon {
   float: left;
   clear: both;
   text-align: right;
-  margin-left: -36px;
-  margin-left: -3.6rem;
-  width: 24px;
-  width: 2.4rem;
+  margin-left: -39px;
+  margin-left: -3.9rem;
+  width: 26px;
+  width: 2.6rem;
   color: #aaa;
 }
 
@@ -129,15 +136,15 @@ article h1 {
 header, article {
   position: relative;
   clear: both;
-  padding-bottom: 24px;
-  padding-bottom: 2.4rem;
-  padding-top: 72px;
-  padding-top: 7.2rem;
+  padding-bottom: 26px;
+  padding-bottom: 2.6rem;
+  padding-top: 78px;
+  padding-top: 7.8rem;
 }
 
 nav {
-  padding-top: 24px;
-  padding-top: 2.4rem;
+  padding-top: 26px;
+  padding-top: 2.6rem;
 }
 
 article h1 {
@@ -149,10 +156,10 @@ article h1:before {
   float: left;
   clear: both;
   text-align: right;
-  margin-left: -72px;
-  margin-left: -7.2rem;
-  width: 48px;
-  width: 4.8rem;
+  margin-left: -78px;
+  margin-left: -7.8rem;
+  width: 52px;
+  width: 5.2rem;
   font-weight: 300;
 }
 
@@ -228,7 +235,7 @@ article h2 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.2em;
-  padding: 4px 0 9px;
+  padding: 17px 0 9px;
   padding: 1.7rem 0 0.9rem;
 }
 
@@ -245,14 +252,77 @@ article .content p:before {
 article section {
   position: relative;
   overflow: hidden;
-  padding-top: 12px;
-  padding-top: 1.2rem;
+  padding-top: 13px;
+  padding-top: 1.3rem;
 }
 
 /* Frances example stuff for features added by JS */
-.js-enabled .examples .content{
-  display:none;
+
+.js-enabled .examples {
+  padding-top: 26px;
+  padding-top: 2.6rem;
 }
-.js-enabled .content.open-section{
-  display:block;
+
+.js-enabled .examples h2 {
+  float: left;
+  margin-bottom: 1px;
+  padding: 13px 39px 9px 13px;
+  padding: 1.3rem 3.9rem 0.9rem 1.3rem;
+  color: white;
+  background: #dd322d url(../images/dropdown_arrow_closed.png) no-repeat right center;
+  cursor: pointer;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+  -webkit-user-select: none;
+         -user-select: none;
+}
+
+.js-enabled .open-section h2 {
+  background-image: url(../images/dropdown_arrow_open.png);
+}
+
+.js-enabled .examples h2:before {
+  content: "View ";
+  font-weight: 300;
+  min-width: 3.4em;
+  display: inline-block;
+}
+
+.js-enabled .open-section h2:before {
+  content: "Hide ";
+  font-weight: 300;
+  min-width: 3.4em;
+  display: inline-block;
+}
+
+.js-enabled .examples .content {
+  position: relative;
+  clear: both;
+  width: auto;
+  height: 0;
+  overflow: hidden;
+  background: #eee;
+}
+
+.js-enabled .open-section .content {
+  height: auto;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+  -webkit-transition: none;
+         -transition: none;
+}
+
+.js-enabled .examples .content > * {
+  opacity: 0;
+     -moz-transition: 0.9s ease;
+      -ms-transition: 0.9s ease;
+       -o-transition: 0.9s ease;
+  -webkit-transition: 0.9s ease;
+         -transition: 0.9s ease;
+}
+
+.js-enabled .open-section .content > * {
+  opacity: 1;
 }

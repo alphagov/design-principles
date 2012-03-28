@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 
   function sectionToggles(section){
     $("."+section+" h2").on("click", function(){
-        $(this).next().toggleClass("open-section");
+        $(this).parent(".examples").toggleClass("open-section");
     });
   }
 });
