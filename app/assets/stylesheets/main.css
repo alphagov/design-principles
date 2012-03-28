@@ -308,16 +308,40 @@ article .examples .content {
   clear: both;
   width: auto;
   overflow: hidden;
-  background: #eee;
+  display: block;
+  display: table;
 }
 
 @media (max-width: 640px) {
   article .examples .content {
-    margin-left: -39px;
-    margin-left: -3.9rem;
-    margin-right: -13px;
-    margin-right: -1.3rem;
+    margin-left: -26px;
+    margin-left: -2.6rem;
   }
+}
+
+article .examples .process,
+article .examples .writing,
+article .examples .code,
+article .examples .design {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  display: table-row;
+}
+
+article .examples .status {
+  display: block;
+  display: table-row;
+  background: black;
+  color: white;
+}
+
+article .examples .example,
+article .examples .caption {
+  display: block;
+  display: table-cell;
+  min-height: 39px;
+  border: 1px solid black;
 }
 
 
