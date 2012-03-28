@@ -126,6 +126,13 @@ h1 {
   padding: 1.8rem 0 0.8rem;
 }
 
+@media (max-width: 640px) {
+  h1 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+}
+
 h1 strong,
 article h1 {
   display: block;
@@ -140,6 +147,13 @@ header, article {
   padding-bottom: 2.6rem;
   padding-top: 78px;
   padding-top: 7.8rem;
+}
+
+@media (max-width: 640px) {
+  header, article {
+    padding-top: 26px;
+    padding-top: 2.6rem;
+  }
 }
 
 nav {
@@ -161,6 +175,16 @@ article h1:before {
   width: 52px;
   width: 5.2rem;
   font-weight: 300;
+  letter-spacing: -0.05em;
+}
+
+@media (max-width: 640px) {
+  article h1:before {
+    margin-left: -39px;
+    margin-left: -3.9rem;
+    width: 30px;
+    width: 3rem;
+  }
 }
 
 #first h1:before {
@@ -220,6 +244,19 @@ article h1:before {
   max-width: 100%;
 }
 
+@media (max-width: 640px) {
+  .outline {
+    font-size: 21px;
+    font-size: 2.1rem;
+    padding: 8px 0 2px;
+    padding: 0.8rem 0 0.2rem;
+  }
+
+  .outline img {
+    display: none;
+  }
+}
+
 .outline img.col-1of2 {
   width: 50%;
 }
@@ -251,12 +288,33 @@ article .content p:before {
 
 article section {
   position: relative;
-  overflow: hidden;
   padding-top: 13px;
   padding-top: 1.3rem;
 }
 
-/* Frances example stuff for features added by JS */
+article .examples {
+  clear: both;
+}
+
+article .examples .content {
+  position: relative;
+  clear: both;
+  width: auto;
+  overflow: hidden;
+  background: #eee;
+}
+
+@media (max-width: 640px) {
+  article .examples .content {
+    margin-left: -39px;
+    margin-left: -3.9rem;
+    margin-right: -13px;
+    margin-right: -1.3rem;
+  }
+}
+
+
+/* features added by JS */
 
 .js-enabled .examples {
   padding-top: 26px;
@@ -265,6 +323,7 @@ article section {
 
 .js-enabled .examples h2 {
   float: left;
+  min-width: 12em;
   margin-bottom: 1px;
   padding: 13px 39px 9px 13px;
   padding: 1.3rem 3.9rem 0.9rem 1.3rem;
@@ -283,30 +342,22 @@ article section {
 }
 
 .js-enabled .examples h2:before {
-  content: "View ";
+  content: "Show ";
   font-weight: 300;
-  min-width: 3.4em;
-  display: inline-block;
 }
 
 .js-enabled .open-section h2:before {
   content: "Hide ";
   font-weight: 300;
-  min-width: 3.4em;
-  display: inline-block;
 }
 
 .js-enabled .examples .content {
-  position: relative;
-  clear: both;
-  width: auto;
   height: 0;
-  overflow: hidden;
-  background: #eee;
 }
 
 .js-enabled .open-section .content {
   height: auto;
+  overflow: visible;
      -moz-transition: none;
       -ms-transition: none;
        -o-transition: none;
