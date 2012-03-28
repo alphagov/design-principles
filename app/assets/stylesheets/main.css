@@ -264,6 +264,10 @@ article h1:before {
   width: 50%;
 }
 
+.outline img.col-2of3 {
+  width: 66.6666666666%;
+}
+
 .outline img.col-1of3 {
   width: 33.3333333333%;
 }
