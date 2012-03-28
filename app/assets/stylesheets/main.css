@@ -289,10 +289,6 @@ article .content p {
   padding: 1rem 0 0.3rem;
 }
 
-article .content p:before {
-  content: "Shankle hamburger beef, pork belly meatball swine boudin frankfurter pastrami jerky. Swine bresaola rump, chuck ball tip drumstick andouille cow shankle pork meatloaf pork belly strip steak tri-tip speck. Corned beef pork prosciutto tail brisket pig, spare ribs shank venison pork loin. Short ribs biltong beef, ground round tongue strip steak swine spare ribs fatback bresaola. Jowl swine filet mignon flank, sausage pork loin strip steak t-bone.";
-}
-
 article section {
   position: relative;
   padding-top: 13px;
