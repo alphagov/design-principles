@@ -326,13 +326,13 @@ article .examples .design {
   overflow: hidden;
   display: block;
   display: table-row;
+  background: black;
+
 }
 
 article .examples .status {
   display: block;
   display: table-cell;
-  border-collapse:collapse;
-  background: black;
   color: white;
 }
 
@@ -340,9 +340,8 @@ article .examples .example,
 article .examples .caption {
   display: block;
   display: table-cell;
-  border-collapse:collapse;
   min-height: 39px;
-  border: 1px solid black;
+  background: white;
 }
 
 
