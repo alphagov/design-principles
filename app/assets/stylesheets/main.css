@@ -308,17 +308,57 @@ article .examples .content {
   clear: both;
   width: auto;
   overflow: hidden;
-  background: #eee;
+  display: block;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @media (max-width: 640px) {
   article .examples .content {
-    margin-left: -39px;
-    margin-left: -3.9rem;
-    margin-right: -13px;
-    margin-right: -1.3rem;
+    margin-left: -26px;
+    margin-left: -2.6rem;
   }
 }
+
+article .examples .process,
+article .examples .writing,
+article .examples .code,
+article .examples .design {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border: 1px solid #444;
+}
+
+article .examples .content>div+div {
+  border-top: none;
+}
+
+article .examples .status,
+article .examples .caption {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+article .examples .process .example {
+  font-family: Verdana, sans-serif;
+}
+
+article .examples .writing .example {
+  font-family: Georgia, serif;
+}
+
+article .examples .code .example {
+  font-family: 'Andale Mono', monospaced;
+}
+
+article .examples .design .example {
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.035em;
+}
+
 
 
 /* features added by JS */
