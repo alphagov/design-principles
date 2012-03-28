@@ -149,16 +149,19 @@ header, article {
   padding-top: 7.8rem;
 }
 
+nav {
+  padding-top: 26px;
+  padding-top: 2.6rem;
+}
+
 @media (max-width: 640px) {
   header, article {
     padding-top: 26px;
     padding-top: 2.6rem;
   }
-}
-
-nav {
-  padding-top: 26px;
-  padding-top: 2.6rem;
+  nav {
+    padding-top: 0;
+  }
 }
 
 article h1 {
