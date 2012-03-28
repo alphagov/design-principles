@@ -1,6 +1,6 @@
 /*main.css*/
 
-html {
+/*html {
   font-size: 62.5%;
 }
 
@@ -46,13 +46,15 @@ html {
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
-}
+}*/
 
-ul, ol, li {
+#wrapper ul, 
+#wrapper ol, 
+#wrapper li {
   list-style: none;
 }
 
-body {
+/*body {
   color: #444;
   background: #fff;
   font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
@@ -64,44 +66,44 @@ body {
   padding: 0 52px 13px 104px;
   padding: 0 5.2rem 1.3rem 10.4rem;
   margin: 0;
-}
+}*/
 
 @media (max-width: 640px) {
-  body {
+  #wrapper body {
     padding: 0 13px 13px 39px;
     padding: 0 1.3rem 1.3rem 3.9rem;
   }
 }
 
-header, nav, .principles {
+#wrapper header, #wrapper nav, #wrapper  .principles {
   position: relative;
   margin: 0 auto;
   max-width: 700px;
   max-width: 70rem;
 }
 
-a {
+#wrapper a {
   color: black;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
 }
 
-a:hover,
-a:focus,
-nav a:hover .caption,
-nav a:focus .caption {
+#wrapper a:hover,
+#wrapper a:focus,
+#wrapper nav a:hover .caption,
+#wrapper nav a:focus .caption {
   border-color: #2E8ACA;
 }
 
-a:active {
+#wrapper a:active {
   color: #2E8ACA;
 }
 
-nav a {
+#wrapper nav a {
   border-bottom: none;
 }
 
-nav a .icon {
+#wrapper nav a .icon {
   position: relative;
   float: left;
   clear: both;
@@ -113,11 +115,11 @@ nav a .icon {
   color: #aaa;
 }
 
-nav a .caption {
+#wrapper nav a .caption {
   border-bottom: 1px solid #ddd;
 }
 
-h1 {
+#wrapper h1 {
   font-size: 45px;
   font-size: 4.5rem;
   line-height: 1.1555555556;
@@ -127,20 +129,21 @@ h1 {
 }
 
 @media (max-width: 640px) {
-  h1 {
+  #wrapper h1 {
     font-size: 26px;
     font-size: 2.6rem;
   }
 }
 
-h1 strong,
-article h1 {
+#wrapper h1 strong,
+#wrapper article h1 {
   display: block;
   font-weight: 500;
   letter-spacing: 0.01em;
 }
 
-header, article {
+#wrapper header, 
+#wrapper article {
   position: relative;
   clear: both;
   padding-bottom: 26px;
@@ -149,26 +152,27 @@ header, article {
   padding-top: 7.8rem;
 }
 
-nav {
+#wrapper nav {
   padding-top: 26px;
   padding-top: 2.6rem;
 }
 
 @media (max-width: 640px) {
-  header, article {
+  #wrapper header, 
+  #wrapper article {
     padding-top: 26px;
     padding-top: 2.6rem;
   }
-  nav {
+  #wrapper nav {
     padding-top: 0;
   }
 }
 
-article h1 {
+#wrapper article h1 {
   color: #dd322d;
 }
 
-article h1:before {
+#wrapper article h1:before {
   position: relative;
   float: left;
   clear: both;
@@ -182,7 +186,7 @@ article h1:before {
 }
 
 @media (max-width: 640px) {
-  article h1:before {
+  #wrapper article h1:before {
     margin-left: -39px;
     margin-left: -3.9rem;
     width: 30px;
@@ -359,6 +363,9 @@ article .examples .design .example {
   letter-spacing: -0.035em;
 }
 
+.beta-notice{
+  display:none;
+}
 
 
 /* features added by JS */
