@@ -309,7 +309,6 @@ article .examples .content {
   width: auto;
   overflow: hidden;
   display: block;
-  display: table;
 }
 
 @media (max-width: 640px) {
@@ -331,7 +330,8 @@ article .examples .design {
 
 article .examples .status {
   display: block;
-  display: table-row;
+  display: table-cell;
+  border-collapse:collapse;
   background: black;
   color: white;
 }
@@ -340,6 +340,7 @@ article .examples .example,
 article .examples .caption {
   display: block;
   display: table-cell;
+  border-collapse:collapse;
   min-height: 39px;
   border: 1px solid black;
 }
