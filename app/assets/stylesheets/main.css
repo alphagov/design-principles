@@ -54,7 +54,8 @@
   list-style: none;
 }
 
-/*body {
+
+#wrapper {
   color: #444;
   background: #fff;
   font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
@@ -66,7 +67,7 @@
   padding: 0 52px 13px 104px;
   padding: 0 5.2rem 1.3rem 10.4rem;
   margin: 0;
-}*/
+}
 
 @media (max-width: 640px) {
   #wrapper body {
