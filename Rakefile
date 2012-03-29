@@ -79,8 +79,6 @@ namespace :router do
   task :router_environment do
     Bundler.require :router, :default
 
-    require_relative "config"
-
     require 'logger'
     @logger = Logger.new STDOUT
     @logger.level = Logger::DEBUG
