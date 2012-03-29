@@ -1,6 +1,4 @@
 jQuery(document).ready(function() {
-  
-  $("body").addClass("js-enabled");
 
   //sectionToggles("why");
   sectionToggles("examples");
