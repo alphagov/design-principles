@@ -1,3 +1,6 @@
+require "rubygems"
+require "bundler/setup"
+
 require 'slimmer'
 
 use Slimmer::App, asset_host: "https://static.preview.alphagov.co.uk/"
