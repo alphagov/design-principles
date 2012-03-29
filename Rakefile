@@ -12,8 +12,6 @@ require "yaml"
 include Term::ANSIColor
 include WEBrick
 
-
-
 task :default => :develop
 
 desc 'Build site with Jekyll.'
@@ -74,4 +72,42 @@ end
 def printHeader headerText
   print bold + blue + "==> " + reset
   print bold + headerText + reset + "\n"
+end
+
+
+namespace :router do
+  task :router_environment do
+    Bundler.require :router, :default
+
+    require_relative "config"
+
+    require 'logger'
+    @logger = Logger.new STDOUT
+    @logger.level = Logger::DEBUG
+
+    @router = Router::Client.new :logger => @logger
+  end
+
+  task :register_application => :router_environment do
+    platform = ENV['FACTER_govuk_platform']
+    app_id = "designprinciples"
+    url = "#{app_id}.#{platform}.alphagov.co.uk/"
+    @logger.info "Registering #{app_id} application against #{url}..."
+    @router.applications.update application_id: app_id, backend_url: url
+  end
+
+  task :register_routes => [ :router_environment ] do
+    app_id = "designprinciples"
+    begin
+      @logger.info "Registering full route /designprinciples"
+      @router.routes.update application_id: app_id, route_type: :full,
+        incoming_path: "/designprinciples"
+    rescue Router::Conflict => conflict_error
+      @logger.error "Route already exists: #{conflict_error.existing}"
+      raise conflict_error
+    end
+  end
+
+  desc "Register design principles application and routes with the router (run this task on server in cluster)"
+  task :register => [ :register_application, :register_routes ]
 end
