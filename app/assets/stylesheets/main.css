@@ -1,6 +1,6 @@
 /*main.css*/
 
-/*html {
+html {
   font-size: 62.5%;
 }
 
@@ -40,25 +40,11 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-}*/
-
-#wrapper ul, 
-#wrapper ol, 
-#wrapper li {
-  list-style: none;
-}
-
 
 #wrapper {
   color: #444;
   background: #fff;
-  font-family: "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   font-size: 1.8rem;
@@ -70,10 +56,25 @@
 }
 
 @media (max-width: 640px) {
-  #wrapper body {
+  #wrapper {
     padding: 0 13px 13px 39px;
     padding: 0 1.3rem 1.3rem 3.9rem;
   }
+}
+
+#wrapper * {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+#wrapper ul, 
+#wrapper ol, 
+#wrapper li {
+  list-style: none;
 }
 
 #wrapper header, #wrapper nav, #wrapper  .principles {
@@ -235,7 +236,7 @@
   content: "10";
 }
 
-.outline {
+#wrapper .outline p {
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 1.21875;
@@ -244,7 +245,7 @@
   padding: 1.4rem 0 1.2rem;
 }
 
-.outline img {
+#wrapper .outline p img {
   float: right;
   clear: both;
   width:auto;
@@ -253,35 +254,35 @@
 }
 
 @media (max-width: 640px) {
-  .outline {
+  #wrapper .outline p {
     font-size: 21px;
     font-size: 2.1rem;
     padding: 8px 0 2px;
     padding: 0.8rem 0 0.2rem;
   }
 
-  .outline img {
+  #wrapper .outline p img {
     display: none;
   }
 }
 
-.outline img.col-1of2 {
+#wrapper p.outline img.col-1of2 {
   width: 50%;
 }
 
-.outline img.col-2of3 {
+#wrapper p.outline img.col-2of3 {
   width: 66.6666666666%;
 }
 
-.outline img.col-1of2-5 {
+#wrapper p.outline img.col-1of2-5 {
   width: 40%;
 }
 
-.outline img.col-1of3 {
+#wrapper p.outline img.col-1of3 {
   width: 33.3333333333%;
 }
 
-article h2 {
+#wrapper article h2 {
   text-transform: uppercase;
   font-size: 13px;
   font-size: 1.3rem;
@@ -292,23 +293,23 @@ article h2 {
   padding: 1.7rem 0 0.9rem;
 }
 
-article .content p {
+#wrapper article .content p {
   letter-spacing: 0;
   padding: 10px 0 3px;
   padding: 1rem 0 0.3rem;
 }
 
-article section {
+#wrapper article section {
   position: relative;
   padding-top: 13px;
   padding-top: 1.3rem;
 }
 
-article .examples {
+#wrapper article .examples {
   clear: both;
 }
 
-article .examples .content {
+#wrapper article .examples .content {
   position: relative;
   clear: both;
   width: auto;
@@ -318,47 +319,47 @@ article .examples .content {
 }
 
 @media (max-width: 640px) {
-  article .examples .content {
+  #wrapper article .examples .content {
     margin-left: -26px;
     margin-left: -2.6rem;
   }
 }
 
-article .examples .process,
-article .examples .writing,
-article .examples .code,
-article .examples .design {
+#wrapper article .examples .process,
+#wrapper article .examples .writing,
+#wrapper article .examples .code,
+#wrapper article .examples .design {
   position: relative;
   overflow: hidden;
   display: block;
   border: 1px solid #444;
 }
 
-article .examples .content>div+div {
+#wrapper article .examples .content>div+div {
   border-top: none;
 }
 
-article .examples .status,
-article .examples .caption {
+#wrapper article .examples .status,
+#wrapper article .examples .caption {
   font-size: 15px;
   font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: normal;
 }
 
-article .examples .process .example {
+#wrapper article .examples .process .example {
   font-family: Verdana, sans-serif;
 }
 
-article .examples .writing .example {
+#wrapper article .examples .writing .example {
   font-family: Georgia, serif;
 }
 
-article .examples .code .example {
+#wrapper article .examples .code .example {
   font-family: 'Andale Mono', monospaced;
 }
 
-article .examples .design .example {
+#wrapper article .examples .design .example {
   font-family: sans-serif;
   font-weight: bold;
   letter-spacing: -0.035em;
@@ -373,12 +374,12 @@ article .examples .design .example {
 
 @media screen {
 
-  .js-enabled .examples {
+  .js-enabled #wrapper .examples {
     padding-top: 26px;
     padding-top: 2.6rem;
   }
   
-  .js-enabled .examples h2 {
+  .js-enabled #wrapper .examples h2 {
     float: left;
     min-width: 12em;
     margin-bottom: 1px;
@@ -394,25 +395,25 @@ article .examples .design .example {
            -user-select: none;
   }
   
-  .js-enabled .open-section h2 {
+  .js-enabled #wrapper .open-section h2 {
     background-image: url(../images/dropdown_arrow_open.png);
   }
   
-  .js-enabled .examples h2:before {
+  .js-enabled #wrapper .examples h2:before {
     content: "Show ";
     font-weight: 300;
   }
   
-  .js-enabled .open-section h2:before {
+  .js-enabled #wrapper .open-section h2:before {
     content: "Hide ";
     font-weight: 300;
   }
   
-  .js-enabled .examples .content {
+  .js-enabled #wrapper .examples .content {
     height: 0;
   }
   
-  .js-enabled .open-section .content {
+  .js-enabled #wrapper .open-section .content {
     height: auto;
     overflow: visible;
        -moz-transition: none;
@@ -422,7 +423,7 @@ article .examples .design .example {
            -transition: none;
   }
   
-  .js-enabled .examples .content > * {
+  .js-enabled #wrapper .examples .content > * {
     opacity: 0;
        -moz-transition: 0.9s ease;
         -ms-transition: 0.9s ease;
@@ -431,8 +432,41 @@ article .examples .design .example {
            -transition: 0.9s ease;
   }
   
-  .js-enabled .open-section .content > * {
+  .js-enabled #wrapper .open-section .content > * {
     opacity: 1;
   }
 
+}
+
+
+/* print styles */
+
+@media print {
+  html {
+    font-size: 9px!important;
+  }
+  
+  header, nav, .principles {
+    margin: 0!important;
+    max-width: 88%!important;
+  }
+  
+  article {
+    page-break-before: always;
+  }   
+}
+
+
+/* over rides */
+
+#global-header,
+#footer {
+  font-size: 160%;
+}
+
+#footer{
+  clear:both;
+}
+html{
+  background-color:#fff;
 }
