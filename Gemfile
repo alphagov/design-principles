@@ -1,4 +1,5 @@
 source "http://rubygems.org"
+source 'https://gems.gemfury.com/vo6ZrmjBQu5szyywDszE/'
 
 gem 'slimmer'
 gem "jekyll"
