@@ -559,6 +559,12 @@ html {
 
 @media screen {
 
+  /* hacky preloader for dropdown background image */
+  .js-enabled #wrapper {
+    background-image: url(../images/dropdown_arrow_open.png);
+    background-position: -5000px top;
+  }
+
   .js-enabled #wrapper .examples {
     padding-top: 26px;
     padding-top: 2.6rem;
@@ -635,12 +641,16 @@ html {
   
   header, nav, .principles {
     margin: 0!important;
-    max-width: 88%!important;
+    /*max-width: 88%!important;*/
+  }
+
+  body nav {
+    display: block!important;
   }
   
-  article {
+  .principle {
     page-break-before: always;
-  }   
+  } 
 }
 
 
@@ -654,6 +664,7 @@ html {
 #footer{
   clear:both;
 }
+
 html{
   background-color:#fff;
 }
