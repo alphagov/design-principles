@@ -296,6 +296,13 @@ html {
   padding: 1.7rem 0 0.9rem;
 }
 
+#wrapper article .content h3 {
+  color: #aaa;
+  letter-spacing: 0;
+  padding: 10px 0 3px;
+  padding: 1rem 0 0.3rem;
+}
+
 #wrapper article .content p {
   letter-spacing: 0;
   padding: 10px 0 3px;
