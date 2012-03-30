@@ -309,6 +309,12 @@ html {
   padding: 1rem 0 0.3rem;
 }
 
+#wrapper article .content ul {
+  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
+  list-style-type: circle;
+}
+
 #wrapper article section {
   position: relative;
   padding-top: 13px;
