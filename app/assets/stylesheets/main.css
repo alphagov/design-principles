@@ -70,9 +70,8 @@ html {
   color: inherit;
 }
 
-#wrapper ul, 
 #wrapper ol, 
-#wrapper li {
+#wrapper ol li {
   list-style: none;
 }
 
@@ -296,7 +295,7 @@ html {
 }
 
 #wrapper article h3 {
-  color: #aaa;
+  color: #DD322D;
   letter-spacing: 0;
   padding: 10px 0 3px;
   padding: 1rem 0 0.3rem;
@@ -305,7 +304,6 @@ html {
 #wrapper article ul {
   margin-bottom: 13px;
   margin-bottom: 1.3rem;
-  list-style-type: circle;
 }
 
 #wrapper article .content p {
