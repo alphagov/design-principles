@@ -44,7 +44,7 @@ html {
 #wrapper {
   color: #444;
   background: #fff;
-  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+  font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
   font-size: 1.8rem;
@@ -139,6 +139,7 @@ html {
 
 #wrapper h1 strong,
 #wrapper article h1 {
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   display: block;
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -284,6 +285,7 @@ html {
 }
 
 #wrapper article h2 {
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   font-size: 1.3rem;
@@ -316,7 +318,6 @@ html {
   width: auto;
   overflow: hidden;
   display: block;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @media (max-width: 640px) {
@@ -365,7 +366,7 @@ html {
 }
 
 #wrapper article .examples .caption {
-  font-family: Arial;
+  font-family: Helmet, Freesans, sans-serif;
   font-size: 17px;
   font-size: 1.7rem;
 }
@@ -376,7 +377,8 @@ html {
   background-color: #f8f8f8;
 }
 
-.header-context{
+.header-context,
+.beta-notice{
   display:none;
 }
 
@@ -385,6 +387,12 @@ html {
   right: 0;
   top: 8px;
   top: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  #wrapper article .examples p.status {
+    font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+  }
 }
 
 #wrapper article .examples .code .example {
@@ -520,8 +528,8 @@ html {
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 500;
-  padding: 4px;
-  padding: 0.4rem;
+  padding: 4px 6px;
+  padding: 0.4rem 0.6rem;
   color: black;
   background-color: #ddd;
      -moz-border-radius: 3px;
@@ -532,13 +540,16 @@ html {
 }
 
 #wrapper article p.experimental {
-  background-color: #FEFF87;
+  background-color: #D33883;
+  color:#fff;
 }
 #wrapper article p.changeable{
-  background-color: #FE9247;
+  background-color: #F47E31;
+  color:#fff;
 }
 #wrapper article p.tried{
-  background-color: #1FFF83;
+  background-color: #7F9A48;
+  color:#fff;
 }
 
 
@@ -556,8 +567,8 @@ html {
   .js-enabled #wrapper .examples h2 {
     float: left;
     min-width: 12em;
-    padding: 13px 39px 9px 13px;
-    padding: 1.3rem 3.9rem 0.9rem 1.3rem;
+    padding: 11px 39px 1px 13px;
+    padding: 1.1rem 3.9rem 1.1rem 1.3rem;
     margin-bottom: 1px;
     color: white;
     background: #dd322d url(../images/dropdown_arrow_closed.png) no-repeat right center;
@@ -575,11 +586,13 @@ html {
   
   .js-enabled #wrapper .examples h2:before {
     content: "Show ";
+    font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
     font-weight: 300;
   }
   
   .js-enabled #wrapper .open-section h2:before {
     content: "Hide ";
+    font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
     font-weight: 300;
   }
   
@@ -635,7 +648,7 @@ html {
 
 #global-header,
 #footer {
-  font-size: 160%;
+  font-size: 16px;
 }
 
 #footer{
