@@ -56,8 +56,8 @@ html {
 
 @media (max-width: 640px) {
   #wrapper {
-    padding: 0 13px 13px 39px;
-    padding: 0 1.3rem 1.3rem 3.9rem;
+    padding: 0 26px 13px;
+    padding: 0 2.6rem 1.3rem;
   }
 }
 
@@ -113,6 +113,15 @@ html {
   width: 26px;
   width: 2.6rem;
   color: #aaa;
+}
+
+@media (max-width: 640px) {
+  
+  #wrapper nav a .icon {
+    margin-left: 0;
+    text-align: left;
+  }
+
 }
 
 #wrapper nav a .caption {
@@ -189,10 +198,9 @@ html {
 
 @media (max-width: 640px) {
   #wrapper article h1:before {
-    margin-left: -39px;
-    margin-left: -3.9rem;
-    width: 30px;
-    width: 3rem;
+    margin-left: 0;
+    width: auto;
+    padding-right: 1em;
   }
 }
 
