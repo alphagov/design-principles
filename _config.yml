@@ -1,1 +1,1 @@
-exclude: ['Rakefile', 'Readme.md', 'Gemfile', 'Gemfile.lock', '.gitignore']
+exclude: ['Rakefile', 'README.md', 'Gemfile', 'Gemfile.lock', '.gitignore', 'config.ru', 'jenkins.sh']
