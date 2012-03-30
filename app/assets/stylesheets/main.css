@@ -669,6 +669,28 @@ html {
 }
 
 
+/* Styleguide */
+
+#wrapper.styleguide article h2 {
+  margin-top: 26px;
+  margin-top: 2.6rem;
+}
+
+#wrapper.styleguide article .outline + h2 {
+  margin-top: 0;
+}
+
+#wrapper.styleguide article p {
+  width: 85%;
+}
+
+@media (max-width: 640px) {
+  #wrapper.styleguide article p {
+    width: 100%;
+  }
+}
+
+
 /* over rides */
 
 #global-header,
