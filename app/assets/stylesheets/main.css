@@ -87,14 +87,14 @@ html {
 #wrapper a {
   color: black;
   text-decoration: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #2E8ACA;
 }
 
 #wrapper a:hover,
 #wrapper a:focus,
 #wrapper nav a:hover .caption,
 #wrapper nav a:focus .caption {
-  border-color: #2E8ACA;
+  border-color: #ddd;
 }
 
 #wrapper a:active {
