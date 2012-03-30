@@ -4,8 +4,12 @@ require 'rack/contrib/try_static'
 require "bundler/setup"
 require 'slimmer'
 
-
 use Slimmer::App, asset_host: "https://static.preview.alphagov.co.uk/"
+
+map "/designprinciples" do
+  run Rack::File.new("_site/index.html")
+end
+
 use Rack::TryStatic, root: "_site/", urls: %w[/], :try => ['.html', 'index.html', '/index.html']
 
 # otherwise 404 NotFound
