@@ -644,6 +644,10 @@ html {
     /*max-width: 88%!important;*/
   }
 
+  article {
+    width: 100%!important;
+  }
+
   body nav {
     display: block!important;
   }
