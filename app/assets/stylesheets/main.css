@@ -306,6 +306,11 @@ html {
   margin-bottom: 1.3rem;
 }
 
+#wrapper article ul li {
+  padding: 10px 0 3px;
+  padding: 1rem 0 0.3rem;
+}
+
 #wrapper article .content p {
   letter-spacing: 0;
   padding: 10px 0 3px;
