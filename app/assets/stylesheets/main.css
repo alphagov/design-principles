@@ -671,17 +671,10 @@ html {
 
 /* Styleguide */
 
-#wrapper.styleguide article h2 {
-  margin-top: 26px;
-  margin-top: 2.6rem;
-}
-
-#wrapper.styleguide article .outline + h2 {
-  margin-top: 0;
-}
-
 #wrapper.styleguide article p {
   width: 85%;
+  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
 }
 
 @media (max-width: 640px) {
