@@ -656,7 +656,8 @@ html {
     display: block!important;
   }
   
-  .principle {
+  .principle,
+  .examples {
     page-break-before: always;
   } 
 }
