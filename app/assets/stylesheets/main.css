@@ -71,7 +71,7 @@ html {
 }
 
 #wrapper ol, 
-#wrapper ol li {
+#wrapper ol > li {
   list-style: none;
 }
 
@@ -304,11 +304,6 @@ html {
 #wrapper article ul {
   margin-bottom: 13px;
   margin-bottom: 1.3rem;
-}
-
-#wrapper article ul li {
-  padding: 10px 0 3px;
-  padding: 1rem 0 0.3rem;
 }
 
 #wrapper article .content p {
