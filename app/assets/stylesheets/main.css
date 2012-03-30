@@ -40,7 +40,6 @@ html {
   }
 }
 
-
 #wrapper {
   color: #000;
   background: #fff;
@@ -340,7 +339,8 @@ html {
   }
 }
 
-#wrapper article .examples .example {
+#wrapper article .examples .example,
+#wrapper article .example a {
   border: none;
 }
 
