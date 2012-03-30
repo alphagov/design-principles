@@ -104,6 +104,16 @@ namespace :router do
       @logger.error "Route already exists: #{conflict_error.existing}"
       raise conflict_error
     end
+
+    begin
+      @logger.info "Registering temporary path for designprinciples assets"
+      @router.routes.update application_id: app_id, route_type: :prefix,
+        incoming_path: "/app"
+    rescue Router::Conflict => conflict_error
+      @logger.error "Route already exists: #{conflict_error.existing}"
+      raise conflict_error
+    end
+
   end
 
   desc "Register design principles application and routes with the router (run this task on server in cluster)"
