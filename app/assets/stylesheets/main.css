@@ -441,6 +441,10 @@ html {
   width: 66.66666666%;
 }
 
+#wrapper article .examples .process.no-image .caption {
+  width: 100%;
+}
+
 #wrapper article .examples .process .caption h2,
 #wrapper article .examples .process .caption p {
   padding: 0 13px 13px;
