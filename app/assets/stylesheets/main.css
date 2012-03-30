@@ -196,43 +196,43 @@ html {
   }
 }
 
-#first h1:before {
+#first:before {
   content: "1";
 }
 
-#second h1:before {
+#second:before {
   content: "2";
 }
 
-#third h1:before {
+#third:before {
   content: "3";
 }
 
-#fourth h1:before {
+#fourth:before {
   content: "4";
 }
 
-#fifth h1:before {
+#fifth:before {
   content: "5";
 }
 
-#sixth h1:before {
+#sixth:before {
   content: "6";
 }
 
-#seventh h1:before {
+#seventh:before {
   content: "7";
 }
 
-#eighth h1:before {
+#eighth:before {
   content: "8";
 }
 
-#ninth h1:before {
+#ninth:before {
   content: "9";
 }
 
-#tenth h1:before {
+#tenth:before {
   content: "10";
 }
 
