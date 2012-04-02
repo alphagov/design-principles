@@ -372,7 +372,7 @@ html {
   margin-top: 1px;
   padding: 0;
   display: block;
-  background: #eee;
+  background: #ddd;
 }
 
 #wrapper article .examples header {
@@ -414,6 +414,10 @@ html {
 .header-context,
 .beta-notice{
   display:none;
+}
+
+#wrapper article .example {
+  background: transparent;
 }
 
 #wrapper article .examples p.status {
