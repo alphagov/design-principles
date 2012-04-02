@@ -335,14 +335,14 @@ html {
   position: relative;
   clear: both;
   width: auto;
+  margin: 0 -13px;
+  margin: 0 -1.3rem;
   overflow: hidden;
   display: block;
 }
 
 @media (max-width: 640px) {
   #wrapper article .examples .content {
-    margin: 0 -13px;
-    margin: 0 -1.3rem;
   }
 }
 
@@ -376,7 +376,7 @@ html {
 #wrapper article .examples h1 {
   border: none;
   color: black;
-  font-family: Arial;
+  font-family: Helmet, Freesans, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: bold;
