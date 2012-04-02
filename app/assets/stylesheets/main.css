@@ -302,6 +302,10 @@ html {
   padding: 1.6rem 0 0.8rem;
 }
 
+#wrapper article #first + h2 {
+  color: #dd322d;
+}
+
 #wrapper article h3 {
   color: #DD322D;
   letter-spacing: 0;
