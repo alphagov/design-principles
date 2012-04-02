@@ -348,11 +348,6 @@ html {
   display: block;
 }
 
-@media (max-width: 640px) {
-  #wrapper article .examples .content {
-  }
-}
-
 #wrapper article .examples .example,
 #wrapper article .example a {
   border: none;
