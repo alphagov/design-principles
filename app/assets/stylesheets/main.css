@@ -508,6 +508,12 @@ html {
   width: 33.33333333%;
 }
 
+#wrapper article .examples .design .caption h2,
+#wrapper article .examples .design .caption p {
+  padding: 0 13px 13px;
+  padding: 0 1.3rem 1.3rem;
+}
+
 @media (max-width: 640px) {
   #wrapper article .examples .design .example,
   #wrapper article .examples .design .caption {
@@ -521,12 +527,12 @@ html {
     width: 100%;
     margin-left: 0;
   }
-}
-
-#wrapper article .examples .design .caption h2,
-#wrapper article .examples .design .caption p {
-  padding: 0 13px 13px;
-  padding: 0 1.3rem 1.3rem;
+  
+  #wrapper article .examples .design .caption h2,
+  #wrapper article .examples .design .caption p {
+    padding: 0 0 13px;
+    padding: 0 0 1.3rem;
+ }
 }
 
 #wrapper article .examples .writing .example {
