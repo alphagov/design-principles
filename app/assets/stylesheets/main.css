@@ -384,6 +384,16 @@ html {
   max-width: 75%;
 }
 
+#wrapper article .examples h3 {
+  clear: both;
+  padding: 13px;
+  padding: 1.3rem;
+  margin-top: 13px;
+  margin-top: 1.3rem;
+  color: white;
+  background: #333;
+}
+
 #wrapper article .examples .caption {
   font-family: Helmet, Freesans, sans-serif;
   font-size: 17px;
