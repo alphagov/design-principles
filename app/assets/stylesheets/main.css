@@ -728,7 +728,8 @@ html {
 /* over rides */
 
 #global-header,
-#footer {
+#footer,
+#popup {
   font-size: 16px;
 }
 
