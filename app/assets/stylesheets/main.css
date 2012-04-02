@@ -331,10 +331,14 @@ html {
   overflow: visible;
 }
 
-.lte-ie8 #wrapper article .examples,
+.lte-ie8 #wrapper article .examples {
+  height: 1%;
+  border-bottom: 10px solid red;
+}
+
 .lte-ie8 #wrapper article .examples article {
   height: 1%;
-  border: 1px solid blue;
+  border-bottom: 10px solid green;
 }
 
 #wrapper article .examples .content {
@@ -671,7 +675,7 @@ html {
   }
   
   .js-enabled #wrapper .open-section .content > * {
-    opacity: 1!important;
+    opacity: 1;
   }
 
 }
