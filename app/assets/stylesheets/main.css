@@ -615,7 +615,6 @@ html {
     min-width: 12em;
     padding: 11px 39px 1px 13px;
     padding: 1.1rem 3.9rem 1.1rem 1.3rem;
-    margin-bottom: 1px;
     color: white;
     background: #dd322d url(../images/dropdown_arrow_closed.png) no-repeat right center;
     cursor: pointer;
@@ -634,6 +633,10 @@ html {
   .js-enabled #wrapper .examples h2 a:active {
     border: none;
     color: inherit;
+  }
+
+  .js-enabled #wrapper .examples h2 a:focus {
+    background: black;
   }
 
   .lte-ie8 .js-enabled #wrapper .examples h2 {
