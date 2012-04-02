@@ -629,6 +629,13 @@ html {
   .js-enabled #wrapper .open-section h2 {
     background-image: url(../images/dropdown_arrow_open.png);
   }
+
+  .lte-ie8 .js-enabled #wrapper .examples h2 {
+    color: inherit;
+    background: transparent;
+    padding: 11px 0 26px;
+  }
+
   
   .js-enabled #wrapper .examples h2:before {
     content: "Show ";
