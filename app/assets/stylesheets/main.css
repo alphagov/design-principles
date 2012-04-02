@@ -386,12 +386,8 @@ html {
 
 #wrapper article .examples h3 {
   clear: both;
-  padding: 13px;
-  padding: 1.3rem;
-  margin-top: 13px;
-  margin-top: 1.3rem;
-  color: white;
-  background: #333;
+  padding: 26px 13px 13px;
+  padding: 2.6rem 1.3rem 1.3rem;
 }
 
 #wrapper article .examples .caption {
