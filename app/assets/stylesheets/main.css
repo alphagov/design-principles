@@ -723,6 +723,7 @@ html {
 
 /* print styles */
 
+@media print and (min-width: 100px) {
   html {
     font-size: 9px!important;
   }
@@ -740,8 +741,7 @@ html {
     display: block!important;
   }
   
-  .principle,
-  .examples {
+  .principle {
     page-break-before: always;
   } 
 }
