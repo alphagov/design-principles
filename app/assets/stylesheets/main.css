@@ -630,6 +630,12 @@ html {
     background-image: url(../images/dropdown_arrow_open.png);
   }
 
+  .js-enabled #wrapper .examples h2 a,
+  .js-enabled #wrapper .examples h2 a:active {
+    border: none;
+    color: inherit;
+  }
+
   .lte-ie8 .js-enabled #wrapper .examples h2 {
     color: #000;
     background: transparent;
