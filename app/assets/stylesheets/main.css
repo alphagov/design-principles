@@ -75,9 +75,9 @@ html {
   list-style: none;
 }
 
-.lte-ie8 #wrapper ol > li li {
-  list-style-position: outside;
-  list-style-type: circle;
+.lte-ie8 #wrapper ol li li {
+  list-style-position: inside;
+  list-style-type: bullet;
 }
 
 #wrapper header, #wrapper nav, #wrapper  .principles {
