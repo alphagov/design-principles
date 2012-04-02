@@ -631,7 +631,7 @@ html {
   }
 
   .lte-ie8 .js-enabled #wrapper .examples h2 {
-    color: inherit;
+    color: #000;
     background: transparent;
     padding: 11px 0 26px;
   }
