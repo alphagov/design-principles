@@ -636,7 +636,8 @@ html {
   }
 
   .js-enabled #wrapper .examples h2 a:focus {
-    background: black;
+    background: #000;
+    outline: 3px solid #000;
   }
 
   .lte-ie8 .js-enabled #wrapper .examples h2 {
