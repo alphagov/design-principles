@@ -753,7 +753,6 @@ html {
   
   header, nav, .principles {
     margin: 0!important;
-    /*max-width: 88%!important;*/
   }
 
   article {
@@ -767,13 +766,17 @@ html {
   .principle,
   .examples {
     page-break-before: always;
-  } 
+  }
 
   article {
     page-break-before: avoid;
     page-break-after: avoid;
   }
+  
+  a {
+    border-bottom: none!important;
   }
+
 }
 
 
