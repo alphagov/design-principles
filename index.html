@@ -479,10 +479,38 @@ http://digital.cabinetoffice.gov.uk/2012/02/02/gov-uk-truly-open-platform/-->
                 </div>
                 <div class="caption">
                   <p>ARIA landmark roles help people who use screen readers and other assistive
-technologies understand the purpose of different areas of a page. This video
-demonstrates how someone using a screen reader benefits from ARIA landmark roles: <a href="http://www.nomensa.com/blog/2011/how-aria-landmark-roles-help-screen-reader-
-users/">http://www.nomensa.com/blog/2011/how-aria-landmark-roles-help-screen-reader-
-users/</a></p>
+                  technologies understand the purpose of different areas of a page. This video
+                  demonstrates how someone using a screen reader benefits from ARIA landmark roles: <a href="http://www.nomensa.com/blog/2011/how-aria-landmark-roles-help-screen-reader-
+                  users/">http://www.nomensa.com/blog/2011/how-aria-landmark-roles-help-screen-reader-
+                  users/</a></p>
+                </div>
+              </article>
+
+              <article class="code">
+                <header>
+                  <h1>Form fields and labels</h1>
+                  <p class="status tried">Tried &amp; tested</p>
+                </header>
+                <div class="example">
+<pre><code>&lt;label for=”name”>Name:
+&lt;input type=”text” id=”name” placeholder=”For example John Smith”&gt;
+&lt;/label&gt;
+
+&lt;label for=”yes”&gt;
+&lt;input type=”radio” name=”citizen” id=”yes” value=”yes”&gt;
+Yes&lt;/label&gt;
+&lt;label for=”no”&gt;
+
+&lt;input type=”radio” name=”citizen” id=”no” value=”no”&gt;
+No&lt;/label&gt;</code></pre>
+                </div>
+                <div class="caption">
+                  <p>Form labels help everyone enter the right information. Associating the form label and
+                  form field within the HTML means that people using screen readers also have access
+                  to the label.</p>
+                  <p>The position of the label text is important. For checkboxes and radio buttons the label
+                  is best positioned to the right of the field. For all other field types the label is best
+                  positioned to the left.</p>
                 </div>
               </article>
            </div>
