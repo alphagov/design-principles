@@ -671,7 +671,7 @@ html {
   }
   
   .js-enabled #wrapper .open-section .content > * {
-    opacity: 1;
+    opacity: 1!important;
   }
 
 }
