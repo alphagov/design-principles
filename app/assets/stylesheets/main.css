@@ -396,8 +396,9 @@ html {
 
 #wrapper article .examples .caption {
   font-family: Helmet, Freesans, sans-serif;
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-weight: 400;
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #wrapper article .examples .highlight{
