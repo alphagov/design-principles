@@ -721,32 +721,6 @@ html {
 }
 
 
-/* print styles */
-
-@media print and (min-width: 100px) {
-  html {
-    font-size: 9px!important;
-  }
-  
-  header, nav, .principles {
-    margin: 0!important;
-    /*max-width: 88%!important;*/
-  }
-
-  article {
-    width: 100%!important;
-  }
-
-  body nav {
-    display: block!important;
-  }
-  
-  .principle {
-    page-break-before: always;
-  } 
-}
-
-
 /* Styleguide */
 
 #wrapper.styleguide article p {
@@ -766,6 +740,39 @@ html {
 @media (max-width: 640px) {
   #wrapper.styleguide article p {
     width: 100%;
+  }
+}
+
+
+/* print styles */
+
+@media print {
+  html {
+    font-size: 9px!important;
+  }
+  
+  header, nav, .principles {
+    margin: 0!important;
+    /*max-width: 88%!important;*/
+  }
+
+  article {
+    width: 100%!important;
+  }
+
+  body nav {
+    display: block!important;
+  }
+  
+  .principle,
+  .examples {
+    page-break-before: always;
+  } 
+
+  article {
+    page-break-before: avoid;
+    page-break-after: avoid;
+  }
   }
 }
 
