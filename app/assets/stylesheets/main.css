@@ -303,6 +303,8 @@ html {
 }
 
 #wrapper article #first + h2 {
+  top: -13px;
+  top: -1.3rem;
   color: #dd322d;
 }
 
