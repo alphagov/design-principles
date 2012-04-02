@@ -331,6 +331,10 @@ html {
   overflow: visible;
 }
 
+.lte-ie8 #wrapper article .examples {
+  height: 1%;
+}
+
 #wrapper article .examples .content {
   position: relative;
   clear: both;
