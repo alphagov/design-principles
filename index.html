@@ -513,6 +513,35 @@ No&lt;/label&gt;</code></pre>
                   positioned to the left.</p>
                 </div>
               </article>
+
+              <article class="code">
+                <header>
+                  <h1>Skip links and hidden content</h1>
+                  <p class="status tried">Tried &amp; tested</p>
+                </header>
+                <div class="example">
+<pre><code>&lt;!-- In HTML --&gt;
+
+&lt;a href=”#content” <span class="highlight">class=”visuallyHidden”</span>&gt;Skip to content &lt;/a&gt;
+
+/* In CSS */
+.visuallyHidden {
+  <span class="highlight">position: absolute;
+  left: -999em;</span>
+}</code></pre>
+                </div>
+                <div class="caption">
+                  <p>Skip links lead to a point on the same page instead of another page. They provide a
+                  useful shortcut for people who do not use a mouse.</p>
+                  <p>The best place to include a skip to content link is towards the top of the page. This
+                  makes it easy for keyboard only users to reach, and it provides a convenient way of
+                  moving keyboard focus directly to the start of the main body of the page.</p>
+                  <p>Skip links may be hidden from view by default, but should be brought into view when
+                  the link is given keyboard focus. This approach makes the skip link available to both
+                  sighted and non sighted keyboard only users, whilst keeping the visual experience
+                  clean.</p>
+                </div>
+              </article>
            </div>
          </section>
          
