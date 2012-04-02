@@ -723,7 +723,6 @@ html {
 
 /* print styles */
 
-@media print {
   html {
     font-size: 9px!important;
   }
