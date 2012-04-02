@@ -75,6 +75,11 @@ html {
   list-style: none;
 }
 
+.lte-ie8 #wrapper ol > li li {
+  list-style-position: outside;
+  list-style-type: circle;
+}
+
 #wrapper header, #wrapper nav, #wrapper  .principles {
   position: relative;
   margin: 0 auto;
