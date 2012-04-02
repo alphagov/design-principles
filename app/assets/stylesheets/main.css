@@ -334,6 +334,7 @@ html {
 .lte-ie8 #wrapper article .examples,
 .lte-ie8 #wrapper article .examples article {
   height: 1%;
+  border: 1px solid blue;
 }
 
 #wrapper article .examples .content {
