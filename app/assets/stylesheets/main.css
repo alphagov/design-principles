@@ -328,6 +328,7 @@ html {
 
 #wrapper article .examples {
   clear: both;
+  overflow: visible;
 }
 
 #wrapper article .examples .content {
@@ -340,8 +341,8 @@ html {
 
 @media (max-width: 640px) {
   #wrapper article .examples .content {
-    margin-left: -26px;
-    margin-left: -2.6rem;
+    margin: 0 -13px;
+    margin: 0 -1.3rem;
   }
 }
 
