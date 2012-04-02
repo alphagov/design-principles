@@ -331,16 +331,6 @@ html {
   overflow: visible;
 }
 
-.lte-ie8 #wrapper article .examples {
-  height: 1%;
-  border-bottom: 10px solid red;
-}
-
-.lte-ie8 #wrapper article .examples article {
-  height: 1%;
-  border-bottom: 10px solid green;
-}
-
 #wrapper article .examples .content {
   position: relative;
   clear: both;
@@ -610,6 +600,7 @@ html {
   .js-enabled #wrapper {
     background-image: url(../images/dropdown_arrow_open.png);
     background-position: -5000px top;
+    background-repeat: no-repeat;
   }
 
   .js-enabled #wrapper .examples {
@@ -655,7 +646,9 @@ html {
     height: 0;
   }
   
-  .js-enabled #wrapper .open-section .content {
+  .js-enabled #wrapper .open-section .content,
+  .lte-ie8 .js-enabled #wrapper .examples .content {
+    /* reveal hidden examples & for IE */
     height: auto;
     overflow: visible;
        -moz-transition: none;
@@ -674,7 +667,9 @@ html {
            -transition: 0.9s ease;
   }
   
-  .js-enabled #wrapper .open-section .content > * {
+  .js-enabled #wrapper .open-section .content > *,
+  .lte-ie8 .js-enabled #wrapper .examples .content > * {
+    /* reveal hidden examples & for IE */
     opacity: 1;
   }
 
