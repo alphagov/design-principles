@@ -331,7 +331,8 @@ html {
   overflow: visible;
 }
 
-.lte-ie8 #wrapper article .examples {
+.lte-ie8 #wrapper article .examples,
+.lte-ie8 #wrapper article .examples article {
   height: 1%;
 }
 
