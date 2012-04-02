@@ -609,6 +609,8 @@ html {
   
   .js-enabled #wrapper .examples h2 {
     float: left;
+    display: inline;
+    overflow: hidden;
     min-width: 12em;
     padding: 11px 39px 1px 13px;
     padding: 1.1rem 3.9rem 1.1rem 1.3rem;
