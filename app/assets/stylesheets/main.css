@@ -853,6 +853,11 @@ html {
     font-size: 9px!important;
   }
 
+  #wrapper .beta-notice {
+    padding: 0 26px;
+    padding: 0 2.6rem;
+  }
+
   #wrapper .beta-notice a {
     display: none;
   }
