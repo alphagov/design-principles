@@ -442,10 +442,9 @@ html {
   color: #000;
   float: left;
   
-  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   text-transform: uppercase;
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.1538461538;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -475,6 +474,7 @@ html {
   border: none;
   float:left;
   color:#fff;
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   text-decoration: none;
 }
 #wrapper .beta-notice span{
