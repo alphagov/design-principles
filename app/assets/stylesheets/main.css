@@ -148,6 +148,11 @@ html {
     font-size: 26px;
     font-size: 2.6rem;
   }
+
+  #wrapper > header h1 {
+    margin-top: 26px;
+    margin-top: 2.6rem;
+  }
 }
 
 #wrapper h1 strong,
@@ -411,7 +416,7 @@ html {
   font-weight: bold;
   padding-top: 9px;
   padding-top: 0.9rem;
-  max-width: 75%;
+  max-width: 66.666%;
 }
 
 #wrapper article .examples h3 {
@@ -481,6 +486,12 @@ html {
   padding: 8px 13px;
   padding: 0.8rem 1.3rem;
   float:left;
+}
+@media (max-width: 640px) {
+  #wrapper .beta-notice span{
+    display: block;
+    padding-left: 0;
+  }
 }
 
 #wrapper .alpha-feedback{
