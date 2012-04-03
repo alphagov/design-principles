@@ -41,6 +41,7 @@ html {
 }
 
 #wrapper {
+  position: relative;
   color: #000;
   background: #fff;
   font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
@@ -49,15 +50,15 @@ html {
   font-size: 1.8rem;
   line-height: 1.4444444444;
   font-weight: 300;
-  padding: 0 52px 13px 104px;
-  padding: 0 5.2rem 1.3rem 10.4rem;
+  padding: 26px 52px 0 104px;
+  padding: 2.6rem 5.2rem 0 10.4rem;
   margin: 0;
 }
 
 @media (max-width: 640px) {
   #wrapper {
-    padding: 0 26px 13px;
-    padding: 0 2.6rem 1.3rem;
+    padding: 0 26px;
+    padding: 0 2.6rem;
   }
 }
 
@@ -80,7 +81,7 @@ html {
   list-style-type: bullet;
 }
 
-#wrapper header, #wrapper nav, #wrapper  .principles {
+#wrapper header, #wrapper nav, #wrapper .principles {
   position: relative;
   margin: 0 auto;
   max-width: 700px;
@@ -166,6 +167,23 @@ html {
   padding-top: 78px;
   padding-top: 7.8rem;
   min-height: 1px;
+}
+
+#wrapper header p {
+  max-width: 85%;
+  padding: 23px 0 3px;
+  padding: 2.3rem 0 0.3rem;
+}
+
+#wrapper .principles {
+  padding-bottom: 78px;
+  padding-bottom: 7.8rem;  
+}
+
+#wrapper .principles:after {
+  content: '.';
+  clear: both;
+  visibility: hidden;
 }
 
 #wrapper nav {
@@ -353,6 +371,10 @@ html {
   display: block;
 }
 
+#wrapper article .examples a:hover {
+  border-color: #fff;
+}
+
 #wrapper article .examples .example,
 #wrapper article .example a {
   border: none;
@@ -372,7 +394,7 @@ html {
   margin-top: 1px;
   padding: 0;
   display: block;
-  background: #eee;
+  background: #ddd;
 }
 
 #wrapper article .examples header {
@@ -412,8 +434,89 @@ html {
 }
 
 .header-context,
-.beta-notice{
+#footer .beta-notice{
   display:none;
+}
+
+#wrapper .beta-notice {
+  color: #000;
+  float: left;
+  
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.1538461538;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  
+  display:block;
+  position:absolute;
+  z-index: 100;
+  top:42px;
+  left: 50%;
+  margin-left: -323px;
+  margin-left: -32.3rem;
+}
+
+@media (max-width: 640px) {
+  #wrapper .beta-notice {
+    top: 0;
+    left: 0;
+    margin-left: 26px;
+    margin-left: 2.6rem;
+  }
+}
+
+#wrapper .beta-notice a{
+  padding: 8px 13px;
+  padding: 0.8rem 1.3rem;
+  background-color:#d43783;
+  border: none;
+  float:left;
+  color:#fff;
+  text-decoration: none;
+}
+#wrapper .beta-notice span{
+  padding: 8px 13px;
+  padding: 0.8rem 1.3rem;
+  float:left;
+}
+
+#wrapper .alpha-feedback{
+  position: relative;
+  clear:both;
+  padding: 0 26px 26px;
+  padding: 0 2.6rem 2.6rem;
+  background-color:#d43783;
+  color:#fff;
+}
+
+@media (max-width: 640px) {
+  #wrapper .alpha-feedback{
+    padding: 0 13px 13px;
+    padding: 0 1.3rem 1.3rem;
+  }
+}
+
+#wrapper .alpha-feedback h1 {
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
+#wrapper .alpha-feedback a { 
+  color: white;
+  border-color: white;
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+}
+
+#wrapper .alpha-feedback header {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper article .example {
+  background: transparent;
 }
 
 #wrapper article .examples p.status {
@@ -567,6 +670,10 @@ html {
 #wrapper article .examples .comparison .example img {
   float: left;
   width: 50%;
+}
+
+#wrapper article .examples .comparison .example img.full-width {
+  width: 100%;
 }
 
 #wrapper article .examples .comparison .caption {
@@ -749,6 +856,15 @@ html {
 @media print {
   html {
     font-size: 9px!important;
+  }
+
+  #wrapper .beta-notice {
+    padding: 0 26px;
+    padding: 0 2.6rem;
+  }
+
+  #wrapper .beta-notice a {
+    display: none;
   }
   
   header, nav, .principles {
