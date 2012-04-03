@@ -573,6 +573,10 @@ html {
   width: 50%;
 }
 
+#wrapper article .examples .comparison .example img.full-width {
+  width: 100%;
+}
+
 #wrapper article .examples .comparison .caption {
   clear: both;
   margin: 0 13px 13px;
