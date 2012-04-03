@@ -41,6 +41,7 @@ html {
 }
 
 #wrapper {
+  position: relative;
   color: #000;
   background: #fff;
   font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
@@ -49,15 +50,15 @@ html {
   font-size: 1.8rem;
   line-height: 1.4444444444;
   font-weight: 300;
-  padding: 0 52px 13px 104px;
-  padding: 0 5.2rem 1.3rem 10.4rem;
+  padding: 0 52px 0 104px;
+  padding: 0 5.2rem 0 10.4rem;
   margin: 0;
 }
 
 @media (max-width: 640px) {
   #wrapper {
-    padding: 0 26px 13px;
-    padding: 0 2.6rem 1.3rem;
+    padding: 0 26px;
+    padding: 0 2.6rem;
   }
 }
 
@@ -166,6 +167,17 @@ html {
   padding-top: 78px;
   padding-top: 7.8rem;
   min-height: 1px;
+}
+
+#wrapper .principles {
+  padding-bottom: 78px;
+  padding-bottom: 7.8rem;  
+}
+
+#wrapper .principles:after {
+  content: '.';
+  clear: both;
+  visibility: hidden;
 }
 
 #wrapper nav {
@@ -434,8 +446,21 @@ html {
   
   display:block;
   position:absolute;
-  top:40px;
+  top:42px;
+  left: 50%;
+  margin-left: -323px;
+  margin-left: -32.3rem;
 }
+
+@media (max-width: 640px) {
+  #wrapper .beta-notice {
+    top: 0;
+    left: 0;
+    margin-left: 26px;
+    margin-left: 2.6rem;
+  }
+}
+
 #wrapper .beta-notice a{
   display:block;
   padding: 8px 13px;
@@ -452,6 +477,34 @@ html {
   display:block;
   float:left;
 }
+
+#wrapper .alpha-feedback{
+  position: relative;
+  clear:both;
+  padding: 0 26px 26px;
+  padding: 0 2.6rem 2.6rem;
+  background-color:#d43783;
+  color:#fff;
+}
+
+@media (max-width: 640px) {
+  #wrapper .alpha-feedback{
+    padding: 0 13px 13px;
+    padding: 0 1.3rem 1.3rem;
+  }
+}
+
+#wrapper .alpha-feedback a { 
+  color: white;
+  border-color: white;
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
+}
+
+#wrapper .alpha-feedback header {
+  padding: 0;
+  margin: 0;
+}
+
 #wrapper article .example {
   background: transparent;
 }
