@@ -3,7 +3,7 @@ source 'https://gems.gemfury.com/vo6ZrmjBQu5szyywDszE/'
 
 gem 'slimmer'
 gem "jekyll"
-gem 'rack'
+gem 'rack', '1.3.5'
 gem 'rake', '0.9.2'
 gem "term-ansicolor"
 gem "rack-contrib"
