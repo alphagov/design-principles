@@ -353,6 +353,10 @@ html {
   display: block;
 }
 
+#wrapper article .examples a:hover {
+  border-color: #fff;
+}
+
 #wrapper article .examples .example,
 #wrapper article .example a {
   border: none;
