@@ -847,6 +847,10 @@ html {
   html {
     font-size: 9px!important;
   }
+
+  #wrapper .beta-notice a {
+    display: none;
+  }
   
   header, nav, .principles {
     margin: 0!important;
