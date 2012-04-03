@@ -169,6 +169,12 @@ html {
   min-height: 1px;
 }
 
+#wrapper header p {
+  max-width: 85%;
+  padding: 36px 0 3px;
+  padding: 3.6rem 0 0.3rem;
+}
+
 #wrapper .principles {
   padding-bottom: 78px;
   padding-bottom: 7.8rem;  
