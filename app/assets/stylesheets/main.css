@@ -499,6 +499,11 @@ html {
   }
 }
 
+#wrapper .alpha-feedback {
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
 #wrapper .alpha-feedback a { 
   color: white;
   border-color: white;
