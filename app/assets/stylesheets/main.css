@@ -491,6 +491,7 @@ html {
   #wrapper .beta-notice span{
     display: block;
     padding-left: 0;
+    clear:both;
   }
 }
 
