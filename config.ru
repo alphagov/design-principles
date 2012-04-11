@@ -15,6 +15,10 @@ map "/designprinciples/styleguide" do
   run Rack::File.new("_site/styleguide.html")
 end
 
+map "/designprinciples/digital" do
+  run Rack::File.new("_site/digital.html")
+end
+
 #use Rack::TryStatic, root: "_site/", urls: %w[/], :try => ['.html', 'index.html', '/index.html']
 # otherwise 404 NotFound
 #run lambda { [404, {'Content-Type' => 'text/plain'}, ['whoops! Not Found']] }
