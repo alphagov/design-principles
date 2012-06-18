@@ -320,7 +320,6 @@ html {
 
 #wrapper article h2 {
   font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
-  text-transform: uppercase;
   font-size: 13px;
   font-size: 1.3rem;
   line-height: 1.1538461538;
@@ -850,7 +849,6 @@ html {
 
 #wrapper.styleguide article > p,
 #wrapper.styleguide article > ul li {
-  font-family: 'Georgia', serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.625;
