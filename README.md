@@ -3,7 +3,7 @@ static site which can make use of basic templates.
 
 When working on the project you can run the following command:
 
-    bundle exec rackup
+    ./startup.sh
 
 This will start a web server on port 9292, so visit
 [localhost:9292](http://localhost:9292) and you should see the site. If you change the
