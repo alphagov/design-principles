@@ -2,18 +2,36 @@
 layout: main
 title: GDS design principles
 ---
+<style>
+#wrapper .sections{
+  margin:0 auto;
+  max-width: 70rem;
+  position: relative;
+}
+.sections li{
+  display:inline;
+}
+#wrapper .sections li a{
+  background-color:#DD322D;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  border:none;
+  padding:0.5em 1em;
+}
+</style>
 
  <div id="wrapper" class="design-principles styleguide"> 
   <header>
      <h1>Government Digital Service <strong>Content principles</strong></h1>
       <p>This style guide is part of the <a href="/designprinciples">Design Principles</a> document.</p>
   </header>
-  <ul>
-    <li><a href="">Section 1</a></li>
-    <li><a href="">Section 2</a></li>
-    <li><a href="">Section 3</a></li>
+  <ul class="sections">
+    <li><a href="#style-guide">Style guide</a></li>
+    <li><a href="#style-differences">Style differences</a></li>
+    <li><a href="#cheat-sheet">Cheat sheet</a></li>
   </ul>
-  <ol class="principles">
+  <ol class="principles" id="style-guide">
     <li class="principle">
       <article>
         <h1>Style guide: GOV.UK</h1>
@@ -257,6 +275,8 @@ title: GDS design principles
         <p>You can add alternatives to the online transaction at the bottom of the page.</p>
       </article>
     </li>
+  </ol>
+  <ol class="principles" id="style-differences">
     <li class="principle">
       <article>
         <h1>Style differences: Mainstream<br />(citizen/business)</h1>
@@ -342,6 +362,8 @@ title: GDS design principles
         </ul>
       </article>
     </li>
+  </ol>
+  <ol class="principles" id="cheat-sheet">
     <li class="principle">
       <article>
         <h1>gov.uk (mainstream)<br />points of style cheat sheet</h1>
