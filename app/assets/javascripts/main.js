@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
   
   exampleToggles("examples");
-  sectionToggles("sections");
+  
 
   function exampleToggles(section){
   	$("."+section+" h2").each(function(){
@@ -16,10 +16,6 @@ jQuery(document).ready(function() {
     });
   }
 
-
-  function sectionToggles(section){
-    
-  }
 });
 
 
