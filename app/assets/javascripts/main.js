@@ -1,8 +1,9 @@
 jQuery(document).ready(function() {
+  
+  exampleToggles("examples");
+  sectionToggles("sections");
 
-  sectionToggles("examples");
-
-  function sectionToggles(section){
+  function exampleToggles(section){
   	$("."+section+" h2").each(function(){
 
   		var text = $(this).html("<a href=''>"+$(this).text()+"</a>");
@@ -13,6 +14,11 @@ jQuery(document).ready(function() {
         e.preventDefault();
         return false;
     });
+  }
+
+
+  function sectionToggles(section){
+    
   }
 });
 

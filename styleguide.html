@@ -15,9 +15,25 @@ title: GDS design principles
   background-color:#DD322D;
   color:#fff;
   text-decoration:none;
-  text-transform:uppercase;
   border:none;
   padding:0.5em 1em;
+}
+#wrapper article h2 {
+  letter-spacing: 0;
+  font-size: inherit;
+}
+#wrapper article li {
+  position: relative;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-left: -0.5em;
+  padding-left: 0.5em;
+  }
+#wrapper article .examples .process{
+  background-color:#ddd;
+}
+#wrapper article .examples ul {
+  margin-left:1em;
 }
 </style>
 
@@ -27,9 +43,9 @@ title: GDS design principles
       <p>This style guide is part of the <a href="/designprinciples">Design Principles</a> document.</p>
   </header>
   <ul class="sections">
-    <li><a href="#style-guide">Style guide</a></li>
-    <li><a href="#style-differences">Style differences</a></li>
-    <li><a href="#cheat-sheet">Cheat sheet</a></li>
+    <li><a href="#style-guide">GOV.UK</a></li>
+    <li><a href="#mainstream">Mainstream</a></li>
+    <li><a href="#inside-government">Inside Government</a></li>
   </ul>
   <ol class="principles" id="style-guide">
     <li class="principle">
@@ -276,7 +292,7 @@ title: GDS design principles
       </article>
     </li>
   </ol>
-  <ol class="principles" id="style-differences">
+  <ol class="principles" id="mainstream">
     <li class="principle">
       <article>
         <h1>Style differences: Mainstream<br />(citizen/business)</h1>
@@ -361,84 +377,98 @@ title: GDS design principles
           <li>main information for this section: effect on other benefits, appeals and edge cases &ndash; also more information on how things are worked out</li>
         </ul>
       </article>
+    
+     <section class="examples">
+        
+      <article class="process">
+        <section class="examples">
+             <h2>Cheat sheet</h2>
+             <div class="content">
+              <article class="process no-image">
+                <header>
+                  <h1>GOV.UK (mainstream) points of style cheat sheet</h1>
+                
+                </header>
+                
+                <div class="caption">
+                  <h3>Acronyms</h3>
+                    <p>Common acronyms don&rsquo;t need markdown (eg VAT, UK, US, EU, MP). Don&rsquo;t use acronyms if you&rsquo;re not going to use the acronym later in the text.</p>
+                    <p>Acronyms that are used as words eg NATO, AIDS still take capitalisation</p>
+                    <h3>Addressing the user</h3>
+                    <p>Always address the user as &lsquo;you&rsquo; and don&rsquo;t use &lsquo;we&rsquo;, &lsquo;I&rsquo;, &lsquo;our&rsquo;, &lsquo;us&rsquo;.</p>
+                    <h3>Bullets</h3>
+                    <p>This is how to do bullets:</p>
+                    <ul>
+                      <li>have a lead&ndash;in sentence</li>
+                      <li>don&rsquo;t end them with &lsquo;and&rsquo;, &lsquo;or&rsquo; or a semicolon</li>
+                      <li>don&rsquo;t use sentences within a bullet point &ndash; dashes, semicolons etc are okay</li>
+                    </ul>
+                    <h3>Capitalisation</h3>
+                    <p>Capitalise:</p>
+                    <ul>
+                      <li>names of government schemes eg Right to Buy, Queen&rsquo;s Awards for Enterprise</li>
+                    </ul>
+                    <h3>Don&rsquo;t capitalise:</h3>
+                    <ul>
+                      <li>government (unless part of a name)</li>
+                      <li>the titles of publications. Use an initial cap only. Eg &lsquo;Implementing self&ndash;financing for council housing&rsquo; (unless it includes a phrase which should be capitalised for other reasons eg &lsquo;Review of the Right to Buy scheme&rsquo;).</li>
+                      <li>seasons eg summer</li>
+                      <li>compass directions eg the south of England</li>
+                    </ul>
+                    <h3>Contractions</h3>
+                    <ul>
+                      <li>Use as much as possible (they&rsquo;ll, you&rsquo;ll etc)</li>
+                    </ul>
+                    <h3>Dates and times</h3>
+                    <ul>
+                      <li>6 September 1976</li>
+                      <li>tax year 2011 to 2012</li>
+                      <li>5:30pm and 11am (not 1730hrs)</li>
+                      <li>Monday to Friday, 9am to 5pm</li>
+                      <li>10 November to 21 December</li>
+                    </ul>
+                    <h3>Eg, etc and ie</h3>
+                    <p>Don&rsquo;t use full stops between these notations.</p>
+                    <h3>Email</h3>
+                    <p>Always write it in full and as a hyperlink.</p>
+                    <h3>Legal language</h3>
+                    <p>If it is a legal requirement, use &lsquo;must&rsquo;<br />
+                    If this doesn&rsquo;t provide enough emphasis, use &lsquo;legal requirement&rsquo;</p>
+                    <h3>Links</h3>
+                    <p>Link to online services first, offline services after (where possible).<br />
+                    Use external markdown where necessary.</p>
+                    <h3>Links to documents:</h3>
+                    <p>Download &lsquo;This is the document title&rsquo; (PDF, 69KB)<br />
+                    Check all links on preview before publishing. Make sure link text is helpful, not &ldquo;click here&rdquo;.</p>
+                    <h3>Lists</h3>
+                    <p>Use bullets for more than a couple of items. If doing a list in a sentence, use commas to separate items, not semicolons.</p>
+                    <h3>Measurements</h3>
+                    <p>Use numerals and spell out measurements at first mention eg 10 kilograms<br />
+                    Abbreviate kilograms to kg only after it is first spelt out and use markdown </p>
+                    <h3>Numbers and money</h3>
+                    <ul>
+                      <li>&pound;186m (not million)</li>
+                      <li>&pound;860,000 not &pound;0.86m</li>
+                      <li>1,000</li>
+                      <li>All numbers are in numerics (including 1&ndash;9)</li>
+                      <li>Use words with common sense, eg when starting a headline: Thirty four hula hoops found in researcher&rdquo;s drawer</li>
+                      <li>Use words for common expressions, eg &ldquo;the minister will be looking at one or two areas&rdquo;</li>
+                      <li style="color: red;">Quotes</li>
+                      <li>Use single quotes for &ldquo;unusual terms&rdquo;</li>
+                      <li>Text emphasis</li>
+                      <li>Use bold very sparingly</li>
+                    </ul>
+
+                </div>
+              </article>
+
+             </div>
+        </section>
+      </article>
+      </section>
     </li>
   </ol>
-  <ol class="principles" id="cheat-sheet">
-    <li class="principle">
-      <article>
-        <h1>gov.uk (mainstream)<br />points of style cheat sheet</h1>
-        <div class="outline">
-          <p>(Print this out as a handy reference)</p>
-        </div>
-        <h2>Acronyms</h2>
-        <p>Common acronyms don&rsquo;t need markdown (eg VAT, UK, US, EU, MP). Don&rsquo;t use acronyms if you&rsquo;re not going to use the acronym later in the text.</p>
-        <p>Acronyms that are used as words eg NATO, AIDS still take capitalisation</p>
-        <h2>Addressing the user</h2>
-        <p>Always address the user as &lsquo;you&rsquo; and don&rsquo;t use &lsquo;we&rsquo;, &lsquo;I&rsquo;, &lsquo;our&rsquo;, &lsquo;us&rsquo;.</p>
-        <h2>Bullets</h2>
-        <p>This is how to do bullets:</p>
-        <ul>
-          <li>have a lead&ndash;in sentence</li>
-          <li>don&rsquo;t end them with &lsquo;and&rsquo;, &lsquo;or&rsquo; or a semicolon</li>
-          <li>don&rsquo;t use sentences within a bullet point &ndash; dashes, semicolons etc are okay</li>
-        </ul>
-        <h2>Capitalisation</h2>
-        <p>Capitalise:</p>
-        <ul>
-          <li>names of government schemes eg Right to Buy, Queen&rsquo;s Awards for Enterprise</li>
-        </ul>
-        <h2>Don&rsquo;t capitalise:</h2>
-        <ul>
-          <li>government (unless part of a name)</li>
-          <li>the titles of publications. Use an initial cap only. Eg &lsquo;Implementing self&ndash;financing for council housing&rsquo; (unless it includes a phrase which should be capitalised for other reasons eg &lsquo;Review of the Right to Buy scheme&rsquo;).</li>
-          <li>seasons eg summer</li>
-          <li>compass directions eg the south of England</li>
-        </ul>
-        <h2>Contractions</h2>
-        <ul>
-          <li>Use as much as possible (they&rsquo;ll, you&rsquo;ll etc)</li>
-        </ul>
-        <h2>Dates and times</h2>
-        <ul>
-          <li>6 September 1976</li>
-          <li>tax year 2011 to 2012</li>
-          <li>5:30pm and 11am (not 1730hrs)</li>
-          <li>Monday to Friday, 9am to 5pm</li>
-          <li>10 November to 21 December</li>
-        </ul>
-        <h2>Eg, etc and ie</h2>
-        <p>Don&rsquo;t use full stops between these notations.</p>
-        <h2>Email</h2>
-        <p>Always write it in full and as a hyperlink.</p>
-        <h2>Legal language</h2>
-        <p>If it is a legal requirement, use &lsquo;must&rsquo;<br />
-        If this doesn&rsquo;t provide enough emphasis, use &lsquo;legal requirement&rsquo;</p>
-        <h2>Links</h2>
-        <p>Link to online services first, offline services after (where possible).<br />
-        Use external markdown where necessary.</p>
-        <h2>Links to documents:</h2>
-        <p>Download &lsquo;This is the document title&rsquo; (PDF, 69KB)<br />
-        Check all links on preview before publishing. Make sure link text is helpful, not &ldquo;click here&rdquo;.</p>
-        <h2>Lists</h2>
-        <p>Use bullets for more than a couple of items. If doing a list in a sentence, use commas to separate items, not semicolons.</p>
-        <h2>Measurements</h2>
-        <p>Use numerals and spell out measurements at first mention eg 10 kilograms<br />
-        Abbreviate kilograms to kg only after it is first spelt out and use markdown </p>
-        <h2>Numbers and money</h2>
-        <ul>
-          <li>&pound;186m (not million)</li>
-          <li>&pound;860,000 not &pound;0.86m</li>
-          <li>1,000</li>
-          <li>All numbers are in numerics (including 1&ndash;9)</li>
-          <li>Use words with common sense, eg when starting a headline: Thirty four hula hoops found in researcher&rdquo;s drawer</li>
-          <li>Use words for common expressions, eg &ldquo;the minister will be looking at one or two areas&rdquo;</li>
-          <li style="color: red;">Quotes</li>
-          <li>Use single quotes for &ldquo;unusual terms&rdquo;</li>
-          <li>Text emphasis</li>
-          <li>Use bold very sparingly</li>
-        </ul>
-      </article>
-    </li>
+  <ol class="principles" id="inside-government">
     <li class="principle">
       <article>
         <h1>Style differences:<br />Inside Government beta</h1>
@@ -687,84 +717,98 @@ title: GDS design principles
         <p>In some instances, such as appointments or official communications, you may have to refer to someone by their full title, eg The Right Honourable Lord Chancellor and Secretary of State for Justice Kenneth Clarke.</p>
         <p>Ministers and MPs are given their full titles without the Mr or Mrs &ndash; for example, Prime Minister David Cameron. Use the commonly understood acronym MPs where possible, not Members of Parliament.</p>
       </article>
+      <section class="examples">
+        
+      <article class="process">
+        <section class="examples open-section">
+             <h2>Cheat sheet</h2>
+             <div class="content">
+              <article class="process no-image">
+                <header>
+                  <h1>gov.uk/government &ndash; points of style cheat sheet</h1>
+                  
+                </header>
+                
+                <div class="caption">
+                  <h3>Addressing the user</h3>
+                  <p>Always address the user use &lsquo;we&rsquo;, &lsquo;I&rsquo;, &lsquo;our&rsquo;, &lsquo;us&rsquo;, if it is clear.</p>
+                  <h3>Headings</h3>
+                  <p>The top level of heading you can use is H2 (##).</p>
+                  <h3>Capitalisation</h3>
+                  <p>Capitalise:</p>
+                  <ul>
+                    <li>job titles for specific people, eg Lieutenant Sanger, British Ambassador Alan Maddrell</li>
+                    <li>Parliament, the House</li>
+                    <li>British Embassy (when referring to or implying one specific embassy, eg &ldquo;the British Embassy in Madrid&rdquo;, &ldquo;Protestors outside the British Embassy&rdquo;)</li>
+                    <li>an Act or a Bill</li>
+                    <li>titles of specific Acts or Bills eg Housing Reform Bill</li>
+                    <li>names of government schemes eg Right to Buy, Queen&rsquo;s Awards for Enterprise</li>
+                    <li>specific select committees (eg Public Administration Select Committee)</li>
+                    <li>Her Majesty the Queen</li>
+                    <li>job titles for an individual</li>
+                  </ul>
+                  <p>Don’t capitalise:</p>
+                  <ul>
+                    <li>government (unless part of a name)</li>
+                    <li>minister (unless part of a specific job title)</li>
+                    <li>department or ministry, unless referring to a specific one</li>
+                    <li>British embassy or consulate (when talking generally, eg &ldquo;Find a British embassy&rdquo;)</li>
+                    <li>job titles for a generic role holder (not an individual)</li>
+                    <li>the titles of publications. Eg &lsquo;Implementing self&ndash;financing for council housing&rsquo; (unless it includes a phrase which should be capitalised for other reasons eg &lsquo;Review of the Right to Buy scheme&rsquo;)</li>
+                    <li>white paper, green paper, command paper, House of Commons paper</li>
+                    <li>director general, deputy  director, director unless in a specific job title</li>
+                    <li>group and directorate (unless referring to specific ones)</li>
+                    <li>general mention of select committees (but DO cap specific ones)</li>
+                    <li>titles of articles</li>
+                  </ul>
+                  <h3>Dates and times</h3>
+                  <p>6 September 1976<br />
+                  5:30pm<br />
+                  11am (not 1100hrs)<br />
+                  Monday to Friday, 9am to 5pm<br />
+                  10 November to 21 December</p>
+                  <h3>Numbers and money</h3>
+                  <p>&pound;186m (not million)<br />
+                  &pound;860,000 not &pound;0.86m<br />
+                  1,000<br />
+                  Use words with common sense, eg when starting a headline: Thirty four hula hoops found in researcher&rsquo;s drawer<br />
+                  Use words for common expressions, eg &ldquo;the minister will be looking at one or two areas&rdquo;</p>
+                  <h3>Lists</h3>
+                  <p>Use bullets for more than a couple of items. If doing a list in a sentence, use commas to separate items, not semicolons.</p>
+                  <h3>Bullets</h3>
+                  <p>This is how to do bullets:</p>
+                  <ul>
+                    <li>have a lead&ndash;in sentence</li>
+                    <li>don&rsquo;t end them with &lsquo;and&rsquo;, &lsquo;or&rsquo; or a semicolon</li>
+                    <li>don&rsquo;t use sentences within a bullet point &ndash; dashes, semicolons etc are okay</li>
+                  </ul>
+                  <h3>Text emphasis</h3>
+                  <p>Use bold very sparingly. Italics even more so &ndash; never for blocks of text.</p>
+                  <h3>Quotes</h3>
+                  <p>Use single quotes for &lsquo;unusual terms&rsquo;.</p>
+                  <p>He said, &ldquo;Short quotes take double quotation marks.&rdquo;</p>
+                  <p>She said:</p>
+                  <p>&gt; This is a block quote, used for long quotes.<br />
+                  &gt;<br />
+                  &gt; Don&rsquo;t forget to use the arrow between paragraphs as well.</p>
+                  <h3>Acronyms</h3>
+                  <p>Common acronyms don&rsquo;t need markdown (eg VAT, UK, US, EU, MP). Don&rsquo;t use acronyms if you&rsquo;re not going to use the acronym later in the text.</p>
+                  <p>Tip: for acronyms you use frequently, have a file you can copy/paste.</p>
+                  <h3>Links</h3>
+                  <p>Use markdown where necessary.</p>
+                  <p>Links to documents:<br />
+                  Download &lsquo;This is the document title&rsquo; (PDF, 69K)</p>
+                  <p>Check all links on preview before publishing. Make sure link text is helpful, not &ldquo;click here&rdquo;.</p>
+                  <h3>Footnotes</h3>
+                  <p>Don't use them.</p>
+
+                </div>
+              </article>
+
+             </div>
+        </section>
+
     </li>
-    <li class="principle">
-      <article>
-        <h1>gov.uk/government &ndash; points of style cheat sheet</h1>
-        <div class="outline">
-          <p>(Print this out as a handy reference)</p>
-        </div>
-        <h2>Addressing the user</h2>
-        <p>Always address the user use &lsquo;we&rsquo;, &lsquo;I&rsquo;, &lsquo;our&rsquo;, &lsquo;us&rsquo;, if it is clear.</p>
-        <h2>Headings</h2>
-        <p>The top level of heading you can use is H2 (##).</p>
-        <h2>Capitalisation</h2>
-        <p>Capitalise:</p>
-        <ul>
-          <li>job titles for specific people, eg Lieutenant Sanger, British Ambassador Alan Maddrell</li>
-          <li>Parliament, the House</li>
-          <li>British Embassy (when referring to or implying one specific embassy, eg &ldquo;the British Embassy in Madrid&rdquo;, &ldquo;Protestors outside the British Embassy&rdquo;)</li>
-          <li>an Act or a Bill</li>
-          <li>titles of specific Acts or Bills eg Housing Reform Bill</li>
-          <li>names of government schemes eg Right to Buy, Queen&rsquo;s Awards for Enterprise</li>
-          <li>specific select committees (eg Public Administration Select Committee)</li>
-          <li>Her Majesty the Queen</li>
-          <li>job titles for an individual</li>
-        </ul>
-        <p>Don’t capitalise:</p>
-        <ul>
-          <li>government (unless part of a name)</li>
-          <li>minister (unless part of a specific job title)</li>
-          <li>department or ministry, unless referring to a specific one</li>
-          <li>British embassy or consulate (when talking generally, eg &ldquo;Find a British embassy&rdquo;)</li>
-          <li>job titles for a generic role holder (not an individual)</li>
-          <li>the titles of publications. Eg &lsquo;Implementing self&ndash;financing for council housing&rsquo; (unless it includes a phrase which should be capitalised for other reasons eg &lsquo;Review of the Right to Buy scheme&rsquo;)</li>
-          <li>white paper, green paper, command paper, House of Commons paper</li>
-          <li>director general, deputy  director, director unless in a specific job title</li>
-          <li>group and directorate (unless referring to specific ones)</li>
-          <li>general mention of select committees (but DO cap specific ones)</li>
-          <li>titles of articles</li>
-        </ul>
-        <h2>Dates and times</h2>
-        <p>6 September 1976<br />
-        5:30pm<br />
-        11am (not 1100hrs)<br />
-        Monday to Friday, 9am to 5pm<br />
-        10 November to 21 December</p>
-        <h2>Numbers and money</h2>
-        <p>&pound;186m (not million)<br />
-        &pound;860,000 not &pound;0.86m<br />
-        1,000<br />
-        Use words with common sense, eg when starting a headline: Thirty four hula hoops found in researcher&rsquo;s drawer<br />
-        Use words for common expressions, eg &ldquo;the minister will be looking at one or two areas&rdquo;</p>
-        <h2>Lists</h2>
-        <p>Use bullets for more than a couple of items. If doing a list in a sentence, use commas to separate items, not semicolons.</p>
-        <h2>Bullets</h2>
-        <p>This is how to do bullets:</p>
-          <li>have a lead&ndash;in sentence</li>
-          <li>don&rsquo;t end them with &lsquo;and&rsquo;, &lsquo;or&rsquo; or a semicolon</li>
-          <li>don&rsquo;t use sentences within a bullet point &ndash; dashes, semicolons etc are okay</li>
-        </ul>
-        <h2>Text emphasis</h2>
-        <p>Use bold very sparingly. Italics even more so &ndash; never for blocks of text.</p>
-        <h2>Quotes</h2>
-        <p>Use single quotes for &lsquo;unusual terms&rsquo;.</p>
-        <p>He said, &ldquo;Short quotes take double quotation marks.&rdquo;</p>
-        <p>She said:</p>
-        <p>> This is a block quote, used for long quotes.<br />
-        ><br />
-        > Don&rsquo;t forget to use the arrow between paragraphs as well.</p>
-        <h2>Acronyms</h2>
-        <p>Common acronyms don&rsquo;t need markdown (eg VAT, UK, US, EU, MP). Don&rsquo;t use acronyms if you&rsquo;re not going to use the acronym later in the text.</p>
-        <p>Tip: for acronyms you use frequently, have a file you can copy/paste.</p>
-        <h2>Links</h2>
-        <p>Use markdown where necessary.</p>
-        <p>Links to documents:<br />
-        Download &lsquo;This is the document title&rsquo; (PDF, 69K)</p>
-        <p>Check all links on preview before publishing. Make sure link text is helpful, not &ldquo;click here&rdquo;.</p>
-        <h2>Footnotes</h2>
-        <p>Don't use them.</p>
-      </article>
-    </li>
+    
    </ol>
 </div>
