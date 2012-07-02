@@ -4,7 +4,7 @@ require 'rack/contrib/try_static'
 require "bundler/setup"
 require 'slimmer'
 
-use Slimmer::App, asset_host: "https://static.preview.alphagov.co.uk/"
+use Slimmer::App, asset_host: "https://static.production.alphagov.co.uk/"
 
 map "/designprinciples" do
   run Rack::File.new("_site/index.html")
