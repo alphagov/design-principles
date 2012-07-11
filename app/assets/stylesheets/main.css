@@ -329,7 +329,7 @@ html {
   padding: 1.6rem 0 0.8rem;
 }
 
-#wrapper article #first + h2 {
+#wrapper article hgroup h1 + h2 {
   position: relative;
   top: -13px;
   top: -1.3rem;
