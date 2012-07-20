@@ -1,0 +1,956 @@
+---
+layout: main
+title: GDS design principles
+---
+
+ <div id="wrapper" class="design-principles performanceframework"> 
+  <div class="beta-notice">
+    <div class="inner">
+    <p>
+    <a href="http://digital.cabinetoffice.gov.uk/2012/04/03/introducing-the-design-principles-alpha-for-gds/">BETA</a> <span>Last updated 20 July 2012</span>
+    </p>
+    </div>
+  </div>
+  <header>
+    <h1>Government Digital Service <strong>Performance Framework</strong></h1>
+    <p>How do we know if a service is working for users? How do we know how well it’s working? How can we tell if the changes we make are improving the service?</p>
+    <p>Every government transactional service should have a single service owner accountable for its performance. The service owner will know the answer to these questions. They will have the information at their fingertips. An empowered service owner will have more than just information. They will be iterating the design of the service frequently to learn what works and what doesn’t. They will do this on a weekly, or even daily, basis.</p>
+    <p>A service owner who knows how well a service is working for users, and who is empowered to iterate the design of the service on a daily basis, will need the the right data and the right tools. Digital tools provide us with a uniquely precise and automated way to measure service performance and to generate user insight. We can use data feeds to access and combine data from multiple sources, including digital, phone and face to face channels. We can do advanced analysis and powerful data visualisations using the latest software. And we can test new designs, monitoring how well they work with optimisation tools. All this means organisations can harness information to improve their ability to deliver.</p>
+    <p>Harnessing the power of digital tools is vital for improving the performance of public services, but it can be difficult to know where to start. This guide aims to empower service owners to design and improve transactional public services. It is based around seven principles, with easy-to-follow checklists to help you get started. We have also included a worked example for how we have approached performance management for the new GOV.UK single government domain.</p>
+    <p>This framework focuses on transactional services. In this context, a transactional service is where the user does something such as apply for a license, register a birth, pay tax or claim benefits. This is in contrast to a publishing service where the user wants to find out information about something. It also excludes ‘back office’ functions like payroll, procurement or human resources systems, which are being addressed through existing efficiency programmes.</p>
+    <p>The Government has set out a clear objective on the use of performance management to help Departments drive improvements in transactional service delivery. By the end of this year, we want to establish a consistent set of cross-government metrics for digital service delivery, and publish the cost per transaction of high value services. This will enable the Government to monitor and continually improve its services.</p>
+    <p>GDS has developed this framework as a first step in helping teams to achieve this goal.</p>
+  </header>
+   <nav>
+    <ol>
+     <li>
+      <a href="#first">
+       <span class="icon">1</span>
+       <span class="caption">Understand user needs</span>
+      </a>
+     </li>
+     <li>
+       <a href="#second">
+        <span class="icon">2</span>
+        <span class="caption">Decide what to measure</span>
+       </a>
+     </li>
+     <li>
+       <a href="#third">
+        <span class="icon">3</span>
+        <span class="caption">Install and configure platforms</span>
+       </a>
+     </li>
+     <li>
+       <a href="#forth">
+        <span class="icon">4</span>
+        <span class="caption">Establish a baseline</span>
+       </a>
+     </li>
+     <li>
+       <a href="#fifth">
+        <span class="icon">5</span>
+        <span class="caption">Aggregate data</span>
+       </a>
+     </li>
+     <li>
+       <a href="#sixth">
+        <span class="icon">6</span>
+        <span class="caption">Analyse and visualise data</span>
+       </a>
+     </li>
+     <li>
+       <a href="#seventh">
+        <span class="icon">7</span>
+        <span class="caption">Monitor, iterate, and improve</span>
+       </a>
+     </li>
+    </ol>     
+   </nav>
+   
+   <p class="additional">
+    <a href="#further-reading">
+     <span class="caption">Further reading</span>
+    </a>
+   </p>
+   
+   <ol class="principles">
+     <li class="principle">
+       <article>
+       
+        <hgroup>
+          <h1 id="first">Understand user needs</h1>
+        </hgroup>
+
+       
+         <div class="outline">
+           <p>
+            In order to improve the performance of a service, you have to
+            analyse and identify the information different audiences will need
+            to assess that performance.</p>
+         </div>
+         
+         <section class="why">
+           <div class="content">
+            <h2>Checklist</h2>
+            <ol class="checklist">
+             <li><span class="icon">a.</span><span class="caption">Have you identified who your users are?</span></li>
+             <li><span class="icon">b.</span><span class="caption">Have you articulated your users’ needs?</span></li>
+             <li><span class="icon">c.</span><span class="caption">Have you prioritised services (e.g. by number of users or cost)?</span></li>
+            </ol>
+             <p>There is typically a hierarchy of interested users, all of whom
+             will have different metrics for success. Technical staff might have
+             operational and optimisation concerns, while senior management and
+             ministers will have more strategic and comparative concerns.These
+             needs will be reflected in the organisation’s business
+             objectives.</p>
+             <h2>Worked example - GOV.UK</h2>
+             <p>When we thought about who would need information on the
+             performance of GOV.UK, we considered a range of audiences from
+             ministers and senior management through to GDS product managers and
+             developers. We also considered what information the public might be
+             interested in. All of these groups will have different definitions
+             of what they mean by ‘good performance’. The following table
+             illustrates some of the key requirements.</p>
+           </div>
+           <table>
+            <caption class="visuallyhidden">Key requirements</caption>
+            <thead>
+             <tr>
+              <th>User</th>
+              <th>User need</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td>Member of the public</td>
+              <td>I want to see information of the success of GDS and GOV.UK so I can see if Government is using my money effectively.</td>
+             </tr>
+             <tr>
+              <td>GDS developer</td>
+              <td>I want to have API access to the best data available so that I can build a tool/dashboard/report to analyse my service.</td>
+             </tr>
+             <tr>
+              <td>GDS product manager</td>
+              <td>I want to have detailed information available about my product so that I know where to focus my attention.</td>
+             </tr>
+             <tr>
+              <td>Senior manager</td>
+              <td>I want to have quick access to the latest information for my area so that I can make decisions about future priorities.</td>
+             </tr>
+             <tr>
+              <td>Government Minister</td>
+              <td> want to see a high level report on the effectiveness of GDS and GOV.UK so I can assess how successful it is.</td>
+             </tr>
+            </tbody>
+           </table>
+         </section>
+         
+         <section class="examples open-section">           
+           <div class="content">
+            <article class="table-view">
+              <header>
+                <h1>Example</h1>
+                <p>This table might be useful as a template when thinking about user needs.</p>
+              </header>
+              <table>
+               <caption class="visuallyhidden">User needs</caption>
+               <thead>
+                <tr>
+                 <th>User</th>
+                 <th>Objectives</th>
+                 <th>Questions</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>Senior officials: Ministers, Dept. Boards, the ‘Centre’.</td>
+                 <td>Risk management; maximise digital uptake; ensure value for money; control or reduce overall spend; public celebration of success.</td>
+                 <td>
+                  <ol>
+                   <li>How does this compare with other services on cost per transaction?</li>
+                   <li>What do users think of our services?</li>
+                   <li>How can we increase the number of people using the service digitally?</li>
+                  </ol>
+                 </td>
+                </tr>
+                <tr>
+                 <td>Management: Senior Responsible Officers, Middle management, product managers.</td>
+                 <td>Minimise failed transactions; control queues; hit budget target; optimise staffing levels; accurate financial and performance forecasting.</td>
+                 <td>
+                  <ol>
+                   <li>What are we likely to spend by the year-end?</li>
+                   <li>How can we drive down channel costs?</li>
+                  </ol>
+                 </td>
+                </tr>
+                <tr>
+                 <td>Operational: developers, frontline staff.</td>
+                 <td>Maximise service availability; minimise errors; minimise broken links; ensure search results are relevant; ensure domain is secure and handles customer data properly.</td>
+                 <td>
+                  <ol>
+                   <li>Is the service operating normally?</li>
+                   <li>Why are <a href="http://en.wikipedia.org/wiki/Bounce_rate">bounce rates</a> so high on the homepage?</li>
+                   <li>Who are our users and what do they need?</li>
+                  </ol>
+                 </td>
+                </tr>
+                <tr>
+                 <td>Public</td>
+                 <td>To know how public money is being spent; to know well public services are being run; to know the Government is responsive to public feedback on improving services.</td>
+                 <td>
+                  <ol>
+                   <li>How much money is the Government spending on public services?</li>
+                   <li>What is the cheapest way to deliver public services?</li>
+                   <li>How satisfied are people with public services?</li>
+                  </ol>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+            </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="second">Decide what to measure</h1>
+       
+         <div class="outline">
+           <p>Develop simple, actionable and collectable metrics based on your
+           understanding of user needs. Identify where that information will
+           come from and how frequently it will be needed.</p>
+         </div>
+         
+         <section class="why">
+           <div class="content">
+             <h2>Checklist</h2>
+             <ol class="checklist">
+              <li><span class="icon">a.</span><span class="caption">Have you identified who your users are?</span></li>
+              <li><span class="icon">b.</span><span class="caption">Have you articulated your users’ needs?</span></li>
+              <li><span class="icon">c.</span><span class="caption">Have you prioritised services (e.g. by number of users or cost)?</span></li>
+             </ol>
+             <p>Key Performance Indicators (KPIs) will be few in number -
+             typically around five - and are top-line indicators of how well a
+             service is performing. For almost all transactional services, these
+             are likely to include the volume of transactions, the cost per
+             transaction and success (or conversion) rate - the proportion of
+             users attempting to use a transactional service that successfully
+             complete the task.</p>
+             <p>There will be many other, more granular metrics that will be useful for different audiences.</p>
+             <p>
+              It's good practice to record every event generated by the system
+              even if it’s not currently of interest. Don’t obsess over what to
+              measure: measure everything (where it is cost-effective to do so).
+              This maximises the flexibility to come back later and revise the
+              chosen metrics and tailor data visualisations to different
+              audiences. This information could come from a variety of sources,
+              for example Oracle and Excel for <a href="http://en.wikipedia.org/wiki/Customer_relationship_management">CRM</a> and finance databases, Google
+              Analytics for web testing and optimisation tools, or Nagios and
+              Pingdom for system monitoring.
+             </p>
+             <h2>Worked example - GOV.UK</h2>
+             <p>An approach that worked well for us was to run a brainstorming
+             session to generate a long list of metrics which we then narrowed
+             down by asking senior managers, <q>If you had to choose one KPI, what
+             would it be?</q> We settled on four KPIs: user trust, task completion,
+             reach and cost per successful visit.</p>
+           </div>
+           <table>
+            <caption class="visuallyhidden">KPIs</caption>
+           <thead>
+            <tr>
+             <th>Question</th>
+             <th>KPI</th>
+             <th>How measured</th>
+             <th>Source</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td>Do people trust the content?</td>
+             <td>User Trust</td>
+             <td>How much do you trust this information? (1 not at all, 5 trust completely)</td>
+             <td>Online survey</td>
+            </tr>
+            <tr>
+             <td>How many people are using it?</td>
+             <td>Reach</td>
+             <td>Number of visits per week, number of unique users per week</td>
+             <td>Web analytics</td>
+            </tr>
+            <tr>
+             <td>What proportion of visits are successful?</td>
+             <td>Task Completion</td>
+             <td>
+              <ul class="dashed-list">
+               <li><a href="#remote-usability-testing">Remote usability testing<a/></li>
+               <li>Were you able to get everything you needed today? (none/some/most/everything)</li>
+              </ul>
+             </td>
+             <td>
+              <ul class="dashed-list">
+               <li>Usability testing results</li>
+               <li>Online survey</li>
+              </ul>
+             </td>
+            </tr>
+            <tr>
+             <td>How much did it cost per successful visit?</td>
+             <td>Cost per successful visit</td>
+             <td>
+              <ol>
+               <li>Cost / (Task Completion x Reach)</li>
+               <li>This factors a measure of user success into a simple cost per visit metric, dividing it by task completion rate.</li>
+              </ol>
+             </td>
+             <td>Finance system, online survey, web analytics</td>
+            </tr>
+          </tbody>
+          </table>
+         </section>
+         
+         <section class="examples">
+           <h2>Example</h2>
+           <div class="content">
+             <article class="table-view">
+                <header>
+                  <p>This is an extended example to demonstrate some typical metrics and KPIs.</p>
+                </header>
+                <table>
+                 <caption class="visuallyhidden">Typical metrics and KPIs</caption>
+                 <thead>
+                  <tr>
+                   <th>User</th>
+                   <th>User story</th>
+                   <th>Action</th>
+                   <th>Metric or KPI</th>
+                   <th>Format</th>
+                   <th>Data source</th>
+                  </tr>
+                 </thead>
+                 <tbody>
+                  <tr>
+                   <td>Senior officials: Ministers, Dept. Boards, the 'Centre'.</td>
+                   <td>I want to know the cost per transaction of key government services so that I have an overview and can compare the financial performance of services</td>
+                   <td>Grant or withhold funding</td>
+                   <td>Cost per transaction</td>
+                   <td>Quarterly report</td>
+                   <td>Finance, Operations</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know the proportion of transactions delivered digitally for key government services so that I have an overall view on delivering 'Digital by Default' and can compare between services.</td>
+                   <td>Start a 'channel shift' initiative</td>
+                   <td>Number of transactions by channel (%)</td>
+                   <td>Quarterly report</td>
+                   <td>Operations</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know what the public think of key government services so that I have overall view of customer satisfaction and can compare between services</td>
+                   <td>Celebrate success publicly</td>
+                   <td>Customer satisfaction</td>
+                   <td>Quarterly report</td>
+                   <td>Survey</td>
+                  </tr>
+                  <tr>
+                   <td>Management: Senior Responsible Officers, Middle management, product managers.</td>
+                   <td>I want to know how much it is costing to deliver a specific service by channel so that I can drive costs down</td>
+                   <td>Implement a channel shift initiative</td>
+                   <td>Costs by channel</td>
+                   <td>Monthly report</td>
+                   <td>Finance, Operations</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know how much of my budget I have spent by resource so that I can forecast end-of-year spend and see whether I'm on track to hit target</td>
+                   <td>Request additional budget or re-allocate budget if necessary</td>
+                   <td>Costs by resource</td>
+                   <td>Monthly report</td>
+                   <td>Finance, Project software</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know how many attempted transactions resulted in failure for a specific service so that I can quickly act to improve the service</td>
+                   <td>Work with developers to test an alternative page design to see if it reduces the failure rate</td>
+                   <td>Success rate, Failure rate</td>
+                   <td>Daily dashboard</td>
+                   <td>Web analytics</td>
+                  </tr>
+                  <tr>
+                   <td>Operational: developers, frontline staff.</td>
+                   <td>I want to know if the service becomes unavailable so that I can take immediate action to restore it</td>
+                   <td>Investigate cause and resolve problem</td>
+                   <td>Uptime or Mean time between failures (MTBF)</td>
+                   <td>Realtime alert</td>
+                   <td>System monitoring</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know how specific pages are performing so that I can take steps to optimise if necessary</td>
+                   <td>Investigate cause and resolve problem</td>
+                   <td>Page response time</td>
+                   <td>Daily dashboard</td>
+                   <td>System monitoring</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to minimise the number of broken links so that the user experience is error free</td>
+                   <td>Investigate cause and resolve problem</td>
+                   <td>Number of broken links</td>
+                   <td>Daily dashboard</td>
+                   <td>Logs</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know if the service is being compromised so that I can take immediate action to avert an outage</td>
+                   <td>Investigate cause and resolve problem</td>
+                   <td>Number of attacks by type</td>
+                   <td>Realtime alert</td>
+                   <td>System monitoring</td>
+                  </tr>
+                  <tr>
+                   <td>Public</td>
+                   <td>I want to know how public money is being spent to that I can hold the Government to account</td>
+                   <td>Write to MP, Tweet or blog about experience</td>
+                   <td>Costs, cost per transaction</td>
+                   <td>Quarterly report</td>
+                   <td>Finance, Operations</td>
+                  </tr>
+                  <tr>
+                   <td></td>
+                   <td>I want to know how well public services are performing to make sure my voice is being heard</td>
+                   <td>Give feedback on a service</td>
+                   <td>Satisfaction</td>
+                   <td>Quarterly report</td>
+                   <td>Survey, Service desk</td>
+                  </tr>
+                 </tbody>
+                </table>
+             </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="third">Install and configure platforms</h1>
+       
+         <div class="outline">
+           <p>Install and configure reporting platforms that meet your needs.
+           Where possible, use platforms that enable the data to be piped
+           automatically into other systems. Using APIs (Application Programming
+           Interfaces) will stop you having to input data manually and allows
+           for aggregation across multiple platforms.</p>
+         </div>
+         
+         <section class="why">
+           <div class="content">
+            <h2>Checklist</h2>
+             <ol class="checklist">
+              <li><span class="icon">a.</span><span class="caption">Have you installed web analytics software?</span></li>
+              <li><span class="icon">b.</span><span class="caption">Have you configured your web analytics software with the appropriate <a href="http://en.wikipedia.org/wiki/Conversion_funnel">conversion funnels</a>?</span></li>
+              <li><span class="icon">c.</span><span class="caption">Do you have the capability to run user satisfaction surveys?</span></li>
+              <li><span class="icon">d.</span><span class="caption">Do you have the capability to do <a href="http://en.wikipedia.org/wiki/Ab_testing">A/B testing</a> and <a href="http://en.wikipedia.org/wiki/Multivariate_testing">multivariate testing</a>?</span></li>
+              <li><span class="icon">e.</span><span class="caption">Do you have software installed for monitoring service uptime and performance?</span></li>
+              <li><span class="icon">f.</span><span class="caption">Can you generate custom performance data based on system-generated events?</span></li>
+             </ol>
+             <p>There are a number of open source products available as well as
+             paid alternatives. If you are using a third party supplier, ensure
+             that you have access to the raw data behind the measures specified
+             in the contract and make sure data is not thrown away after a short
+             period of time.</p>             
+             <h2>Worked example - GOV.UK</h2>
+             <article class="worked-example">
+              <h1>Page conversion funnel</h1>
+              <div class="example">
+               <img src="http://placehold.it/330x500" />
+              </div>
+              <div class="caption">
+               <p>We are using Google Analytics to measure how users interact with GOV.UK pages. We want to know how far down the page they are reading so that we can tweak the content, if necessary.</p>
+               <p>This involved triggering events that can be picked up by Google Analytics at various points down the page: 25%, 50%, 75% and 100%.</p>
+               <p>The funnel visualisation shows the proportion of users who move on to the next page and the number who exit the site (ie the drop out rate).</p>
+              </div>
+             </article>
+           </div>
+         </section>
+         
+         <section class="examples">
+           <h2>Example</h2>
+           <div class="content">
+             <article class="process">
+                <header>
+                  <h1>'Register to vote' conversion funnel</h1>
+                </header>
+                <div class="example">
+                 <img src="http://placehold.it/320x500" />
+                </div>
+                <div class="caption">
+                 <p>We are developing a new service to allow people to join the
+                 Electoral Register online. The product is in <a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">alpha</a> at the time
+                 of writing but we have already installed Google Analytics and
+                 configured it to measure how users flow through the
+                 transaction.</p>
+                 <p>The funnel visualisations show at each stage the proportion
+                 of users proceeding through and the number who exit the
+                 process. This enables us to quickly spot where users are
+                 experiencing problems and where we might need to test
+                 alternative page designs.</p>
+                </div>
+              </article>              
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="fourth">Establish a baseline</h1>
+       
+         <div class="outline">
+           <p>Establish a 'baseline' based on current performance trends by
+           channel, against which changes to the service will be judged. This
+           will help you pinpoint the effect of your initiatives, and identify
+           what worked.</p>
+         </div>
+         
+         <div class="content">
+            <h2>Checklist</h2>
+            <ol class="checklist">
+             <li><span class="icon">a.</span><span class="caption">Have you measured your current performance?</span></li>
+             <li><span class="icon">b.</span><span class="caption">Have you compared your performance with similar types of service (e.g. by transaction category)?</span></li>
+             <li><span class="icon">c.</span><span class="caption">Do you know who your users are in terms of age, disability, socio-economic group and internet usage?</span></li>
+            </ol>
+            <p>It is good practice to look at performance trends over time,
+            rather than take a snapshot at a particular point in time. Peaks and
+            dips in performance are then measured relative to this base (or
+            trend) line which helps to identify the effect of communications or
+            design initiatives. It also reveals seasonal variations in
+            performance.</p>
+            <p>Benchmarking against other services can also provide a useful
+            context for judging performance. By comparing to other similar
+            services (e.g. requesting a license or reporting information) you
+            know whether the service is significantly better or worse than
+            expected. A <a href="http://www.gov.uk/performance/transactional-services">complete list</a> of the government’s transactional services
+            is available on GOV.UK.</p>
+            <p>You need to know who your users are to be able to determine
+            whether they are likely to need assistance with using digital
+            services. The proportion of users needing assistance will depend on
+            the particular service. For example, a higher proportion of people
+            applying for incapacity benefits are more likely to need assistance
+            with digital services than those needing to pay their road tax.</p>
+            <h2>Worked example - GOV.UK</h2>
+            <article class="worked-example">
+              <h1 id="remote-usability-testing">Remote usability testing</h1>
+              <div class="example">
+               <img src="http://placehold.it/330x500" />
+              </div>
+              <div class="caption">
+               <p>We use remote usability testing to measure task completion
+               rates and times. It involves users completing tasks on the
+               website using their own computers and then answering questions
+               about their experience.</p>
+               <p>Read <a href="http://digital.cabinetoffice.gov.uk/2012/01/13/quantitative-testing-betagov/">this blog article</a> for more information and some initial results.</p>
+              </div>
+             </article>
+         </div>
+         
+         <section class="examples">
+           <h2>Examples</h2>
+           <div class="content">
+              <article class="process">
+                <header>
+                  <h1>HMRC Active Demand Management</h1>
+                </header>
+                <div class="example">
+                  <img src="http://placehold.it/330x500" />
+                </div>
+                <div class="caption">
+                  <p>HMRC runs 16 contact centres, with around 6000 staff handling 60 million telephone calls a year.</p>
+                  <p>They identified that they could remove more than 37% of call demand. Using
+                  active demand management and utilising frontline staff as the 'voice of the
+                  customer' they identify demand that can moved to digital channels such as <a href="http://en.wikipedia.org/wiki/Interactive_voice_response">IVR</a> or
+                  can be removed by improving processes.</p>
+                  <p>The results were:</p>
+                  <ul class="dashed-list">
+                   <li>2009/10: 4.5m calls handled by IVR; 4.2m calls eliminated.</li>
+                   <li>2010/11: 8.4m handled by IVR; 7m calls eliminated</li>
+                  </ul>
+                  <p>For more information, see <a href="http://www.nao.org.uk/publications/0910/handling_telephone_enquiries.aspx">this NAO report</a>.</p>
+                </div>
+              </article>
+              <article class="process">
+                <header>
+                  <h1>Cost per Transaction measurement at the Department for Transport</h1>
+                </header>
+                <div class="example">
+                  <img src="http://placehold.it/330x500" />
+                </div>
+                <div class="caption">
+                 <p>DfT and its agencies DVLA , DSA and VOSA have made progress
+                 in chanel shift to digital delivery. The Department measures
+                 cost per transaction across a selection of services that they
+                 provide.</p>
+                 <p>This allows comparison of transaction costs between channels
+                 and provides insight as to where cost saving opportunities
+                 exist for moving to digital delivery.</p>
+                </div>
+              </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="fifth">Aggregate data</h1>
+       
+         <div class="outline">
+           <p>Collect and aggregate performance information from multiple
+           sources and across multiple channels. Make sure you understand what
+           this will mean in terms of system requirements.</p>
+         </div>
+         
+         <div class="content">
+            <h2>Checklist</h2>
+            <ol class="checklist">
+             <li><span class="icon">a.</span><span class="caption">Have you collected data on costs, usage and performance?</span></li>
+             <li><span class="icon">b.</span><span class="caption">Have you collected performance data from digital and non-digital channels?</span></li>
+             <li><span class="icon">c.</span><span class="caption">Do you know how many people use the service, by channel?</span></li>
+             <li><span class="icon">d.</span><span class="caption">Have you aggregated performance data to enable it to be easily combined?</span></li>
+            </ol>
+            <p>Combining data often reveals useful insights, for example into
+            service efficiency (eg cost per transaction and <a href="http://www.hmrc.gov.uk/research/cost-of-time.pdf">total cost to serve</a>)
+            or proportional usage by channel (eg percentage digital uptake vs
+            post, phone etc).</p>
+            <p>Be aware though that combining data from different data sources can lead to huge
+            storage requirements: large, data-driven organisations now talk about storage in
+            terms of petabytes, the equivalent of one million gigabytes. However, there are
+            cost-effective solutions to this problem already in place. For example, the
+            <a href="http://hadoop.apache.org/">Hadoop</a> software framework was developed to enable collection, aggregation and
+            querying of such huge data stores, and is based on <a href="http://en.wikipedia.org/wiki/MapReduce">work done by Google</a> and Yahoo
+            to develop search engines.</p>
+            <h2>Worked example - GOV.UK</h2>
+            <article class="worked-example">
+              <h1 id="remote-usability-testing">Data insight platform</h1>
+              <div class="example">
+               <img src="http://placehold.it/330x500" />
+              </div>
+              <div class="caption">
+               <p>We’re developing a platform which will aggregate data from a
+               range of sources within GDS, including web analytics, survey and
+               finance data. This will be used by senior managers to monitor
+               KPIs but also by product managers and developers to monitor
+               operational measures such as drop out rates or error rates.</p>
+               <p>This early mock-up shows the potential for displaying performance information
+               from disparate sources side by side, and for combining data to provide insight
+               (e.g. cost per visit).</p>
+              </div>
+             </article>
+         </div>
+         
+         <section class="examples">
+           <h2>Examples</h2>
+           <div class="content">
+
+              <article class="process">
+                <header>
+                  <h1>Time series metrics</h1>
+                </header>
+                <div class="example">
+                  <img src="http://placehold.it/330x500" />
+                </div>
+                <div class="caption">
+                  <p><a href="http://graphite.wikidot.com/faq">Graphite</a> is a real-time graphing system which is optimised
+                  for time series data. Being able to easily store time series
+                  data and comparing different data-sets on-the-fly can be
+                  particularly powerful for identifying problems and potential
+                  improvements.</p>
+                  <p>For example graphing page load time and task completion rates together can
+                  show where a performance problem has a direct impact on users of a service.</p>
+                </div>
+              </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="sixth">Analyse and visualise data</h1>
+       
+         <div class="outline">
+           <p>Communicate performance information to your users through the
+           appropriate dashboards, reports and alerts. Highlight specific
+           segments that you know users are interested in, and make sure that
+           your visualisations are simple, actionable and contain minimal
+           amounts of <a href="http://en.wikipedia.org/wiki/Chartjunk">chart junk</a>.</p>
+         </div>
+         
+         <div class="content">
+            <h2>Checklist</h2>
+            <ol class="checklist">
+             <li><span class="icon">a.</span><span class="caption">Have you done any segmentation (i.e. analysed performance data by segment)?</span></li>
+             <li><span class="icon">b.</span><span class="caption">Have you designed the appropriate dashboards, reports and alerts?</span></li>
+             <li><span class="icon">c.</span><span class="caption">Are your data visualisations visible to their intended audience?</span></li>
+             <li><span class="icon">d.</span><span class="caption">Have you followed best practice design principles for data visualisation?</span></li>
+            </ol>
+            <p>Typical segments include:</p>
+            <ul>
+             <li><b>Channel used to access service</b>: through which channel(s) did the user find out about and attempt to use the service?</li>
+             <li><b>New vs. repeat visitors</b>: are first time users behaving differently to those who have used the service before?</li>
+             <li><b>Geographical region</b>: how popular is the digital service by region and how does that compare with online penetration in general?</li>
+             <li><b>Product type</b>: does the user experience vary depending on the type of product or service?</li>
+             <li><b>Value</b>: is performance dependent on the monetary value of the product or service being sought?</li>
+            </ul>
+            <ul>
+             <li><b>Dashboards</b> are objective-focused and will help inform decisions, often with the help of real-time data.</li>
+             <li><b>Reports</b> provide regular, scheduled snapshots of data and tend to require extra context and time to digest.</li>
+             <li><b>Alerts</b> are used to inform the users about a change or an event, often using attention-grabbing delivery mechanisms.</li>
+            </ul>
+            <p>By making your visualisations clearly visible you maximise the likelihood that the information will be acted upon - and services thereby improved.</p>
+            <p>Best practices include:</p>
+            <ul>
+             <li><b>keeping charts plain</b>: don’t use shading, 3D or other distracting effects</li>
+             <li><b>removing clutter</b>: don’t use trend lines, grid lines, unnecessary labelling</li>
+             <li><b>not using pie charts</b>: they require more space and are harder to read than bar charts</li>
+             <li><b>using text where a chart adds nothing</b>.</li>
+            </ul>
+            <h2>Worked example - GOV.UK</h2>
+            <article class="worked-example">
+              <h1>Developer dashboards</h1>
+              <div class="example">
+               <img src="http://placehold.it/330x500" />
+              </div>
+              <div class="caption">
+               <p>Dashboards keep our developers and editors up to date with the
+               latest status reports and highlight any critical problems. They
+               are displayed on large screens close to developers’ desks so that
+               they can be easily monitored. This means that bugs can be spotted
+               quickly and fixed.</p>
+               <p>Read <a href="http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/">this blog article</a> to find out how these dashboards were developed.</p>
+              </div>
+             </article>
+         </div>
+         
+         <section class="examples">
+           <h2>Examples</h2>
+           <div class="content">
+
+
+              <article class="process">
+                  <header>
+                    <h1>Yahoo! News</h1>
+                  </header>
+                  <div class="example">
+                   <img src="http://placehold.it/330x500" />
+                  </div>
+                  <div class="caption">
+                    <p>This dashboard was designed for senior staff at Yahoo! News. It consolidates data from multiple internal and external data sources providing a single view in an accessible, interactive and attractive format.</p>
+                    <p>The information is presented clearly, with a good balance of charts, tabular data and text. It shows how key metrics have changed over time which helps users to easily spot when performance has dipped.</p>
+                    <p>This and <a href="http://www.juiceanalytics.com/case-studies/">other dashboard examples</a> feature on the Juice Analytics website.</p>
+                  </div>
+                </article>
+              
+              <article class="process">
+                  <header>
+                    <h1>US Government IT Dashboard</h1>
+                  </header>
+                  <div class="example">
+                   <img src="http://placehold.it/330x500" />
+                  </div>
+                  <div class="caption">
+                    <p>In 2009, the US government introduced an <a href="http://www.itdashboard.gov/">IT Dashboard</a>,
+                    designed to provide CIOs, the public and agency leaders with
+                    key data on the performance of federal IT investments.</p>
+                    <p>Users can track spending by department and see how good each
+                    organisation is at staying within project deadlines and budgets. The
+                    dashboard is interactive, allowing users to focus on specific
+                    departments and look at different types of spending.</p>
+                   <p>The dashboard is now used by the Administration and Congress to make budget and policy decisions.</p>
+                  </div>
+                </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="seventh">Monitor, iterate, and improve</h1>
+       
+         <div class="outline">
+           <p>Test a range of performance improvement initiatives and monitor to
+           see which work well. These can be piloted on a subset of your users
+           to minimise risk. Implement the best performing solutions widely and
+           then repeat this process relentlessly: what you measure will change
+           over the course of a product or project's lifetime.</p>
+         </div>
+         
+         <div class="content">
+            <h2>Checklist</h2>
+            <ol class="checklist">
+             <li><span class="icon">a.</span><span class="caption">Are you monitoring and acting upon user feedback?</span></li>
+             <li><span class="icon">b.</span><span class="caption">Have you done any <a href="http://en.wikipedia.org/wiki/A/B_testing">A/B testing</a> or <a href="http://en.wikipedia.org/wiki/Multivariate_testing">multivariate testing</a>?</span></li>
+             <li><span class="icon">c.</span><span class="caption">Have you evaluated the effectiveness of your performance reports?</span></li>
+             <li><span class="icon">d.</span><span class="caption">Have you taken an iterative approach to developing your service?</span></li>
+            </ol>
+            <p>Any service that meets user needs will include an element of user
+            feedback. This should be monitored and acted upon so as to
+            continually improve the service for users.</p>
+            <p>A range of options are available for improving the overall performance of a
+            service. The following examples are based on the <a href="http://en.wikipedia.org/wiki/Marketing_mix">4 Ps</a> of marketing:</p>
+            <ul>
+             <li><b>Price</b>: can the price be changed, for example to attract people to the digital channel?</li>
+             <li><b>Product</b>: can the user experience be improved (eg from user feedback, user testing, A/B testing, multivariate testing)?</li>
+             <li><b>Placement</b>: can the digital service URL be placed on printed materials and voice recordings?</li>
+             <li><b>Promotion</b>: can greater use of email and social media be used to promote repeated use of the digital service?</li>
+            </ul>
+            <p>Taking an iterative approach to service development increases the
+            pace of improvement and minimises the risk of failure. Don’t wait
+            until the end to do this, it should happen continuously throughout
+            the process.</p>
+            <h2>Worked example - GOV.UK</h2>
+            <article class="worked-example">
+              <h1>A/B testing</h1>
+              <div class="example">
+               <img src="http://placehold.it/330x500" />
+              </div>
+              <div class="caption">
+               <p>We're using A/B testing to see how colour changes can affect
+               user behaviour. This is an example of how we are designing
+               services based on user data.</p>
+               <p>To read more about this and our approach to design in general, please read the
+               <a href="https://www.gov.uk/designprinciples">GDS Design Principles</a>.</p>
+              </div>
+             </article>
+         </div>
+         
+         <section class="examples">
+           <h2>Examples</h2>
+           <div class="content">
+
+
+              <article class="process">
+                  <header>
+                    <h1>Yahoo! News</h1>
+                  </header>
+                  <div class="example">
+                   <img src="http://placehold.it/330x500" />
+                  </div>
+                  <div class="caption">
+                    <p>This dashboard was designed for senior staff at Yahoo! News. It consolidates data from multiple internal and external data sources providing a single view in an accessible, interactive and attractive format.</p>
+                    <p>The information is presented clearly, with a good balance of charts, tabular data and text. It shows how key metrics have changed over time which helps users to easily spot when performance has dipped.</p>
+                    <p>This and <a href="http://www.juiceanalytics.com/case-studies/">other dashboard examples</a> feature on the Juice Analytics website.</p>
+                  </div>
+                </article>
+              
+              <article class="process">
+                  <header>
+                    <h1>Multivariate testing on Lovefilm</h1>
+                  </header>
+                  <div class="example">
+                   <img src="http://placehold.it/330x500" />
+                  </div>
+                  <div class="caption">
+                    <p>Multivariate testing (MVT) is similar to A/B testing but
+                    allows many variables to be tested simultaneously with the
+                    best performing combination emerging over time. <a href="http://www.e-consultancy.com/news-blog/365649/q-a-lovefilm-s-craig-sullivan-on-a-b-and-multi--variate-testing.html">Lovefilm did
+                    multivariate testing</a> on 192 different page elements and
+                    found two major changes that increased conversion by
+                    10%.</p>
+                    <p>Aside from the financial benefits, and the measurable improvements for users,
+                    the company found itself with more time to develop tests and hypotheses rather
+                    than long meetings to come up with a single solution.</p>
+                    <p>The approach also reduced the risk of introducing new designs, which had been proven in a live environment prior to full implementation.</p>
+                  </div>
+                </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   
+     <li class="principle">
+       <article>
+       
+         <h1 id="further-reading">Further reading</h1>
+         
+         <section class="why">
+           <div class="content">
+             <h2>1 - Understand user needs</h2>
+             <p>The NAO report <a href="http://www.nao.org.uk/publications/1012/digital_britain_one.aspx">Digital Britain One: Shared infrastructure and services for
+             government online identified that there was a lack of information on the costs
+             and associated benefits of digital services.</p>
+             <h2>2 - Decide what to measure</h2>
+             <p><a href="http://www.kaushik.net/avinash/">Occam’s Razor</a> is an excellent blog by Avinash Kaushik with loads of useful
+             advice on metrics, KPIs and analytics. See for example this <a href="http://www.kaushik.net/avinash/rules-choosing-web-analytics-key-performance-indicators/">article on how to
+             set good performance indicators.</a></p>
+             <h2>3 - Install and configure platforms</h2>
+             <p>The <a href="http://support.google.com/analytics/?hl=en">Google Analytics Help Centre</a> is a useful resource if you use that
+             particular platform, see for example this guide to setting up goals and
+             funnels.</p>
+             <p>Blog article by Morgan Brown with a <a href="http://uxdesign.smashingmagazine.com/2012/01/04/stop-designing-pages-start-designing-flows/">good discussion on user flows and conversion funnels</a>.</p>
+             <h2>4 - Establish a baseline</h2>
+             <p><a href="http://www.guardian.co.uk/money/2010/dec/22/amazon-top-consumer-satisfaction">This article</a> in The Guardian shows online customer satisfaction scores for
+             retailers. These scores are based on the Customer Satisfaction Index.</p>
+             <h2>5 - Aggregate data</h2>
+             <p><a href="http://radar.oreilly.com/2010/06/what-is-data-science.html">Great article</a> by Mike Loukides on the role of the data scientist.</p>
+             <p>These <a href="http://www.cloudera.com/blog/2011/01/2010-cloudera-apache-hadoop-webinars/">webinars by Cloudera</a> provide a useful introduction to Hadoop.</p>
+             <h2>6 - Analyse and visualise data</h2>
+             <p><a href="http://www.fivesimplesteps.com/products/a-practical-guide-to-designing-with-data">Designing with Data</a> is an excellent book by Brian Suda which helps you to
+             design beautiful and powerful data visualisations.</p>
+             <p><a href="http://www.juiceanalytics.com/">Juice Analytics</a> is a great website with loads of useful resources on how to design and develop useful data visualisations and dashboards.</p>
+             <p>Edward Tufte’s <a href="http://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a> is a seminal work on data visualisation and introduces the concept of chartjunk.</p>
+             <p>The <a href="http://flowingdata.com/">Flowing Data</a> blog by Nathan Yau is a useful source of data visualisation news.</p>
+             <p>The <a href="https://github.com/mbostock/d3/wiki/Gallery">D3 Gallery</a> is a stunning collection of data visualisations.</p>
+             <p><a href="http://selection.datavisualization.ch/">Nicely presented overview</a> of some of the tools available for data visualisation.</p>
+             <h2>7 - Monitor, iterate and improve</h2>
+             <p>This <a href="http://www.wired.com/business/2012/04/ff_abtesting/all/1">article in Wired</a> shows how A/B testing was used to good effect in Obama’s election campaign.</p>
+             <p>This <a href="http://econsultancy.com/uk/blog/2454-q-a-lovefilm-s-craig-sullivan-on-a-b-and-multi-variate-testing">article in eConsultancy</a> shows how multivariate testing was used to improve conversion rates at Lovefilm.</p>
+           </div>
+         </section>
+         
+         <section class="examples">
+           <h2>Examples</h2>
+           <div class="content">
+            <article class="process no-image">
+                <header>
+                  <h1>One example of our content being used outside of our website</h1>
+                  <p class="status experimental">Experimental</p>
+                </header>
+                <div class="caption">
+                  <p>One example of this is the <a href="http://saulcozens.co.uk/pages/wordpressgovuk">WordPress plugin that Saul Cozens</a> made to “reproduce content from GOV.UK on any Wordpress post or page.”</p>
+                </div>
+              </article>
+           </div>
+         </section>
+         
+       </article>
+     </li>
+   </ol>
+
+  <section class="alpha-feedback">
+    <header>
+      <h1>Feedback</h1>
+    </header>
+    <p>This is an alpha release of the principles and we would like your feedback. Is there anything you think we should add that would make these principles more helpful? You can email your feedback to  
+    <a href="mailto:govuk-feedback@digital.cabinet-office.gov.uk">govuk-feedback@digital.cabinet-office.gov.uk</a> or leave a comment at <a href="http://www.getsatisfaction.com/govuk">GetSatisfaction</a>.</p>
+  </section>
+</div>

@@ -40,6 +40,15 @@ html {
   }
 }
 
+.visuallyhidden {
+    height: 1px;
+    width: 1px;
+    margin:-1px;
+    overflow: hidden;
+    padding: 0; 
+    position: absolute;    
+}
+
 #wrapper {
   position: relative;
   color: #000;
@@ -81,7 +90,7 @@ html {
   list-style-type: bullet;
 }
 
-#wrapper header, #wrapper nav, #wrapper .principles {
+#wrapper header, #wrapper nav, #wrapper .principles, #wrapper .additional {
   position: relative;
   margin: 0 auto;
   max-width: 700px;
@@ -109,7 +118,8 @@ html {
   border-bottom: none;
 }
 
-#wrapper nav a .icon {
+#wrapper nav a .icon,
+#wrapper .checklist .icon {
   position: relative;
   float: left;
   clear: both;
@@ -354,6 +364,11 @@ html {
   padding: 1rem 0 0.3rem;
 }
 
+#wrapper article .content ul,
+#wrapper article .content ol {
+  padding:1.6rem 0 0.8rem;
+}
+
 #wrapper article section {
   position: relative;
   padding-top: 13px;
@@ -392,7 +407,8 @@ html {
 #wrapper article .examples .writing,
 #wrapper article .examples .code,
 #wrapper article .examples .design,
-#wrapper article .examples .comparison {
+#wrapper article .examples .comparison,
+#wrapper article .examples .table-view {
   position: relative;
   overflow: hidden;
   margin-top: 1px;
@@ -406,7 +422,12 @@ html {
   padding: 0 1.3rem;
 }
 
-#wrapper article .examples h1 {
+#wrapper article .worked-example {
+  padding-top:0;
+}
+
+#wrapper article .examples h1,
+#wrapper article .worked-example h1 {
   border: none;
   color: black;
   font-family: Helmet, Freesans, sans-serif;
@@ -566,14 +587,16 @@ html {
   margin: 0 1.3rem 1.3rem;
 }
 
-#wrapper article .examples .process .example {
+#wrapper article .examples .process .example,
+#wrapper article.worked-example .example {
   clear: both;
   float: left;
   display: inline;
   width: 33.33333333%;
 }
 
-#wrapper article .examples .process .example img {
+#wrapper article .examples .process .example img,
+#wrapper article .worked-example .example img {
   position: relative;
   top: 5px;
   top: 0.5rem;
@@ -583,7 +606,12 @@ html {
   height: auto;
 }
 
-#wrapper article .examples .process .caption {
+#wrapper article .worked-example .example img {
+  margin-left:0;  
+}
+
+#wrapper article .examples .process .caption,
+#wrapper article.worked-example .caption {
   float: right;
   display: inline;
   width: 66.66666666%;
@@ -594,7 +622,9 @@ html {
 }
 
 #wrapper article .examples .process .caption h2,
-#wrapper article .examples .process .caption p {
+#wrapper article .examples .process .caption p,
+#wrapper article .worked-example .caption h2,
+#wrapper article .worked-example .caption p {
   padding: 0 13px 13px;
   padding: 0 1.3rem 1.3rem;
 }
@@ -736,7 +766,79 @@ html {
 #popup.welcome-tour .welcome-inner {
   background-color: #ea9bc1;
 }
+#wrapper .additional {
+  padding-top:2.3rem;
+}
+#wrapper .checklist li {
+  list-style: none;
+}
+#wrapper table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1em 0 2em 0;
+}
 
+#wrapper article .examples .table-view table {
+  margin-left:2%;
+  margin-right:2%;
+}
+
+#wrapper table caption {
+  text-align:left;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  font-size:1.16em;
+  padding-left:1em;
+}
+
+#wrapper th, #wrapper td {
+  vertical-align: top;
+  line-height: 1.3em;
+  padding: 0.7em 0.5em 0.7em 1em;
+}
+
+#wrapper .table-view table th:nth-child(2) {
+  width:40%;
+}
+
+#wrapper tr:nth-child(even) td {
+  background-color: #fff;
+}
+
+#wrapper td {
+  background: #fafafa;
+  border:dotted 1px #bbb;
+}
+
+#wrapper tr:nth-child(1) td {
+  border-top:none;  
+}
+
+#wrapper table td li,
+#wrapper .dashed-list li {
+  list-style: none;
+}
+
+#wrapper table td li {
+  margin-bottom:2.3rem;
+}
+
+#wrapper ul.dashed-list li:before {
+  content: '- ';
+}
+
+#wrapper .dashed-list li:last-child {
+  margin-bottom:0;  
+}
+
+#wrapper th {
+  line-height:1.25em;
+  text-align: left;
+  color:#000;
+  font-weight:normal;
+  background-color: #e1e8e8;
+  border:solid 1px #bbb;
+}
 
 /* features added by JS */
 
@@ -922,6 +1024,9 @@ html {
   margin-left: -0.5em;
   padding-left: 0.5em;
   }
+#wrapper article li b {
+  font-weight:400;
+}
 #wrapper article .examples .process{
   background-color:#ddd;
 }
