@@ -91,7 +91,10 @@ html {
   list-style-type: bullet;
 }
 
-#wrapper header, #wrapper nav, #wrapper .principles, #wrapper .additional {
+#wrapper header, #wrapper nav,
+#wrapper .principles,
+#wrapper .additional,
+#wrapper .feedback{
   position: relative;
   margin: 0 auto;
   max-width: 700px;
@@ -329,7 +332,8 @@ html {
   width: 33.3333333333%;
 }
 
-#wrapper article h2 {
+#wrapper article h2,
+#wrapper header h2 {
   font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   font-size: 13px;
   font-size: 1.3rem;
@@ -338,6 +342,10 @@ html {
   letter-spacing: 0.2em;
   padding: 16px 0 8px;
   padding: 1.6rem 0 0.8rem;
+}
+
+#wrapper header h2 {
+  padding-bottom:0;
 }
 
 #wrapper article #first + h2 {
@@ -843,6 +851,9 @@ html {
 #wrapper .additional {
   padding-top:2.3rem;
 }
+#wrapper .feedback {
+  padding-top:2.3em;
+}
 #wrapper .checklist li {
   list-style: none;
 }
@@ -1094,7 +1105,8 @@ html {
   border:none;
   padding:0.5em 1em;
 }
-#wrapper article h2 {
+#wrapper article h2,
+#wrapper header h2 {
   letter-spacing: 0;
   font-size: inherit;
 }

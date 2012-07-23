@@ -88,6 +88,11 @@ title: GDS design principles
     </a>
    </p>
    
+   <div class="feedback">
+    <h2>Feedback</h2>
+    <p>This is a beta release of the performance framework, and we would like your feedback. Is there anything you think we should add that would make this framework more helpful? You can email your feedback to <a href="mailto:pdu-feedback@digital.cabinet-office.gov.uk">pdu-feedback@digital.cabinet-office.gov.uk</a>.</p>
+   </div>
+   
    <ol class="principles">
      <li class="principle">
        <article>
@@ -118,46 +123,19 @@ title: GDS design principles
              ministers will have more strategic and comparative concerns.These
              needs will be reflected in the organisation’s business
              objectives.</p>
-             <h2>Worked example - GOV.UK</h2>
-             <p>When we thought about who would need information on the
-             performance of GOV.UK, we considered a range of audiences from
-             ministers and senior management through to GDS product managers and
-             developers. We also considered what information the public might be
-             interested in. All of these groups will have different definitions
-             of what they mean by ‘good performance’. The following table
-             illustrates some of the key requirements.</p>
+             <h2>Worked example - GOV.UK</h2>             
            </div>
-           <table>
-            <caption class="visuallyhidden">Key requirements</caption>
-            <thead>
-             <tr>
-              <th>User</th>
-              <th>User need</th>
-             </tr>
-            </thead>
-            <tbody>
-             <tr>
-              <td>Member of the public</td>
-              <td>I want to see information of the success of GDS and GOV.UK so I can see if Government is using my money effectively.</td>
-             </tr>
-             <tr>
-              <td>GDS developer</td>
-              <td>I want to have API access to the best data available so that I can build a tool/dashboard/report to analyse my service.</td>
-             </tr>
-             <tr>
-              <td>GDS product manager</td>
-              <td>I want to have detailed information available about my product so that I know where to focus my attention.</td>
-             </tr>
-             <tr>
-              <td>Senior manager</td>
-              <td>I want to have quick access to the latest information for my area so that I can make decisions about future priorities.</td>
-             </tr>
-             <tr>
-              <td>Government Minister</td>
-              <td> want to see a high level report on the effectiveness of GDS and GOV.UK so I can assess how successful it is.</td>
-             </tr>
-            </tbody>
-           </table>
+           <article class="worked-example worked-example-wide">
+              <h1>User needs and personas</h1>
+              <div class="example">
+               <img src="/app/assets/images/user-needs.png" alt="" />
+              </div>
+              <div class="caption">
+               <p>When we thought about who would need information on the performance of GOV.UK, we considered a range of audiences from ministers and senior management through to GDS product managers and developers.</p>
+               <p>We interviewed the different types of staff who would need to use the dashboards and then we mapped them showing their level of seniority, whether they were in the department or outside it and key relationships.</p>
+               <p>For key customers, we made <a href="http://en.wikipedia.org/wiki/Persona_(marketing)">personas</a> to better communicate their needs and goals.</p>
+              </div>
+             </article>
          </section>
          
          <section class="examples open-section">           
@@ -178,7 +156,7 @@ title: GDS design principles
                </thead>
                <tbody>
                 <tr>
-                 <td>Senior officials: Ministers, Dept. Boards, the ‘Centre’.</td>
+                 <td>Senior officials: Ministers, Dept. Boards.</td>
                  <td>Risk management; maximise digital uptake; ensure value for money; control or reduce overall spend; public celebration of success.</td>
                  <td>
                   <ol>
@@ -244,9 +222,11 @@ title: GDS design principles
            <div class="content">
              <h2>Checklist</h2>
              <ol class="checklist">
-              <li><span class="icon">a.</span><span class="caption">Have you identified who your users are?</span></li>
-              <li><span class="icon">b.</span><span class="caption">Have you articulated your users’ needs?</span></li>
-              <li><span class="icon">c.</span><span class="caption">Have you prioritised services (e.g. by number of users or cost)?</span></li>
+              <li><span class="icon">a.</span><span class="caption">Have you developed metrics and Key Performance Indicators (KPIs)?</span></li>
+              <li><span class="icon">b.</span><span class="caption">Are your metrics simple, actionable and collectable?</span></li>
+              <li><span class="icon">c.</span><span class="caption">Have you mapped your metrics to the relevant audience?</span></li>
+              <li><span class="icon">d.</span><span class="caption">Have you identified where your metrics will be sourced from?</span></li>
+              <li><span class="icon">e.</span><span class="caption">Do you know how frequently performance information is required by your users?</span></li>
              </ol>
              <p>Key Performance Indicators (KPIs) will be few in number -
              typically around five - and are top-line indicators of how well a
@@ -264,8 +244,8 @@ title: GDS design principles
               chosen metrics and tailor data visualisations to different
               audiences. This information could come from a variety of sources,
               for example Oracle and Excel for <a href="http://en.wikipedia.org/wiki/Customer_relationship_management">CRM</a> and finance databases, Google
-              Analytics for web testing and optimisation tools, or Nagios and
-              Pingdom for system monitoring.
+              Analytics for web testing and optimisation tools, or <a href="http://www.nagios.org">Nagios</a> and
+              <a href="http://www.pingdom.com">Pingdom</a> for system monitoring.
              </p>
              <h2>Worked example - GOV.UK</h2>
              <p>An approach that worked well for us was to run a brainstorming
@@ -349,7 +329,7 @@ title: GDS design principles
                  </thead>
                  <tbody>
                   <tr>
-                   <td>Senior officials: Ministers, Dept. Boards, the 'Centre'.</td>
+                   <td>Senior officials: Ministers, Dept. Boards.</td>
                    <td>I want to know the cost per transaction of key government services so that I have an overview and can compare the financial performance of services</td>
                    <td>Grant or withhold funding</td>
                    <td>Cost per transaction</td>
@@ -585,9 +565,9 @@ title: GDS design principles
             expected. A <a href="http://www.gov.uk/performance/transactional-services">complete list</a> of the government’s transactional services
             is available on GOV.UK.</p>
             <p>You need to know who your users are to be able to determine
-            whether they are likely to need assistance with using digital
-            services. The proportion of users needing assistance will depend on
-            the particular service. For example, a higher proportion of people
+            whether they are likely to need <a href="http://digital.cabinetoffice.gov.uk/2012/05/30/getting-started-on-assisted-digital/">assisted digital</a> to help them use the digital service.
+            The proportion of users needing assisted digital will vary based on
+            the users of the particular service. For example, a higher proportion of people
             applying for incapacity benefits are more likely to need assistance
             with digital services than those needing to pay their road tax.</p>
             <h2>Worked example - GOV.UK</h2>
@@ -764,11 +744,9 @@ title: GDS design principles
              <li><b>Product type</b>: does the user experience vary depending on the type of product or service?</li>
              <li><b>Value</b>: is performance dependent on the monetary value of the product or service being sought?</li>
             </ul>
-            <ul>
-             <li><b>Dashboards</b> are objective-focused and will help inform decisions, often with the help of real-time data.</li>
-             <li><b>Reports</b> provide regular, scheduled snapshots of data and tend to require extra context and time to digest.</li>
-             <li><b>Alerts</b> are used to inform the users about a change or an event, often using attention-grabbing delivery mechanisms.</li>
-            </ul>
+             <p><b>Dashboards</b> are objective-focused and will help inform decisions, often with the help of real-time data.</p>
+             <p><b>Reports</b> provide regular, scheduled snapshots of data and tend to require extra context and time to digest.</p>
+             <p><b>Alerts</b> are used to inform the users about a change or an event, often using attention-grabbing delivery mechanisms.</p>
             <p>By making your visualisations clearly visible you maximise the likelihood that the information will be acted upon - and services thereby improved.</p>
             <p>Best practices include:</p>
             <ul>
