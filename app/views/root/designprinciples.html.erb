@@ -114,7 +114,7 @@
                 <p class="status tried">Tried &amp; tested</p>
               </header>
               <div class="example">
-                <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/01/needs_wall.png" />
+                <%= image_tag 'content/01/needs_wall.png' %>
               </div>
               <div class="caption">
                 <p>If we start from the wrong place there’s no chance we will get the design right. Before we begin any project we spend a long time working out what the user needs are. <a href="http://digital.cabinetoffice.gov.uk/2011/09/19/introducing-the-needotron-working-out-the-shape-of-the-product/">This blog post explains a bit more about how we do that.</a></p>
@@ -127,7 +127,7 @@
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <a href="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/01/example-vat.png"><img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/01/example-vat.png" /></a>
+                  <%= link_to image_tag('content/01/example-vat.png'), image_path('content/01/example-vat.png') %>
                 </div>
                 <div class="caption">
                   <p><a href="https://www.gov.uk/vat-rates">This VAT page</a> is a good example of a design that results from thinking about user needs. Most people will arrive at this page after a search for VAT rates. The answer most people are after is 20%, so we’ve made that the largest, clearest piece of information on the page. You can get the answer you are looking for incredibly quickly. There is more to VAT than just one rate so we’ve included this but clearly designed as secondary information. There’s a slim chance you’ve arrived at the wrong page so we have links to genuinely related items in the box on the top right.</p>
@@ -170,7 +170,7 @@
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/02/keeping-bees.jpg">
+                  <%= image_tag 'content/02/keeping-bees.jpg' %>
                 </div>
                 <div class="caption">
                   <p>Lots of page designs fail because the focus of the page isn’t clear. Don’t try to cram everything on to one page. By trying to do less and deciding what’s the most important thing on the page before you start designing you’ll end up with simpler, clearer designs. </p>
@@ -227,7 +227,7 @@
                   <p class="status experimental">Experimental</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/03/ab-test.jpg">
+                  <%= image_tag 'content/03/ab-test.jpg' %>
                 </div>
                 <div class="caption">
                   <p>We’re using <a href="http://en.wikipedia.org/wiki/A/B_testing">A/B testing</a> to see how colour changes can affect user behaviour.</p>
@@ -268,7 +268,7 @@
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/04/maternity-pay_sml.png" alt="A screen shot of a smart answer" />
+                  <%= image_tag 'content/04/maternity-pay_sml.png', :alt => "A screen shot of a smart answer" %>
                 </div>
                 <div class="caption">
                   <p>You shouldn’t have to understand how government works to be able to interact with it. Government and the services it provides are often complicated, so we should hide complexity where possible.</p>
@@ -322,7 +322,7 @@
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <a href="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/05/early_designs.jpg"><img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/05/early_designs.jpg" alt="A selection of design iterations from GOV.UK" /></a>
+                  <%= link_to image_tag('content/05/early_designs.jpg', :alt => "A selection of design iterations from GOV.UK"), image_path('content/05/early_designs.jpg') %>
                 </div>
                 <div class="caption">
                   <p>Release often and release early.  A ‘launch’ is not the end of the project, but an opportunity to test the product in the wild, and get feedback quickly.  Act on the feedback and continuously improve the product.  You can read some examples of this on the blog, <a href="http://digital.cabinetoffice.gov.uk/2012/02/01/govuk-beta-day1/">day 1 iterations</a> and further iterations the <a href="http://digital.cabinetoffice.gov.uk/2012/02/02/day-2-of-gov-uk-more-iteration/">following week</a> made on the GOV.UK beta, and the <a href="http://digital.cabinetoffice.gov.uk/2012/03/13/inside-government-how-busy-the-busy-bees-have-been/">INSIDE GOVERNMENT first week iteration</a>.</p>
@@ -335,7 +335,7 @@
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <a href="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/05/iterate.png"><img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/05/iterate.png" alt="A selection of design iterations from GOV.UK" /></a>
+                  <%= link_to image_tag('content/05/iterate.png', :alt => "A selection of design iterations from GOV.UK"), image_path('content/05/iterate.png') %>
                 </div>
                 <div class="caption">
                   <p>We released an <a href="http://alpha.gov.uk/">alpha version of GOV.UK</a> last year and we released the <a href="https://www.gov.uk/">beta version</a> in January. Other people in government are starting to use this approach: <a href="http://shropshire.gov.uk/projectwip/">Shropshire WIP</a> and <a href="http://www.directscot.org/">DirectScot</a> being good examples.</p>
@@ -393,7 +393,7 @@ http://digital.cabinetoffice.gov.uk/2012/02/02/gov-uk-truly-open-platform/-->
                     <p class="status tried">Tried &amp; tested</p>
                   </header>
                   <div class="example">
-                    <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/06/exampleoftable.png" alt="An image showing an example of high contrasting colours" />
+                    <%= image_tag 'content/06/exampleoftable.png', :alt => "An image showing an example of high contrasting colours" %>
                   </div>
                   <div class="caption">
                     <p>This table shows an example of using highly contrasting colours, which makes the information easier to read.</p>
@@ -538,7 +538,7 @@ No&lt;/label&gt;</code></pre>
                   <p class="status experimental">Experimental</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/07/screens.png" alt="A photo showing a selection of devices" >
+                  <%= image_tag 'content/07/screens.png', :alt => "A photo showing a selection of devices" %>
                 </div>
                 <div class="caption">
                   <p>Your service could be accessed from almost anywhere on a wide variety of devices in all sorts of different environments. Consider how the usage might change for each of these. For instance, a low-cost, low-power shared PC in a public library or a smart phone used whilst walking down the street.</p>
@@ -624,7 +624,7 @@ No&lt;/label&gt;</code></pre>
                   <p class="status changeable">Likely to change</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/09/family.jpg" alt="Screenshots of the GOV.UK and INSIDE GOVERNMENT betas" >
+                  <%= image_tag 'content/09/family.jpg', :alt => "Screenshots of the GOV.UK and INSIDE GOVERNMENT betas" %>
                 </div>
                 <div class="caption">
                   <p>So far we have released beta versions of GOV.UK and INSIDE GOVERNMENT.  Comparing page designs from both of these projects gives you a good visual example of what we mean in this principle. These designs feel like they come from the same family, but they are different depending on the different requirements of the page.</p>
@@ -671,7 +671,7 @@ No&lt;/label&gt;</code></pre>
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/design/page_example_annotated.png" alt="A screen shot of a gov.uk page, with annotations" />
+                  <%= image_tag 'content/design/page_example_annotated.png', :alt => "A screen shot of a gov.uk page, with annotations" %>
                 </div>
                 <div class="caption">
                   <p>This is an example from the <a href="http://www.gov.uk">GOV.UK beta</a> that illustrates many of these design principles in action.</p>
@@ -683,15 +683,16 @@ No&lt;/label&gt;</code></pre>
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/design/colour_palette.png" alt="A screenshot of the colour palette" />
+                  <%= image_tag 'content/design/colour_palette.png', :alt => "A screenshot of the colour palette" %>
+                  <%#<img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/design/colour_palette.png" alt="A screenshot of the colour palette" />%>
                 </div>
                 <div class="caption">
                   <p>These are the colours we’ve used for <a href="http://www.gov.uk">GOV.UK</a>. It’s a deliberately
                   broad palette as the scope for the site is so large. We use the paler
                   colours the most and the stronger colours when we want to draw
                   attention to something.</p>
-                  <p>You can <a href="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/downloads/betacolours.ase">download this colour palette as an Adobe Swatch Exchange file</a>, then you can import them straight into Photoshop or Illustrator</p>
-                  <p>You can also <a href="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/downloads/betacolours.pdf">download a pdf of the colour palette</a>, so you can copy and paste the hex values.</p>
+                  <p>You can <%= link_to 'download this colour palette as an Adobe Swatch Exchange file', asset_path('betacolours.ase') %>, then you can import them straight into Photoshop or Illustrator</p>
+                  <p>You can also <%= link_to 'download a pdf of the colour palette', asset_path('betacolours.pdf') %>, so you can copy and paste the hex values.</p>
                 </div>
               </article>
               <article class="comparison">
@@ -700,7 +701,7 @@ No&lt;/label&gt;</code></pre>
                   <p class="status experimental">Experimental</p>
                 </header>
                 <div class="example">
-                  <img class="full-width" src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/10/type_styles.png" alt="A screenshot of typography examples" />
+                  <%= image_tag 'content/10/type_styles.png', :alt => "A screenshot of typography examples", :class => "full-width" %>
                 </div>
                 <div class="caption">
                   <p>Typography is extremely important in any design. It’s a key factor in legibility. We have more control over web typography than ever before and we should ensure our designs are clear and easy to read.</p>
@@ -718,7 +719,7 @@ No&lt;/label&gt;</code></pre>
                   <p class="status changeable">Likely to change</p>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/design/small_icons.png" alt="A screenshot of some small icons" />
+                  <%= image_tag 'content/design/small_icons.png', :alt => "A screenshot of some small icons" %>
                 </div>
                 <div class="caption">
                   <p>Here are the icons we’ve used on <a href="http://www.gov.uk">GOV.UK</a>.</p>
@@ -750,7 +751,7 @@ No&lt;/label&gt;</code></pre>
                     <p class="status experimental">Experimental</p>
                   </header>
                   <div class="example">
-                    <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/10/transaction-graph.jpg" alt="A photo of some early-stage transaction thinking">
+                    <%= image_tag 'content/10/transaction-graph.jpg', :alt => "A photo of some early-stage transaction thinking" %>
                   </div>
                   <div class="caption">
                     <p>What is a transaction?</p>
@@ -763,7 +764,7 @@ No&lt;/label&gt;</code></pre>
                     <p class="status experimental">Experimental</p>
                   </header>
                   <div class="example">
-                    <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/10/transaction-inputs.jpg" alt="A photo of some early-stage transaction thinking" >
+                    <%= image_tag 'content/10/transaction-inputs.jpg', :alt => "A photo of some early-stage transaction thinking" %>
                   </div>
                   <div class="caption">
                     <p>We’re currently working on a broad range of transactions to create a pick’n’mix of consistent design patterns which we can choose from for use in a number of scenarios.</p>
@@ -776,7 +777,7 @@ No&lt;/label&gt;</code></pre>
                   <p class="status tried">Tried &amp; tested</p>
                 </header>
                 <div class="example">
-                  <img class="full-width" src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/content/design/banned_big.jpg" alt="A photograph of some examples of banned design metaphors" />
+                  <%= image_tag 'content/design/banned_big.jpg', :alt => "A photograph of some examples of banned design metaphors", :class => "full-width" %>
                 </div>
                 <div class="caption">
                   <p>We should be simple and clear in all our communications. Visual
