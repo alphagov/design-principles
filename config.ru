@@ -1,23 +1,4 @@
-require "rubygems"
-require 'rack'
-require 'rack/contrib/try_static'
-require "bundler/setup"
-require 'slimmer'
+# This file is used by Rack-based servers to start the application.
 
-use Slimmer::App, asset_host: "https://static.production.alphagov.co.uk/"
-
-map "/designprinciples" do
-  run Rack::File.new("_site/index.html")
-end
-
-map "/designprinciples/styleguide" do
-  run Rack::File.new("_site/styleguide.html")
-end
-
-map "/designprinciples/performanceframework" do
-  run Rack::File.new("_site/performanceframework.html")
-end
-
-#use Rack::TryStatic, root: "_site/", urls: %w[/], :try => ['.html', 'index.html', '/index.html']
-# otherwise 404 NotFound
-#run lambda { [404, {'Content-Type' => 'text/plain'}, ['whoops! Not Found']] }
+require ::File.expand_path('../config/environment',  __FILE__)
+run DesignPrinciples::Application
