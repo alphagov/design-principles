@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>DesignPrinciples</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title><%= yield :title %></title>
+    <link href="https://static.production.alphagov.co.uk/designprinciples/app/assets/stylesheets/main.css" type="text/css" rel="stylesheet" />
+    <script src="https://static.production.alphagov.co.uk/designprinciples/app/assets/javascripts/main.js"></script>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
 </html>
