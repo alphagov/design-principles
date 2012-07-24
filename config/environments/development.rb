@@ -28,4 +28,6 @@ DesignPrinciples::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.slimmer.asset_host = ENV["STATIC_DEV"] if ENV["STATIC_DEV"]
 end
