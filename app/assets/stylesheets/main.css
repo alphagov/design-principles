@@ -875,13 +875,14 @@ html {
   color:#fff;
 }
 
-#popup.welcome-tour .welcome-content {
+#popup.welcome-tour .dp-welcome-content {
   background-color: #d43783;
 }
 
-#popup.welcome-tour .welcome-inner {
+#popup.welcome-tour .dp-welcome-content {
   background-color: #ea9bc1;
 }
+
 #wrapper .additional {
   padding-top:2.3rem;
 }
