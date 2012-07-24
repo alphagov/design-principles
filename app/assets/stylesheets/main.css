@@ -879,7 +879,7 @@ html {
   background-color: #d43783;
 }
 
-#popup.welcome-tour .dp-welcome-content {
+#popup.welcome-tour .dp-welcome-content .welcome-inner {
   background-color: #ea9bc1;
 }
 
