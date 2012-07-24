@@ -1,4 +1,4 @@
-# Originally adopted from Raimonds Simanovskis Rakefile, 
+# Originally adopted from Raimonds Simanovskis Rakefile,
 #   http://github.com/rsim/blog.rayapps.com/blob/master/Rakefile
 #   which was in turn adopted from Tate Johnson's Rakefile
 #   http://github.com/tatey/tatey.com/blob/master/Rakefile
@@ -112,14 +112,15 @@ namespace :router do
       @logger.error "Route already exists: #{conflict_error.existing}"
       raise conflict_error
     end
-    begin
-      @logger.info "Registering full route /designprinciples/performanceframework"
-      @router.routes.update application_id: app_id, route_type: :full,
-        incoming_path: "/designprinciples/performanceframework"
-    rescue Router::Conflict => conflict_error
-      @logger.error "Route already exists: #{conflict_error.existing}"
-      raise conflict_error
-    end
+    # temporarily comment out
+    #begin
+    #  @logger.info "Registering full route /designprinciples/performanceframework"
+    #  @router.routes.update application_id: app_id, route_type: :full,
+    #    incoming_path: "/designprinciples/performanceframework"
+    #rescue Router::Conflict => conflict_error
+    #  @logger.error "Route already exists: #{conflict_error.existing}"
+    #  raise conflict_error
+    #end
     begin
       @logger.info "Registering temporary path for designprinciples assets"
       @router.routes.update application_id: app_id, route_type: :prefix,
