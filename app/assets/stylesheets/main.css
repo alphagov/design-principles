@@ -493,6 +493,10 @@ html {
   margin-left: -32.3rem;
 }
 
+#wrapper.performanceframework .beta-notice span {
+  padding-left:0;
+}
+
 @media (max-width: 640px) {
   #wrapper .beta-notice {
     top: 0;
@@ -524,13 +528,22 @@ html {
   }
 }
 
-#wrapper .alpha-feedback{
+#wrapper .alpha-feedback,
+#wrapper .beta-feedback {
   position: relative;
   clear:both;
   padding: 0 26px 26px;
   padding: 0 2.6rem 2.6rem;
+}
+
+#wrapper .alpha-feedback {
   background-color:#d43783;
   color:#fff;
+}
+
+#wrapper .beta-feedback {
+  background-color:#F17921;
+  color:#000;
 }
 
 @media (max-width: 640px) {
@@ -540,18 +553,28 @@ html {
   }
 }
 
-#wrapper .alpha-feedback h1 {
+#wrapper .alpha-feedback h1,
+#wrapper .beta-feedback h1 {
   font-size: 32px;
   font-size: 3.2rem;
 }
 
-#wrapper .alpha-feedback a { 
-  color: white;
+#wrapper .alpha-feedback a,
+#wrapper .beta-feedback a {   
   border-color: white;
   font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
 }
 
-#wrapper .alpha-feedback header {
+#wrapper .alpha-feedback a {
+  color: white;
+}
+
+#wrapper .beta-feedback a {
+  border-bottom:1px solid #000;
+}
+
+#wrapper .alpha-feedback header,
+#wrapper .beta-feedback header {
   padding: 0;
   margin: 0;
 }
