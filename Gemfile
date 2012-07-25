@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://gems.gemfury.com/vo6ZrmjBQu5szyywDszE/'
 
 gem 'rails', '3.2.6'
 
@@ -19,3 +20,5 @@ if ENV['SLIMMER_DEV']
 else
   gem "slimmer", '~> 1.1.45'
 end
+
+gem 'router-client', '~> 3.1.0', :require => false
