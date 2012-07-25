@@ -1,3 +1,3 @@
 #!/bin/sh
 bundle install
-bundle exec jekyll --server 9292 --auto
+bundle exec rails s --port 3023
