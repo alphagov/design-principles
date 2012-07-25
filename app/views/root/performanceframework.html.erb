@@ -30,7 +30,7 @@
      </ul>
      <p>Monitor, iterate and improve throughout the process. You don't have to have completed all of the previous checkpoints to do this.</p>
     </div>
-    <div class="main-img"><img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/monitor_iterate_improve.png" alt="" /></div>
+    <div class="main-img"><%= image_tag 'monitor_iterate_improve.png' %></div>
   </header>
    <nav>
     <ol>
@@ -120,7 +120,7 @@
            <article class="worked-example worked-example-wide">
               <h1>User needs and personas</h1>
               <div class="example">
-               <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/user-needs.png" alt="" />
+                <%= image_tag 'user-needs.png' %>
               </div>
               <div class="caption">
                <p>When we thought about who would need information on the performance of GOV.UK, we considered a range of audiences from ministers and senior management through to GDS product managers and developers.</p>
@@ -280,7 +280,7 @@
                  <li>0% (0 people) scrolled any further</li>
                 </ol>
                </div>
-               <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/page_hits.png" alt="" />
+               <%= image_tag 'page_hits.png' %>
               </div>
               <div class="caption">
                <p>We are using Google Analytics to measure how users interact with GOV.UK pages. We want to know how far down the page they are reading so that we can tweak the content, if necessary.</p>
@@ -316,7 +316,7 @@
                    <li>1 at /eu</li>
                   </ol>
                  </div>
-                 <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/funnel-conversion.png" alt="" />
+                 <%= image_tag 'funnel-conversion.png' %>
                 </div>
                 <div class="caption">
                  <p>We are developing a new service to allow people to join the
@@ -379,7 +379,7 @@
               <h1 id="remote-usability-testing">Remote usability testing</h1>
               <div class="example">
                <a href="http://digital.cabinetoffice.gov.uk/2012/01/13/quantitative-testing-betagov/">
-                <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/gds_blog.jpg" alt="" />
+                 <%= image_tag 'gds_blog.jpg' %>
                </a>
               </div>
               <div class="caption">
@@ -400,7 +400,7 @@
                   <h1>HMRC Active Demand Management</h1>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/no_service.png" />
+                  <%= image_tag 'no_service.png' %>
                   <p>Screenshot from <a href="http://breakfastbriefings.stanford.edu/files/BestServiceVers.2.pdf">The best service is no service (PDF, 1.9MB)</a></p>
                 </div>
                 <div class="caption">
@@ -422,7 +422,7 @@
                   <h1>Cost per Transaction measurement at the Department for Transport</h1>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/spreadsheet_sml.png" alt="" />
+                  <%= image_tag 'spreadsheet_sml.png' %>
                 </div>
                 <div class="caption">
                  <p>DfT and its agencies DVLA , DSA and VOSA have made progress
@@ -474,10 +474,10 @@
             <article class="worked-example">
               <h1 id="remote-usability-testing">Data insight platform</h1>
               <div class="example">
-               <a href="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/dept_summary_large.png">
-                <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/dept_summary.png" alt="" />
-                (Click for larger image)
-               </a>
+                <%= link_to image_path('dept_summary_large.png') do %>
+                  <%= image_tag 'dept_summary.png' %>
+                  (Click for larger image)
+                <% end %>
               </div>
               <div class="caption">
                <p>We’re developing a platform which will aggregate data from a
@@ -501,7 +501,7 @@
                   <h1>Time series metrics</h1>
                 </header>
                 <div class="example">
-                  <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/graphite.png" />
+                  <%= image_tag 'graphite.png' %>
                 </div>
                 <div class="caption">
                   <p><a href="http://graphite.wikidot.com/faq">Graphite</a> is a real-time graphing system which is optimised
@@ -563,7 +563,7 @@
             <article class="worked-example worked-example-wide">
               <h1>Developer dashboards</h1>
               <div class="example">
-               <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/developmentprocess-dashboard.png" alt="" />
+                <%= image_tag 'developmentprocess-dashboard.png' %>
               </div>
               <div class="caption">
                <p>Dashboards keep our developers and editors up to date with the
@@ -586,7 +586,7 @@
                     <h1>Yahoo! News</h1>
                   </header>
                   <div class="example">
-                   <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/yahoo-news.jpg" alt="" />
+                    <%= image_tag 'yahoo-news.jpg' %>
                   </div>
                   <div class="caption">
                     <p>This dashboard was designed for senior staff at Yahoo! News. It consolidates data from multiple internal and external data sources providing a single view in an accessible, interactive and attractive format.</p>
@@ -600,7 +600,7 @@
                     <h1>US Government IT Dashboard</h1>
                   </header>
                   <div class="example">
-                   <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/federal-it-dashboard.png" alt="" />
+                    <%= image_tag 'federal-it-dashboard.png' %>
                   </div>
                   <div class="caption">
                     <p>In 2009, the US government introduced an <a href="http://www.itdashboard.gov/">IT Dashboard</a>,
@@ -659,7 +659,7 @@
             <article class="worked-example">
               <h1>A/B testing</h1>
               <div class="example">
-               <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/ab-test.png" alt="" />
+                <%= image_tag 'ab-test.png' %>
               </div>
               <div class="caption">
                <p>We're using A/B testing to see how colour changes can affect
@@ -679,7 +679,7 @@
                     <h1>Multivariate testing on Lovefilm</h1>
                   </header>
                   <div class="example">
-                   <img src="https://d17tffe05zdvwj.cloudfront.net/designprinciples/app/assets/images/lovefilm-logo.png" alt="" />
+                    <%= image_tag 'lovefilm-logo.png' %>
                   </div>
                   <div class="caption">
                     <p>Multivariate testing (MVT) is similar to A/B testing but
