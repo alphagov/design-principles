@@ -67,5 +67,8 @@ module DesignPrinciples
 
     config.assets.prefix = "/designprinciples"
     config.assets.precompile += ['main.css', 'main.js']
+
+    # Disable Rack::Cache
+    config.action_dispatch.rack_cache = nil
   end
 end
