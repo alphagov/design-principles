@@ -978,7 +978,7 @@ html {
 
   /* hacky preloader for dropdown background image */
   .js-enabled #wrapper {
-    background-image: url(../images/dropdown_arrow_open.png);
+    background-image: url(<%= image_path 'dropdown_arrow_open.png' %>);
     background-position: -5000px top;
     background-repeat: no-repeat;
   }
@@ -996,7 +996,7 @@ html {
     padding: 11px 39px 1px 13px;
     padding: 1.1rem 3.9rem 1.1rem 1.3rem;
     color: white;
-    background: #dd322d url(../images/dropdown_arrow_closed.png) no-repeat right center;
+    background: #dd322d url(<%= image_path 'dropdown_arrow_closed.png' %>) no-repeat right center;
     cursor: pointer;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -1006,7 +1006,7 @@ html {
   }
   
   .js-enabled #wrapper .open-section h2 {
-    background-image: url(../images/dropdown_arrow_open.png);
+    background-image: url(<%= image_path 'dropdown_arrow_open.png' %>);
   }
 
   .js-enabled #wrapper .examples h2 a,
