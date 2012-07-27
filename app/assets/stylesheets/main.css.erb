@@ -128,9 +128,9 @@ html {
   float: left;
   clear: both;
   text-align: right;
-  margin-left: -39px;
+  margin-left: -2.1666666em;
   margin-left: -3.9rem;
-  width: 26px;
+  width: 1.4444444em;
   width: 2.6rem;
   color: #aaa;
 }
@@ -884,6 +884,7 @@ html {
 }
 
 #wrapper .additional {
+  padding-top:1.25925926em;
   padding-top:2.3rem;
 }
 #wrapper .feedback {
@@ -1148,7 +1149,7 @@ html {
 #wrapper article h2,
 #wrapper header h2 {
   letter-spacing: 0;
-  font-size: inherit;
+  font-size: 1em;
 }
 #wrapper article li {
   position: relative;
@@ -1156,7 +1157,12 @@ html {
   list-style-type: disc;
   margin-left: -0.5em;
   padding-left: 0.5em;
-  }
+  display:inline;
+}
+.lte-ie8 #wrapper article li {
+  list-style-image:none;
+  zoom:1;
+}
 #wrapper article li b {
   font-weight:400;
 }
