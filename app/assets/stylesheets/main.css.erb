@@ -335,7 +335,7 @@ html {
 #wrapper article h2,
 #wrapper header h2 {
   font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
-  font-size: 13px;
+  font-size:1em;
   font-size: 1.3rem;
   line-height: 1.1538461538;
   font-weight: 500;
@@ -424,6 +424,10 @@ html {
   padding: 0;
   display: block;
   background: #ddd;
+}
+
+#wrapper article .examples .table-view {
+  overflow:visible;
 }
 
 #wrapper article .examples header {
@@ -652,6 +656,10 @@ html {
   height: auto;
 }
 
+#wrapper article .examples .process .example img,
+#wrapper article .worked-example .example img {
+  display:block;
+}
 #wrapper article .examples .process-wide .example img,
 #wrapper article .examples .process-wide .example a,
 #wrapper article .worked-example-wide .example img,
@@ -892,6 +900,13 @@ html {
 }
 #wrapper .checklist li {
   list-style: none;
+  clear:both;
+}
+.lte-ie8 #wrapper .checklist li {
+  list-style-position:outside
+}
+#wrapper table {
+  font-size:0.85em;
 }
 #wrapper table {
   border-collapse: collapse;
@@ -899,10 +914,17 @@ html {
   margin: 1em 0 2em 0;
   width:auto;
 }
+#wrapper table li {
+  font-size:1em;
+}
 
+#wrapper article .examples .table-view table {
+  overflow:visible;
+}
 #wrapper article .examples .table-view table {
   margin-left:2%;
   margin-right:2%;
+  width:96%;
 }
 
 #wrapper table caption {
@@ -1161,7 +1183,6 @@ html {
 }
 .lte-ie8 #wrapper article li {
   list-style-image:none;
-  zoom:1;
 }
 #wrapper article li b {
   font-weight:400;
