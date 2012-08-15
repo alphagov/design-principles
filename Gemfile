@@ -18,7 +18,7 @@ end
 if ENV['SLIMMER_DEV']
   gem "slimmer", :path => '../slimmer'
 else
-  gem "slimmer", '~> 1.1.45'
+  gem "slimmer", '1.2.3'
 end
 
 gem 'router-client', '~> 3.1.0', :require => false
