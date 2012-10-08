@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe "The designprinciples page" do
-
   it "should render without blowing up" do
     visit "/designprinciples"
 
