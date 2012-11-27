@@ -58,8 +58,8 @@ html {
   position: relative;
   color: #000;
   background: #fff;
-  font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.4444444444;
@@ -98,11 +98,22 @@ html {
 #wrapper header, #wrapper nav,
 #wrapper .principles,
 #wrapper .additional,
-#wrapper .feedback{
+#wrapper .feedback,
+#wrapper .content {
   position: relative;
   margin: 0 auto;
   max-width: 700px;
   max-width: 70rem;
+}
+
+#wrapper nav {
+  border-bottom: 1px solid #DD322D;
+  height: 45px;
+}
+
+#wrapper .content {
+  clear: both;
+  padding: 60px 0
 }
 
 #wrapper a {
@@ -1155,7 +1166,7 @@ html {
   margin-left: 0.75em;
 }
 #wrapper .sections{
-  margin:0 auto;
+  margin:0 auto 0 0;
   max-width: 70rem;
   position: relative;
 }
@@ -1163,11 +1174,21 @@ html {
   display:inline;
 }
 #wrapper .sections li a{
+  border: 1px solid #DD322D;
   background-color:#DD322D;
   color:#fff;
   text-decoration:none;
   border:none;
   padding:0.5em 1em;
+}
+#wrapper .sections li a.gov-uk {
+  background-color: #8d1a17;
+}
+#wrapper .sections li a.current{
+  border: 1px solid #DD322D;
+  background-color: #fff;
+  border-bottom-color: #fff;
+  color: #DD322D;
 }
 #wrapper article h2,
 #wrapper header h2 {

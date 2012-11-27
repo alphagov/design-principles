@@ -9,4 +9,13 @@ class RootController < ApplicationController
 
   def performanceframework
   end
+
+  def insidegovernment
+  end
+
+  def mainstream
+  end
+
+  def whatsnew
+  end
 end
