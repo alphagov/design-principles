@@ -3,6 +3,7 @@ source 'https://gems.gemfury.com/vo6ZrmjBQu5szyywDszE/'
 
 gem 'rails', '3.2.6'
 gem 'unicorn', '4.3.1'
+gem 'plek', '1.0.0'
 gem 'govuk_frontend_toolkit', '0.3.3'
 
 # Gems used only for assets and not required
@@ -16,7 +17,7 @@ end
 if ENV['SLIMMER_DEV']
   gem "slimmer", :path => '../slimmer'
 else
-  gem "slimmer", '3.9.4'
+  gem "slimmer", '3.9.5'
 end
 
 gem 'router-client', '~> 3.1.0', :require => false
