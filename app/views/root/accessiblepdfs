@@ -4,34 +4,37 @@
     
     <h2>Accessible PDFs</h2>
     <p>The best way to create an accessible PDF is to create an accessible source document. Well structured Microsoft Word documents make good source documents for conversion to PDF.</p>
-<p>When a source document is converted into PDF it is tagged. The PDF tag tree reflects the structure of the document, and it’s this structure that assistive technologies like screen readers use to navigate the document.</p>
+    <p>When a source document is converted into PDF it is tagged. The PDF tag tree reflects the structure of the document, and it&rsquo;s this structure that assistive technologies like screen readers use to navigate the document.</p>
 
-<h2>In Microsoft Word</h2>
+    <h2>In Microsoft Word</h2>
 
-<p>Use the styles and features available in Word to format your content and give it structure. This will make it easier to convert your source document into PDF because it lays the groundwork for the PDF tag tree.</p>
-<h3>Use headings</h3>
-<p>Use the heading styles in Word to create a logical document structure. Don’t increase the size of text or make it bold to create the appearance of headings.</p>
-<p>Treat your document like a book: It should have one title (level one heading) and multiple chapters (level two headings). Within each chapter there may be multiple sections (level three headings) and sub sections (level four headings).</p>
+    <p>Use the styles and features available in Word to format your content and give it structure. This will make it easier to convert your source document into PDF because it lays the groundwork for the PDF tag tree.</p>
 
-<h3>Use lists</h3>
-<p>Use the list styles in Word to group together related items. If the items follow a specific sequence, use a numbered list instead. Don’t use punctuation or other markers to create the illusion of a list.</p>
+    <h3>Use headings</h3>
+    <p>Use the heading styles in Word to create a logical document structure. Don&rsquo;t increase the size of text or make it bold to create the appearance of headings.</p>
+    <p>Treat your document like a book: It should have one title (level one heading) and multiple chapters (level two headings). Within each chapter there may be multiple sections (level three headings) and sub sections (level four headings).</p>
 
-<h3>Create a table of contents</h3>
-<p>If your document is longer than a few pages, use Word to automatically create a table of contents based on your heading structure. Don’t use lists and links to manually create a table of contents.</p>
-<h3>Use readable body text</h3>
-<p>Use left aligned text (unless the language of your document is read right to left). Don’t use justified text in your document.</p>
-<p>Choose a san serif font and use the styles in Word to set it as the default, with a minimum size of 12pt. If you need to include footnotes or other text of a smaller size, increase the size of the body text to 14pt, rather than reduce the size of text below 12pt.</p>
-<p>Don’t use chunks of italicised or capitalised text, and don’t underline text unless it’s a link.</p>
+    <h3>Use lists</h3>
+    <p>Use the list styles in Word to group together related items. If the items follow a specific sequence, use a numbered list instead. Don&rsquo;t use punctuation or other markers to create the illusion of a list.</p>
+
+    <h3>Create a table of contents</h3>
+    <p>If your document is longer than a few pages, use Word to automatically create a table of contents based on your heading structure. Don&rsquo;t use lists and links to manually create a table of contents.</p>
+
+    <h3>Use readable body text</h3>
+    <p>Use left aligned text (unless the language of your document is read right to left). Don&rsquo;t use justified text in your document.</p>
+    <p>Choose a san serif font and use the styles in Word to set it as the default, with a minimum size of 12pt. If you need to include footnotes or other text of a smaller size, increase the size of the body text to 14pt, rather than reduce the size of text below 12pt.</p>
+    <p>Don&rsquo;t use chunks of italicised or capitalised text, and don&rsquo;t underline text unless it’s a link.</p>
 
 <h3>Use good colour contrast</h3>
 <p>Use foreground/background colours for text that have a good contrast ratio. The 4.1:5 ratio recommended by the Web Content Accessibility Guidelines 2.0 is a good minimum.</p>
-<p>Don’t use colour or shape as the only way to identify something in your document. Use text labels or descriptions instead.</p>
+<p>Don&rsquo;t use colour or shape as the only way to identify something in your document. Use text labels or descriptions instead.</p>
 
 <h3>Use data tables</h3>
-<p>Use tables with column headings to display data. Don’t use tables to make cosmetic changes to the layout of the document.</p>
+<p>Use tables with column headings to display data. Don&rsquo;t use tables to make cosmetic changes to the layout of the document.</p>
 
 <h3>Provide text descriptions</h3>
 <p>Use Word to add text descriptions to all important images in the document. Make sure the text description includes all the information contained within, or conveyed by, the image.</p>
+
 <h2>In Adobe Acrobat</h2>
 <p>Use Adobe Acrobat Pro to convert your Word document into PDF. Use the <strong>Convert to PDF</strong> option under the <strong>Adobe</strong> menu in Microsoft Word to do this. This will ensure that Acrobat picks up the accessibility you have built into your source document.</p>
 
@@ -48,7 +51,7 @@
 <p>If the PDF contains form fields, use <strong>Advanced &gt; Accessibility &gt; Touch up reading order</strong> to check they can be navigated with the tab key in a logical order. If the tab order needs improving, use the <strong>Order</strong> panel to drag and drop the fields into the correct order.</p>
 
 <h3>Check the reading order</h3>
-<p>Use the <strong>Tags </strong>panel to review and edit the reading order of the PDF. Don’t rely on the visual order of the PDF. The reading order is based on the structure of the PDF tag tree, which may not match the visual content order.</p>
+<p>Use the <strong>Tags </strong>panel to review and edit the reading order of the PDF. Don&rsquo;t rely on the visual order of the PDF. The reading order is based on the structure of the PDF tag tree, which may not match the visual content order.</p>
 <h3>Check the reflow order</h3>
 <p>Use <strong>View &gt; Zoom &gt; reflow </strong>then check that the PDF still has a logical reading order. Note: It can sometimes be difficult to guarantee a logical reflow order for PDfs with complex content.</p>
 
@@ -86,7 +89,7 @@
 <p><a href="http://www.nvda-project.org/">http://www.nvda-project.org/</a> </p>
 <p>With NVDA running, open the PDF and use the following commands to check the PDF:</p>
 <ul>
-    <li>From the top of the PDF (with the Numlock off), use <strong>Numpad 0 + Numpad 2</strong> to read the PDF from top to bottom and check the reading order;</li>
+    <li>from the top of the PDF (with the Numlock off), use <strong>Numpad 0 + Numpad 2</strong> to read the PDF from top to bottom and check the reading order</li>
     <li>use the <strong>tab</strong> key (repeatedly) to move through the PDF and check the tab order</li>
     <li>use the <strong>h</strong> key (repeatedly) to move through the PDF and check the heading structure</li>
     <li>use the <strong>g</strong> key (repeatedly) to move through the PDF and check for text descriptions</li>
@@ -96,7 +99,7 @@
 <h3>Use VoiceOver</h3>
 <p>Turn VoiceOver on (or off again) using <strong>Command + f5</strong>. With VoiceOver running open the PDF and use the following commands to check the PDF:</p>
 <ul>
-    <li>From the top of the PDF use a <strong>double finger down swipe</strong>, or <strong>Control + Option + a</strong> to read the PDF from top to bottom and check the reading order; Use the <strong>tab</strong> key (repeatedly) to move through the PDF and check the tab order.</li>
+    <li>from the top of the PDF use a <strong>double finger down swipe</strong>, or <strong>Control + Option + a</strong> to read the PDF from top to bottom and check the reading order; Use the <strong>tab</strong> key (repeatedly) to move through the PDF and check the tab order.</li>
 </ul>
 <p>NB: VoiceOver does not provide shortcut keys for navigating by headings or graphics.</p>
 <h2>Acknowledgements</h2>
