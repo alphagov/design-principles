@@ -11,8 +11,8 @@
     </ul>
   </nav>
   <ul>
-        <li><a href="mainstream" class="current">Mainstream</a></li>
-      <li><a href="insidegovernment">Inside Government</a></li>
+        <li><a href="mainstream" class="current">Mainstream formats</a></li>
+      <li><a href="insidegovernment">Inside Government formats</a></li>
       <li><a href="whatsnew">What's New?</a></li>
       <li><a href="accessiblepdfs">Accessible PDFs</a></li>
       </ul>
@@ -46,10 +46,11 @@
     <h3>Use readable body text</h3>
     <p>Use left aligned text (unless the language of your document is read right to left). Don&rsquo;t use justified text in your document.</p>
     <p>Choose a san serif font and use the styles in Word to set it as the default, with a minimum size of 12pt. If you need to include footnotes or other text of a smaller size, increase the size of the body text to 14pt, rather than reduce the size of text below 12pt.</p>
-    <p>Don&rsquo;t use chunks of italicised or capitalised text, and don&rsquo;t underline text unless it’s a link.</p>
+    <p>Don&rsquo;t use chunks of italicised or capitalised text, and don&rsquo;t underline text unless it&rsquo;s a link.</p>
 
 <h3>Use good colour contrast</h3>
-<p>Use foreground/background colours for text that have a good contrast ratio. The 4.1:5 ratio recommended by the Web Content Accessibility Guidelines 2.0 is a good minimum.</p>
+<p>Use foreground/background colours for text that have a good contrast ratio. <p><a href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/G18">4.1:5 ratio recommended by the Web Content Accessibility Guidelines 2.0</a> is a good minimum.</p>
+
 <p>Don&rsquo;t use colour or shape as the only way to identify something in your document. Use text labels or descriptions instead.</p>
 
 <h3>Use data tables</h3>
@@ -59,7 +60,7 @@
 <p>Use Word to add text descriptions to all important images in the document. Make sure the text description includes all the information contained within, or conveyed by, the image.</p>
 
 <h2>In Adobe Acrobat</h2>
-<p>Use Adobe Acrobat Pro to convert your Word document into PDF. Use the <strong>Convert to PDF</strong> option under the <strong>Adobe</strong> menu in Microsoft Word to do this. This will ensure that Acrobat picks up the accessibility you have built into your source document.</p>
+<p>Use Adobe Acrobat Pro to convert your Word document into PDF. Use the <strong>Convert to PDF</strong> option under the <strong>Adobe</strong> menu in Microsoft Word to do this. This will make sure that Acrobat picks up the accessibility you have built into your source document.</p>
 
 <h3>Set the document language</h3>
 <p>Set the language of the document. Go to <strong>File &gt; Properties &gt; Advanced</strong> and select a language from the <strong>Language</strong> menu.</p>
@@ -97,11 +98,12 @@
 
 <h3>Display document title</h3>
 <p>Display the document title instead of the file name. Go to <strong>File &gt; Properties &gt; Initial view</strong> and select    <strong>Document title </strong>from the<strong> Show </strong>drop down box.</p>
+
 <h2>Before publication</h2>
 <p>Once all the above steps have been taken, the PDF should be checked before it is published.</p>
 
 <h3>Full Adobe accessibility check</h3>
-<p>Go to <strong>Advanced &gt; Accessibility</strong> and select <strong>Full check</strong>. The PDF should pass the full check for WCAG 2.0 Level AA without any warnings.</p>
+<p>Go to <strong>Advanced &gt; Accessibility</strong> and select <strong>Full check</strong>. The PDF should pass the<a href="http://www.w3.org/WAI/WCAG20/quickref/">full check for WCAG 2.0 Level AA</a> without any warnings.</p>
 
 <h3>Quick screen reader check</h3>
 <p>Ask a screen reader user to read through the PDF. If no-one is available to do this, use one of the following options instead.</p>
@@ -112,7 +114,7 @@
 <p><a href="http://www.nvda-project.org/">http://www.nvda-project.org/</a> </p>
 <p>With NVDA running, open the PDF and use the following commands to check the PDF:</p>
 <ul>
-    <li>from the top of the PDF (with the Numlock off), use <strong>Numpad 0 + Numpad 2</strong> to read the PDF from top to bottom and check the reading order</li>
+    <li>from the top of the PDF (with the numlock off), use <strong>Numpad 0 + Numpad 2</strong> to read the PDF from top to bottom and check the reading order</li>
     <li>use the <strong>tab</strong> key (repeatedly) to move through the PDF and check the tab order</li>
     <li>use the <strong>h</strong> key (repeatedly) to move through the PDF and check the heading structure</li>
     <li>use the <strong>g</strong> key (repeatedly) to move through the PDF and check for text descriptions</li>
