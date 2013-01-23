@@ -1,7 +1,33 @@
-  <h2 id="accessiblepdfs">Accessible PDFs</h2>
+<% content_for :title do %>GDS design principles<% end %>
+
+<div id="wrapper" class="design-principles styleguide">
+  <header>
+    <h1>Government Digital Service <strong>Content principles</strong></h1>
+    <p>This style guide is part of the <a href="/designprinciples">Design Principles</a> document.</p>
+  </header>
+  <nav>
+    <ul class="sections">
+      <li><a href="styleguide" class="gov-uk">GOV.UK</a></li>
+    </ul>
+  </nav>
+  <ul>
+        <li><a href="mainstream" class="current">Mainstream</a></li>
+      <li><a href="insidegovernment">Inside Government</a></li>
+      <li><a href="whatsnew">What's New?</a></li>
+      <li><a href="accessiblepdfs">Accessible PDFs</a></li>
+      </ul>
+
+  <ol class="principles" id="mainstream">
+    <li class="principle">
+      <article>
+       <h1 id="accessiblepdfs">Accessible PDFs</h1> 
+        <div class="outline">
+        </div>
+
+
   
-    <p>The best way to create an accessible PDF is to create an accessible source document. Well structured Microsoft Word documents make good source documents for conversion to PDF.</p>
-    <p>When a source document is converted into PDF it is tagged. The PDF tag tree reflects the structure of the document, and it&rsquo;s this structure that assistive technologies like screen readers use to navigate the document.</p>
+    <p>The best way to create an accessible PDF is to create an accessible source document.</p>
+    <p>When a source document is converted into PDF it&rsquo;s tagged. The PDF tag tree reflects the structure of the document, and it&rsquo;s this structure that assistive technologies like screen readers use to navigate the document.</p>
 
     <h2>In Microsoft Word</h2>
 
@@ -101,3 +127,6 @@
 <p>NB: VoiceOver does not provide shortcut keys for navigating by headings or graphics.</p>
 <h2>Acknowledgements</h2>
 <p> Thanks to the Department for Work and Pensions (DWP) for helping us to incorporate its accessibility best practice guidance into this document. </p>
+
+
+</div>
