@@ -103,7 +103,7 @@
 <p>Once all the above steps have been taken, the PDF should be checked before it is published.</p>
 
 <h3>Full Adobe accessibility check</h3>
-<p>Go to <strong>Advanced &gt; Accessibility</strong> and select <strong>Full check</strong>. The PDF should pass the<a href="http://www.w3.org/WAI/WCAG20/quickref/">full check for WCAG 2.0 Level AA</a> without any warnings.</p>
+<p>Go to <strong>Advanced &gt; Accessibility</strong> and select <strong>Full check</strong>. The PDF should pass the <a href="http://www.w3.org/WAI/WCAG20/quickref/">full check for WCAG 2.0 Level AA</a> without any warnings.</p>
 
 <h3>Quick screen reader check</h3>
 <p>Ask a screen reader user to read through the PDF. If no-one is available to do this, use one of the following options instead.</p>
