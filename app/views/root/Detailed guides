@@ -1,0 +1,76 @@
+<% content_for :title do %>GDS design principles<% end %>
+
+<div id="wrapper" class="design-principles styleguide">
+  <header>
+    <h1>Government Digital Service <strong>Content principles</strong></h1>
+    <p>This style guide is part of the <a href="/designprinciples">Design Principles</a> document.</p>
+  </header>
+  <nav>
+    <ul class="sections">
+      <li><a href="styleguide" class="gov-uk">GOV.UK</a></li>
+    </ul>
+  </nav>
+  
+  <ul>
+    <li><a href="mainstream">Mainstream content types</a></li>
+    <li><a href="insidegovernment">Inside Government content types</a></li>
+    <li><a href="detailed-guides" class="current">Detailed guides</a></li>
+    <li><a href="whatsnew">What&rsquo;s new?</a></li>
+    <li><a href="accessiblepdfs">Accessible PDFs</a></li>
+  </ul>
+
+  <ol class="principles" id="inside-government">
+    <li class="principle">
+      <article>
+        <h1 id="detailed-guides">Detailed guides</h1>
+        <p>Detailed guides answer a specific user need for detailed information &ndash; usually ending in a user action with government. They are not designed to give general advice, explain government policy or be a dumping ground for information without a home. Use the Inside Government formats for things government is doing and use detailed guides for things the user is doing (or needs to).</p>
+        
+        <h3>Title</h3>
+        <p>Make titles active where possible &ndash; avoid gerunds and participles. For example: &lsquo;Submit Statutory Declarations&rsquo; not &lsquo;Using and submitting Statutory Declarations&rsquo;</p>
+        <p>If you need to use a separator, use a colon. For example: &lsquo;Controlled goods: licences, sanctions and embargoes&rsquo;</p>
+        <p>Maximum title length: 65 characters ideally (unless highly technical phrases are essential).</p>
+        <p>Only use an acronym in the title if it is a commonly used search term (like SPIRE).</p>
+        <p>Where the guide doesn&rsquo;t involve a direct action and is information-led:</p>
+        <ul>
+          <li>frontload the title with words the user is most likely to have searched for</li>
+          <li>make sure the title provides a full context (also helpful for search)</li>
+        </ul>
+        <p>For example: &rsquo;guidance for potato growers&rsquo;, not &lsquo;potatoes&rsquo;</p>
+        <p>If there are a number of guides with a repeated phrase in the title (eg Manufactured goods: automotive, Manufactured goods: electronic) change the title so that the most important area is front-loaded eg &lsquo;Automotive sector: import and export regulations&rsquo; or &lsquo;Chemical sector: import and export regulations&rsquo;. This is more descriptive and useful for search.</p>
+
+        <h3>Summaries</h3>
+        <p>Use the summary to orientate the user to the page by:</p>
+        <ul>
+          <li>keeping it active</li>
+          <li>including a verb</li>
+          <li>making it personal</li>
+          <li>including primary keywords</li>
+          <li>using plain English (no require, obtain etc)</li>
+          <li>keeping it succinct</li>
+        </ul>
+        <p>Remember: </p>
+        <ul>
+          <li>summaries take a full stop</li>
+          <li>you can use &lsquo;An introduction to...&lsquo; if it is an introduction (ie the guide is short and links out to other sources for the main information)</li>
+          <li>using &lsquo;How to&rsquo; etc is good</li>
+          <li>only use acronyms if they are very common  (eg EU, NATO, etc) or impossible to make a sensible sentence without</li>
+        </ul>
+        <p>Example:</p>
+        <p>Title: Organic produce: how to become an importer</p>
+        <p>Summary: Find out which organic products can be imported into the UK, how to register as an importer and how to get import authorisation.</p>
+        
+        <h3>Structure</h3>
+        <p>Make sure your section titles are front-loaded with search terms and make them active. Avoid gerunds (eg &lsquo;Apply for a licence&rsquo; not &lsquo;Applying for a licence&rsquo;). Try not to use questions in section titles.</p>
+        <p>Please don&rsquo;t use:</p>
+        <ul>
+          <li>technical terms in the section title unless unavoidable and then only if they have already been explained</li>
+          <li>&lsquo;introduction&rsquo; as your first section title &ndash;  users don&rsquo;t want an intro, just give the most important information</li>
+          <li>FAQs &ndash;  these are normally written because users find content difficult to understand. If you make sure your content is concise and written in plain English, FAQs shouldn&rsquo;t be necessary</li>
+        </ul>
+      
+        <h3>Linking</h3>
+        <p>Don&rsquo;t swamp the user with links to other sites or link to the same tool or web page throughout the guide. Only link to other pages on GOV.UK or external sites if this is necessary for the the user to complete their journey.</p>
+       </article>
+    </li>
+  </ol>
+</div>
