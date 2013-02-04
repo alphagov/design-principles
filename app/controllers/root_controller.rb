@@ -11,11 +11,21 @@ class RootController < ApplicationController
   end
 
   def insidegovernment
+    render "inside-government"
   end
 
   def mainstream
   end
 
+  def detailedguides
+    render "detailed-guides"
+  end
+
+  def accessiblepdfs
+    render "accessible-pdfs"
+  end
+
   def whatsnew
+    render "whats-new"
   end
 end

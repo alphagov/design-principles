@@ -1,13 +1,13 @@
 DesignPrinciples::Application.routes.draw do
 
-  get "/design-principles", :to => "root#design-principles"
+  get "/designprinciples", :to => "root#designprinciples"
   get "/designprinciples/styleguide", :to => "root#styleguide"
   get "/designprinciples/mainstream", :to => "root#mainstream"
-  get "/designprinciples/inside-government", :to => "root#inside-government"
-  get "/designprinciples/detailed-guides", :to => "root#detailed-guides"
-  get "/designprinciples/accessible-pdfs", :to => "root#accessible-pdfs"
+  get "/designprinciples/insidegovernment", :to => "root#insidegovernment"
+  get "/designprinciples/detailedguides", :to => "root#detailedguides"
+  get "/designprinciples/accessiblepdfs", :to => "root#accessiblepdfs"
   get "/designprinciples/performanceframework", :to => "root#performanceframework"
-  get "/designprinciples/whats-new", :to => "root#whats-new"
+  get "/designprinciples/whatsnew", :to => "root#whatsnew"
 
   root :to => redirect("/designprinciples")
 end
