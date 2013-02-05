@@ -161,15 +161,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara (~> 1.1.2)
+  capybara (= 1.1.2)
   govuk_frontend_toolkit (= 0.12.1)
   lograge
   plek (= 1.1.0)
   rails (= 3.2.6)
-  router-client (~> 3.1.0)
-  rspec-rails (~> 2.11.0)
-  sass-rails (~> 3.2.3)
+  router-client (= 3.1.0)
+  rspec-rails (= 2.11.0)
+  sass-rails (= 3.2.5)
   slimmer (= 3.9.5)
   therubyracer
-  uglifier (>= 1.0.3)
+  uglifier (= 1.2.6)
   unicorn (= 4.3.1)
