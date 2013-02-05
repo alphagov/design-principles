@@ -4,7 +4,7 @@ source 'https://gems.gemfury.com/vo6ZrmjBQu5szyywDszE/'
 gem 'rails', '3.2.6'
 gem 'unicorn', '4.3.1'
 gem 'plek', '1.1.0'
-gem 'govuk_frontend_toolkit', '0.3.3'
+gem 'govuk_frontend_toolkit', '0.12.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
