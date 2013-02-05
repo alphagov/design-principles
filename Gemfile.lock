@@ -163,7 +163,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (= 1.1.2)
   govuk_frontend_toolkit (= 0.12.1)
-  lograge
+  lograge (= 0.0.6)
   plek (= 1.1.0)
   rails (= 3.2.6)
   router-client (= 3.1.0)
