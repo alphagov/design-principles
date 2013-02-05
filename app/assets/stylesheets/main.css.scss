@@ -1,41 +1,27 @@
-/*main.css*/
-
 html {
   font-size: 62.5%;
-}
 
-@media (max-width: 900px) {
-  html {
+  @media (max-width: 900px) {
     font-size: 9px;
   }
-}
 
-@media (min-width: 1100px) {
-  html {
+  @media (min-width: 1100px) {
     font-size: 11px;
   }
-}
 
-@media (min-width: 1200px) {
-  html {
+  @media (min-width: 1200px) {
     font-size: 12px;
   }
-}
 
-@media (min-width: 1300px) {
-  html {
+  @media (min-width: 1300px) {
     font-size: 13px;
   }
-}
 
-@media (min-width: 1400px) {
-  html {
+  @media (min-width: 1400px) {
     font-size: 14px;
   }
-}
 
-@media (min-width: 1500px) {
-  html {
+  @media (min-width: 1500px) {
     font-size: 15px;
   }
 }
@@ -46,8 +32,8 @@ html {
     width: 1px;
     margin:-1px;
     overflow: hidden;
-    padding: 0; 
-    position: absolute;    
+    padding: 0;
+    position: absolute;
 }
 
 #wrapper {
@@ -81,7 +67,7 @@ html {
   color: inherit;
 }
 
-#wrapper ol, 
+#wrapper ol,
 #wrapper ol > li {
   list-style: none;
 }
@@ -147,7 +133,7 @@ html {
 }
 
 @media (max-width: 640px) {
-  
+
   #wrapper nav a .icon {
     margin-left: 0;
     text-align: left;
@@ -188,7 +174,7 @@ html {
   letter-spacing: 0.01em;
 }
 
-#wrapper header, 
+#wrapper header,
 #wrapper article {
   position: relative;
   clear: both;
@@ -207,7 +193,7 @@ html {
 
 #wrapper .principles {
   padding-bottom: 78px;
-  padding-bottom: 7.8rem;  
+  padding-bottom: 7.8rem;
 }
 
 #wrapper .principles:after {
@@ -222,7 +208,7 @@ html {
 }
 
 @media (max-width: 640px) {
-  #wrapper header, 
+  #wrapper header,
   #wrapper article {
     padding-top: 26px;
     padding-top: 2.6rem;
@@ -486,7 +472,7 @@ html {
 #wrapper .beta-notice {
   color: #000;
   float: left;
-  
+
   font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -494,7 +480,7 @@ html {
   line-height: 1.1538461538;
   font-weight: 500;
   letter-spacing: 0.2em;
-  
+
   display:block;
   position:absolute;
   z-index: 100;
@@ -571,7 +557,7 @@ html {
 }
 
 #wrapper .alpha-feedback a,
-#wrapper .beta-feedback a {   
+#wrapper .beta-feedback a {
   border-color: white;
   font-family: "Gill Sans W01 Medium", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
 }
@@ -659,7 +645,7 @@ html {
 #wrapper article .worked-example .example a{
   position: relative;
   top: 5px;
-  top: 0.5rem;    
+  top: 0.5rem;
   height: auto;
   display:block;
 }
@@ -720,7 +706,7 @@ html {
 
 #wrapper article .worked-example .example a img,
 #wrapper article .examples .process .example a img {
-  margin-left:0;  
+  margin-left:0;
 }
 
 #wrapper article .examples .process .caption,
@@ -799,7 +785,7 @@ html {
     width: 100%;
     margin-left: 0;
   }
-  
+
   #wrapper article .examples .design .caption h2,
   #wrapper article .examples .design .caption p {
     padding: 0 0 13px;
@@ -959,7 +945,7 @@ html {
 }
 
 #wrapper tr:nth-child(1) td {
-  border-top:none;  
+  border-top:none;
 }
 
 #wrapper table td li,
@@ -976,7 +962,7 @@ html {
 }
 
 #wrapper .dashed-list li:last-child {
-  margin-bottom:0;  
+  margin-bottom:0;
 }
 
 #wrapper th {
@@ -1014,7 +1000,7 @@ html {
     padding-top: 26px;
     padding-top: 2.6rem;
   }
-  
+
   .js-enabled #wrapper .examples h2 {
     float: left;
     display: inline;
@@ -1031,7 +1017,7 @@ html {
     -webkit-user-select: none;
            -user-select: none;
   }
-  
+
   .js-enabled #wrapper .open-section h2 {
     background-image: url(<%= image_path 'dropdown_arrow_open.png' %>);
   }
@@ -1053,23 +1039,23 @@ html {
     padding: 11px 0 26px;
   }
 
-  
+
   .js-enabled #wrapper .examples h2:before {
     content: "Show ";
     font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
     font-weight: 300;
   }
-  
+
   .js-enabled #wrapper .open-section h2:before {
     content: "Hide ";
     font-family: "Gill Sans W01 Book", "Gill Sans MT Pro", "Gill Sans", GillSans, sans-serif;
     font-weight: 300;
   }
-  
+
   .js-enabled #wrapper .examples .content {
     height: 0;
   }
-  
+
   .js-enabled #wrapper .open-section .content,
   .lte-ie8 .js-enabled #wrapper .examples .content {
     /* reveal hidden examples & for IE */
@@ -1085,7 +1071,7 @@ html {
   .lte-ie8 .js-enabled #wrapper .examples .content article {
     height:auto;
   }
-  
+
   .js-enabled #wrapper .examples .content > * {
     opacity: 0;
        -moz-transition: 0.9s ease;
@@ -1094,7 +1080,7 @@ html {
     -webkit-transition: 0.9s ease;
            -transition: 0.9s ease;
   }
-  
+
   .js-enabled #wrapper .open-section .content > *,
   .lte-ie8 .js-enabled #wrapper .examples .content > * {
     /* reveal hidden examples & for IE */
@@ -1230,7 +1216,7 @@ html {
   #wrapper .beta-notice a {
     display: none;
   }
-  
+
   header, nav, .principles {
     margin: 0!important;
   }
@@ -1242,7 +1228,7 @@ html {
   body nav {
     display: block!important;
   }
-  
+
   .principle,
   .examples {
     page-break-before: always;
@@ -1252,7 +1238,7 @@ html {
     page-break-before: avoid;
     page-break-after: avoid;
   }
-  
+
   a {
     border-bottom: none!important;
   }
