@@ -38,6 +38,7 @@
 #wrapper .content {
   position: relative;
   margin: 0 auto;
+  padding: 0;
   max-width: 960px;
   max-width: 96rem;
 }
@@ -220,6 +221,14 @@
     content: '.';
     clear: both;
     visibility: hidden;
+  }
+
+  li.principle {
+    padding: 0;
+
+    article {
+      margin-right: 0;
+    }
   }
 }
 
