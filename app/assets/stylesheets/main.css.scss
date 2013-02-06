@@ -126,6 +126,10 @@
           float: none;
           width: auto;
         }
+
+        @include ie-lte(7) {
+          width: 30%;
+        }
       }
     }
 
@@ -133,6 +137,10 @@
     &.worked-example {
       .example {
         width: 33.3%;
+
+        @include ie-lte(7) {
+          width: 30%;
+        }
       }
 
       .caption {
