@@ -907,6 +907,11 @@
   li {
     display: inline;
 
+    @include media(mobile) {
+      display: block;
+      margin-bottom: 10px;
+    }
+
     a {
       @include core-16;
 
@@ -915,6 +920,10 @@
       text-decoration: none;
       border: 1px solid #DD322D;
       padding: 6px 11px;
+
+      @include media(mobile) {
+        display: block;
+      }
 
       &.current {
         background-color: #fff;
