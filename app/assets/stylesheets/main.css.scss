@@ -81,6 +81,32 @@
   clear: both;
   padding: 20px 0;
   padding: 2rem 0;
+
+  article.design {
+    clear: left;
+
+    .example {
+      width: 66.6%;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 96%;
+        margin: 0 2% 2% 2%;
+      }
+    }
+
+    .caption {
+      float: left;
+      width: 33.3%;
+
+      p {
+        padding: 0 13px 13px;
+        padding: 0 1.3rem 1.3rem;
+      }
+    }
+  }
 }
 
 #wrapper a {
@@ -121,7 +147,7 @@
 
 #wrapper h1 strong,
 #wrapper article h1 {
-  @include bold-48;
+  @include core-48;
 
   display: block;
 }
@@ -246,7 +272,7 @@
 
 #wrapper article h2,
 #wrapper header h2 {
-  @include core-27;
+  @include bold-27;
 
   padding: 16px 0 8px;
   padding: 1.6rem 0 0.8rem;
@@ -333,10 +359,10 @@
       display: block;
     }
 
+    .design,
     .process,
     .writing,
     .code,
-    .design,
     .comparison,
     .table-view {
       position: relative;
@@ -346,10 +372,6 @@
       padding: 0;
       display: block;
       background: #ddd;
-    }
-
-    .caption {
-      @include core-14;
     }
 
     .highlight {
@@ -617,23 +639,6 @@
   p {
     padding: 0 13px 13px;
     padding: 0 1.3rem 1.3rem;
-  }
-}
-
-#wrapper article .examples .design .example {
-  clear: both;
-  float: left;
-  display: inline;
-  width: 66.66666666%;
-
-  img {
-    position: relative;
-    top: 5px;
-    top: 0.5rem;
-    margin: 0 0 13px 0.74074074em;
-    margin: 0 0 1.3rem 0.74074074em;
-    width: 97%;
-    height: auto;
   }
 }
 
@@ -914,9 +919,6 @@
       &.current {
         background-color: #fff;
         color: #DD322D;
-      }
-
-      &.gov-uk {
       }
     }
   }
