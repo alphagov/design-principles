@@ -864,13 +864,14 @@
         display: inline-block;
       }
 
-      @include ie(6) {
-        display: block;
-      }
-
       &.current {
         background-color: #fff;
         color: $cabinet-office;
+
+        @include ie(6) {
+          display: inline;
+          margin: 0;
+        }
       }
 
       &.gov-uk {
