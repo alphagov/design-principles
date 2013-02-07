@@ -24,7 +24,7 @@
     padding: 1rem;
   }
 
-  @include ie-lte(7) {
+  @include ie-lte(8) {
     margin: 0 auto;
     width: 960px;
   }
@@ -133,7 +133,7 @@
           width: auto;
         }
 
-        @include ie-lte(7) {
+        @include ie-lte(8) {
           width: 30%;
         }
       }
@@ -144,7 +144,7 @@
       .example {
         width: 33.3%;
 
-        @include ie-lte(7) {
+        @include ie-lte(8) {
           width: 30%;
         }
       }
