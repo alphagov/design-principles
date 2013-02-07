@@ -46,6 +46,10 @@
   padding: 0;
   max-width: 960px;
   max-width: 96rem;
+
+  p {
+    margin: 1em 0 0;
+  }
 }
 
 #wrapper nav {
@@ -74,8 +78,7 @@
 
 #wrapper .content {
   clear: both;
-  padding: 20px 0;
-  padding: 2rem 0;
+  padding: 0;
 
   article {
     &.design,
@@ -294,9 +297,6 @@
 #wrapper .outline p {
   @include core-27;
 
-  padding: 14px 0 12px;
-  padding: 1.4rem 0 1.2rem;
-
   img {
     float: right;
     clear: both;
@@ -362,15 +362,15 @@
 
     p {
       letter-spacing: 0;
-      padding: 10px 0 3px;
-      padding: 1rem 0 0.3rem;
+      padding: 0 0 3px;
+      padding: 0 0 0.3rem;
     }
   }
 
   section {
     position: relative;
-    padding-top: 13px;
-    padding-top: 1.3rem;
+    padding-top: 5px;
+    padding-top: 0.5rem;
   }
 }
 
@@ -836,6 +836,7 @@
 
   li {
     display: inline;
+    padding: 0;
 
     @include media(mobile) {
       display: block;
