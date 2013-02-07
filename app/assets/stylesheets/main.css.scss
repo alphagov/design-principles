@@ -903,7 +903,7 @@
 /* print styles */
 @media print {
   html {
-    font-size: 9px!important;
+    font-size: 9px;
   }
 
   #wrapper .beta-notice {
@@ -916,17 +916,17 @@
   }
 
   header, nav, .principles {
-    margin: 0!important;
+    margin: 0;
   }
 
   article {
-    width: 100%!important;
+    width: 100%;
     page-break-before: avoid;
     page-break-after: avoid;
   }
 
   body nav {
-    display: block!important;
+    display: block;
   }
 
   .principle,
@@ -935,7 +935,7 @@
   }
 
   a {
-    border-bottom: none!important;
+    border-bottom: none;
   }
 }
 
