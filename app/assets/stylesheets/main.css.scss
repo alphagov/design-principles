@@ -722,87 +722,102 @@
   width: 100%;
 }
 
-/* hacky preloader for dropdown background image */
-.js-enabled #wrapper {
-  background-image: image-url('dropdown_arrow_open.png');
-  background-position: -5000px top;
-  background-repeat: no-repeat;
-}
+.js-enabled {
+  #wrapper {
+    background-image: image-url('dropdown_arrow_open.png');
+    background-position: -5000px top;
+    background-repeat: no-repeat;
+  }
 
-.js-enabled #wrapper .examples {
-  padding-top: 26px;
-  padding-top: 2.6rem;
-}
+  #wrapper .examples {
+    padding-top: 26px;
+    padding-top: 2.6rem;
 
-.js-enabled #wrapper .examples h2 {
-  float: left;
-  display: inline;
-  overflow: hidden;
-  min-width: 12em;
-  padding: 11px 39px 1px 13px;
-  padding: 1.1rem 3.9rem 1.1rem 1.3rem;
-  color: white;
-  background: #dd322d image-url('dropdown_arrow_closed.png') no-repeat right center;
-  cursor: pointer;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  -webkit-user-select: none;
-  -user-select: none;
-}
+    h2 {
+      float: left;
+      display: inline;
+      overflow: hidden;
+      min-width: 12em;
+      padding: 11px 39px 1px 13px;
+      padding: 1.1rem 3.9rem 1.1rem 1.3rem;
+      color: white;
+      background: #dd322d image-url('dropdown_arrow_closed.png') no-repeat right center;
+      cursor: pointer;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
 
-.js-enabled #wrapper .open-section h2 {
-  background-image: image-url('dropdown_arrow_open.png');
-}
+      @include ie-lte(8) {
+        display: none;
+        overflow: visible;
+        float: none;
+      }
 
-.js-enabled #wrapper .examples h2 a,
-.js-enabled #wrapper .examples h2 a:active {
-  border: none;
-  color: inherit;
-}
+      &:before {
+        content: "Show ";
+        font-weight: 300;
+      }
 
-.js-enabled #wrapper .examples h2 a:focus {
-  background: #000;
-  outline: 3px solid #000;
-}
+      a {
+        color: white;
 
-.js-enabled #wrapper .examples h2:before {
-  content: "Show ";
-  font-weight: 300;
-}
+        a:focus {
+          background: #000;
+          outline: 3px solid #000;
+        }
+      }
+    }
 
-.js-enabled #wrapper .open-section h2:before {
-  content: "Hide ";
-  font-weight: 300;
-}
+    .content {
+      height: 0;
 
-.js-enabled #wrapper .examples .content {
-  height: 0;
-}
+      @include ie-lte(8) {
+        height: auto;
+      }
+    }
 
-.js-enabled #wrapper .open-section .content {
-  /* reveal hidden examples & for IE */
-  height: auto;
-  overflow: visible;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  -transition: none;
-}
+    .content > * {
+      opacity: 0;
+      -moz-transition: 0.9s ease;
+      -ms-transition: 0.9s ease;
+      -o-transition: 0.9s ease;
+      -webkit-transition: 0.9s ease;
+      -transition: 0.9s ease;
+    }
+  }
 
-.js-enabled #wrapper .examples .content > * {
-  opacity: 0;
-  -moz-transition: 0.9s ease;
-  -ms-transition: 0.9s ease;
-  -o-transition: 0.9s ease;
-  -webkit-transition: 0.9s ease;
-  -transition: 0.9s ease;
-}
+  #wrapper .open-section {
+    h2 {
+      background-image: image-url('dropdown_arrow_open.png');
 
-.js-enabled #wrapper .open-section .content > * {
-  /* reveal hidden examples & for IE */
-  opacity: 1;
+      &:before {
+        content: "Hide ";
+        font-weight: 300;
+      }
+
+      a,
+      a:active {
+        border: none;
+        color: white;
+      }
+    }
+
+    .content {
+      height: auto;
+      overflow: visible;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
+
+  #wrapper .open-section .content > * {
+    opacity: 1;
+  }
 }
 
 /* Styleguide */
