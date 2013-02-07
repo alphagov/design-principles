@@ -190,9 +190,10 @@
 
 #wrapper h1 strong,
 #wrapper article h1 {
-  @include core-48;
+  @include bold-48;
 
   display: block;
+  color: $cabinet-office;
 }
 
 #wrapper header,
@@ -234,7 +235,7 @@
 }
 
 #wrapper article h1 {
-  color: #dd322d;
+  color: $cabinet-office;
 
   &:before {
     position: relative;
@@ -338,11 +339,11 @@
     position: relative;
     top: -13px;
     top: -1.3rem;
-    color: #dd322d;
+    color: $cabinet-office;
   }
 
   h3 {
-    color: #DD322D;
+    color: $cabinet-office;
     letter-spacing: 0;
     padding: 10px 0 3px;
     padding: 1rem 0 0.3rem;
@@ -427,7 +428,7 @@
 
     .highlight {
       font-weight: bold;
-      color: #dd322d;
+      color: $cabinet-office;
       background-color: #f8f8f8;
     }
   }
@@ -737,7 +738,7 @@
       padding: 11px 39px 1px 13px;
       padding: 1.1rem 3.9rem 1.1rem 1.3rem;
       color: white;
-      background: #dd322d image-url('dropdown_arrow_closed.png') no-repeat right center;
+      background: $cabinet-office image-url('dropdown_arrow_closed.png') no-repeat right center;
       cursor: pointer;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -844,19 +845,35 @@
     a {
       @include core-16;
 
-      background-color: #DD322D;
+      background-color: $cabinet-office;
       color: #fff;
       text-decoration: none;
-      border: 1px solid #DD322D;
+      border: 1px solid $cabinet-office;
       padding: 6px 11px;
 
       @include media(mobile) {
         display: block;
       }
 
+      @include ie-lte(8) {
+        padding: 3px 8px;
+      }
+
+      @include ie(7) {
+        display: inline-block;
+      }
+
+      @include ie(6) {
+        display: block;
+      }
+
       &.current {
         background-color: #fff;
-        color: #DD322D;
+        color: $cabinet-office;
+      }
+
+      &.gov-uk {
+        @include bold-16;
       }
     }
   }
