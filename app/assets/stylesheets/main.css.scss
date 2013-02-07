@@ -59,10 +59,6 @@
     &:focus .caption {
       border-color: #ddd;
     }
-
-    .caption {
-      border-bottom: 1px solid #ddd;
-    }
   }
 
   ol {
@@ -157,9 +153,8 @@
 }
 
 #wrapper a {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid #2E8ACA;
+  color: $link-colour;
+  text-decoration: underline;
   padding-bottom: 0;
 
   &:hover,
@@ -183,10 +178,11 @@
   width: 1.4444444em;
   width: 2.6rem;
   color: #aaa;
+  text-decoration: none;
 }
 
 #wrapper h1 {
-  @include core-80;
+  @include bold-80;
 
   padding: 6px 0 8px;
   padding: 0.6rem 0 0.8rem;
