@@ -3,8 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title><%= yield :title %></title>
-    <%= stylesheet_link_tag 'main' %>
-    <%= javascript_include_tag 'main', :defer => true %>
+    <!--[if gt IE 8]><!--><%= stylesheet_link_tag "application.css" %><!--<![endif]-->
+    <!--[if IE 6]><%= stylesheet_link_tag "application-ie6.css" %><![endif]-->
+    <!--[if IE 7]><%= stylesheet_link_tag "application-ie7.css" %><![endif]-->
+    <!--[if IE 8]><%= stylesheet_link_tag "application-ie8.css" %><![endif]-->
+
+    <%= javascript_include_tag 'main.js' %>
+    <%= yield :extra_javascript %>
+
+    <%= yield :extra_headers %>
   </head>
   <body>
     <%= yield %>
