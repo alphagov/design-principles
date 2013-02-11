@@ -9,19 +9,19 @@
 }
 
 #wrapper {
-  @include core-24;
+  @include core-19;
 
   position: relative;
   color: #000;
   background: #fff;
   -webkit-font-smoothing: antialiased;
-  padding: 26px 0 0 0;
-  padding: 2.6rem 0 0 0;
+  padding: 0 70px;
+  padding: 0 7rem;
   margin: 0 auto;
 
   @include media(mobile) {
-    padding: 10px;
-    padding: 1rem;
+    padding: 0 10px;
+    padding: 0 1rem;
   }
 
   @include ie-lte(8) {
@@ -36,6 +36,8 @@
 }
 
 #wrapper header,
+#wrapper .beta-notice,
+#wrapper .alpha-feedback,
 #wrapper nav,
 #wrapper .principles,
 #wrapper .additional,
@@ -44,34 +46,38 @@
   position: relative;
   margin: 0 auto;
   padding: 0;
-  max-width: 960px;
-  max-width: 96rem;
+  max-width: 40em;
+}
 
-  p {
-    margin: 1em 0 0;
-  }
+#wrapper .beta-notice,
+#wrapper .alpha-feedback {
+  max-width: 960px;
 }
 
 #wrapper nav {
-  padding-top: 26px;
-  padding-top: 2.6rem;
+  padding: 23px 0 3px;
+  padding: 2.3rem 0 0.3rem;
 
   a {
-    border-bottom: none;
+    text-decoration: none;
+    font-weight: bold;
 
-    &:hover .caption,
-    &:focus .caption {
-      border-color: #ddd;
+    .caption {
+      text-decoration: underline;
     }
   }
 
   ol {
+    margin: 0;
     margin-left: -40px;
     margin-left: -4.0rem;
 
+    @include media(mobile) {
+      margin-left: 0;
+    }
+
     li {
-      margin-bottom: 10px;
-      margin-bottom: 1rem;
+      @include core-24;
     }
   }
 }
@@ -156,17 +162,17 @@
 }
 
 #wrapper a {
-  color: $link-colour;
+  color: inherit;
   text-decoration: underline;
   padding-bottom: 0;
 
   &:hover,
   &:focus {
-    border-color: #ddd;
+    color: $light-blue;
   }
 
   &:active {
-    color: #2E8ACA;
+    color: $mellow-red;
   }
 }
 
@@ -185,26 +191,27 @@
 }
 
 #wrapper h1 {
-  @include bold-80;
-
-  padding: 6px 0 8px;
-  padding: 0.6rem 0 0.8rem;
-}
-
-#wrapper h1 strong,
-#wrapper article h1 {
-  @include bold-48;
-
-  display: block;
-  color: $cabinet-office;
+  @include core-36;
+  color:  $grey-2;
+  padding: 22px 0 1px;
+  padding: 2.2rem 0 0.1rem;
+  
+  strong {
+    @include core-80;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    position: relative;
+    top: -2px;
+    top: -0.2rem;
+  }
 }
 
 #wrapper header,
 #wrapper article {
   position: relative;
   clear: both;
-  padding-bottom: 26px;
-  padding-bottom: 2.6rem;
+  padding-bottom: 0;
   padding-top: 38px;
   padding-top: 3.8rem;
   min-height: 1px;
@@ -212,9 +219,9 @@
 }
 
 #wrapper header p {
-  max-width: 85%;
-  padding: 23px 0 3px;
-  padding: 2.3rem 0 0.3rem;
+  @include core-24;
+  padding: 14px 0 3px;
+  padding: 1.4rem 0 0.3rem;
 }
 
 #wrapper .principles {
@@ -229,16 +236,24 @@
   }
 
   li.principle {
+    float: left;
+    width: 100%;
     padding: 0;
 
     article {
-      margin-right: 0;
+      margin: 0;
+      padding: 0;
     }
   }
 }
 
 #wrapper article h1 {
-  color: $cabinet-office;
+  @include core-36;
+  font-weight: bold;
+  color: $mellow-red;
+  margin: 0;
+  padding: 109px 0 0;
+  padding: 10.9rem 0 0;
 
   &:before {
     position: relative;
@@ -251,6 +266,11 @@
     width: 5.2rem;
     font-weight: 300;
     letter-spacing: -0.05em;
+
+    @include media(mobile) {
+      display: none;
+    }
+
   }
 }
 
@@ -295,7 +315,8 @@
 }
 
 #wrapper .outline p {
-  @include core-27;
+  @include core-24;
+  padding: 22px 0 8px;
 
   img {
     float: right;
@@ -324,10 +345,8 @@
 
 #wrapper article h2,
 #wrapper header h2 {
-  @include core-27;
+  @include core-24;
 
-  padding: 16px 0 8px;
-  padding: 1.6rem 0 0.8rem;
 }
 
 #wrapper header h2 {
@@ -337,9 +356,9 @@
 #wrapper article {
   #first + h2 {
     position: relative;
-    top: -13px;
-    top: -1.3rem;
-    color: $cabinet-office;
+    top: -19px;
+    top: -1.9rem;
+    color: $mellow-red;
   }
 
   h3 {
@@ -361,9 +380,8 @@
     }
 
     p {
-      letter-spacing: 0;
-      padding: 0 0 3px;
-      padding: 0 0 0.3rem;
+      padding: 7px 0 3px;
+      padding: 0.7rem 0 0.3rem;
     }
   }
 
@@ -445,6 +463,7 @@
     color: black;
     padding-top: 9px;
     padding-top: 0.9rem;
+    padding-bottom: 10px;
     max-width: 66.666%;
   }
 }
@@ -459,24 +478,29 @@
 }
 
 #wrapper .beta-notice {
-  @include core-14;
-
   color: #000;
   text-transform: uppercase;
   display: block;
   z-index: 100;
   margin: 0 auto;
-  width: 960px;
-  width: 96rem;
 
   .inner {
-    padding-left: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
   }
 
   a {
-    padding: 8px 13px;
-    padding: 0.8rem 1.3rem;
-    background-color: #d43783;
+    @include core-14;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 11px 15px 10px;
+    padding: 1.1rem 1.5rem 1rem;
+    background-color: $mellow-red;
     border: none;
     float: left;
     color: #fff;
@@ -484,8 +508,9 @@
   }
 
   span {
-    padding: 8px 13px;
-    padding: 0.8rem 1.3rem;
+    @include core-16;
+    padding: 10px 15px 10px;
+    padding: 1rem 1.5rem 1rem;
     float: left;
   }
 }
@@ -498,8 +523,6 @@
     padding: 26px;
     padding: 2.6rem;
     margin: 0 auto;
-    width: 908px;
-    width: 90.8rem;
 
     @include media(mobile) {
       width: auto;
@@ -522,8 +545,12 @@
   }
 
   .alpha-feedback {
-    background-color: #d43783;
-    color: #fff;
+    background-color: $mellow-red;
+    color: white;
+
+    h1 {
+      color: white;
+    }
 
     a {
       color: white;
@@ -576,6 +603,10 @@
 
 /* Statii */
 #wrapper article p {
+  @include core-19;
+  padding: 0;
+  margin: 0;
+
   &.status {
     @include core-14;
 
@@ -738,7 +769,7 @@
       padding: 11px 39px 1px 13px;
       padding: 1.1rem 3.9rem 1.1rem 1.3rem;
       color: white;
-      background: $cabinet-office image-url('dropdown_arrow_closed.png') no-repeat right center;
+      background: $mellow-red image-url('dropdown_arrow_closed.png') no-repeat right center;
       cursor: pointer;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -847,11 +878,14 @@
     a {
       @include core-16;
 
-      background-color: $cabinet-office;
+      background-color: $mellow-red;
       color: #fff;
       text-decoration: none;
-      border: 1px solid $cabinet-office;
+      border: 1px solid $mellow-red;
       padding: 6px 11px;
+      margin-right: 1px;
+      white-space: nowrap;
+      line-height: 40px;
 
       @include media(mobile) {
         display: block;
@@ -867,7 +901,7 @@
 
       &.current {
         background-color: #fff;
-        color: $cabinet-office;
+        color: $mellow-red;
 
         @include ie(6) {
           display: inline;
