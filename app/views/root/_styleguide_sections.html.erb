@@ -1,10 +1,40 @@
   <nav>
     <ul class="sections">
-      <li><%= nav_link_to "GOV.UK", {action: "styleguide"}, {class: "gov-uk"} %></li>
-      <li><%= nav_link_to "Mainstream content types", action: "mainstream" %></li>
-      <li><%= nav_link_to "Inside Government content types", action: "insidegovernment" %></li>
-      <li><%= nav_link_to "Detailed guides", action: "detailedguides" %></li>
-      <li><%= nav_link_to "What’s new?", action: "whatsnew" %></li>
-      <li><%= nav_link_to "Accessible PDFs", action: "accessiblepdfs" %></li>
+      <li>
+        <%= nav_link_to({action: "styleguide"}, {class: "gov-uk"}) do %>
+          <span class="icon">1, 2</span>
+          <span class="caption">GOV.UK</span>
+        <% end %>
+      </li>
+      <li>
+        <%= nav_link_to({action: "mainstream"}, {class: "Mainstream content types"}) do %>
+          <span class="icon">3</span>
+          <span class="caption">Mainstream content types</span>
+        <% end %>
+      </li>
+      <li>
+        <%= nav_link_to({action: "insidegovernment"}, {class: "Inside Government content types"}) do %>
+          <span class="icon">4 to 11</span>
+          <span class="caption">Inside Government content types</span>
+        <% end %>
+      </li>
+      <li>
+        <%= nav_link_to({action: "detailedguides"}, {class: "Detailed guides"}) do %>
+          <span class="icon">12</span>
+          <span class="caption">Detailed guides</span>
+        <% end %>
+      </li>
+      <li>
+        <%= nav_link_to({action: "accessiblepdfs"}, {class: "Accessible PDFs"}) do %>
+          <span class="icon">13</span>
+          <span class="caption">Accessible PDFs</span>
+        <% end %>
+      </li>
+      <li>
+        <%= nav_link_to({action: "whatsnew"}, {class: "What's new"}) do %>
+          <span class="icon">&ndash;</span>
+          <span class="caption">What's new</span>
+        <% end %>
+      </li>
     </ul>
   </nav>
