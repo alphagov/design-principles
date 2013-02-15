@@ -159,6 +159,7 @@ html {
       width: $margin*0.75;
       text-align: right;
       color: $grey-2;
+      white-space: nowrap;
 
       @media (max-width: 640px) {
         margin-left: 0;
