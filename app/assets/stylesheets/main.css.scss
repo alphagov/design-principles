@@ -33,7 +33,7 @@ html {
   @media (max-width: 640px) {
     padding: 0 10px;
   }
-  
+
   div, span,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -65,20 +65,20 @@ html {
     line-height: inherit;
     color: inherit;
   }
-  
+
   a {
     text-decoration: underline;
-    
+
     &:hover,
     &:focus {
       color: $anchor-color;
     }
-    
+
     &:active {
       color: $highlight-color;
     }
   }
-  
+
   .beta-notice {
 
     @media (min-width: 640px) {
@@ -88,11 +88,11 @@ html {
     @media (min-width: 1020px) {
       margin-left: $margin*-1;
     }
-  
+
     p {
       margin: 0;
     }
-  
+
     a {
       position: relative;
       float: left;
@@ -106,19 +106,19 @@ html {
       letter-spacing: 0.2em;
       background: $highlight-color;
     }
-    
+
     span {
       display: block;
       padding: 8px 0 7px;
     }
   }
-  
+
   h1 {
     margin-top: 70px;
     margin-bottom: 40px;
     @include core-36;
     color: $grey-2;
-    
+
     strong {
       position: relative;
       display: block;
@@ -128,30 +128,30 @@ html {
       color: $text-color;
     }
   }
-  
+
   nav {
     padding-bottom: 3px;
-  
+
     li {
       list-style: none;
     }
-    
+
     a {
       text-decoration: none;
-        
+
       &:hover,
       &:focus,
-      &:active{ 
+      &:active{
         .caption {
           text-decoration: underline;
         }
       }
     }
-    
+
     .caption {
       font-weight: bold;
     }
-    
+
     .icon {
       position: relative;
       float: left;
@@ -159,28 +159,28 @@ html {
       width: $margin*0.75;
       text-align: right;
       color: $grey-2;
-      
+
       @media (max-width: 640px) {
         margin-left: 0;
         width: $margin*0.5;
         text-align: left;
       }
     }
-    
+
     .current .icon {
       color: $text-color;
     }
   }
-    
+
   h2 {
     @include core-24;
     font-weight: bold;
   }
-  
+
   h2, p, ol, ul {
     margin: 20px 0;
   }
-  
+
   .figure-mask {
     width: 1px;
     height: 1px;
@@ -188,25 +188,25 @@ html {
     position: absolute;
     left: -5000%;
   }
-  
+
   .principles {
-  
+
     .principle {
       position: relative;
       list-style: none;
       padding-bottom: 30px;
     }
-    
+
     h1 {
       margin-top: 80px;
       margin-bottom: -1px;
       font-weight: bold;
       color: $highlight-color;
-    
+
       @media (max-width: 640px) {
         margin-top: 35px;
       }
-      
+
       &:before {
         position: relative;
         float: left;
@@ -214,7 +214,7 @@ html {
         width: $margin*0.75;
         text-align: right;
         font-weight: normal;
-              
+
         @media (max-width: 640px) {
           margin-left: 0;
           width: auto;
@@ -223,94 +223,94 @@ html {
           text-align: left;
         }
       }
-      
+
       &#first:before {
         content: "1";
       }
-      
+
       &#second:before {
         content: "2";
       }
-      
+
       &#third:before {
         content: "3";
       }
-      
+
       &#fourth:before {
         content: "4";
       }
-      
+
       &#fifth:before {
         content: "5";
       }
-      
+
       &#sixth:before {
         content: "6";
       }
-      
+
       &#seventh:before {
         content: "7";
       }
-      
+
       &#eighth:before {
         content: "8";
       }
-      
+
       &#ninth:before {
         content: "9";
       }
-      
+
       &#tenth:before {
         content: "10";
       }
     }
-    
+
     h1#first+h2 {
       font-weight: normal;
       color: $highlight-color;
     }
-    
+
     h1+.example img:first-child {
       margin: 20px 20px 20px 0;
       float: left;
       display: inline;
       max-width: 50%;
     }
-  
+
     .outline p {
       @include core-24;
-      margin-bottom: -1px;  
+      margin-bottom: -1px;
     }
-    
+
   }
-  
+
   .examples {
     clear: both;
-  
+
     h2 {
       margin: 25px 0 0;
       text-decoration: none;
       padding: 10px 0;
-      
+
       a {
         display: block;
         color: inherit;
         text-decoration: none;
       }
     }
-  
+
     .content {
       position: relative;
       clear: both;
       overflow: hidden;
     }
-    
+
     article {
       margin-top: 1px;
       padding: 15px 10px 10px;
       overflow: hidden;
       background: $grey-3;
-      
+
       &.design,
       &.comparison {
         .example {
@@ -328,7 +328,7 @@ html {
           }
         }
       }
-      
+
       &.process,
       &.worked-example {
         .example {
@@ -346,14 +346,14 @@ html {
           }
         }
       }
-      
+
       img {
         display: block;
         width: 100%;
         height: auto;
       }
     }
-    
+
     h1 {
       max-width: 66.666%;
       margin: 0 0 15px;
@@ -361,7 +361,7 @@ html {
       font-weight: bold;
       color: $text-color;
     }
-    
+
     .status {
       position: absolute;
       top: 0;
@@ -375,124 +375,124 @@ html {
       font-weight: bold;
       letter-spacing: 0.2em;
     }
-    
+
     .tried {
       background: #7F9A48;
     }
-    
+
     .experimental {
       background: #D33883
     }
-    
+
     .changeable {
       background: #F47E31;
     }
-    
+
     p {
       @include core-16;
     }
-    
+
     pre {
       border-left: 2px solid $grey-1;
       padding-left: 10px;
     }
-    
+
     code {
       font-family: 'Andale Mono', monospace;
       font-size: 80%;
       line-height: 1;
     }
   }
-  
+
   .alpha-feedback {
     position: relative;
     margin-top: 80px;
     padding: 10px;
     color: $background-color;
     background: $highlight-color;
-    
+
     h1 {
       margin: 0 0 5px;
       @include core-36;
       font-weight: bold;
       color: $background-color;
     }
-    
+
     p {
       margin: 0;
     }
-    
+
     a {
       text-decoration: none;
       font-weight: bold;
-      
+
       &:hover,
       &:focus {
         color: inherit;
         text-decoration: underline;
       }
-      
+
       &:active {
         color: $text-color;
       }
     }
   }
-  
-    
+
+
   &.styleguide {
-  
+
     @media (max-width: 640px) {
       nav .icon {
         width: 4em;
       }
     }
-    
+
     .principles {
-      
+
       h2 {
         margin-top: 50px;
       }
-      
+
       ul, ol {
         padding-left: 25px;
-        
+
         li {
           padding-left: 5px;
           margin-bottom: 5px;
         }
       }
-      
+
     }
 
   }
-  
+
   table {
     margin: 20px 0;
     @include core-14;
-    
+
     td, th {
       padding: 10px 15px;
-      
+
       &:first-child {
         padding-left: 0;
       }
     }
-    
+
     th {
       font-weight: bold;
       border-bottom: 4px solid;
     }
-    
+
     td {
       border-top: 1px solid;
     }
-    
+
     h2, p, ol, ul {
       margin: 0;
     }
   }
 
-  
+
 }
 
 
@@ -503,24 +503,24 @@ html {
 
   .examples {
     overflow: hidden;
-  
+
     h2 {
       float: left;
       display: inline;
       margin-top: 5px;
       padding: 0;
-      
+
       a {
         min-width: 12em;
         padding: 10px 50px 10px 10px;
         color: $background-color;
         background: $highlight-color image-url('dropdown_arrow_closed.png') no-repeat right center;
         text-transform: lowercase;
-        
+
         @media (max-width: 640px) {
           min-width: 8em;
         }
-        
+
         &:before {
           content: "Show ";
           font-weight: normal;
@@ -528,12 +528,12 @@ html {
         }
       }
     }
-    
+
     .content {
       position: absolute;
       left: -50000%;
       height: 0;
-      
+
       article {
         opacity: 0;
             -ms-transition: opacity 0.3s ease;
@@ -544,16 +544,16 @@ html {
       }
     }
   }
-  
+
   .open-section {
-    h2 a { 
+    h2 a {
       background-image: image-url('dropdown_arrow_open.png');
-      
+
       &:before {
         content: "Hide ";
       }
     }
-        
+
     .content {
       position: relative;
       left: 0;
