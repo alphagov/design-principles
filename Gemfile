@@ -3,7 +3,7 @@ source 'https://gems.gemfury.com/vo6ZrmjBQu5szyywDszE/'
 
 gem 'rails', '3.2.12'
 gem 'unicorn', '4.3.1'
-gem 'lograge', '0.0.6'
+gem 'lograge', '0.2.0'
 
 gem 'govuk_frontend_toolkit', '0.12.1'
 gem 'plek', '1.1.0'
