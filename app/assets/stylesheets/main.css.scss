@@ -481,11 +481,11 @@ html {
 
     th {
       font-weight: bold;
-      border-bottom: 4px solid;
+      border-bottom: 4px solid $grey-2;
     }
 
     td {
-      border-top: 1px solid;
+      border-top: 1px solid $grey-2;
     }
 
     h2, p, ol, ul {
