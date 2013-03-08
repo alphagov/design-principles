@@ -276,6 +276,10 @@ html {
       float: left;
       display: inline;
       max-width: 50%;
+
+      @include ie(6) {
+        width: 50%;
+      }
     }
 
     .outline p {
@@ -311,6 +315,11 @@ html {
       padding: 15px 10px 10px;
       overflow: hidden;
       background: $grey-3;
+      clear: both;
+
+      @include ie(6) {
+        zoom: 1;
+      }
 
       &.design,
       &.comparison {
@@ -361,6 +370,10 @@ html {
       @include core-24;
       font-weight: bold;
       color: $text-color;
+
+      @include ie(6) {
+        width: 66.666%;
+      }
     }
 
     .status {
@@ -534,6 +547,12 @@ html {
       position: absolute;
       left: -50000%;
       height: 0;
+
+      @include ie(6) {
+        position: relative;
+        left: auto;
+        height: auto;
+      }
 
       article {
         opacity: 0;
