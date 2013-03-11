@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Information security - Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="/servicemanual/assets/local/application.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/servicemanual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="/servicemanual/assets/local/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+  <link href="/servicemanual/assets/local/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+  <link href="/servicemanual/assets/local/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="/servicemanual/assets/local/print.css" media="print" rel="stylesheet" type="text/css">
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["/assets/local/fonts-ie8.css"]},
+  c="/assets/local/libs/goog/webfont-debug.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h--;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="/servicemanual/assets/local/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+<script src="/assets/local/jquery-1.7.2.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="/assets/local/ie.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="/servicemanual/assets/local/favicon.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/servicemanual/assets/local/apple-touch-icon-72x72.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="/servicemanual/assets/local/apple-touch-icon-57x57.png">
+
+<script src="assets/local/frontend.js" type="text/javascript"></script>
+<script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      <div class="js-toggle-nav" id="global-nav">
+        <div class="inner">
+          <span class="home"><a href="/servicemanual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+          <nav role="navigation" class="content">
+            <ul id="navigation">
+              <li><a href="/servicemanual/digital-by-default" >Digital by default standard</a></li>
+              <li><a href="/servicemanual/about" >About</a></li>
+              <li><a href="/servicemanual/feedback" >Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="caveat-notice">
+  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
+
+  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
+
+  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
+</div>
+
+      
+<div class="page-status draft">draft</div>
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Information security</h1>
+      
+      <h2 class="subtitle">Ensuring user data stays secure</h2>
+      
+    </hgroup>
+
+    
+    <ul class="meta-phases group">
+      
+      <li class="alpha"><a href="/phases/alpha.html">alpha</a></li>
+      
+      <li class="beta"><a href="/phases/beta.html">beta</a></li>
+      
+      <li class="live"><a href="/phases/live.html">live</a></li>
+      
+    </ul>
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-assurance-and-accreditation"><a href="#assurance-and-accreditation">Assurance and accreditation</a>
+<ol>
+<li class="level-roles"><a href="#roles">Roles</a>
+</li>
+<li class="level-assurance-vs-accreditation"><a href="#assurance-vs-accreditation">Assurance vs accreditation</a>
+</li>
+<li class="level-business-impact-levels"><a href="#business-impact-levels">Business Impact Levels</a>
+</li>
+<li class="level-agile-design"><a href="#agile-design">Agile Design</a>
+</li>
+<li class="level-good-practice-guides-gpg"><a href="#good-practice-guides-gpg">Good Practice Guides (GPG)</a>
+</li>
+<li class="level-risk-management-document-set-rmads"><a href="#risk-management-document-set-rmads">Risk Management Document Set (RMADS)</a>
+</li>
+<li class="level-it-health-check-ithc"><a href="#it-health-check-ithc">IT Health Check (ITHC)</a>
+</li>
+<li class="level-ongoing"><a href="#ongoing">Ongoing</a>
+</li>
+</ol>
+</li>
+<li class="level-tools"><a href="#tools">Tools</a>
+</li>
+<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+<ol>
+<li class="level-risk-management"><a href="#risk-management">Risk management</a>
+</li>
+</ol>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>It goes without saying that security of Government services is incredibly
+important. The Government Information security community and processes
+exist to help service managers both meet their obligations to those
+processess, and more importantly to help build world class services.</p>
+
+<p>The assurance and accreditation processes exist to provide a structure for those
+activities with a shared language to allow risks, mitigations (and opportunities)
+to be clearly understood by everyone throughout the organisation delivering
+a service.</p>
+
+<p>The important thing to note about building trustworthy and secure systems is
+that it’s a team game. assurance and accreditation should not be a completely
+separate strand of work, or seen as a hurdle to be got over (or around). Only
+by engaging with risk and making decisions based on a range of expert opinion
+will you end up with the best product.</p>
+
+<p>The following uses quite a lot of acronyms. Unfortunately these are in common
+usage and it’s very hard to engage with the existing documentation and
+processes without speaking the lingo. All the acronymns should be explained
+before being used.</p>
+
+<h2 id="assurance-and-accreditation">Assurance and accreditation</h2>
+
+<h3 id="roles">Roles</h3>
+
+<p>It’s important to understand the different roles involved within the process
+detailed below. One of the first things you should do on your project is to
+establish who plays each of these roles. Note that all of them require formal
+training and specialist skills.</p>
+
+<ul>
+  <li>Senior Information Risk Owner (SIRO) - generally a senior member of the lead organisation providing the service. Ultimately responsible for the risk profile of the service: have all the risks been identified, are there appropriate mitigations in place so that the risks can be accepted, and so on.</li>
+  <li>Accreditor - more hands on than the SIRO, the accreditor or accreditors will work with the project team to help with understanding the process, identify risks and suggest mitigations.</li>
+  <li>CLAS Consultant - part of the formal Accreditation process. Responsible for much of the formal documentation.</li>
+  <li><a href="http://www.cesg.gov.uk/Pages/homepage.aspx">CESG</a> - the government agency responsible for Information Security. Can provide technical assistance or consultation on project issues.</li>
+</ul>
+
+<h3 id="assurance-vs-accreditation">Assurance vs accreditation</h3>
+
+<p>Assurance is the wider set of activities involved in assessing and managing the
+risks associated with the system under development. Accreditation is a subset
+of the assurance work, involing a formal and externally verified process simiar
+to <a href="http://en.wikipedia.org/wiki/ISO/IEC_27001">ISO27001</a>.</p>
+
+<p>All projects, however small, should involve some level of assurance. This may
+be as simple as documenting the limited risks and proposing to the SIRO that
+the project does not require a formal accreditation. For anything involving
+sensitive data or of interest to lots of people an accreditation stage will
+be required.</p>
+
+<h3 id="business-impact-levels">Business Impact Levels</h3>
+
+<p>Business Impact Levels, often shorted to Impact Levels (IL) are a set of
+numbers used to guide discussions of risk in Government projects. Specifically
+they are numbers between 0 and 6 for each of the three following critera:</p>
+
+<ul>
+  <li>Confidentiality - the potential impact if the information is seen by those who should not see it,</li>
+  <li>Integrity - the potential impact if the accuracy or completeness of the information is compromised,</li>
+  <li>Availability - the potential impact if the information becomes inaccessible.</li>
+</ul>
+
+<p>More details about identifying these numbers can be found in this <a href="http://www.cesg.gov.uk/publications/Documents/business_impact_tables.pdf">extract from HMG IA Standard No. 1</a>.</p>
+
+<h3 id="agile-design">Agile Design</h3>
+
+<p>The role-holders listed above will work with the wider team to bring the appropriate concerns
+to bear in the process of designing the service. The team as a whole will need to
+make a range of decisions about topics such as what information needs to be captured,
+how it is processed, whether it is stored, and so on which will have a direct impact
+on the assurance/accreditation process.</p>
+
+<p>A close working relationship will be essential to ensure that business impact levels and
+other details are kept up to date as designs evolve and that risk management plays an
+appropriate role as a constraint in the design process.</p>
+
+<h3 id="good-practice-guides-gpg">Good Practice Guides (GPG)</h3>
+
+<p>The Good Practice Guides (GPG) are documents published by CESG on specific
+topics of interest to various types of projects. These can act as a good
+starting point when looking to identify risks and put in place mitigations.
+For example</p>
+
+<p>Unfortunately many of these documents are Restricted. It is advisable to
+establish a working relationship with CESG early on in the project
+to make sure you can access these documents. Examples include:</p>
+
+<ul>
+  <li>GPG13 - Protective monitoring</li>
+  <li>GPG8 - Protecting External Connections to the Internet</li>
+  <li>GPG12 - Use of Virtualisation Products for Data Separation</li>
+</ul>
+
+<h3 id="risk-management-document-set-rmads">Risk Management Document Set (RMADS)</h3>
+
+<p>The Risk Management Document Set or RMADS are the result of the formal
+accreditation work. This is likely a large set of documents, including the
+Baseline Control Set (BCS), system overview and supporting evidence,
+presented to the SIRO for sign-off as part of go-live conversations.</p>
+
+<h3 id="it-health-check-ithc">IT Health Check (ITHC)</h3>
+
+<p>The IT Health Check (ITHC) forms part of the formal Accreditation. In essense
+it is a penetration test carried out by a CESG approved supplier (specifically
+a CHECK certified individual). Read the guide about
+penetration and vulnerability testing for more details.</p>
+
+<h3 id="ongoing">Ongoing</h3>
+
+<p>The Assurance and accreditation work described above is not just about getting
+a project to launch. It also covers the running of the resulting service. New
+threats may emerge or systems and processes change over time. Documentation
+should be kept up-to-date and additional penetration tests organised on a
+regular or as-needed basis.</p>
+
+<h2 id="tools">Tools</h2>
+
+<p>It is important to start understanding risks and engaging with the Assurance and
+Accreditation process as early in a project as possible. The following is a
+good starting place for milestones to add to a project plan:</p>
+
+<ol>
+  <li>Identify the SIRO</li>
+  <li>Work with an accreditor to identify the Business Impact Levels</li>
+  <li>Confirm with the SIRO the target Business Impact Levels</li>
+  <li>Confirm with the SIRO whether a formal Accreditation is required</li>
+  <li>Procure a CLAS consultant if needed for the Accreditation work</li>
+  <li>If possible establish a contact at CESG who can offer assistance and some technical oversight</li>
+  <li>Produce supporting documentation; for example architecture documentation, risks and mitigations, operating processes, references to GPGs, controls</li>
+  <li>Work with the CLAS consultant on completing the RMADS is required</li>
+  <li>Arrange the ITHC</li>
+  <li>Present to the SIRO to get final sign-off</li>
+</ol>
+
+<h2 id="why-we-do-this">Why we do this</h2>
+
+<h3 id="risk-management">Risk management</h3>
+
+<p>It’s important to understand the Assurance and accreditation processes and tools
+are all about managing the risk associated with the running service. Security is
+part of this but just one part. Nearly everything brings with it risks:
+technology choice, staffing, processes, access to restricted documents, data
+agregation, etc. It is important to understand those risks and put in place
+sensible and suitable mitigations. It is unrealistic in most cases to aim for a
+system with no risks, and ignoring them is a recipe for future exploits. The
+aim is a system where the risks are known and the team, working with risk
+professionals, have made careful decisions about how to deal with them.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="http://www.cesg.gov.uk/publications/Documents/is1_risk_assessment.pdf">HMG IA Standard No. 1 - Technical Risk Assesment</a></li>
+  <li><a href="http://gcloud.civilservice.gov.uk/2012/03/09/so-what-is-il3-a-short-guide-to-business-impact-levels/">G-Cloud Impact Level Guidance</a></li>
+  <li><a href="http://www.cesg.gov.uk/publications/Documents/business_impact_tables.pdf">Business Impact Level Tables</a></li>
+</ul>
+
+    </div>
+
+    <ul class="github-links">
+      <li><a href="https://github.com/alphagov/government-service-design-manual/commits/master/servicemanual/making-software/information-security.md">Page history</a>
+      <li><a href="https://github.com/alphagov/government-service-design-manual/edit/master/servicemanual/making-software/information-security.md">Edit page on GitHub</a>
+    </ul>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+
+    <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38806483-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

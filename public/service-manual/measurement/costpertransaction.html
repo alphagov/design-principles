@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Measuring cost per transaction - Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="/servicemanual/assets/local/application.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/servicemanual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="/servicemanual/assets/local/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+  <link href="/servicemanual/assets/local/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+  <link href="/servicemanual/assets/local/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="/servicemanual/assets/local/print.css" media="print" rel="stylesheet" type="text/css">
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["/assets/local/fonts-ie8.css"]},
+  c="/assets/local/libs/goog/webfont-debug.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h--;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="/servicemanual/assets/local/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+<script src="/assets/local/jquery-1.7.2.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="/assets/local/ie.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="/servicemanual/assets/local/favicon.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/servicemanual/assets/local/apple-touch-icon-72x72.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="/servicemanual/assets/local/apple-touch-icon-57x57.png">
+
+<script src="assets/local/frontend.js" type="text/javascript"></script>
+<script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      <div class="js-toggle-nav" id="global-nav">
+        <div class="inner">
+          <span class="home"><a href="/servicemanual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+          <nav role="navigation" class="content">
+            <ul id="navigation">
+              <li><a href="/servicemanual/digital-by-default" >Digital by default standard</a></li>
+              <li><a href="/servicemanual/about" >About</a></li>
+              <li><a href="/servicemanual/feedback" >Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="caveat-notice">
+  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
+
+  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
+
+  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
+</div>
+
+      
+<div class="page-status draft">draft</div>
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Measuring cost per transaction</h1>
+      
+    </hgroup>
+
+    
+    <ul class="meta-phases group">
+      
+      <li class="beta"><a href="/phases/beta.html">beta</a></li>
+      
+      <li class="live"><a href="/phases/live.html">live</a></li>
+      
+    </ul>
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-why-measure-cost-per-transaction"><a href="#why-measure-cost-per-transaction">Why measure cost per transaction</a>
+</li>
+<li class="level-how-to-measure-cost-per-transaction"><a href="#how-to-measure-cost-per-transaction">How to measure cost per transaction</a>
+</li>
+<li class="level-cost-per-digital-transaction"><a href="#cost-per-digital-transaction">Cost per digital transaction</a>
+</li>
+<li class="level-what-costs-should-be-included"><a href="#what-costs-should-be-included">What costs should be included</a>
+</li>
+<li class="level-how-to-calculate-your-cost-per-transaction-target"><a href="#how-to-calculate-your-cost-per-transaction-target">How to calculate your cost per transaction target</a>
+</li>
+<li class="level-how-frequently-should-i-measure-cost-per-transaction"><a href="#how-frequently-should-i-measure-cost-per-transaction">How frequently should I measure cost per transaction?</a>
+</li>
+<li class="level-reporting-cost-per-transaction"><a href="#reporting-cost-per-transaction">Reporting cost per transaction</a>
+<ol>
+<li class="level-worked-example---dvla"><a href="#worked-example---dvla">Worked example - DVLA</a>
+</li>
+<li class="level-costing-methodology"><a href="#costing-methodology">Costing methodology</a>
+</li>
+</ol>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>Cost per transaction is a measure of the total cost to the government of providing each completed transaction.</p>
+
+<h2 id="why-measure-cost-per-transaction">Why measure cost per transaction</h2>
+
+<p>Cost per transaction is an important measure of a service’s efficiency. As services become more efficient, the cost per transaction will fall.</p>
+
+<p>The difference in the transaction costs through each available channel can also be a useful measure. Understanding cost per transaction for each channel will help you to accurately forecast savings and build a strong business case for channel shift.</p>
+
+<h2 id="how-to-measure-cost-per-transaction">How to measure cost per transaction</h2>
+
+<p>The <em>average</em> cost per transaction is calculated as the total cost of providing the service divided by the total number of completed transactions.</p>
+
+<p>The total cost includes all fixed and variable costs of the transaction through a given channel, including overheads. It does not include start up costs.</p>
+
+<p>Where resources (eg call centres) are shared with other services, costs should be apportioned. For example, if half of all calls received relate to a specific service, then 50% of the call centre costs should be apportioned to that service.</p>
+
+<h2 id="cost-per-digital-transaction">Cost per digital transaction</h2>
+
+<p>The cost per <em>digital</em> transaction is the total cost of providing the digital service divided by the total number of transactions completed digitally, including <a href="/assisted-digital/index.html">assisted digital</a> transactions.</p>
+
+<p>Where processes and costs are common to more than one channel (e.g. processing wet signatures for passports, or printing driving licences), they should be apportioned. For example, if half of all transactions are completed digitally, then 50% of the common costs should be apportioned to the digital channel.</p>
+
+<h2 id="what-costs-should-be-included">What costs should be included</h2>
+
+<p>The full cost of the transaction should include:</p>
+
+<ul>
+  <li>accommodation, including capital charges for freehold properties</li>
+  <li>fixtures and fittings</li>
+  <li>maintenance</li>
+  <li>utilities</li>
+  <li>office equipment, including IT systems</li>
+  <li>postage, printing, telecommunications</li>
+  <li>total employment costs of those providing the service, including training</li>
+  <li>overheads, eg (shares of) payroll, audit, top management costs, legal services, etc</li>
+  <li>raw materials and stocks</li>
+  <li>research and development</li>
+  <li>depreciation of start up and one-off capital items</li>
+  <li>taxes: VAT, council tax, stamp duty, etc</li>
+  <li>capital charges (if they were not met separately when the service was established)</li>
+  <li>notional or actual insurance premiums</li>
+  <li>fees to sub-contractors</li>
+  <li>distribution costs, including transport</li>
+  <li>advertising</li>
+  <li>bad debts</li>
+  <li>provisions</li>
+</ul>
+
+<p>The following should be excluded:</p>
+
+<ul>
+  <li>enforcement costs</li>
+  <li>replacement costs of items notionally insured</li>
+  <li>start up costs (those which can be capitalised in the accounts)</li>
+</ul>
+
+<h2 id="how-to-calculate-your-cost-per-transaction-target">How to calculate your cost per transaction target</h2>
+
+<p>Having agreed a goal for your digital take-up, the following formula will provide a starting point for discussions with GDS on your overall cost per transaction.</p>
+
+<ul>
+  <li>goal for cost per transaction (CPT)</li>
+  <li>current overall cost per transaction (A)</li>
+  <li>current digital cost per transaction (B)</li>
+  <li>current digital take-up (X)</li>
+  <li>digital take-up goal (Y)</li>
+</ul>
+
+<blockquote>
+  <p>CPT=A+((B-A)/(1-X))*(Y-X)</p>
+</blockquote>
+
+<p>e.g. if the current average CPT is £2 and digital CPT is 50p, and if current digital take-up is 40% and the target is 80%, the target for average CPT would be £1.</p>
+
+<p>GDS can calculate this for you based on current figures.</p>
+
+<h2 id="how-frequently-should-i-measure-cost-per-transaction">How frequently should I measure cost per transaction?</h2>
+
+<p>Cost per transaction is measured on a quarterly basis. It should cover the last twelve months to eliminate seasonal fluctuations.</p>
+
+<p>Cost per transaction should be measured for the existing service - if there is one - to create a baseline against which future cost per transaction can be compared. When the digital service is exposed to real users (whether in alpha or beta) it should be included in the reported cost per transaction.</p>
+
+<h2 id="reporting-cost-per-transaction">Reporting cost per transaction</h2>
+
+<h3 id="worked-example---dvla">Worked example - DVLA</h3>
+
+<p>This worked example sets out the DVLA methodology used to calculate unit costs, and shows how this has generated a historic and future profile for vehicle licensing transactions and unit costs. The timeline runs from the inception of the electronic licensing channel as this provides a useful example of a multi-channel service.</p>
+
+<h3 id="costing-methodology">Costing methodology</h3>
+
+<p>The first consideration should be the purpose and use of the cost. An internal recharging model will be more concerned with the direct costs of the service, whereas an external cost recovery model will need to consider overhead apportionment and other forms of contribution.</p>
+
+<p>Once the purpose of the model has been established, appropriate expense heads need to be identified. Consideration needs to be given to the cost type, i.e. whether they are fixed, semi-fixed or variable in nature. Fixed cost elements (as the latter worked example will show) will have the result of reducing unit costs as volumes increase. Purely variable costs are reliant on volume so there is a linear relationship between a pure variable unit cost and the volume of the transaction.</p>
+
+<p>In many cases, the unit cost is made up of a combination of fixed and variable elements. In the example below the fixed cost elements include expense heads relating to the development of the digital channel; support and maintenance; and salaries (although they are more appropriately classified as semi-fixed). The variable costs that feed into the model include consumables costs, postage and those relating to the intermediary service – i.e. the contracted price per transaction.</p>
+
+<p>In establishing the unit costs of the licensing service via the various channels all relevant costs (as outlined above) are collated to give overall totals and these overall totals are then divided by the actual, or where applicable, the forecast transaction volumes.</p>
+
+<p>Detailed assumptions are maintained that underpin each of the expense heads, their relevance to the transaction and any adjustments that have been made. Version control is key in order to provide an audit trail. DVLA Licensing transactions since the inception of electronic channels (EVL).</p>
+
+<p>There are currently three channels through which the user interacts with the DVLA to license a vehicle – the intermediary Post Office; the Local Services Network; and via the Electronic Vehicle Licensing channel.</p>
+
+<p>Prior to 2004 all licensing activity was processed through the Post Office (DVLA intermediary) with a low and static number of complex transactions via DVLA Local Services Network. The overall volume of licensing transactions is itself fairly stable with perhaps a 2% increase in total volume every 5 years. Following the introduction of the electronic channel there has been a steady increase to date in usage which is forecast to continue beyond 2013/14. The corresponding effect of this is a decrease in post.</p>
+
+    </div>
+
+    <ul class="github-links">
+      <li><a href="https://github.com/alphagov/government-service-design-manual/commits/master/servicemanual/measurement/costpertransaction.md">Page history</a>
+      <li><a href="https://github.com/alphagov/government-service-design-manual/edit/master/servicemanual/measurement/costpertransaction.md">Edit page on GitHub</a>
+    </ul>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+
+    <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38806483-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

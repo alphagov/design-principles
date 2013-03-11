@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Testing in an agile environment - Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="/servicemanual/assets/local/application.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/servicemanual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="/servicemanual/assets/local/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+  <link href="/servicemanual/assets/local/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+  <link href="/servicemanual/assets/local/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="/servicemanual/assets/local/print.css" media="print" rel="stylesheet" type="text/css">
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["/assets/local/fonts-ie8.css"]},
+  c="/assets/local/libs/goog/webfont-debug.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h--;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="/servicemanual/assets/local/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+<script src="/assets/local/jquery-1.7.2.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="/assets/local/ie.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="/servicemanual/assets/local/favicon.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/servicemanual/assets/local/apple-touch-icon-72x72.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="/servicemanual/assets/local/apple-touch-icon-57x57.png">
+
+<script src="assets/local/frontend.js" type="text/javascript"></script>
+<script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      <div class="js-toggle-nav" id="global-nav">
+        <div class="inner">
+          <span class="home"><a href="/servicemanual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+          <nav role="navigation" class="content">
+            <ul id="navigation">
+              <li><a href="/servicemanual/digital-by-default" >Digital by default standard</a></li>
+              <li><a href="/servicemanual/about" >About</a></li>
+              <li><a href="/servicemanual/feedback" >Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="caveat-notice">
+  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
+
+  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
+
+  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
+</div>
+
+      
+<div class="page-status draft">draft</div>
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Testing in an agile environment</h1>
+      
+      <h2 class="subtitle">What testing your service might look like</h2>
+      
+    </hgroup>
+
+    
+    <ul class="meta-phases group">
+      
+      <li class="alpha"><a href="/phases/alpha.html">alpha</a></li>
+      
+      <li class="beta"><a href="/phases/beta.html">beta</a></li>
+      
+      <li class="live"><a href="/phases/live.html">live</a></li>
+      
+    </ul>
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-building-quality-in"><a href="#building-quality-in">Building quality in</a>
+</li>
+<li class="level-everyone-is-responsible-for-quality"><a href="#everyone-is-responsible-for-quality">Everyone is responsible for quality</a>
+</li>
+<li class="level-fast-feedback"><a href="#fast-feedback">Fast Feedback</a>
+</li>
+<li class="level-tests-are-an-asset-of-the-product"><a href="#tests-are-an-asset-of-the-product">Tests are an asset of the product</a>
+</li>
+<li class="level-faster-delivery-into-production"><a href="#faster-delivery-into-production">Faster delivery into production</a>
+</li>
+<li class="level-clear-and-consistent-view-of-testing"><a href="#clear-and-consistent-view-of-testing">Clear and consistent view of testing</a>
+</li>
+<li class="level-optimise-value"><a href="#optimise-value">Optimise value</a>
+</li>
+<li class="level-types-of-testing"><a href="#types-of-testing">Types of testing</a>
+<ol>
+<li class="level-code-testing"><a href="#code-testing">Code Testing</a>
+</li>
+<li class="level-exploratory-testing"><a href="#exploratory-testing">Exploratory Testing</a>
+</li>
+<li class="level-load--performance-testing"><a href="#load--performance-testing">Load & Performance Testing</a>
+</li>
+<li class="level-penetration-testing"><a href="#penetration-testing">Penetration Testing</a>
+</li>
+<li class="level-accessibility-testing"><a href="#accessibility-testing">Accessibility Testing</a>
+</li>
+<li class="level-crowd-sourced-testing"><a href="#crowd-sourced-testing">Crowd Sourced Testing</a>
+</li>
+<li class="level-test-your-ideas"><a href="#test-your-ideas">Test Your Ideas</a>
+</li>
+</ol>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>Fundamentally, the basics of any testing approach still apply in the Agile world. However, the focus of testing can be quite different.  </p>
+
+<p>It is important to recognize why we are testing in the first place, and that is to build the best quality system we can, that does what the customer requires, at a cost that everyone agrees we can afford  (cost being money, business change, risk etc.).  Too often, the focus of testing is to validate what has been produced and that alone, when in actuality it should be more about the following 7 concepts:</p>
+
+<h2 id="building-quality-in">Building quality in</h2>
+
+<p>You cannot test quality at the end, which is the mistake many teams make. Expend the vast majority of your effort building quality in at the start instead. </p>
+
+<p>When you write user stories, ensure that you define acceptance criteria against which you can test. Once past that point, testing should primarily be a verification of what we already know and understand to be true, there should be no surprises in the latter stages.</p>
+
+<h2 id="everyone-is-responsible-for-quality">Everyone is responsible for quality</h2>
+
+<p>Service quality isn’t just a testing issue. The quality of a system is defined by the people who create it. If there is a problem in the quality of the system being produced, then it should be evident to everyone involved, and every person on the project should be taking action to increase quality and fix issues.</p>
+
+<h2 id="fast-feedback">Fast Feedback</h2>
+
+<p>Agile is reliant on fast feedback loops, so that we can actually be agile and change when we need to change. Testing should be about giving that fast feedback, at the time when it is useful. Agile test techniques (e.g. Behaviour driven development, Acceptance test driven development) have their place and we may well use them, but they are not the primary focus of the test approach.</p>
+
+<h2 id="tests-are-an-asset-of-the-product">Tests are an asset of the product</h2>
+
+<p>By this we mean that testing is built with reuse in mind. It takes a lot of effort to do testing correctly, we don’t want it to be a throwaway exercise that has to start from scratch each time there is a new release, or a new project. Automated tests need to be written with the same care and rigour as production code.</p>
+
+<h2 id="faster-delivery-into-production">Faster delivery into production</h2>
+
+<p>While testing is necessary and valuable to the programme as a whole, any time it takes for that code to go live once written is essentially wasted time. Testing should be a tool that is used to get the fastest possible confirmation that it is as expected, or that it isn’t and needs to be reworked.</p>
+
+<p>Testing doesn’t always need to be exhaustive at every level, it needs to be applicable to the situation at hand. It should be the job of the team to agree on the necessary testing at each level, based on the appetite for risk of the product owner and the likelihood of risk in the application.</p>
+
+<h2 id="clear-and-consistent-view-of-testing">Clear and consistent view of testing</h2>
+
+<p>Everybody in the programme needs to understand and agree the approach to testing, and everybody needs to understand where they fit in and what they are required to do.</p>
+
+<h2 id="optimise-value">Optimise value</h2>
+
+<p>Testing, done well, will inform the the best way forward and get the best “bang for buck” in terms of effort expended in various functional or non-functional areas.  It will help make the tough decisions, and drive the development effort based on the risk of each choice of story.  It will help the prioritization based on the understanding of the complexity of the system.</p>
+
+<h2 id="types-of-testing">Types of testing</h2>
+
+<p>The most noticeable difference with testing in an Agile world is that the majority of your  test effort will be focussed on automated tests. <br />
+These tests run in Continuous Integration (C.I.) which means that they form part of your code base and every time you make a change to your code, your tests are automatically run. This gives you immediate feedback on the quality of your code and helps prevent bugs being found at a later stage when they are expensive and complicated to resolve.</p>
+
+<h3 id="code-testing">Code Testing</h3>
+<p>Read the guidance about <a href="/making-software/code-testing.html">testing code</a>.  </p>
+
+<h3 id="exploratory-testing">Exploratory Testing</h3>
+<p>Exploratory testing is a term commonly used to describe unscripted manual testing whereby the tester uses his or her knowledge, experience and intuition to navigate through the software and identify bugs. A scripted test can only ever test a predetermined outcome. Exploratory testing aims to find and test the less obvious outcomes. A good way to think about it is that automated tests prevent bugs whereas exploratory tests find them.  </p>
+
+<p>Exploratory testing is normally time-boxed and has a specific purpose - e.g. ‘I will spend x hours exploring y and z aspects of the system (though my explorations may take me elsewhere and it may take more or less time, I’ll use my judgement as I go)’. </p>
+
+<p>The term does not imply that the tester has not prepared for the testing. They will have given the testing some detailed planning in advance, thinking for instance about the specific aspects they want to explore, and any data or other system set-up that they will need.  </p>
+
+<p>Automation may still play a part - not to run the tests themselves but, for instance, to set up the data or to get a set of transactions into predetermined states.</p>
+
+<p>In a team where you have a one or more dedicated ‘quality analysts’ or ‘testers’ this type of testing will normally be part of their role. In a developer-only team time will need to be put aside for them the developers themselves to do this type of testing. As a developer has been deeply involved in writing the code, it is sometime difficult for them to step far enough enough from the system to see paths through the system that they hadn’t previously envisaged. To help with this it’s ideal if they can be assigned to exploratory testing for a full day to allow the appropriate amount of context switching. It is also preferable if they are exploring parts of the system that they have been less involved in developing.</p>
+
+<p>When a manual test uncovers a defect, it is important to always add an automated test to catch it going forward and hence prevent any reoccurrence.</p>
+
+<p>Read <a href="http://www.kaner.com/pdfs/QAIExploring.pdf">Cem Kaner on exploratory testing</a></p>
+
+<h3 id="load--performance-testing">Load &amp; Performance Testing</h3>
+<p>Read the guidance about <a href="/operations/load-and-performance-testing.html">load &amp; performance testing</a></p>
+
+<h3 id="penetration-testing">Penetration Testing</h3>
+<p>Read the guidance about <a href="/operations/penetration-testing.html">penetration testing</a></p>
+
+<h3 id="accessibility-testing">Accessibility Testing</h3>
+<p>Read the guidance about <a href="/making-software/accessibility-testing.html">accessibility testing</a></p>
+
+<h3 id="crowd-sourced-testing">Crowd Sourced Testing</h3>
+<p>Crowd sourced testing is a good way of speeding up your manual testing and/or achieving better coverage.  </p>
+
+<p>There are external companies who provide this as a service, but at GDS we do it internally. We simply put out a call for as many volunteers as possible across the organisation to put aside a few hours on a particular day for testing. We then give them some guidance on what we need testing and a central place for them to log bugs and hey presto! Sometimes we incentivise people by creating a ‘leader board’ showing who has tested the most things.  </p>
+
+<p>Examples of where we have used this effectively include for pre-release testing of additional devices/browsers and for the detailed checking of hundreds of pieces of content on GOV.UK back to old content on DirectGov and BusinessLink.</p>
+
+<h3 id="test-your-ideas">Test Your Ideas</h3>
+<p>Don’t forget, don’t just test the product itself - test your ideas.   For information on how to do this read <a href="/users/introduction-to-user-research.html">the guidance about user research</a>.</p>
+
+    </div>
+
+    <ul class="github-links">
+      <li><a href="https://github.com/alphagov/government-service-design-manual/commits/master/servicemanual/agile/testinginanagileenvironment.md">Page history</a>
+      <li><a href="https://github.com/alphagov/government-service-design-manual/edit/master/servicemanual/agile/testinginanagileenvironment.md">Edit page on GitHub</a>
+    </ul>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+
+    <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38806483-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

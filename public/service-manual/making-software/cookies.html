@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Cookies - Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="/servicemanual/assets/local/application.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/servicemanual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="/servicemanual/assets/local/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+  <link href="/servicemanual/assets/local/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+  <link href="/servicemanual/assets/local/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="/servicemanual/assets/local/print.css" media="print" rel="stylesheet" type="text/css">
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["/assets/local/fonts-ie8.css"]},
+  c="/assets/local/libs/goog/webfont-debug.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h--;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="/servicemanual/assets/local/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+<script src="/assets/local/jquery-1.7.2.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="/assets/local/ie.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="/servicemanual/assets/local/favicon.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/servicemanual/assets/local/apple-touch-icon-72x72.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="/servicemanual/assets/local/apple-touch-icon-57x57.png">
+
+<script src="assets/local/frontend.js" type="text/javascript"></script>
+<script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      <div class="js-toggle-nav" id="global-nav">
+        <div class="inner">
+          <span class="home"><a href="/servicemanual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+          <nav role="navigation" class="content">
+            <ul id="navigation">
+              <li><a href="/servicemanual/digital-by-default" >Digital by default standard</a></li>
+              <li><a href="/servicemanual/about" >About</a></li>
+              <li><a href="/servicemanual/feedback" >Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="caveat-notice">
+  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
+
+  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
+
+  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
+</div>
+
+      
+<div class="page-status draft">draft</div>
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Cookies</h1>
+      
+      <h2 class="subtitle">When to use them, and when to tell users about them</h2>
+      
+    </hgroup>
+
+    
+    <ul class="meta-phases group">
+      
+      <li class="beta"><a href="/phases/beta.html">beta</a></li>
+      
+      <li class="live"><a href="/phases/live.html">live</a></li>
+      
+    </ul>
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-using-cookies"><a href="#using-cookies">Using Cookies</a>
+</li>
+<li class="level-cookie-warnings"><a href="#cookie-warnings">Cookie warnings</a>
+<ol>
+<li class="level-storing-your-approximate-location"><a href="#storing-your-approximate-location">Storing your approximate location</a>
+</li>
+</ol>
+</li>
+<li class="level-cookies-on-existing-transactions"><a href="#cookies-on-existing-transactions">Cookies on existing transactions</a>
+</li>
+<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>This short guide tells you what to keep in mind when including cookies into your services, and how and why we notify users about cookies on <a href="https://www.gov.uk">GOV.UK</a>.</p>
+
+<h2 id="using-cookies">Using Cookies</h2>
+
+<p>You should minimise the use of cookies throughout services. Store as little information as you require for as short a time as necessary to deliver a good service to users.</p>
+
+<p>If your service requires new cookies to be set then you need to ensure that they can be explained simply and clearly, in a way that the majority of users can understand.</p>
+
+<p>You will need to notify users whenever a specific action sets a cookie. This will look like this:</p>
+
+<p>“<a href="https://www.gov.uk/support/cookies#">sets a cookie</a>”</p>
+
+<p>That link will take users to the cookies page, and the appropriate description of the cookie being set.</p>
+
+<h2 id="cookie-warnings">Cookie warnings</h2>
+
+<p>Whenever a user visits <a href="https://www.gov.uk">GOV.UK</a> for the first time we notify them on our use of cookies using this message:</p>
+
+<p>“GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/support/cookies">Find out more about cookies</a></p>
+
+<p>On <a href="https://www.gov.uk/support/cookies">the cookies page at GOV.UK</a> you can see a breakdown of the kinds of cookie used throughout the site, followed by an explanation of each cookie’s purpose. For example:</p>
+
+<h3 id="storing-your-approximate-location">Storing your approximate location</h3>
+
+<p>Some pages on this site provide you with information based on your location. So when you enter your postcode, we save your approximate location to a cookie. This means you don’t have to keep typing your postcode in, and means we’ll always point you towards services that are closest to you e.g. the nearest UK online centre.</p>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Purpose</td>
+        <td>Expires</td>
+    </tr>
+    <tr>
+        <td>govukgeo</td>
+        <td>Saves details about your location so that services which require this information are consistent</td>
+        <td>4 months</td>
+    </tr>
+</table>
+
+<h2 id="cookies-on-existing-transactions">Cookies on existing transactions</h2>
+
+<p>The <a href="https://www.gov.uk">GOV.UK</a> cookies policy does not cover 3rd party transactions. Unfortunately, most existing services were built before the updated EU Privacy Directive came into force, so weren’t built with it in mind (hence not having cookie policies).</p>
+
+<p>New and redesigned services will be expected to notify users that cookies are being set beforehand, using a ‘sets a cookie’ line of text near the action that triggers the cookie (this text should be linked to the appropriate part of the cookie information page).  You can see an example of how that works on GOV.UK <a href="https://www.gov.uk/dvla-offices">here</a>.</p>
+
+<p>Where a user can’t be notified before the cookie is set (i.e. if it’s set when the user first visits the service using implied consent), the service should use a banner similar to that on <a href="https://www.gov.uk">GOV.UK</a> to inform people that this is the case and link them to the further information.</p>
+
+<h2 id="why-we-do-this">Why we do this</h2>
+<p>This policy is in line with EU Law and was devised following extensive research during the beta of <a href="https://www.gov.uk">GOV.UK</a>. It follows the <a href="http://www.legislation.gov.uk/uksi/2011/1208/contents/made">The Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011</a> (PECR). You can read more about how we decided this in <a href="http://digital.cabinetoffice.gov.uk/2012/01/12/cookies-on-the-beta/">this blog post by GDS Developer Dafydd Vaughan</a>.</p>
+
+<h2 id="further-reading">Further reading</h2>
+<p><a href="http://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx">The ICO’s latest guidance</a></p>
+
+<p>This <a href="http://digital.cabinetoffice.gov.uk/2012/01/12/cookies-on-the-beta/">blog post by GDS Developer Dafydd Vaughan</a> explains how cookies were used on the beta version of <a href="https://www.gov.uk">GOV.UK</a>.</p>
+
+
+    </div>
+
+    <ul class="github-links">
+      <li><a href="https://github.com/alphagov/government-service-design-manual/commits/master/servicemanual/making-software/cookies.md">Page history</a>
+      <li><a href="https://github.com/alphagov/government-service-design-manual/edit/master/servicemanual/making-software/cookies.md">Edit page on GitHub</a>
+    </ul>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+
+    <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38806483-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

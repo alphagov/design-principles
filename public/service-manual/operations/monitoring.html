@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Monitoring - Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="/servicemanual/assets/local/application.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/servicemanual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="/servicemanual/assets/local/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+  <link href="/servicemanual/assets/local/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+  <link href="/servicemanual/assets/local/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/servicemanual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="/servicemanual/assets/local/print.css" media="print" rel="stylesheet" type="text/css">
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["/assets/local/fonts-ie8.css"]},
+  c="/assets/local/libs/goog/webfont-debug.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h--;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="/servicemanual/assets/local/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+<script src="/assets/local/jquery-1.7.2.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="/assets/local/ie.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="/servicemanual/assets/local/favicon.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/servicemanual/assets/local/apple-touch-icon.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/servicemanual/assets/local/apple-touch-icon-72x72.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="/servicemanual/assets/local/apple-touch-icon-57x57.png">
+
+<script src="assets/local/frontend.js" type="text/javascript"></script>
+<script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      <div class="js-toggle-nav" id="global-nav">
+        <div class="inner">
+          <span class="home"><a href="/servicemanual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+          <nav role="navigation" class="content">
+            <ul id="navigation">
+              <li><a href="/servicemanual/digital-by-default" >Digital by default standard</a></li>
+              <li><a href="/servicemanual/about" >About</a></li>
+              <li><a href="/servicemanual/feedback" >Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="caveat-notice">
+  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
+
+  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
+
+  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
+</div>
+
+      
+<div class="page-status draft">draft</div>
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Monitoring</h1>
+      
+      <h2 class="subtitle">Tracking the status of a service</h2>
+      
+    </hgroup>
+
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-setup-monitoring-early"><a href="#setup-monitoring-early">Setup monitoring early</a>
+</li>
+<li class="level-include-high-level-checks"><a href="#include-high-level-checks">Include high level checks</a>
+</li>
+<li class="level-errors-are-interesting"><a href="#errors-are-interesting">Errors are interesting</a>
+</li>
+<li class="level-widely-available"><a href="#widely-available">Widely available</a>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>Any online application should have some tools dedicated to alerting the people running the service to problems. This might involve low level issues involving the infrastructure underpinning the service to a sudden high rate of user errors.</p>
+
+<p>Knowing the current state of your service and infrastructure can help identify problems before they happen, as well as alert you to issues that need immediate attention. The main goals are:</p>
+
+<ul>
+  <li>to be alerted to problems affecting the availability of the service so they can be resolved</li>
+  <li>to aid with capacity planning activities by providing metrics over time</li>
+  <li>to identify potential future problems</li>
+  <li>to find areas of improvement, for instance badly performing systems or inefficient services</li>
+</ul>
+
+<h2 id="setup-monitoring-early">Setup monitoring early</h2>
+
+<p>Monitoring is not something that should be left to the end, to be tacked on as part of running the final production service. By talking about monitoring, and agreeing an approach, you are more likely to build useful checks as you go along. Writing tests at the same time as writing code is common, monitoring checks can be viewed as tests for the running system.</p>
+
+<h2 id="include-high-level-checks">Include high level checks</h2>
+
+<p>Often monitoring is seen through a very technical lens, so teams may only look at web application performance, available disk space or memory usage. Although these are important it’s also essential to track these alongside more business related metrics. </p>
+
+<p>For example being able to compare page loading tests with failed transactions and application errors can alert you to problems and help identify the cause at the same time. It also grounds conversations about low level problems (disk space, slow performance) in terms of the service performance. </p>
+
+<h2 id="errors-are-interesting">Errors are interesting</h2>
+
+<p>When errors occur they should be recorded and tracked over time. Errors always contain interesting information, potentially about a user problem, attacks in progress, failing systems or just a capacity problem. </p>
+
+<p>It’s important to be able to see errors both at the level of the entire system and related to a particular application or machine.</p>
+
+<h2 id="widely-available">Widely available</h2>
+
+<p>The monitoring system, or rather any dashboards, interactive tools or reports, should be as widely available as possible. They should ideally be useful outside just the group responsible for the day to day operations and systems administration.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="http://digital.cabinetoffice.gov.uk/2012/02/08/radiating-information/">Radiating Information</a>Examples of some of the monitoring dashboards used while building GOV.UK</li>
+  <li><a href="https://speakerdeck.com/obfuscurity/the-state-of-open-source-monitoring">Open Source Monitoring</a> </li>
+</ul>
+
+
+    </div>
+
+    <ul class="github-links">
+      <li><a href="https://github.com/alphagov/government-service-design-manual/commits/master/servicemanual/operations/monitoring.md">Page history</a>
+      <li><a href="https://github.com/alphagov/government-service-design-manual/edit/master/servicemanual/operations/monitoring.md">Edit page on GitHub</a>
+    </ul>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+
+    <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38806483-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
