@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>How users read - Government Service Design Manual</title>
+<title>Open source - Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -117,7 +117,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/content-and-design">Content and Design</a></li>
+      <li><a href="/service-manual/making-software">Making software</a></li>
       
     </ol>
   </nav>
@@ -128,9 +128,9 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>How users read</h1>
+      <h1>Open source</h1>
       
-      <h2 class="subtitle">Reading age, reading online, plain English, learning disabilities</h2>
+      <h2 class="subtitle">When to use open source</h2>
       
     </hgroup>
 
@@ -153,19 +153,19 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-reading"><a href="#reading">Reading</a>
+<li class="level-when-to-use-open-source"><a href="#when-to-use-open-source">When to use open source</a>
 </li>
-<li class="level-reading-age"><a href="#reading-age">Reading age</a>
-</li>
-<li class="level-lowercase"><a href="#lowercase">Lowercase</a>
-</li>
-<li class="level-plain-english"><a href="#plain-english">Plain English</a>
-</li>
-<li class="level-context"><a href="#context">Context</a>
-</li>
-<li class="level-learning-disabilities"><a href="#learning-disabilities">Learning disabilities</a>
+<li class="level-developing-with-open-source"><a href="#developing-with-open-source">Developing with open source</a>
 </li>
 <li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+<ol>
+<li class="level-avoid-vendor-lock-in"><a href="#avoid-vendor-lock-in">Avoid vendor lock-in</a>
+</li>
+</ol>
+</li>
+<li class="level-security-and-open-source"><a href="#security-and-open-source">Security and open source</a>
+</li>
+<li class="level-better-products-and-services"><a href="#better-products-and-services">Better products and services</a>
 </li>
 <li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
@@ -175,71 +175,68 @@
     </div>
 
     <div class="inner">
-      <p>The <a href="https://www.gov.uk/designprinciples/styleguide">style guide</a> is set in best practice and relates to how users read. This is an explanation of some of our guidance and the reasons behind the rules.</p>
+      <p>This section presents architectural practice and considerations for using, publishing and contributing to free and open source software (<a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>).</p>
 
-<h2 id="reading">Reading</h2>
+<h2 id="when-to-use-open-source">When to use open source</h2>
 
-<p>Users only really read 20-28% of a web page. With services, where users just want to complete the task as quickly as possible, you have added user impatience so you may find users skim words even more.</p>
+<p>Use open source software in preference to <a href="http://en.wikipedia.org/wiki/Proprietary_software">proprietary or closed source</a> alternatives, in particular for operating systems, networking software, Web servers, databases and programming languages.</p>
 
-<p><a href="https://www.gov.uk/designprinciples/styleguide">The style guide</a> and <a href="https://github.com/alphagov/government-service-design-manual/blob/master/Copy%20and%20content/howtowrite.md">how we write</a> give guidance on how to write. This page details why we do it.</p>
+<p>Problems which are rare, or specific to a domain may be best answered by using <a href="http://en.wikipedia.org/wiki/Software_as_a_service">software as a service</a>, or by installing proprietary software.</p>
 
-<p>All of this guidance is based on the learning skills of an average person in the UK, who has English as a first language.</p>
+<p>In such cases, take care to mitigate the risk of lock-in to a single supplier by ensuring <a href="http://consultation.cabinetoffice.gov.uk/openstandards/">open standards</a> are available for interfaces.</p>
 
-<h2 id="reading-age">Reading age</h2>
-<p>You don’t read one word at a time. You bounce around. You anticipate words and fill them in.</p>
+<p>Where possible use DNS addresses you own for services, and demand open formats for the import and export of your data.</p>
 
-<p>By the time you are 9 years old, your brain can drop up to 30% of the text and still understand. Your vocabulary will grow but this reading skill stays with you as an adult.</p>
+<p>For unique needs and common problems which have yet to be solved well elsewhere, develop software by <a href="http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/">coding in the open</a> and publish under an open source licence (<a href="">Legal processes/Open standards and licensing</a>).</p>
 
-<p>You should also be confident in sounding out words and blending sounds. You may not know the word, but you have the skills to be able to learn it.</p>
+<p>Whenever possible construct software in the form of small components and utilities, re-usable both inside and outside of your organisation. Keep infrastructure code and secrets, including passwords and deployment configuration and scripts, separate and privately from publicly visible source code.</p>
 
-<p>We talk about the reading age being around 9 years old - this is why. </p>
+<p>A successful open source project will garner contributions from a large number of sources, both inside and outside of a single organisation. Allow developers time to review contributions, and answer issues and discussion raised by others using the software.</p>
 
-<h2 id="lowercase">Lowercase</h2>
-<p>When you learn to read, you start with a mix of upper and lower case but you don’t start understanding uppercase until you are around 6 years old. </p>
+<p>Larger open source projects often evolve an extension model to enable others to continue to use the service in a variety of often unexpected and possibly undesirable ways whilst keeping the core project coherent under the editorship of a small, trusted group of <a href="http://en.wikipedia.org/wiki/Committer">committers</a>.</p>
 
-<p>At first, you may sound out letters, merge sounds, merge letters, learn the word.</p>
+<h2 id="developing-with-open-source">Developing with open source</h2>
 
-<p>Then you stop reading it.</p>
+<p>Provide developers with ready access to open source development tools with which they will be familiar so they may be productive immediately.</p>
 
-<p>At that point, you recognise the shape of the word. This speeds up comprehension and speed of reading. So we don’t want people to read. We want people to recognise the ‘shape’ of the word and understand. It’s a lot faster. </p>
+<p>Ensure developers have the ability to install and experiment with open source software, have environments to easily publish prototype services on The Web, have convenient access to a wide variety of network connected devices for testing Web sites, and have unrestricted access to collaboration tools such as <a href="https://github.com">GitHub</a>, <a href="http://stackoverflow.com/">Stack Overflow</a> and <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a>.</p>
 
-<p>Caps are reputed to be 13-18% harder for users to read. So we try to avoid them.</p>
-
-<p>Also, in modern usage it sounds like we are shouting. We are government. We should not be shouting.</p>
-
-<h2 id="plain-english">Plain English</h2>
-<p>By the time you are 9, you are building up your ‘common words’. Your primary set is around 5,000 words in your vocabulary; your secondary set is around 10,000 words.</p>
-
-<p>These are words you use every day. They are a lot of your ‘plain English’ words. Which is why we should be obsessed with them. These are words so easy to comprehend, you learn to read them quickly and then you stop reading and start recognising. </p>
-
-<h2 id="context">Context</h2>
-<p>We explain all unusual terms on GOV.UK. This is because you can understand 6-letter words as easily 2 letter words - if they are in context.</p>
-
-<p>Sometimes, you can read a short word faster than a single letter - if the context is correct.</p>
-
-<p>Not only are we giving users full information - which is obviously what we are meant to be doing - we are speeding up their reading time. By giving full context and using common words, we are allowing them to understand in the fastest possible way. </p>
-
-<p>In tools and transactions you need to give people context. By giving them information they are expecting, you help them get through it faster. </p>
-
-<h2 id="learning-disabilities">Learning disabilities</h2>
-
-<p>This is a huge subject, with many different nuances. But one thing we can do is remember that people with some learning disabilities read letter for letter. They don’t bounce around like other users.</p>
-
-<p>They also can’t retain the comprehension of the sentence as a whole if it is too long.</p>
-
-<p>People with moderate learning disabilities can retain comprehension of 5 to 8 words. Now, we can’t go that far but if we concentrate on common words, we can get to the standard retention figure of around 25 words.</p>
-
-<p>Quite frankly, we all get a bit lost if you have a 72 word sentence. Again, why would we make it hard, when it can be so easy and we don’t lose the usability? </p>
+<p>Take every opportunity to contribute back to open source projects you use. Contributions may be in the form of source code, patches, bug reports, feature requests, sponsorship of developers and support staff, engaging in community discussion groups, and giving public attribution to projects. Cite the open source code you use, as in the <a href="http://digital.cabinetoffice.gov.uk/govuk-launch-colophon/">GOV.UK colophon</a>.</p>
 
 <h2 id="why-we-do-this">Why we do this</h2>
+<p>Free and open source software has a number of architectural benefits over closed source and proprietary alternatives and is the basis of our <a href="https://www.gov.uk/designprinciples#tenth">tenth design principle</a> — <em>Make things open: it makes things better</em>.</p>
 
-<p>Our audience is potentially anyone living in the UK. We need to be able to communicate in a way that most users understand.</p>
+<p>Coding in the open lowers the barriers to collaboration with others inside and outside of your organisation, increasing the speed of new developers being productive on a project. Modern developers are usually more familiar with open source tools and ways of working than with proprietary products.</p>
 
-<p>Government can’t afford to be elitist and use language only those with a very good education can understand. We need to open up our information and services to everyone. That means using common words and working with natural reading behaviour.</p>
+<p>Freedom at the point of use means open source software may be downloaded and assessed by developers without payment, prior agreement, a need to sign non-disclosure documentation, needing to waiver rights, or enter into aporia agreements on behalf of themselves or their organisation.</p>
+
+<h3 id="avoid-vendor-lock-in">Avoid vendor lock-in</h3>
+
+<p>Using closed source software increases the risk of <a href="http://en.wikipedia.org/wiki/Vendor_lock-in">lock-in</a> to a single supplier. This is a risk, even when building with <a href="http://consultation.cabinetoffice.gov.uk/openstandards/">open standards</a> due to the possibility of inadvertently using propriety features.
+Access to the source code enables support to be sourced from a number of independent suppliers, enabling better prioritisation of bug-fixes, allowing systems to be maintained outside of vendor product life-cycles, and mitigating the risk of <a href="http://en.wikipedia.org/wiki/Planned_obsolescence">planned obsolescence</a> or <a href="http://en.wikipedia.org/wiki/Abandonware">abandonment</a>.</p>
+
+<h2 id="security-and-open-source">Security and open source</h2>
+
+<p>Keys, passwords and other secrets need to be stored safely and securely away from source code following <a href="http://en.wikipedia.org/wiki/Kerckhoffs%27_principle">Kerckhoffs’s principle</a>. Whilst it is possible to publish a project initially built in private, coding in the open means confronting this separation of concerns early during development. </p>
+
+<p>This separation of project code from deployed instances of a project is good development practice, and using open source enables developers to easily fork and experiment with multiple development, and operations to quickly spin-up multiple test and integration environments without encountering limits of licensing.</p>
+
+<p>Although <a href="http://en.wikipedia.org/wiki/Linus%27s_law">Linus’s Law</a> “given enough eyeballs, all bugs are shallow” is contentious, transparent access to the code increases the difficulty of hiding a <a href="http://en.wikipedia.org/wiki/Backdoor_(computing\)">back door</a> or <a href="http://en.wikipedia.org/wiki/Trojan_horse_(computing\)">Trojan horse</a> inside a FOSS product.</p>
+
+<p>It is argued a system is most vulnerable after a potential attack is discovered, but before a fix has been deployed. A number of <a href="http://en.wikipedia.org/wiki/Open_source_software_security#Metrics_and_Models">metrics and models</a> attest to the quicker response to security issues in open source products when compared to closed source equivalents.</p>
+
+<p>For projects with a high impact levels, particularly with a small number of participating developers, it is advisable to have a private space to discuss security issues and develop a patch rather than risk flagging a vulnerability before a fix has been deployed.</p>
+
+<h2 id="better-products-and-services">Better products and services</h2>
+
+<p>Software is expensive to maintain, and can be seen as a liability, yet the value of software increases the more people use it. Publishing as open source increases the likelihood of code-reuse. For example <a href="https://github.com/alphagov/govspeak">GovSpeak</a> and <a href="https://github.com/alphagov/unicornherder">unicorn herder</a> are small components which developed as a part of GOV.UK, are used by several different organisations, and have received a number of public contributions.</p>
+
+<p>Open source encourages re-use and benefits from <a href="http://en.wikipedia.org/wiki/Network_effect">network effects</a>, and as a result has developed tools, services and processes for coordinating massively distributed development teams spread across multiple organisations.</p>
+
+<p>Finally, by lowering the barriers for reuse, building for extensibility, encouraging forking, mutation and experimentation, open source fosters a culture of <a href="http://en.wikipedia.org/wiki/Open_innovation">open innovation</a>, leading to better products and services.</p>
 
 <h2 id="further-reading">Further reading</h2>
-
-<p>Neilson: For more detail on why <a href="http://www.useit.com/alertbox/percent-text-read.html">20-28% of text is read</a>.</p>
+<p>The legal obligations for using open source software are outlined the section <a href="/service-manual/making-software/open-standards-and-licencing.html">open standards and licensing</a>.</p>
 
     </div>
   </div>
