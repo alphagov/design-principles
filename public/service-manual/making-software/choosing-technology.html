@@ -8,28 +8,28 @@
 <!-- Stylesheets from static -->
 
 <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/local/application.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application.css" media="screen" rel="stylesheet" type="text/css">
   <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/local/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/local/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/local/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
-<link href="/service-manual/assets/local/print.css" media="print" rel="stylesheet" type="text/css">
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print.css" media="print" rel="stylesheet" type="text/css">
 
 <!--[if IE 8]>
 <script type="text/javascript">
   (function(){if(window.opera){return;}
   setTimeout(function(){var a=document,g,b={families:(g=
-  ["nta"]),urls:["/assets/local/fonts-ie8.css"]},
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8.css"]},
   c="/assets/local/libs/goog/webfont-debug.js",d="script",
   e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
   ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h--;a.documentElement
@@ -38,21 +38,21 @@
 </script>
 <![endif]-->
 
-<!--[if gte IE 9]><!--><link href="/service-manual/assets/local/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts.css" media="all" rel="stylesheet" type="text/css"><!--<![endif]-->
 
-<script src="/assets/local/jquery-1.7.2.js" type="text/javascript"></script>
-<!--[if lt IE 9]><script src="/assets/local/ie.js" type="text/javascript"></script><![endif]-->
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie.js" type="text/javascript"></script><![endif]-->
 
-<link rel="shortcut icon" href="/service-manual/assets/local/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon.ico" type="image/x-icon">
 <!-- For third-generation iPad with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/service-manual/assets/local/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon.png">
 <!-- For iPhone with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/service-manual/assets/local/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon.png">
 <!-- For first- and second-generation iPad: -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/service-manual/assets/local/apple-touch-icon-72x72.png">
-<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="/service-manual/assets/local/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --><link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57.png">
 
-<script src="assets/local/frontend.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/frontend/frontend.js" type="text/javascript"></script>
 <script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
 
 
@@ -68,7 +68,18 @@
   <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
 
   <!--start header-->
+<header role="banner" class="group" id="global-header">
+  <div class="header-wrapper group">
+    <a href="/" title="Go to the gov.uk homepage" id="logo"><img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK"></a>
 
+    <a href="#search" class="button search-toggle">Search</a>
+
+    <form id="search" class="site-search" action="/search" method="get" role="search">
+      <label for="site-search-text" class="visuallyhidden">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search"><input class="button" type="submit" value="Search">
+    </form>
+  </div>
+</header>
 <!--end header-->
 
   <div id="wrapper" class="detailed-guidance">
@@ -112,9 +123,9 @@
     
     <ul class="meta-phases group">
       
-      <li class="alpha"><a href="/phases/alpha.html">alpha</a></li>
+      <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
       
-      <li class="beta"><a href="/phases/beta.html">beta</a></li>
+      <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
       
     </ul>
     
@@ -154,7 +165,7 @@
 
 <p>On day one of your project you simply won’t know enough about the domain or the user need to select the <em>right</em> technology. It’s OK to make an educated guess at this stage, as long as everyone understands that is what is happening. Then find time to challenge the selection as you learn more about the problem at hand.</p>
 
-<p>Maybe you selected a programming language that you knew would be easier and quicker to prototype in for the early stages of the project, and then moved to another one that was easier to work in large teams with for the final product. Or maybe you started out with an open source product to allow you to get started quickly, before going on to buy a commercial product which provided some required feature.</p>
+<p>Maybe you selected a programming language that you knew would be easier and quicker to prototype in for the early stages of the project, and then moved to another one that was easier to work in large teams with for the final product. Or maybe you started out with an open source product to allow you to get started quickly, before going on to buy a commercial product which provided some required feature (or vice-versa).</p>
 
 <h2 id="start-with-capabilities-not-implementations">Start with capabilities, not implementations</h2>
 
@@ -182,6 +193,8 @@
 
 <p>Over time, and after many decisions, you can find yourself in a situation where all your technology decisions are tightly coupled and you are locked-in to one vendor or one way of doing things. This can have unforseen financial costs (for example an overnight cost increase) but can also limit how quickly you can iterate on your product in the future, for instance if the ideal technology choice isn’t compatible with your current vendor or technology.</p>
 
+<p>Aim to have a clear understanding of the cost or implications of moving away from a technology when you commit to it.</p>
+
 <h2 id="why-we-do-this">Why we do this</h2>
 
 <p>Choosing technology is important, but it’s probably not quite as important as you think. What is important are the users of that technology and being able to deliver quality at a sustainable pace and suitable cost. When making technology choices, and importantly as you develop your product and constantly reassess your selections, try and make decisions that:</p>
@@ -194,14 +207,9 @@
 
 <h2 id="further-reading">Further reading</h2>
 
-<p><a href="/making-software/open-source-considerations.html">Open Source Considerations</a></p>
+<p><a href="/service-manual/making-software/open-source-considerations.html">Open Source Considerations</a></p>
 
     </div>
-
-    <ul class="github-links">
-      <li><a href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/choosing-technology.md">Page history</a>
-      <li><a href="https://github.com/alphagov/government-service-design-manual/edit/master/service-manual/making-software/choosing-technology.md">Edit page on GitHub</a>
-    </ul>
   </div>
 </article>
 
@@ -209,30 +217,118 @@
     </section>
   </div><!--end wrapper-->
 
-  <footer class="group" id="footer" role="contentinfo">
+  <footer class="group js-footer" id="footer" role="contentinfo">
   <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
 
-    <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
 
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+    </nav>
     <div class="copyright">
       <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
     </div>
   </div>
+</div>
 </footer>
 
-
-  <script type="text/javascript">
-
+  <script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38806483-1']);
-  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+  _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+  _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+  // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+  _gaq.push(["_setCustomVar",2,"Format","homepage",3]);
+  GOVUK.Analytics.Format = "homepage";
+</script>
 
+<script src="https://assets.digital.cabinet-office.gov.uk/static/analytics.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+</script>
 
+<script type="text/javascript">
+  (function() {
+    var utm = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/__utm.gif';
+
+    // Construct the gif hit url.
+    utm += "?utmwv=" + "5.3.9";
+    utm += "&utmn=" + Math.floor(Math.random() * parseInt('0x7fffffff', 16));
+    utm += "&utmhn=" + encodeURIComponent(document.location.hostname);
+    utm += "&utmp=" + encodeURIComponent("/print" + document.location.pathname);
+    utm += "&utmac=" + "UA-26179049-1";
+    utm += "&utmcc=__utma%3D999.999.999.999.999.1%3B";
+
+    var styleNode = document.createElement('style');
+    styleNode.setAttribute("type", "text/css");
+    var css = document.createTextNode("@media print { body:after { content: url(" + utm + "); } body { *background: url(" + utm + ") no-repeat; }}");
+
+    if (styleNode.styleSheet) {
+      styleNode.styleSheet.cssText = css.nodeValue;
+    } else {
+      styleNode.appendChild(css);
+    }
+
+    var head = document.getElementsByTagName('head')[0];
+
+    if (head) {
+      head.appendChild(styleNode);
+    }
+  })();
 </script>
 
 </body>
