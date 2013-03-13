@@ -85,7 +85,7 @@
 </header>
 <!--end header-->
 
-  <div id="wrapper" class="wide design-patterns registration">
+  <div id="wrapper" class="detailed-guidance registration">
 
     <section id="content" role="main" class="group">
 
@@ -94,7 +94,7 @@
           <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
           <nav role="navigation" class="content">
             <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by default standard</a></li>
+              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
               <li><a href="/service-manual/about" >About</a></li>
               <li><a href="/service-manual/feedback" >Feedback</a></li>
             </ul>
@@ -110,7 +110,10 @@
   <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
 </div>
 
-      <article role="article" class="group">
+      
+
+
+<article role="article" class="group">
   <header class="page-header group">
     <hgroup>
       <h1>Form example - Registration</h1>
@@ -118,17 +121,49 @@
       <h2 class="subtitle">Build to the GOV.UK style</h2>
       
     </hgroup>
+
+    
+    <ul class="meta-phases group">
+      
+      <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
+      
+      <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
+      
+      <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
+      
+    </ul>
+    
   </header>
 
   <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-example"><a href="#example">Example</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
     <div class="inner">
-      <p>This example incorporates most of the basic form elements and lets you play wth different label alignments.
-For a detailed breakdown of each element and how to markup and style it, see our <a href="/service-manual/content-and-design/design-and-development-resources/form-anatomy.html">forms design pattern page</a>.</p>
+      <p>This example form incorporates most of the basic form elements and lets you play wth different label alignments.
+For a detailed breakdown of each element and how to code and style it, see our <a href="forms.html">forms design pattern page</a>.</p>
 
 <p>Click the label alignment options in the Sass snippet below to see how they affect the layout.</p>
 
+<h3 id="example">Example</h3>
+
 <div class="pattern-example">
-  <pre><code class="class-toggle" data-for="form-example-2">.form-example-2 { @include form(<span class="option selected">top</span>|<span class="option">left</span>|<span class="option">right</span>, 7.5em) }</code></pre>
+
+  <p class="class-toggle" data-for="form-example-2">
+    <strong>Label alignment: </strong>
+    <span class="option selected">top</span> | 
+    <span class="option">left</span> | 
+    <span class="option">right</span>
+  </p>
 
     <div id="form-example-2" class="top">
       <div class="validation-summary">
@@ -271,159 +306,11 @@ For a detailed breakdown of each element and how to markup and style it, see our
           </ul>
         </fieldset>
         <p class="action group">
-          <input class="btn" type="submit" value="Submit form" />
+          <input class="button" type="submit" value="Submit form" />
         </p>
       </form>
     </div>
 </div>
-
-<h1 id="html">HTML</h1>
-
-<p>The example above is marked up as follows:</p>
-
-<pre><code>&lt;div id="form-example-2" class="top"&gt;
-    &lt;div class="validation-summary"&gt;
-      &lt;h1&gt;There was a problem submitting the form&lt;/h1&gt;
-      &lt;p&gt;Please try the following:&lt;/p&gt;
-      &lt;ol&gt;
-        &lt;li&gt;&lt;a href="#error1"&gt;Enter your first name&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#error2"&gt;Enter your last name&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#error3"&gt;Confirm your email address&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#error4"&gt;Select at least one area of interest&lt;/a&gt;&lt;/li&gt;
-      &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;form&gt;
-      &lt;fieldset&gt;
-        &lt;legend&gt;Your details&lt;/legend&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="title"&gt;Title&lt;/label&gt;
-          &lt;select id="title"&gt;
-            &lt;option value="Mr"&gt;Mr.&lt;/option&gt;
-            &lt;option value="Mrs"&gt;Mrs.&lt;/option&gt;
-            &lt;option value="Miss"&gt;Miss&lt;/option&gt;
-            &lt;option value="Ms."&gt;Ms.&lt;/option&gt;
-            &lt;option value="Dr."&gt;Dr.&lt;/option&gt;
-            &lt;option value="Other"&gt;Other&lt;/option&gt;
-          &lt;/select&gt;
-        &lt;/p&gt;
-        &lt;p class="group validation"&gt;
-          &lt;span class="validation-message" id="error1"&gt;1. Enter your first name&lt;/span&gt;
-          &lt;label for="first-name"&gt;First name &lt;abbr title="Mandatory"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-          &lt;input id="first-name" type="text" class="name"&gt;
-        &lt;/p&gt;
-        &lt;p class="group validation"&gt;        
-          &lt;span class="validation-message" id="error2"&gt;2. Enter your last name&lt;/span&gt;
-          &lt;label for="last-name"&gt;Last name &lt;abbr title="Mandatory"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-          &lt;input id="last-name" type="text" class="name"&gt;
-        &lt;/p&gt;
-
-        &lt;fieldset&gt;
-          &lt;legend&gt;&lt;span&gt;Date of birth&lt;/span&gt;&lt;/legend&gt;
-          &lt;div class="inline group"&gt;
-            &lt;p class="group"&gt;
-              &lt;label for="day" class="visuallyhidden"&gt;Day&lt;/label&gt;
-              &lt;select id="day" type="text"&gt;
-                &lt;option value="Day"&gt;Day&lt;/option&gt;
-                &lt;!-- Other options go here --&gt;
-              &lt;/select&gt;
-            &lt;/p&gt;
-            &lt;p class="group"&gt;
-              &lt;label for="month" class="visuallyhidden"&gt;Month&lt;/label&gt;
-              &lt;select id="month" type="text"&gt;
-                &lt;option value="Month"&gt;Month&lt;/option&gt;
-                &lt;!-- Other options go here --&gt;
-              &lt;/select&gt;
-            &lt;/p&gt;
-            &lt;p class="group"&gt;
-              &lt;label for="year" class="visuallyhidden"&gt;Year&lt;/label&gt;
-              &lt;select id="year" type="text"&gt;
-                &lt;option value="Year"&gt;Year&lt;/option&gt;
-                &lt;!-- Other options go here --&gt;
-              &lt;/select&gt;
-            &lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/fieldset&gt;
-        &lt;fieldset&gt;
-          &lt;legend&gt;&lt;span&gt;Gender&lt;/span&gt;&lt;/legend&gt;
-          &lt;p class="inline option group"&gt;
-            &lt;label&gt;&lt;input type="radio" name="gender"&gt; Male&lt;/label&gt;
-            &lt;label&gt;&lt;input type="radio" name="gender"&gt; Female&lt;/label&gt;
-          &lt;/p&gt;
-        &lt;/fieldset&gt;
-
-      &lt;/fieldset&gt;
-      &lt;fieldset&gt;
-        &lt;legend&gt;Email address&lt;/legend&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="email"&gt;Enter email &lt;abbr title="Mandatory"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-          &lt;input id="email" type="email" class="email"&gt;
-        &lt;/p&gt;
-        &lt;p class="group validation"&gt;
-          &lt;!--&lt;span class="validation-message" id="error3"&gt;3. Confirm your email address&lt;/span&gt;--&gt;
-          &lt;label for="email-confirm"&gt;Confirm email &lt;abbr title="Mandatory"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-          &lt;input id="email-confirm" type="email" class="email"&gt;
-        &lt;/p&gt;
-      &lt;/fieldset&gt;
-      &lt;fieldset&gt;
-        &lt;legend&gt;Telephone number&lt;/legend&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="telephone"&gt;Telephone&lt;/label&gt;
-          &lt;input id="telephone" type="text" class="telephone"&gt;
-          &lt;span class="hint"&gt;Include your country code&lt;/span&gt;
-        &lt;/p&gt;
-      &lt;/fieldset&gt;
-      &lt;fieldset&gt;
-        &lt;legend&gt;Postal address&lt;/legend&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="street1"&gt;Street&lt;/label&gt;
-          &lt;input id="street1" type="text" class="street"&gt;
-        &lt;/p&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="street2" class="visuallyhidden"&gt;Street line two&lt;/label&gt;
-          &lt;input id="street2" type="text" class="street"&gt;
-        &lt;/p&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="town"&gt;Town/City&lt;/label&gt;
-          &lt;input id="town" type="text" class="town"&gt;
-        &lt;/p&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="postcode"&gt;Postcode&lt;/label&gt;
-          &lt;input id="postcode" type="text" class="postcode"&gt;
-        &lt;/p&gt;
-      &lt;/fieldset&gt;
-      &lt;fieldset&gt;
-        &lt;legend&gt;Biography&lt;/legend&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="biography"&gt;Write a few short words about yourself&lt;/label&gt;
-          &lt;textarea id="biography" class="big" placeholder="Enter text here"&gt;&lt;/textarea&gt;
-        &lt;/p&gt;
-        &lt;p class="option group"&gt;
-          &lt;label for="public"&gt;&lt;input id="public" type="checkbox"&gt; Make this biography public&lt;/label&gt;
-        &lt;/p&gt;
-      &lt;/fieldset&gt;
-      &lt;fieldset&gt;
-        &lt;legend&gt;I am interested in&lt;/legend&gt;
-        &lt;p class="option group validation"&gt;
-          &lt;span class="validation-message" id="error4"&gt;4. Select at least one area of interest&lt;/span&gt;
-          &lt;label for="jobs"&gt;&lt;input type="checkbox" id="jobs"&gt; Job offers&lt;/label&gt;
-          &lt;label for="networking"&gt;&lt;input type="checkbox" id="networking"&gt; Networking&lt;/label&gt;
-          &lt;label for="business"&gt;&lt;input type="checkbox" id="business"&gt; Business opportunities&lt;/label&gt;
-        &lt;/p&gt;
-      &lt;/fieldset&gt;  
-      &lt;fieldset&gt;
-        &lt;legend&gt;I prefer to be contacted by&lt;/legend&gt;
-        &lt;ul class="option group"&gt;
-          &lt;li&gt;&lt;label for="email"&gt;&lt;input id="email" type="radio" name="preferred-contact" checked&gt; Email&lt;/label&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;label for="telephone"&gt;&lt;input id="telephone" type="radio" name="preferred-contact"&gt; Telephone&lt;/label&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;label for="post"&gt;&lt;input id="post" type="radio" name="preferred-contact"&gt; Post&lt;/label&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/fieldset&gt;
-      &lt;p class="action group"&gt;
-        &lt;input class="btn" type="submit" value="Submit form"&gt;
-      &lt;/p&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;
-</code></pre>
 
 <script>
   $(function() {
@@ -449,8 +336,6 @@ For a detailed breakdown of each element and how to markup and style it, see our
     </div>
   </div>
 </article>
-
-
 
 
     </section>
