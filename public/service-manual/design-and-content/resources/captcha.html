@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Accessibility - Government Service Design Manual</title>
+<title>CAPTCHA - Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -85,7 +85,7 @@
 </header>
 <!--end header-->
 
-  <div id="wrapper" class="detailed-guidance">
+  <div id="wrapper" class="detailed-guidance buttons">
 
     <section id="content" role="main" class="group">
 
@@ -111,33 +111,19 @@
 </div>
 
       
-<div id="global-breadcrumb" class="header-context">
-  <nav role="navigation">
-    <ol class="group">
-      
-      <li><a href="/service-manual">Home</a></li>
-      
-      <li><a href="/service-manual/content-and-design">Content and design</a></li>
-      
-    </ol>
-  </nav>
-</div>
-
 
 
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Accessibility</h1>
+      <h1>CAPTCHA</h1>
       
-      <h2 class="subtitle">How to make services that everyone can use</h2>
+      <h2 class="subtitle">Build to the GOV.UK style</h2>
       
     </hgroup>
 
     
     <ul class="meta-phases group">
-      
-      <li class="discovery"><a href="/service-manual/phases/discovery.html">discovery</a></li>
       
       <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
       
@@ -155,15 +141,11 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-accessibility-standard"><a href="#accessibility-standard">Accessibility standard</a>
+<li class="level-what-are-they"><a href="#what-are-they">What are they?</a>
 </li>
-<li class="level-accessibility-testing"><a href="#accessibility-testing">Accessibility testing</a>
+<li class="level-why-shouldnt-i-use-one"><a href="#why-shouldnt-i-use-one">Why shouldn't I use one?</a>
 </li>
-<li class="level-accessibility-statements-and-policies"><a href="#accessibility-statements-and-policies">Accessibility statements and policies</a>
-</li>
-<li class="level-assistive-technologies"><a href="#assistive-technologies">Assistive technologies</a>
-</li>
-<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+<li class="level-alternatives-to-captcha"><a href="#alternatives-to-captcha">Alternatives to CAPTCHA</a>
 </li>
 </ol>
 
@@ -171,28 +153,46 @@
     </div>
 
     <div class="inner">
-      <p>The services we provide are for the benefit of all citizens of the United Kingdom. No user should be excluded on the basis of disability. To do so would breach the <a href="http://www.legislation.gov.uk/ukpga/2010/15/contents">Equality Act 2010</a>.</p>
+      <h2 id="what-are-they">What are they?</h2>
+<p><a href="http://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA</a> stands for “Completely Automated Public Turing test to tell Computers and Humans Apart”. These are usually images of jumbled up text that a user needs to decipher and enter before submitting a form. They are usually used to prevent bots (automated software) from completing a form or accessing a system.</p>
 
-<h2 id="accessibility-standard">Accessibility standard</h2>
+<h2 id="why-shouldnt-i-use-one">Why shouldn’t I use one?</h2>
 
-<p>As a starting point, your service should aim to meet Level AA of the <a href="http://www.w3.org/TR/WCAG/">Web Content Accessibility Guidelines</a> (WCAG) 2.0.</p>
+<p>CAPTCHAs introduce significant problems to online services:</p>
 
-<h2 id="accessibility-testing">Accessibility testing</h2>
+<ul>
+  <li>
+    <p><strong>Usability</strong> - they put the burden of detecting bots on the user rather than the system. As CAPTCHAs are designed to be hard to read and understand, this makes the service much more difficult to use.</p>
+  </li>
+  <li>
+    <p><strong>Accessibility</strong> - they are inaccessible by design. This effectively makes the service unusable by people with certain disabilities. Even CAPTCHAs that provide audio versions do not completely resolve this issue.</p>
+  </li>
+</ul>
 
-<p>Your service should be tested by disabled people, older people, and people who use assistive technologies. You should aim to do this at least twice as your service is developed.</p>
+<p>Additionally, if a 3rd party CAPTCHA service is used, there are further problems to consider:</p>
 
-<p><a href="/service-manual/making-software/accessibility-testing.html">Find out more about how to conduct accessibility testing</a></p>
+<ul>
+  <li><strong>Privacy</strong> - 3rd party CAPTCHA services set cookies, collect analytics and can track users across multiple sites. This introduces significant privacy concerns.</li>
+  <li><strong>Performance</strong> - use of a 3rd party CAPTCHA service ties your performance to theirs. If their service goes offline, so does access to your service.</li>
+  <li><strong>Security</strong> - the security of your service is tied to that of the 3rd party. If they are compromised, so is your service and it’s users.</li>
+</ul>
 
-<h2 id="accessibility-statements-and-policies">Accessibility statements and policies</h2>
+<h2 id="alternatives-to-captcha">Alternatives to CAPTCHA</h2>
 
-<p>We work hard to make our sites and services as accessible and usable as we can for everyone who needs to use them. The GOV.UK website does not include a separate accessibility statement, however, as we are not comfortable with a statement that draws a distinction between accessibility and any other aspect of best practice development. This <a href="http://digital.cabinetoffice.gov.uk/2013/02/11/beyond-box-ticking/">blogpost by GDS accessibility expert Léonie Watson</a> explains in more detail why we took this decision.</p>
+<p>Many of the risks that CAPTCHAs are aimed to mitigate can be addressed in other ways:</p>
 
-<h2 id="assistive-technologies">Assistive technologies</h2>
+<ul>
+  <li>rate and connection limiting</li>
+  <li>use of honey pots</li>
+  <li>protective monitoring</li>
+</ul>
 
-<p>Your service should be usable by recent versions of <a href="http://www.freedomscientific.com/products/fs/jaws-product-page.asp">Jaws</a>, <a href="http://www.nvda-project.org/">NVDA</a>, <a href="http://www.apple.com/accessibility/voiceover/">VoiceOver</a>, <a href="http://www.gwmicro.com/Window-Eyes/">Window Eyes</a> and <a href="http://www.yourdolphin.co.uk/productdetail.asp?id=5">Supernova</a> screen readers, <a href="http://www.aisquared.com/zoomtext/">ZoomText</a>, <a href="http://www.freedomscientific.com/products/lv/magic-bl-product-page.asp">MAGic</a> and basic operating system screen magnifiers, as well as speech recognition software including <a href="http://www.nuance.com/dragon/index.htm">Dragon Naturally Speaking</a>, and native operating system speech packages.</p>
+<p>It’s important to note that even with a CAPTCHA in place bots will still get through due to advances in computer imaging and the use of CAPTCHA farms. A combination of different approaches generally gives the best results.</p>
 
-<h2 id="further-reading">Further reading</h2>
-<p>If you want to read more about the accessibility testing we’ve carried out while building GOV.UK, <a href="http://digital.cabinetoffice.gov.uk/2012/01/20/user-testing-accessibility/">this blog post by GDS Accessibility Lead Joshua Marshall</a> will tell you more.</p>
+<p>Further reading:
+<a href="http://coding.smashingmagazine.com/2011/03/04/in-search-of-the-perfect-captcha/">In search of the perfect CAPTCHA</a>
+<a href="http://www.bbc.co.uk/blogs/bbcinternet/2010/10/captcha_and_bbc_id.html">CAPTCHA and the BBC</a>
+<a href="http://thenextweb.com/insider/2013/01/30/good-news-music-fans-ticketmaster-is-ditching-its-captcha-conundrums-for-something-simpler/">Ticketmaster ditches CAPTCHA for something simpler</a></p>
 
     </div>
   </div>

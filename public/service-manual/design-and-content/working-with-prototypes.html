@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>CAPTCHA - Government Service Design Manual</title>
+<title>Working with prototypes - Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -67,7 +67,7 @@
 
 
 </head>
-<body class="mainstream full-width design-and-development-resources">
+<body class="mainstream full-width ">
   <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
 
   <!--start header-->
@@ -85,7 +85,7 @@
 </header>
 <!--end header-->
 
-  <div id="wrapper" class="detailed-guidance buttons">
+  <div id="wrapper" class="detailed-guidance">
 
     <section id="content" role="main" class="group">
 
@@ -111,14 +111,26 @@
 </div>
 
       
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/design-and-content">Design and content</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
 
 
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>CAPTCHA</h1>
+      <h1>Working with prototypes</h1>
       
-      <h2 class="subtitle">Build to the GOV.UK style</h2>
+      <h2 class="subtitle">Learning by doing</h2>
       
     </hgroup>
 
@@ -141,11 +153,9 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-what-are-they"><a href="#what-are-they">What are they?</a>
+<li class="level-building-prototypes"><a href="#building-prototypes">Building prototypes</a>
 </li>
-<li class="level-why-shouldnt-i-use-one"><a href="#why-shouldnt-i-use-one">Why shouldn't I use one?</a>
-</li>
-<li class="level-alternatives-to-captcha"><a href="#alternatives-to-captcha">Alternatives to CAPTCHA</a>
+<li class="level-ideas-can-be-ugly"><a href="#ideas-can-be-ugly">Ideas can be ugly</a>
 </li>
 </ol>
 
@@ -153,46 +163,21 @@
     </div>
 
     <div class="inner">
-      <h2 id="what-are-they">What are they?</h2>
-<p><a href="http://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA</a> stands for “Completely Automated Public Turing test to tell Computers and Humans Apart”. These are usually images of jumbled up text that a user needs to decipher and enter before submitting a form. They are usually used to prevent bots (automated software) from completing a form or accessing a system.</p>
+      <p>The best way to understand a product is to try to build it. Prototyping is an essential process to get a feel for the shape and edges of a product, to begin to estimate the work involved and to provide something you can quickly test with real users.</p>
 
-<h2 id="why-shouldnt-i-use-one">Why shouldn’t I use one?</h2>
+<h2 id="building-prototypes">Building prototypes</h2>
 
-<p>CAPTCHAs introduce significant problems to online services:</p>
+<p>This is a vital part of a process often known as “<a href="/service-manual/phases/">product discovery</a>”: understanding your users and their needs, developing a sense of how you might serve those needs, and estimating the effort involved in building and running a service to do so.</p>
 
-<ul>
-  <li>
-    <p><strong>Usability</strong> - they put the burden of detecting bots on the user rather than the system. As CAPTCHAs are designed to be hard to read and understand, this makes the service much more difficult to use.</p>
-  </li>
-  <li>
-    <p><strong>Accessibility</strong> - they are inaccessible by design. This effectively makes the service unusable by people with certain disabilities. Even CAPTCHAs that provide audio versions do not completely resolve this issue.</p>
-  </li>
-</ul>
+<p>We built alpha.gov.uk as a prototype of what would later become the single domain www.gov.uk. It was built quickly without much concern to scalability, resilience, or any of the other considerations of a “real” product, because none of those matter unless the core concept is sound.. That allowed us to get feedback early and also understand some of the trickier concepts we would have to grapple with such as the fuzzy lines between different audiences, the operational processes that would be required, and so on.</p>
 
-<p>Additionally, if a 3rd party CAPTCHA service is used, there are further problems to consider:</p>
+<h2 id="ideas-can-be-ugly">Ideas can be ugly</h2>
 
-<ul>
-  <li><strong>Privacy</strong> - 3rd party CAPTCHA services set cookies, collect analytics and can track users across multiple sites. This introduces significant privacy concerns.</li>
-  <li><strong>Performance</strong> - use of a 3rd party CAPTCHA service ties your performance to theirs. If their service goes offline, so does access to your service.</li>
-  <li><strong>Security</strong> - the security of your service is tied to that of the 3rd party. If they are compromised, so is your service and it’s users.</li>
-</ul>
+<p>Prototyping can start on paper with sketches. Hand-drawn sketches of what a service might involve are a good way to begin thinking things through. We encourage everyone to get to running code as quickly as possible. It’s only when you start working in the same medium your users will be using (for online services that’s generally a web browser, but it may also be via an API) that you can really understand the experience you need to provide.</p>
 
-<h2 id="alternatives-to-captcha">Alternatives to CAPTCHA</h2>
+<p>The <a href="https://www.gov.uk/maternity-benefits" title="example of a smart answer">smart answer format</a> for <a href="https://www.gov.uk">GOV.UK</a> began as a series of paper sketches refined over a week by a small team. That process gave them a good sense of the boundaries of the problem they were trying to solve. As quickly as possible we prototyped the format using HTML and javascript so that it could be experienced in a web browser. That revealed more constraints, such as the fact that users might expect to be able to go back and amend an answer without realising that would change their whole journey through the format. This allowed us to quickly adjust the user interface to be clearer for its users before we started the work of building out the full system.</p>
 
-<p>Many of the risks that CAPTCHAs are aimed to mitigate can be addressed in other ways:</p>
-
-<ul>
-  <li>rate and connection limiting</li>
-  <li>use of honey pots</li>
-  <li>protective monitoring</li>
-</ul>
-
-<p>It’s important to note that even with a CAPTCHA in place bots will still get through due to advances in computer imaging and the use of CAPTCHA farms. A combination of different approaches generally gives the best results.</p>
-
-<p>Further reading:
-<a href="http://coding.smashingmagazine.com/2011/03/04/in-search-of-the-perfect-captcha/">In search of the perfect CAPTCHA</a>
-<a href="http://www.bbc.co.uk/blogs/bbcinternet/2010/10/captcha_and_bbc_id.html">CAPTCHA and the BBC</a>
-<a href="http://thenextweb.com/insider/2013/01/30/good-news-music-fans-ticketmaster-is-ditching-its-captcha-conundrums-for-something-simpler/">Ticketmaster ditches CAPTCHA for something simpler</a></p>
+<p>Running code also forces you to think about your integrations with other services and how they might work–do you need to send email? integrate with an existing database? and so on–a prototype will rarely actually include these integrations but having a clear picture of them is vital if you’re going to understand the real effort involved in building and operating the service.</p>
 
     </div>
   </div>
