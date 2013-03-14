@@ -40,8 +40,6 @@
 
 <!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css"> <!--<![endif]-->
 
-<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
-
 <!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
 
 <link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon">
@@ -54,9 +52,36 @@
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 <link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
 
-<script src="https://assets.digital.cabinet-office.gov.uk/frontend/frontend-60b89c1cb6260f7f64c5e907df3f1d58.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+<script defer="defer" src="https://assets.digital.cabinet-office.gov.uk/static/application-6258ecda5edb624948d1ba70b960ecae.js" type="text/javascript"></script>
 
-<script src="assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
 
 
 
@@ -178,13 +203,13 @@
 
 <h2 id="understand-your-users">Understand your users</h2>
 
-<p><img src="http://farm8.staticflickr.com/7177/6987029385_410a1c8d26.jpg" alt="Real people will use your product" /></p>
+<p><img src="https://farm8.staticflickr.com/7177/6987029385_410a1c8d26.jpg" alt="Real people will use your product" /></p>
 
 <p>Prioritise features for them over everyone else – including your big, scary stakeholders, and seek their feedback early and often.  Really listen to them.  Even when they tell you things you don’t want to hear or disagree with.  If possible, use data from real people using your product to influence the direction of the project. Your focus on the user should be relentless.</p>
 
 <h2 id="what-do-you-want-next-friday-what-have-we-learned-last-week">“What do you want next Friday? What have we learned last week?”</h2>
 
-<p><img src="http://farm9.staticflickr.com/8043/8100964765_acf4032d09.jpg" alt="A sprint backlog, coutesty of http://www.flickr.com/photos/psd/" /></p>
+<p><img src="https://farm9.staticflickr.com/8043/8100964765_acf4032d09.jpg" alt="A sprint backlog, coutesty of http://www.flickr.com/photos/psd/" /></p>
 
 <p>Iterate often. Build something focused on the next most valuable user need and show it to them; listen to their feedback and improve it. Keep doing this until you have something so useful that they would not be without it. </p>
 
@@ -198,7 +223,7 @@
 
 <h2 id="small-agile-teams">Small, agile teams</h2>
 
-<p><img src="http://farm9.staticflickr.com/8374/8451589322_e9f612cf5b.jpg" alt="The unit of delivery is the team" /></p>
+<p><img src="https://farm9.staticflickr.com/8374/8451589322_e9f612cf5b.jpg" alt="The unit of delivery is the team" /></p>
 
 <p>Small teams of between five to ten people are often more productive and predictable than larger teams. Forget man-days and think about the team as the unit of delivery.  </p>
 
@@ -216,7 +241,7 @@
 
 <h2 id="fail-fast">Fail fast</h2>
 
-<p><img src="http://farm8.staticflickr.com/7189/6875228285_9b2409663f.jpg" alt="Failing, so fix it!" /></p>
+<p><img src="https://farm8.staticflickr.com/7189/6875228285_9b2409663f.jpg" alt="Failing, so fix it!" /></p>
 
 <p>Releasing little pieces of code often improves quality and visibility and reduces cost to market, but using agile techniques does not guarantee success. You can still fail!  What agile methodologies do allow you to do is to spot problems earlier and resolve them.  </p>
 
@@ -235,7 +260,7 @@
 
 <h2 id="continuous-planning">Continuous Planning</h2>
 
-<p><img src="http://farm9.staticflickr.com/8001/7113823877_80c4dfb613.jpg" alt="Planning session" /></p>
+<p><img src="https://farm9.staticflickr.com/8001/7113823877_80c4dfb613.jpg" alt="Planning session" /></p>
 
 <p>It’s a myth that you don’t plan on agile projects.  The freedom of agile projects does not come free: you have to plan.  You just plan differently and continuously.</p>
 
@@ -254,7 +279,7 @@
 
 <h2 id="bad-smells">Bad smells</h2>
 
-<p><img src="http://farm9.staticflickr.com/8424/7503675672_72ff8a1fa9.jpg" alt="Do go here!" /></p>
+<p><img src="https://farm9.staticflickr.com/8424/7503675672_72ff8a1fa9.jpg" alt="Do go here!" /></p>
 
 <p>Teams new to agile should be wary of these familiar situations and reactions to doing things differently.  They have a bad smell about them and undermine your project and its chances of success.</p>
 
