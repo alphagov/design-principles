@@ -8,6 +8,8 @@ gem 'lograge', '0.2.0'
 gem 'govuk_frontend_toolkit', '0.12.1'
 gem 'plek', '1.1.0'
 gem 'router-client', '3.1.0', :require => false
+gem 'rummageable'
+gem 'gds-api-adapters'
 
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
