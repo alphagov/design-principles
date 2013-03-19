@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.13'
 gem 'unicorn', '4.3.1'
 gem 'lograge', '0.2.0'
 
