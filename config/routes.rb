@@ -9,5 +9,6 @@ DesignPrinciples::Application.routes.draw do
   get "/designprinciples/performanceframework", :to => "root#performanceframework"
   get "/designprinciples/whatsnew", :to => "root#whatsnew"
 
+  get "/:prefix/search", :to => 'search#index'
   root :to => redirect("/designprinciples")
 end
