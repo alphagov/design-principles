@@ -1,8 +1,11 @@
 require 'gds_api/rummager'
 require 'search_result'
+require 'design_principles'
 
 class SearchController < ApplicationController
   def index
+    render_404 and return unless DesignPrinciples.expose_search?
+
     set_expiry
 
     @client = GdsApi::Rummager.new(Plek.current.find('search') + '/specialist')
