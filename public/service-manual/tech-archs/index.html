@@ -82,6 +82,7 @@
 </script>
 
 <script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js" type="text/javascript"></script>
 
 
 
@@ -114,17 +115,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/service-manual/feedback" >Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -655,6 +660,12 @@
         
       
         
+        <li> 
+            <a href="/service-manual/making-software/apis.html">APIs</a>
+        </li>
+        
+      
+        
       
         
       
@@ -673,57 +684,13 @@
         
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li> 
-            <a href="/service-manual/design-and-content/working-with-prototypes.html">Working with prototypes</a>
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li> 
-            <a href="/service-manual/making-software/apis.html">APIs</a>
-        </li>
-        
-      
-        
         <li> 
             <a href="/service-manual/making-software/choosing-technology.html">Choosing technology</a>
         </li>
+        
+      
+        
+      
         
       
         
@@ -737,6 +704,24 @@
         
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
         <li> 
             <a href="/service-manual/making-software/development-environment.html">Development Environments</a>
         </li>
@@ -745,31 +730,13 @@
         
       
         
-        <li> 
-            <a href="/service-manual/making-software/information-security.html">Information security</a>
-        </li>
-        
-      
-        
-        <li> 
-            <a href="/service-manual/making-software/logins.html">User accounts and log-ins</a>
-        </li>
-        
-      
-        
-        <li> 
-            <a href="/service-manual/making-software/open-source.html">Open source</a>
-        </li>
-        
       
         
       
         
       
         
-        <li> 
-            <a href="/service-manual/making-software/sandbox-and-staging-servers.html">Sandbox and staging servers</a>
-        </li>
+      
         
       
         
@@ -800,6 +767,38 @@
       
         
       
+        
+        <li> 
+            <a href="/service-manual/making-software/information-security.html">Information security</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li> 
+            <a href="/service-manual/making-software/open-source.html">Open source</a>
+        </li>
         
       
         
@@ -845,7 +844,9 @@
         
       
         
-      
+        <li> 
+            <a href="/service-manual/making-software/sandbox-and-staging-servers.html">Sandbox and staging servers</a>
+        </li>
         
       
         
@@ -875,7 +876,9 @@
         
       
         
-      
+        <li> 
+            <a href="/service-manual/making-software/logins.html">User accounts and log-ins</a>
+        </li>
         
       
         
@@ -899,11 +902,9 @@
         
       
         
-      
-        
-      
-        
-      
+        <li> 
+            <a href="/service-manual/design-and-content/working-with-prototypes.html">Working with prototypes</a>
+        </li>
         
       
         
@@ -930,6 +931,89 @@
       
     
       
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/cookies.html" title="When to use them, and when to tell users about them">Cookies</a>
+          <span class="subtitle">When to use them, and when to tell users about them</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
       <li> 
           <a href="/service-manual/agile/features-of-agile.html" title="Sprints, stand-ups and other regular meetings">Features of agile</a>
           <span class="subtitle">Sprints, stand-ups and other regular meetings</span>
@@ -941,9 +1025,38 @@
       
     
       
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
       <li> 
-          <a href="/service-manual/agile/what-agile-looks-like.html" title="Common features of agile projects">What agile looks like</a>
-          <span class="subtitle">Common features of agile projects</span>
+          <a href="/service-manual/users/index.html" title="Techniques for understanding your user's needs">Know your users</a>
+          <span class="subtitle">Techniques for understanding your user's needs</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/operations/load-and-performance-testing.html" title="How to avoid your service collapsing under pressure">Load and performance testing</a>
+          <span class="subtitle">How to avoid your service collapsing under pressure</span>
       </li>
       
     
@@ -956,13 +1069,38 @@
       
     
       
-    
+      <li> 
+          <a href="/service-manual/operations/monitoring.html" title="Tracking the status of a service">Monitoring</a>
+          <span class="subtitle">Tracking the status of a service</span>
+      </li>
       
     
       
     
       
     
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/open-standards-and-licencing.html" title="Building services using common standards">Open standards and licensing</a>
+          <span class="subtitle">Building services using common standards</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/release-strategies.html" title="How regular releases can reduce risk">Releasing software</a>
+          <span class="subtitle">How regular releases can reduce risk</span>
+      </li>
       
     
       
@@ -1019,43 +1157,6 @@
       
     
       
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/cookies.html" title="When to use them, and when to tell users about them">Cookies</a>
-          <span class="subtitle">When to use them, and when to tell users about them</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/open-standards-and-licencing.html" title="Building services using common standards">Open standards and licensing</a>
-          <span class="subtitle">Building services using common standards</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/release-strategies.html" title="How regular releases can reduce risk">Releasing software</a>
-          <span class="subtitle">How regular releases can reduce risk</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
       <li> 
           <a href="/service-manual/making-software/testing-in-agile.html" title="What testing your service might look like">Testing in an agile environment</a>
           <span class="subtitle">What testing your service might look like</span>
@@ -1063,13 +1164,6 @@
       
     
       
-      <li> 
-          <a href="/service-manual/making-software/version-control.html" title="Ensure the team can collaborate on code">Version control</a>
-          <span class="subtitle">Ensure the team can collaborate on code</span>
-      </li>
-      
-    
-      
     
       
     
@@ -1089,20 +1183,9 @@
     
       
       <li> 
-          <a href="/service-manual/operations/load-and-performance-testing.html" title="How to avoid your service collapsing under pressure">Load and performance testing</a>
-          <span class="subtitle">How to avoid your service collapsing under pressure</span>
+          <a href="/service-manual/making-software/version-control.html" title="Ensure the team can collaborate on code">Version control</a>
+          <span class="subtitle">Ensure the team can collaborate on code</span>
       </li>
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/monitoring.html" title="Tracking the status of a service">Monitoring</a>
-          <span class="subtitle">Tracking the status of a service</span>
-      </li>
-      
-    
       
     
       
@@ -1115,37 +1198,10 @@
       
     
       
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+      <li> 
+          <a href="/service-manual/agile/what-agile-looks-like.html" title="Common features of agile projects">What agile looks like</a>
+          <span class="subtitle">Common features of agile projects</span>
+      </li>
       
     
       
@@ -1163,65 +1219,6 @@
           <a href="/service-manual/the-team/working-environment.html" title="The physical space and tools that bring out the best in a team">Your working environment</a>
           <span class="subtitle">The physical space and tools that bring out the best in a team</span>
       </li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/users/index.html" title="Techniques for understanding your user's needs">Know your users</a>
-          <span class="subtitle">Techniques for understanding your user's needs</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
       
     
     </ul>
