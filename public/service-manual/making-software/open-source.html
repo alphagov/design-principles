@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1363974847" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1363974847" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1363974847" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1363974847" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,14 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1363974847" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1363974847" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -125,7 +126,7 @@
       <ul id="navigation">
         <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
         <li><a href="/service-manual/about" >About</a></li>
-        <li><a href="/service-manual/feedback" >Feedback</a></li>
+        <li><a href="/feedback">Feedback</a></li>
       </ul>
     </nav>
   </div>
@@ -212,7 +213,7 @@
 
 <p>Problems which are rare, or specific to a domain may be best answered by using <a href="http://en.wikipedia.org/wiki/Software_as_a_service">software as a service</a>, or by installing proprietary software.</p>
 
-<p>In such cases, take care to mitigate the risk of lock-in to a single supplier by ensuring <a href="http://consultation.cabinetoffice.gov.uk/openstandards/">open standards</a> are available for interfaces.</p>
+<p>In such cases, take care to mitigate the risk of lock-in to a single supplier by ensuring <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/78892/Open-Standards-Principles-FINAL.pdf">open standards</a> are available, in particular for data portability, and interfaces used for integration with other systems.</p>
 
 <p>Where possible use DNS addresses you own for services, and demand open formats for the import and export of your data.</p>
 
@@ -241,7 +242,7 @@
 
 <h3 id="avoid-vendor-lock-in">Avoid vendor lock-in</h3>
 
-<p>Using closed source software increases the risk of <a href="http://en.wikipedia.org/wiki/Vendor_lock-in">lock-in</a> to a single supplier. This is a risk, even when building with <a href="http://consultation.cabinetoffice.gov.uk/openstandards/">open standards</a> due to the possibility of inadvertently using propriety features.
+<p>A large part of the total cost of ownership of a project are incurred at the end, overcoming barriers to exit, especially when moving data to a new system. Using closed source software increases the risk of <a href="http://en.wikipedia.org/wiki/Vendor_lock-in">lock-in</a> to a single supplier. This is a risk, even when building with <a href="http://consultation.cabinetoffice.gov.uk/openstandards/">open standards</a> due to the possibility of inadvertently using proprietary features, increasing exit costs.
 Access to the source code enables support to be sourced from a number of independent suppliers, enabling better prioritisation of bug-fixes, allowing systems to be maintained outside of vendor product life-cycles, and mitigating the risk of <a href="http://en.wikipedia.org/wiki/Planned_obsolescence">planned obsolescence</a> or <a href="http://en.wikipedia.org/wiki/Abandonware">abandonment</a>.</p>
 
 <h2 id="security-and-open-source">Security and open source</h2>
@@ -265,7 +266,10 @@ Access to the source code enables support to be sourced from a number of indepen
 <p>Finally, by lowering the barriers for reuse, building for extensibility, encouraging forking, mutation and experimentation, open source fosters a culture of <a href="http://en.wikipedia.org/wiki/Open_innovation">open innovation</a>, leading to better products and services.</p>
 
 <h2 id="further-reading">Further reading</h2>
-<p>The legal obligations for using open source software are outlined the section <a href="/service-manual/making-software/open-standards-and-licencing.html">open standards and licensing</a>.</p>
+<ul>
+  <li>The legal obligations for using open source software are outlined the section <a href="/service-manual/making-software/open-standards-and-licencing.html">open standards and licensing</a>.</li>
+  <li>Official note from <a href="http://www.cesg.gov.uk/">CESG</a> on <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/78967/OSS_Toolkit_Security_Note_v1.0.pdf">the security of open source</a>.</li>
+</ul>
 
     </div>
   </div>
