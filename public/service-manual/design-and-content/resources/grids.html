@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1364291150" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1364291150" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1364291150" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1364291150" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,8 +81,8 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1364291150" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1364291150" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1365158841" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1365158841" type="text/javascript"></script>
 
 
 
@@ -225,7 +225,7 @@
     <div class="inner">
       <h2 id="guidance">Guidance</h2>
 
-<p>Use this mixin if you need to arrange content in a grid, or split part of a page into columns. You might want to do this for an image gallery, product catalogue or home page layout for example.</p>
+<p>Use this mixin if you need to arrange content in a grid, or split part of a page into columns. You might want to do this for an image gallery, product catalogue or home page layout for example. It’s particularly useful if you don’t want to explicitly represent rows or columns in the markup.</p>
 
 <h3 id="dont-use-this">Don’t use this:</h3>
 
@@ -237,11 +237,13 @@
 
 <h2 id="using-the-mixin">Using the mixin</h2>
 
-<p>The <a href="https://github.com/alphagov/government-service-design-manual/blob/master/assets/stylesheets/design-patterns/_regular-grid.scss">mixin</a> accepts two arguments:</p>
+<p>The <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_grid.scss">mixin</a> accepts the following arguments:</p>
 
 <p><code>$columns</code> : The number of columns in the grid, or an array representing the relative width of each column.</p>
 
 <p><code>$min-height</code> : An optional minimum height for grid elements. Useful if your grid elements contain varied amounts of content.</p>
+
+<p><code>$max-rows</code> : Adds IE7,8 support for grids with varied column widths. See below for details.</p>
 
 <p>The mixin is tag-agnostic, so the elements can be list items, divs, paragraphs etc.
 Avoid applying border effects to the elements as this will throw out the widths.
@@ -330,7 +332,7 @@ Instead, style the contents of those elements.</p>
 
 <h3 id="ratio-example">5,3 ratio example</h3>
 
-<pre><code>    @include grid((5,3));
+<pre><code>    @include grid((5,3), $max-rows: 2);
 </code></pre>
 
 <ul class="grid example-5">
@@ -342,7 +344,7 @@ Instead, style the contents of those elements.</p>
 
 <h3 id="ratio-example-1">2,2,1 ratio example</h3>
 
-<pre><code>    @include grid((2,2,1));
+<pre><code>    @include grid((2,2,1), $max-rows: 2);
 </code></pre>
 
 <ul class="grid example-6">
@@ -356,7 +358,7 @@ Instead, style the contents of those elements.</p>
 
 <h3 id="ratio-example-2">2,1 ratio example</h3>
 
-<pre><code>    @include grid((2,1));
+<pre><code>    @include grid((2,1), $max-rows: 2);
 </code></pre>
 
 <ul class="grid example-7">
@@ -369,8 +371,9 @@ Instead, style the contents of those elements.</p>
 <h2 id="cross-browser-support">Cross browser support</h2>
 
 <ul>
-  <li>Chrome, FF, Safari: All good</li>
-  <li>IE 8: Regular grids are fine. Irregular grids don’t work, because of reliance on nth-child</li>
+  <li>Chrome, FF, Safari, IE9: All good</li>
+  <li>IE 7,8: Regular grids are fine. Irregular grids use first-child rather than nth-child. For multiple rows you’ll need to pass in a $max-rows variable representing the maximum number of rows in the grid.</li>
+  <li>IE 6: All grid elements display 100% width</li>
 </ul>
 
 

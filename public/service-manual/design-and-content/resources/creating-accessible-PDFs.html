@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>User satisfaction — Government Service Design Manual</title>
+<title>Creating Accessible PDFs — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -147,7 +147,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/measurement">Measurement</a></li>
+      <li><a href="/service-manual/design-and-content">Design and content</a></li>
       
     </ol>
   </nav>
@@ -158,14 +158,18 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>User satisfaction</h1>
+      <h1>Creating Accessible PDFs</h1>
       
-      <h2 class="subtitle">Are users happy with the service you have provided</h2>
+      <h2 class="subtitle">How to make PDFs that everyone can use</h2>
       
     </hgroup>
 
     
 <ul class="meta-phases group">
+  
+  <li class="discovery"><a href="/service-manual/phases/discovery.html">discovery</a></li>
+  
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
   
   <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
   
@@ -181,17 +185,69 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-why-measure-user-satisfaction"><a href="#why-measure-user-satisfaction">Why measure user satisfaction?</a>
+<li class="level-overview"><a href="#overview">Overview</a>
+<ol>
+<li class="level-in-microsoft-word"><a href="#in-microsoft-word">In Microsoft Word</a>
+<ol>
+<li class="level-use-headings"><a href="#use-headings">Use headings</a>
 </li>
-<li class="level-how-to-measure-user-satisfaction"><a href="#how-to-measure-user-satisfaction">How to measure user satisfaction</a>
+<li class="level-use-lists"><a href="#use-lists">Use lists</a>
 </li>
-<li class="level-what-happens-if-a-user-exits-the-transaction-mid-way-through"><a href="#what-happens-if-a-user-exits-the-transaction-mid-way-through">What happens if a user exits the transaction mid way through?</a>
+<li class="level-create-a-table-of-contents"><a href="#create-a-table-of-contents">Create a table of contents</a>
 </li>
-<li class="level-when-to-measure-user-satisfaction"><a href="#when-to-measure-user-satisfaction">When to measure user satisfaction</a>
+<li class="level-use-readable-body-text"><a href="#use-readable-body-text">Use readable body text</a>
 </li>
-<li class="level-what-about-post-launch"><a href="#what-about-post-launch">What about post launch?</a>
+<li class="level-use-good-colour-contrast"><a href="#use-good-colour-contrast">Use good colour contrast</a>
 </li>
-<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+<li class="level-use-data-tables"><a href="#use-data-tables">Use data tables</a>
+</li>
+<li class="level-provide-text-descriptions"><a href="#provide-text-descriptions">Provide text descriptions</a>
+</li>
+</ol>
+</li>
+<li class="level-in-adobe-acrobat"><a href="#in-adobe-acrobat">In Adobe Acrobat</a>
+<ol>
+<li class="level-set-the-document-language"><a href="#set-the-document-language">Set the document language</a>
+</li>
+<li class="level-check-the-tag-tree"><a href="#check-the-tag-tree">Check the tag tree</a>
+</li>
+<li class="level-check-the-tab-order"><a href="#check-the-tab-order">Check the tab order</a>
+</li>
+<li class="level-check-the-reading-order"><a href="#check-the-reading-order">Check the reading order</a>
+</li>
+<li class="level-check-the-reflow-order"><a href="#check-the-reflow-order">Check the reflow order</a>
+</li>
+<li class="level-check-text-descriptions"><a href="#check-text-descriptions">Check text descriptions</a>
+</li>
+<li class="level-remove-empty-tags"><a href="#remove-empty-tags">Remove empty tags</a>
+</li>
+<li class="level-set-decorative-content"><a href="#set-decorative-content">Set decorative content</a>
+</li>
+<li class="level-check-data-tables"><a href="#check-data-tables">Check data tables</a>
+</li>
+<li class="level-check-active-links"><a href="#check-active-links">Check active links</a>
+</li>
+<li class="level-check-high-contrast"><a href="#check-high-contrast">Check high contrast</a>
+</li>
+<li class="level-display-document-title"><a href="#display-document-title">Display document title</a>
+</li>
+</ol>
+</li>
+<li class="level-before-publication"><a href="#before-publication">Before publication</a>
+<ol>
+<li class="level-full-adobe-accessibility-check"><a href="#full-adobe-accessibility-check">Full Adobe accessibility check</a>
+</li>
+<li class="level-quick-screen-reader-check"><a href="#quick-screen-reader-check">Quick screen reader check</a>
+</li>
+<li class="level-use-nvda"><a href="#use-nvda">Use NVDA</a>
+</li>
+<li class="level-use-voiceover"><a href="#use-voiceover">Use VoiceOver</a>
+</li>
+</ol>
+</li>
+<li class="level-acknowledgements"><a href="#acknowledgements">Acknowledgements</a>
+</li>
+</ol>
 </li>
 </ol>
 
@@ -199,93 +255,147 @@
     </div>
 
     <div class="inner">
-      <p>Defined as the percentage of people who answered either “very satisfied” nor “satisfied” on a five-point scale in response to the question:</p>
+      <h1 id="overview">Overview</h1>
+
+<p>The best way to create an accessible PDF is to create an accessible source document. Well structured Microsoft Word documents make good source documents for conversion to PDF. When a source document is converted into PDF it is tagged. The PDF tag tree reflects the structure of the document, and it’s this structure that assistive technologies like screen readers use to navigate the document.</p>
+
+<h2 id="in-microsoft-word">In Microsoft Word</h2>
+
+<p>Use the styles and features available in Word to format your content and give it structure. This will make it easier to convert your source document into PDF because it lays the groundwork for the PDF tag tree.</p>
+
+<h3 id="use-headings">Use headings</h3>
+
+<p>Use the heading styles in Word to create a logical document structure. Don’t increase the size of text or make it bold to create the appearance of headings. Treat your document like a book: It should have one title (level one heading) and multiple chapters (level two headings). Within each chapter there may be multiple sections (level three headings) and sub sections (level four headings).</p>
+
+<h3 id="use-lists">Use lists</h3>
+
+<p>Use the list styles in Word to group together related items. If the items follow a specific sequence, use a numbered list instead. Don’t use punctuation or other markers to create the illusion of a list.</p>
+
+<h3 id="create-a-table-of-contents">Create a table of contents</h3>
+
+<p>If your document is longer than a few pages, use Word to automatically create a table of contents based on your heading structure. Don’t use lists and links to manually create a table of contents.</p>
+
+<h3 id="use-readable-body-text">Use readable body text</h3>
+
+<p>Use left aligned text (unless the language of your document is read right to left). Don’t use justified text in your document.</p>
+
+<p>Choose a san serif font and use the styles in Word to set it as the default, with a minimum size of 12pt. If you need to include footnotes or other text of a smaller size, increase the size of the body text to 14pt, rather than reduce the size of text below 12pt.</p>
+
+<p>Don’t use chunks of italicised or capitalised text, and don’t underline text unless it’s a link.</p>
+
+<h3 id="use-good-colour-contrast">Use good colour contrast</h3>
+
+<p>Use foreground/background colours for text that have a good contrast ratio. The 4.1:5 ratio recommended by the <a href="http://www.w3.org/TR/WCAG/">Web Content Accessibility Guidelines 2.0</a> is a good minimum.</p>
+
+<p>Don’t use colour or shape as the only way to identify something in your document. Use text labels or descriptions instead.</p>
+
+<h3 id="use-data-tables">Use data tables</h3>
+
+<p>Use tables with column headings to display data. Don’t use tables to make cosmetic changes to the layout of the document.</p>
+
+<h3 id="provide-text-descriptions">Provide text descriptions</h3>
+
+<p>Use Word to add text descriptions to all important images in the document. Make sure the text description includes all the information contained within, or conveyed by, the image.</p>
+
+<h2 id="in-adobe-acrobat">In Adobe Acrobat</h2>
+
+<p>Use Adobe Acrobat Pro to convert your Word document into PDF. Use the Convert to PDF option under the Adobe menu in Microsoft Word to do this. This will ensure that Acrobat picks up the accessibility you have built into your source document.</p>
+
+<h3 id="set-the-document-language">Set the document language</h3>
+
+<p>Set the language of the document. Go to File &gt; Properties &gt; Advanced and select a language from the Language menu. If the PDF is written in Welsh, type CY into the box.</p>
+
+<h3 id="check-the-tag-tree">Check the tag tree</h3>
+
+<p>All content must be tagged, marked as an artefact (background content), or removed from the tag tree. Use the Tags panel to review and edit the tag tree. If the PDF was converted from a well structured Word document, the tag tree should require little editing.</p>
+
+<h3 id="check-the-tab-order">Check the tab order</h3>
+
+<p>If the PDF contains form fields, use Advanced &gt; Accessibility &gt; Touch up reading order to check they can be navigated with the tab key in a logical order. If the tab order needs improving, use the Order panel to drag and drop the fields into the correct order.</p>
+
+<h3 id="check-the-reading-order">Check the reading order</h3>
+
+<p>Use the Tags panel to review and edit the reading order of the PDF. Don’t rely on the visual order of the PDF. The reading order is based on the structure of the PDF tag tree, which may not match the visual content order.</p>
+
+<h3 id="check-the-reflow-order">Check the reflow order</h3>
+
+<p>Use View &gt; Zoom &gt; reflow then check that the PDF still has a logical reading order. Note: It can sometimes be difficult to guarantee a logical reflow order for PDfs with complex content.</p>
+
+<h3 id="check-text-descriptions">Check text descriptions</h3>
+
+<p>Go to Advanced &gt; Accessibility &gt; Touch up reading order and check that all images have text descriptions. If the text descriptions were present in the source Word document and the Convert to PDF option was used, the text descriptions should already be present in the PDF.</p>
+
+<h3 id="remove-empty-tags">Remove empty tags</h3>
+
+<p>Remove empty tags from the tag tree. Use the Tags panel to highlight and delete any empty tags from the tag tree.</p>
+
+<h3 id="set-decorative-content">Set decorative content</h3>
+
+<p>Tag decorative content elements as artefacts. Use Advanced &gt; Accessibility &gt; Touch up reading order to select a decorative element, and use the Background button to make the element an artefact.</p>
+
+<h3 id="check-data-tables">Check data tables</h3>
+
+<p>Use the Tags panel to check the structure of data tables. The <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> and <code>&lt;td&gt;</code> tags should be used to give data tables the proper structure.</p>
+
+<h3 id="check-active-links">Check active links</h3>
+
+<p>Use the Tags panel to check that links are active. Active links should be tagged with the <code>&lt;link&gt;</code> tag.</p>
+
+<h3 id="check-high-contrast">Check high contrast</h3>
+
+<p>Use File &gt; Preference &gt; Accessibility to set a high contrast colour scheme, and check the PDF remains readable. Note: It may not be possible to make high contrast mode work in all PDFs, in which case you should be prepared to make a high contrast version available on request.</p>
+
+<h3 id="display-document-title">Display document title</h3>
+
+<p>Display the document title instead of the file name. Go to File &gt; Properties &gt; Initial view and select Document title from the Show drop down box.</p>
+
+<h2 id="before-publication">Before publication</h2>
+
+<p>Once all the above steps have been taken, the PDF should be checked before it is published.</p>
+
+<h3 id="full-adobe-accessibility-check">Full Adobe accessibility check</h3>
+
+<p>Go to Advanced &gt; Accessibility and select Full check. The PDF should pass the full check for WCAG 2.0 Level AA without any warnings.</p>
+
+<h3 id="quick-screen-reader-check">Quick screen reader check</h3>
+
+<p>Ask a screen reader user to read through the PDF. If no-one is available to do this, use one of the following options instead.</p>
+
+<h3 id="use-nvda">Use NVDA</h3>
+
+<p><a href="http://www.nvda-project.org/">Non Visual Desktop Access (NVDA)</a> is a free open source screen reader for Windows. It can be installed to the desktop or run from a portable USB thumb drive.</p>
+
+<p>With NVDA running, open the PDF and use the following commands to check the PDF:</p>
 
 <ul>
-  <li>
-    <p>Overall, how satisfied were you with this [eg car tax] service today?</p>
-
-    <ul>
-      <li>Very satisfied</li>
-      <li>Satisfied</li>
-      <li>Neither satisfied or dissatisfied</li>
-      <li>Dissatisfied</li>
-      <li>Very dissatisfied</li>
-    </ul>
-  </li>
+  <li>from the top of the PDF (with the Numlock off), use Numpad 0 + Numpad 2 to read the PDF from top to bottom and check the reading order;</li>
+  <li>use the tab key (repeatedly) to move through the PDF and check the tab order;</li>
+  <li>use the h key (repeatedly) to move through the PDF and check the heading structure;</li>
+  <li>use the g key (repeatedly) to move through the PDF and check for text descriptions.
+NB: These commands will also work with the Jaws screen reader from Freedom Scientific.</li>
 </ul>
 
-<h2 id="why-measure-user-satisfaction">Why measure user satisfaction?</h2>
+<h3 id="use-voiceover">Use VoiceOver</h3>
 
-<p>A good service enables users to complete tasks successfully. A great service is also enjoyable to use. Satisfaction provides a qualitative measure of how satisfying the experience is.</p>
+<p>VoiceOver is the integrated screen reader with Mac OS X and all iOS devices. In Mac OS X turn VoiceOver on (or off again) using Command + F5.</p>
 
-<p>Many government transactions are mandatory and therefore not inherently enjoyable - sometimes referred to as grudge transactions - but you should endeavour to make them as pleasant as possible for users, who may be nervous or stressed when interacting with the government.</p>
-
-<p>Asking users how satisfied they are with a service can provide a measure of all the elements contributing to the overall user experience such as ease of use, navigation and design.</p>
-
-<h2 id="how-to-measure-user-satisfaction">How to measure user satisfaction</h2>
-
-<p>GOV.UK will provide a user satisfaction survey at the end of your transactional service and make this data available.</p>
-
-<h2 id="what-happens-if-a-user-exits-the-transaction-mid-way-through">What happens if a user exits the transaction mid way through?</h2>
-
-<p>You should measure all user journeys through your transaction to understand drop off points.</p>
-
-<p>If a user drops out your should try and collect some qualitative data to explain why they did not complete the transaction. For example:</p>
-
-<blockquote>
-  <p>‘Please tell us why are you unable to complete this transaction.’</p>
-</blockquote>
-
-<p>Although this survey will not be contribute to the overall measure of user satisfaction it will help you understand service drop of points and find ways to improve transactions.</p>
-
-<h2 id="when-to-measure-user-satisfaction">When to measure user satisfaction</h2>
-
-<p>In order to successfully measure the user satisfaction of your service we recommend you follow the guidance below:</p>
-
-<p>Discovery</p>
+<p>With VoiceOver running open the PDF and use the following commands to check the PDF:</p>
 
 <ul>
-  <li>benchmark the existing service for future comparison</li>
-  <li>develop a plan to measure user satisfaction throughout product development</li>
+  <li>from the top of the PDF use a double finger down swipe, or Control + Option + a to read the PDF from top to bottom and check the reading order;</li>
+  <li>use the tab key (repeatedly) to move through the PDF and check the tab order.
+NB: VoiceOver does not provide shortcut keys for navigating by headings or graphics.</li>
 </ul>
 
-<p>Alpha</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
 
-<ul>
-  <li>benchmark user satisfaction via remote usability testing and/or a satisfaction survey</li>
-</ul>
-
-<p>Beta</p>
-
-<ul>
-  <li>measure user satisfaction via remote usability testing and/or satisfaction survey</li>
-  <li>identify why people are dissatisfied or not completing transactions and take steps to improve</li>
-</ul>
-
-<p>Live</p>
-
-<ul>
-  <li>measure user satisfaction continually and monitor results on at least a monthly basis</li>
-  <li>carry out a more comprehensive user demographics, usage and attitudes survey every six months</li>
-</ul>
-
-<h2 id="what-about-post-launch">What about post launch?</h2>
-
-<p>An exit survey will be run continuously on your service, and report satisfaction on a monthly basis. You can use this data to improve your service.</p>
-
-<p>You should also carry out a more comprehensive user satisfaction survey every six months.</p>
-
-<p>You could consider analysing the key factors driving satisfaction with the service. For example, by asking additional questions (eg on ease of use, accuracy, look and feel) you can determine which of those factors is most positively contributing to user satisfaction and hence prioritise where to focus ongoing design efforts.</p>
-
-<h2 id="further-reading">Further reading</h2>
-<p><a href="/service-manual/users/user-research/surveydesign.html">Survey design</a></p>
+<p>Thanks to the Department for Work and Pensions (DWP) for enabling us to incorporate its accessibility best practice guidance into this document.</p>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/measurement/usersatisfaction.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/measurement/usersatisfaction.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/design-and-content/resources/creating-accessible-PDFs.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/design-and-content/resources/creating-accessible-PDFs.md">Page source</a>
         </ol>
       </nav>
     </div>
