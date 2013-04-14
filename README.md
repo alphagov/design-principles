@@ -17,5 +17,5 @@ it is ready to go public.
 ### Indexing content
 
 * Content for search should be placed in JSON files in ```db/index``` eg. ```db/index/service-manual.json``` (this is done during the compilation step that adds the manual content to this repository)
-* The rake task ```rake rummager:index``` will post these to the rummager service for inclusion in an index called 'specialist'
+* The rake task ```rake rummager:index``` will post these to the rummager service for inclusion in an index called 'service-manual'
 * That task is run upon deployment

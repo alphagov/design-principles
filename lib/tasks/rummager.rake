@@ -7,7 +7,7 @@ namespace :rummager do
       content = File.read(indexable)
       parsed = JSON.parse(content)
       puts "Handling #{parsed.count} records from #{indexable}"
-      Rummageable.index(parsed, '/specialist')
+      Rummageable.index(parsed, '/service-manual')
     end
   end
 end

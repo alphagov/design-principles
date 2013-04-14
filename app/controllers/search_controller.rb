@@ -17,7 +17,7 @@ class SearchController < ApplicationController
   protected
 
   def search_client
-    @search_client ||= GdsApi::Rummager.new(Plek.current.find('search') + '/specialist')
+    @search_client ||= GdsApi::Rummager.new(Plek.current.find('search') + '/service-manual')
   end
 
   def set_expiry(duration = 30.minutes)
