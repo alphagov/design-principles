@@ -74,7 +74,10 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.1)
     mime-types (1.21)
+    mocha (0.13.3)
+      metaclass (~> 0.0.1)
     multi_json (1.7.1)
     nokogiri (1.5.5)
     null_logger (0.0.1)
@@ -179,6 +182,7 @@ DEPENDENCIES
   gds-api-adapters
   govuk_frontend_toolkit (= 0.12.1)
   lograge (= 0.2.0)
+  mocha (= 0.13.3)
   plek (= 1.1.0)
   rails (= 3.2.13)
   router-client (= 3.1.0)
