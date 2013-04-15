@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Discussion Guides — Government Service Design Manual</title>
+<title>Devops — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -147,9 +147,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/users">Know your users</a></li>
-      
-      <li><a href="/service-manual/users/user-research">User research</a></li>
+      <li><a href="/service-manual/operations">Operations</a></li>
       
     </ol>
   </nav>
@@ -160,23 +158,13 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Discussion Guides</h1>
+      <h1>Devops</h1>
       
-      <h2 class="subtitle">Tools to help steer user research</h2>
+      <h2 class="subtitle">Bringing development and operations together</h2>
       
     </hgroup>
 
     
-<ul class="meta-phases group">
-  
-  <li class="discovery"><a href="/service-manual/phases/discovery.html">discovery</a></li>
-  
-  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
-  
-  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
-  
-</ul>
-
   </header>
 
   <div class="article-container group">
@@ -185,13 +173,21 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-discussion-guides"><a href="#discussion-guides">Discussion Guides</a>
-<ol>
-<li class="level-wherehow-you-might-use-it"><a href="#wherehow-you-might-use-it">Where/how you might use it</a>
+<li class="level-culture"><a href="#culture">Culture</a>
 </li>
-<li class="level-example"><a href="#example">Example</a>
+<li class="level-automation"><a href="#automation">Automation</a>
 </li>
-</ol>
+<li class="level-measurement"><a href="#measurement">Measurement</a>
+</li>
+<li class="level-sharing"><a href="#sharing">Sharing</a>
+</li>
+<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+</li>
+<li class="level-good-habits"><a href="#good-habits">Good habits</a>
+</li>
+<li class="level-warning-signs"><a href="#warning-signs">Warning signs</a>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
 </ol>
 
@@ -199,27 +195,69 @@
     </div>
 
     <div class="inner">
-      <h1 id="discussion-guides">Discussion Guides</h1>
+      <p>Many large organisations have evolved to have very separate development, quality assurance and operations business units. In many cases the overhead of communications and the misaligned incentives of the different groups leads to slow delivery and a mountain of interconnected processes. In extreme cases these units may be geographically separated, work for different organisations or under completely different management structures.</p>
 
-<p>Discussion guides are used in order to ensure that focus groups and 1:1 interviews cover the required topics, and information is obtained from the sessions that will address the needs of the research. </p>
+<p>Devops is a cultural and professional movement which has grown out of these frustrations. It is not a methodology or framework, rather some high minded principles and a willingness to break down silos. Specifically devops is all about <a href="#culture">Culture</a>, <a href="#automation">Automation</a>, <a href="#measurement">Measurement</a> and <a href="#sharing">Sharing</a>.</p>
 
-<h2 id="wherehow-you-might-use-it">Where/how you might use it</h2>
+<h3 id="culture">Culture</h3>
 
-<p>In preparation for a focus group / 1:1 interviews it is helpful to generate a list of questions that address the information that you’re interested in obtaining from the sessions. These questions should be open ended, and structured in a manner that will form the basis for a draft discussion guide, and help elicit information from respondents in a sensible flow. Writing a discussion guide should be an iterative process and once the initial draft has been written it is helpful to get input from other people on the project team. </p>
+<p>It is important to realise that devops requires a culture shift, towards shared ownership and collaboration across silos involved in building and managing a service. Especially for existing organisations this is by far the most important element.</p>
 
-<p>As suggested by the name, discussion guides should be used as a guide to the discussion, and in comparison with a structured questionnaire, questions and areas for coverage should not read out verbatim. This enables the discussion to be led by respondents’ own experience.</p>
+<h3 id="automation">Automation</h3>
 
-<p>Typically each section of the guide would include time guidance to ensure all areas can be covered and it should also indicate when stimulus is being used, and specify participants’ tasks.</p>
+<p>Many business processes are ripe for automation. Automation removes manual, error prone tasks allowing people to focus on the quality of the running service. Common areas that could benefit from automation are release management, provisioning, configuration management, systems integration, monitoring, orchestration and testing.</p>
 
-<h2 id="example">Example</h2>
+<h3 id="measurement">Measurement</h3>
 
-<p><a href="/service-manual/assets/documents/BISExpertInterviewsDiscussionGuideOctober2012.docx.pdf">A discussion guide written for testing that was conducted with BIS experts for the development of GOV.UK</a> (PDF, 157kb).</p>
+<p>Using data to drive change can be hugely powerful, in particular when it is done to involve people from different groups in the quality of the end-to-end service delivery. Collecting information from different teams and being able to compare it across former silos can be transformative on it’s own.</p>
+
+<h3 id="sharing">Sharing</h3>
+
+<p>People from different backgrounds (say development and operations) often have different, but intersecting skill sets. Encouraging sharing between groups helps to spread an understanding of the different areas of a successful service, making resolving issues about working together and not about contract negotiation. </p>
+
+<h2 id="why-we-do-this">Why we do this</h2>
+
+<p>Without close collaboration between those building and testing software and those running it in production the quality of the resulting service will be compromised. This happens in all sorts of ways but the root cause is often functional silos - when one group owns a specific area (say quality) it’s easy for other areas to assume that area is no-longer their concern. For things like quality or release management or performance this is toxic. </p>
+
+<p>High quality digital services need to be able to adapt quickly to user needs, this means close collaboration between different groups. A shared sense of ownership of the service and the problem is also important, as is a culture of making measurable improvements to how things work. </p>
+
+<h2 id="good-habits">Good habits</h2>
+
+<p>Devops isn’t a project management methodology but you will hopefully adopt some of these good habits in your organisation. These aren’t unique to devops, but they do help with breaking down silos and with the above principles.</p>
+
+<ul>
+  <li><a href="/service-manual/the-team/index.html">Cross-functional teams</a> - working to break down silos is easiest done when teams are composed of people from different functions. This helps with the team owning the end-to-end quality of service.</li>
+  <li><a href="/service-manual/measurement/index.html">Widely shared metrics</a> - knowing what good looks like across the service is important for everyone, and sharing high and low level metrics as widely as possible is a good way of building understanding. </li>
+  <li>Automating repetitive tasks - using software development to automate tasks from across the service is a good way of fostering a better understanding of the whole service, as well as freeing up smart people from repetitive manual tasks.</li>
+  <li>Post-mortems - issues will happen and making sure everyone from across different teams learns from them is critical. Running post-mortems with people from different groups is a great way of spreading knowledge.</li>
+  <li><a href="/service-manual/making-software/release-strategies.html">Regular releases</a> - releasing software is often a bottleneck in siloed organisations, as the responsibilities of the different parts of the release are often spread out across teams. Getting to a point where you can release regularly (even many times a day) requires extreme collaboration and clever automation.</li>
+</ul>
+
+<h2 id="warning-signs">Warning signs</h2>
+
+<p>Like agile, the term devops is often used for marketing or promotional purposes. This leads to a few common usages which are not necessarily in keeping with the above discussion. Watch out for:</p>
+
+<ul>
+  <li>devops tools (nearly always marketing)</li>
+  <li>a devops team (in many cases this is just a new silo of skills and knowledge)</li>
+  <li>devops as a job title (you wouldn’t call someone “an agile”)</li>
+</ul>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="http://www.opscode.com/blog/2010/07/16/what-devops-means-to-me/">What devops means to me</a></li>
+  <li><a href="http://www.jedi.be/blog/2010/02/12/what-is-this-devops-thing-anyway/">What is this devops thing anyway?</a></li>
+  <li><a href="http://dev2ops.org/2010/02/what-is-devops/">What is devops (and the wall of confusion)</a></li>
+  <li><a href="http://continuousdelivery.com/2012/10/theres-no-such-thing-as-a-devops-team/">There’s No Such Thing as a “Devops Team”</a></li>
+  <li>Those interested in devops are often also interested in <a href="https://www.gov.uk/service-manual/making-software/configuration-management.html">Configuration Management</a>, <a href="https://www.gov.uk/service-manual/operations/monitoring.html">Monitoring</a> and <a href="https://www.gov.uk/service-manual/making-software/release-strategies.html">Release Management</a></li>
+</ul>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/user-research/discussionguides.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/user-research/discussionguides.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/operations/devops.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/operations/devops.md">Page source</a>
         </ol>
       </nav>
     </div>

@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Alpha phase — Government Service Design Manual</title>
+<title>Retirement phase — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -160,9 +160,9 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Alpha phase</h1>
+      <h1>Retirement phase</h1>
       
-      <h2 class="subtitle">Build a prototype, test it with users and learn from it</h2>
+      <h2 class="subtitle">Learn what to do when your service is retired or superseded</h2>
       
     </hgroup>
   </header>
@@ -170,84 +170,52 @@
   <div class="article-container group">
     <div class="inner">
       <div class="phases-list">
-        <div class="alpha">
-          <p>When designing a digital system it is impossible to predict everything up-front. Each project features many challenges, and in your alpha you will start building solutions for these.</p>
+        <div class="retirement">
+          <p>Even the best services may eventually reach retirement. Changes in policy may mean that the service is no longer offered or new understanding may mean that those user needs are better provided through a different service. Whatever the reason, the retirement of digital services should be handled with the same degree of care as their creation, with a constant focus on user needs.</p>
 
-<p>You may need to bring more <a href="/service-manual/the-team/developer.html">developers</a> and <a href="/service-manual/the-team/designer.html">designers</a> into <a href="/service-manual/the-team">the team</a>, but the whole phase should not last longer than about six to eight weeks. By the end of the phase you should have a clear idea of what’s required to build a <a href="/service-manual/phases/beta.html">beta</a>.</p>
+<h2 id="what-about-the-needs">What about the needs?</h2>
 
-<h2 id="what-is-the-objective-of-an-alpha">What is the objective of an alpha?</h2>
+<p>Your service will have been built to serve user needs. It’s vital to understand how those needs are to be addressed once your service has been retired, whether they are deemed to no longer exist, are no longer served by government, or will in future be served as part of another service.</p>
 
-<p>The objective is to build a working prototype. This will be used by stakeholders or a closed group of end users to:</p>
+<p>If the needs will no longer be met by government but will now be met by the private or voluntary sectors then it is important to understand what organisations will be expected to fill that function so that they can be adequately prepared and so that the appropriate online user journey can be developed.</p>
 
-<ul>
-  <li>gain greater understanding of service</li>
-  <li>to trial <a href="/service-manual/design-and-content/working-with-prototypes.html">design approach</a></li>
-  <li>trial some <a href="/service-manual/making-software/choosing-technology.html">technologies</a></li>
-  <li>begin to form <a href="/service-manual/the-team">a team</a></li>
-  <li>gain shared understanding of the service at a coding and integrations level</li>
-  <li>understand what or who you will need to deliver a <a href="/service-manual/phases/beta.html">beta</a></li>
-</ul>
+<p>Similarly, if the needs are to be served as part of another government service or services then you should identify which services they are and begin a dialogue with those services’ teams so they can learn from your experience and so that you can understand how you will support your users to make the transition.</p>
 
-<p>Following demonstration of your alpha, you may choose to discard the code and start fresh in the beta. If, however, your code is robust enough you may continue to iterate against your prototype.</p>
+<h2 id="what-next">What next?</h2>
 
-<h2 id="what-should-be-in-my-alpha">What should be in my alpha?</h2>
+<h3 id="let-gds-know">Let GDS know</h3>
 
-<p>The alpha doesn’t need to be a complete, end-to-end service. You’re looking to demonstrate just enough so users gain some understanding of the service.</p>
+<p>The vast majority of users of your service will begin and end their journeys via GOV.UK. As soon as you know that your service is likely to be retired you should contact the GOV.UK team to ensure that those journeys are amended and appropriate information is supplied.</p>
 
-<p>Think of it as a proof-of-concept. Is the solution appropriate? Is your approach viable? Do you have enough understanding of your users needs to meet them? If not, find out more and make a new prototype.</p>
+<p>The GOV.UK team will need to know why the service is being retired, and how those user needs are to be served in future so that they can provide the appropriate information, advice and links to users.</p>
 
-<h2 id="how-long-does-it-take">How long does it take?</h2>
-<p>The alpha phase is another relatively short phase. At GDS, we try to limit these to about two months, running in week long sprints over a 6-9 week period.</p>
+<h3 id="let-your-users-know">Let your users know</h3>
 
-<h2 id="who-do-i-need">Who do I need?</h2>
-<p>This phase involves a relatively small core team, who will be capable of rapidly iterating solutions. It will probably expand and contract in size as different specialisms are required.</p>
+<p>For that majority of users who begin and end their journeys on GOV.UK the most important thing is to ensure that GOV.UK is updated. There will be some users, however, who access your service directly whether via links in emails, bookmarks on their computer or remembering your URLs. It’s important to prepare them for the change and lay our clearly what it will mean to them.</p>
 
-<h2 id="what-are-the-outputs">What are the outputs?</h2>
+<p>Your planning should aim to produce the minimum possible disruption for users, but it will still be a significant change for them so details of what the change is, why it’s being made, what they will need to do, and what will happen to their data should be made easily available.</p>
 
-<ul>
-  <li>high level <a href="/service-manual/agile/writing-user-stories.html">story cards</a></li>
-  <li>plan for alpha / beta / live (decreasingly detailed)</li>
-  <li>working basic system that provides limited functionality that can be shown to a number of users</li>
-  <li>understanding around legacy systems to replace or wrap or integrate with</li>
-  <li>cross-functional requirements</li>
-  <li>decision to progress to <a href="/service-manual/phases/beta.html">beta phase</a></li>
-</ul>
+<p>Users who access your service via an API will need time to update their software to use the replacement service’s APIs or to make other relevant adjustments. You should reach out to your API users as early as possible and remember that they may have significant lead times for making and distributing changes.</p>
 
-<!--
-<ul class="phase-activities">
-  <li>
-    <img class="output" src="/service-manual/assets/images/pictograms/backlog.png" />
-    User story backlog
-  </li>
-  <li>
-    <img class="output" src="/service-manual/assets/images/pictograms/design-and-build.png" />
-    Design and build
-  </li>
-  <li>
-    <img class="output" src="/service-manual/assets/images/pictograms/prototype.png" />
-    Working prototype
-  </li>
-  <li>
-    <img class="output" src="/service-manual/assets/images/pictograms/presentation.png" />
-    Show and tell
-  </li>
-  <li>
-    <img class="output" src="/service-manual/assets/images/pictograms/discussion.png" />
-    Retrospective
-  </li>
-  <li>
-    <img class="output" src="/service-manual/assets/images/pictograms/alpha-medium.png" />
-    Team size
-  </li>
-</ul>
--->
+<h3 id="plan-to-redirect-traffic">Plan to redirect traffic</h3>
 
-<p><a href="/service-manual/phases/discovery.html">Previously: Discovery</a>
-<a href="/service-manual/phases/beta.html">Next: Beta</a></p>
+<p>Once GOV.UK is updated the majority the vast majority of users will begin to be directed to the new service. Some users will still try and access the service at its current (now retired) home. You should have a plan for redirecting those requests to the appropriate new service, or to provide clear information about the service that has been retired in perpetuity.</p>
+
+<blockquote>
+  <p>When we retired the DirectGov, BusinessLink and departmental websites, we invested a lot of effort in mapping content on those sites to GOV.UK content. We redirected as many of the old sites’ URLs as we could to corresponding GOV.UK URLs, and provided “Gone” pages with links to the National Archive where the content was not being transferred. We wrote about that in <a href="http://digital.cabinetoffice.gov.uk/2012/10/11/no-link-left-behind/">“No Link Left Behind”</a></p>
+</blockquote>
+
+<h2 id="data">Data</h2>
+
+<p>In running your service you will have accrued a large amount of data about the service and its users. You should already have policies in place to manage that data responsibly, including details of how long it will be retained. Those policies will continue to apply, and you will need to ensure that there is support in place to maintain them.</p>
+
+<p>Where data is being transferred to a new service owner, that should be done in accordance with your existing data protection policies, and communicated clearly to your users. </p>
+
+<p><a href="/service-manual/phases/live.html">Previously: live</a></p>
 
         </div>
 
-        <div class="alpha">
+        <div class="retirement">
           <h2>Guidance for this phase</h2>
 
           <div class="link-list">
@@ -271,12 +239,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/agile/index.html" title="What it is, why it works and how to do it">Agile</a>
-          <span class="subtitle">What it is, why it works and how to do it</span>
-        </li>
-        
-        
       
         
       
@@ -325,12 +287,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/agile/continuous-delivery.html" title="Making releases boring">Continuous Delivery</a>
-          <span class="subtitle">Making releases boring</span>
-        </li>
-        
-        
       
         
       
@@ -378,12 +334,6 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/agile/features-of-agile.html" title="Sprints, stand-ups and other regular meetings">Features of agile</a>
-          <span class="subtitle">Sprints, stand-ups and other regular meetings</span>
-        </li>
-        
         
       
         
@@ -457,12 +407,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/agile/quality.html" title="How to define it, measure it and maintain it">Quality</a>
-          <span class="subtitle">How to define it, measure it and maintain it</span>
-        </li>
-        
-        
       
         
       
@@ -498,12 +442,6 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/agile/running-retrospectives.html" title="How and why we run retrospectives.">Running retrospectives</a>
-          <span class="subtitle">How and why we run retrospectives.</span>
-        </li>
-        
         
       
         
@@ -543,12 +481,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/making-software/testing-in-agile.html" title="What testing your service might look like">Testing in an agile environment</a>
-          <span class="subtitle">What testing your service might look like</span>
-        </li>
-        
-        
       
         
       
@@ -587,12 +519,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/agile/what-agile-looks-like.html" title="Common features of agile projects">What agile looks like</a>
-          <span class="subtitle">Common features of agile projects</span>
-        </li>
-        
-        
       
         
       
@@ -613,12 +539,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/agile/writing-user-stories.html" title="How to write a useful user story">Writing user stories</a>
-          <span class="subtitle">How to write a useful user story</span>
-        </li>
-        
-        
       
         
       
@@ -628,6 +548,10 @@
   
     
   
+  
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 
@@ -662,12 +586,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/assisted-digital/index.html" title="Getting digital services to people who aren’t online">Assisted digital</a>
-          <span class="subtitle">Getting digital services to people who aren’t online</span>
-        </li>
-        
-        
       
         
       
@@ -903,6 +821,10 @@
   
     
   
+  
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 
@@ -921,12 +843,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/design-and-content/accessibility.html" title="How to make services that everyone can use">Accessibility</a>
-          <span class="subtitle">How to make services that everyone can use</span>
-        </li>
-        
-        
       
         
       
@@ -997,12 +913,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/design-and-content/resources/creating-accessible-PDFs.html" title="How to make PDFs that everyone can use">Creating Accessible PDFs</a>
-          <span class="subtitle">How to make PDFs that everyone can use</span>
-        </li>
-        
-        
       
         
       
@@ -1024,12 +934,6 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/design-and-content/index.html" title="Designing content and services for GOV.UK">Design and content</a>
-          <span class="subtitle">Designing content and services for GOV.UK</span>
-        </li>
-        
         
       
         
@@ -1086,12 +990,6 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/design-and-content/how-users-read.html" title="Reading age, reading online, plain English, learning disabilities">How users read</a>
-          <span class="subtitle">Reading age, reading online, plain English, learning disabilities</span>
-        </li>
-        
         
       
         
@@ -1231,12 +1129,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/design-and-content/working-with-prototypes.html" title="Learning by doing">Working with prototypes</a>
-          <span class="subtitle">Learning by doing</span>
-        </li>
-        
-        
       
         
       
@@ -1251,12 +1143,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/design-and-content/writing-government-services.html" title="Tone of voice, writing style, use of headings and more">Writing government services</a>
-          <span class="subtitle">Tone of voice, writing style, use of headings and more</span>
-        </li>
-        
-        
       
         
       
@@ -1268,6 +1154,10 @@
   
     
   
+  
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 
@@ -1288,12 +1178,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/making-software/accessibility-testing.html" title="Testing to see if your service is inclusive">Accessibility testing</a>
-          <span class="subtitle">Testing to see if your service is inclusive</span>
-        </li>
-        
-        
       
         
       
@@ -1343,13 +1227,7 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/making-software/choosing-technology.html" title="How to go about choosing what software tools to use">Choosing technology</a>
-          <span class="subtitle">How to go about choosing what software tools to use</span>
-        </li>
         
-        
       
         
       
@@ -1363,12 +1241,6 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/making-software/configuration-management.html" title="Manage a team's approach to configuration">Configuration management</a>
-          <span class="subtitle">Manage a team's approach to configuration</span>
-        </li>
-        
         
       
         
@@ -1408,12 +1280,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/making-software/development-environment.html" title="Early infrastructure needs for agile projects">Development environments</a>
-          <span class="subtitle">Early infrastructure needs for agile projects</span>
-        </li>
-        
-        
       
         
       
@@ -1461,13 +1327,7 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/making-software/information-security.html" title="Ensuring user data stays secure">Information security</a>
-          <span class="subtitle">Ensuring user data stays secure</span>
-        </li>
         
-        
       
         
       
@@ -1489,12 +1349,6 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/making-software/index.html" title="Information and guidance for building services">Making software</a>
-          <span class="subtitle">Information and guidance for building services</span>
-        </li>
-        
         
       
         
@@ -1518,12 +1372,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/making-software/open-source.html" title="When to use open source">Open source</a>
-          <span class="subtitle">When to use open source</span>
-        </li>
-        
-        
       
         
       
@@ -1553,13 +1401,7 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/making-software/release-strategies.html" title="How regular releases can reduce risk">Releasing software</a>
-          <span class="subtitle">How regular releases can reduce risk</span>
-        </li>
         
-        
       
         
       
@@ -1621,12 +1463,6 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/making-software/standalone-apps.html" title="What is the government position on apps?">Standalone apps</a>
-          <span class="subtitle">What is the government position on apps?</span>
-        </li>
-        
         
       
         
@@ -1644,12 +1480,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/making-software/code-testing.html" title="How to make sure your code does what it's supposed to">Testing code</a>
-          <span class="subtitle">How to make sure your code does what it's supposed to</span>
-        </li>
-        
-        
       
         
       
@@ -1667,13 +1497,7 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/making-software/logins.html" title="How to do them and how to avoid them">User accounts and logins</a>
-          <span class="subtitle">How to do them and how to avoid them</span>
-        </li>
         
-        
       
         
       
@@ -1695,13 +1519,7 @@
   
     
       
-        
-        <li> 
-          <a href="/service-manual/making-software/version-control.html" title="Ensure the team can collaborate on code">Version control</a>
-          <span class="subtitle">Ensure the team can collaborate on code</span>
-        </li>
         
-        
       
         
       
@@ -1728,7 +1546,11 @@
     
   
     
+  
   
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 
@@ -1881,12 +1703,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/measurement/index.html" title="Data you need to measure and monitor">Measurement</a>
-          <span class="subtitle">Data you need to measure and monitor</span>
-        </li>
-        
-        
       
         
       
@@ -2034,6 +1850,10 @@
   
     
   
+  
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 
@@ -2154,12 +1974,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/operations/helpdesk.html" title="How to incorporate user contacts into design">Helpdesk</a>
-          <span class="subtitle">How to incorporate user contacts into design</span>
-        </li>
-        
-        
       
         
       
@@ -2190,12 +2004,6 @@
     
       
         
-        <li> 
-          <a href="/service-manual/operations/managing-user-support.html" title="Using helpdesk contacts to improve services">Managing user support</a>
-          <span class="subtitle">Using helpdesk contacts to improve services</span>
-        </li>
-        
-        
       
         
       
@@ -2223,12 +2031,6 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/operations/index.html" title="">Operating a service</a>
-          <span class="subtitle"></span>
-        </li>
-        
         
       
         
@@ -2349,6 +2151,10 @@
   
     
   
+  
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 
@@ -2686,12 +2492,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/users/introduction-to-user-research.html" title="Basing your service on user needs and user input">An introduction to user research</a>
-          <span class="subtitle">Basing your service on user needs and user input</span>
-        </li>
-        
-        
       
         
       
@@ -2719,12 +2519,6 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/users/card-sorting.html" title="Ways of framing or interpreting information">Card sorting</a>
-          <span class="subtitle">Ways of framing or interpreting information</span>
-        </li>
-        
         
       
         
@@ -2811,12 +2605,6 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/users/index.html" title="Techniques for understanding your user's needs">Know your users</a>
-          <span class="subtitle">Techniques for understanding your user's needs</span>
-        </li>
-        
         
       
         
@@ -2932,12 +2720,6 @@
         
       
         
-        <li> 
-          <a href="/service-manual/users/user-needs.html" title="How to focus a service on users">User needs</a>
-          <span class="subtitle">How to focus a service on users</span>
-        </li>
-        
-        
       
         
       
@@ -2949,12 +2731,6 @@
       
         
       
-        
-        <li> 
-          <a href="/service-manual/users/user-research/index.html" title="Resources">User research</a>
-          <span class="subtitle">Resources</span>
-        </li>
-        
         
       
         
@@ -2993,6 +2769,10 @@
   
     
   
+  
+    <li>
+      There is no guidance in this category for this phase
+    </li>
   
 </ul>
 

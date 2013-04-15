@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1365158841" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,8 +81,8 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1365158841" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1365158841" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
@@ -195,7 +195,7 @@
     </div>
 
     <div class="inner">
-      <p>While the start and end of a user’s journey will be on GOV.UK, the service itself will hosted elsewhere, and will need a different domain name as a result. The following document describes the use of <code>service.gov.uk</code> subdomains for hosting digital services.</p>
+      <p>Government offers a number of different digital services to citizens. While the start and end of a user’s journey will be on GOV.UK, the service itself will typically be hosted elsewhere, and will need a different domain name as a result. This page describes the use of <code>service.gov.uk</code> subdomains for hosting digital services.</p>
 
 <blockquote>
   <p>Note: This document is written as a “standard,” and as such uses the words MUST, SHOULD, MAY and MUST NOT as defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
@@ -255,9 +255,9 @@
 
 <h2 id="transport-layer-security">Transport Layer Security</h2>
 
-<p>Many transactions will collect personal information from users. It’s very important that this information can’t be intercepted by malicious third parties as it travels over the Internet.</p>
+<p>Many services will collect personal information from users. It’s very important that this information can’t be intercepted by malicious third parties as it travels over the Internet.</p>
 
-<p>Therefore, all transactions accessed through <code>service.gov.uk</code> domains (including APIs) MUST only be accessible through secure connections. For web-based services this means HTTPS only (often referred to by the acronyms TLS or SSL, which both refer to the protocol underpinning these secure connections). Services MUST NOT accept HTTP connections under any circumstances.</p>
+<p>Therefore, all services accessed through <code>service.gov.uk</code> domains (including APIs) MUST only be accessible through secure connections. For web-based services this means HTTPS only (often referred to by the acronyms TLS or SSL, which both refer to the protocol underpinning these secure connections). Services MUST NOT accept HTTP connections under any circumstances.</p>
 
 <p>Once a service manager has verified that their HTTPS setup is working fine they SHOULD enable <a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a> on the production domains (<code>www.</code>, <code>admin.</code> and <code>assets.</code>), by setting HTTP an HTTP response header such as</p>
 

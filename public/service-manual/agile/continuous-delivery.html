@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Discussion Guides — Government Service Design Manual</title>
+<title>Continuous Delivery — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -147,9 +147,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/users">Know your users</a></li>
-      
-      <li><a href="/service-manual/users/user-research">User research</a></li>
+      <li><a href="/service-manual/agile">Agile</a></li>
       
     </ol>
   </nav>
@@ -160,9 +158,9 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Discussion Guides</h1>
+      <h1>Continuous Delivery</h1>
       
-      <h2 class="subtitle">Tools to help steer user research</h2>
+      <h2 class="subtitle">Making releases boring</h2>
       
     </hgroup>
 
@@ -175,6 +173,8 @@
   
   <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
   
+  <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
+  
 </ul>
 
   </header>
@@ -185,11 +185,15 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-discussion-guides"><a href="#discussion-guides">Discussion Guides</a>
+<li class="level-the-deployment-pipeline"><a href="#the-deployment-pipeline">The deployment pipeline</a>
 <ol>
-<li class="level-wherehow-you-might-use-it"><a href="#wherehow-you-might-use-it">Where/how you might use it</a>
+<li class="level-the-commit-stage"><a href="#the-commit-stage">The commit stage</a>
 </li>
-<li class="level-example"><a href="#example">Example</a>
+<li class="level-shared-sandbox-environment"><a href="#shared-sandbox-environment">Shared sandbox environment</a>
+</li>
+<li class="level-specialist-testing-environments"><a href="#specialist-testing-environments">Specialist testing environments</a>
+</li>
+<li class="level-production-environment"><a href="#production-environment">Production environment</a>
 </li>
 </ol>
 </li>
@@ -199,27 +203,46 @@
     </div>
 
     <div class="inner">
-      <h1 id="discussion-guides">Discussion Guides</h1>
+      <p>Continuous Delivery builds upon the iterative, adaptive process of delivering valuable software and testing assumptions about product direction. From the <a href="http://en.wikipedia.org/wiki/Lean_software_development">Lean philosophy</a>, software that is not in production isn’t delivering value, it should be treated as inventory piling up, and inventory is waste.</p>
 
-<p>Discussion guides are used in order to ensure that focus groups and 1:1 interviews cover the required topics, and information is obtained from the sessions that will address the needs of the research. </p>
+<p><a href="/service-manual/agile">Agile</a> development practices normally look to have a product in a deployable state at the end of each iteration. It does not necessarily follow that the product should be deployed at the end of each iteration. The important thing is having the capability to do so.</p>
 
-<h2 id="wherehow-you-might-use-it">Where/how you might use it</h2>
+<p>Understanding your end-to-end deployment pipeline has massive benefits for addressing <a href="/service-manual/making-software/configuration-management.html">configuration management</a> and the automation of your build, deploy, test and release processes. By automating your deployment process, you are forced to fully understand it and resolve early on any issues with getting code from your version control system into production. Automating the deployment early also means that it will be tested and bugs ironed out, so that <a href="/service-manual/making-software/release-strategies.html">releases become frequent, low-risk</a>, almost boring events.</p>
 
-<p>In preparation for a focus group / 1:1 interviews it is helpful to generate a list of questions that address the information that you’re interested in obtaining from the sessions. These questions should be open ended, and structured in a manner that will form the basis for a draft discussion guide, and help elicit information from respondents in a sensible flow. Writing a discussion guide should be an iterative process and once the initial draft has been written it is helpful to get input from other people on the project team. </p>
+<p>If you treat long-term planning as an attempt to predict the future, then attempting to predict what features will be available for a production release slot in 6 months time is a somewhat redundant exercise. If instead, your process allows for deploying anything when it is ready, then release planning becomes a lot simpler. If a project needs to miss a release slot, then it can always be rescheduled for tomorrow or next week, rather than in 6 months, or perhaps in a year if the next slot is already full up!</p>
 
-<p>As suggested by the name, discussion guides should be used as a guide to the discussion, and in comparison with a structured questionnaire, questions and areas for coverage should not read out verbatim. This enables the discussion to be led by respondents’ own experience.</p>
+<p>Another advantage is being able to quickly respond to security patches or similar changes in underlying libraries / frameworks used by your application. You can quickly make a change and watch the update flow through the various gates in your deployment pipeline, confident that nothing has been broken.</p>
 
-<p>Typically each section of the guide would include time guidance to ensure all areas can be covered and it should also indicate when stimulus is being used, and specify participants’ tasks.</p>
+<h2 id="the-deployment-pipeline">The deployment pipeline</h2>
 
-<h2 id="example">Example</h2>
+<p>What happens to code between it being written by a developer, and deployed to production? We refer to this process as the <strong>deployment pipeline</strong>.</p>
 
-<p><a href="/service-manual/assets/documents/BISExpertInterviewsDiscussionGuideOctober2012.docx.pdf">A discussion guide written for testing that was conducted with BIS experts for the development of GOV.UK</a> (PDF, 157kb).</p>
+<h3 id="the-commit-stage">The commit stage</h3>
+
+<p>Whenever a developer checks into <a href="/service-manual/making-software/version-control.html">version control</a>, a <a href="/service-manual/making-software/testing-in-agile.html">suite of tests</a> is run against the latest version of the code. At this stage, any quick, easy-to-identify defects such as compile errors or unit test failures are caught. If the tests pass, the code progresses to the next stage.</p>
+
+<h3 id="shared-sandbox-environment">Shared sandbox environment</h3>
+
+<p>The code is deployed to a shared <a href="/service-manual/making-software/sandbox-and-staging-servers.html">sandbox</a> environment, where everyone involved in the project can observe it. The sandbox should be similar to production as far as is practical: for example, if production uses Postgres, the sandbox should also use Postgres and not another database such as MySQL or sqlite.</p>
+
+<p>Every commit is considered a potential candidate to be released into production. The sandbox environment is the first environment where the application is deployed and run. This is the first stage where it can be visually inspected for <a href="/service-manual/agile/quality.html">quality</a> by anybody on the team. The purpose is to identify any defect which means the application should not be deployed to production. If such a defect is found, this version of the code stops here; otherwise, it can proceed to further specialist testing environments.</p>
+
+<h3 id="specialist-testing-environments">Specialist testing environments</h3>
+
+<p>There may be a need for other testing environments, to enable testing for specialist requirements such as <a href="/service-manual/operations/load-and-performance-testing.html">load and performance testing</a>, <a href="/service-manual/operations/penetration-testing.html">penetration testing</a>, or <a href="/service-manual/making-software/accessibility-testing.html">accessibility testing</a>. How many environments are needed will depend on the requirements and constraints of individual projects.</p>
+
+<p>If code is determined to be of satisfactory quality, it can now proceed to the live production environment.</p>
+
+<h3 id="production-environment">Production environment</h3>
+
+<p>Once code has passed the commit stage, been deployed into the shared sandbox environment, had any necessary specialist testing run on it, it is considered suitable to go live. Deploying to production should be done in the same way as deploying to any other environment – using the same scripts, same <a href="/service-manual/making-software/configuration-management.html">configuration management</a> tooling, and the same version of the code. This ensures that when code is released to production, you are not doing it for the first time; you are instead performing an operation which has been validated at each stage throughout the deployment pipeline.</p>
+
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/user-research/discussionguides.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/user-research/discussionguides.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/agile/continuous-delivery.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/agile/continuous-delivery.md">Page source</a>
         </ol>
       </nav>
     </div>
