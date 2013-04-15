@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -171,13 +177,13 @@
 </li>
 <li class="level-creating-a-domain"><a href="#creating-a-domain">Creating a domain</a>
 </li>
-<li class="level-sub-domains"><a href="#sub-domains">Sub-Domains</a>
+<li class="level-subdomains"><a href="#subdomains">Subdomains</a>
+</li>
+<li class="level-transport-layer-security"><a href="#transport-layer-security">Transport Layer Security</a>
 </li>
 <li class="level-cookies"><a href="#cookies">Cookies</a>
 </li>
-<li class="level-transport-level-security"><a href="#transport-level-security">Transport Level Security</a>
-</li>
-<li class="level-robotstxt-and-root-level-redirections"><a href="#robotstxt-and-root-level-redirections">Robots.txt and root-level redirections</a>
+<li class="level-robotstxt-and-root-level-redirections"><a href="#robotstxt-and-root-level-redirections">robots.txt and root level redirections</a>
 </li>
 <li class="level-origin-servers-for-cdn-based-provider-of-ddos-protection"><a href="#origin-servers-for-cdn-based-provider-of-ddos-protection">Origin Servers for CDN-based provider of DDOS Protection</a>
 </li>
@@ -189,109 +195,144 @@
     </div>
 
     <div class="inner">
-      <p>While the start and end of a user’s journey will be on GOV.UK (ie on gov.uk/transaction-name), the service itself will hosted elsewhere, and will need a different domain name as a result.</p>
+      <p>Government offers a number of different digital services to citizens. While the start and end of a user’s journey will be on GOV.UK, the service itself will typically be hosted elsewhere, and will need a different domain name as a result. This page describes the use of <code>service.gov.uk</code> subdomains for hosting digital services.</p>
 
 <blockquote>
-  <p>Note: Where the words <strong>MUST</strong>, SHOULD, MAY and MUST NOT appear in this document in capital letters they <strong>MUST</strong> be interpreted as defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+  <p>Note: This document is written as a “standard,” and as such uses the words MUST, SHOULD, MAY and MUST NOT as defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
 </blockquote>
 
 <h2 id="one-entry-point">One entry point</h2>
 
-<p>Every digital service offered by the UK government MUST have a single, well-known place on the Internet where users can go to when they want to use the service.  </p>
+<p>Every digital service offered by the UK government MUST have a single, well-known place on the Internet where users can go to when they want to use the service. That well-known place will be the relevant start page on GOV.UK – for instance, the DVLA’s tax disc service is at <a href="https://www.gov.uk/tax-disc">https://www.gov.uk/tax-disc</a>.</p>
 
-<p>That well-known place is the relevant start page on www.gov.uk - for instance, the DVLA’s tax disc service is at <a href="https://www.gov.uk/tax-disc">https://www.gov.uk/tax-disc</a>.</p>
+<p>Service managers MUST NOT advertise any URL other than that of the GOV.UK start page as the starting point for the relevant service. This is what gets printed on literature and used in email signatures, TV adverts, etc.</p>
 
-<p>Service owners MUST advertise the relevant start page as the starting point for the relevant service. This is what gets printed on literature, email signatures, TV adverts, etc. </p>
-
-<p>The start page URL for a given service will be allocated by GDS based on discussions with the service owner and analysis of user behaviour, search referrals and other relevant data.</p>
+<p>The start page URL for a given service will be allocated by GDS based on discussions with the service manager and analysis of user behaviour, search referrals and other relevant data.</p>
 
 <h2 id="creating-a-domain">Creating a domain</h2>
 
-<p>The transactional part of a service - the dynamically generated pages where users interact with the service - will typically not be hosted on the “www.gov.uk” domain. That means that each service needs its own domain name for the transactional part of the service. </p>
+<p>The transactional part of a service – the dynamically generated pages where users interact with the service – will typically not be hosted on the <code>www.gov.uk</code> domain. That means that each service needs its own domain name for the transactional part of the service.</p>
 
 <blockquote>
   <p>Note: This does not apply to the set of interactive tools on GOV.UK known as “smart answers” which are developed and maintained by GDS in partnership with other government departments.</p>
 </blockquote>
 
-<p>For all new digital government services going live from 1 April 2013 the GDS will create a domain name of the form “servicename.service.gov.uk” (where “servicename” is a plain English description of the service agreed between the relevant dept/agency and GDS). This will introduce consistency across central government domains for digital services and remove the dependency on departmental sub-domains (which are of course vulnerable to machinery of government changes) and the now-retired DirectGov and BusinessLink online brands.</p>
+<p>For all new digital government services going live from 1 April 2013 GDS will create a domain name of the form <code>servicename.service.gov.uk</code> (where “servicename” is a plain English description of the service agreed between the relevant dept/agency and the Government Digital Service). This will introduce consistency across central government domains for digital services and remove the dependency on departmental subdomains (which are of course vulnerable to machinery of government changes) and the now-retired DirectGov and BusinessLink online brands.</p>
 
-<p>The process of obtaining a service.gov.uk sub-domain begins either when the service manager asks a GDS product manager for a start page on GOV.UK (for services already under development at 13 March 2013) or when the service manager asks for a sub-domain to be created via the GOV.UK service desks’s government contact form (for services where development starts after 13 March 2013).  Sub-domains of service.gov.uk SHOULD describe the service (eg lastingpowerofattorney.service.gov.uk) and SHOULD NOT contain the name of the service owning department or agency (eg ministryofmagicwandregistration.service.gov.uk)</p>
+<p>The process of obtaining a <code>service.gov.uk</code> subdomain begins either when the service manager asks a Government Digital Service product manager for a start page on GOV.UK (for services already under development at 13 March 2013) or when the service manager asks for a subdomain to be created via the GOV.UK service desks’s government contact form (for services where development starts after 13 March 2013).  Subdomains of <code>service.gov.uk</code> SHOULD describe the service (eg <code>lastingpowerofattorney.service.gov.uk</code>) and SHOULD NOT contain the name of the service owning department or agency (eg <code>ministryofmagicwandregistration.service.gov.uk</code>)</p>
 
-<p>The service-owning dept/agency will be given delegated authority to manage the domain and its sub-domains, although in some cases this work will be carried out by third party suppliers.</p>
+<p>The service-owning dept/agency will be given delegated authority to manage the domain and its subdomains, although in some cases this work will be carried out by third party suppliers.</p>
 
-<h2 id="sub-domains">Sub-Domains</h2>
+<h2 id="subdomains">Subdomains</h2>
 
-<p>This section give some guidance about which sub-domains a service owner should create once they have been given control of servicename.service.gov.uk.</p>
+<p>This section gives some guidance about which subdomains a service manager should create once they have been given control of <code>servicename.service.gov.uk</code>.</p>
 
-<p><strong>Maximum number of visible sub domains</strong></p>
+<p><strong>Maximum number of visible subdomains</strong></p>
 
-<p>The user-facing live service SHOULD usually be operated using at most three user-visible sub domains of servicename.service.gov.uk:</p>
+<p>The user-facing live service SHOULD be operated using at most three user-visible subdomains of <code>servicename.service.gov.uk</code>:</p>
 
 <ul>
-  <li>“www.servicename.service.gov.uk” is for the public facing, dynamic web pages that make up your service.</li>
-  <li>“assets.servicename.service.gov.uk” is for assets such as static images and shared javascript files needed to run your live service. Note: written content about the service, eg guides to eligibility or detailed guidance for applicants, should be on www.gov.uk.</li>
-  <li>“admin.servicename.service.gov.uk” is for feature that enable non-technical staff to run the service (eg contact centre staff might use this sub-domain to access and process work items where human judgement is needed).</li>
+  <li><code>www.servicename.service.gov.uk</code> is for the public facing, dynamic web pages that make up your service.</li>
+  <li><code>assets.servicename.service.gov.uk</code> is for assets such as static images and shared javascript files needed to run your live service. Note: written content about the service, such as guides to eligibility or detailed guidance for applicants, should be on GOV.UK.</li>
+  <li><code>admin.servicename.service.gov.uk</code> is for features that enable non-technical staff to run the service (eg contact centre staff might use this subdomain to access and process work items where human judgement is needed).</li>
 </ul>
 
 <p>You SHOULD NOT create separate domains for APIs unless there’s a really good reason to have a completely separate domain. (Really good reasons are few and far between.)</p>
 
-<p>Service managers should notify the GDS technical architects (via your Transformation team contact) if you intend to create user-visible sub domains other than the three listed above. We’re developing some patterns for more unusual system designs as well as for mainstream transactional services, and we’re always up for a discussion about exceptions and edge cases.</p>
+<p>Service managers should notify the Government Digital Service technical architects (via your Transformation team contact) if you intend to create user-visible subdomains other than the three listed above. We’re developing some patterns for more unusual system designs as well as for mainstream transactional services, and we’re always up for a discussion about exceptions and edge cases.</p>
 
 <p><strong>Usernames and passwords</strong></p>
 
-<p>If the service is a private alpha or private beta release then it should be protected by a username and password known only to the development team and the users who are testing the service. If a service, or part of a service, is a public alpha or beta releases then it should be clearly marked as such with a text label on every page (i.e. don’t use an image containing the word alpha or beta) and in every API response.</p>
+<p>If the service is a private alpha or private beta release then it should be protected by a username and password known only to the development team and the users who are testing the service. If a service, or part of a service, is a public alpha or beta releases then it should be clearly marked as such with a text label on every page (ie don’t use an image containing the word alpha or beta) and in every API response.</p>
 
-<p><strong>multiple environments</strong></p>
+<p><strong>Multiple environments</strong></p>
 
-<p>It is good practice to have multiple “environments” for the development, testing and live (aka production) versions of any service. (see also http://guidance.digital.cabinet-office.gov.uk/making-software/sandbox-and-staging-servers.html)  Typically, the sub domains used to access a development or testing instance of the service are structured in the same way as the sub domains used in the live version of the service.</p>
+<p>It is good practice to have multiple “environments” for the development, testing and live (aka production) versions of any service. The <a href="/service-manual/making-software/sandbox-and-staging-servers.html">development and testing environments</a> allow the team to assess the correctness and quality of the service before it goes live. Typically, the subdomains used to access a development or testing instance of the service are structured in the same way as the subdomains used in the live version of the service.</p>
 
-<p>Therefore, you MAY create other sub domains of servicename.service.gov.uk for use in testing and development, such as www-preview.servicename.service.gov.uk and www-dev.servicename.service,gov.uk. If there is a compelling reason to use a non gov.uk domain for testing and/or development sub-domains that’s also acceptable.</p>
+<p>Therefore, you MAY create other subdomains of <code>servicename.service.gov.uk</code> for use in testing and development, such as <code>www-preview.</code> and <code>www-dev.</code>. If there is a compelling reason to use a non <code>.gov.uk</code> domain for testing and/or development subdomains, that’s also acceptable.</p>
 
 <p>Regardless of the domain name used, web-based services on testing and development domains (including APIs) should be protected by a username and password along the same lines as private alpha and beta releases.</p>
 
+<h2 id="transport-layer-security">Transport Layer Security</h2>
+
+<p>Many services will collect personal information from users. It’s very important that this information can’t be intercepted by malicious third parties as it travels over the Internet.</p>
+
+<p>Therefore, all services accessed through <code>service.gov.uk</code> domains (including APIs) MUST only be accessible through secure connections. For web-based services this means HTTPS only (often referred to by the acronyms TLS or SSL, which both refer to the protocol underpinning these secure connections). Services MUST NOT accept HTTP connections under any circumstances.</p>
+
+<p>Once a service manager has verified that their HTTPS setup is working fine they SHOULD enable <a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a> on the production domains (<code>www.</code>, <code>admin.</code> and <code>assets.</code>), by setting HTTP an HTTP response header such as</p>
+
+<pre><code>Strict-Transport-Security: max-age=1209600, includeSubDomains;
+</code></pre>
+
+<p>representing a commitment to HTTPS-only traffic for 14 days. Once the service manager is confident that HSTS is configured correctly, you SHOULD increase the commitment to months or years:</p>
+
+<pre><code>Strict-Transport-Security: max-age=31536000, includeSubDomains;
+</code></pre>
+
 <h2 id="cookies">Cookies</h2>
 
-<p>Cookies used on “www.servicename.service.gov.uk” and “admin.servicename.service.gov.uk” <strong>MUST</strong> be scoped to the originating domain only. Cookies MUST NOT be scoped to the domain “servicename.service.gov.uk”.</p>
+<p>Cookies used on <code>www.servicename.service.gov.uk</code> and <code>admin.servicename.service.gov.uk</code> MUST be scoped to the originating domain only. Cookies MUST NOT be scoped to the domain <code>servicename.service.gov.uk</code>.</p>
 
-<p>Cookies SHOULD NOT be needed on “assets.servicename.service.gov.uk” (they introduce a browser overhead that slows down the response time for users without providing any benefit for the service owner - more on this at <a href="http://developer.yahoo.com/performance/rules.html#cookie_free">http://developer.yahoo.com/performance/rules.html#cookie_free</a> ).</p>
+<p>Cookies SHOULD NOT be used on <code>assets.servicename.service.gov.uk</code> (they <a href="http://developer.yahoo.com/performance/rules.html#cookie_free">introduce a browser overhead that slows down the response time for users</a> without providing any benefit for the service manager).</p>
 
-<p>Cookies MUST be sent with the Secure attribute. See also “Transport Level Security” below.</p>
+<p>Cookies MUST be sent with the <code>Secure</code> attribute and SHOULD, where appropriate, be sent with the <code>HttpOnly</code> attribute. These flags <a href="https://en.wikipedia.org/wiki/HTTP_cookie#Secure_and_HttpOnly">provide additional assurances about how cookies will be handled by browsers</a>.</p>
 
-<h2 id="transport-level-security">Transport Level Security</h2>
+<h2 id="robotstxt-and-root-level-redirections">robots.txt and root level redirections</h2>
 
-<p>Many transactions will collect personal information from users. It’s very important that this information can’t be intercepted by malicious third parties as it travels over the Internet. </p>
+<p>GOV.UK is the place for users to find all government services, so it’s important to ensure that users always start on the relevant GOV.UK page, rather than a different or duplicate start page on <code>www.servicename.service.gov.uk</code>.</p>
 
-<p>Therefore, all transactions accessed through service.gov.uk domains (including APIs) MUST only be accessible through secure connections. For web-based services this means HTTPS only (often referred to by the acronyms TLS or SSL, which both refer to the protocol underpinning these secure connections). Services MUST NOT accept HTTP connections under any circumstances.</p>
-
-<p>Once a service owner has verified that their HTTPS setup is working fine they SHOULD enable <a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a> on the production domains (www, admin and assets). We will provide templates for HSTS headers in due course, but when you first enable HSTS we recommend setting a fairly short TTL (ie a few hours) just in case you make a configuration error. This can be increased to 1 year once the service owner is confident that HSTS is configured correctly.</p>
-
-<h2 id="robotstxt-and-root-level-redirections">Robots.txt and root-level redirections</h2>
-
-<p>GOV.UK is the place for users to find all government servicess, so it’s important to ensure that users always start on the relevant GOV.UK page, rather than a different or duplicate start page on www.servicename.service.gov.uk. </p>
-
-<p>That means services need to ask search engines not to index pages on their domains, so that the relevant GOV.UK page and the service domain don’t compete with each other in search engine results. This can be achieved by redirecting users to the www.gov.uk start page if they go directly to the service’s domain name, and by asking search engines not to index pages on the service’s domain name. Therefore, every service hosted on a service.gov.uk domain MUST:</p>
+<p>As a result, services need to ask search engines not to index pages on their domains, so that the relevant GOV.UK page and the service domain don’t compete with each other in search engine results. This can be achieved by redirecting users to the relevant GOV.UK start page if they go directly to the service’s domain name, and by asking search engines not to index pages on the service’s domain name. Therefore, every service hosted on a service.gov.uk domain MUST:</p>
 
 <ul>
-  <li>Have a robots.txt file on their the www, admin and assets sub domains asking search engines not to index any part of the site. We will issue example robots.txt templates in due course, but for now please see http://www.robotstxt.org/faq/prevent.html for more information.</li>
-  <li>Have an HTTP 301 redirection from the top-level index page of the www and assets subdomains to the relevant start page on www.gov.uk.  (Note: this means that the service start page on www.gov.uk SHOULD NOT link to https://www.servicename.service.gov.uk/ because that would just send the user back to the service start page.)</li>
+  <li>
+    <p>Have a <code>robots.txt</code> file on the <code>www</code>, <code>admin</code> and <code>assets</code> subdomains asking search engines not to index any part of the site. Example content for <code>robots.txt</code> is given below, and more details can be found on <a href="http://www.robotstxt.org/faq/prevent.html">The Web Robots Pages</a>:</p>
+
+    <pre><code>User-agent: *
+Disallow: /
+</code></pre>
+  </li>
+  <li>
+    <p>Have an HTTP 301 redirection from the top-level index page of the <code>www</code> and <code>assets</code> subdomains to the relevant start page on GOV.UK. (Note: this means that the service start page on GOV.UK SHOULD NOT link to the root of the <code>www</code> domain.)</p>
+  </li>
 </ul>
 
-<h2 id="origin-servers-for-cdn-based-provider-of-ddos-protection">Origin Servers for CDN-based provider of DDOS Protection</h2>
+<h2 id="origin-servers-for-cdn-based-provider-of-ddos-protection">Origin Servers for <abbr title="Content Delivery Network">CDN</abbr>-based provider of <abbr title="Distributed Denial of Service">DDOS</abbr> Protection</h2>
 
-<p>If you have contracted with a CDN-based DDOS-protection supplier(s) (such as Level 3, Fastly or Akamai) then you SHOULD register the following additional sub domains for use by your supplier(s): www-production.servicename.service.gov.uk, admin-production.servicename.service.gov.uk and assets-production.servicename.service.gov.uk. Your supplier(s) will use these sub-domains to identify the IP address(es) of your service’s www, admin and assets sub-domains. </p>
+<p>If you have contracted with <a href="https://en.wikipedia.org/wiki/Content_delivery_network"><abbr title="Content Delivery Network">CDN</abbr></a>-based <a href="https://en.wikipedia.org/wiki/DDOS#Distributed_attack"><abbr title="Distributed Denial of Service">DDOS</abbr></a>-protection suppliers then you SHOULD register the following additional subdomains for use by your suppliers:</p>
 
-<p>Detailed configuration advice for origin servers is outside of the scope of this document, but in general it’s worth configuring them to only listen for traffic from a) the DDOS protection provider’s servers and b) from the location(s) where the service itself is being developed and/or managed.</p>
+<ul>
+  <li><code>www-production.servicename.service.gov.uk</code></li>
+  <li><code>admin-production.servicename.service.gov.uk</code></li>
+  <li><code>assets-production.servicename.service.gov.uk</code></li>
+</ul>
 
-<p>At present we advise against allowing DDOS protection suppliers to terminate SSL connections for transactional services carrying personal information, but this behaviour is not prohibited at present. Although SSL termination on the third party network would allow the supplier(s) to carry out additional analysis and potentially extra mitigations against certain types of attack, it would also give the supplier access to all the personal information being submitted to your service. There are obvious downsides to allowing this level of access, especially if the supplier’s network and processes have not been accredited to the same level as the rest of the service. It’s a risk based decision, but if in doubt we suggest a presumption against SSL termination on third party networks.</p>
+<p>Your suppliers will use these subdomains to address your <code>www</code>, <code>admin</code> and <code>assets</code> services.</p>
 
-<p>Many suppliers offer IP forwarding DDOS protection, which does not have the same security issues as SSL termination, and is recommended in preference to SSL termination.  If your service requires transaction monitoring (which is not at all the same thing as DDOS protection) you should contact your CESG account manager for advice.  This is interim guidance and will be updated - check back in early May 2013 for an update.</p>
+<p>Detailed configuration advice for origin servers is outside of the scope of this document, but it is important to ensure that these “origin domains” only listen for traffic from trusted source such as</p>
+
+<ul>
+  <li>the <abbr title="Distributed Denial of Service">DDOS</abbr> protection provider’s servers</li>
+  <li>the locations where the service itself is being developed and/or managed</li>
+</ul>
+
+<p>At present we advise against allowing <abbr title="Distributed Denial of Service">DDOS</abbr> protection suppliers to terminate SSL connections for transactional services carrying personal information, but this behaviour is not prohibited at present. Although SSL termination on the third party network would allow the supplier(s) to carry out additional analysis and potentially extra mitigations against certain types of attack, it would also give the supplier access to all the personal information being submitted to your service. There are obvious downsides to allowing this level of access, especially if the supplier’s network and processes have not been accredited to the same level as the rest of the service. It’s a risk based decision, but if in doubt we suggest a presumption against SSL termination on third party networks.</p>
+
+<p>Many suppliers offer IP forwarding <abbr title="Distributed Denial of Service">DDOS</abbr> protection, which does not have the same security issues as SSL termination, and is recommended in preference to SSL termination.  If your service requires transaction monitoring (which is not at all the same thing as <abbr title="Distributed Denial of Service">DDOS</abbr> protection) you should contact your CESG account manager for advice.  This is interim guidance and will be updated - check back in early May 2013 for an update.</p>
 
 <h2 id="emails-sent-to-service-users">Emails sent to service users</h2>
 
-<p>Emails to users of your service SHOULD be sent from a human-monitored email address that originates from the domain servicename.service.gov.uk (and not the dept/agency or any other domain name). </p>
+<p>Emails to users of your service SHOULD be sent from a human-monitored email address that originates from the domain <code>servicename.service.gov.uk</code> (and not the dept/agency or any other domain name).</p>
 
-<p>You SHOULD enable <a href="http://en.wikipedia.org/wiki/Sender_Policy_Framework">SPF</a> on the sending domain. You MAY also want to use DKIM on the sending domain; it can provide additional guarantees about message delivery and help recipients to more easily distinguish genuine mail from forgery.</p>
+<p>You SHOULD enable <a href="http://en.wikipedia.org/wiki/Sender_Policy_Framework"><abbr title="Sender Policy Framework">SPF</abbr></a> on the sending domain. You MAY also want to use <a href="http://www.dkim.org/"><abbr title="DomainKeys Identified Mail">DKIM</abbr></a> on the sending domain; it can provide additional guarantees about message delivery and help recipients to more easily distinguish genuine mail from forgery.</p>
 
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/operations/operating-servicegovuk-subdomains.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/operations/operating-servicegovuk-subdomains.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -231,7 +237,7 @@
 
 <h2 id="fast-feedback">Fast Feedback</h2>
 
-<p>Agile is reliant on fast feedback loops, so that we can actually be agile and change when we need to change. Testing should be about giving that fast feedback, at the time when it is useful. Agile test techniques (e.g. Behaviour driven development, Acceptance test driven development) have their place and we may well use them, but they are not the primary focus of the test approach.</p>
+<p>Agile is reliant on fast feedback loops, so that we can actually be agile and change when we need to change. Testing should be about giving that fast feedback, at the time when it is useful. Agile test techniques (eg Behaviour driven development, Acceptance test driven development) have their place and we may well use them, but they are not the primary focus of the test approach.</p>
 
 <h2 id="tests-are-an-asset-of-the-product">Tests are an asset of the product</h2>
 
@@ -249,7 +255,7 @@
 
 <h2 id="optimise-value">Optimise value</h2>
 
-<p>Testing, done well, will inform the the best way forward and get the best “bang for buck” in terms of effort expended in various functional or non-functional areas.  It will help make the tough decisions, and drive the development effort based on the risk of each choice of story.  It will help the prioritisation based on the understanding of the complexity of the system.</p>
+<p>Testing, done well, will inform the best way forward and get the best “bang for buck” in terms of effort expended in various functional or non-functional areas.  It will help make the tough decisions, and drive the development effort based on the risk of each choice of story.  It will help the prioritisation based on the understanding of the complexity of the system.</p>
 
 <h2 id="types-of-testing">Types of testing</h2>
 
@@ -262,13 +268,13 @@ These tests run in Continuous Integration (C.I.) which means that they form part
 <h3 id="exploratory-testing">Exploratory Testing</h3>
 <p>Exploratory testing is a term commonly used to describe unscripted manual testing whereby the tester uses his or her knowledge, experience and intuition to navigate through the software and identify bugs. A scripted test can only ever test a predetermined outcome. Exploratory testing aims to find and test the less obvious outcomes. A good way to think about it is that automated tests prevent bugs whereas exploratory tests find them.  </p>
 
-<p>Exploratory testing is normally time-boxed and has a specific purpose - e.g. ‘I will spend x hours exploring y and z aspects of the system (though my explorations may take me elsewhere and it may take more or less time, I’ll use my judgement as I go)’. </p>
+<p>Exploratory testing is normally time-boxed and has a specific purpose - eg ‘I will spend x hours exploring y and z aspects of the system (though my explorations may take me elsewhere and it may take more or less time, I’ll use my judgement as I go)’. </p>
 
 <p>The term does not imply that the tester has not prepared for the testing. They will have given the testing some detailed planning in advance, thinking for instance about the specific aspects they want to explore, and any data or other system set-up that they will need.  </p>
 
 <p>Automation may still play a part - not to run the tests themselves but, for instance, to set up the data or to get a set of transactions into predetermined states.</p>
 
-<p>In a team where you have a one or more dedicated ‘quality analysts’ or ‘testers’ this type of testing will normally be part of their role. In a developer-only team time will need to be put aside for them the developers themselves to do this type of testing. As a developer has been deeply involved in writing the code, it is sometime difficult for them to step far enough enough from the system to see paths through the system that they hadn’t previously envisaged. To help with this it’s ideal if they can be assigned to exploratory testing for a full day to allow the appropriate amount of context switching. It is also preferable if they are exploring parts of the system that they have been less involved in developing.</p>
+<p>In a team where you have a one or more dedicated ‘quality analysts’ or ‘testers’ this type of testing will normally be part of their role. In a developer-only team time will need to be put aside for them the developers themselves to do this type of testing. As a developer has been deeply involved in writing the code, it is sometime difficult for them to step far enough from the system to see paths through the system that they hadn’t previously envisaged. To help with this it’s ideal if they can be assigned to exploratory testing for a full day to allow the appropriate amount of context switching. It is also preferable if they are exploring parts of the system that they have been less involved in developing.</p>
 
 <p>When a manual test uncovers a defect, it is important to always add an automated test to catch it going forward and hence prevent any reoccurrence.</p>
 
@@ -293,6 +299,13 @@ These tests run in Continuous Integration (C.I.) which means that they form part
 <h3 id="test-your-ideas">Test Your Ideas</h3>
 <p>Don’t forget, don’t just test the product itself - test your ideas.   For information on how to do this read <a href="/service-manual/users/introduction-to-user-research.html">the guidance about user research</a>.</p>
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/testing-in-agile.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/testing-in-agile.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

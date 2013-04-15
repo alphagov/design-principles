@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Failing to meet the standard — Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css"]},
+  c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css"> <!--<![endif]-->
+
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon">
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+<script defer="defer" src="https://assets.digital.cabinet-office.gov.uk/static/application-6258ecda5edb624948d1ba70b960ecae.js" type="text/javascript"></script>
+
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+<header role="banner" class="group" id="global-header">
+  <div class="header-wrapper group">
+    <a href="/" title="Go to the gov.uk homepage" id="logo"><img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK"></a>
+
+    <a href="#search" class="button search-toggle">Search</a>
+
+    <form id="search" class="site-search" action="/search" method="get" role="search">
+      <label for="site-search-text" class="visuallyhidden">Search</label>
+      <input type="search" name="q" id="site-search-text" title="Search"><input class="button" type="submit" value="Search">
+    </form>
+  </div>
+</header>
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      <div class="js-toggle-nav" id="global-nav">
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      <div id="caveat-notice">
+  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
+
+  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
+
+  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
+</div>
+
+      
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/digital-by-default">Digital by Default Service Standard</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Failing to meet the standard</h1>
+      
+      <h2 class="subtitle">Services so good that people prefer to use them</h2>
+      
+    </hgroup>
+
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-failure-during-service-design"><a href="#failure-during-service-design">Failure during service design</a>
+</li>
+<li class="level-failure-to-pass-the-go-live-panel"><a href="#failure-to-pass-the-go-live-panel">Failure to pass the Go Live Panel</a>
+</li>
+<li class="level-failure-of-a-live-service-to-meet-performance-goals"><a href="#failure-of-a-live-service-to-meet-performance-goals">Failure of a live service to meet performance goals</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>A service may fail to meet the standard at three points:</p>
+
+<ol>
+  <li>during the service’s design, prior to going live</li>
+  <li>rejection at a Go Live panel</li>
+  <li>a live service falling below the performance targets approved at launch</li>
+</ol>
+
+<h2 id="failure-during-service-design">Failure during service design</h2>
+
+<p>If there is evidence that a service is being designed in a way which is not in line with the standard, or there is <a href="/service-manual/digital-by-default/providing-evidence.html">no public written record of progress</a>, GDS will raise the issue with the responsible service manager and Digital Leader and suggest corrective action.</p>
+
+<p>Service progress towards meeting the standard will also be assessed at every spending control point the service passes through. If the department cannot provide sufficient evidence that the work completed so far is in line with the criteria and evidence requirements of the standard, further spending on the project will not be approved. If the business case is rejected, GDS will stipulate what the service must provide evidence for in order for funding to be released.</p>
+
+<h2 id="failure-to-pass-the-go-live-panel">Failure to pass the Go Live Panel</h2>
+
+<p>If the Go Live panel does not produce unanimous approval, the service will not be awarded the standard. If the panel does not award the standard, the Chair will provide feedback to the service manager and Digital Leader on what needs to be rectified. The service manager and Digital Leader will then be invited back to present a second time to the panel on an agreed date. </p>
+
+<p>If the panel’s verdict demanded relatively minor changes or a small amount of additional evidence, this second assessment can be completed through correspondence. For more significant changes, a second meeting will be convened.</p>
+
+<p>If the service fails to pass the Go Live panel on two occasions, the Cabinet Office will write to the responsible Minister explaining why the service has not yet been awarded the standard, and what remedial actions are required.</p>
+
+<h2 id="failure-of-a-live-service-to-meet-performance-goals">Failure of a live service to meet performance goals</h2>
+
+<p>If performance levels consistently fall below those set out in the evidence presented to the Go Live panel over a 3 month period after a service has gone live, GDS will a) request a note from the service manager which gives evidence against the criteria above, and b) convene a Performance Panel.</p>
+
+<p>The Performance Panel will be chaired by GDS and include representatives from other departments and external experts when suitable and available. The responsible service manager and Digital Leader will present to the panel, explaining why they believe performance levels are below levels expected at launch and set out what remedial actions they intend on taking to rectify the issues within the next 3 months. The panel will approve this plan, or suggest additional actions. It will approve changes to the performance targets set at launch only if there is compelling evidence that the user needs have demonstrably changed. It will also request monthly updates against the actions.</p>
+
+<p>If after a further three months the performance issues still persist, the Cabinet Office will write to the Minister responsible for the service, explaining that the service is failing to meet the standard, and that a ‘health warning’ will be placed on the start page of the transaction explicitly stating that the service does not meet the standard, apologising to users, and requesting their feedback. Once performance returns to the levels expected and agreed at launch, this warning will be removed. If there is still no improvement a month after this point, GDS will recommend whether the service should be taken offline, and rolled back to a contingency that does not incur significant unintended expense for the taxpayer.</p>
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/digital-by-default/failure-to-meet-the-standard.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/digital-by-default/failure-to-meet-the-standard.md">Page source</a>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
+
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+    </nav>
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+  _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+  _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+  // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+  _gaq.push(["_setCustomVar",2,"Format","homepage",3]);
+  GOVUK.Analytics.Format = "homepage";
+</script>
+
+<script src="https://assets.digital.cabinet-office.gov.uk/static/analytics-8d2f36e4f47ad7e8a049cec4e638455a.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var utm = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/__utm.gif';
+
+    // Construct the gif hit url.
+    utm += "?utmwv=" + "5.3.9";
+    utm += "&utmn=" + Math.floor(Math.random() * parseInt('0x7fffffff', 16));
+    utm += "&utmhn=" + encodeURIComponent(document.location.hostname);
+    utm += "&utmp=" + encodeURIComponent("/print" + document.location.pathname);
+    utm += "&utmac=" + "UA-26179049-1";
+    utm += "&utmcc=__utma%3D999.999.999.999.999.1%3B";
+
+    var styleNode = document.createElement('style');
+    styleNode.setAttribute("type", "text/css");
+    var css = document.createTextNode("@media print { body:after { content: url(" + utm + "); } body { *background: url(" + utm + ") no-repeat; }}");
+
+    if (styleNode.styleSheet) {
+      styleNode.styleSheet.cssText = css.nodeValue;
+    } else {
+      styleNode.appendChild(css);
+    }
+
+    var head = document.getElementsByTagName('head')[0];
+
+    if (head) {
+      head.appendChild(styleNode);
+    }
+  })();
+</script>
+
+</body>
+</html>

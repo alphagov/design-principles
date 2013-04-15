@@ -3,25 +3,25 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Open standards and licensing — Government Service Design Manual</title>
+<title>Continuous Delivery — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -141,7 +147,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/making-software">Making software</a></li>
+      <li><a href="/service-manual/agile">Agile</a></li>
       
     </ol>
   </nav>
@@ -152,14 +158,18 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Open standards and licensing</h1>
+      <h1>Continuous Delivery</h1>
       
-      <h2 class="subtitle">Building services using common standards</h2>
+      <h2 class="subtitle">Making releases boring</h2>
       
     </hgroup>
 
     
 <ul class="meta-phases group">
+  
+  <li class="discovery"><a href="/service-manual/phases/discovery.html">discovery</a></li>
+  
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
   
   <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
   
@@ -175,13 +185,17 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-guidance"><a href="#guidance">Guidance</a>
+<li class="level-the-deployment-pipeline"><a href="#the-deployment-pipeline">The deployment pipeline</a>
+<ol>
+<li class="level-the-commit-stage"><a href="#the-commit-stage">The commit stage</a>
 </li>
-<li class="level-templates"><a href="#templates">Templates</a>
+<li class="level-shared-sandbox-environment"><a href="#shared-sandbox-environment">Shared sandbox environment</a>
 </li>
-<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+<li class="level-specialist-testing-environments"><a href="#specialist-testing-environments">Specialist testing environments</a>
 </li>
-<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+<li class="level-production-environment"><a href="#production-environment">Production environment</a>
+</li>
+</ol>
 </li>
 </ol>
 
@@ -189,47 +203,48 @@
     </div>
 
     <div class="inner">
-      <p>Best practice and considerations for using open standards and using, publishing and contributing to free and open source software (<a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>).</p>
+      <p>Continuous Delivery builds upon the iterative, adaptive process of delivering valuable software and testing assumptions about product direction. From the <a href="http://en.wikipedia.org/wiki/Lean_software_development">Lean philosophy</a>, software that is not in production isn’t delivering value, it should be treated as inventory piling up, and inventory is waste.</p>
 
-<blockquote>
-  <p>Please note, this is for guidance purposes only, and should not be taken as <a href="http://en.wikipedia.org/wiki/IANACL">legal advice</a>.</p>
-</blockquote>
+<p><a href="/service-manual/agile">Agile</a> development practices normally look to have a product in a deployable state at the end of each iteration. It does not necessarily follow that the product should be deployed at the end of each iteration. The important thing is having the capability to do so.</p>
 
-<h2 id="guidance">Guidance</h2>
-<p>Preference should be given to using open standards with the broadest remit over local standards
-as prescribed in the <a href="http://consultation.cabinetoffice.gov.uk/openstandards/">consultation on open standards</a></p>
+<p>Understanding your end-to-end deployment pipeline has massive benefits for addressing <a href="/service-manual/making-software/configuration-management.html">configuration management</a> and the automation of your build, deploy, test and release processes. By automating your deployment process, you are forced to fully understand it and resolve early on any issues with getting code from your version control system into production. Automating the deployment early also means that it will be tested and bugs ironed out, so that <a href="/service-manual/making-software/release-strategies.html">releases become frequent, low-risk</a>, almost boring events.</p>
 
-<p>As with any software, using open source comes with an obligation to follow the terms of the software licence. FOSS differs from <a href="http://en.wikipedia.org/wiki/Proprietary_software">proprietary software</a> in that the source code may be modified, in which case the licence may demand any derived code be republished with <a href="http://en.wikipedia.org/wiki/Attribution_(copyright)">attribution</a>, and under the same terms of the original licence, sometimes called <a href="http://en.wikipedia.org/wiki/Copyleft">copyleft</a>.</p>
+<p>If you treat long-term planning as an attempt to predict the future, then attempting to predict what features will be available for a production release slot in 6 months time is a somewhat redundant exercise. If instead, your process allows for deploying anything when it is ready, then release planning becomes a lot simpler. If a project needs to miss a release slot, then it can always be rescheduled for tomorrow or next week, rather than in 6 months, or perhaps in a year if the next slot is already full up!</p>
 
-<p>These obligations may introduce difficulties when mixing open source software with closed source software, particularly when combining <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a> software with software developed behind closed doors or using <a href="http://www.gnu.org/licenses/agpl-3.0.html">GNU AFFERO</a> licensed software in proprietary services. These risks may be mitigated by <a href="http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/">developing software in the open</a>.</p>
+<p>Another advantage is being able to quickly respond to security patches or similar changes in underlying libraries / frameworks used by your application. You can quickly make a change and watch the update flow through the various gates in your deployment pipeline, confident that nothing has been broken.</p>
 
-<p>Software should be published as open source, under a <a href="http://en.wikipedia.org/wiki/Permissive_free_software_licence">permissive free software licence</a> such as <a href="http://opensource.org/licenses/BSD-2-Clause">BSD</a> or <a href="http://opensource.org/licenses/MIT">MIT</a>.</p>
+<h2 id="the-deployment-pipeline">The deployment pipeline</h2>
 
-<h2 id="templates">Templates</h2>
-<p>The following text is the <a href="http://opensource.org/licenses/MIT">MIT licence</a> used by GDS when publishing software in the open:</p>
+<p>What happens to code between it being written by a developer, and deployed to production? We refer to this process as the <strong>deployment pipeline</strong>.</p>
 
-<pre>
-Copyright (C) 2012 HM Government (Government Digital Service)
+<h3 id="the-commit-stage">The commit stage</h3>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+<p>Whenever a developer checks into <a href="/service-manual/making-software/version-control.html">version control</a>, a <a href="/service-manual/making-software/testing-in-agile.html">suite of tests</a> is run against the latest version of the code. At this stage, any quick, easy-to-identify defects such as compile errors or unit test failures are caught. If the tests pass, the code progresses to the next stage.</p>
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+<h3 id="shared-sandbox-environment">Shared sandbox environment</h3>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</pre>
+<p>The code is deployed to a shared <a href="/service-manual/making-software/sandbox-and-staging-servers.html">sandbox</a> environment, where everyone involved in the project can observe it. The sandbox should be similar to production as far as is practical: for example, if production uses Postgres, the sandbox should also use Postgres and not another database such as MySQL or sqlite.</p>
 
-<p>It is sufficient to include this as a single <strong>LICENSE</strong> [sic] file, though you may elect to include the licence in  individual source code files, particularly those which may be taken in isolation, such as example code.</p>
+<p>Every commit is considered a potential candidate to be released into production. The sandbox environment is the first environment where the application is deployed and run. This is the first stage where it can be visually inspected for <a href="/service-manual/agile/quality.html">quality</a> by anybody on the team. The purpose is to identify any defect which means the application should not be deployed to production. If such a defect is found, this version of the code stops here; otherwise, it can proceed to further specialist testing environments.</p>
 
-<h2 id="why-we-do-this">Why we do this</h2>
-<p>There are many other advantages to <a href="http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/">developing software in the open</a> described in more detail in the <a href="/service-manual/making-software/open-source.html">open source considerations</a> guidance section, and prescribed by the tenth GDS design principle: <a href="https://www.gov.uk/designprinciples#tenth">Make things open: it makes things better</a>.</p>
+<h3 id="specialist-testing-environments">Specialist testing environments</h3>
 
-<h2 id="further-reading">Further reading</h2>
-<ul>
-  <li><a href="https://fossbazaar.org/">fossbazaar.org</a> is an interest group for the governance of FOSS in organisations.</li>
-  <li>the <a href="http://www.ifosslr.org/">International Free and Open Source Software Law Review</a> is a collaborative legal publication aiming to increase knowledge and understanding among lawyers about Free and Open Source Software issues. Topics covered include copyright, licence implementation, licence interpretation, software patents, open standards, case law and statutory changes.</li>
-  <li><a href="http://www.fossology.org/">fossology</a> is one of a number of open source tools useful when assessing open source used by a project.</li>
-</ul>
+<p>There may be a need for other testing environments, to enable testing for specialist requirements such as <a href="/service-manual/operations/load-and-performance-testing.html">load and performance testing</a>, <a href="/service-manual/operations/penetration-testing.html">penetration testing</a>, or <a href="/service-manual/making-software/accessibility-testing.html">accessibility testing</a>. How many environments are needed will depend on the requirements and constraints of individual projects.</p>
 
+<p>If code is determined to be of satisfactory quality, it can now proceed to the live production environment.</p>
+
+<h3 id="production-environment">Production environment</h3>
+
+<p>Once code has passed the commit stage, been deployed into the shared sandbox environment, had any necessary specialist testing run on it, it is considered suitable to go live. Deploying to production should be done in the same way as deploying to any other environment – using the same scripts, same <a href="/service-manual/making-software/configuration-management.html">configuration management</a> tooling, and the same version of the code. This ensures that when code is released to production, you are not doing it for the first time; you are instead performing an operation which has been validated at each stage throughout the deployment pipeline.</p>
+
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/agile/continuous-delivery.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/agile/continuous-delivery.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

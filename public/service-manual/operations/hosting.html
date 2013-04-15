@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -197,17 +203,17 @@
 
 <h2 id="deciding-how-to-host-your-application">Deciding how to host your application</h2>
 
-<p>The recommended approach is to involve a small cross-functional group of people. They will quickly access different options, shortlist suppliers, interview  and finally make a decision. This group should include people with a knowledge of the available Procurement options and acceptable costs but must include people with a hands-on technical understanding of the service and underlying software.</p>
+<p>The recommended approach is to involve a small cross-functional group of people. They will quickly assess different options, shortlist suppliers, interview  and finally make a decision. This group should include people with a knowledge of the available procurement options and acceptable costs but must include people with a hands-on technical understanding of the service and underlying software.</p>
 
-<p>It is important to keep good notes from any interviews or deliberation sessions and to access different suppliers equally. A scoring matrix can help here.</p>
+<p>It is important to keep good notes from any interviews or deliberation sessions and to assess different suppliers equally. A scoring matrix can help here.</p>
 
-<p>It is worth stating that it’s very common to use multiple suppliers. This may be due to them offering different but compatible services or potentially for additional redundancy. This can be technically challenging but for larger projects can provide extra resilliance.</p>
+<p>It is worth stating that it’s very common to use multiple suppliers. This may be due to them offering different but compatible services or potentially for additional redundancy. This can be technically challenging but for larger projects can provide extra resilience.</p>
 
 <h2 id="types-of-provider">Types of provider</h2>
 
 <p>There are a number of different approaches taken by suppliers of hosting services, which can make comparing offerings difficult. The following is intended only as a brief introduction.</p>
 
-<p>This advice is complicated because many service providers redefine the meanings for marketing reasons. In particular <strong>Infrastructure as a service</strong> and <strong>Platform as a service</strong> are marketable at the moment and often used incorrectly. Always look into the details of the services being offered.</p>
+<p>This advice is complicated because many service providers redefine the meanings of hosting terms for marketing reasons. In particular <strong>Infrastructure as a service</strong> and <strong>Platform as a service</strong> are marketable at the moment and often used incorrectly. Always look into the details of the services being offered.</p>
 
 <h3 id="ownership">Ownership</h3>
 
@@ -215,11 +221,11 @@
 
 <h3 id="co-location">Co-location</h3>
 
-<p>Many providers offer co-location services which is where you purchase your own hardware to put into a managed data centre. This provides a great deal of flexibility but can introduce lead times and other physical constrains. It also requires a wide range of technical specialist skills. </p>
+<p>Many providers offer co-location services which is where you purchase your own hardware to put into a managed data centre. This provides a great deal of flexibility but can introduce lead times and other physical constraints. It also requires a wide range of technical specialist skills. </p>
 
 <h3 id="shared-or-managed-hosting">Shared or managed hosting</h3>
 
-<p>Lots of service providers have a shared or managed hosting option. This tends to mean renting specific virtual or physical machines for fixed periods of time. Different suppliers other different management services, some just manage the underlying machine while others will support the operating system and even specific applications running on the machines.</p>
+<p>Lots of service providers have a shared or managed hosting option. This tends to mean renting specific virtual or physical machines for fixed periods of time. Different suppliers offer different management services; some just manage the underlying machine while others will support the operating system and even specific applications running on the machines.</p>
 
 <h3 id="infrastructure-as-a-service">Infrastructure as a service</h3>
 
@@ -227,7 +233,7 @@
 
 <h3 id="platform-as-a-service">Platform as a service</h3>
 
-<p>Similar to Infrastructure as a service above, Platform as a service offerings tend to allow for quickly adding or removing capacity and fine grained pay on demand pricing. The difference is is that you are abstracted away from the underlying infrastructure completely. The unit here is the running application, not a virtual or physical machine. Using a Platform as a service places a number of constrains on the software architecture but can move the support burden for parts of the stack onto the supplier.</p>
+<p>Similar to Infrastructure as a service above, Platform as a service offerings tend to allow for quickly adding or removing capacity and fine-grained pay on demand pricing. The difference is is that you are abstracted away from the underlying infrastructure completely. The unit here is the running application, not a virtual or physical machine. Using a Platform as a service places a number of constraints on the software architecture but can move the support burden for parts of the stack onto the supplier.</p>
 
 <h2 id="make-your-decisions-carefully">Make your decisions carefully</h2>
 
@@ -254,6 +260,13 @@
   <li><a href="http://gcloud.civilservice.gov.uk/">G-Cloud</a> the procurement framework intended for purchasing Infrastructure as a Service, Platform as a Service and Software as a Service products</li>
 </ul>
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/operations/hosting.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/operations/hosting.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

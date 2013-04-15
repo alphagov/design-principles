@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -174,20 +180,60 @@
 <li class="level-person-specification---competencesskills-required"><a href="#person-specification---competencesskills-required">PERSON SPECIFICATION - COMPETENCES/SKILLS REQUIRED</a>
 <ol>
 <li class="level-analysing-evidence-and-thinking-strategically"><a href="#analysing-evidence-and-thinking-strategically">Analysing Evidence and Thinking Strategically</a>
+<ol>
+<li class="level-essential"><a href="#essential">Essential</a>
+</li>
+</ol>
 </li>
 <li class="level-managing-and-supporting-programmes-and-projects"><a href="#managing-and-supporting-programmes-and-projects">Managing and Supporting Programmes and Projects</a>
+<ol>
+<li class="level-essential-1"><a href="#essential-1">Essential</a>
+</li>
+</ol>
 </li>
 <li class="level-focusing-on-customers-and-stakeholders"><a href="#focusing-on-customers-and-stakeholders">Focusing on Customers and Stakeholders</a>
+<ol>
+<li class="level-essential-2"><a href="#essential-2">Essential</a>
+</li>
+</ol>
 </li>
 <li class="level-leading-and-team-working"><a href="#leading-and-team-working">Leading and Team working</a>
+<ol>
+<li class="level-essential-3"><a href="#essential-3">Essential</a>
+</li>
+<li class="level-desirable"><a href="#desirable">Desirable</a>
+</li>
+</ol>
 </li>
 <li class="level-managing-and-valuing-people"><a href="#managing-and-valuing-people">Managing and Valuing People</a>
+<ol>
+<li class="level-essential-4"><a href="#essential-4">Essential</a>
+</li>
+<li class="level-desirable-1"><a href="#desirable-1">Desirable</a>
+</li>
+</ol>
 </li>
 <li class="level-managing-finance-and-resources"><a href="#managing-finance-and-resources">Managing Finance and Resources</a>
+<ol>
+<li class="level-essential-5"><a href="#essential-5">Essential</a>
+</li>
+<li class="level-desirable-2"><a href="#desirable-2">Desirable</a>
+</li>
+</ol>
 </li>
 <li class="level-communicating-and-marketing"><a href="#communicating-and-marketing">Communicating and Marketing</a>
+<ol>
+<li class="level-essential-6"><a href="#essential-6">Essential</a>
+</li>
+<li class="level-desirable-3"><a href="#desirable-3">Desirable</a>
+</li>
+</ol>
 </li>
 <li class="level-specialist-skills--expertise"><a href="#specialist-skills--expertise">Specialist Skills / Expertise</a>
+<ol>
+<li class="level-essential-7"><a href="#essential-7">Essential</a>
+</li>
+</ol>
 </li>
 </ol>
 </li>
@@ -267,7 +313,7 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <ul>
   <li>delivering projects or programmes with a strong understanding of agile and waterfall project management methodologies, change and risk management and the interaction between product development, implementation and support services.</li>
-  <li>assuring all Government Digital Service Products meet the standard build requirements (e.g. functionality, usability, performance, scalability, security, resiliency, etc)</li>
+  <li>assuring all Government Digital Service Products meet the standard build requirements (eg functionality, usability, performance, scalability, security, resiliency, etc)</li>
   <li>managing tight resource constraints, conflicting priorities and a dynamic programme would be highly beneficial</li>
   <li>representing the Government Digital Service at senior level by providing governance and leadership to project teams and ensuring contract management support</li>
   <li>implementing business and cultural change and introducing new process and procedures to ensure business improvements are achieved</li>
@@ -280,8 +326,7 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="analysing-evidence-and-thinking-strategically">Analysing Evidence and Thinking Strategically</h3>
 
-<p>Essential</p>
-
+<h4 id="essential">Essential</h4>
 <ul>
   <li>thinks strategically when integrating complex or conflicting analysis from a range of sources to provide balanced advice</li>
   <li>makes sound, evidence-based decisions, assessing risks and defending decisions and action</li>
@@ -290,8 +335,7 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="managing-and-supporting-programmes-and-projects">Managing and Supporting Programmes and Projects</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-1">Essential</h4>
 <ul>
   <li>manages people, resources and relationships efficiently to ensure effective delivery of programmes and projects</li>
   <li>delivers timely project objectives within budget and to quality standards, ensuring that business benefits are realised</li>
@@ -300,8 +344,7 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="focusing-on-customers-and-stakeholders">Focusing on Customers and Stakeholders</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-2">Essential</h4>
 <ul>
   <li>shapes, links and manages customer and stakeholder expectations to determine delivery capabilities, accounting for changing requirements</li>
   <li>builds trust and openness with customers and stakeholders, keeps them updated on progress and acts upon feedback</li>
@@ -310,14 +353,12 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="leading-and-team-working">Leading and Team working</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-3">Essential</h4>
 <ul>
   <li>provides a vision and defines clear team roles, responsibilities and objectives</li>
 </ul>
 
-<p>Desirable</p>
-
+<h4 id="desirable">Desirable</h4>
 <ul>
   <li>empowers, motivates and inspires teams to deliver timely results, systematically reviews progress and team performance</li>
   <li>develops the capability of teams to deliver the Department’s objectives</li>
@@ -325,14 +366,12 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="managing-and-valuing-people">Managing and Valuing People</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-4">Essential</h4>
 <ul>
   <li>reinforces a culture that values all people and rewards productive behaviour, promptly addressing any poor performance</li>
 </ul>
 
-<p>Desirable</p>
-
+<h4 id="desirable-1">Desirable</h4>
 <ul>
   <li>ensures timely performance assessment to provide or gain constructive feedback on the delivery of objectives and equal opportunities for people to develop their capabilities</li>
   <li>aligns people’s development needs with strategic corporate requirements to enable talent to flourish</li>
@@ -340,14 +379,12 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="managing-finance-and-resources">Managing Finance and Resources</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-5">Essential</h4>
 <ul>
   <li>ensures an appropriate understanding of roles and responsibilities in complying with guidance on finance policies and procedures</li>
 </ul>
 
-<p>Desirable</p>
-
+<h4 id="desirable-2">Desirable</h4>
 <ul>
   <li>anticipates business needs and managing resource requirements</li>
   <li>plans effectively and utilises budgets and resources, including the authority to re-deploy funds across functions, to deliver measurable value for money</li>
@@ -355,14 +392,12 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="communicating-and-marketing">Communicating and Marketing</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-6">Essential</h4>
 <ul>
   <li>promotes effective information sharing</li>
 </ul>
 
-<p>Desirable</p>
-
+<h4 id="desirable-3">Desirable</h4>
 <ul>
   <li>uses experts to help ensure the effective communication and marketing of business objectives</li>
   <li>works in partnership with experts to define, plan, implement, review and measure the effectiveness of communication and marketing channels</li>
@@ -370,8 +405,7 @@ influencing, senior officials, as well as producing clear advice on complex issu
 
 <h3 id="specialist-skills--expertise">Specialist Skills / Expertise</h3>
 
-<p>Essential</p>
-
+<h4 id="essential-7">Essential</h4>
 <ul>
   <li>experience in delivering services through digital / web channels in a fast paced environment</li>
   <li>experience in Agile and Waterfall Project Management delivery methodologies</li>
@@ -380,6 +414,13 @@ influencing, senior officials, as well as producing clear advice on complex issu
   <li>experience in open source and cloud technologies and their sourcing, or relevant/significant experience in the field.</li>
 </ul>
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/the-team/delivery-manager-jd.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/the-team/delivery-manager-jd.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

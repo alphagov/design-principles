@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -220,7 +226,29 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
+  
+
+  
+
   
 
   
@@ -460,10 +488,32 @@
         
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
         <a href="/service-manual/making-software/code-testing.html">
           <h3>Testing code</h3>
           <p>How to make sure your code does what it's supposed to</p>
         </a>
+        
+      
+        
+      
         
       
         
@@ -634,27 +684,35 @@
         
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+        <li> 
+            <a href="/service-manual/design-and-content/accessibility.html">Accessibility</a>
+        </li>
         
       
         
         <li> 
-            <a href="/service-manual/design-and-content/accessibility.html">Accessibility</a>
+            <a href="/service-manual/the-team/accessibility.html">Accessibility skills</a>
         </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -667,8 +725,22 @@
       
         
         <li> 
-            <a href="/service-manual/design-and-content/how-users-read.html">How users read</a>
+            <a href="/service-manual/design-and-content/resources/captcha.html">CAPTCHA</a>
         </li>
+        
+      
+        
+      
+        
+        <li> 
+            <a href="/service-manual/design-and-content/choosing-appropriate-formats.html">Choosing appropriate formats</a>
+        </li>
+        
+      
+        
+      
+        
+      
         
       
         
@@ -677,8 +749,54 @@
       
         
         <li> 
-            <a href="/service-manual/design-and-content/resources/captcha.html">CAPTCHA</a>
+            <a href="/service-manual/agile/continuous-delivery.html">Continuous Delivery</a>
         </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li> 
+            <a href="/service-manual/making-software/development-environment.html">Development environments</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -694,16 +812,6 @@
         
       
         
-        <li> 
-            <a href="/service-manual/design-and-content/resources/sass-repositories.html">Sass repositories</a>
-        </li>
-        
-      
-        
-        <li> 
-            <a href="/service-manual/design-and-content/resources/shared-asset-libraries.html">Shared asset libraries</a>
-        </li>
-        
       
         
       
@@ -713,44 +821,8 @@
       
         
         <li> 
-            <a href="/service-manual/design-and-content/writing-government-services.html">Writing government services</a>
+            <a href="/service-manual/design-and-content/how-users-read.html">How users read</a>
         </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li> 
-            <a href="/service-manual/making-software/code-testing.html">Testing code</a>
-        </li>
-        
-      
-        
-      
-        
-      
-        
-        <li> 
-            <a href="/service-manual/making-software/development-environment.html">Development Environments</a>
-        </li>
-        
-      
         
       
         
@@ -760,9 +832,27 @@
         
       
         
-        <li> 
-            <a href="/service-manual/making-software/logins.html">User accounts and log-ins</a>
-        </li>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -771,6 +861,22 @@
         </li>
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li> 
+            <a href="/service-manual/agile/quality.html">Quality</a>
+        </li>
         
       
         
@@ -810,21 +916,9 @@
         
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+        <li> 
+            <a href="/service-manual/design-and-content/resources/sass-repositories.html">Sass repositories</a>
+        </li>
         
       
         
@@ -839,7 +933,33 @@
       
         
         <li> 
-            <a href="/service-manual/the-team/accessibility.html">Accessibility skills</a>
+            <a href="/service-manual/design-and-content/resources/shared-asset-libraries.html">Shared asset libraries</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li> 
+            <a href="/service-manual/making-software/code-testing.html">Testing code</a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li> 
+            <a href="/service-manual/making-software/logins.html">User accounts and logins</a>
         </li>
         
       
@@ -872,49 +992,9 @@
         
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+        <li> 
+            <a href="/service-manual/design-and-content/writing-government-services.html">Writing government services</a>
+        </li>
         
       
         
@@ -935,84 +1015,6 @@
       
     
       
-      <li> 
-          <a href="/service-manual/agile/features-of-agile.html" title="Sprints, stand-ups and other regular meetings">Features of agile</a>
-          <span class="subtitle">Sprints, stand-ups and other regular meetings</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/agile/what-agile-looks-like.html" title="Common features of agile projects">What agile looks like</a>
-          <span class="subtitle">Common features of agile projects</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/agile/writing-user-stories.html" title="How to write a useful user story">Writing user stories</a>
-          <span class="subtitle">How to write a useful user story</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/design-and-content/working-with-prototypes.html" title="Learning by doing">Working with prototypes</a>
-          <span class="subtitle">Learning by doing</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
     
       
     
@@ -1028,10 +1030,34 @@
       
     
       
+    
+      
+    
+      
+    
+      
       <li> 
           <a href="/service-manual/making-software/apis.html" title="Using and creating Application Programming Interfaces">APIs</a>
           <span class="subtitle">Using and creating Application Programming Interfaces</span>
       </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       
@@ -1044,10 +1070,16 @@
       
     
       
+    
+      
+    
+      
       <li> 
           <a href="/service-manual/making-software/configuration-management.html" title="Manage a team's approach to configuration">Configuration management</a>
           <span class="subtitle">Manage a team's approach to configuration</span>
       </li>
+      
+    
       
     
       
@@ -1058,117 +1090,9 @@
       
     
       
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
       <li> 
-          <a href="/service-manual/making-software/open-standards-and-licencing.html" title="Building services using common standards">Open standards and licensing</a>
-          <span class="subtitle">Building services using common standards</span>
-      </li>
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/sandbox-and-staging-servers.html" title="Working in a development environment">Sandbox and staging servers</a>
-          <span class="subtitle">Working in a development environment</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/standalone-apps.html" title="What is the government position on apps?">Standalone apps</a>
-          <span class="subtitle">What is the government position on apps?</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/testing-in-agile.html" title="What testing your service might look like">Testing in an agile environment</a>
-          <span class="subtitle">What testing your service might look like</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/making-software/version-control.html" title="Ensure the team can collaborate on code">Version control</a>
-          <span class="subtitle">Ensure the team can collaborate on code</span>
-      </li>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/measurement/performanceframework.html" title="Other metrics your service might measure or track">Performance framework</a>
-          <span class="subtitle">Other metrics your service might measure or track</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/measurement/usersatisfaction.html" title="Are users happy with the service you have provided">User satisfaction</a>
-          <span class="subtitle">Are users happy with the service you have provided</span>
-      </li>
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/hosting.html" title="Where your service will live">Hosting</a>
-          <span class="subtitle">Where your service will live</span>
-      </li>
-      
-    
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/load-and-performance-testing.html" title="How to avoid your service collapsing under pressure">Load and performance testing</a>
-          <span class="subtitle">How to avoid your service collapsing under pressure</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/managing-user-support.html" title="Using helpdesk contacts to improve services">Managing user support</a>
-          <span class="subtitle">Using helpdesk contacts to improve services</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/monitoring.html" title="Tracking the status of a service">Monitoring</a>
-          <span class="subtitle">Tracking the status of a service</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/operating-servicegovuk-subdomains.html" title="Consistency across central government digital services">Operating a service.gov.uk subdomain</a>
-          <span class="subtitle">Consistency across central government digital services</span>
-      </li>
-      
-    
-      
-      <li> 
-          <a href="/service-manual/operations/penetration-testing.html" title="Identifying insecurities in your service">Vulnerability and penetration testing</a>
-          <span class="subtitle">Identifying insecurities in your service</span>
+          <a href="/service-manual/design-and-content/resources/creating-accessible-PDFs.html" title="How to make PDFs that everyone can use">Creating Accessible PDFs</a>
+          <span class="subtitle">How to make PDFs that everyone can use</span>
       </li>
       
     
@@ -1191,6 +1115,17 @@
       
     
       
+      <li> 
+          <a href="/service-manual/operations/devops.html" title="Bringing development and operations together">Devops</a>
+          <span class="subtitle">Bringing development and operations together</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
     
       
     
@@ -1200,6 +1135,11 @@
     
       
     
+      
+      <li> 
+          <a href="/service-manual/agile/features-of-agile.html" title="Sprints, stand-ups and other regular meetings">Features of agile</a>
+          <span class="subtitle">Sprints, stand-ups and other regular meetings</span>
+      </li>
       
     
       
@@ -1220,13 +1160,9 @@
     
       
       <li> 
-          <a href="/service-manual/the-team/working-environment.html" title="The physical space and tools that bring out the best in a team">Your working environment</a>
-          <span class="subtitle">The physical space and tools that bring out the best in a team</span>
+          <a href="/service-manual/operations/hosting.html" title="Where your service will live">Hosting</a>
+          <span class="subtitle">Where your service will live</span>
       </li>
-      
-    
-      
-    
       
     
       
@@ -1243,9 +1179,62 @@
       
     
       
+    
+      
       <li> 
-          <a href="/service-manual/users/user-needs.html" title="How to focus a service on users">User needs</a>
-          <span class="subtitle">How to focus a service on users</span>
+          <a href="/service-manual/operations/load-and-performance-testing.html" title="How to avoid your service collapsing under pressure">Load and performance testing</a>
+          <span class="subtitle">How to avoid your service collapsing under pressure</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/operations/managing-user-support.html" title="Using helpdesk contacts to improve services">Managing user support</a>
+          <span class="subtitle">Using helpdesk contacts to improve services</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/operations/monitoring.html" title="Tracking the status of a service">Monitoring</a>
+          <span class="subtitle">Tracking the status of a service</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/open-standards-and-licensing.html" title="Building services using common standards">Open standards and licensing</a>
+          <span class="subtitle">Building services using common standards</span>
+      </li>
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/operations/operating-servicegovuk-subdomains.html" title="Consistency across central government digital services">Operating a service.gov.uk subdomain</a>
+          <span class="subtitle">Consistency across central government digital services</span>
+      </li>
+      
+    
+      
+      <li> 
+          <a href="/service-manual/measurement/performanceframework.html" title="Other metrics your service might measure or track">Performance framework</a>
+          <span class="subtitle">Other metrics your service might measure or track</span>
       </li>
       
     
@@ -1259,6 +1248,86 @@
     
       
     
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/sandbox-and-staging-servers.html" title="Working in a development environment">Sandbox and staging servers</a>
+          <span class="subtitle">Working in a development environment</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/standalone-apps.html" title="What is the government position on apps?">Standalone apps</a>
+          <span class="subtitle">What is the government position on apps?</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/making-software/testing-in-agile.html" title="What testing your service might look like">Testing in an agile environment</a>
+          <span class="subtitle">What testing your service might look like</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/users/user-needs.html" title="How to focus a service on users">User needs</a>
+          <span class="subtitle">How to focus a service on users</span>
+      </li>
       
     
       
@@ -1275,7 +1344,42 @@
       
     
       
+      <li> 
+          <a href="/service-manual/measurement/usersatisfaction.html" title="Are users happy with the service you have provided">User satisfaction</a>
+          <span class="subtitle">Are users happy with the service you have provided</span>
+      </li>
+      
     
+      
+      <li> 
+          <a href="/service-manual/making-software/version-control.html" title="Ensure the team can collaborate on code">Version control</a>
+          <span class="subtitle">Ensure the team can collaborate on code</span>
+      </li>
+      
+    
+      
+      <li> 
+          <a href="/service-manual/operations/penetration-testing.html" title="Identifying insecurities in your service">Vulnerability and penetration testing</a>
+          <span class="subtitle">Identifying insecurities in your service</span>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+      <li> 
+          <a href="/service-manual/agile/what-agile-looks-like.html" title="Common features of agile projects">What agile looks like</a>
+          <span class="subtitle">Common features of agile projects</span>
+      </li>
+      
+    
+      
+      <li> 
+          <a href="/service-manual/design-and-content/working-with-prototypes.html" title="Learning by doing">Working with prototypes</a>
+          <span class="subtitle">Learning by doing</span>
+      </li>
       
     
       
@@ -1285,13 +1389,17 @@
       
     
       
-    
+      <li> 
+          <a href="/service-manual/agile/writing-user-stories.html" title="How to write a useful user story">Writing user stories</a>
+          <span class="subtitle">How to write a useful user story</span>
+      </li>
       
     
       
-    
-      
-    
+      <li> 
+          <a href="/service-manual/the-team/working-environment.html" title="The physical space and tools that bring out the best in a team">Your working environment</a>
+          <span class="subtitle">The physical space and tools that bring out the best in a team</span>
+      </li>
       
     
     </ul>

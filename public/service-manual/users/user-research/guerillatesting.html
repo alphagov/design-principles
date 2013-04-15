@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -202,9 +208,9 @@
       <p>This guidance talks about how Guerilla testing can be used to provide user research that can feed into product and service design.</p>
 
 <h2 id="guidance">Guidance</h2>
-<p>Guerilla user testing is a low cost method of user testing. The term ‘guerilla’ refers to its ‘out in the wild’ style, in the fact that it can be conducted anywhere e.g. cafe, library, train station etc, essentially anywhere where there is significant footfall.</p>
+<p>Guerilla user testing is a low cost method of user testing. The term ‘guerilla’ refers to its ‘out in the wild’ style, in the fact that it can be conducted anywhere eg cafe, library, train station etc, essentially anywhere where there is significant footfall.</p>
 
-<p>Guerilla testing works well to quickly validate how effective a design is on it’s intended audience, whether certain functionality works in the way it is supposed to, or even establishing whether a brand or proposition is clear.</p>
+<p>Guerilla testing works well to quickly validate how effective a design is on its intended audience, whether certain functionality works in the way it is supposed to, or even establishing whether a brand or proposition is clear.</p>
 
 <p>This approach is quick and relatively easy to set up. Participants are not recruited but are ‘approached’ by those persons conducting the sessions. The sessions themselves are short, typically between 15-30 minutes and are loosely structured around specific key research objectives. The output is typically ‘qualitative’ so insight is often rich and detailed.</p>
 
@@ -221,7 +227,7 @@
 <ul>
   <li>General: always ask permission first to speak with people, outline briefly the purpose of the research and reassure them about confidentiality</li>
   <li>Scope: keep it simple and quick</li>
-  <li>Location: consider the location and set up carefully e.g. a busy train station may have the footfall but people might be in too much of a hurry to spare the time</li>
+  <li>Location: consider the location and set up carefully eg a busy train station may have the footfall but people might be in too much of a hurry to spare the time</li>
   <li>Equipment: for website evaluations, Silverback is an ‘easy to use’ software solution that enables screen capturing and recording. However, whenever recording sessions you must seek permission from the participant first. Provide them with a written consent form for them to sign.</li>
   <li>Incentives: providing incentives for audience participation is not required or necessary. However, depending on where you are running your sessions chocolates are always a welcome ‘thank you’ for peoples’ time.</li>
 </ul>
@@ -246,6 +252,13 @@
 
 <p>16 teenagers evaluated the National Citizen Service website. Sessions were conducted in the canteen of a further education college in Nottingham. Usability and editorial findings were discovered and quickly fed back to the development teams. The whole process took 2 days.</p>
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/user-research/guerillatesting.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/user-research/guerillatesting.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -209,7 +215,7 @@
 
 <h2 id="what-do-you-want-next-friday-what-have-we-learned-last-week">“What do you want next Friday? What have we learned last week?”</h2>
 
-<p><img src="https://farm9.staticflickr.com/8043/8100964765_acf4032d09.jpg" alt="A sprint backlog, coutesty of http://www.flickr.com/photos/psd/" /></p>
+<p><img src="https://farm9.staticflickr.com/8043/8100964765_acf4032d09.jpg" alt="A sprint backlog, courtesy of http://www.flickr.com/photos/psd/" /></p>
 
 <p>Iterate often. Build something focused on the next most valuable user need and show it to them; listen to their feedback and improve it. Keep doing this until you have something so useful that they would not be without it. </p>
 
@@ -231,7 +237,7 @@
 
 <p><em>Product Manager</em> - responsible for delivering return on investment, usually by creating products that users love.  The team delivers the Product Manager’s vision.</p>
 
-<p><em>Delivery Manager</em> (a.k.a. Scrum master or Project Manager) - is the agile expert that is responsible for removing blockers (things slowing a team down).  They also usually act as a facilitator at team get togethers.</p>
+<p><em>Delivery Manager</em> (aka Scrum master or Project Manager) – is the agile expert that is responsible for removing blockers (things slowing a team down).  They also usually act as a facilitator at team get togethers.</p>
 
 <p><em>Team member</em> - Self organising, multi-disciplinary team that delivers prioritised user stories. Responsible for estimation.</p>
 
@@ -303,12 +309,19 @@
 
 <blockquote>
   <ul>
-    <li><em>You have a separate QA department</em>. If your team’s attitude to quality is to throw the software they’ve developed over the wall to a QA department, then they’ve not got the right attitude to delivering production-ready software.  You need to embed a quality culture into the team.</li>
+    <li><em>You have a separate QA department</em>. If your team’s attitude to quality is to throw the software they’ve developed over the wall to a QA department, then they’ve got the wrong attitude to delivering production-ready software.  You need to embed a quality culture into the team.</li>
   </ul>
 </blockquote>
 
 <p>This is by no means an exhaustive list, but these are most common things to watch out for.</p>
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/agile/what-agile-looks-like.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/agile/what-agile-looks-like.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>

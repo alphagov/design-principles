@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
@@ -81,13 +81,15 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
 
 
 
 
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -114,17 +116,21 @@
     <section id="content" role="main" class="group">
 
       <div class="js-toggle-nav" id="global-nav">
-        <div class="inner">
-          <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-          <nav role="navigation" class="content">
-            <ul id="navigation">
-              <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-              <li><a href="/service-manual/about" >About</a></li>
-              <li><a href="/service-manual/feedback" >Feedback</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div class="inner">
+    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
+  <span class="jump-link">
+    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
+  </span>
+
+    <nav role="navigation" class="content">
+      <ul id="navigation">
+        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
+        <li><a href="/service-manual/about" >About</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
       <div id="caveat-notice">
   <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
@@ -211,7 +217,7 @@
 
 <p>Quantitative techniques involve higher-volume research, and include online surveys, face-to-face interviews, and involve a structured approach to data collection and analysis. </p>
 
-<p>Product based research can be conducted in-house or via a specialist agency. In-house approaches can be quicker as they involve less lead time (e.g. procurement), but require skilled in-house researchers, and can involve the procurement of some specialist software. Typically agencies are only used when specialist skills/experience is required that is not available in-house, and/or the scale of the project would mean it is difficult to provide dedicated internal resource. </p>
+<p>Product based research can be conducted in-house or via a specialist agency. In-house approaches can be quicker as they involve less lead time (eg procurement), but require skilled in-house researchers, and can involve the procurement of some specialist software. Typically agencies are only used when specialist skills/experience is required that is not available in-house, and/or the scale of the project would mean it is difficult to provide dedicated internal resource. </p>
 
 <h2 id="strategic-research">Strategic research</h2>
 
@@ -266,6 +272,14 @@
   </tbody>
 </table>
 
+<p>Please note that each service/product will have a different proportion of users who are not online and this will need to be considered when formulating an appropriate research approach. The services/product will need to consider the digital skills of their users to understand which users who currently don’t use digital channels: </p>
+
+<p>can’t ever use the digital service independently and will always need assisted digital support
+could use the digital service independently but will require initial assisted digital support to build their confidence in using the service 
+should use the digital service (ie. have the digital skills but currently use other channels) and don’t need assisted digital support</p>
+
+<p>Some services (e.g. where users are large corporations) will not require assisted digital. The Digital Landscape Research contains a demographic breakdown of who is offline and online and service teams and these techniques may be useful for doing user research.</p>
+
 <h2 id="research-methods">Research methods</h2>
 
 <h3 id="background">Background</h3>
@@ -298,6 +312,13 @@
   <li><a href="/service-manual/users/user-research/onlineomnibussurvey.html">Online omnibus surveying</a></li>
 </ul>
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/introduction-to-user-research.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/introduction-to-user-research.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>
