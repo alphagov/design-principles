@@ -47,6 +47,12 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.0.11)
+    gds-api-adapters (5.3.0)
+      link_header
+      lrucache (~> 0.1.1)
+      null_logger
+      plek
+      rest-client (~> 1.6.3)
     govuk_frontend_toolkit (0.12.1)
       rails (>= 3.1.0)
       sass (>= 3.2.0)
@@ -58,6 +64,7 @@ GEM
     libv8 (3.3.10.4)
     libwebsocket (0.1.3)
       addressable
+    link_header (0.0.5)
     lograge (0.2.0)
       actionpack
       activesupport
@@ -67,7 +74,10 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.1)
     mime-types (1.21)
+    mocha (0.13.3)
+      metaclass (~> 0.0.1)
     multi_json (1.7.1)
     nokogiri (1.5.5)
     null_logger (0.0.1)
@@ -100,6 +110,8 @@ GEM
     rake (10.0.3)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     router-client (3.1.0)
       activesupport
       builder
@@ -118,6 +130,10 @@ GEM
       railties (>= 3.0)
       rspec (~> 2.11.0)
     rubyzip (0.9.9)
+    rummageable (0.6.2)
+      json
+      plek (>= 0.5.0)
+      rest-client
     sass (3.2.1)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -163,12 +179,15 @@ PLATFORMS
 
 DEPENDENCIES
   capybara (= 1.1.2)
+  gds-api-adapters
   govuk_frontend_toolkit (= 0.12.1)
   lograge (= 0.2.0)
+  mocha (= 0.13.3)
   plek (= 1.1.0)
   rails (= 3.2.13)
   router-client (= 3.1.0)
   rspec-rails (= 2.11.0)
+  rummageable
   sass-rails (= 3.2.5)
   slimmer (= 3.9.5)
   therubyracer
