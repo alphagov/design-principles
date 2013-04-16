@@ -4,7 +4,7 @@ source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 gem 'rails', '3.2.13'
 gem 'unicorn', '4.3.1'
 gem 'lograge', '0.2.0'
-
+gem 'rack-rewrite', '1.3.3'
 gem 'govuk_frontend_toolkit', '0.12.1'
 gem 'plek', '1.1.0'
 gem 'router-client', '3.1.0', :require => false
