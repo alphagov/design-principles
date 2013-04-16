@@ -3,26 +3,28 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Guerilla testing — Government Service Design Manual</title>
+<title>A/B and multivariate experiments — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
 <!--[if gt IE 8]><!-->
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-03571a509cdb2eb334a347191663c9bb.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-dc44ee9b31f9da4f4de62d6bfb2e1dc9.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-3f13af8508d093d6a773a39909bae8ee.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-
+  2b95aacef7f3529d9d4c79bb61d173ee.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
+
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
 <!--[if IE 8]>
@@ -52,8 +54,7 @@
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 <link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
 
-<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
-<script defer="defer" src="https://assets.digital.cabinet-office.gov.uk/static/application-6258ecda5edb624948d1ba70b960ecae.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script><script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-e5938d4ac4939ea75375d1a4d52eee96.js" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
@@ -81,8 +82,7 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366112009" type="text/javascript"></script>
 
 
 
@@ -97,48 +97,43 @@
   <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
 
   <!--start header-->
-<header role="banner" class="group" id="global-header">
-  <div class="header-wrapper group">
-    <a href="/" title="Go to the gov.uk homepage" id="logo"><img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK"></a>
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the gov.uk homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK"></a>
+          <a href="#search" class="search-toggle js-header-toggle">Search</a>
+        </div>
 
-    <a href="#search" class="button search-toggle">Search</a>
+        <form id="search" class="site-search" action="/search" method="get" role="search">
+          <div class="content">
+            <label for="site-search-text">Search</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+          </div>
+        </form>
+      </div>
 
-    <form id="search" class="site-search" action="/search" method="get" role="search">
-      <label for="site-search-text" class="visuallyhidden">Search</label>
-      <input type="search" name="q" id="site-search-text" title="Search"><input class="button" type="submit" value="Search">
-    </form>
-  </div>
-</header>
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/about" class="">About</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
 <!--end header-->
 
   <div id="wrapper" class="detailed-guidance">
 
     <section id="content" role="main" class="group">
-
-      <div class="js-toggle-nav" id="global-nav">
-  <div class="inner">
-    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-  <span class="jump-link">
-    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
-  </span>
-
-    <nav role="navigation" class="content">
-      <ul id="navigation">
-        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-        <li><a href="/service-manual/about" >About</a></li>
-        <li><a href="/feedback">Feedback</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
-
-      <div id="caveat-notice">
-  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
-
-  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
-
-  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
-</div>
 
       
 <div id="global-breadcrumb" class="header-context">
@@ -160,7 +155,7 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Guerilla testing</h1>
+      <h1>A/B and multivariate experiments</h1>
       
       <h2 class="subtitle">Getting input into products and services</h2>
       
@@ -185,19 +180,11 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-guidance"><a href="#guidance">Guidance</a>
+<li class="level-ab-and-multivariate-experiments"><a href="#ab-and-multivariate-experiments">A/B and multivariate experiments</a>
+<ol>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
-<li class="level-where--how-you-might-use-it"><a href="#where--how-you-might-use-it">Where / how you might use it</a>
-</li>
-<li class="level-weaknesses--when-not-to-use"><a href="#weaknesses--when-not-to-use">Weaknesses / when not to use</a>
-</li>
-<li class="level-number--types-of-participants"><a href="#number--types-of-participants">Number / types of participants</a>
-</li>
-<li class="level-cost"><a href="#cost">Cost</a>
-</li>
-<li class="level-timescales"><a href="#timescales">Timescales</a>
-</li>
-<li class="level-gds-example"><a href="#gds-example">GDS Example</a>
+</ol>
 </li>
 </ol>
 
@@ -205,58 +192,20 @@
     </div>
 
     <div class="inner">
-      <p>This guidance talks about how Guerilla testing can be used to provide user research that can feed into product and service design.</p>
+      <h1 id="ab-and-multivariate-experiments">A/B and multivariate experiments</h1>
+<p>We interviewed Craig Sullivan, an industry guru on conversion optimization. He explains when he uses A/B and multivariate experiments in the design process.</p>
 
-<h2 id="guidance">Guidance</h2>
-<p>Guerilla user testing is a low cost method of user testing. The term ‘guerilla’ refers to its ‘out in the wild’ style, in the fact that it can be conducted anywhere eg cafe, library, train station etc, essentially anywhere where there is significant footfall.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mS0RKEUPnLA?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
-<p>Guerilla testing works well to quickly validate how effective a design is on its intended audience, whether certain functionality works in the way it is supposed to, or even establishing whether a brand or proposition is clear.</p>
-
-<p>This approach is quick and relatively easy to set up. Participants are not recruited but are ‘approached’ by those persons conducting the sessions. The sessions themselves are short, typically between 15-30 minutes and are loosely structured around specific key research objectives. The output is typically ‘qualitative’ so insight is often rich and detailed.</p>
-
-<p>Anyone on the service team can conduct ‘guerilla testing’ on their site or service but often the best scenario is for a researcher to run the sessions with the designer or developer. The researcher can help with defining the tasks, moderating the sessions as well as provide a level of ‘objectivity’ by not being the person who designed or built what is being evaluated.  Involving the designer / developer in the sessions enables them to see  first hand ‘real’ people interacting with their product, where there are areas for improvement and how they might go about resolving any issues.</p>
-
-<p>This approach also does away with any lengthy reporting back. Insights can be observed, taken away and fed back into the design process almost immediately. However, a brief summary with key findings and recommendations can be written up as a more formal record. It is a method that suits the ‘agile framework’ well.</p>
-
-<h2 id="where--how-you-might-use-it">Where / how you might use it</h2>
-
-<p>Guerilla testing can be used throughout the service lifecycle. As it is cheap to set up, run and report back on, it is a method that can be used frequently.</p>
-
-<p>There are a few logistics that should be taken into consideration before conducting any guerilla testing;</p>
-
-<ul>
-  <li>General: always ask permission first to speak with people, outline briefly the purpose of the research and reassure them about confidentiality</li>
-  <li>Scope: keep it simple and quick</li>
-  <li>Location: consider the location and set up carefully eg a busy train station may have the footfall but people might be in too much of a hurry to spare the time</li>
-  <li>Equipment: for website evaluations, Silverback is an ‘easy to use’ software solution that enables screen capturing and recording. However, whenever recording sessions you must seek permission from the participant first. Provide them with a written consent form for them to sign.</li>
-  <li>Incentives: providing incentives for audience participation is not required or necessary. However, depending on where you are running your sessions chocolates are always a welcome ‘thank you’ for peoples’ time.</li>
-</ul>
-
-<h2 id="weaknesses--when-not-to-use">Weaknesses / when not to use</h2>
-
-<p>The key weakness of guerilla testing as a research method it that is not statistically robust and participants may not always match your ‘target’ audience in terms of skills, expertise, knowledge.</p>
-
-<h2 id="number--types-of-participants">Number / types of participants</h2>
-
-<p>This can vary from between 6-12 participants in any given round of guerilla testing. It is very much dependent on where and when those sessions are conducted.</p>
-
-<h2 id="cost">Cost</h2>
-
-<p>There is no cost other than time.</p>
-
-<h2 id="timescales">Timescales</h2>
-
-<p>Depends on the scope of the service but between 1-2 days (incl conducting sessions and any reporting back)</p>
-
-<h2 id="gds-example">GDS Example</h2>
-
-<p>16 teenagers evaluated the National Citizen Service website. Sessions were conducted in the canteen of a further education college in Nottingham. Usability and editorial findings were discovered and quickly fed back to the development teams. The whole process took 2 days.</p>
+<h2 id="further-reading">Further reading</h2>
+<p>This <a href="http://www.wired.com/business/2012/04/ff_abtesting/all/1">article in Wired</a> shows how A/B experiments were used to good effect in Obama’s election campaign.
+This <a href="http://econsultancy.com/uk/blog/2454-q-a-lovefilm-s-craig-sullivan-on-a-b-and-multi-variate-testing">article in eConsultancy</a> shows how multivariate experiments were used to improve conversion rates at Lovefilm.</p>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/user-research/guerillatesting.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/user-research/guerillatesting.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/user-research/multivariate-testing.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/user-research/multivariate-testing.md">Page source</a>
         </ol>
       </nav>
     </div>
@@ -312,6 +261,8 @@
         <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
       </ul>
       <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
     </nav>
     <div class="copyright">
       <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>

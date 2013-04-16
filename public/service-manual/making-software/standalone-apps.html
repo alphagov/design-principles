@@ -3,26 +3,28 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Standalone apps — Government Service Design Manual</title>
+<title>Standalone mobile apps — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
 <!--[if gt IE 8]><!-->
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-4c9680def45b49d36bd082ca7327317c.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-03571a509cdb2eb334a347191663c9bb.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-79c0d2b286cd22112ffe66a3b7114e0f.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-dc44ee9b31f9da4f4de62d6bfb2e1dc9.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-1abc90a47f454a17f52e8fc9058f8672.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-3f13af8508d093d6a773a39909bae8ee.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-a5bb0ef609ec15907622994aa7967a80.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366023332" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-
+  2b95aacef7f3529d9d4c79bb61d173ee.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366112009" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
+
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
 
 <!--[if IE 8]>
@@ -52,8 +54,7 @@
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 <link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
 
-<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
-<script defer="defer" src="https://assets.digital.cabinet-office.gov.uk/static/application-6258ecda5edb624948d1ba70b960ecae.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script><script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-e5938d4ac4939ea75375d1a4d52eee96.js" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
@@ -81,8 +82,7 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/caveat-notice.js?cache=1366023332" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1366023332" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366112009" type="text/javascript"></script>
 
 
 
@@ -97,48 +97,43 @@
   <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
 
   <!--start header-->
-<header role="banner" class="group" id="global-header">
-  <div class="header-wrapper group">
-    <a href="/" title="Go to the gov.uk homepage" id="logo"><img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK"></a>
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the gov.uk homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK"></a>
+          <a href="#search" class="search-toggle js-header-toggle">Search</a>
+        </div>
 
-    <a href="#search" class="button search-toggle">Search</a>
+        <form id="search" class="site-search" action="/search" method="get" role="search">
+          <div class="content">
+            <label for="site-search-text">Search</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+          </div>
+        </form>
+      </div>
 
-    <form id="search" class="site-search" action="/search" method="get" role="search">
-      <label for="site-search-text" class="visuallyhidden">Search</label>
-      <input type="search" name="q" id="site-search-text" title="Search"><input class="button" type="submit" value="Search">
-    </form>
-  </div>
-</header>
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/about" class="">About</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
 <!--end header-->
 
   <div id="wrapper" class="detailed-guidance">
 
     <section id="content" role="main" class="group">
-
-      <div class="js-toggle-nav" id="global-nav">
-  <div class="inner">
-    <span class="home"><a href="/service-manual" >Government Service Design Manual<small class="beta">beta</small></a></span>
-  <span class="jump-link">
-    <a href="#navigation" class="toggler" tabIndex="0">menu</a>
-  </span>
-
-    <nav role="navigation" class="content">
-      <ul id="navigation">
-        <li><a href="/service-manual/digital-by-default" >Digital by Default Service Standard</a></li>
-        <li><a href="/service-manual/about" >About</a></li>
-        <li><a href="/feedback">Feedback</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
-
-      <div id="caveat-notice">
-  <p>Welcome to the Government Service Design Manual. From April this will be the place to find the digital by default service standard, as well as guidance and tools for building world-class digital services.</p>
-
-  <p>This is an experimental beta version of the manual, and it may contain inaccuracies or have gaps.</p>
-
-  <p>We will be working to improve the site before a full release in April. If you have any feedback please email <a href="mailto:dbdss@digital.cabinet-office.gov.uk">dbdss@digital.cabinet-office.gov.uk</a></p>
-</div>
 
       
 <div id="global-breadcrumb" class="header-context">
@@ -158,9 +153,9 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Standalone apps</h1>
+      <h1>Standalone mobile apps</h1>
       
-      <h2 class="subtitle">What is the government position on apps?</h2>
+      <h2 class="subtitle">What is the government position on mobile apps?</h2>
       
     </hgroup>
 
@@ -185,45 +180,41 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-what-is-the-government-position-on-apps"><a href="#what-is-the-government-position-on-apps">What is the government position on apps?</a>
+<li class="level-what-is-the-governments-position-on-apps"><a href="#what-is-the-governments-position-on-apps">What is the government's position on apps?</a>
 </li>
 <li class="level-brief-background-on-apps-landscape"><a href="#brief-background-on-apps-landscape">Brief background on apps landscape</a>
-</li>
-<li class="level-what-is-meant-by-an-app"><a href="#what-is-meant-by-an-app">What is meant by ‘an app’?</a>
 <ol>
-<li class="level-what-is-a-native-app-"><a href="#what-is-a-native-app-">What is a ‘Native’ App ?</a>
+<li class="level-what-is-a-native-app"><a href="#what-is-a-native-app">What is a native app?</a>
 <ol>
-<li class="level-native-app---pros"><a href="#native-app---pros">‘Native’ App - Pros</a>
+<li class="level-pros"><a href="#pros">Pros</a>
 </li>
-<li class="level-native-app---cons"><a href="#native-app---cons">‘Native’ App - Cons</a>
+<li class="level-cons"><a href="#cons">Cons</a>
 </li>
 </ol>
 </li>
-<li class="level-what-is-a-web-app"><a href="#what-is-a-web-app">What is a‘ Web App’</a>
+<li class="level-what-is-responsive-web-design"><a href="#what-is-responsive-web-design">What is responsive web design?</a>
 <ol>
-<li class="level-web-app---pros"><a href="#web-app---pros">Web App - Pros</a>
+<li class="level-pros-1"><a href="#pros-1">Pros</a>
 </li>
-<li class="level-web-app---cons"><a href="#web-app---cons">Web App - Cons</a>
-</li>
-</ol>
-</li>
-<li class="level-hybrid-app"><a href="#hybrid-app">Hybrid App</a>
-<ol>
-<li class="level-hybrid-app--pros--cons"><a href="#hybrid-app--pros--cons">Hybrid App – Pros & Cons</a>
+<li class="level-cons-1"><a href="#cons-1">Cons</a>
 </li>
 </ol>
 </li>
 </ol>
 </li>
-<li class="level-rationale-for-governments-position"><a href="#rationale-for-governments-position">Rationale for government's position</a>
+<li class="level-rationale-for-the-governments-position"><a href="#rationale-for-the-governments-position">Rationale for the government's position</a>
 </li>
 <li class="level-exceptions"><a href="#exceptions">Exceptions</a>
 <ol>
-<li class="level-have-the-necessary-conditions-been-met"><a href="#have-the-necessary-conditions-been-met">Have the necessary conditions been met?</a>
+<li class="level-have-you-met-the-necessary-conditions"><a href="#have-you-met-the-necessary-conditions">Have you met the necessary conditions?</a>
 </li>
 <li class="level-more-questions"><a href="#more-questions">More questions</a>
 </li>
+<li class="level-the-process"><a href="#the-process">The process</a>
+</li>
 </ol>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further Reading</a>
 </li>
 </ol>
 
@@ -231,146 +222,113 @@
     </div>
 
     <div class="inner">
-      <h2 id="what-is-the-government-position-on-apps">What is the government position on apps?</h2>
+      <h2 id="what-is-the-governments-position-on-apps">What is the government’s position on apps?</h2>
 
-<p>At the Oct 2012 Digital Leaders’ meeting, the position was clarified: native apps could not be developed without Cabinet Office approval.</p>
+<p>The government’s position is that native apps are currently rarely justified. At the October 2012 Digital Leaders’ meeting, the position was clarified: native apps could not be developed without Cabinet Office approval. The November 2012 <a href="http://www.publications.cabinetoffice.gov.uk/digital/strategy/">Digital Strategy</a> says:</p>
 
-<p>The Nov 2012 <a href="http://www.publications.cabinetoffice.gov.uk/digital/strategy/">Digital Strategy</a> says:
-“Stand-alone mobile apps will only be considered once the core web service works well on mobile devices, and if specifically agreed with the Cabinet Office”</p>
+<blockquote>
+  <p>“Stand-alone mobile apps will only be considered once the core web service works well on mobile devices, and if specifically agreed with the Cabinet Office”</p>
+</blockquote>
 
-<p>Government’s position is that native &amp; hybrid apps are currently rarely justified.</p>
-
-<p>Ensure your service meets the <a href="/service-manual/digital-by-default">Digital by Default Service Standard</a> and it will work well on mobile devices.</p>
-
-<p>Make your data &amp; API available for re-use and you will stimulate market if there is real demand for native apps.</p>
+<p>Ensuring your service meets the <a href="/service-manual/digital-by-default">Digital by Default Service Standard</a> means it will work well on mobile devices. Making your data and API available for re-use will stimulate the market if there is real demand for native apps.</p>
 
 <h2 id="brief-background-on-apps-landscape">Brief background on apps landscape</h2>
 
-<p>Confusion is understandable.</p>
+<p>So-called “apps” come in several different flavours, therefore confusion is understandable. When people are talking about “apps”, they can mean device-specific “download and install” apps (aka native apps) or websites that respond to various screen sizes (aka responsive websites, web apps or HTML5) or even various hybrids of the two.</p>
 
-<p>So-called “Apps” come in several very, very different flavours.</p>
+<h3 id="what-is-a-native-app">What is a native app?</h3>
 
-<h2 id="what-is-meant-by-an-app">What is meant by ‘an app’?</h2>
+<p>Native apps are downloadable software applications that run using the device’s operating system code and APIs.</p>
 
-<ol>
-  <li>Device-specific ‘download and install’ apps (aka ‘native apps’)</li>
-  <li>Websites that respond to various screen sizes (aka ‘responsive websites’, ‘web apps’ or ‘HTML5’)</li>
-  <li>Various hybrids of the above</li>
-</ol>
+<p>They persist on the device and can access all the hardware features (camera, storage, phone capabilities, etc). Because they run using native code, different versions must be created for each operating system. Examples of native apps include Spotify, Angry Birds, Instagram and Skype.</p>
 
-<h3 id="what-is-a-native-app-">What is a ‘Native’ App ?</h3>
-<ul>
-  <li>Downloaded, installed piece of bespoke software.</li>
-  <li>Free or paid-for.</li>
-  <li>Persists on the device.</li>
-  <li>Can access all device features</li>
-  <li>Requires completely different software for iPhone/iPad, Android, Blackberry etc.</li>
-  <li>Spotify, Angry Birds, Instagram, Skype etc.</li>
-</ul>
-
-<h4 id="native-app---pros">‘Native’ App - Pros</h4>
+<h4 id="pros">Pros</h4>
 <ul>
   <li>Revenue (download and buy)</li>
   <li>Persistent presence on device</li>
   <li>Can access all functions on a device</li>
   <li>Snappier performance in general</li>
-  <li>Can be used offline, in some cases.</li>
+  <li>Can be used offline, in some cases</li>
 </ul>
 
-<h4 id="native-app---cons">‘Native’ App - Cons</h4>
+<h4 id="cons">Cons</h4>
 <ul>
-  <li>Expensive to develop &amp; maintain</li>
+  <li>Expensive to develop and maintain</li>
   <li>Needs several different versions (Android, iPhone, iPad, Blackberry etc)</li>
-  <li>Service iteration more complex (x3) -Can only be downloaded via gatekeeper app stores (Apple, Google)</li>
-  <li>Most apps are little downloaded, and even then rarely used.</li>
+  <li>Service iteration more complex (at least 3 types of app to deploy)</li>
+  <li>Can only be downloaded via gatekeeper app stores (Apple, Google)</li>
+  <li>Most apps are rarely downloaded, and even then hardly used</li>
 </ul>
 
-<h3 id="what-is-a-web-app">What is a‘ Web App’</h3>
-<ul>
-  <li>Uses device’s built-in web browser</li>
-  <li>Is a website which optimises its layout &amp; functionality for each device</li>
-  <li>Uses open standards (HTML5) -Examples: GOV.UK, PM’s dashboard, FT webapp, Virgin Active’s ‘My Locker’, bbc.co.uk/sport</li>
-</ul>
+<h3 id="what-is-responsive-web-design">What is responsive web design?</h3>
 
-<h4 id="web-app---pros">Web App - Pros</h4>
+<p>Responsive web design is a design approach that optimises users’ viewing experiences across a wide range of devices. When a responsive website is accessed via a mobile phone, it is sometimes referred to as a ‘mobile web app’.</p>
+
+<p>Responsive websites are built using open web standards (HTML, CSS, javascript, etc) and they run inside a device’s web browser.</p>
+
+<p>Examples are <a href="https://www.gov.uk">GOV.UK</a>, PM’s dashboard, <a href="http://apps.ft.com/ftwebapp/">FT webapp</a>, <a href="http://m.bbc.co.uk/sport">BBC Sport</a>.</p>
+
+<h4 id="pros-1">Pros</h4>
 <ul>
-  <li>It is your website, so costs are minimised and service iteration simplified.</li>
+  <li>It is your website, so costs are minimised and service iteration simplified</li>
   <li>Uses open standards (HTML5)</li>
-  <li>No gatekeepers to constrain access -Performance still good</li>
+  <li>No gatekeepers to constrain access</li>
+  <li>Performance still good</li>
   <li>Mobile web outstripping mobile app reach</li>
-  <li>Clear winning strategy for ‘utility’ services which do not require complex device features or persistence.</li>
+  <li>Clear winning strategy for ‘utility’ services which do not require complex device  features or persistence</li>
 </ul>
 
-<h4 id="web-app---cons">Web App - Cons</h4>
+<h4 id="cons-1">Cons</h4>
 <ul>
   <li>Not persistent on device</li>
   <li>Some device features unavailable (camera, address book)</li>
   <li>Requires internet connection</li>
   <li>Not snappy enough for some complex services (eg Spotify, Facebook, Skype)</li>
-  <li>No ‘download and buy’ revenue stream.</li>
+  <li>No ‘download and buy’ revenue stream</li>
 </ul>
 
-<h3 id="hybrid-app">Hybrid App</h3>
-<ul>
-  <li>A small native app which then loads up a bespoke website</li>
-  <li>So, can use device features (eg camera) that Web apps can’t.</li>
-  <li>Requires a stand-alone website Examples “Bing for Mobile”, Netflix app, LinkedIn app, BBC News app</li>
-</ul>
+<h2 id="rationale-for-the-governments-position">Rationale for the government’s position</h2>
 
-<h4 id="hybrid-app--pros--cons">Hybrid App – Pros &amp; Cons</h4>
-<p>Not as expensive to maintain as a native app, can access device functions and be persistent but still requires a new parallel version of your web service, and multiple versions to be developed for each device.</p>
+<p>If there is a market for native apps, why should the government monopolise it? There is a vibrant market of 3rd party native app developers using government data and APIs. Government’s position is that native and hybrid apps currently rarely justified.</p>
 
-<h2 id="rationale-for-governments-position">Rationale for government’s position</h2>
+<p>We are <a href="/service-manual/making-software/open-standards-and-licencing.html">backing open standards</a> rather than risking proliferation of parallel versions of services as devices proliferate.</p>
 
-<p>If there is a market for native or hybrid apps, why should the government monopolise it? There is a vibrant market of 3rd party native app developers using government data &amp; APIs. Government’s position is that native &amp; hybrid apps currently rarely justified.</p>
-
-<p>Ensure your service meets the <a href="/service-manual/digital-by-default">Digital by Default Service Standard</a> and it will work well on mobile devices.</p>
-
-<p>Make your <a href="/service-manual/making-software/open-source.html">data</a> &amp; <a href="/service-manual/making-software/apis.html">API</a> available for re-use and you will stimulate market if there is real demand for native apps.</p>
-
-<p>We are <a href="/service-manual/making-software/open-standards-and-licensing.html">backing open standards</a> (HTML5) rather than risking proliferation of parallel versions of services as devices proliferate.</p>
-
-<p>And while people spend as much time using apps as using mobile web the vast majority of app use is for gaming &amp; social networking.</p>
-
-<p>For “utility” needs, such as those met by government services, the mobile web is preferred to native apps</p>
+<p>And while people spend as much time using apps as using mobile web the vast majority of app use is for gaming and social networking. For “utility” needs, such as those met by government services, the mobile web is preferred to native apps</p>
 
 <h2 id="exceptions">Exceptions</h2>
 
-<p>But what about exceptions ie those times when only an app will do? </p>
+<p>We recognise that there’ll be a few exceptions. To help you assess whether your case is likely to be considered an exception, consider the following:</p>
 
-<p>We recognise that there’ll be a few exceptions, to help you determine whether your case is likely to be considered an exception, consider the following: </p>
+<h3 id="have-you-met-the-necessary-conditions">Have you met the necessary conditions?</h3>
 
-<h3 id="have-the-necessary-conditions-been-met">Have the necessary conditions been met?</h3>
+<p><strong>Condition 1:</strong> Your web service is already designed to be responsive</p>
 
-<ol>
-  <li>Your web service is already designed to be responsive </li>
-  <li>The service you’re looking to build an app for is already open to third-parties via APIs or open data</li>
-</ol>
+<p><strong>Condition 2:</strong> The service or the content you’re looking to build an app for is already open to third-parties via APIs or as open data</p>
 
-<p>NOTE: If these conditions are not in place, it is unlikely you’ll obtain approval for your app proposal. If you believe there are compelling reasons why these conditions have not been met, please be prepared to provide them. </p>
+<blockquote>
+  <p><strong>NOTE:</strong> If these conditions are not in place, it is unlikely that your app proposal will be approved. If you believe there are <em>compelling</em> reasons why these conditions have not been met, please set them out in your proposal.</p>
+</blockquote>
 
 <h3 id="more-questions">More questions</h3>
 
 <ol>
-  <li>
-    <p><a href="/service-manual/users/user-needs.html">What’s the user need</a>? Please provide evidence for this.</p>
-  </li>
-  <li>
-    <p>Are you sure there are no 3rd party native or hybrid apps that meet this user need? If ‘yes’ and condition 2 has been met, please provide your thoughts on why no 3rd party has developed a native/hybrid app.</p>
-  </li>
-  <li>
-    <p>Is this user need of sufficient importance to (your users) justify the lifetime cost of your proposed app? If yes, how have you determined this? You might want to review articles within the service manual such as, <a href="/service-manual/users">Know Your Users</a> and <a href="/service-manual/agile/writing-user-stories.html">Writing User Stories</a>. </p>
-  </li>
-  <li>
-    <p>Is there evidence of demand for this app amongst your target users?  If ‘yes’, please provide supporting  evidence. </p>
-  </li>
-  <li>
-    <p>Given the sheer number of apps out there is there evidence to suggest that this app will actually be downloaded? If ‘yes’, please provide supporting evidence eg examples of similar apps that have proven popular with your target audience and evidence of their popularity.</p>
-  </li>
-  <li>
-    <p>Is there evidence of platform penetration amongst your users to justify building an app for the platform you’re proposing to do this for? If ‘yes’, please provide supporting evidence eg analytics data that shows proportion of visitors to your content/service that currently access it using relevant devices</p>
-  </li>
+  <li><a href="/service-manual/users/user-needs.html">What’s the user need?</a> Please provide supporting evidence</li>
+  <li>Which 3rd-party native/hybrid apps have already been developed to meet this user need? If  there are none and condition 2 has been met, please provide your thoughts on why this might be the case. If there are 3rd-party alternatives, please state why you believe a government-developed app is required.</li>
+  <li>Is this user need of sufficient importance to (your users to) justify the lifetime cost of your proposed app? If you believe it is, how have you determined this? You might find it useful to review articles within the service manual such as, <a href="/service-manual/users">Know Your Users</a> and <a href="/service-manual/agile/writing-user-stories.html">Writing User Stories</a>.</li>
+  <li>Is there evidence of demand for this type of app amongst your target users? If you believe there is, please provide supporting evidence e.g. examples of similar apps that have proven popular with your target audience and evidence of their popularity.</li>
+  <li>Is there evidence to justify building an app for the platform you’re proposing to do this for? If so, please provide supporting evidence e.g. analytics data that shows proportion of visitors to your content/service that currently access it using relevant devices.</li>
 </ol>
+
+<h3 id="the-process">The process</h3>
+
+<p>In addition to the evidence requested above, all digital spend for the development of standalone mobile apps is subject to the GDS spend approval. <a href="https://www.gov.uk/government/publications/cabinet-office-controls-guidance-version-3-1">Guidance</a> (including details about <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/60699/Annex-4-2-Service-Level-Agreement.doc">response times</a>) on the process can be found on GOV.UK. If you have any queries, <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#109;&#111;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">please contact GDS</a>.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+  <li><a href="http://www.slideshare.net/DigEngHMG/government-approach-to-apps">Government approach to apps presentation</a></li>
+  <li>Tom Loosemoore’s <a href="http://digital.cabinetoffice.gov.uk/2013/03/12/were-not-appy-not-appy-at-all/">blog post about standalone apps</a></li>
+</ul>
 
 
       <nav class="page-tools">
@@ -432,6 +390,8 @@
         <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
       </ul>
       <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
     </nav>
     <div class="copyright">
       <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>

@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Analytics tools — Government Service Design Manual</title>
+<title>Navigating the controls process — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -142,7 +142,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/making-software">Making software</a></li>
+      <li><a href="/service-manual/agile">Agile</a></li>
       
     </ol>
   </nav>
@@ -153,14 +153,16 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Analytics tools</h1>
-      
-      <h2 class="subtitle">Choosing the right ones for your service</h2>
+      <h1>Navigating the controls process</h1>
       
     </hgroup>
 
     
 <ul class="meta-phases group">
+  
+  <li class="discovery"><a href="/service-manual/phases/discovery.html">discovery</a></li>
+  
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
   
   <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
   
@@ -176,15 +178,7 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-high-level-requirements"><a href="#high-level-requirements">High level requirements</a>
-</li>
-<li class="level-privacy"><a href="#privacy">Privacy</a>
-</li>
-<li class="level-vendor-comparison"><a href="#vendor-comparison">Vendor comparison</a>
-</li>
-<li class="level-configuring-analytics-tools"><a href="#configuring-analytics-tools">Configuring analytics tools</a>
-</li>
-<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+<li class="level-mapping-controls-to-discovery-alpha-beta-live-stages"><a href="#mapping-controls-to-discovery-alpha-beta-live-stages">Mapping controls to Discovery, Alpha, Beta, Live Stages</a>
 </li>
 </ol>
 
@@ -192,101 +186,112 @@
     </div>
 
     <div class="inner">
-      <p>There are various web analytics tools available to help you measure how people are using your service. You will need to assess how well a particular tool meets your needs before deciding which one to use.</p>
+      <p>Organisations should follow the rules set out in <a href="http://www.hm-treasury.gov.uk/psr_mpm_index.htm">Managing Public Money</a> which sets out the overriding principles for dealing with resources used by public sector organisations in the UK.</p>
 
-<p>This guidance describes some of the criteria you should consider and reviews some of the main analytics tools against them.</p>
+<p>The HMG <a href="https://www.gov.uk/government/publications/cabinet-office-controls-guidance-version-3-1">Spend Controls</a> supplement those rules with specific controls for spend in the following areas: Advertising and marketing and communications; Strategic Supplier Management, including disputes; Commercial models; ICT; Digital Service Delivery (including ID Assurance); External Recruitment; Consultancy; Redundancy and Compensation; Learning and Development; Property and Facilities Management.</p>
 
-<h2 id="high-level-requirements">High level requirements</h2>
+<p>A request for spend approval is likely to require a number of controls - most Digital and IT spend requests will also require Commercial Approval to ensure they are aligned to <a href="http://procurement.cabinetoffice.gov.uk/policy-capability/latest-policy-and-regulations/public-procurement-policy">government procurement policy</a>. Each department has a GDS account manager who will ensure that other areas of Cabinet Office are engaged as needed when considering a case. An online controls tool has been introduced to support this process and give full visibility on case progress.</p>
 
-<p>When deciding which analytics tool is most appropriate for your service, you should consider the following:</p>
-
-<ul>
-  <li>the total cost of ownership as well as cost in comparison to turnover of service</li>
-  <li>the volume of data being sampled</li>
-  <li>who owns the data (it should be your organisation!)</li>
-  <li>the cost of additional profiles and/or custom variables</li>
-  <li>the admin system users have access to</li>
-  <li>whether it is hosted by the vendor or in-house</li>
-  <li>whether it tracks offline channel usage</li>
-  <li>whether it provides a comprehensive set of standard reports (including social interactions and multimedia capturing)</li>
-  <li>it <strong>must</strong> provide an open API with no export restrictions</li>
-  <li>if it can measure transactions through funnel analysis and measure goals</li>
-  <li>support and training</li>
-  <li>the cookies it requires</li>
-</ul>
-
-<p>For each of these criteria, you should identify which are fulfilled as part of the standard quoted package and what is charged for any additional features.</p>
-
-<h2 id="privacy">Privacy</h2>
-
-<p>The privacy and security of data is of the utmost importance. Make sure your analytics solution and processes take the following into account:</p>
+<p>The purpose of the IT and digital controls is to ensure that spending on IT is proportionate and directed at programmes and projects that meet the commonly agreed Digital and ICT strategies. It is an independent confirmation that the department has undertaken thorough consideration of the user need and value for money solution options. The controls process has changed over time to ensure:</p>
 
 <ul>
-  <li>do not collect and process any personal information (the terms and conditions of your analytics provider will probably expressly forbid you from doing this)</li>
-  <li>turn off any data sharing (some suppliers may collect data anonymously more internal benchmarking)</li>
-  <li>anonymise IP addresses that your analytics provider collects, by removing the last octet of the address</li>
-  <li>obtain and review your vendor’s privacy and security policy</li>
-  <li>you should own and be able to export analytics data (pay attention to terms and conditions for any free products)</li>
-  <li>does the solution meet the EU privacy directive and the European Commission’s Directive on Data Protection?</li>
-  <li>where is collected data held?</li>
-  <li>do data centres meet EU/British data security standards?</li>
-  <li>how long is data held for?</li>
-  <li>what will happen to the data on termination of the contract- can you export it?</li>
-  <li>data aggregation and sharing (does the vendor mine your data for cross-customer benchmarking/trends or to provide usage data to any advertising channels)</li>
-  <li>what access your vendors employees have to your data (make sure there are adequate administration tools to control appropriate access for your own staff)</li>
+  <li>greater public and market transparency and two-way engagement through publishing business needs and subsequent decisions towards a solution</li>
+  <li>greater emphasis on problem exploration, solution discovery and market engagement activity before any formal procurement is initiated</li>
+  <li>greater use of agile iterative development over linear waterfall delivery</li>
 </ul>
 
-<h2 id="vendor-comparison">Vendor comparison</h2>
+<p>GDS will examine and challenge all technology-related spending over a certain threshold - no public commitment or expenditure should be made above these thresholds without prior approval. The thresholds are:</p>
 
-<p>There are a range of digital/web analytics vendors in the market-place, together with open source solutions.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>£5 million</td>
+      <td>Full lifetime cost of the project</td>
+    </tr>
+    <tr>
+      <td>£1 million</td>
+      <td>Current or new back office / administrative systems, including Enterprise Resource Planning (ERP) systems, HR systems, Finance / Accounting systems, procurement systems. The control includes implementation, licensing and support costs, as well as any extension to those services</td>
+    </tr>
+    <tr>
+      <td>£100k</td>
+      <td>Common Infrastructure Solutions for the Public Sector Network (PSN)</td>
+    </tr>
+    <tr>
+      <td>£0 (no lower limit)</td>
+      <td>Spend on digital projects</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>A search for <a href="http://www.bing.com/search?q=Analytics+Tools+Comparison&amp;FORM=QSRE4">Analytics Tools Comparison</a> provides a number of useful resources where you can compare the capabilities and strengths of different services. (See some examples in <a href="#further-reading">Further reading</a> below).</p>
-
-<h2 id="configuring-analytics-tools">Configuring analytics tools</h2>
-
-<p>Install and configure analytics tools that meet your needs. Where possible, use platforms that enable the data to be piped automatically into other systems.
-Using <a href="http://en.wikipedia.org/wiki/Application_programming_interface">APIs</a> (Application Programming Interfaces) will stop you having to input data manually and allows for aggregation across multiple platforms.
-You will need to answer the following:</p>
+<p>These thresholds cover all technology expenditure, including:</p>
 
 <ul>
-  <li>have you installed web analytics software?</li>
-  <li>have you configured your web analytics software with the appropriate <a href="http://en.wikipedia.org/wiki/Conversion_funnel">conversion funnels</a>?</li>
-  <li>do you have the capability to run user satisfaction surveys?</li>
-  <li>do you have the capability to do <a href="http://en.wikipedia.org/wiki/Ab_testing">A/B testing</a> and <a href="http://en.wikipedia.org/wiki/Multivariate_testing">multivariate testing</a>?</li>
+  <li>contracts (including contract amendments, extensions or renewals)</li>
+  <li>licences</li>
+  <li>expenditure through existing frameworks</li>
+  <li>feasibility and/or proof of concept studies</li>
+  <li>pilots</li>
+  <li>projects (or an element of a project) and programmes</li>
+  <li>‘business as usual’ changes or enhancements or maintenance or refreshes</li>
+  <li>common infrastructure solutions including voice and data communications, Public Services Networks (PSN) whether fixed or mobile.</li>
 </ul>
 
-<h2 id="further-reading">Further reading</h2>
+<p>They also cover programmes that are broken into smaller chunks or projects, which individually are below the thresholds, but which in aggregate are above them. Intentionally breaking down a programme into smaller elements to avoid the controls process is itself a serious breach of the controls.</p>
 
-<p>A selection of sites that provide vendor comparison information:</p>
+<p>Departments should engage early with GDS to agree the appropriate points for approval, before the first approval is needed (usually after the discovery phase, at Strategic Outline Case or before a Prior Information Notice is issued).  This early engagement will avoid departments proceeding too far without approval and reduces the risk of irregular expenditure.</p>
+
+<p>Full details of current requirements are detailed in the <a href="https://www.gov.uk/government/publications/cabinet-office-controls-guidance-version-3-1">Cabinet Office ICT Spend Control Form</a> (currently V.2.18).  You can start the process by e-mailing <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#071;&#068;&#083;&#115;&#112;&#101;&#110;&#100;&#097;&#112;&#112;&#114;&#111;&#118;&#097;&#108;&#115;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#071;&#068;&#083;&#115;&#112;&#101;&#110;&#100;&#097;&#112;&#112;&#114;&#111;&#118;&#097;&#108;&#115;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a>. If your request contains ‘Restricted’ information it should be sent to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#105;&#099;&#116;&#115;&#112;&#101;&#110;&#100;&#097;&#112;&#112;&#114;&#111;&#118;&#097;&#108;&#064;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#115;&#105;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">&#105;&#099;&#116;&#115;&#112;&#101;&#110;&#100;&#097;&#112;&#112;&#114;&#111;&#118;&#097;&#108;&#064;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#115;&#105;&#046;&#103;&#111;&#118;&#046;&#117;&#107;</a>.</p>
+
+<p>If your project cost exceeds your department’s main delegated authority set by Treasury it will be classed as a Major Project and you will also need to engage with Cabinet Office’s <a href="https://www.gov.uk/government/policy-teams/126">Major Projects Authority (MPA)</a>. A Major Project is defined as “a central Government funded project or programme that requires HM Treasury approval during its life, as set out in Delegated Authority letters”. The <a href="http://www.hm-treasury.gov.uk/d/major_projects_approvals_assurance_guidance.PDF">guidance</a> describes the Treasury Approval process and Major Projects Assurance process including creation of an <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/61374/MPA_20Guidance.pdf">Integrated Assurance and Approval Plan</a> (IAAP), which will document the approvals needed through the lifecycle of the project.</p>
+
+<p>Digital projects will also be assessed for compliance to the service standard – as described in the flowchart below:</p>
+
+<p><img src="/service-manual/assets/images/spending-controls/flowchart.png" alt="Compliance flowchart" /></p>
+
+<p>The controls process will have slight differences if your project is following an iterative approach or a waterfall approach. All digital projects will follow an iterative approach, and you will need to engage early with GDS to define the approvals your project needs. Below is an example of how this might look:</p>
+
+<h3 id="mapping-controls-to-discovery-alpha-beta-live-stages">Mapping controls to Discovery, Alpha, Beta, Live Stages</h3>
+
+<p><img src="/service-manual/assets/images/spending-controls/agile.png" alt="Mapping controls to Discovery, Alpha, Beta, Live Stages" /></p>
+
+<p>The approach to agile delivery consists of three key phases:</p>
 
 <ul>
-  <li><a href="http://www.aboutanalytics.com/">About analytics</a></li>
-  <li><a href="http://www.kaushik.net/avinash/web-analytics-tools-comparison-a-recommendation/">Web Analytics Tools Comparison: A Recommendation</a> Old, but thoughtful</li>
-  <li><a href="http://www.slideshare.net/shvmdhwn/analytics-tool-comparison">Analytics tool comparison</a></li>
-  <li><a href="http://searchengineland.com/buyers-guides/enterprise-web-analytics-tools-in-the-facebook-era-a-buyers-guide">Enterprise Web Analytics: A Buyer’s Guide</a></li>
+  <li>Discovery - explore user need validity, nature of problem and solution approaches</li>
+  <li>Iterate - iterative development of alpha, beta solutions, progressively gaining further insight into live solution</li>
+  <li>Live - live solution, and refinement through iterative changes and feedback from usage</li>
 </ul>
 
-<p>For information on digital analytics:</p>
+<p>The key evidence documents are:</p>
 
-<ul>
-  <li><a href="http://www.kaushik.net/avinash/">Occam’s Razor by Avinash Kaushik</a> has a wealth of useful, easily digestible information on analytics</li>
-  <li><a href="http://www.webanalyticsdemystified.com/">Web Analytics Demystified</a> and the <a href="http://www.digitalanalyticsassociation.org/">Digital Analytics Association</a> have free whitepapers.</li>
-</ul>
-
-<p>For transactions, it’s important to understand funnels:</p>
-
-<ul>
-  <li><a href="http://wiki.clicktale.com/Article/Conversion_Funnels">Conversion Funnels</a></li>
-  <li><a href="http://www.webics.com.au/blog/conversion-tracking/conversion-funnel/">What is a Conversion Funnel?</a></li>
-  <li>Blog article by Morgan Brown with a <a href="http://uxdesign.smashingmagazine.com/2012/01/04/stop-designing-pages-start-designing-flows/">good discussion on user flows and conversion funnels</a></li>
-</ul>
-
+<ol>
+  <li><strong>Strategic Outline Case</strong> is developed once the discovery phase has provided insight into the problem, solution approaches, risks and benefits. It contains:
+    <ul>
+      <li>total budget envelope, including subset proposed for alpha solutions</li>
+      <li>evidence that agile is optimal approach</li>
+    </ul>
+  </li>
+  <li><strong>Outline Business Case</strong> can be completed based on information gathered during the development of early alpha solutions. It contains:
+    <ul>
+      <li>activities proposed for beta solution</li>
+      <li>subset of budget for beta solution development</li>
+    </ul>
+  </li>
+  <li><strong>Full Business Case</strong> – The development of beta solutions will provide sufficient certainty to complete a Full Business Case. It will contain:
+    <ul>
+      <li>activities for live build</li>
+      <li>activities for post-live refinement and management information</li>
+      <li>proposed budget for live and post-live development</li>
+    </ul>
+  </li>
+  <li><strong>Post Implementation Review</strong> – outcomes and performance report, supplier assessment, lessons learned and shared.</li>
+</ol>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/analytics-tools.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/analytics-tools.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/agile/spending-controls.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/agile/spending-controls.md">Page source</a>
         </ol>
       </nav>
     </div>

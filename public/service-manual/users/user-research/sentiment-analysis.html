@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Analytics tools — Government Service Design Manual</title>
+<title>Sentiment analysis — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -142,7 +142,9 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/making-software">Making software</a></li>
+      <li><a href="/service-manual/users">Know your users</a></li>
+      
+      <li><a href="/service-manual/users/user-research">User research</a></li>
       
     </ol>
   </nav>
@@ -153,18 +155,20 @@
 <article role="article" class="group">
   <header class="page-header group">
     <hgroup>
-      <h1>Analytics tools</h1>
+      <h1>Sentiment analysis</h1>
       
-      <h2 class="subtitle">Choosing the right ones for your service</h2>
+      <h2 class="subtitle">Understanding user's feelings about a service</h2>
       
     </hgroup>
 
     
 <ul class="meta-phases group">
   
-  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
+  <li class="discovery"><a href="/service-manual/phases/discovery.html">discovery</a></li>
   
-  <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
+  
+  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
   
 </ul>
 
@@ -176,15 +180,11 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-high-level-requirements"><a href="#high-level-requirements">High level requirements</a>
+<li class="level-guidance"><a href="#guidance">Guidance</a>
 </li>
-<li class="level-privacy"><a href="#privacy">Privacy</a>
+<li class="level-weaknesseswhen-not-to-be-used"><a href="#weaknesseswhen-not-to-be-used">Weaknesses/when not to be used</a>
 </li>
-<li class="level-vendor-comparison"><a href="#vendor-comparison">Vendor comparison</a>
-</li>
-<li class="level-configuring-analytics-tools"><a href="#configuring-analytics-tools">Configuring analytics tools</a>
-</li>
-<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+<li class="level-sample"><a href="#sample">Sample</a>
 </li>
 </ol>
 
@@ -192,101 +192,27 @@
     </div>
 
     <div class="inner">
-      <p>There are various web analytics tools available to help you measure how people are using your service. You will need to assess how well a particular tool meets your needs before deciding which one to use.</p>
+      <p>Sentiment analysis is a method used to analyse high volumes of verbatim comments from users in order to help easily understand the attitude and tone of users’ comment.</p>
 
-<p>This guidance describes some of the criteria you should consider and reviews some of the main analytics tools against them.</p>
+<h2 id="guidance">Guidance</h2>
 
-<h2 id="high-level-requirements">High level requirements</h2>
+<p>The method is very simple and uses tailored software to analyse user comments and structure them in a manner that can be used to understand ‘sentiment’ towards a product or service. This enables positive and negative comments to be grouped so that actions can be assigned to resolve problems and issues raised by users. </p>
 
-<p>When deciding which analytics tool is most appropriate for your service, you should consider the following:</p>
+<h2 id="weaknesseswhen-not-to-be-used">Weaknesses/when not to be used</h2>
 
-<ul>
-  <li>the total cost of ownership as well as cost in comparison to turnover of service</li>
-  <li>the volume of data being sampled</li>
-  <li>who owns the data (it should be your organisation!)</li>
-  <li>the cost of additional profiles and/or custom variables</li>
-  <li>the admin system users have access to</li>
-  <li>whether it is hosted by the vendor or in-house</li>
-  <li>whether it tracks offline channel usage</li>
-  <li>whether it provides a comprehensive set of standard reports (including social interactions and multimedia capturing)</li>
-  <li>it <strong>must</strong> provide an open API with no export restrictions</li>
-  <li>if it can measure transactions through funnel analysis and measure goals</li>
-  <li>support and training</li>
-  <li>the cookies it requires</li>
-</ul>
+<p>Some of the free tools available can group comments very broadly, and not enable the level of granularity that enables the analysis to be useful and actionable. Furthermore, comments can sometimes be analysed incorrectly. This is especially the case when slang is used, and phrases are not meant literally, and negative words/phrases are meant positively.</p>
 
-<p>For each of these criteria, you should identify which are fulfilled as part of the standard quoted package and what is charged for any additional features.</p>
+<p>This is a notoriously difficult technique for anything beyond broad statements, and requires a very large sample size both of seed (already analysed) material and of commentary from each user. It’s not much use on twitter comments, for example, because they’re so short. </p>
 
-<h2 id="privacy">Privacy</h2>
+<h2 id="sample">Sample</h2>
 
-<p>The privacy and security of data is of the utmost importance. Make sure your analytics solution and processes take the following into account:</p>
-
-<ul>
-  <li>do not collect and process any personal information (the terms and conditions of your analytics provider will probably expressly forbid you from doing this)</li>
-  <li>turn off any data sharing (some suppliers may collect data anonymously more internal benchmarking)</li>
-  <li>anonymise IP addresses that your analytics provider collects, by removing the last octet of the address</li>
-  <li>obtain and review your vendor’s privacy and security policy</li>
-  <li>you should own and be able to export analytics data (pay attention to terms and conditions for any free products)</li>
-  <li>does the solution meet the EU privacy directive and the European Commission’s Directive on Data Protection?</li>
-  <li>where is collected data held?</li>
-  <li>do data centres meet EU/British data security standards?</li>
-  <li>how long is data held for?</li>
-  <li>what will happen to the data on termination of the contract- can you export it?</li>
-  <li>data aggregation and sharing (does the vendor mine your data for cross-customer benchmarking/trends or to provide usage data to any advertising channels)</li>
-  <li>what access your vendors employees have to your data (make sure there are adequate administration tools to control appropriate access for your own staff)</li>
-</ul>
-
-<h2 id="vendor-comparison">Vendor comparison</h2>
-
-<p>There are a range of digital/web analytics vendors in the market-place, together with open source solutions.</p>
-
-<p>A search for <a href="http://www.bing.com/search?q=Analytics+Tools+Comparison&amp;FORM=QSRE4">Analytics Tools Comparison</a> provides a number of useful resources where you can compare the capabilities and strengths of different services. (See some examples in <a href="#further-reading">Further reading</a> below).</p>
-
-<h2 id="configuring-analytics-tools">Configuring analytics tools</h2>
-
-<p>Install and configure analytics tools that meet your needs. Where possible, use platforms that enable the data to be piped automatically into other systems.
-Using <a href="http://en.wikipedia.org/wiki/Application_programming_interface">APIs</a> (Application Programming Interfaces) will stop you having to input data manually and allows for aggregation across multiple platforms.
-You will need to answer the following:</p>
-
-<ul>
-  <li>have you installed web analytics software?</li>
-  <li>have you configured your web analytics software with the appropriate <a href="http://en.wikipedia.org/wiki/Conversion_funnel">conversion funnels</a>?</li>
-  <li>do you have the capability to run user satisfaction surveys?</li>
-  <li>do you have the capability to do <a href="http://en.wikipedia.org/wiki/Ab_testing">A/B testing</a> and <a href="http://en.wikipedia.org/wiki/Multivariate_testing">multivariate testing</a>?</li>
-</ul>
-
-<h2 id="further-reading">Further reading</h2>
-
-<p>A selection of sites that provide vendor comparison information:</p>
-
-<ul>
-  <li><a href="http://www.aboutanalytics.com/">About analytics</a></li>
-  <li><a href="http://www.kaushik.net/avinash/web-analytics-tools-comparison-a-recommendation/">Web Analytics Tools Comparison: A Recommendation</a> Old, but thoughtful</li>
-  <li><a href="http://www.slideshare.net/shvmdhwn/analytics-tool-comparison">Analytics tool comparison</a></li>
-  <li><a href="http://searchengineland.com/buyers-guides/enterprise-web-analytics-tools-in-the-facebook-era-a-buyers-guide">Enterprise Web Analytics: A Buyer’s Guide</a></li>
-</ul>
-
-<p>For information on digital analytics:</p>
-
-<ul>
-  <li><a href="http://www.kaushik.net/avinash/">Occam’s Razor by Avinash Kaushik</a> has a wealth of useful, easily digestible information on analytics</li>
-  <li><a href="http://www.webanalyticsdemystified.com/">Web Analytics Demystified</a> and the <a href="http://www.digitalanalyticsassociation.org/">Digital Analytics Association</a> have free whitepapers.</li>
-</ul>
-
-<p>For transactions, it’s important to understand funnels:</p>
-
-<ul>
-  <li><a href="http://wiki.clicktale.com/Article/Conversion_Funnels">Conversion Funnels</a></li>
-  <li><a href="http://www.webics.com.au/blog/conversion-tracking/conversion-funnel/">What is a Conversion Funnel?</a></li>
-  <li>Blog article by Morgan Brown with a <a href="http://uxdesign.smashingmagazine.com/2012/01/04/stop-designing-pages-start-designing-flows/">good discussion on user flows and conversion funnels</a></li>
-</ul>
-
+<p>Feedback can be gathered from any user feedback point eg email, website, survey.</p>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/analytics-tools.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/analytics-tools.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/users/user-research/sentiment-analysis.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/users/user-research/sentiment-analysis.md">Page source</a>
         </ol>
       </nav>
     </div>
