@@ -1,3 +1,40 @@
-<div id="wrapper" class="design-principles styleguide">
-  <%= render collection: @results, partial: 'result' %>
+<!--[if gt IE 8]><!--><link rel="stylesheet" href="/service-manual/assets/stylesheets/main.css"><!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/service-manual/assets/stylesheets/main-ie6.css"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/service-manual/assets/stylesheets/main-ie7.css"><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/service-manual/assets/stylesheets/main-ie8.css"><![endif]-->
+
+<%= stylesheet_link_tag "search.css" %>
+
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      <li><a href="/service-manual">Home</a></li>
+      <li><a href="/service-manual/search">Search</a></li>
+    </ol>
+  </nav>
 </div>
+
+<div id="wrapper" class="service-menu search">
+  <nav id="proposition-menu">
+    <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+    <ul id="proposition-links">
+      <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+      <li><a href="/service-manual/about" class="">About</a></li>
+      <li><a href="/feedback" class="">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <section id="content" role="main" class="group">
+    <div class="inner">
+      <%= render partial: 'form' %>
+
+      <div class="search-container">
+        <ul>
+          <%= render collection: @results, partial: 'result' %>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<% content_for :title, "#{@search_term} - Search - Government Service Design Manual – GOV.UK" %>

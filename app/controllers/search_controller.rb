@@ -9,6 +9,7 @@ class SearchController < ApplicationController
     set_expiry
 
     res = search_client.search(params[:q])
+    @search_term = params[:q]
     @results = res.map { |r| SearchResult.new(r) }
   rescue GdsApi::Rummager::SearchServiceError => e
     @results = ["HELP!"]

@@ -1,0 +1,54 @@
+// govuk_frontend_toolkit mixins
+@import "_conditionals";
+@import "_typography";
+@import "_colours";
+@import "_css3";
+
+#global-breadcrumb {
+  display: block;
+  max-width: 896px;
+  margin: 0 auto;
+  padding: 0.75em 2em;
+}
+
+.search {
+  .inner {
+    padding: 1em 2em;
+  }
+
+  form.search-header {
+    border-bottom: 1px solid $border-colour;
+    padding: 1em 0;
+    margin-bottom: 1em;
+
+    @include media(tablet) {
+      padding: 2em 0 3em 0;
+      margin-bottom: 3em;
+    }
+
+    button {
+      background-color: $mellow-red;
+      // Bottom edge effect
+      @include box-shadow(0 2px 0 darken($mellow-red, 15%));
+      @include ie-lte(8) {
+        border-bottom: 2px solid darken($mellow-red, 15%);
+      }
+    }
+  }
+
+  .search-container {
+    @include media(tablet) {
+      width: 75%;
+    }
+
+    ul {
+      li {
+        margin-bottom: 1.5em;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
