@@ -14,7 +14,7 @@ gem 'gds-api-adapters'
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
 else
-  gem 'slimmer', '3.15.0'
+  gem 'slimmer', '3.16.0'
 end
 
 # Gems used only for assets and not required
