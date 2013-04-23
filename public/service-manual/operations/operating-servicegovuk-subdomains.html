@@ -9,20 +9,20 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-03571a509cdb2eb334a347191663c9bb.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-dc44ee9b31f9da4f4de62d6bfb2e1dc9.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-3f13af8508d093d6a773a39909bae8ee.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-
   2b95aacef7f3529d9d4c79bb61d173ee.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
@@ -84,8 +84,8 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1366206701" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1366206701" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366715154" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1366715154" type="text/javascript"></script>
 
 
 
@@ -188,7 +188,7 @@
       <p>Government offers a number of different digital services to citizens. While the start and end of a user’s journey will be on GOV.UK, the service itself will typically be hosted elsewhere, and will need a different domain name as a result. This page describes the use of <code>service.gov.uk</code> subdomains for hosting digital services.</p>
 
 <blockquote>
-  <p>Note: This document is written as a “standard,” and as such uses the words MUST, SHOULD, MAY and MUST NOT as defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+  <p>Note: This document is written as a ‘standard’, and as such uses the words MUST, SHOULD, MAY and MUST NOT as defined in <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
 </blockquote>
 
 <h2 id="one-entry-point">One entry point</h2>
@@ -204,7 +204,7 @@
 <p>The transactional part of a service – the dynamically generated pages where users interact with the service – will typically not be hosted on the <code>www.gov.uk</code> domain. That means that each service needs its own domain name for the transactional part of the service.</p>
 
 <blockquote>
-  <p>Note: This does not apply to the set of interactive tools on GOV.UK known as “smart answers” which are developed and maintained by GDS in partnership with other government departments.</p>
+  <p>Note: This does not apply to the set of interactive tools on GOV.UK known as ‘smart answers’ which are developed and maintained by GDS in partnership with other government departments.</p>
 </blockquote>
 
 <p>For all new digital government services going live from 1 April 2013 GDS will create a domain name of the form <code>servicename.service.gov.uk</code> (where “servicename” is a plain English description of the service agreed between the relevant dept/agency and the Government Digital Service). This will introduce consistency across central government domains for digital services and remove the dependency on departmental subdomains (which are of course vulnerable to machinery of government changes) and the now-retired DirectGov and BusinessLink online brands.</p>
@@ -237,7 +237,7 @@
 
 <p><strong>Multiple environments</strong></p>
 
-<p>It is good practice to have multiple “environments” for the development, testing and live (aka production) versions of any service. The <a href="/service-manual/making-software/sandbox-and-staging-servers.html">development and testing environments</a> allow the team to assess the correctness and quality of the service before it goes live. Typically, the subdomains used to access a development or testing instance of the service are structured in the same way as the subdomains used in the live version of the service.</p>
+<p>It is good practice to have multiple ‘environments’ for the development, testing and live (aka production) versions of any service. The <a href="/service-manual/making-software/sandbox-and-staging-servers.html">development and testing environments</a> allow the team to assess the correctness and quality of the service before it goes live. Typically, the subdomains used to access a development or testing instance of the service are structured in the same way as the subdomains used in the live version of the service.</p>
 
 <p>Therefore, you MAY create other subdomains of <code>servicename.service.gov.uk</code> for use in testing and development, such as <code>www-preview.</code> and <code>www-dev.</code>. If there is a compelling reason to use a non <code>.gov.uk</code> domain for testing and/or development subdomains, that’s also acceptable.</p>
 
@@ -298,7 +298,7 @@ Disallow: /
 
 <p>Your suppliers will use these subdomains to address your <code>www</code>, <code>admin</code> and <code>assets</code> services.</p>
 
-<p>Detailed configuration advice for origin servers is outside of the scope of this document, but it is important to ensure that these “origin domains” only listen for traffic from trusted source such as</p>
+<p>Detailed configuration advice for origin servers is outside of the scope of this document, but it is important to ensure that these ‘origin domains’ only listen for traffic from trusted source such as</p>
 
 <ul>
   <li>the <abbr title="Distributed Denial of Service">DDOS</abbr> protection provider’s servers</li>

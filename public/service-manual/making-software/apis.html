@@ -9,20 +9,20 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-03571a509cdb2eb334a347191663c9bb.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-dc44ee9b31f9da4f4de62d6bfb2e1dc9.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-3f13af8508d093d6a773a39909bae8ee.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-
   2b95aacef7f3529d9d4c79bb61d173ee.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366206701" media="screen" rel="stylesheet" type="text/css">
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1366715154" media="screen" rel="stylesheet" type="text/css">
 <![endif]-->
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-a250641f33ac06dba78975b0c65f8ac9.css" media="print" rel="stylesheet" type="text/css">
@@ -84,8 +84,8 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1366206701" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1366206701" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1366715154" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1366715154" type="text/javascript"></script>
 
 
 
@@ -330,9 +330,9 @@ When changing URIs, continue to honour old consumers, possibly use a <a href="ht
 
 <p>Many of the GOV.UK publishing applications send emails to provide alerts for content designers. When running tests we don’t want to send lots of fake emails so we swap the normal email adapter for one that logs the emails it would have sent. This lets us test our code is doing the right thing without depending on external services.</p>
 
-<p>Our “data insights” code involves significant interactions with <a href="http://www.google.co.uk/analytics/">Google Analytics</a>. It wouldn’t be practical to test this by sending events to Google, waiting for them to be processed, and then reviewing the results. Our developers therefore built a mock service that can be run alongside tests and provides a dummy version of Google’s API that lets us check the right data is being sent.</p>
+<p>Our ‘data insights’ code involves significant interactions with <a href="http://www.google.co.uk/analytics/">Google Analytics</a>. It wouldn’t be practical to test this by sending events to Google, waiting for them to be processed, and then reviewing the results. Our developers therefore built a mock service that can be run alongside tests and provides a dummy version of Google’s API that lets us check the right data is being sent.</p>
 
-<p>Our publishing systems make use of a single sign-on service. In most of our tests the interaction with that service are mocked so the applications’ tests can be run in isolation, but we also have a suite of “smoke tests” that run in our preview environment and use dummy accounts to ensure that the full authentication and authorisation flow is working.</p>
+<p>Our publishing systems make use of a single sign-on service. In most of our tests the interaction with that service are mocked so the applications’ tests can be run in isolation, but we also have a suite of smoke tests that run in our preview environment and use dummy accounts to ensure that the full authentication and authorisation flow is working.</p>
 
 <p>The Licence Application Tool integrates with a number of third-party payment services. It makes use of test accounts with those services to verify it is able to communicate with them and is sending the right data to complete payments.</p>
 
