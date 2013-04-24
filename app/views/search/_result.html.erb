@@ -1,4 +1,4 @@
-<li class="section-<%= result.section %> type-<%= result.format %>">
-  <p class="search-result-title"><a href="<%= result.link %>" title="View <%= result.title %>"<% if result.format == "recommended-link" %> rel="external"<% end %>><%= result.title %></a></p>
+<li>
+  <p class="search-result-title"><a href="<%= result.link %>" title="View <%= result.title %>"><%= result.title %></a></p>
   <p><%= result.description %></p>
 </li>
