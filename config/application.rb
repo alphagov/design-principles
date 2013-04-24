@@ -67,6 +67,7 @@ module DesignPrinciples
       application-ie6.css
       application-ie7.css
       application-ie8.css
+      search.css
       main.js
     )
 
