@@ -10,6 +10,7 @@ use Rack::Rewrite do
   r301 '/service-manual/measurement/costpertransaction.html', '/service-manual/measurement/cost-per-transaction'
   r301 '/service-manual/measurement/performanceframework.html', '/service-manual/measurement/performance-framework'
   r301 '/service-manual/measurement/usersatisfaction.html', '/service-manual/measurement/user-satisfaction'
+  r301 '/service-manual/the-team/transformation-partner.html', '/service-manual/the-team/working-with-specialists'
   r301 '/service-manual/users/user-research/communityusergroups.html', '/service-manual/users/user-research/community-user-groups'
   r301 '/service-manual/users/user-research/discussionguides.html', '/service-manual/users/user-research/discussion-guides'
   r301 '/service-manual/users/user-research/ethnographicresearch.html', '/service-manual/users/user-research/ethnographic-research'
