@@ -12,7 +12,7 @@ end
 describe "The area-specific pages" do
   it "should render the mainstream page" do
     visit "/designprinciples/mainstream"
-    page.should have_content("Style differences: Mainstream")
+    page.should have_content("3. Mainstream")
   end
 
   it "should render the detailed guidance page" do
