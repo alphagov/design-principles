@@ -13,6 +13,7 @@ use Rack::Rewrite do
   r301 %r{/service-manual/measurement/performance-framework.html(\?.*)?}, '/service-manual/measurement/other-kpis$1'
   r301 %r{/service-manual/measurement/performance-framework(\?.*)?}, '/service-manual/measurement/other-kpis$1'
   r301 %r{/service-manual/measurement/usersatisfaction.html(\?.*)?}, '/service-manual/measurement/user-satisfaction$1'
+  r301 %r{/service-manual/digital-by-default/providing-evidence.html(\?.*)?}, '/service-manual/communications$1'
   r301 %r{/service-manual/the-team/transformation-partner.html(\?.*)?}, '/service-manual/the-team/working-with-specialists$1'
   r301 %r{/service-manual/users/user-research/communityusergroups.html(\?.*)?}, '/service-manual/users/user-research/community-user-groups$1'
   r301 %r{/service-manual/users/user-research/discussionguides.html(\?.*)?}, '/service-manual/users/user-research/discussion-guides$1'
