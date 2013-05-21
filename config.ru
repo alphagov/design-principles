@@ -5,6 +5,8 @@ require 'rack/rewrite'
 
 use Rack::Rewrite do
   r301 %r{/service-manual/about.html(\?.*)?}, '/service-manual/start$1'
+  r301 %r{/service-manual/agile/spending-controls.html(\?.*)?}, '/service-manual/technology/spending-controls$1'
+  r301 %r{/service-manual/agile/spending-controls(\?.*)?}, '/service-manual/technology/spending-controls$1'
   r301 %r{/service-manual/making-software/open-source(\?.*)?}, '/service-manual/making-software/choosing-technology$1'
   r301 %r{/service-manual/making-software/open-source.html(\?.*)?}, '/service-manual/making-software/choosing-technology$1'
   r301 %r{/service-manual/measurement/completionrate.html(\?.*)?}, '/service-manual/measurement/completion-rate$1'
