@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-32698280bd6ca5d99046949db1458750.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1368701295" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1369139601" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-37c4d65b5fe3d8b6497a669cb7c3b6e3.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1368701295" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1369139601" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-781ae9043c1cb57d37fd84c6fa9b56bc.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1368701295" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1369139601" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-cd98ff95a99e3361c595fa1e1fa35a9e.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1368701295" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1369139601" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
@@ -88,8 +88,8 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1368701295" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1368701295" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1369139601" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1369139601" type="text/javascript"></script>
 
 
 
@@ -185,9 +185,11 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-how-will-it-work"><a href="#how-will-it-work">How will it work?</a>
+<li class="level-the-identity-assurance-service"><a href="#the-identity-assurance-service">The Identity Assurance Service</a>
 </li>
-<li class="level-whats-happening-now"><a href="#whats-happening-now">What's happening now?</a>
+<li class="level-how-does-it-work"><a href="#how-does-it-work">How does it work?</a>
+</li>
+<li class="level-levels-of-assurance"><a href="#levels-of-assurance">Levels of assurance</a>
 </li>
 <li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
@@ -197,40 +199,42 @@
     </div>
 
     <div class="inner">
-      <p>The identity assurance service (or IDA) will provide a simple, safe way for people to access public services on GOV.UK.</p>
+      <p>Many public services require the user to prove their identity as an early and necessary step to accessing government services.  </p>
 
-<h2 id="how-will-it-work">How will it work?</h2>
+<p>The Identity Assurance Service will provide a simple, secure way for people to access public services on GOV.UK.</p>
 
-<p>Users will choose from a group of companies to help prove their identity when they sign in to GOV.UK. These companies will be certified by government and will perform simple checks to confirm the user’s identity to GOV.UK. </p>
+<p>The service is currently being prototyped. The IDAP team is working closely with several government departments, and a beta for a small number of government services will launch from late 2013.</p>
 
-<p>This means that:</p>
+<h2 id="the-identity-assurance-service">The Identity Assurance Service</h2>
 
-<ul>
-  <li>user information can be split into smaller parts </li>
-  <li>the responsibility of storing that information will be shared </li>
-</ul>
+<p>The Identity Assurance Service, developed by the Identity Assurance Programme (IDAP) within the Government Digital Service (GDS) will be the default service for all government departments providing public digital services which require identity assurance.</p>
 
-<p>This will be safer than storing everything centrally, and is a secure way to access services online.</p>
+<p>You should be working closely with IDAP to ensure that your identity assurance solution is aligned with IDAP’s cross-government platform.</p>
 
-<h2 id="whats-happening-now">What’s happening now?</h2>
+<h2 id="how-does-it-work">How does it work?</h2>
 
-<p>The identity assurance service is at the prototype stage, being tested in a weekly cycle of user research and development. The service will launch in stages, across different departments from late 2013.  </p>
+<p>IDAP is implementing an Identity Assurance Service that allows a user to authenticate themselves via an identity provider (IdP). IdPs are private sector organisations certified against government standards. They will perform checks to confirm the user’s identity and then assert that identity to the government department via the Identity Assurance Service platform.</p>
 
-<p>More information will be published in the manual when it’s available.</p>
+<p>In practice, this will mean that users of services will be prompted to log in using a third party while completing a transaction with government. If they log in successfully, and the IdP can assert that user’s identity, then the user will be able to complete that transaction.</p>
+
+<p>The Identity Assurance Service is about ‘who the user is’ not ‘what the user is entitled to’. The government department is responsible for determining entitlement. </p>
+
+<h2 id="levels-of-assurance">Levels of assurance</h2>
+
+<p>The government department determines the level of assurance (LoA) they require for the digital service.</p>
+
+<p><strong>LoA 1</strong> is used when a government department needs to know that it is the same user returning to the service but does not need to know who that user is.</p>
+
+<p><strong>LoA 2</strong> is used when a government department needs to know who the user is and that that they are a real person to a sufficient level of confidence to be offered in support of civil proceedings</p>
+
+<p><strong>LoA 3</strong> is used when a government department requires to know who the user is and that that they are a real person to a sufficient level of confidence to be offered in support of criminal proceedings.</p>
 
 <h2 id="further-reading">Further reading</h2>
 
-<p><strong>Essential</strong></p>
-
 <ul>
-  <li><a href="">Good Practice Guide 43:</a> Requirements for secure delivery of online public services</li>
-</ul>
-
-<p><strong>Helpful</strong></p>
-
-<ul>
-  <li><a href="">Good Practice Guide 44:</a> Authentication Credentials in Support of HMG Online Services </li>
-  <li><a href="">Good Practice Guide 45:</a> Identity Proofing and Verifying the Identity of an Individual in Support of HMG Online Services</li>
+  <li><a href="https://www.gov.uk/government/publications/identity-assurance-enabling-trusted-transactions">Good Practice Guide 43:</a> Requirements for secure delivery of online public services</li>
+  <li><a href="https://www.gov.uk/government/publications/identity-assurance-enabling-trusted-transactions">Good Practice Guide 44:</a> Authentication Credentials in Support of HMG Online Services </li>
+  <li><a href="https://www.gov.uk/government/publications/identity-assurance-enabling-trusted-transactions">Good Practice Guide 45:</a> Identity Proofing and Verifying the Identity of an Individual in Support of HMG Online Services</li>
   <li><a href="https://www.gov.uk/government/publications/identity-assurance-enabling-trusted-transactions">Identity assurance: enabling trusted transactions</a></li>
   <li><a href="http://digital.cabinetoffice.gov.uk/?s=identity+assurance">Blog posts from the IDA team</a></li>
 </ul>
