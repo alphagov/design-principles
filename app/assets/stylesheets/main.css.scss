@@ -178,6 +178,10 @@ html {
     font-weight: bold;
   }
 
+  h3.heading-level-3 {
+    font-weight: bold;
+  }
+
   h2, p, ol, ul {
     margin: 20px 0;
   }
@@ -507,7 +511,7 @@ html {
   }
 
   .image-container img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
