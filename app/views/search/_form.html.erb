@@ -1,17 +1,15 @@
-<form action="/service-manual/search" method="get" accept-charset="utf-8" class="search-header search-header-2 js-search-hash" role="search">
-  <fieldset>
-    <legend class="visuallyhidden">Search gov.uk</legend>
-
+<form action="/search" method="get" accept-charset="utf-8" class="search-header search-header-2 js-search-hash" role="search">
+  <fieldset class="search-input">
     <label for="search-main">
-      <h1>
-        <%- if @results && @results.any? -%>
-          <%= pluralize(@results.length, "result", "results") %> for
-        <%- else -%>
-          What are you looking for?
-        <%- end -%>
-      </h1>
+      <%- if @search_term.present? -%>
+        <h1>Search results for <span class="visuallyhidden">&ldquo;<%= @search_term %>&rdquo;</span></h1>
+      <%- else -%>
+        <h1>Search the Government Service Design Manual</h1>
+      <%- end -%>
     </label>
-
-    <input type="search" name="q" value="<%= @search_term %>" id="search-main" /> <button type="submit" class="button">Search</button>
+    <input type="search" name="q" value="<%= @search_term %>" id="search-main" />
+  </fieldset>
+  <fieldset class="search-submit">
+    <button type="submit" class="button">Search</button>
   </fieldset>
 </form>
