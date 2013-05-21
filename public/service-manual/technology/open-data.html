@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Open data — Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-32698280bd6ca5d99046949db1458750.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-37c4d65b5fe3d8b6497a669cb7c3b6e3.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-781ae9043c1cb57d37fd84c6fa9b56bc.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-cd98ff95a99e3361c595fa1e1fa35a9e.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
+
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css"]},
+  c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/frontend/media-player-4d52c02c18a460340db1ed476b807bf6.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
+
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script><script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-e5938d4ac4939ea75375d1a4d52eee96.js" type="text/javascript"></script>
+
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script src="/service-manual/assets/javascript/toggler.js?cache=1369144525" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1369144525" type="text/javascript"></script>
+
+
+
+
+
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the gov.uk homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK">
+        </a>
+        <a href="#search" class="search-toggle js-header-toggle">Search</a>
+      </div>
+
+      <form id="search" class="site-search" action="/service-manual/search" method="get">
+          <div class="content">
+            <label for="site-search-text">Search</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus" role="search">
+            <input class="submit" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/start" class="">Start using the manual</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/technology">Chief technology officer</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Open data</h1>
+      
+      <h2 class="subtitle">Accessible, machine readable data about services</h2>
+      
+    </hgroup>
+
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-the-data-that-you-should-make-open"><a href="#the-data-that-you-should-make-open">The data that you should make open</a>
+</li>
+<li class="level-making-your-data-open"><a href="#making-your-data-open">Making your data open</a>
+</li>
+<li class="level-building-on-open-data"><a href="#building-on-open-data">Building on open data</a>
+</li>
+<li class="level-building-trust"><a href="#building-trust">Building trust</a>
+</li>
+<li class="level-licensing-your-open-data-for-reuse"><a href="#licensing-your-open-data-for-reuse">Licensing your open data for reuse</a>
+</li>
+<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+</li>
+<li class="level-examples-of-open-data-in-action"><a href="#examples-of-open-data-in-action">Examples of open data in action</a>
+</li>
+<li class="level-where-to-get-help"><a href="#where-to-get-help">Where to get help</a>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>Data that is truly open is:</p>
+
+<ul>
+  <li>accessible (ideally via the internet) at no more than the cost of reproduction, without limitations based on user identity or intent</li>
+  <li>in a digital, machine readable format for interoperation with other data</li>
+  <li>free of restriction on use or redistribution in its licensing conditions</li>
+</ul>
+
+<h2 id="the-data-that-you-should-make-open">The data that you should make open</h2>
+<p>Overall, government produces a lot of data that describes the services that we offer and how well those services are performing, for example data from <a href="/service-manual/making-software/analytics-tools.html">analytics tools</a> or <a href="/service-manual/measurement/other-kpis">key performance indicators</a>. There is also data on how people use these services and who those people are.</p>
+
+<p>Data about service performance allows <a href="/service-manual/the-team/service-manager.html">service managers</a> to see how well a service is running. It also means that users can hold us to account. Data about service performance should therefore be public data.</p>
+
+<p>You should publish all public data, unless it is private data collected from people or restricted for national security reasons.</p>
+
+<p>Public data is anonymised data:
+* on which public services are run and assessed
+* on which policy decisions are based
+* is collected or generated in the course of your service delivery</p>
+
+<p>If for some reason you have made a procurement choice that means your performance data is monitored or stored by a third party, you should make sure that you have the right to access, export, share and reuse that data openly and in an <a href="/service-manual/design-and-content/choosing-appropriate-formats.html">open format</a>.</p>
+
+<h2 id="making-your-data-open">Making your data open</h2>
+<p>Your department has its own <a href="http://www.data.gov.uk/search/apachesolr_search?filters=tid:11542">Open Data Strategy (for 2012-2014)</a> and will already be publishing data sets on <a href="http://www.data.gov.uk/">data.gov.uk</a>. Your commitment to open, public data doesn’t stop there.</p>
+
+<p>Your open data should be user-friendly and searchable. For instance, all data published on data.gov.uk is searchable and placed on a <a href="http://5stardata.info/">5-star rating scheme</a> to indicate how useable and easy to interpret the data is.</p>
+
+<p>You should aim to reach at least the Three Star standard.</p>
+
+<p>The Open Data Principles that you must follow are:</p>
+
+<ol>
+  <li>Public data policy and practice will be clearly driven by the public and businesses that want and use the data, including what data is released when and in what form</li>
+  <li>Public data will be published in re-usable, machine-readable form</li>
+  <li>Public data will be released under the same open licence which enables free re-use, including commercial re-use</li>
+  <li>Public data will be available and easy to find through a single, easy-to use, online access point (<a href="http://data.gov.uk">data.gov.uk</a>)</li>
+  <li>Public data will be published using <a href="https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles#open-standard---definition">open standards</a>, and following relevant recommendations of the <a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+  <li>Public data from different departments about the same subject will be published in the same, standard formats and with the same definitions</li>
+  <li>Public data underlying the Government’s own websites will be published in re-usable form</li>
+  <li>Public data will be timely and fine-grained</li>
+  <li>Release data quickly, and then work to make sure that it is available in <a href="/service-manual/design-and-content/choosing-appropriate-formats.html">open standard formats</a>, including <a href="http://www.data.gov.uk/blog/what-is-linked-data">linked data forms</a></li>
+  <li>Public data will be freely available to use in any lawful way</li>
+  <li>Public data will be available without application or registration, and without requiring details of the user</li>
+  <li>Public bodies should actively encourage the re-use of their public data</li>
+  <li>Public bodies should maintain and publish inventories of their data holdings</li>
+  <li>Public bodies should publish relevant metadata about their datasets and this should be available through a single online access point; and they should publish supporting descriptions of the format provenance and meaning of the data</li>
+</ol>
+
+<h2 id="building-on-open-data">Building on open data</h2>
+<p>Users are already using your services, giving you lots of data about their behaviour. This means you can learn from real world behaviour when you’re <a href="/designprinciples#third">designing a new digital service</a>. You can watch and learn from your users, shaping the system to fit what people naturally choose to do.</p>
+
+<p><a href="/designprinciples#second">Recognise that you can’t do it all</a>. In making your data open, you are encouraging greater use of the data and helping users to innovate.</p>
+
+<p>Developers need to be able to use the data, to share it, and combine it with other data to use in their own applications, for example through <a href="/service-manual/making-software/apis.html">APIs</a>.</p>
+
+<p>As with all government digital services you’ll need to <a href="/service-manual/users/user-needs.html">understand the user need</a> for the data you publish.</p>
+
+<p>You’ll need to keep developers aware of what datasets you are releasing and to maintain relationships with those primary data users at the cutting edge of technology who can help you to do things differently and in more agile ways. You can use <a href="http://data.gov.uk/participate">the engagement areas of data.gov.uk</a> to reach out and keep in touch with data users.</p>
+
+<h2 id="building-trust">Building trust</h2>
+<p>You need to be scrupulous in protecting individual privacy by taking appropriate steps to ensure personal data is <a href="/service-manual/making-software/information-security.html">secure</a>.</p>
+
+<p>You should consider privacy issues at the beginning of all discussions concerning the release of a new dataset or the building of or change to a digital service dealing with personal data.</p>
+
+<p>If you are using new technology to handle personal data or reusing the data in a different way, you may need to carry out a <a href="http://ico.org.uk/for_organisations/data_protection/topic_guides/privacy_impact_assessment">Privacy Impact Assessment</a>. This is a key part of the process for identifying and managing risk.</p>
+
+<h2 id="licensing-your-open-data-for-reuse">Licensing your open data for reuse</h2>
+<p>The Cabinet Office is preparing a new <a href="http://data.gov.uk/consultation/code-of-practice">Code of Practice (Datasets)</a> (the consultation on this draft version is now closed).</p>
+
+<p>This Code includes the <a href="http://www.nationalarchives.gov.uk/information-management/government-licensing/the-framework.htm">licensing framework</a> you must use when making your datasets available for re-use. There are a number of licenses in the framework. You can choose one to suit your particular needs. For free UK Government data, this will be the <a href="http://www.nationalarchives.gov.uk/information-management/government-licensing/about-the-ogl.htm">Open Government Licence</a>.</p>
+
+<h2 id="why-we-do-this">Why we do this</h2>
+<p>Your open data can give:
+* your users information and informed choice about the services they use
+* your service managers the information they can rely on to deliver what your users need
+* businesses and the community or voluntary sector the opportunity to take the data released and produce goods and services from it</p>
+
+<p>Building your services on open formats and open standards means that you can more easily share, re-use or exchange data. It will also mean that you will have a choice in which technology to implement, rather than being limited to a particular product or supplier.</p>
+
+<h2 id="examples-of-open-data-in-action">Examples of open data in action</h2>
+<p>You can browse the <a href="http://data.gov.uk/apps">apps section of data.gov.uk</a> to see hundreds of applications that have been built using open government data.</p>
+
+<p>You can also find case studies of how people are sharing, using and building open data on the <a href="http://data.gov.uk">data.gov.uk</a> site. </p>
+
+<h2 id="where-to-get-help">Where to get help</h2>
+
+<p>The team at <a href="http://data.gov.uk">data.gov.uk</a> is a good first point of contact for help in understanding how to make your data open. You can get in touch with them through data.gov.uk</p>
+
+<p>The <a href="http://www.theodi.org/">Open Data Institute</a> can give you advice and training on how to open up your data.</p>
+
+<p>You can apply for funding from the <a href="https://www.gov.uk/data-strategy-board">Data Strategy Board</a>’s own <a href="http://www.local.gov.uk/web/guest/local-transparency/-/journal_content/56/10171/3926733/ARTICLE-TEMPLATE">Breakthrough Fund</a> to open up public data if you are struggling to find funding elsewhere – central and local government bodies are eligible.</p>
+
+<p>The <a href="http://www.statistics.gov.uk/hub/government-statistical-service/">Government Statistical Service</a> has developed computer-based training to help you to make the right decisions about how to make data available in open formats.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="https://www.gov.uk/service-manual/making-software/analytics-tools.html">Analytics tools</a></li>
+  <li><a href="https://www.gov.uk/service-manual/design-and-content/choosing-appropriate-formats.html">Open formats</a></li>
+  <li><a href="https://www.gov.uk/service-manual/making-software/open-standards-and-licensing.html">Open standards</a></li>
+  <li><a href="https://www.gov.uk/government/publications/open-data-white-paper-unleashing-the-potential">Open Data White Paper: Unleashing the Potential</a></li>
+</ul>
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/technology/open-data.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/technology/open-data.md">Page source</a>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
+
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
+    </nav>
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+  _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+  _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+  // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+  _gaq.push(["_setCustomVar",2,"Format","homepage",3]);
+  GOVUK.Analytics.Format = "homepage";
+</script>
+
+<script src="https://assets.digital.cabinet-office.gov.uk/static/analytics-8d2f36e4f47ad7e8a049cec4e638455a.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var utm = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/__utm.gif';
+
+    // Construct the gif hit url.
+    utm += "?utmwv=" + "5.3.9";
+    utm += "&utmn=" + Math.floor(Math.random() * parseInt('0x7fffffff', 16));
+    utm += "&utmhn=" + encodeURIComponent(document.location.hostname);
+    utm += "&utmp=" + encodeURIComponent("/print" + document.location.pathname);
+    utm += "&utmac=" + "UA-26179049-1";
+    utm += "&utmcc=__utma%3D999.999.999.999.999.1%3B";
+
+    var styleNode = document.createElement('style');
+    styleNode.setAttribute("type", "text/css");
+    var css = document.createTextNode("@media print { body:after { content: url(" + utm + "); } body { *background: url(" + utm + ") no-repeat; }}");
+
+    if (styleNode.styleSheet) {
+      styleNode.styleSheet.cssText = css.nodeValue;
+    } else {
+      styleNode.appendChild(css);
+    }
+
+    var head = document.getElementsByTagName('head')[0];
+
+    if (head) {
+      head.appendChild(styleNode);
+    }
+  })();
+</script>
+
+</body>
+</html>

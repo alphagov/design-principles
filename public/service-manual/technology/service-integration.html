@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Service integration and management — Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-32698280bd6ca5d99046949db1458750.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-37c4d65b5fe3d8b6497a669cb7c3b6e3.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-781ae9043c1cb57d37fd84c6fa9b56bc.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-cd98ff95a99e3361c595fa1e1fa35a9e.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1369144525" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
+
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css"]},
+  c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/frontend/media-player-4d52c02c18a460340db1ed476b807bf6.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
+
+<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script><script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-e5938d4ac4939ea75375d1a4d52eee96.js" type="text/javascript"></script>
+
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script src="/service-manual/assets/javascript/toggler.js?cache=1369144525" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1369144525" type="text/javascript"></script>
+
+
+
+
+
+
+
+</head>
+<body class="mainstream full-width ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the gov.uk homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK">
+        </a>
+        <a href="#search" class="search-toggle js-header-toggle">Search</a>
+      </div>
+
+      <form id="search" class="site-search" action="/service-manual/search" method="get">
+          <div class="content">
+            <label for="site-search-text">Search</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus" role="search">
+            <input class="submit" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/start" class="">Start using the manual</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--end header-->
+
+  <div id="wrapper" class="detailed-guidance">
+
+    <section id="content" role="main" class="group">
+
+      
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/technology">Chief technology officer</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <hgroup>
+      <h1>Service integration and management</h1>
+      
+      <h2 class="subtitle">Managing providers in an efficient way</h2>
+      
+    </hgroup>
+
+    
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-service-integration-today"><a href="#service-integration-today">Service integration today</a>
+</li>
+<li class="level-what-service-integration-looks-like"><a href="#what-service-integration-looks-like">What service integration looks like</a>
+</li>
+<li class="level-involve-everyone-in-a-clear-process"><a href="#involve-everyone-in-a-clear-process">Involve everyone in a clear process</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>Service integration and management enables an organisation to manage the providers of services in a consistent and efficient way, ensuring that performance across a portfolio of multi-sourced goods and services meets user needs. </p>
+
+<h2 id="service-integration-today">Service integration today</h2>
+
+<p>Service integration models have been around for some time, but are now evolving from the challenges of managing a small number of large suppliers (typically systems integrators) to a model of managing a greater number of smaller suppliers, often providing commodity services.</p>
+
+<p>For the model to be effective the component services need to be well defined and understood. It is important to avoid any ambiguity about the boundaries of both responsibilities and accountabilities. Key features of an effective model are:</p>
+
+<ul>
+  <li>being able to define different service requirements for critical and non-critical services (for example, some commodity public cloud services may require online service support or service desk only, whereas mission critical IT systems will require a more integrated service model)</li>
+  <li>a performance regime that ensures organisations don’t pay for services they can’t or don’t use</li>
+  <li>explicit service integration arrangements that focus on <a href="/service-manual/operations/monitoring.html">service performance</a>, usability and availability from a <a href="/service-manual/users.html">user perspective</a>, not just from a supplier’s commercial perspective</li>
+  <li>skills and capabilities that support transitioning to, and managing services in a new commodity-based environment</li>
+  <li>a focus on <a href="/service-manual/making-software/open-standards-and-licensing.html">open standards</a> and interoperability to support workflow, performance management and service management, billing and payment</li>
+</ul>
+
+<p>The level of service integration will differ depending on the complexity of the business services and/or customers that are being supported, and the complexity of the services that are being delivered to those businesses. As the services and businesses become more critical or complex, the level of service integration becomes deeper.</p>
+
+<h2 id="what-service-integration-looks-like">What service integration looks like</h2>
+
+<p><img src="/service-manual/assets/images/service-integration-diagram.png" alt="Diagram showing what service integration looks like for government" /></p>
+
+<p>The design of the service integration function will differ by department. It may be completely operated in-house. Or it might consist of a thin in-house capability ultimately responsible for the integrated end to end operation and management of quality IT services, underpinned by outsourced integration services for specific elements - for example <a href="/service-manual/making-software/analytics-tools.html">performance monitoring</a>, <a href="/service-manual/operations/helpdesk.html">service desk</a>, or service level reporting. The <a href="http://gcloud.civilservice.gov.uk/cloudstore/">G-Cloud</a> framework offers a number of services to support service integration.</p>
+
+<p>Particularly for smaller departments and simple services, care needs to be taken not to over-engineer the service integration approach - effective use of commodity standards-based IT should mean that integration and support requirements are much less onerous than managing a locked-down bespoke system.</p>
+
+<h2 id="involve-everyone-in-a-clear-process">Involve everyone in a clear process</h2>
+
+<p>As part of service integration, you should maintain an accurate service catalogue including a service dependency map, so that you can effectively manage changes that are high risk, high impact, or that can affect multiple suppliers.</p>
+
+<p>When buying in services you should retain the contractual authority to ensure suppliers follow your service integration processes - so that you can ensure the integrity and availability of a department’s user services. This could include an end to end service performance incentive model so all suppliers collectively share in the benefits and penalties of a joint performance management regime.</p>
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/technology/service-integration.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/technology/service-integration.md">Page source</a>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
+
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
+    </nav>
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+  _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+  _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+  // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+  _gaq.push(["_setCustomVar",2,"Format","homepage",3]);
+  GOVUK.Analytics.Format = "homepage";
+</script>
+
+<script src="https://assets.digital.cabinet-office.gov.uk/static/analytics-8d2f36e4f47ad7e8a049cec4e638455a.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var utm = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/__utm.gif';
+
+    // Construct the gif hit url.
+    utm += "?utmwv=" + "5.3.9";
+    utm += "&utmn=" + Math.floor(Math.random() * parseInt('0x7fffffff', 16));
+    utm += "&utmhn=" + encodeURIComponent(document.location.hostname);
+    utm += "&utmp=" + encodeURIComponent("/print" + document.location.pathname);
+    utm += "&utmac=" + "UA-26179049-1";
+    utm += "&utmcc=__utma%3D999.999.999.999.999.1%3B";
+
+    var styleNode = document.createElement('style');
+    styleNode.setAttribute("type", "text/css");
+    var css = document.createTextNode("@media print { body:after { content: url(" + utm + "); } body { *background: url(" + utm + ") no-repeat; }}");
+
+    if (styleNode.styleSheet) {
+      styleNode.styleSheet.cssText = css.nodeValue;
+    } else {
+      styleNode.appendChild(css);
+    }
+
+    var head = document.getElementsByTagName('head')[0];
+
+    if (head) {
+      head.appendChild(styleNode);
+    }
+  })();
+</script>
+
+</body>
+</html>
