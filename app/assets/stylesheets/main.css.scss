@@ -513,6 +513,11 @@ html {
   .image-container img {
     max-width: 100%;
   }
+
+  .image-description {
+    position: absolute;
+    left: -9999em;
+  }
 }
 
 
