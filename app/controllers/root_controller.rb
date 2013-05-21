@@ -30,6 +30,6 @@ class RootController < ApplicationController
   end
 
   def seo
-    render "SEO"
+    render "seo"
   end
 end
