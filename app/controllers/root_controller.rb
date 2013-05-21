@@ -28,4 +28,8 @@ class RootController < ApplicationController
   def whatsnew
     render "whats-new"
   end
+
+  def seo
+    render "SEO"
+  end
 end
