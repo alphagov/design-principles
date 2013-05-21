@@ -8,6 +8,7 @@ DesignPrinciples::Application.routes.draw do
   get "/designprinciples/accessiblepdfs", :to => "root#accessiblepdfs"
   get "/designprinciples/performanceframework", :to => "root#performanceframework"
   get "/designprinciples/whatsnew", :to => "root#whatsnew"
+  get "/designprinciples/seo", :to => "root#seo"
 
   get "/:prefix/search", :to => 'search#index'
   root :to => redirect("/designprinciples")
