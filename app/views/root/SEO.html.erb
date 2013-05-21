@@ -1,0 +1,182 @@
+<% content_for :title do %>GDS design principles<% end %>
+
+<div id="wrapper" class="design-principles styleguide">
+  <header>
+    <h1>Government Digital Service <strong>Content principles</strong></h1>
+    <p>This style guide is part of the <a href="/designprinciples">Design Principles</a> document.</p>
+  </header>
+
+  <%= render "styleguide_sections" %>
+
+<!--Need to put this section into the rest of the pages.-->
+
+  <ol class="principles" id="14. SEO">
+    <li class="principle">
+      <article>
+        <h1 id="SEO">14. Search engine optimisation (SEO)</h1>
+				<div class="outline">
+          <p>This guidance is for written content on the GOV.UK website.</p>
+        </div>
+    	</article>
+    </li>
+    <li class="principle">
+      <article>
+				<h2 id="informing-content"> 14.1 Use keyword research to inform content </h2>
+
+				<p> We can help GOV.UK content to appear high in search results by including the terms that people are searching for in page: </p>
+				<ul>
+					<li>titles</li>
+					<li>headings</li>
+					<li>introductions</li>
+					<li>chapter / part titles</li>
+				</ul>
+				<h2 id="keyword-research"> 14.2 Find popular search terms with keyword research</h2>
+				<p>Don’t trust your instincts, use search tools. What you’re calling 'the need' might not be what your users are calling it.</p>
+
+				<h2 id="popular-search-terms"> 14.3 Find the most popular term </h2>
+				<p><a href="http://www.semrush.com">SEMrush </a> will show you the terms that people are using to search for a particular subject, and how popular the terms are.</p>
+
+				<h3 class="heading-level-3">Example</h3>
+				<p>We’ve got a content item on GOV.UK that tells people how much holiday they can take from work. We first thought this should be called ‘annual leave’, but on SEMrush we found a more popular term.</p>
+
+				<p>If you sign up to SEMrush, then enter ‘annual leave’ into the search field, making sure the results are filtered to UK, you&rsquo;ll get this: </p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/keyword-research.png', :alt => "Search results for the 'annual leave' term showing 'annual leave' with a volume of 2400 & 'holiday entitlement' with a volume of 8100" %>
+        </div>
+
+				<p>Volume = searches per month</p>
+
+				<p>The term &lsquo;holiday entitlement&rsquo; is the most popular, but ‘annual leave’ also receives a significant amount of traffic.</p>
+
+				<h2 id="double-check">14.4 Double-check with Google Trends</h2>
+
+				<p>The numbers aren’t exact so look at trends and relative popularity rather than the figures. Use multiple tools if you’re going to make a big decision based on data.</p>
+
+				<h3 class="heading-level-3">Example </h3>
+				<p>Google Trends confirms that holiday entitlement is more popular than annual leave.</p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/google-trends.png', :alt => "Google trends results showing results for the past 12 months within the UK" %>
+        </div>
+
+				<h2 id="optimise-content">14.5 Optimise content</h2>
+				<p> Prioritise popular terms in: </p>
+				<ul>
+					<li>the title</li>
+					<li>headings</li>
+					<li>introductory sentences</li>
+					<li>metadata descriptions (only for mainstream content)</li>
+				</ul>
+
+				<h3 class="heading-level-3">Example</h3>
+				<p>In the page below the words &lsquo;holiday&rsquo; and &lsquo;entitlement&rsquo; are littered everywhere.</p>
+
+				<p>You can cover more than one term &endash; a lot of people also search for &lsquo;annual leave&rsquo; so we&rsquo;ve included it in the first sentence.</p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/placement-of-term-in-page.png', :alt => "" %>
+        </div>
+
+				<p>At the time of writing the page above surfaced first in Google for the search term ‘holiday entitlement’, and second for the term &lsquo;annual leave&rsquo;.</p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/google-search-results.png', :alt => "" %>
+        </div>
+
+				<h2 id="detailed-understanding"> 14.6 Get a more detailed understanding of your need</h2>
+        <p>As well as the terms that people are using in search, you can also uncover the specific themes that people are searching for within a subject with <a href="https://adwords.google.com">Google Adwords.</a></p>
+
+				<h3 class="heading-level-3">Example</h3>
+				<p>Below is a <a href="https://adwords.google.com">Google Adwords.</a> report that shows terms related to holiday entitlement. Click on each keyword for a drop-down list of the different variations of each term.</p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/google-adwords.png', :alt => "Google adwords report" %>
+        </div>
+
+				<p>Make sure that you filter the results to get UK figures by clicking on the &lsquo;Local monthly searches&rsquo; heading.</p>
+				<p>We’ve addressed the following themes, and used the terms uncovered in the Adwords report in the Holiday entitlement guide:</p>
+				<ul>
+					<li>working</li>
+					<li>maternity leave</li>
+					<li>part time workers</li>
+					<li>statutory</li>
+					<li>minimum</li>
+					<li>casual</li>
+				</ul>
+				<p>Information about bank holidays is covered in a separate item, so we’ve included a sign-posted links to this within content, and in the &lsquo;Other relevant links section&rsquo; at the top right-hand corner of the page.</p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/placement-in-related.png', :alt => "" %>
+        </div>
+
+				<h2 id="niche-audiences"> 14.7 Find terms for niche audiences</h2>
+
+				<p>Tools like SEMrush, Google Trends and Google Adwords can’t isolate niche audiences.</p>
+
+				<p>Looking at the terms that people are searching for on GOV.UK, or any other website that targets your audience, is the best way to understand what niche audiences want. We also have a paid subscription to Hitwise, which reveals the terms that competitor websites are ranking for.<p>
+
+				<p>Contact us if you need GOV.UK or competitor-website search report:</p>
+				<a href="mailto:govuk-productanalysts@digital.cabinet-office.gov.uk">govuk-productanalysts@digital.cabinet-office.gov.uk</a>
+
+				<p>The report below shows search terms leading to the (now closed) Foreign and Commonwealth Office website:</p>
+
+        <div class="image-container">
+          <%= image_tag 'content/14/search-report.png', :alt => "", 'aria-describedby' => "search-terms" %>
+          <div id="search-terms" class="image-description">
+            <h3>Search terms</h3>
+            <ul>
+              <li>foreign office: 4.89%</li>
+              <li>fco: 3.82%</li>
+              <li>foreign office travel advice: 1.64%</li>
+              <li>fco travel advice: 1.05%</li>
+              <li>foreign and commonwealth office: 0.93%</li>
+              <li>british embassy: 0.60%</li>
+              <li>tunisia: 0.60%</li>
+              <li>is it safe to go to tunisia: 0.52%</li>
+              <li>www.fco.gov.uk: 0.51%</li>
+              <li>travel advice: 0.40%</li>
+              <li>fco.gov.uk: 0.37%</li>
+              <li>foreign office travel: 0.37%</li>
+              <li>cuba: 0.32%</li>
+              <li>european health insurance card: 0.32%</li>
+              <li>egypt travel advice: 0.32%</li>
+              <li>foreign office egypt: 0.31%</li>
+              <li>egypt: 0.30%</li>
+              <li>travel advice egypt: 0.24%</li>
+            </ul>
+          </div>
+        </div>
+
+				<p>There are a number of different SEO keyword tools and they often provide different results &endash; it&rsquo;s good to use more than one to understand the right keywords to use:</p>
+				<ul>
+					<li>SEMrush</li>
+					<li>Google Trends</li>
+					<li>Hitwise (need subscription)</li>
+					<li>Google keyword tool</li>
+					<li>Google analytics adwords keywords (specific to gov.uk - need sign-in details)</li>
+					<li>Raven</li>
+					<li>Inbound writer &endash; provides SEO suggestions as you write</li>
+				</ul>
+
+				<h2 id="meta-mainstream"> 14.8 Meta descriptions for mainstream content</h2>
+				<p>We currently don’t make our meta descriptions available for Google to use in search results, but they’re used on browse pages and in internal search results. Meta descriptions help you to clarify the purpose of the page and hone in on the user-need.</p>
+
+				<h2 id="standardised-formats"> 14.9 Standardised formats</h2>
+
+				<h3 class="heading-level-3">Guides/benefits/schemes</h3>
+
+				<p>Provide a brief overview front-loading popular keywords, then list other popular keywords in the format below. You can use meta descriptions to clarify ambiguities around audience, or differentiate titles that are similar:</p>
+
+				<p>Example: Holiday entitlement or annual leave - information for employers and workers on entitlement, calculating leave, taking leave, accruing leave and disputes.</p>
+
+				<h3 class="heading-level-3">Quick answers</h3>
+				<p>Use the first sentence if it adequately sums up the content and includes popular keywords. If it doesn’t consider changing the first sentence - it should be focussed and optimised.</p>
+
+				<h3 class="heading-level-3">Smart answers</h3>
+				<p>Talk to a Product Analyst.</p>
+
+	    </article>
+  	</li>
+	</ol>
+</div>
