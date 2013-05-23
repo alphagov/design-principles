@@ -24,17 +24,22 @@
     </ul>
   </nav>
 
-  <section id="content" role="main" class="group">
-    <div class="inner">
-      <%= render partial: 'form' %>
-
-      <div class="search-container">
-        <ul>
-          <%= render collection: @results, partial: 'result' %>
-        </ul>
-      </div>
+  <section id="content" role="main" class="group search ancillary">
+    <%= render partial: 'form' %>
+    <div class="search-container group js-tab-content tab-content">
+      <ul class="results-list internal-links">
+        <%= render collection: @results, partial: "result" %>
+      </ul>
     </div>
   </section>
+
+  <h3 class="visuallyhidden">No more results for <span class="visuallyhidden">&ldquo;<%= @search_term %>&rdquo;</span>. <a href="#search-main">Try a different search?</a></h3>
+
+
 </div>
+
+<% content_for :extra_headers do %>
+  <link rel="alternate" type="application/json" href="/api/search.json?q=<%= @search_term %>">
+<% end %>
 
 <% content_for :title, "#{@search_term} - Search - Government Service Design Manual – GOV.UK" %>
