@@ -1,4 +1,8 @@
 <li>
-  <p class="search-result-title"><a href="<%= result.link %>" title="View <%= result.title %>"><%= result.title %></a></p>
+  <h3>
+    <a href="<%= result.link %>" title="View <%= result.title %>"<% if result.format == "recommended-link" %> rel="external"<% end %>>
+      <%= result.title %>
+    </a>
+  </h3>
   <p><%= result.description %></p>
 </li>
