@@ -62,8 +62,7 @@
         margin-bottom: -1px;
       }
       border-right: none;
-      @include core-19;
-      line-height: 48px!important;
+      @include core-19($line-height: 48px);
 
       @include box-sizing(border-box);
       &::-webkit-search-cancel-button {
