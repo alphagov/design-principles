@@ -9,19 +9,19 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1369911077" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1370342422" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1369911077" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1370342422" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1369911077" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1370342422" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1369911077" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1370342422" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
@@ -61,7 +61,7 @@
 <meta name="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
 
 <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
-<script defer="defer" src="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-597bdeb43191ea19b4f63233807d51f3.js" type="text/javascript"></script>
+<script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-e5938d4ac4939ea75375d1a4d52eee96.js" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
@@ -89,8 +89,8 @@
   })();
 </script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1369911077" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1369911077" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1370342422" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1370342422" type="text/javascript"></script>
 
 
 
@@ -186,101 +186,43 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-styling-form-elements"><a href="#styling-form-elements">Styling form elements</a>
-<ol>
-<li class="level-sass"><a href="#sass">Sass</a>
+<li class="level-writing-the-html-for-forms"><a href="#writing-the-html-for-forms">Writing the HTML for forms</a>
 </li>
-</ol>
+<li class="level-user-interface-patterns"><a href="#user-interface-patterns">User interface patterns</a>
 </li>
-<li class="level-basic-structure"><a href="#basic-structure">Basic structure</a>
-<ol>
-<li class="level-example"><a href="#example">Example</a>
-</li>
-<li class="level-html"><a href="#html">HTML</a>
-</li>
-</ol>
-</li>
-<li class="level-radios-and-checkboxes"><a href="#radios-and-checkboxes">Radios and checkboxes</a>
-<ol>
-<li class="level-example-1"><a href="#example-1">Example</a>
-</li>
-<li class="level-html-1"><a href="#html-1">HTML</a>
-</li>
-</ol>
+<li class="level-aligning-controls-in-a-column"><a href="#aligning-controls-in-a-column">Aligning controls in a column</a>
 </li>
 <li class="level-aligning-controls-in-a-row"><a href="#aligning-controls-in-a-row">Aligning controls in a row</a>
-<ol>
-<li class="level-example-2"><a href="#example-2">Example</a>
-</li>
-<li class="level-html-2"><a href="#html-2">HTML</a>
-</li>
-</ol>
 </li>
 <li class="level-pre-checked-radios-and-checkboxes"><a href="#pre-checked-radios-and-checkboxes">Pre-checked radios and checkboxes</a>
 </li>
+<li class="level-wrapping-controls-in-a-label-tag"><a href="#wrapping-controls-in-a-label-tag">Wrapping controls in a label tag</a>
+</li>
+<li class="level-label-positioning"><a href="#label-positioning">Label positioning</a>
+</li>
+<li class="level-hidden-labels"><a href="#hidden-labels">Hidden labels</a>
+</li>
+<li class="level-styling-text-input-fields"><a href="#styling-text-input-fields">Styling text input fields</a>
+</li>
 <li class="level-fieldsets-and-legends"><a href="#fieldsets-and-legends">Fieldsets and legends</a>
 <ol>
-<li class="level-example-3"><a href="#example-3">Example</a>
-</li>
-<li class="level-html-3"><a href="#html-3">HTML</a>
-</li>
 <li class="level-nested-fieldsets"><a href="#nested-fieldsets">Nested fieldsets</a>
-</li>
-<li class="level-example-4"><a href="#example-4">Example</a>
-</li>
-<li class="level-html-4"><a href="#html-4">HTML</a>
 </li>
 </ol>
 </li>
 <li class="level-hints"><a href="#hints">Hints</a>
-<ol>
-<li class="level-example-5"><a href="#example-5">Example</a>
-</li>
-<li class="level-html-5"><a href="#html-5">HTML</a>
-</li>
-</ol>
-</li>
-<li class="level-hidden-labels"><a href="#hidden-labels">Hidden labels</a>
-<ol>
-<li class="level-example-6"><a href="#example-6">Example</a>
-</li>
-<li class="level-html-6"><a href="#html-6">HTML</a>
-</li>
-</ol>
 </li>
 <li class="level-buttons"><a href="#buttons">Buttons</a>
-<ol>
-<li class="level-example-7"><a href="#example-7">Example</a>
-</li>
-<li class="level-html-7"><a href="#html-7">HTML</a>
-</li>
-</ol>
 </li>
 <li class="level-validation-messages"><a href="#validation-messages">Validation messages</a>
 <ol>
-<li class="level-example-8"><a href="#example-8">Example</a>
-</li>
-<li class="level-html-8"><a href="#html-8">HTML</a>
-</li>
-<li class="level-example-9"><a href="#example-9">Example</a>
-</li>
-<li class="level-html-9"><a href="#html-9">HTML</a>
+<li class="level-example"><a href="#example">Example</a>
 </li>
 </ol>
 </li>
-<li class="level-cross-browser-support"><a href="#cross-browser-support">Cross browser support</a>
+<li class="level-examples-in-this-page"><a href="#examples-in-this-page">Examples in this page</a>
 </li>
-<li class="level-putting-it-all-together"><a href="#putting-it-all-together">Putting it all together</a>
-</li>
-<li class="level-rationale"><a href="#rationale">Rationale</a>
-<ol>
-<li class="level-text-input-fields"><a href="#text-input-fields">Text input fields</a>
-</li>
-<li class="level-label-positioning"><a href="#label-positioning">Label positioning</a>
-</li>
-<li class="level-validation-messages-1"><a href="#validation-messages-1">Validation messages</a>
-</li>
-</ol>
+<li class="level-examples-on-govukhttpswwwgovuk"><a href="#examples-on-govukhttpswwwgovuk">Examples on [GOV.UK](https://www.gov.uk)</a>
 </li>
 </ol>
 
@@ -288,62 +230,21 @@
     </div>
 
     <div class="inner">
-      <h2 id="styling-form-elements">Styling form elements</h2>
+      <h2 id="writing-the-html-for-forms">Writing the HTML for forms</h2>
 
-<p>Forms should be styled as per the examples on this page.</p>
+<p>Like other components of web pages, forms should be created following the principles of <a href="/service-manual/making-software/progressive-enhancement.html">progressive enhancement</a>. </p>
 
-<p>If you’re using <a href="http://sass-lang.com/">Sass</a> in your project the <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_forms.scss">GOV.UK forms mixin</a> provides a configurable framework for styling your forms in this way. Use it in your Sass files like this:</p>
+<p>Browsers have default styling for forms usually shared with that of the operating system user interface (UI) making it familiar to users. These defaults are also highly accessible to all types of users so any styling added should be consideration given to ensure it does not remove any of this functionality.</p>
 
-<h3 id="sass">Sass</h3>
+<p>More so than other HTML elements the <a href="http://www.w3.org/TR/html51/">HTML5 specification</a> should be consulted for guidance on creating the HTML as some types of user will depend on proper use of the language. For example it is important each form element has a label describing it otherwise screenreaders will not be able to identify it properly.</p>
 
-<pre><code>@import "forms"
+<h2 id="user-interface-patterns">User interface patterns</h2>
 
-// Default style with top-aligned labels
-.form-1 { 
-  @include form 
-}
+<p>In the forms so far created for <a href="https://www.gov.uk">GOV.UK</a> certain patterns of display have emerged as solutions to common UI problems. What follows is a guide to those patterns.</p>
 
-// Left aligned labels
-.form-2 { 
-  @include form(left)
-}
+<h2 id="aligning-controls-in-a-column">Aligning controls in a column</h2>
 
-// Right aligned labels. Label width is 9em
-.form-3 { 
-  @include form(right, 9em)
-}
-</code></pre>
-
-<p>Check out the <a href="/service-manual/design-and-content/resources/registration-form.html">‘create an account’ form example</a> to see the different layout options in action.</p>
-
-<h2 id="basic-structure">Basic structure</h2>
-
-<p>Wrap each control in an element with a class of ‘group’.</p>
-
-<h3 id="example">Example</h3>
-
-<div class="pattern-example">
-    <div class="form-example-1">
-      <p class="group">
-        <label for="label">Label</label>
-        <input id="label" type="text" />
-      </p>
-    </div>
-</div>
-
-<h3 id="html">HTML</h3>
-
-<pre><code>&lt;p class="group"&gt;
-  &lt;label for="label"&gt;Label&lt;/label&gt;
-  &lt;input id="label" type="text"&gt;
-&lt;/p&gt;
-</code></pre>
-
-<h2 id="radios-and-checkboxes">Radios and checkboxes</h2>
-
-<p>Wrap your set of options in an ‘option group’ element.</p>
-
-<h3 id="example-1">Example</h3>
+<p>The base pattern for grouping controls is in a column with one row for each control and it’s label.</p>
 
 <div class="pattern-example">
     <div class="form-example-1">
@@ -357,47 +258,9 @@
     </div>
 </div>
 
-<h3 id="html-1">HTML</h3>
-
-<p>Use nested inputs…</p>
-
-<pre><code>  &lt;p class="option group"&gt;
-    &lt;label for="checkbox1"&gt;
-      &lt;input id="checkbox1" type="checkbox"&gt; Job offers
-    &lt;/label&gt;
-    &lt;label for="checkbox2"&gt;
-      &lt;input id="checkbox2" type="checkbox"&gt; Networking
-    &lt;/label&gt;
-    &lt;label for="checkbox3"&gt;
-      &lt;input id="checkbox3" type="checkbox"&gt; Business opportunities
-    &lt;/label&gt;
-  &lt;/p&gt;
-</code></pre>
-
-<p>or use a list…</p>
-
-<pre><code>  &lt;ul class="option group"&gt;
-    &lt;li&gt;
-      &lt;input id="checkbox1" type="checkbox"&gt;
-      &lt;label for="checkbox1"&gt; Job offers&lt;/label&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;input id="checkbox2" type="checkbox"&gt;
-      &lt;label for="checkbox2"&gt; Networking&lt;/label&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;input id="checkbox3" type="checkbox"&gt;
-      &lt;label for="checkbox3"&gt; Business opportunities&lt;/label&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-</code></pre>
-
 <h2 id="aligning-controls-in-a-row">Aligning controls in a row</h2>
 
-<p>You might occasionally need to arrange form controls in a row, for instance if they have short labels and there are only a few options. To do this, wrap the controls in an
-‘inline group’ element.</p>
-
-<h3 id="example-2">Example</h3>
+<p>You might occasionally need to arrange your group of controls in a row, for instance if they have short labels and there are only a few options.</p>
 
 <div class="pattern-example">
     <div class="form-example-1">
@@ -410,21 +273,6 @@
         </fieldset>
   </div>
 </div>
-
-<h3 id="html-2">HTML</h3>
-
-<pre><code>    &lt;fieldset&gt;
-      &lt;legend&gt;&lt;span&gt;Gender&lt;/span&gt;&lt;/legend&gt;
-      &lt;p class="inline option group"&gt;
-        &lt;label for="male"&gt;
-          &lt;input id="male" type="radio" name="gender"&gt; Male
-        &lt;/label&gt;
-        &lt;label for="female"&gt;
-          &lt;input id="female" type="radio" name="gender"&gt; Female
-        &lt;/label&gt;
-      &lt;/p&gt;
-    &lt;/fieldset&gt;
-</code></pre>
 
 <h2 id="pre-checked-radios-and-checkboxes">Pre-checked radios and checkboxes</h2>
 
@@ -444,352 +292,17 @@
   <li>there is a legal requirement for the user to make a choice</li>
 </ul>
 
-<h2 id="fieldsets-and-legends">Fieldsets and legends</h2>
+<h2 id="wrapping-controls-in-a-label-tag">Wrapping controls in a label tag</h2>
 
-<p>Use these to break up forms into logical sections</p>
+<p>In the examples above the controls are wrapped in their associated label tag. </p>
 
-<h3 id="example-3">Example</h3>
-
-<div class="pattern-example">
-    <div class="form-example-1">
-
-        <fieldset>
-          <legend>Name</legend>
-          <p class="group">
-            <label for="first-name">First name</label>
-            <input id="first-name" type="text" class="name" />
-          </p>
-          <p class="group">
-            <label for="last-name">Last name</label>
-            <input id="last-name" type="text" class="name" />
-          </p>
-        </fieldset>
-
-    </div>
-</div>
-
-<h3 id="html-3">HTML</h3>
-
-<pre><code>    &lt;fieldset&gt;
-      &lt;legend&gt;Name&lt;/legend&gt;
-      &lt;p class="group"&gt;
-        &lt;label for="first-name"&gt;First name&lt;/label&gt;
-        &lt;input id="first-name" type="text" class="name"&gt;
-      &lt;/p&gt;
-      &lt;p class="group"&gt;
-        &lt;label for="last-name"&gt;Last name&lt;/label&gt;
-        &lt;input id="last-name" type="text" class="name"&gt;
-      &lt;/p&gt;
-    &lt;/fieldset&gt;
-</code></pre>
-
-<h3 id="nested-fieldsets">Nested fieldsets</h3>
-
-<p>There are times when you might want to treat a set of form controls like they were a single, compound control 
-(a date-of-birth selector for example). One way to do this is with a nested fieldset. On GOV.UK, when you
-nest a fieldset inside another, the legend is styled like a label.</p>
-
-<div class="application-notice info-notice">
-<p>Note - if you're planning on doing this with left or right aligned form labels you'll need to wrap your
-legend text in a span. Blame inconsistent and generally poor support for legend positioning in browsers.</p>
-</div>
-
-<h3 id="example-4">Example</h3>
-
-<div class="pattern-example">
-
-    <div id="form-example-2" class="left">
-
-      <fieldset>
-        <legend>Your details</legend>
-        <p class="group">
-          <label for="full-name">Full name</label>
-          <input id="full-name" type="text" class="full-name" />
-        </p>
-        <fieldset>
-          <legend><span>Date of birth</span></legend>
-          <div class="inline group">
-            <p class="group">
-              <label for="day" class="visuallyhidden">Day</label>
-              <select id="day" type="text">
-                <option value="Day">Day</option>
-                <!-- Other options go here -->
-              </select>
-            </p>
-            <p class="group">
-              <label for="month" class="visuallyhidden">Month</label>
-              <select id="month" type="text">
-                <option value="Month">Month</option>
-                <!-- Other options go here -->
-              </select>
-            </p>
-            <p class="group">
-              <label for="year" class="visuallyhidden">Year</label>
-              <select id="year" type="text">
-                <option value="Year">Year</option>
-                <!-- Other options go here -->
-              </select>
-            </p>
-          </div>
-        </fieldset>
-      </fieldset>
-
-  </div>
-
-</div>
-
-<h3 id="html-4">HTML</h3>
-
-<pre><code>  &lt;fieldset&gt;
-    &lt;legend&gt;Your details&lt;/legend&gt;
-    &lt;p class="group"&gt;
-      &lt;label for="full-name"&gt;Full name&lt;/label&gt;
-      &lt;input id="full-name" type="text" class="full-name"&gt;
-    &lt;/p&gt;
-    &lt;fieldset&gt;
-      &lt;legend&gt;&lt;span&gt;Date of birth&lt;/span&gt;&lt;/legend&gt;
-      &lt;div class="inline group"&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="day" class="visuallyhidden"&gt;Day&lt;/label&gt;
-          &lt;select id="day" type="text"&gt;
-            &lt;option value="Day"&gt;Day&lt;/option&gt;
-            &lt;!-- Other options go here --&gt;
-          &lt;/select&gt;
-        &lt;/p&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="month" class="visuallyhidden"&gt;Month&lt;/label&gt;
-          &lt;select id="month" type="text"&gt;
-            &lt;option value="Month"&gt;Month&lt;/option&gt;
-            &lt;!-- Other options go here --&gt;
-          &lt;/select&gt;
-        &lt;/p&gt;
-        &lt;p class="group"&gt;
-          &lt;label for="year" class="visuallyhidden"&gt;Year&lt;/label&gt;
-          &lt;select id="year" type="text"&gt;
-            &lt;option value="Year"&gt;Year&lt;/option&gt;
-            &lt;!-- Other options go here --&gt;
-          &lt;/select&gt;
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/fieldset&gt;
-  &lt;/fieldset&gt;
-</code></pre>
-
-<h2 id="hints">Hints</h2>
-
-<p>Hints can be placed above or below the relevant control.</p>
-
-<h3 id="example-5">Example</h3>
-
-<div class="pattern-example">
-    <div class="form-example-1">
-
-      <p class="group">
-        <label for="telephone">Telephone</label>
-        <input id="telephone" type="text" />
-        <span class="hint">Include your country code</span>
-      </p>
-
-      <p class="group">
-        <label for="code">Code</label>
-        <input id="code" type="text" class="small" />
-        <span class="inline hint">The three numbers on the back of the card</span>
-      </p>
-
-      <p class="group">
-        <label for="password">Password</label>
-        <span class="hint">Make it at least six characters long</span>
-        <input id="password" type="password" />
-      </p>
-
-    </div>
-</div>
-
-<h3 id="html-5">HTML</h3>
-
-<pre><code>  &lt;p class="group"&gt;
-    &lt;label for="telephone"&gt;Telephone&lt;/label&gt;
-    &lt;input id="telephone" type="text"&gt;
-    &lt;span class="hint"&gt;Include your country code&lt;/span&gt;
-  &lt;/p&gt;
-
-  &lt;p class="group"&gt;
-    &lt;label for="code"&gt;Code&lt;/label&gt;
-    &lt;input id="code" type="text" class="small"&gt;
-    &lt;span class="inline hint"&gt;The three numbers on the back of the card&lt;/span&gt;
-  &lt;/p&gt;
-
-  &lt;p class="group"&gt;
-    &lt;label for="password"&gt;Password&lt;/label&gt;
-    &lt;span class="hint"&gt;Make it at least six characters long&lt;/span&gt;
-    &lt;input id="password" type="password"&gt;
-  &lt;/p&gt;
-</code></pre>
-
-<h2 id="hidden-labels">Hidden labels</h2>
-
-<p>Use the ‘visuallyhidden’ class to hide labels. You need a really good reason to do this though.</p>
-
-<h3 id="example-6">Example</h3>
-
-<div class="pattern-example">
-    <div class="form-example-1">
-
-      <p class="group">
-        <label for="street1">Street</label>
-        <input id="street1" type="text" class="street" />
-      </p>
-      <p class="group">
-        <label for="street2" class="visuallyhidden">Street line two</label>
-        <input id="street2" type="text" class="street" />
-      </p>
-      <p class="group">
-        <label for="town">Town/City</label>
-        <input id="town" type="text" class="town" />
-      </p>
-      <p class="group">
-        <label for="postcode">Postcode</label>
-        <input id="postcode" type="text" class="postcode" />
-      </p>
-
-    </div>
-</div>
-
-<h3 id="html-6">HTML</h3>
-
-<pre><code>  &lt;p class="group"&gt;
-    &lt;label for="street1"&gt;Street&lt;/label&gt;
-    &lt;input id="street1" type="text" class="street"&gt;
-  &lt;/p&gt;
-  &lt;p class="group"&gt;
-    &lt;label for="street2" class="visuallyhidden"&gt;Street line two&lt;/label&gt;
-    &lt;input id="street2" type="text" class="street"&gt;
-  &lt;/p&gt;
-  &lt;p class="group"&gt;
-    &lt;label for="town"&gt;Town/City&lt;/label&gt;
-    &lt;input id="town" type="text" class="town"&gt;
-  &lt;/p&gt;
-  &lt;p class="group"&gt;
-    &lt;label for="postcode"&gt;Postcode&lt;/label&gt;
-    &lt;input id="postcode" type="text" class="postcode"&gt;
-  &lt;/p&gt;
-</code></pre>
-
-<h2 id="buttons">Buttons</h2>
-
-<p>Buttons should be horizontally left-aligned beneath the form inputs (not necessarily left aligned with the labels, and not right aligned on the page). Nest rows of buttons in an ‘action group’ element. The primary action should be the first button in the group.</p>
-
-<h3 id="example-7">Example</h3>
-
-<div class="pattern-example">
-        <div class="form-example-1">
-        <p class="group">
-          <label for="full-name">Full name</label>
-          <input id="full-name" type="text" class="full-name" />
-        </p>
-        <p class="action group">
-          <input class="button" type="submit" value="Next" />
-          <input class="button-secondary" type="submit" value="Cancel" />
-        </p>
-
-    </div>
-</div>
-
-<h3 id="html-7">HTML</h3>
-
-<pre><code>    &lt;p class="action group"&gt;
-      &lt;input class="button" type="submit" value="Next"&gt;
-      &lt;input class="button-secondary" type="submit" value="Cancel"&gt;
-    &lt;/p&gt;
-</code></pre>
-
-<p>See the <a href="/service-manual/design-and-content/resources/buttons.html">seperate page on buttons</a> for detailed guidance on how to style and word them.</p>
-
-<h2 id="validation-messages">Validation messages</h2>
-
-<p>Summarise any validation errors at the top of your page like this:</p>
-
-<h3 id="example-8">Example</h3>
-
-<div class="pattern-example">
-    <div class="form-example-1">
-
-      <div class="validation-summary">
-        <h1>Please check the form</h1>
-        <ul>
-          <li><a href="#error1">Re-type your email address</a></li>
-          <li><a href="#error2">Select at least one area of interest</a></li>
-        </ul>
-      </div>
-
-    </div>
-</div>
-
-<h3 id="html-8">HTML</h3>
-
-<pre><code>  &lt;div class="validation-summary"&gt;
-    &lt;h1&gt;Please check the form&lt;/h1&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href="#error1"&gt;Re-type your email address&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#error2"&gt;Select at least one area of interest&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-</code></pre>
-
-<p>Each link should jump the user down to the corresponding form control. Add a ‘validation’ class to the control group and insert a ‘validation-message’ element.</p>
-
-<h3 id="example-9">Example</h3>
-
-<div class="pattern-example">
-    <div class="form-example-1">
-
-      <p class="validation group">
-        <span class="validation-message" id="error1">Re-type your email address</span>
-        <label for="email-confirm">Re-type email <abbr title="Mandatory">*</abbr></label>
-        <input id="email-confirm" type="text" class="email" />
-      </p>
-
-    </div>
-</div>
-
-<h3 id="html-9">HTML</h3>
-
-<pre><code>  &lt;p class="validation group"&gt;
-    &lt;span class="validation-message" id="error1"&gt;Re-type your email address&lt;/span&gt;
-    &lt;label for="email-confirm"&gt;Re-type email &lt;abbr title="Mandatory"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-    &lt;input id="email-confirm" type="text" class="email"&gt;
-  &lt;/p&gt;
-</code></pre>
-
-<h1 id="cross-browser-support">Cross browser support</h1>
-
-<ul>
-  <li>Chrome: No problems</li>
-  <li>IE 8: V-aligned - all good</li>
-  <li>IE 8: H-aligned - slightly ragged alignment</li>
-  <li>IE 7: Nested fieldsets - legends are hidden in H-aligned forms</li>
-  <li>IE 7: Validated option groups - lots of extra left padding</li>
-  <li>IE 6: Option groups are aligning horizontally in vertically-aligned forms</li>
-  <li>IE 6: Nested fieldsets layout is broken and legends are hidden</li>
-  <li>IE 6: Labels with nested controls need ‘for’ attributes to work</li>
-</ul>
-
-<h1 id="putting-it-all-together">Putting it all together</h1>
-
-<p>To see all the examples above in a single form, check out the <a href="/service-manual/design-and-content/resources/registration-form.html">registration form example</a>.</p>
-
-<h1 id="rationale">Rationale</h1>
-
-<h2 id="text-input-fields">Text input fields</h2>
-
-<ul>
-  <li>Light grey background: To make them stand out equally on a white page or coloured panel</li>
-  <li>Inset border style: By convention people type into ‘holes’ cut into the interface</li>
-</ul>
+<p>The default behaviour of clicking a label will move focus to its associated form element. By wrapping a form element in its label you increase the size of the area users need to click to interact with that element to whatever size you make the label.</p>
 
 <h2 id="label-positioning">Label positioning</h2>
 
-<p>The framework provides support for top, left or right alignment because there are valid cases for the use of all three. The table below (from a <a href="http://uxdesign.smashingmagazine.com/2011/11/08/extensive-guide-web-form-usability/">great article on form design</a> in Smashing Magazine) outlines the relative advantages of each approach:</p>
+<p>There are valid cases for top, left or right alignment of labels. The position of an element’s label does not effect how screenreaders announce it to users. </p>
+
+<p>The table below (from a <a href="http://uxdesign.smashingmagazine.com/2011/11/08/extensive-guide-web-form-usability/">great article on form design</a> in Smashing Magazine) outlines the relative advantages of each approach:</p>
 
 <table>
   <thead>
@@ -852,13 +365,208 @@ legend text in a span. Blame inconsistent and generally poor support for legend 
   </tbody>
 </table>
 
-<h2 id="validation-messages-1">Validation messages</h2>
+<h2 id="hidden-labels">Hidden labels</h2>
 
-<p>When a form is submitted, any validation messages are summarised at the top of the page.
-The messages link down to the part of the form they relate to.
-This helps users of assistive technology navigate around the form.</p>
+<p>All form elements other than submission buttons should have a label. For situations where a label would not fit into the visual interface the label should be hidden from view.</p>
 
-<p>The red bar connects the summary to the messages in the form and aids quick scanning of the form for errors.</p>
+<p>Hiding labels should be done with care as by doing so you are taking information away from the user.</p>
+
+<p>Labels should never be hidden by using <code>display: none</code> as this will also remove them from the <a href="http://www.w3.org/TR/html51/dom.html#flow-content">document flow</a> meaning they will not be recognised by screenreaders.</p>
+
+<p>In the example below the second input box has a hidden label. It is associated with the first input box visually by its position. For non-visual users it is important the label is present to provide this information.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <p class="group">
+        <label for="street1">Street</label>
+        <input id="street1" type="text" class="street" />
+      </p>
+      <p class="group">
+        <label for="street2" class="visuallyhidden">Street line two</label>
+        <input id="street2" type="text" class="street" />
+      </p>
+      <p class="group">
+        <label for="town">Town/City</label>
+        <input id="town" type="text" class="town" />
+      </p>
+      <p class="group">
+        <label for="postcode">Postcode</label>
+        <input id="postcode" type="text" class="postcode" />
+      </p>
+
+    </div>
+</div>
+
+<h2 id="styling-text-input-fields">Styling text input fields</h2>
+
+<p>When styling form elements we should try to achieve the same goals as the default styling through our own CSS.</p>
+
+<p>A few examples of how to achieve this for input fields:</p>
+
+<ul>
+  <li>Light grey background: To make them stand out equally on a white page or coloured panel</li>
+  <li>Inset border style: By convention people type into ‘holes’ cut into the interface</li>
+</ul>
+
+<h2 id="fieldsets-and-legends">Fieldsets and legends</h2>
+
+<p>As explained in their <a href="http://www.w3.org/TR/html51/forms.html#the-fieldset-element">HTML5 specification section</a> fieldsets are used to break up forms into logical sections.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+        <fieldset>
+          <legend>Name</legend>
+          <p class="group">
+            <label for="first-name">First name</label>
+            <input id="first-name" type="text" class="name" />
+          </p>
+          <p class="group">
+            <label for="last-name">Last name</label>
+            <input id="last-name" type="text" class="name" />
+          </p>
+        </fieldset>
+
+    </div>
+</div>
+
+<h3 id="nested-fieldsets">Nested fieldsets</h3>
+
+<p>There are times when you might want to treat a set of form controls like they were a single, compound control 
+(a date-of-birth selector for example). One way to do this is with a nested fieldset.</p>
+
+<div class="pattern-example">
+
+    <div id="form-example-2" class="left">
+
+      <fieldset>
+        <legend>Your details</legend>
+        <p class="group">
+          <label for="full-name">Full name</label>
+          <input id="full-name" type="text" class="full-name" />
+        </p>
+        <fieldset>
+          <legend><span>Date of birth</span></legend>
+          <div class="inline group">
+            <p class="group">
+              <label for="day" class="visuallyhidden">Day</label>
+              <select id="day" type="text">
+                <option value="Day">Day</option>
+                <!-- Other options go here -->
+              </select>
+            </p>
+            <p class="group">
+              <label for="month" class="visuallyhidden">Month</label>
+              <select id="month" type="text">
+                <option value="Month">Month</option>
+                <!-- Other options go here -->
+              </select>
+            </p>
+            <p class="group">
+              <label for="year" class="visuallyhidden">Year</label>
+              <select id="year" type="text">
+                <option value="Year">Year</option>
+                <!-- Other options go here -->
+              </select>
+            </p>
+          </div>
+        </fieldset>
+      </fieldset>
+
+  </div>
+
+</div>
+
+<h2 id="hints">Hints</h2>
+
+<p>Hints for help with interactions can be placed above or below the relevant control.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <p class="group">
+        <label for="telephone">Telephone</label>
+        <input id="telephone" type="text" />
+        <span class="hint">Include your country code</span>
+      </p>
+
+      <p class="group">
+        <label for="code">Code</label>
+        <input id="code" type="text" class="small" />
+        <span class="inline hint">The three numbers on the back of the card</span>
+      </p>
+
+      <p class="group">
+        <label for="password">Password</label>
+        <span class="hint">Make it at least six characters long</span>
+        <input id="password" type="password" />
+      </p>
+
+    </div>
+</div>
+
+<h2 id="buttons">Buttons</h2>
+
+<p>By default buttons should be horizontally left-aligned beneath the form inputs (not necessarily left aligned with the labels, and not right aligned on the page). The primary action should be the first button in the group.</p>
+
+<div class="pattern-example">
+        <div class="form-example-1">
+        <p class="group">
+          <label for="full-name">Full name</label>
+          <input id="full-name" type="text" class="full-name" />
+        </p>
+        <p class="action group">
+          <input class="button" type="submit" value="Next" />
+          <input class="button-secondary" type="submit" value="Cancel" />
+        </p>
+
+    </div>
+</div>
+
+<p>See the <a href="/service-manual/design-and-content/resources/buttons.html">separate page on buttons</a> for more detailed guidance.</p>
+
+<h2 id="validation-messages">Validation messages</h2>
+
+<p>Summarise any validation errors at the top of your page like this:</p>
+
+<h3 id="example">Example</h3>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <div class="validation-summary">
+        <h1>Please check the form</h1>
+        <ul>
+          <li><a href="#error1">Re-type your email address</a></li>
+          <li><a href="#error2">Select at least one area of interest</a></li>
+        </ul>
+      </div>
+
+    </div>
+</div>
+
+<p>Each link should jump the user down to the corresponding form control.</p>
+
+<p>The red bar visually connects the summary to the messages in the form and aids quick scanning of the form for errors.</p>
+
+<h1 id="examples-in-this-page">Examples in this page</h1>
+
+<p>To see all the examples above in a single form, check out the <a href="/service-manual/design-and-content/resources/registration-form.html">registration form example</a>. The CSS for those styles is derived from this <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_forms.scss">SASS file</a>.</p>
+
+<h1 id="examples-on-govukhttpswwwgovuk">Examples on <a href="https://www.gov.uk">GOV.UK</a></h1>
+
+<p>Examples of forms currently in use across <a href="https://www.gov.uk">GOV.UK</a> are:</p>
+
+<ul>
+  <li><a href="https://www.gov.uk/feedback/contact">Contact page</a></li>
+  <li><a href="https://www.gov.uk/feedback/foi">Freedom of information request form</a></li>
+  <li><a href="https://www.gov.uk/search?q=tax">Search results page</a></li>
+  <li><a href="https://www.gov.uk/notapage">404 page</a></li>
+  <li><a href="https://www.gov.uk/vat">Report a problem form</a> (click the ‘Report a problem’ link to view)</li>
+  <li><a href="https://www.gov.uk/licence-finder/sectors">Licence finder</a></li>
+  <li><a href="https://www.gov.uk/trade-tariff/sections">Trade Tariff</a></li>
+</ul>
 
 <script>
   $(function() {
