@@ -35,6 +35,14 @@ use Rack::Rewrite do
   r301 %r{/service-manual/users/user-research/userresearchbriefs.html(\?.*)?}, '/service-manual/users/user-research/user-research-briefs$1'
   r301 %r{/service-manual/users/user-research/userresearchsurveys.html(\?.*)?}, '/service-manual/users/user-research/user-research-surveys$1'
   r301 %r{/service-manual/users/user-research/userresearchtools.html(\?.*)?}, '/service-manual/users/user-research/user-research-tools$1'
+  r301 %r{/service-manual/the-team/content-designer-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/content-designer-jd$1'
+  r301 %r{/service-manual/the-team/delivery-manager-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/delivery-manager-jd$1'
+  r301 %r{/service-manual/the-team/designer-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/designer-jd.html$1'
+  r301 %r{/service-manual/the-team/developer-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/developer-jd$1'
+  r301 %r{/service-manual/the-team/performance-analyst-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/performance-analyst-jd$1'
+  r301 %r{/service-manual/the-team/service-manager-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/service-manager-jd$1'
+  r301 %r{/service-manual/the-team/user-researcher-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/user-researcher-jd$1'
+  r301 %r{/service-manual/the-team/web-operations-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/web-operations-jd$1'
 end
 
 run DesignPrinciples::Application
