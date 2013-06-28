@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Running retrospectives — Government Service Design Manual</title>
+<title>Uptime and availability — Government Service Design Manual</title>
 
 <!-- Stylesheets from static -->
 
@@ -119,7 +119,7 @@
       
       <li><a href="/service-manual">Home</a></li>
       
-      <li><a href="/service-manual/agile">Agile</a></li>
+      <li><a href="/service-manual/operations">Operations</a></li>
       
     </ol>
   </nav>
@@ -130,23 +130,13 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Running retrospectives</h1>
+      <h1>Uptime and availability</h1>
       
-      <h2 class="subtitle">Reviewing a team's work and the way it was done</h2>
+      <h2 class="subtitle">Keeping the Government online</h2>
       
     </div>
 
     
-<ul class="meta-phases group">
-  
-  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
-  
-  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
-  
-  <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
-  
-</ul>
-
   </header>
 
   <div class="article-container group">
@@ -155,35 +145,29 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-whats-a-retrospective"><a href="#whats-a-retrospective">What’s a retrospective?</a>
+<li class="level-introduction"><a href="#introduction">Introduction</a>
 </li>
-<li class="level-the-facilitator"><a href="#the-facilitator">The facilitator</a>
+<li class="level-not-just-on-or-off"><a href="#not-just-on-or-off">Not just on or off</a>
 </li>
-<li class="level-working-agreements"><a href="#working-agreements">Working agreements</a>
-</li>
-<li class="level-outcomes-of-a-retrospective"><a href="#outcomes-of-a-retrospective">Outcomes of a retrospective</a>
-</li>
-<li class="level-template"><a href="#template">Template</a>
+<li class="level-people"><a href="#people">People</a>
 <ol>
-<li class="level-setting-the-scene-0000-to-0005-5-mins"><a href="#setting-the-scene-0000-to-0005-5-mins">Setting the scene: 00:00 to 00:05 (5 mins)</a>
+<li class="level-weekends-and-evenings"><a href="#weekends-and-evenings">Weekends and evenings</a>
 </li>
-<li class="level-actions-from-the-previous-retrospective-0005-to-0010-5-mins"><a href="#actions-from-the-previous-retrospective-0005-to-0010-5-mins">Actions from the previous retrospective: 00:05 to 00:10 (5 mins)</a>
-</li>
-<li class="level-the-good-0010-to-0020-10-mins"><a href="#the-good-0010-to-0020-10-mins">The good: 00:10 to 00:20 (10 mins)</a>
-</li>
-<li class="level-discussion-0020-to-0030-10-mins"><a href="#discussion-0020-to-0030-10-mins">Discussion: 00:20 to 00:30 (10 mins)</a>
-</li>
-<li class="level-the-bad-0030-to-0045-15-mins"><a href="#the-bad-0030-to-0045-15-mins">The bad: 00:30 to 00:45 (15 mins)</a>
-</li>
-<li class="level-discussion-0045-to-0105-20-mins"><a href="#discussion-0045-to-0105-20-mins">Discussion: 00:45 to 01:05 (20 mins)</a>
-</li>
-<li class="level-actions-0105-to-0120-15-mins"><a href="#actions-0105-to-0120-15-mins">Actions: 01:05 to 01:20 (15 mins)</a>
+<li class="level-trade-offs"><a href="#trade-offs">Trade-offs</a>
 </li>
 </ol>
 </li>
-<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+<li class="level-things-to-watch-out-for"><a href="#things-to-watch-out-for">Things to watch out for</a>
+<ol>
+<li class="level-underlying-infrastructure-availability"><a href="#underlying-infrastructure-availability">Underlying infrastructure availability</a>
 </li>
-<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+<li class="level-scheduled-maintenance"><a href="#scheduled-maintenance">Scheduled maintenance</a>
+</li>
+<li class="level-penalties"><a href="#penalties">Penalties</a>
+</li>
+<li class="level-contracts"><a href="#contracts">Contracts</a>
+</li>
+</ol>
 </li>
 </ol>
 
@@ -191,169 +175,104 @@
     </div>
 
     <div class="inner">
-      <p>A central principle of agile is quick feedback loops – you demonstrate something to the user as soon as possible so you can see how well it suits their needs. Retrospectives are the way we apply this to our own teams to find out what’s working and what isn’t, so a team can continuously improve.</p>
+      <h1 id="introduction">Introduction</h1>
 
-<h2 id="whats-a-retrospective">What’s a retrospective?</h2>
+<p>The expectation when using an online service is that it is available 24
+hours a day 365 days a year. This is one of the advantages of shifting
+services online, people can transact with you when it suits them, not
+just when your office or call centre is open. But achieving good uptime
+for a service takes planning and good design.</p>
 
-<p><img src="https://farm9.staticflickr.com/8013/7105598457_084223078e_d.jpg" alt="X-prop retrospective" /></p>
+<h1 id="not-just-on-or-off">Not just on or off</h1>
 
-<p>A retrospective is a meeting at the end of a <a href="/service-manual/agile/features-of-agile.html">sprint</a> where your team get a chance to talk about what went well and badly in that sprint, and take some actions to improve matters. It can also cover a larger scope, eg a full project retrospective.</p>
+<p>It is important to build services that wherever possible can be turned
+off (or fail) gracefully. The possible states for a service should not be
+limited to on or off. Individual components could be designed to fall
+back to minimal functions. A read-only mode could be introduced where
+information can be looked at but not changed. If your service is reliant
+on a third-party service, you could queue information for later
+processing if that service were to become unavailable.</p>
 
-<p>A retrospective takes the following form:</p>
+<p>Remeber to build in redundancy and avoid single points of failure. You
+can avoid the problem of a web server failing by having more than one
+and load-balancing between them, or minimise disruption if a database
+crashes by using database systems which spread data and queries across a
+cluster.</p>
 
-<ol>
-  <li>gather data</li>
-  <li>generate insights</li>
-  <li>decide what to do</li>
-</ol>
+<h1 id="people">People</h1>
 
-<p>This is a chance for everyone in your team to contribute to improving process/productivity.</p>
+<p>A critical part of maintaining a service are the people running it
+day-to-day. People may be involved in responding to customer issues or
+in more technical activities like resolving minor outages before they
+cause a real problem.</p>
 
-<h2 id="the-facilitator">The facilitator</h2>
+<h2 id="weekends-and-evenings">Weekends and evenings</h2>
 
-<p><img src="/service-manual/assets/images/planning_retro.jpg" alt="A retrospective plan" /></p>
+<p>Don’t forget that people will be using your service when you are not at
+work. Failures during out-of-hours periods can go unnoticed for long
+periods of time if no-one is responsible for them. Make sure you
+consider evenings and weekends and also whether an on-call system is
+appropriate, or whether you need a dedicated 24/7 support capability.</p>
 
-<p>All retrospectives must be facilitated. The facilitator’s role is to give everyone a chance to talk about their concerns and give positive feedback. At the same time, they make sure the meeting remains a structured, productive meeting and doesn’t turn into just a moanfest. Ideally, your facilitator will be someone outside of your team so your whole team can contribute, but it’s not essential.</p>
+<h2 id="trade-offs">Trade-offs</h2>
 
-<p>The facilitator needs to:</p>
+<p>Ultimately you may make trade-offs, sacrificing certainty around uptime
+for lower cost for example. Try and do this openly and communicate
+decisions made. Many problems regarding uptime come from mismanaged
+expectations.</p>
 
-<ul>
-  <li>plan the retrospective</li>
-  <li>make sure that everyone gets a chance to contribute</li>
-  <li>keep the retrospective on track</li>
-  <li>make sure actions are created and assigned</li>
-  <li>manage time so that it does not run over</li>
-</ul>
+<h1 id="things-to-watch-out-for">Things to watch out for</h1>
 
-<h2 id="working-agreements">Working agreements</h2>
+<h2 id="underlying-infrastructure-availability">Underlying infrastructure availability</h2>
 
-<p>You’ll find it helpful to have some working agreements for a retrospective. These can be stated if necessary, eg in the first retrospective your team has.</p>
+<p>Remember the availability of the service is dependent on the
+availability of lots of systems, potentially across multiple suppliers
+not all of whom you have a direct relationship with. Maybe your
+application (maintained by your development team) relies on an
+application server or database (provided by another team in your
+department) which runs on an Infrastructure as a Service platform
+(provided via contract with a commercial supplier) which relies on
+network connectivity and power from utilities (which you have no direct
+contract with). This can become quite complex in a service-oriented
+architecture where you rely on other software applications and
+interfaces.</p>
 
-<p>Working agreements could be that:</p>
+<p>Understand your dependencies and understand their dependencies and all
+the intended uptime expectations. </p>
 
-<ul>
-  <li>everyone contributes</li>
-  <li>no one speaks over the other (except for the facilitator)</li>
-  <li>no phones or laptops are allowed - everyone should be concentrating on the discussion</li>
-</ul>
+<h2 id="scheduled-maintenance">Scheduled maintenance</h2>
 
-<h2 id="outcomes-of-a-retrospective">Outcomes of a retrospective</h2>
+<p>Sometimes uptime can be quoted as to ignore pre-arranged maintenance
+periods. So for example a service may claim 100% even though it shuts
+down every Monday evening for maintenance. Hiding uptime problems behind
+lots of maintenance periods should be avoided, although it may be fine
+to quote both planned and unplanned downtime where services genuinely do
+need scheduled maintenance.</p>
 
-<p><img src="https://farm9.staticflickr.com/8453/8002453131_7fd9489dfd_d.jpg" alt="Retrospective Sections" /></p>
+<h2 id="penalties">Penalties</h2>
 
-<p>During the discussion you will uncover some successes you can celebrate, as well as some problems that you can fix or things you can improve.</p>
+<p>Some suppliers will offer recompense for missing uptime guarantees or
+service level agreement response times. Although this can obviously be
+useful consider whether the money or service credits offered really
+offset the difficulties faced by people using the service. If you are
+regularly getting credits for uptime problems consider whether you are
+really getting the offered uptime or SLA from your supplier.</p>
 
-<p>Make a list of actions that will address these. Aim to have done them within the next sprint or iteration.</p>
+<h2 id="contracts">Contracts</h2>
 
-<p>Some problems may take longer to fix, in which case you should try to make an action that will start the process of improving it by your next retrospective.</p>
-
-<p>Actions should:</p>
-
-<ul>
-  <li>be concrete and measurable (eg ‘write 10 more unit tests for the redirector’, or ‘speak to Jamie about arranging a project retrospective’; not ‘write more tests’, or ‘we should understand the lessons learned from this project’)</li>
-  <li>have a date by which they should be completed</li>
-  <li>be assigned to a specific person (and not to ‘the team’)</li>
-  <li>not be assigned to someone who is not present</li>
-</ul>
-
-<p>Retrospectives should follow up on the actions of previous retrospectives to make sure they’ve been completed. If they’re consistently not getting done, you may have too many.</p>
-
-<h2 id="template">Template</h2>
-
-<p class="left"><img src="/service-manual/assets/images/redirects.jpeg" alt="Voting with stickers" /></p>
-
-<p>You can use this template for your retrospectives. It’s based on a team of 8 to 10 and covers a 2-week sprint. 90 minutes is a reasonable amount of time to use for this scope and amount of people.</p>
-
-<p>Each of the activities is timeboxed (has a set time it will run for), and it’s your facilitator’s job to make sure that your team stick to this.</p>
-
-<p>Build in about 10% ‘shuffle time’ to move between activities to make sure it doesn’t overrun.</p>
-
-<h3 id="setting-the-scene-0000-to-0005-5-mins">Setting the scene: 00:00 to 00:05 (5 mins)</h3>
-
-<p>Explain the scope, and if necessary, purpose. If your team don’t know each other and/or are shy, include brief introductions.</p>
-
-<h3 id="actions-from-the-previous-retrospective-0005-to-0010-5-mins">Actions from the previous retrospective: 00:05 to 00:10 (5 mins)</h3>
-
-<p>Make sure they’ve been completed. If any haven’t, ask if:</p>
-
-<ul>
-  <li>they still need to be done</li>
-  <li>why haven’t they been completed - set a new deadline if necessary, but don’t keep carrying actions over</li>
-</ul>
-
-<p class="left"><img src="https://farm9.staticflickr.com/8425/7739861570_ef1a5c745f_m_d.jpg" alt="A Bad" /></p>
-
-<h3 id="the-good-0010-to-0020-10-mins">The good: 00:10 to 00:20 (10 mins)</h3>
-
-<p>Give your team around 10 minutes to write down all the things that went well in the previous 2 weeks on post-it notes.</p>
-
-<p>If anonymity is important to encourage free expression, collect them in and add them to the wall yourself. If not, have the team take turns adding their own post-its to the wall, possibly saying a few words about each.</p>
-
-<p>Don’t allow this to develop into a discussion at this point – you just want to gather data.</p>
-
-<h3 id="discussion-0020-to-0030-10-mins">Discussion: 00:20 to 00:30 (10 mins)</h3>
-
-<p>Group the post-its into common themes. If there are too many to discuss in the time you have then have the team prioritise, eg by voting with stickers.</p>
-
-<p>Discuss each of the main areas in turn:</p>
-
-<ul>
-  <li>what should we keep doing?</li>
-  <li>why did those things go well and what can we learn?</li>
-  <li>are there any actions we can draw out?</li>
-</ul>
-
-<h3 id="the-bad-0030-to-0045-15-mins">The bad: 00:30 to 00:45 (15 mins)</h3>
-
-<p>Give the team around 15 minutes to write post-its for anything that went badly.</p>
-
-<h3 id="discussion-0045-to-0105-20-mins">Discussion: 00:45 to 01:05 (20 mins)</h3>
-
-<p>Again, group the post-its, prioritise if necessary, and discuss the main areas:</p>
-
-<ul>
-  <li>can we work out why these things went badly?</li>
-  <li>can we work out what we need to do to improve matters, or prevent specific things happening again?</li>
-  <li>can we draw out specific actions that someone here can take that will help?</li>
-</ul>
-
-<p><img src="https://farm9.staticflickr.com/8008/7465763890_49469afcfc_z_d.jpg" alt="Post-its" /></p>
-
-<h3 id="actions-0105-to-0120-15-mins">Actions: 01:05 to 01:20 (15 mins)</h3>
-
-<p>Spend some time looking at the actions identified; assign them to people present and set realistic deadlines for completion.</p>
-
-<p><strong>Total: 80 minutes with 10% shuffle time.</strong></p>
-
-<p>It’s OK to finish early if people have said what they need to. It’s not OK to overrun – if there is too much to say, have the team prioritise the top areas for discussion and/or book more time for the next retrospective.</p>
-
-<h2 id="why-we-do-this">Why we do this</h2>
-
-<p>Having a regular retrospective means you can:</p>
-
-<ul>
-  <li>make small improvements often, ideally before problems start to fester</li>
-  <li>identify working practices that make you more efficient, productive or at least happier</li>
-</ul>
-
-<p>Agile development practices will help you work better, and the retrospective allows you to fine-tune the process and your environment to your needs.</p>
-
-<h2 id="further-reading">Further reading</h2>
-
-<p>You may find the following resources useful:</p>
-
-<ul>
-  <li><a href="http://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki">The Agile Retrospective Wiki</a> - it has some very useful resources, including <a href="http://retrospectivewiki.org/index.php?title=Retrospective_Plans">plans for different types of retrospectives</a>.</li>
-  <li><a href="http://pragprog.com/book/dlret/agile-retrospectives">Agile Retrospectives: Making Good Teams Great</a>.</li>
-</ul>
-
-<p>Retrospective plan photo by <a href="https://twitter.com/annashipman" target="_blank">Anna Shipman</a>. Voting with stickers photo by <a href="https://twitter.com/yahoo_pete" target="_blank">Pete Herlihy</a>. All other photographs by <a href="https://twitter.com/psd" target="_blank">Paul Downey</a>.</p>
+<p>The impact that contracts with suppliers (of products or services) can
+have on availability should not be underestimated. Comprehensive
+guidance on contracts is out of the scope of this guide but ensure
+contract terms, service level agreements and uptime guarantees and
+understood by the team responsible for the service. And that at the very
+least the Service Manager is involved with contracts for underlying
+systems.</p>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/agile/running-retrospectives.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/agile/running-retrospectives.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/operations/uptime-and-availability.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/operations/uptime-and-availability.md">Page source</a>
         </ol>
       </nav>
     </div>
