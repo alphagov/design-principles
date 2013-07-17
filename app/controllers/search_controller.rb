@@ -10,9 +10,9 @@ class SearchController < ApplicationController
 
     response.headers[Slimmer::Headers::SEARCH_PATH_HEADER] = '/service-manual/search'
 
-    res = search_client.search(params[:q])
+    res = search_client.search(params[:q], response_style: "hash")
     @search_term = params[:q]
-    @results = res.map { |r| SearchResult.new(r) }
+    @results = res["results"].map { |r| SearchResult.new(r) }
   rescue GdsApi::BaseError => e
     @results = ["HELP!"]
   end
