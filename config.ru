@@ -44,8 +44,8 @@ use Rack::Rewrite do
   r301 %r{/service-manual/the-team/user-researcher-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/user-researcher-jd$1'
   r301 %r{/service-manual/the-team/web-operations-jd.html(\?.*)?}, '/service-manual/the-team/recruitment/web-operations-jd$1'
 
-  r301 %r{/service-manual/design-and-content(.*)}?}, '/service-manual/user-centered-design$1'
-  r301 %r{/service-manual/users(.*)}?}, '/service-manual/user-centered-design$1'
+  r301 %r{/service-manual/design-and-content(.*)?}, '/service-manual/user-centered-design$1'
+  r301 %r{/service-manual/users(.*)?}, '/service-manual/user-centered-design$1'
 end
 
 run DesignPrinciples::Application
