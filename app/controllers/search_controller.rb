@@ -13,7 +13,7 @@ class SearchController < ApplicationController
     res = search_client.search(params[:q])
     @search_term = params[:q]
     @results = res.map { |r| SearchResult.new(r) }
-  rescue GdsApi::Rummager::SearchServiceError => e
+  rescue GdsApi::BaseError => e
     @results = ["HELP!"]
   end
 
