@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Writing government services — Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1374072685" media="print" rel="stylesheet" type="text/css" />
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css"]},
+  c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/frontend/media-player-4d52c02c18a460340db1ed476b807bf6.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
+
+
+
+
+
+
+
+</head>
+<body class="mainstream full-width detailed-guidance ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the GOV.UK homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK">
+        </a>
+        <a href="#search" class="search-toggle js-header-toggle">Search</a>
+      </div>
+
+      <form id="search" class="site-search" action="/service-manual/search" method="get">
+          <div class="content">
+            <label for="site-search-text">Search the service manual</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus" role="search">
+            <input class="submit" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/start" class="">Start using the manual</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--end header-->
+
+  <div id="wrapper">
+
+    <section id="content" role="main" class="group">
+
+      
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/design-and-content">Content and design</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <div class="hgroup">
+      <h1>Writing government services</h1>
+      
+      <h2 class="subtitle">Tone of voice, writing style, use of headings and more</h2>
+      
+    </div>
+
+    
+<ul class="meta-phases group">
+  
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
+  
+  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
+  
+  <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
+  
+</ul>
+
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-how-to-write"><a href="#how-to-write">How to write</a>
+</li>
+<li class="level-guidance"><a href="#guidance">Guidance</a>
+<ol>
+<li class="level-introductions"><a href="#introductions">Introductions</a>
+</li>
+<li class="level-service-titles"><a href="#service-titles">Service titles</a>
+</li>
+<li class="level-page-titles"><a href="#page-titles">Page titles</a>
+</li>
+<li class="level-questions"><a href="#questions">Questions</a>
+</li>
+</ol>
+</li>
+<li class="level-tone-and-style"><a href="#tone-and-style">Tone and style</a>
+<ol>
+<li class="level-dont-use-jargon"><a href="#dont-use-jargon">Don’t use jargon</a>
+</li>
+<li class="level-spin"><a href="#spin">Spin</a>
+</li>
+<li class="level-subheads"><a href="#subheads">Subheads</a>
+</li>
+</ol>
+</li>
+<li class="level-guaranteed-success"><a href="#guaranteed-success">Guaranteed success</a>
+</li>
+<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+<ol>
+<li class="level-inclusive"><a href="#inclusive">Inclusive</a>
+</li>
+<li class="level-responsibility"><a href="#responsibility">Responsibility</a>
+</li>
+</ol>
+</li>
+<li class="level-writing-terms-and-conditions"><a href="#writing-terms-and-conditions">Writing terms and conditions</a>
+<ol>
+<li class="level-guidancetool"><a href="#guidancetool">Guidance/Tool</a>
+</li>
+<li class="level-why-we-do-this-1"><a href="#why-we-do-this-1">Why we do this</a>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <h2 id="how-to-write">How to write</h2>
+
+<p>This section gives details on naming your service, tone, style, questions and why we write in this way.</p>
+
+<p>You may want to read: <a href="/service-manual/user-centered-design/how-users-read.html">how users read</a> this will tell you more about user reading behaviour - which will help when designing the content for your service.</p>
+
+<h2 id="guidance">Guidance</h2>
+
+<p>All services should follow the <a href="https://www.gov.uk/designprinciples/styleguide">GOV.UK style guide</a>.
+The way we talk to users is the same on all <a href="https://www.gov.uk">GOV.UK</a> products. The only difference is the format.</p>
+
+<h3 id="introductions">Introductions</h3>
+<p>Services should be intuitive and government services should provide an exceptional user experience. You shouldn’t need many words at the top of the page and none of it should be instructions on how to use the service. If you need to manage a user’s expectations, tell them on the pre-transaction page, not on the service page.</p>
+
+<p>If you do have to add text, keep your sentences very specific, short, active (keeping the subject and verb close) and in plain English. Users won’t want to read much on a tool or transaction. They will want to click, answer questions and get to the end as quickly as possible. It’s unlikely they will read much at all, so only tell them what you need to.</p>
+
+<h3 id="service-titles">Service titles</h3>
+<p>Don’t use terms like ‘my benefits’ etc. This will mean different things to different users. Some will think it is a list of all the benefits they have had, some will think it is an online account to manage benefits and others won’t know what to think. Don’t use puns or clever terms. Keep the service title clear, short and specific.</p>
+
+<h3 id="page-titles">Page titles</h3>
+<p>Keep page titles specific to the questions on the page. If the page is just about the user’s address, call it ‘your address’. Don’t call it ‘about you’. However, if you are covering a number of different elements of ‘about you’ on the page - you can.</p>
+
+<h3 id="questions">Questions</h3>
+<p>Make sure you need any question you include in your service. Don’t include questions that you think you might need later or for another part of your organisation. Keep the transaction as specific as possible to the task the user is trying to complete.</p>
+
+<h2 id="tone-and-style">Tone and style</h2>
+
+<h3 id="dont-use-jargon">Don’t use jargon</h3>
+<p>Jargon is used differently by different people, so you will be opening up the language to misinterpretation.</p>
+
+<h3 id="spin">Spin</h3>
+<p>We lose trust if we use spin or try to ‘convince’ a user of something. Give them the facts they need and don’t try to encourage. The facts should speak for themselves - if the information is clear enough, the user will make their own decision.</p>
+
+<h3 id="subheads">Subheads</h3>
+<p>You use fewer eye muscles to look down than you do across. That might be why users prefer to scan down a page and not across.</p>
+
+<p>By providing clear, specific subheads you are helping the user to scan the page and find the information they are looking for.</p>
+
+<p>In tools and transactions, it’s unlikely you will have a lot of information to break up but if you do, use subheads.</p>
+
+<h2 id="guaranteed-success">Guaranteed success</h2>
+<p>The only way you will know if your service works, is to test it with users. Then modify and test it again.</p>
+
+<h2 id="why-we-do-this">Why we do this</h2>
+<p><a href="https://www.gov.uk">GOV.UK</a> is to open up government information and services to anyone who is interested or needs to interact with government.</p>
+
+<h3 id="inclusive">Inclusive</h3>
+<p>As government we need to be inclusive - we can do this through our design and language. By making the design open and easy to read, the code clean and accessible and the words easy to understand, we are opening up government to all.</p>
+
+<h3 id="responsibility">Responsibility</h3>
+<p>Citizens of the UK can’t go to anyone else for many of our services. Or if they do, to get a better, clearer experience, they usually have to pay for it.</p>
+
+<p>If we make the information hard to read or the design so distracting or difficult that the user doesn’t understand what we are trying to say - they could end up doing it incorrectly or not doing it at all. This could lead to a fine. Or in very extreme cases, jail.</p>
+
+<p>Good design and words isn’t a desire or an ‘aim’ - it is our responsibility.</p>
+
+<h1 id="writing-terms-and-conditions">Writing terms and conditions</h1>
+<p>The terms and conditions of your service must be understandable to the majority of users.</p>
+
+<h2 id="guidancetool">Guidance/Tool</h2>
+
+<p><a href="https://www.gov.uk/support/terms-conditions">GOV.UK’s terms and conditions</a> were written to conform both the legal terms defined by the <a href="http://www.tsol.gov.uk/">Treasury Solicitors Department</a> (TSol) and to the <a href="https://www.gov.uk/designprinciples/styleguide">style guide of GOV.UK</a>.</p>
+
+<p>These form a template for other services to use, and cover many of the conditions that operational services published as part of <a href="https://www.gov.uk">GOV.UK</a> will require.</p>
+
+<p>If your service needs additional terms or conditions added to this list then these should be written clearly, in a way that most users will be able to understand. In practise, this means unpicking lots of the legal language and giving users concrete examples to help them understand what a specific term or condition means.</p>
+
+<p>Adding that term or condition should be done in consultation with GDS.</p>
+
+<h2 id="why-we-do-this-1">Why we do this</h2>
+<p>Directgov proved to be a good model for this, as their terms and conditions were clearly written and easy to understand. <a href="https://www.gov.uk">GOV.UK</a> continued this, with additional pieces of information added as transactions and services were incorporated into the site.</p>
+
+<h2 id="further-reading">Further reading</h2>
+<ul>
+  <li><a href="/service-manual/user-centered-design/how-users-read.html">How users read</a></li>
+  <li><a href="https://www.gov.uk/designprinciples/styleguide">Style guide</a></li>
+</ul>
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/user-centered-design/writing-government-services.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/user-centered-design/writing-government-services.md">Page source</a>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
+
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
+    </nav>
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
+
+<script src="/service-manual/assets/javascript/toggler.js?cache=1374072685" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1374072685" type="text/javascript"></script>
+
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

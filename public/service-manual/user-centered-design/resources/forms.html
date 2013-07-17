@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Forms — Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1374072685" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1374072685" media="print" rel="stylesheet" type="text/css" />
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css"]},
+  c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/frontend/media-player-4d52c02c18a460340db1ed476b807bf6.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
+
+
+
+
+
+
+
+</head>
+<body class="mainstream full-width detailed-guidance ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the GOV.UK homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK">
+        </a>
+        <a href="#search" class="search-toggle js-header-toggle">Search</a>
+      </div>
+
+      <form id="search" class="site-search" action="/service-manual/search" method="get">
+          <div class="content">
+            <label for="site-search-text">Search the service manual</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus" role="search">
+            <input class="submit" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/start" class="">Start using the manual</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--end header-->
+
+  <div id="wrapper">
+
+    <section id="content" role="main" class="group">
+
+      
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/design-and-content">Design and content</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <div class="hgroup">
+      <h1>Forms</h1>
+      
+      <h2 class="subtitle">Markup, styles and layout for form elements</h2>
+      
+    </div>
+
+    
+<ul class="meta-phases group">
+  
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
+  
+  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
+  
+  <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
+  
+</ul>
+
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-writing-the-html-for-forms"><a href="#writing-the-html-for-forms">Writing the HTML for forms</a>
+</li>
+<li class="level-user-interface-patterns"><a href="#user-interface-patterns">User interface patterns</a>
+</li>
+<li class="level-aligning-controls-in-a-column"><a href="#aligning-controls-in-a-column">Aligning controls in a column</a>
+</li>
+<li class="level-aligning-controls-in-a-row"><a href="#aligning-controls-in-a-row">Aligning controls in a row</a>
+</li>
+<li class="level-pre-checked-radios-and-checkboxes"><a href="#pre-checked-radios-and-checkboxes">Pre-checked radios and checkboxes</a>
+</li>
+<li class="level-wrapping-controls-in-a-label-tag"><a href="#wrapping-controls-in-a-label-tag">Wrapping controls in a label tag</a>
+</li>
+<li class="level-label-positioning"><a href="#label-positioning">Label positioning</a>
+</li>
+<li class="level-hidden-labels"><a href="#hidden-labels">Hidden labels</a>
+</li>
+<li class="level-styling-text-input-fields"><a href="#styling-text-input-fields">Styling text input fields</a>
+</li>
+<li class="level-fieldsets-and-legends"><a href="#fieldsets-and-legends">Fieldsets and legends</a>
+<ol>
+<li class="level-nested-fieldsets"><a href="#nested-fieldsets">Nested fieldsets</a>
+</li>
+</ol>
+</li>
+<li class="level-hints"><a href="#hints">Hints</a>
+</li>
+<li class="level-buttons"><a href="#buttons">Buttons</a>
+</li>
+<li class="level-validation-messages"><a href="#validation-messages">Validation messages</a>
+<ol>
+<li class="level-example"><a href="#example">Example</a>
+</li>
+</ol>
+</li>
+<li class="level-examples-in-this-page"><a href="#examples-in-this-page">Examples in this page</a>
+</li>
+<li class="level-examples-on-govukhttpswwwgovuk"><a href="#examples-on-govukhttpswwwgovuk">Examples on [GOV.UK](https://www.gov.uk)</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <h2 id="writing-the-html-for-forms">Writing the HTML for forms</h2>
+
+<p>Like other components of web pages, forms should be created following the principles of <a href="/service-manual/making-software/progressive-enhancement.html">progressive enhancement</a>.</p>
+
+<p>Browsers have default styling for forms. This is usually shared with the styling of the operating system user interface (UI), making it familiar to users. Ensure that any styling you add does not remove any of the native, highly accessible functionality offered by these defaults.</p>
+
+<p>The <a href="http://www.w3.org/TR/html51/">HTML5 specification</a> should be consulted for guidance on creating the HTML. This is more important than with other HTML elements as some types of user will depend on proper use of the language. For example it is important each form element has a label describing it otherwise screenreaders will not be able to identify it properly.</p>
+
+<h2 id="user-interface-patterns">User interface patterns</h2>
+
+<p>In the forms created so far on <a href="https://www.gov.uk">GOV.UK</a> certain patterns of display have emerged as solutions to common UI problems. What follows is a guide to those patterns.</p>
+
+<h2 id="aligning-controls-in-a-column">Aligning controls in a column</h2>
+
+<p>The base pattern for grouping controls is in a column with one row for each control and it’s label.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <p class="option group">
+        <label for="checkbox1"><input id="checkbox1" type="checkbox" /> Job offers</label>
+        <label for="checkbox2"><input id="checkbox2" type="checkbox" /> Networking</label>
+        <label for="checkbox3"><input id="checkbox3" type="checkbox" /> Business opportunities</label>
+      </p>
+
+    </div>
+</div>
+
+<h2 id="aligning-controls-in-a-row">Aligning controls in a row</h2>
+
+<p>You might occasionally need to arrange your group of controls in a row, for instance if they have short labels and there are only a few options.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+        <fieldset>
+          <legend><span>Gender</span></legend>
+          <p class="inline option group">
+            <label for="male"><input id="male" type="radio" name="gender" /> Male</label>
+            <label for="female"><input id="female" type="radio" name="gender" /> Female</label>
+          </p>
+        </fieldset>
+  </div>
+</div>
+
+<h2 id="pre-checked-radios-and-checkboxes">Pre-checked radios and checkboxes</h2>
+
+<p>You may want to pre-check radios if:</p>
+
+<ul>
+  <li>we already know the answer because it was given previously</li>
+  <li>there is a good business reason to steer users towards a particular answer, for instance ‘Contact me by email’ may be preferable to ‘Contact me by phone’ to help manage callcentre workload</li>
+  <li>there is a strong ‘common case’ bias towards a particular answer</li>
+</ul>
+
+<p>Do not pre-check radios if:</p>
+
+<ul>
+  <li>selecting none is a valid option (to be avoided for radios only, as they can’t be unchecked)</li>
+  <li>we want an unbiased opinion without leading the user</li>
+  <li>there is a legal requirement for the user to make a choice</li>
+</ul>
+
+<h2 id="wrapping-controls-in-a-label-tag">Wrapping controls in a label tag</h2>
+
+<p>In the examples above the controls are wrapped in their associated label tag.</p>
+
+<p>The default behaviour of clicking a label will move focus to its associated form element. By wrapping a form element in its label you increase the size of the area users need to click to interact with that element to whatever size you make the label.</p>
+
+<h2 id="label-positioning">Label positioning</h2>
+
+<p>There are valid cases for top, left or right alignment of labels. The position of an element’s label does not effect how screenreaders announce it to users.</p>
+
+<p>The table below (from a <a href="http://uxdesign.smashingmagazine.com/2011/11/08/extensive-guide-web-form-usability/">great article on form design</a> in Smashing Magazine) outlines the relative advantages of each approach:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Top</th>
+      <th>Right</th>
+      <th>Left</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Speed of completion</td>
+      <td>Fastest</td>
+      <td> </td>
+      <td>Slowest</td>
+    </tr>
+    <tr>
+      <td>Horizontal space required</td>
+      <td>Least</td>
+      <td> </td>
+      <td>Most</td>
+    </tr>
+    <tr>
+      <td>Vertical space required</td>
+      <td>Most</td>
+      <td> </td>
+      <td>Least</td>
+    </tr>
+    <tr>
+      <td>Label text space available</td>
+      <td>Most</td>
+      <td> </td>
+      <td>Least</td>
+    </tr>
+    <tr>
+      <td>Proximity to input</td>
+      <td>Closest</td>
+      <td> </td>
+      <td>Least close</td>
+    </tr>
+    <tr>
+      <td>User eye movement</td>
+      <td>Down</td>
+      <td>Down + right</td>
+      <td>Down + right</td>
+    </tr>
+    <tr>
+      <td>Time to move from label to input</td>
+      <td>50ms</td>
+      <td>240ms</td>
+      <td>500ms</td>
+    </tr>
+    <tr>
+      <td>Ideal for…</td>
+      <td>Simple forms</td>
+      <td>Less simple forms</td>
+      <td>Complex forms</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="hidden-labels">Hidden labels</h2>
+
+<p>All form elements other than submission buttons should have a label. For situations where a label would not fit into the visual interface the label should be hidden from view.</p>
+
+<p>Hiding labels should be done with care as by doing so you are taking information away from the user.</p>
+
+<p>Labels should never be hidden by using <code>display: none</code> as this will also remove them from the <a href="http://www.w3.org/TR/html51/dom.html#flow-content">document flow</a> meaning they will not be recognised by screenreaders.</p>
+
+<p>In the example below the second input box has a hidden label. It is associated with the first input box visually by its position. For non-visual users it is important the label is present to provide this information.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <p class="group">
+        <label for="street1">Street</label>
+        <input id="street1" type="text" class="street" />
+      </p>
+      <p class="group">
+        <label for="street2" class="visuallyhidden">Street line two</label>
+        <input id="street2" type="text" class="street" />
+      </p>
+      <p class="group">
+        <label for="town">Town/City</label>
+        <input id="town" type="text" class="town" />
+      </p>
+      <p class="group">
+        <label for="postcode">Postcode</label>
+        <input id="postcode" type="text" class="postcode" />
+      </p>
+
+    </div>
+</div>
+
+<h2 id="styling-text-input-fields">Styling text input fields</h2>
+
+<p>When styling form elements we should try to achieve the same goals as the default styling through our own CSS.</p>
+
+<p>A few examples of how to achieve this for input fields:</p>
+
+<ul>
+  <li>Light grey background: To make them stand out equally on a white page or coloured panel</li>
+  <li>Inset border style: By convention people type into ‘holes’ cut into the interface</li>
+</ul>
+
+<h2 id="fieldsets-and-legends">Fieldsets and legends</h2>
+
+<p>As explained in their <a href="http://www.w3.org/TR/html51/forms.html#the-fieldset-element">HTML5 specification section</a> fieldsets are used to break up forms into logical sections.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+        <fieldset>
+          <legend>Name</legend>
+          <p class="group">
+            <label for="first-name">First name</label>
+            <input id="first-name" type="text" class="name" />
+          </p>
+          <p class="group">
+            <label for="last-name">Last name</label>
+            <input id="last-name" type="text" class="name" />
+          </p>
+        </fieldset>
+
+    </div>
+</div>
+
+<h3 id="nested-fieldsets">Nested fieldsets</h3>
+
+<p>There are times when you might want to treat a set of form controls like they were a single, compound control
+(a date-of-birth selector for example). One way to do this is with a nested fieldset.</p>
+
+<div class="pattern-example">
+
+    <div id="form-example-2" class="left">
+
+      <fieldset>
+        <legend>Your details</legend>
+        <p class="group">
+          <label for="full-name">Full name</label>
+          <input id="full-name" type="text" class="full-name" />
+        </p>
+        <fieldset>
+          <legend><span>Date of birth</span></legend>
+          <div class="inline group">
+            <p class="group">
+              <label for="day" class="visuallyhidden">Day</label>
+              <select id="day" type="text">
+                <option value="Day">Day</option>
+                <!-- Other options go here -->
+              </select>
+            </p>
+            <p class="group">
+              <label for="month" class="visuallyhidden">Month</label>
+              <select id="month" type="text">
+                <option value="Month">Month</option>
+                <!-- Other options go here -->
+              </select>
+            </p>
+            <p class="group">
+              <label for="year" class="visuallyhidden">Year</label>
+              <select id="year" type="text">
+                <option value="Year">Year</option>
+                <!-- Other options go here -->
+              </select>
+            </p>
+          </div>
+        </fieldset>
+      </fieldset>
+
+  </div>
+
+</div>
+
+<h2 id="hints">Hints</h2>
+
+<p>Hints for help with interactions can be placed above or below the relevant control.</p>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <p class="group">
+        <label for="telephone">Telephone</label>
+        <input id="telephone" type="text" />
+        <span class="hint">Include your country code</span>
+      </p>
+
+      <p class="group">
+        <label for="code">Code</label>
+        <input id="code" type="text" class="small" />
+        <span class="inline hint">The three numbers on the back of the card</span>
+      </p>
+
+      <p class="group">
+        <label for="password">Password</label>
+        <span class="hint">Make it at least six characters long</span>
+        <input id="password" type="password" />
+      </p>
+
+    </div>
+</div>
+
+<h2 id="buttons">Buttons</h2>
+
+<p>By default buttons should be horizontally left-aligned beneath the form inputs (not necessarily left aligned with the labels, and not right aligned on the page). The primary action should be the first button in the group.</p>
+
+<div class="pattern-example">
+        <div class="form-example-1">
+        <p class="group">
+          <label for="full-name">Full name</label>
+          <input id="full-name" type="text" class="full-name" />
+        </p>
+        <p class="action group">
+          <input class="button" type="submit" value="Next" />
+          <input class="button-secondary" type="submit" value="Cancel" />
+        </p>
+
+    </div>
+</div>
+
+<p>See the <a href="/service-manual/user-centered-design/resources/buttons.html">separate page on buttons</a> for more detailed guidance.</p>
+
+<h2 id="validation-messages">Validation messages</h2>
+
+<p>Summarise any validation errors at the top of your page like this:</p>
+
+<h3 id="example">Example</h3>
+
+<div class="pattern-example">
+    <div class="form-example-1">
+
+      <div class="validation-summary">
+        <h1>Please check the form</h1>
+        <ul>
+          <li><a href="#error1">Re-type your email address</a></li>
+          <li><a href="#error2">Select at least one area of interest</a></li>
+        </ul>
+      </div>
+
+    </div>
+</div>
+
+<p>Each link should jump the user down to the corresponding form control.</p>
+
+<p>The red bar visually connects the summary to the messages in the form and aids quick scanning of the form for errors.</p>
+
+<h1 id="examples-in-this-page">Examples in this page</h1>
+
+<p>To see all the examples above in a single form, check out the <a href="/service-manual/user-centered-design/resources/registration-form.html">registration form example</a>. The CSS for those styles is derived from this <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_forms.scss">SASS file</a>.</p>
+
+<h1 id="examples-on-govukhttpswwwgovuk">Examples on <a href="https://www.gov.uk">GOV.UK</a></h1>
+
+<p>Examples of forms currently in use across <a href="https://www.gov.uk">GOV.UK</a> are:</p>
+
+<ul>
+  <li><a href="https://www.gov.uk/feedback/contact">Contact page</a></li>
+  <li><a href="https://www.gov.uk/feedback/foi">Freedom of information request form</a></li>
+  <li><a href="https://www.gov.uk/search?q=tax">Search results page</a></li>
+  <li><a href="https://www.gov.uk/notapage">404 page</a></li>
+  <li><a href="https://www.gov.uk/vat">Report a problem form</a> (click the ‘Report a problem’ link to view)</li>
+  <li><a href="https://www.gov.uk/licence-finder/sectors">Licence finder</a></li>
+  <li><a href="https://www.gov.uk/trade-tariff/sections">Trade Tariff</a></li>
+</ul>
+
+<script>
+  $(function() {
+
+    // Style toggle for pattern examples
+    // Takes the text of the clicked 'option' and assigns it as
+    // a class to the element named in the 'data-for' attribute
+    $('.class-toggle .option').click(function(){
+      $('.class-toggle .option').removeClass('selected');
+      $(this).addClass('selected');
+      var selectedClass = $(this).text();
+      var selectedElement = "#" + $(this).parents('.class-toggle').data("for");
+      $(selectedElement).removeClass().addClass(selectedClass);
+      return false;
+    });
+
+
+
+  });
+</script>
+
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/user-centered-design/resources/forms.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/user-centered-design/resources/forms.md">Page source</a>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
+
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
+    </nav>
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
+
+<script src="/service-manual/assets/javascript/toggler.js?cache=1374072685" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1374072685" type="text/javascript"></script>
+
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
