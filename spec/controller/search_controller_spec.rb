@@ -22,6 +22,11 @@ describe SearchController, :type => :controller do
     do_search
   end
 
+  it "should handle a blank query" do
+    controller.search_client.expects(:search).never
+    do_search('')
+  end
+
   it "should return unlimited results" do
     controller.search_client.stubs(:search)
                             .returns("results" => Array.new(75, {}))
