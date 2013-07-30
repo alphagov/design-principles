@@ -15,7 +15,7 @@ class SearchController < ApplicationController
     if params[:q].blank?
       @results = []
     else
-      res = search_client.search(params[:q], response_style: "hash")
+      res = search_client.search(params[:q])
       @results = res["results"].map { |r| SearchResult.new(r) }
     end
   rescue GdsApi::BaseError => e

@@ -17,7 +17,7 @@ describe SearchController, :type => :controller do
 
   it "should pass our query parameter in to the search client" do
     controller.search_client.expects(:search)
-                            .with("search-term", response_style: "hash")
+                            .with("search-term")
                             .returns("results" => []).once
     do_search
   end
