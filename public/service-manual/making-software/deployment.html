@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Deploying software — Government Service Design Manual</title>
+
+<!-- Stylesheets from static -->
+
+<!--[if gt IE 8]><!-->
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1375353106" media="screen" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<!--[if IE 6]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1375353106" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1375353106" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1375353106" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1375353106" media="print" rel="stylesheet" type="text/css" />
+
+<!--[if IE 8]>
+<script type="text/javascript">
+  (function(){if(window.opera){return;}
+  setTimeout(function(){var a=document,g,b={families:(g=
+  ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-beb10cbc00c9b7dcdbdee824962bc5f6.css"]},
+  c="https://assets.digital.cabinet-office.gov.uk/static/libs/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
+  e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+  ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+  .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+  })()
+</script>
+<![endif]-->
+
+<!--[if gte IE 9]><!--><link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-0fb6b917e34e45c93a44eec72dcc21de.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+<link href="https://assets.digital.cabinet-office.gov.uk/frontend/media-player-4d52c02c18a460340db1ed476b807bf6.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]><script src="https://assets.digital.cabinet-office.gov.uk/static/ie-27ccded64045ab36dbfb67c2f47c362b.js" type="text/javascript"></script><![endif]-->
+
+<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
+
+
+
+
+
+
+
+</head>
+<body class="mainstream full-width detailed-guidance ">
+  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
+
+  <!--start header-->
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="/" title="Go to the GOV.UK homepage" id="logo" class="content">
+          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" alt="GOV.UK">
+        </a>
+        <a href="#search" class="search-toggle js-header-toggle">Search</a>
+      </div>
+
+      <form id="search" class="site-search" action="/service-manual/search" method="get">
+          <div class="content">
+            <label for="site-search-text">Search the service manual</label>
+            <input type="search" name="q" id="site-search-text" title="Search" class="js-search-focus" role="search">
+            <input class="submit" type="submit" value="Search" />
+          </div>
+        </form>
+      </div>
+
+      <div class="header-proposition">
+        <div class="content">
+          <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+          <nav id="proposition-menu">
+            <a href="/service-manual" id="proposition-name">Government Service Design Manual</a>
+            <ul id="proposition-links">
+              <li><a href="/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+              <li><a href="/service-manual/start" class="">Start using the manual</a></li>
+              <li><a href="/feedback" class="">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--end header-->
+
+  <div id="wrapper">
+
+    <section id="content" role="main" class="group">
+
+      
+<div id="global-breadcrumb" class="header-context">
+  <nav role="navigation">
+    <ol class="group">
+      
+      <li><a href="/service-manual">Home</a></li>
+      
+      <li><a href="/service-manual/making-software">Making software</a></li>
+      
+    </ol>
+  </nav>
+</div>
+
+
+
+<article role="article" class="group">
+  <header class="page-header group">
+    <div class="hgroup">
+      <h1>Deploying software</h1>
+      
+      <h2 class="subtitle">Principles to ensure frequent, low-risk deployments</h2>
+      
+    </div>
+
+    
+<ul class="meta-phases group">
+  
+  <li class="alpha"><a href="/service-manual/phases/alpha.html">alpha</a></li>
+  
+  <li class="beta"><a href="/service-manual/phases/beta.html">beta</a></li>
+  
+  <li class="live"><a href="/service-manual/phases/live.html">live</a></li>
+  
+</ul>
+
+  </header>
+
+  <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-principles-for-software-deployment"><a href="#principles-for-software-deployment">Principles for software deployment</a>
+<ol>
+<li class="level-little-and-often"><a href="#little-and-often">Little and often</a>
+</li>
+<li class="level-quality-software"><a href="#quality-software">Quality software</a>
+</li>
+<li class="level-optimise-for-cycle-time"><a href="#optimise-for-cycle-time">Optimise for cycle time</a>
+</li>
+<li class="level-repeatable-auditable-deployments"><a href="#repeatable-auditable-deployments">Repeatable, auditable deployments</a>
+</li>
+<li class="level-zero-downtime-deployments"><a href="#zero-downtime-deployments">Zero downtime deployments</a>
+</li>
+</ol>
+</li>
+<li class="level-techniques-and-tools-to-achieve-these-ideals"><a href="#techniques-and-tools-to-achieve-these-ideals">Techniques and tools to achieve these ideals</a>
+<ol>
+<li class="level-single-artefact"><a href="#single-artefact">Single artefact</a>
+</li>
+<li class="level-ordered-environments"><a href="#ordered-environments">Ordered environments</a>
+</li>
+<li class="level-repeatable-deployments-of-infrastructure-configuration"><a href="#repeatable-deployments-of-infrastructure-configuration">Repeatable deployments of infrastructure configuration</a>
+<ol>
+<li class="level-deploying-configuration-management-code"><a href="#deploying-configuration-management-code">Deploying configuration management code</a>
+</li>
+<li class="level-avoiding-configuration-management-code"><a href="#avoiding-configuration-management-code">Avoiding configuration management code</a>
+</li>
+</ol>
+</li>
+<li class="level-repeatable-deployments-of-code"><a href="#repeatable-deployments-of-code">Repeatable deployments of code</a>
+</li>
+<li class="level-management-of-environment-variable-configuration"><a href="#management-of-environment-variable-configuration">Management of environment-variable configuration</a>
+<ol>
+<li class="level-secrets"><a href="#secrets">Secrets</a>
+</li>
+</ol>
+</li>
+<li class="level-zero-downtime-deployments-1"><a href="#zero-downtime-deployments-1">Zero downtime deployments</a>
+<ol>
+<li class="level-database-migrations"><a href="#database-migrations">Database migrations</a>
+</li>
+<li class="level-service-depencencies"><a href="#service-depencencies">Service depencencies</a>
+</li>
+<li class="level-making-writes-asynchronous"><a href="#making-writes-asynchronous">Making writes asynchronous</a>
+</li>
+</ol>
+</li>
+<li class="level-smoke-tests"><a href="#smoke-tests">Smoke tests</a>
+</li>
+<li class="level-emergency-deployments"><a href="#emergency-deployments">Emergency deployments</a>
+</li>
+</ol>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <h1 id="principles-for-software-deployment">Principles for software deployment</h1>
+
+<p>We have identified some common principles for software deployment
+which we have applied in a number of different projects, with
+different technology stacks and needs. These principles underpin a
+software deployment process which meets user needs. Those principles
+are:</p>
+
+<ul>
+  <li>Little and often</li>
+  <li>Quality software</li>
+  <li>Optimise for cycle time</li>
+  <li>Repeatable, auditable deployments</li>
+  <li>Zero downtime deployments</li>
+</ul>
+
+<h2 id="little-and-often">Little and often</h2>
+
+<p>Deploying software should be a low-risk activity. By deploying
+software frequently and in small increments, the risk is reduced in a
+number of ways. See
+<a href="http://digital.cabinetoffice.gov.uk/2012/11/02/regular-releases-reduce-risk/">Regular Releases Reduce Risk</a>
+from the GDS blog for more on this.</p>
+
+<p>Deploying software frequently makes life better for the product
+managers in your organisation. Frequent deployments allow the product
+managers to get things right in a timely fashion: both fixing bugs and
+releasing new features. Roo Reynolds, GOV.UK mainstream product
+manager, said that “Deploying once a week would be frighteningly
+slow.” The GOV.UK site design has changed radically four times since
+its public release in October 2012; this was enabled in part by
+frequent releases enabling rapid gathering of feedback and responding
+to change.</p>
+
+<h2 id="quality-software">Quality software</h2>
+
+<p>The software that you deploy to production should be of a consistently
+high quality. The user impact of bugs is obvious; less obvious is that
+the earlier you identify bugs, the easier and cheaper they are to fix.</p>
+
+<p>The deployment itself should not be a risky process. By the time a
+version of the software is deployed to production, you should have
+confidence that it will work smoothly and seamlessly.</p>
+
+<h2 id="optimise-for-cycle-time">Optimise for cycle time</h2>
+
+<p>How long does it take from a developer making a code change to that
+change hitting production? The shorter this time is, the faster a
+product can respond to change. Whether it is a security fix, or
+responding to user research on new features, the quicker you can
+release the next iteration, the faster you will converge on an ideal
+solution.</p>
+
+<h2 id="repeatable-auditable-deployments">Repeatable, auditable deployments</h2>
+
+<p>You should know at any moment what version of your service is running
+in each environment. When a deployment hits production, you should be
+able to trace the changes that it introduced all the way back to the
+initial code commits in the source code repositories which went into
+that deploy.</p>
+
+<p>Combined with small, frequent releases, if any problem does hit
+production, you will be able to immediately narrow down the cause to a
+small number of commits. Rolling back to a previous version is less
+onerous as less of the system has changed. And “rolling forward” –
+with a code change to fix the production issue – is achievable
+because the deployment process is automated and the lead time is
+short.</p>
+
+<p>An additional benefit of having a repeatable deployment process is
+that scaling and recovering from failure become easy. Suppose you want
+to add more application servers to host a particular application,
+either to respond to higher demand, or to replace failed
+instances. Once you have provisioned the required machines, you can
+just re-run your deployment process on the new machines to deploy the
+software. Without a repeatable deployment process, adding machines
+becomes manual and error-prone.</p>
+
+<h2 id="zero-downtime-deployments">Zero downtime deployments</h2>
+
+<p>Many deployment processes incur a downtime cost. The more frequently
+you deploy, the more downtime you will experience as a result of
+deployment. Depending on the needs of your particular project, this
+may be acceptable, or you may need to consider how your deployment
+process needs to change to achieve zero downtime.</p>
+
+<p>This isn’t a one-dimensional problem. Achieving zero downtime for read
+operations is easier than doing so for write operations.</p>
+
+<p>Whether or not your project has a business need for zero downtime
+deployments, it is worth considering the tools and processes which
+make it possible, as the constraints of zero downtime deployments can
+result in better engineering practices generally.</p>
+
+<h1 id="techniques-and-tools-to-achieve-these-ideals">Techniques and tools to achieve these ideals</h1>
+
+<h2 id="single-artefact">Single artefact</h2>
+
+<p>An antipattern in deployment processes is building a different
+application artefact for each environment. Examples of this might
+include controlling the presence of debugging symbols in the binary or
+variations in the use of optimization flags. The problem is that the
+testing you do of code artefacts in preview environments may not be
+applicable to the artefact you deploy to production.</p>
+
+<p>The better alternative is to build a single artefact which gets
+deployed to all environments. With the same code running in each
+environment, you can deploy to production safe in the knowledge that
+this code has been tested in every other environment and has not been
+found wanting.</p>
+
+<p>Note that the exact nature of an artefact is intentionally vague. It
+may be a .jar file for JVM languages; or for languages without
+compilation artefacts it may even be a tag in the source control
+system; or it may be an entire virtual machine image with the
+application pre-deployed.</p>
+
+<h2 id="ordered-environments">Ordered environments</h2>
+
+<p>You should have multiple environments to deploy to. At the very least,
+you will have a development environment running the latest version of
+the software, and a production environment being used by live
+users. You may also have other environments dedicated to exploratory
+testing, user testing, performance testing or a staging environment
+prior to production.</p>
+
+<p>The environments should be ordered in such a way that a version of the
+software cannot be deployed to a later environment before it has been
+deployed and tested in an earlier stage. That way, the software cannot
+be deployed to production without having been tested in every previous
+environment first.</p>
+
+<p>This does not need to be a strict linear ordering. Some sets of tests
+may be run in parallel - such as user acceptance testing and
+performance testing. However there is very often one single production
+environment which is later than all others, and one single entry point
+which precedes all others.</p>
+
+<h2 id="repeatable-deployments-of-infrastructure-configuration">Repeatable deployments of infrastructure configuration</h2>
+
+<p>One of the principles of good deployment is repeatable
+deployments. This does not just apply to application
+code. Applications do not run in a vacuum, and often have particular
+requirements of the underlying system in which they run. The
+configuration of that system should be automated and repeatable.</p>
+
+<p>There are two main issues: ensuring that new builds of machines are
+repeatable, and ensuring that once built, machines do not suffer from
+<em>configuration drift</em>, in which small manual configuration changes are
+made over time, resulting in a system which is not in a reproducible
+state.</p>
+
+<p>Scripting the configuration of a new machine is not a difficult
+process, as it will always start from a known state and can have a
+number of tasks to install packages, put configuration files in place
+and start services until the machine is in a good state.</p>
+
+<p>Managing configuration drift is more tricky, as in order to counteract
+manual changes to configuration, your system must be robust enough to
+take a machine from an unknown state to a known state. There exist a
+number of tools for managing infrastructure configuration for you,
+such as <a href="http://cfengine.com/">CFEngine</a>, <a href="http://www.opscode.com/chef/">Chef</a>, and <a href="https://puppetlabs.com/">Puppet</a>. Each of these is
+designed such that they can be run repeatedly on a machine to
+alleviate configuration drift.</p>
+
+<h3 id="deploying-configuration-management-code">Deploying configuration management code</h3>
+
+<p>If you are using one of these tools, you need to provide a means to
+deploy new versions of the infrastructure code. There are two means of
+distributing infrastructure code:</p>
+
+<p><strong>Using a server</strong> (Chef Server, Puppetmaster) In this kind of system,
+  you will have a central server which distributes configuration code
+  to each machine in your environment. Deploying new versions of code
+  requires only deploying to the server, which will then distribute it
+  to the clients.</p>
+
+<p><strong>Serverless</strong> (Chef Solo, Masterless Puppet) Here, you will need to
+  distribute the configuration code to each individual node and ensure
+  that each node runs the code.</p>
+
+<h3 id="avoiding-configuration-management-code">Avoiding configuration management code</h3>
+
+<p>An alternative strategy to avoid configuration drift is to use the
+<a href="http://martinfowler.com/bliki/ImmutableServer.html">immutable server</a> pattern, in which once a machine is configured it
+is never touched again. In order to deploy a new version of the
+software, an entirely new machine is provisioned and the old one
+discarded. Configuration drift is avoided because servers have short
+lifespans and are frequently replaced by new instances. This is a
+natural fit in virtualised environments and where the application
+artefact is a virtual machine template with the app pre-deployed, but
+can also be achieved using containerisation technology such as <a href="http://lxc.sourceforge.net/">lxc</a>.</p>
+
+<h2 id="repeatable-deployments-of-code">Repeatable deployments of code</h2>
+
+<p>There are a number of options for deploying your code:</p>
+
+<ul>
+  <li>construct your artefacts as operating system packages (.debs or
+.rpms) and install using your infrastructure configuration
+management tool from a local package repository (apt or yum)</li>
+  <li>use a push-based system to deploy such as <a href="http://docs.fabfile.org/en/1.6/">fabric</a>,
+<a href="https://github.com/capistrano/capistrano">capistrano</a>, or similar</li>
+  <li>create a new <a href="http://martinfowler.com/bliki/ImmutableServer.html">immutable server</a> for each deployment</li>
+</ul>
+
+<p>You should think about how you will discover hosts that you deploy
+to. In a simple scenario, your deployment script may have a hard-coded
+list of application servers that it deploys to. In this situation,
+there is a risk that the hard-coded list of servers drifts to differ
+from the number of servers which actually exist in reality; and this
+risk grows more likely with larger and more dynamic
+infrastructures. There exist more involved host discovery mechanisms,
+such as internal DNS, Zookeeper, or using a message-queue based system
+such as MCollective.</p>
+
+<h2 id="management-of-environment-variable-configuration">Management of environment-variable configuration</h2>
+
+<p>Since you should be deploying the same artefact to each environment,
+both for infrastructure configuration management code and for
+application code, you will inevitably find a need to inject
+configuration which varies between environments, such as URLs of
+dependent services.</p>
+
+<p>For application configuration, your deployment mechanism should
+provide a way of injecting environment-specific configuration files
+into each environment.</p>
+
+<p>For infrastructure configuration, your infrastructure tool should
+provide some means of achieving this. For example, Puppet 3 provides
+<a href="http://projects.puppetlabs.com/projects/hiera">Hiera</a>, a hierarchical datastore for managing these values.</p>
+
+<h3 id="secrets">Secrets</h3>
+
+<p>Extra care must be taken when managing secrets such as database
+passwords or SSL keys. You want to ensure:</p>
+
+<ul>
+  <li>at a coarse-grained level, secrets cannot be accessed outside of
+the environment which uses them</li>
+  <li>at a fine-grained level, secrets are known only by those machines
+in an environment which need to know them.</li>
+</ul>
+
+<p>For example, in a three-tier app with database, application and web
+servers, the database server does not need to know the SSL private
+keys for the site, nor does the web server need to know the database
+credentials.</p>
+
+<p>If you are using hiera, then <a href="https://github.com/crayfishx/hiera-gpg">hiera-gpg</a> provides a solution to this
+problem. It allows the injection of values from <a href="http://www.gnupg.org/">GPG</a>-encrypted
+files. Only those with an appropriate private key can access the
+contents. By creating a GPG key for each host in an environment, you
+can decide on a host-by-host basis which host can access which sets of
+secrets.</p>
+
+<p>If you are using chef, then <a href="http://docs.opscode.com/essentials_data_bags.html">chef data bags</a> provide a similar solution.</p>
+
+<h2 id="zero-downtime-deployments-1">Zero downtime deployments</h2>
+
+<p>In projects which have high availability requirements, the process of
+deploying small code changes to production frequently may incur an
+unacceptable loss of service, if each deployment results in a short
+period of downtime. Therefore, it is important to consider what
+engineering is necessary to enable deployments which do not result in
+any downtime at all.</p>
+
+<p>This is all subject to what your definition of downtime is.
+Maintaining uptime for read-based operations is relatively simple; a
+caching layer which can serve from stale can hide the absence of
+application servers; a database is easy to migrate from one master to
+another if it is placed into read-only mode first.</p>
+
+<p>Maintaining uptime for write-based operations is trickier, and
+requires up-front thought and design. If you know that you will have
+high uptime requirements for write-based or transactional operations,
+you will need to consider how that will affect your architecture and
+infrastructure.</p>
+
+<h3 id="database-migrations">Database migrations</h3>
+
+<p>As applications evolve over time, so do the requirements that they
+place on their databases. Database migration scripts are short pieces
+of database code which transform the database in some way for the
+benefit of the application.</p>
+
+<p>In order to achieve zero downtime deployments, you should <strong>decouple
+application deployments from database migrations</strong>. If you are
+performing zero downtime deployments, you will necessarily end up with
+multiple different versions of the application running
+concurrently. Conversely, the application will need to be tolerant to
+the eventuality of a database migration script running concurrently
+within the application lifetime.</p>
+
+<p>Note that database migrations should be subject to the same rigorous
+deployment pipeline as application code; they should be deployed to
+testing environments first, and only go to production once they have
+been applied and verified against all other environments.</p>
+
+<h3 id="service-depencencies">Service depencencies</h3>
+
+<p>Services which depend on one another via an API can experience similar
+deployment problems as applications which depend on a database. For
+example, a frontend application which communicates with a backend
+application over an API of some sort. Once again, the answer is to
+decouple deployments of the applications, to ensure that the frontend
+application is tolerant to additions to the backend API and that
+similarly the backend API can add functionality without disrupting the
+frontend application’s operation.</p>
+
+<h3 id="making-writes-asynchronous">Making writes asynchronous</h3>
+
+<p>Another method of avoiding failures during deployments is to make
+write operations asynchronous by posting them to a message queue. That
+way, when the backend system which consumes from the queue is disabled
+during a deployment, the frontend does not start seeing errors;
+rather, it just sees an increase in the time taken to see a write
+reflected in further read operations.</p>
+
+<h2 id="smoke-tests">Smoke tests</h2>
+
+<p>Once you have deployed your application, you should determine whether
+the application is working as expected. If it is not working, the
+deployment can be cancelled or rolled back. The test used to determine
+this is often referred to as a “smoke test”.</p>
+
+<p>A good smoke test is simple and fast, and exercises not just the
+application but also all of its essential dependencies. For example,
+if an application needs a database to be present to operate
+effectively, the smoke test should exercise an application code path
+which will fail if the database is not present or returns an error.</p>
+
+<p>If and when the smoke test fails, you should know what your response
+will be. The simplest option is to manually roll back to a previous
+version of the application – which should be easy enough if you have
+a versioned artefact repository to draw the application from.</p>
+
+<p>A solution with more sophistication may automatically detect the smoke
+test failure and cancel the deployment or roll back to the previous
+version.</p>
+
+<p>An ideal solution would not even add the new version of the
+application to the production load balancer until it has been smoke
+tested and verified good. If the application fails the smoke test, it
+is simply discarded; no rollback is necessary, and no interruption in
+service happens. This works particularly well with the immutable
+server pattern.</p>
+
+<h2 id="emergency-deployments">Emergency deployments</h2>
+
+<p>From time to time, there may come a situation where you wish to deploy
+to production <em>right now</em>. This may be due to a published security
+vulnerability in a library you are using, or because a bug has hit
+production which has broken the system for a number of users.</p>
+
+<p>It may be the case that you subvert your usual deployment pipeline in
+order to fix things, then back-port the change you made in production
+(or “hotfix”) to your development environment and push it through the
+normal deployment process once the crisis is over. Should this be the
+case, then <strong>your cycle time is too long</strong>. In the ensuing post-mortem
+analysis of what went wrong, you should ask questions about why the
+deployment pipeline was not streamlined enough to accomodate a rapid
+deployment of a fix to production.</p>
+
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/deployment.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/deployment.md">Page source</a>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</article>
+
+
+    </section>
+  </div><!--end wrapper-->
+
+  <footer class="group js-footer" id="footer" role="contentinfo">
+  <div class="footer-wrapper">
+    <nav class="footer-categories"><div class="footer-explore">
+      <h2>Explore GOV.UK</h2>
+
+      <ul>
+        <li><a href="/browse/driving">Driving, transport and travel</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-inside-government">
+      <h2><a href="/government">Inside Government</a></h2>
+
+      <ul>
+        <li><a href="/government/how-government-works">How government works</a></li>
+        <li><a href="/government/organisations">Departments</a></li>
+        <li><a href="/government/topics">Topics</a></li>
+        <li><a href="/government/policies">Policies</a></li>
+        <li><a href="/government/publications">Publications</a></li>
+        <li><a href="/government/announcements">Announcements</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="footer-meta">
+    <nav>
+      <ul>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/support/cookies">Cookies</a></li>
+        <li><a href="/feedback">Feedback</a></li>
+        <li><a href="/cymraeg">Cymraeg</a></li>
+        <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
+      </ul>
+      <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence</a>, except where otherwise stated</p>
+
+      <p>Hyperlinks are provided for your convenience only. We do not take responsibility for the reliability or content of linked websites. Neither does a hyperlink indicate endorsement of a particular website or organisation</p>
+    </nav>
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
+<script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
+
+<script src="/service-manual/assets/javascript/toggler.js?cache=1375353106" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1375353106" type="text/javascript"></script>
+
+<script id="ga-params" type="text/javascript">
+  var GOVUK = GOVUK || {};
+  GOVUK.Analytics = GOVUK.Analytics || {};
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26179049-1']);
+  if(document.domain=='www.gov.uk') {
+    _gaq.push(['_setDomainName', '.www.gov.uk']);
+  } else {
+    _gaq.push(['_setDomainName', document.domain]);
+  }
+  _gaq.push(['_setAllowLinker', true]);
+    // track pixel density ratio
+  if (window.devicePixelRatio) {
+    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
+  }
+</script>
+<script type="text/javascript">
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
