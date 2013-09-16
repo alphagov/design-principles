@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1378116848" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1379341430" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1378116848" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1379341430" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1378116848" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1379341430" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1378116848" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1379341430" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/stylesheets/print.css?cache=1378116848" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1379341430" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -196,11 +196,11 @@
 </blockquote>
 
 <h2 id="deployment">Deployment</h2>
-<p>Automate your deployment process. Doing so means you are forced to fully understand it, and any issues with moving code from your <a href="/service-manual/making-software/version-control.html">version control system</a> into production (when it’s gone live) can be dealt with early on.</p>
+<p>Automate your deployment process so you are forced to fully understand it. Then any issues with moving code from your <a href="/service-manual/making-software/version-control.html">version control system</a> into production (when it’s gone live) can be dealt with early on.</p>
 
 <p>Automating it early also means that code will be tested and any bugs fixed so that <a href="/service-manual/making-software/release-strategies.html">releases become frequent</a>, low-risk, almost boring events.</p>
 
-<p>Don’t plan production release slots far in advance. You can’t be certain what will be ready in 6 months time.</p>
+<p>Don’t plan production release slots far in advance. You can’t be certain what will be ready in 6 months’ time.</p>
 
 <p>Make your release planning simpler - make sure it’s flexible enough that any feature or update to your software can be deployed when it’s ready. Then, if a feature needs to miss a release slot, it can easily be rescheduled for tomorrow or next week, rather than in 6 months, or more if the next slot is already full.</p>
 
@@ -230,25 +230,25 @@
 <p>When your developer checks into <a href="/service-manual/making-software/version-control.html">version control</a> (where all code, including previous versions, are stored), <a href="/service-manual/making-software/testing-in-agile.html">a range of tests</a> should be run against the latest version of the code. Any quick, easy-to-identify defects, like <a href="http://en.wikipedia.org/wiki/Compilation_error">compile errors</a> or <a href="https://en.wikipedia.org/wiki/Unit_testing">unit test failures</a>, will be found at this stage. If the tests pass, the code progresses to the next stage and should be considered for release into production.</p>
 
 <h3 id="shared-sandbox-environment">Shared sandbox environment</h3>
-<p>Send the code to a shared <a href="/service-manual/making-software/sandbox-and-staging-servers.html">sandbox</a> (testing) environment. This is the first environment where the application is deployed and run and the first stage where it can be visually inspected for <a href="/service-manual/agile/quality.html">quality</a> by anybody on the team.</p>
+<p>Send the code to a shared <a href="/service-manual/making-software/sandbox-and-staging-servers.html">sandbox</a> (testing) environment. This is the first environment where the application is deployed and run. It’s also the first stage where it can be visually inspected for <a href="/service-manual/agile/quality.html">quality</a> by anybody on the team.</p>
 
-<p>Make the sandbox environment as similar to the production (live) version as far as is practical: eg, if production uses Postgres, the sandbox should also use Postgres and not another database like MySQL or sqlite.</p>
+<p>Make the sandbox environment as similar to the production (live) version as far as is practical. For example, if production uses Postgres, the sandbox should also use Postgres and not another database like MySQL or sqlite.</p>
 
 <p>The purpose is to find any defects in the code. If a defect is found, stop the version of the code at this stage. If it passes the sandbox environment it can move on to further specialist testing environments.</p>
 
 <h3 id="specialist-testing-environments">Specialist testing environments</h3>
 <p>You may need to perform additional testing for specialist requirements, like <a href="/service-manual/operations/load-and-performance-testing.html">load and performance testing</a>, <a href="/service-manual/operations/penetration-testing.html">penetration testing</a>, or <a href="/service-manual/making-software/accessibility-testing.html">accessibility testing</a>. The amount of environments you’ll need will depend on the requirements and conditions of your individual projects.</p>
 
-<p>When you are satisfied with the quality of the code move it to the live production environment.</p>
+<p>When you are satisfied with the quality of the code, move it to the live production environment.</p>
 
 <h3 id="production-environment">Production environment</h3>
 
-<p>Your code is ready to go live if it has:</p>
+<p>Your code is ready to go live if it has passed:</p>
 
 <ul>
-  <li>passed the commit stage</li>
-  <li>passed the shared sandbox environment</li>
-  <li>passed any necessary specialist testing</li>
+  <li>the commit stage</li>
+  <li>the shared sandbox environment</li>
+  <li>any necessary specialist testing</li>
 </ul>
 
 <p>Deploy to production the same way as you deploy to any other environment – use the same scripts, same <a href="/service-manual/making-software/configuration-management.html">configuration management</a> tooling, and the same version of the code.  This means you’re not releasing code for the first time – you’re performing a task that’s been validated at each stage throughout the deployment pipeline.</p>
@@ -326,8 +326,8 @@
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1378116848" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1378116848" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1379341430" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1379341430" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
