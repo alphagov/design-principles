@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/stylesheets/print.css?cache=1381318168" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1381406350" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -185,63 +185,66 @@
     </div>
 
     <div class="inner">
-      <p>When building your service, you will need to ensure that appropriate steps are
+      <p>When building your service, you’ll need to ensure that appropriate steps are
 taken to ensure its security. Information security is a topic both broad and
 deep, drawing from fields ranging from economics and psychology through to
-mathematics and probability, and this document cannot claim to provide a
-thorough review of the field. Instead, it aims to provide you with the briefest
-of introductions to information security, and will explain the communities and
-processes that exist to help you build world class secure services.</p>
+mathematics and probability.</p>
+
+<p>This document cannot claim to provide a
+thorough review of the field. Instead, it aims to provide you with a brief
+introduction to information security, and will explain the communities and
+processes to help you build world-class secure services.</p>
 
 <h2 id="introduction-to-information-security">Introduction to information security</h2>
 
 <p>The term information security refers to the theory and practice of defending
-data or information systems against unauthorized or unintended access,
+data or information systems against unauthorised or unintended access,
 destruction, disruption or tampering. Security professionals frequently refer to
-three key concepts:</p>
+3 main concepts:</p>
 
 <dl>
   <dt>Confidentiality</dt>
   <dd>the assurance that information is not disclosed to individuals or systems that
-are not authorized to receive it.</dd>
+are not authorised to receive it.</dd>
   <dt>Integrity</dt>
-  <dd>the assurance that information can not be modified by those who are not
-authorized to modify it, or that any such modifications will not pass
+  <dd>the assurance that information can’t be modified by those who are not
+authorised to modify it, or that any such modifications will not pass
 undetected.</dd>
   <dt>Availability</dt>
-  <dd>the assurance that information is available when it is needed, specifically
+  <dd>the assurance that information is available when it’s needed, specifically
 that mishap or malice cannot affect the ability of systems to provide the
 information when requested.</dd>
 </dl>
 
-<p>In government, much is made of these three “key concepts of information
+<p>In government, much is made of these 3 main “concepts of information
 security,” as will be explained below. Security systems typically attempt to
 address one or more of these concerns through:</p>
 
 <ul>
-  <li>Physical controls: walls, locked doors, guards</li>
-  <li>Procedural controls: managerial oversight, staff training, defined emergency
+  <li>physical controls: walls, locked doors, guards</li>
+  <li>procedural controls: managerial oversight, staff training, defined emergency
 response processes</li>
-  <li>Regulatory controls: legislation, policy, rules of conduct</li>
-  <li>Technical controls: cryptographic software, authentication and authorization
+  <li>regulatory controls: legislation, policy, rules of conduct</li>
+  <li>technical controls: cryptographic software, authentication and authorisation
 systems, secure protocols</li>
 </ul>
 
 <p>Not every system requires a full battery of security controls. Indeed,
-‘completely secure systems’ do not exist, and overly secure systems are often
-prohibitively expensive or thoroughly inconvenient for their users. You should
-aim to build services that are <em>appropriately secure</em>, and in practice you will
+‘completely secure systems’ don’t exist, and overly secure systems are often
+prohibitively expensive or thoroughly inconvenient for their users. </p>
+
+<p>You should aim to build services that are <em>appropriately secure</em>, and in practice you will
 be guided by an assessment of the risks associated with a lapse in
 the confidentiality, integrity, or availability of your service.</p>
 
 <h2 id="information-security-in-government">Information security in government</h2>
 
-<p>Within government, there is an established set of assurance and accreditation
+<p>Within government, there’s an established set of assurance and accreditation
 processes. These provide a structure and a shared language within which to
 discuss, analyse and address security considerations. If the processes work
 correctly, managers should have a clear and accurate understanding of what risks
-they are accepting, and those delivering the service should know what controls
-they are going to employ to mitigate those risks.</p>
+they’re accepting, and those providing the service should know what controls
+they’re going to employ to mitigate those risks.</p>
 
 <blockquote>
   <p><strong>Assurance</strong> is the broad set of activities involved in assessing and
@@ -252,7 +255,7 @@ and independently verified process similar to
 </blockquote>
 
 <p>The important thing to note about building trustworthy and secure systems is
-that it is a team game. Assurance and accreditation should not be a completely
+that it’s a team game. Assurance and accreditation should not be a completely
 separate strand of work, or be seen as a hurdle to be jumped over (or
 sidestepped). Only by engaging with risk and making decisions based on a range
 of expert opinion will you end up with the best product.</p>
@@ -261,7 +264,7 @@ of expert opinion will you end up with the best product.</p>
 government. The content will use quite a lot of acronyms; unfortunately these
 are in common usage and it’s very hard to engage with the existing documentation
 and processes without speaking the lingo. We include them here in the hope that
-they will provide a helpful reference which can be used when reading existing
+they’ll provide a helpful reference which can be used when reading existing
 documentation.</p>
 
 <h2 id="roles">Roles</h2>
@@ -301,28 +304,28 @@ above groups.</p>
 
 <p>Business Impact Levels, often shortened to Impact Levels (<abbr title="Impact Level">IL</abbr>) are a set of
 numbers used to guide discussions of risk in government projects. Specifically
-they are numbers between 0 and 6 for each of the three key concepts mentioned
+they are numbers between 0 and 6 for each of the 3 main concepts mentioned
 above, and measure:</p>
 
 <ul>
-  <li>For confidentiality: the potential impact if the information is seen by those who should not see it</li>
-  <li>For integrity: the potential impact if the accuracy or completeness of the information is compromised</li>
-  <li>For availability: the potential impact if the information becomes inaccessible</li>
+  <li>for confidentiality: the potential impact if the information is seen by those who should not see it</li>
+  <li>for integrity: the potential impact if the accuracy or completeness of the information is compromised</li>
+  <li>for availability: the potential impact if the information becomes inaccessible</li>
 </ul>
 
 <p>More details about identifying these numbers can be found in this <a href="http://www.cesg.gov.uk/publications/Documents/business_impact_tables.pdf">extract from HMG <abbr title="information assurance">IA</abbr> Standard No. 1</a>.</p>
 
 <h2 id="agile-design">Agile Design</h2>
 
-<p>The role-holders listed above will work with the wider team to bring the appropriate concerns to bear in the process of designing the service. The team as a whole will need to make a range of decisions about topics such as what information needs to be captured, how it is processed, whether it is stored, and so on which will have a direct impact on the assurance/accreditation process.</p>
+<p>The role-holders listed above will work with the wider team to bring the appropriate concerns to bear in the process of designing the service. The team as a whole will need to make a range of decisions about topics such as what information needs to be captured, how it’s processed, whether it’s stored, and so on which will have a direct impact on the assurance/accreditation process.</p>
 
-<p>A close working relationship will be essential to ensure that business impact levels and other details are kept up to date as designs evolve and that risk management plays an appropriate role as a constraint in the design process.</p>
+<p>A close working relationship will be essential to make sure that business impact levels and other details are kept up to date as designs evolve and that risk management plays an appropriate role as a constraint in the design process.</p>
 
 <h2 id="good-practice-guides-gpg">Good Practice Guides (<abbr title="Good Practice Guide">GPG</abbr>)</h2>
 
 <p>The Good Practice Guides (<abbr title="Good Practice Guide">GPG</abbr>) are documents published by <abbr title="UK National Technical Authority for information assurance">CESG</abbr> on specific topics of interest to various types of projects. These can act as a good starting point when looking to identify risks and put in place mitigations.</p>
 
-<p>Unfortunately many of these documents are Restricted. It is advisable to establish a working relationship with <abbr title="UK National Technical Authority for information assurance">CESG</abbr> early on in the project to make sure you can access these documents. Examples include:</p>
+<p>Unfortunately many of these documents are Restricted. It’s advisable to establish a working relationship with <abbr title="UK National Technical Authority for information assurance">CESG</abbr> early on in the project to make sure you can access these documents. Examples include:</p>
 
 <ul>
   <li>GPG13 – Protective monitoring</li>
@@ -336,7 +339,7 @@ above, and measure:</p>
 
 <h2 id="it-health-check-ithc">IT Health Check (<abbr title="IT Health Check">ITHC</abbr>)</h2>
 
-<p>The IT Health Check (<abbr title="IT Health Check">ITHC</abbr>) forms part of the formal Accreditation. In essence it is a penetration test carried out by a <abbr title="UK National Technical Authority for information assurance">CESG</abbr> approved supplier (specifically a <abbr title="A CESG scheme to accredit 3rd party penetration testers">CHECK</abbr> certified individual). Read the guide about <a href="/service-manual/operations/penetration-testing.html">penetration and vulnerability testing</a> for more details.</p>
+<p>The IT Health Check (<abbr title="IT Health Check">ITHC</abbr>) forms part of the formal Accreditation. In essence it’s a penetration test carried out by a <abbr title="UK National Technical Authority for information assurance">CESG</abbr> approved supplier (specifically a <abbr title="A CESG scheme to accredit 3rd party penetration testers">CHECK</abbr> certified individual). Read the guide about <a href="/service-manual/operations/penetration-testing.html">penetration and vulnerability testing</a> for more details.</p>
 
 <h2 id="ongoing">Ongoing</h2>
 
@@ -346,26 +349,26 @@ above, and measure:</p>
 
 <h2 id="tools">Tools</h2>
 
-<p>It is important to start understanding risks and engaging with the assurance and accreditation process as early in a project as possible. The following is a good starting place for milestones to add to a project plan:</p>
+<p>It is important to start understanding risks and engaging with the assurance and accreditation process as early in a project as possible. This checklist is a good starting place for milestones to add to a project plan:</p>
 
 <ol>
-  <li>Identify the <abbr title="Senior Information Risk Officer">SIRO</abbr></li>
-  <li>Work with an accreditor to identify the Business Impact Levels</li>
-  <li>Confirm with the <abbr title="Senior Information Risk Officer">SIRO</abbr> the target Business Impact Levels</li>
-  <li>Confirm with the <abbr title="Senior Information Risk Officer">SIRO</abbr> whether a formal Accreditation is required</li>
-  <li>Procure a <abbr title="CESG Listed Adviser Scheme">CLAS</abbr> consultant if needed for the Accreditation work</li>
-  <li>If possible establish a contact at <abbr title="UK National Technical Authority for information assurance">CESG</abbr> who can offer assistance and some technical oversight</li>
-  <li>Produce supporting documentation; for example architecture documentation, risks and mitigations, operating processes, references to <abbr title="Good Practice Guides">GPGs</abbr>, controls</li>
-  <li>Work with the <abbr title="CESG Listed Adviser Scheme">CLAS</abbr> consultant on completing the <abbr title="Risk Management Document Set">RMADS</abbr> if required</li>
-  <li>Arrange the <abbr title="IT Health Check">ITHC</abbr></li>
-  <li>Present to the <abbr title="Senior Information Risk Officer">SIRO</abbr> to get final sign-off</li>
+  <li>Identify the <abbr title="Senior Information Risk Officer">SIRO</abbr>.</li>
+  <li>Work with an accreditor to identify the Business Impact Levels.</li>
+  <li>Confirm with the <abbr title="Senior Information Risk Officer">SIRO</abbr> the target Business Impact Levels.</li>
+  <li>Confirm with the <abbr title="Senior Information Risk Officer">SIRO</abbr> whether a formal Accreditation is required.</li>
+  <li>Procure a <abbr title="CESG Listed Adviser Scheme">CLAS</abbr> consultant if needed for the Accreditation work.</li>
+  <li>If possible establish a contact at <abbr title="UK National Technical Authority for information assurance">CESG</abbr> who can offer assistance and some technical oversight.</li>
+  <li>Produce supporting documentation; for example architecture documentation, risks and mitigations, operating processes, references to <abbr title="Good Practice Guides">GPGs</abbr>, controls.</li>
+  <li>Work with the <abbr title="CESG Listed Adviser Scheme">CLAS</abbr> consultant on completing the <abbr title="Risk Management Document Set">RMADS</abbr> if required.</li>
+  <li>Arrange the <abbr title="IT Health Check">ITHC</abbr>.</li>
+  <li>Present to the <abbr title="Senior Information Risk Officer">SIRO</abbr> to get final sign-off.</li>
 </ol>
 
 <h2 id="risk-management">Risk management</h2>
 
 <p>It’s important to understand the assurance and accreditation processes and tools are all about managing the risk associated with the running service. Security is part of this, but just one part.</p>
 
-<p>Nearly everything brings with it risks: technology choice, staffing, processes, access to restricted documents, data aggregation, etc. It is important to understand those risks and put in place sensible and suitable mitigations. It is unrealistic in most cases to aim for a system with no risks, and ignoring them is a recipe for future exploits.</p>
+<p>Nearly everything brings with it risks: technology choice, staffing, processes, access to Restricted documents, data aggregation, etc. It’s important to understand those risks and put in place sensible and suitable mitigations. It’s unrealistic in most cases to aim for a system with no risks, and ignoring them is a recipe for future failure.</p>
 
 <p>The aim is a system where the risks are known and the team, working with risk professionals, have made careful decisions about how to deal with them.</p>
 
@@ -456,8 +459,8 @@ Anderson</a>: a comprehensive textbook covering the theory and practice of build
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1381318168" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381318168" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1381406350" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381406350" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

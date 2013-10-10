@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/stylesheets/print.css?cache=1381318168" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1381406350" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -198,22 +198,22 @@
 
 <p>You might select a programming language that you know to be easier and quicker to prototype in for the early stages of the project, and then move to another one that is easier for large teams to use for the final product. Or you might start out with an open source product to allow you to get started quickly, before going on to buy a commercial (proprietary) product which provides some required feature (or vice-versa).</p>
 
-<p>On day one of your project you simply won’t know enough about the domain or the user need to select the right technology. It’s OK to make an educated guess at this stage, as long as everyone understands that is what is happening. Then find time to challenge the selection as you learn more about the problem at hand.</p>
+<p>On day one of your project you simply won’t know enough about the domain or the user need to select the right technology. It’s OK to make an educated guess at this stage, as long as everyone understands that’s what’s happening. Then find time to challenge the selection as you learn more about the problem at hand.</p>
 
 <h2 id="start-with-capabilities-not-implementations">Start with capabilities, not implementations</h2>
 <p>It’s very easy to immediately jump to a specific product when making technology choices. This tends to be based either on past experience or on fashion.</p>
 
-<p>Try and take a step back and think about the capabilities of the technology you’re after. Are you looking for a relational database? Or a document database? A key/value store? Or maybe a graph database? Argue first about the capabilities, rather than any specific implementation.</p>
+<p>Try to take a step back and think about the capabilities of the technology you’re after. Are you looking for a relational database? Or a document database? A key/value store? Or maybe a graph database? Argue first about the capabilities, rather than any specific implementation.</p>
 
-<p>Once you have defined a set of capabilities, work out how you will test solutions against those capabilities. You should aim to test any software that appears appropriate in an environment that is very similar to your production environment, ie at production scale under real-world conditions (including worst-case user load).</p>
+<p>Once you have defined a set of capabilities, work out how you’ll test solutions against those capabilities. You should aim to test any software that appears appropriate in an environment that’s very similar to your production environment, ie at production scale under real-world conditions (including worst-case user load).</p>
 
 <p>This will allow you to make sure you understand its specific characteristics, confirm that that its claimed capabilities are genuine, and identify any trade-offs or potential issues to consider with a given piece of software such as conceptual fit with your domain model vs. performance under heavy load.</p>
 
 <h2 id="cost">Cost</h2>
-<p>When choosing technology make sure you consider the total cost, as well as any upfront fees. Try and take into consideration costs for things like staff, support or licensing costs (where applicable), the productivity of ongoing service improvement work, and any exit costs (especially around migration of data to a future replacement system) that might be caused by the use of non-open standard formats or protocol extensions. Ensure that you understand the cost implications of any unusually high user loads in production systems.</p>
+<p>When choosing technology make sure you consider the total cost, as well as any upfront fees. Try to take into consideration costs for things like staff, support or licensing costs (where applicable), the productivity of ongoing service improvement work, and any exit costs (especially around migration of data to a future replacement system) that might be caused by the use of non-open standard formats or protocol extensions. Make sure that you understand the cost implications of any unusually high user loads in production systems.</p>
 
 <h2 id="consider-people">Consider people</h2>
-<p>Try and involve the whole team in technology choices. That doesn’t mean no-one owns the decision making but that you want the development team (including web ops people) to share their insights into the options available and how they will affect the overall system, and thereby get their ‘buy in’ to the technology choices made. Technology preferences vary, and technology choice can divide opinion.</p>
+<p>Try to involve the whole team in technology choices so the development team (including web ops people) can share their insights into the options available and how they’ll affect the overall system. This process will get their ‘buy in’ to the technology choices made. Technology preferences vary, and technology choice can divide opinion.</p>
 
 <p>All things being equal, picking technologies that developers and operations staff like will typically result in improved productivity.</p>
 
@@ -225,68 +225,83 @@
 
 <p>For example, if you select a database that only runs on one operating system you have no choice about the operating system you will use. If the costs of that operating system jump you have no simple way of reducing that cost quickly or cheaply.</p>
 
-<p>Over time, and after many decisions, you can find yourself in a situation where all your technology decisions are tightly coupled and you are locked-in to one vendor, or one way of doing things. This can have unforeseen financial costs (for example an overnight cost increase) and might also limit how quickly you can iterate on your product in the future (if, for instance, the ideal technology choice isn’t compatible with your current vendor or technology).</p>
+<p>Over time, and after many decisions, you can find yourself in a situation where all your technology decisions are tightly coupled and you are locked-in to one vendor, or one way of doing things. This can have unforeseen financial costs (for example an overnight cost increase). It might also limit how quickly you can iterate on your product in the future (if, for instance, the ideal technology choice isn’t compatible with your current vendor or technology).</p>
 
-<p>Aim to have a clear understanding of the cost or implications of moving away from a technology when you commit to it, and avoid technology lock-in whenever possible. This may sometimes mean choosing not to use certain features of a particular piece of technology, such as non-standard extensions to protocols, APIs or programming languages, in order to <a href="/service-manual/making-software/open-standards-and-licensing.html">avoid lock-in</a> and preserve the ability to move to another technology at a later date.</p>
+<p>Aim to have a clear understanding of the cost or implications of moving away from a technology when you commit to it, and avoid technology lock-in whenever possible. This may mean choosing not to use certain features of a particular piece of technology, like non-standard extensions to protocols, APIs or programming languages. This will <a href="/service-manual/making-software/open-standards-and-licensing.html">avoid lock-in</a> and preserve the ability to move to another technology at a later date.</p>
 
-<p>In general, you should avoid making long-term commitments to any particular technology, product or supplier until you fully understand the problem you’re trying to solve - and even then, you should ensure you maximise your future development options and avoid technology lock-in if at all possible.</p>
+<p>In general, you should avoid making long-term commitments to any particular technology, product or supplier until you fully understand the problem you’re trying to solve. Even then, you should make sure you maximise your future development options and avoid technology lock-in if possible.</p>
 
 <h2 id="when-to-make-new-software-versus-using-existing-software">When to make new software versus using existing software</h2>
-<p>Where there is an existing software solution which solves your problem, you should certainly consider using it. You are more likely to use existing software than to make new software when you have a commodity need. You may even be facing a niche problem that’s peculiar to government which has already been solved by another part of the government - or indeed another government - and <a href="https://github.com/alphagov/">released as open source software</a>. </p>
+<p>Where there is an existing software solution which solves your problem, you should certainly consider using it. You’re more likely to use existing software than to make new software when you have a commodity need. You may even be facing a niche problem that’s peculiar to government which has already been solved by another part of the government – or indeed another government - and <a href="https://github.com/alphagov/">released as open source software</a>. </p>
 
 <p>Development tools, build tools, utility libraries, databases and monitoring tools are all examples of software where many projects will have the same need, and it makes little sense to reinvent the wheel.</p>
 
-<p>For software that serves a rare or niche need you are less likely to find a tool which serves and will continue to serve your needs. In this situation you will likely have to create new software. Software that is developed to meet the needs of the government - whether it’s developed by government employees, contractors or by a supplier - should be shared wherever possible under a permissive, GPL-compatible open source licence (eg <a href="http://opensource.org/licenses/MIT">MIT</a>/<a href="http://directory.fsf.org/wiki/License:X11">X11</a> or <a href="http://directory.fsf.org/wiki/License:BSD_3Clause">3-clause BSD</a>) so that it can be widely used and improved. This allows the software to be used and improved by anyone in the world who has a similar need. It’s important that other governments in particular have the opportunity to reuse the software you’ve created, because everyone deserves to have <a href="/service-manual/digital-by-default">digital services so good that people prefer to use them</a>.</p>
+<p>For software that serves a rare or niche need you’re less likely to find a tool which serves and will continue to serve your needs. In this situation you will likely have to create new software. Software that’s developed to meet the needs of the government – whether it’s developed by government employees, contractors or by a supplier - should be shared wherever possible under a permissive, – compatible open source licence (eg <a href="http://opensource.org/licenses/MIT">MIT</a>/<a href="http://directory.fsf.org/wiki/License:X11">X11</a> or <a href="http://directory.fsf.org/wiki/License:BSD_3Clause">3-clause BSD</a>) so that it can be widely used and improved. </p>
+
+<p>This allows the software to be used and improved by anyone in the world who has a similar need. It’s important that other governments in particular have the opportunity to reuse the software you’ve created, because everyone deserves to have <a href="/service-manual/digital-by-default">digital services so good that people prefer to use them</a>.</p>
 
 <p>For example <a href="https://github.com/alphagov/govspeak">GovSpeak</a> and <a href="https://github.com/alphagov/unicornherder">unicorn herder</a> are small components which were <a href="http://digital.cabinetoffice.gov.uk/govuk-launch-colophon/">developed as a part of GOV.UK</a>. They are now used by several different organisations, and have received a number of <a href="https://github.com/alphagov/unicornherder/commits/master">public contributions</a>.</p>
 
 <p>You should always share software that has been written by the government and/or its suppliers (this includes source code and documentation) unless doing so would:</p>
 
-<p>a) create an unacceptable risk to the security of our systems or processes that cannot be mitigated with reasonable efforts
-b) contravene existing contractual arrangements
-c) directly threaten our national security</p>
+<ul>
+  <li>create an unacceptable risk to the security of our systems or processes that cannot be mitigated with reasonable efforts</li>
+  <li>contravene existing contractual arrangements</li>
+  <li>directly threaten our national security</li>
+</ul>
 
-<p>In practice, sharing usually means uploading the source code and documentation to a public source code repository, keeping it updated with subsequent changes that you make (or accept from other people), and putting in place <a href="/service-manual/making-software/information-security.html">appropriate information security assurance to reduce and mitigate the risk of an exploit appearing in publicly-viewable software</a>.</p>
+<p>In practice, sharing usually means uploading the source code and documentation to a public source code repository, keeping it updated with subsequent changes that you make (or accept from other people), and putting in place <a href="/service-manual/making-software/information-security.html">appropriate information security assurance to reduce and mitigate the risk of an exploit appearing in publicly viewable software</a>.</p>
 
-<blockquote>
-  <p>In some cases you might want to store the ‘master’ version of your software on an internal source code control system and replicate the latest version to a public repository.</p>
-</blockquote>
+<p>In some cases you might want to store the ‘master’ version of your software on an internal source code control system and replicate the latest version to a public repository.</p>
 
 <h3 id="reasons-not-to-share-software">Reasons not to share software</h3>
-<p>Sometimes it’s not possible to share software that was developed for the government by a third party because the third party retains ownership of the ‘intellectual property’ (IP) embodied in that software. Contracts that allow third parties to retain ownership of IP in software that’s been developed for the government, and/or that restrict the government’s ability to share this software under a permissive, GPL-compatible open source licence, should be avoided.</p>
+<p>Sometimes it’s not possible to share software that was developed for the government by a third party because the third party retains ownership of the ‘intellectual property’ (<abbr title="intellectual property">IP</abbr>) embodied in that software. Contracts that allow third parties to retain ownership of <abbr title="intellectual property">IP</abbr> in software that’s been developed for the government, and/or that restrict the government’s ability to share this software under a permissive, <abbr title="General Public License">GPL</abbr>-compatible open source licence, should be avoided.</p>
 
 <p>On other occasions the team may take a risk-based decision not to share some of the software they have created, for instance to avoid exposing in public the details of a particular risk-assessment algorithm or process. It’s good engineering practice in any case to encapsulate software, and so often in this situation a large portion of the software for a given system or service can still be shared in public.</p>
 
-<p>The default assumption should be in favour of coding in the open and sharing software widely, but if you have serious concerns about sharing source code in public, then CESG can provide you with advice based on your specific situation. See also the joint Cabinet Office / CESG statement on <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/78967/OSS_Toolkit_Security_Note_v1.0.pdf">Open Source Software and Security</a>.</p>
+<p>The default assumption should be in favour of coding in the open and sharing software widely, but if you have serious concerns about sharing source code in public, then Communications-Electronics Security Group (<abbr title="Communications-Electronics Security Group">CESG</abbr>) can provide you with advice based on your specific situation. See also the joint Cabinet Office / <abbr title="Communications-Electronics Security Group">CESG</abbr> statement on <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/78967/OSS_Toolkit_Security_Note_v1.0.pdf">Open Source Software and Security</a>.</p>
 
 <h2 id="level-playing-field">Level playing field</h2>
-<p>With the growth of free/open source software, many high quality technology products (databases, operating systems, programming languages, development tools, etc) are freely available for government and its suppliers to use and improve. But a large market still exists for commercial software products, and the availability of open source software doesn’t automatically mean that you can’t choose a proprietary technology if it meets our needs.</p>
+<p>With the growth of free/open source software, many high quality technology products (databases, operating systems, programming languages, development tools, etc) are freely available for government and its suppliers to use and improve. But a large market still exists for commercial software products: the availability of open source software doesn’t automatically mean that you can’t choose a proprietary technology if it meets your needs.</p>
 
 <p>However, it remains the policy of the government that, where there is no significant overall cost difference between open and non-open source products that fulfil minimum and essential capabilities, open source will be selected on the basis of its inherent flexibility. For more information on how to ensure a level playing field between proprietary and open source software, please see the <a href="https://www.gov.uk/government/publications/open-source-procurement-toolkit">Open Source Procurement Toolkit</a> and the section of this manual that covers <a href="/service-manual/making-software/open-standards-and-licensing.html">use of open standards</a>.</p>
 
-<blockquote>
-  <p>You should ensure that any decision you make to use existing software, whether open source or proprietary, doesn’t stop you from sharing any new software that you create (or your suppliers create for you) under a permissive, GPL-compatible open source licence.</p>
-</blockquote>
+<p>You should ensure that any decision you make to use existing software, whether open source or proprietary, doesn’t stop you from sharing any new software that you create (or your suppliers create for you) under a permissive, General Public License (<abbr title="General Public License">GPL</abbr>) compatible open source licence.</p>
 
 <h2 id="coding-in-the-open">Coding in the open</h2>
 <p>A successful open source project will garner contributions from a large number of sources, both inside and outside of a single organisation. Allow developers time to review contributions, and answer issues and discussion raised by others using the software.</p>
 
-<p>Larger open source projects often evolve an extension model to enable others to continue to use the service in a variety of often unexpected and possibly undesirable ways whilst keeping the core project coherent under the editorship of a small, trusted group of <a href="http://en.wikipedia.org/wiki/Committer">committers</a>.</p>
+<p>Larger open source projects often evolve an extension model to enable others to continue to use the service in a variety of often unexpected and possibly undesirable ways while keeping the core project coherent under the editorship of a small, trusted group of <a href="http://en.wikipedia.org/wiki/Committer">committers</a>.</p>
 
-<p>Ensure developers have the ability to install and experiment with open source software, have environments to easily publish prototype services on The Web, have convenient access to a wide variety of network connected devices for testing Web sites, and have unrestricted access to collaboration tools such as <a href="https://github.com">GitHub</a>, <a href="http://stackoverflow.com/">Stack Overflow</a> and <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a>.</p>
+<p>Make sure developers have:</p>
 
-<p>Take every opportunity to contribute back to open source projects you use. Contributions may be in the form of source code, patches, bug reports, feature requests, sponsorship of developers and support staff, engaging in community discussion groups, and giving public attribution to projects. Cite the open source code you use, as in the <a href="http://digital.cabinetoffice.gov.uk/govuk-launch-colophon/">GOV.UK colophon</a> - you can read more about this approach on the <a href="http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/">GDS blog entry about coding in the open</a>.</p>
+<ul>
+  <li>the ability to install and experiment with open source software</li>
+  <li>environments to easily publish prototype services on the web</li>
+  <li>convenient access to a wide variety of network connected devices for testing websites</li>
+  <li>unrestricted access to collaboration tools like <a href="https://github.com">GitHub</a>, <a href="http://stackoverflow.com/">Stack Overflow</a> and <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a></li>
+</ul>
 
-<blockquote>
-  <p>Keys, passwords and other secrets must always be stored safely and securely away from source code <a href="http://en.wikipedia.org/wiki/Kerckhoffs%27_principle">following Kerckhoffs’ principle</a>. This separation of project code from deployed instances of a project is good development practice regardless of whether or not the software itself is shared in public.</p>
-</blockquote>
+<p>Take every opportunity to contribute back to open source projects you use. Contributions may be in the form of:</p>
 
-<blockquote>
-  <p>For projects with a high impact level, particularly with a small number of participating developers, it is advisable to have a private space to discuss security issues and develop a patch rather than risk flagging a vulnerability before a fix has been deployed.</p>
-</blockquote>
+<ul>
+  <li>source code</li>
+  <li>patches</li>
+  <li>bug reports</li>
+  <li>feature requests</li>
+  <li>sponsorship of developers and support staff</li>
+  <li>engaging in community discussion groups</li>
+  <li>giving public attribution to projects </li>
+</ul>
+
+<p>Cite the open source code you use, as in the <a href="http://digital.cabinetoffice.gov.uk/govuk-launch-colophon/">GOV.UK colophon</a> - you can read more about this approach on the <a href="http://digital.cabinetoffice.gov.uk/2012/10/12/coding-in-the-open/">GDS blog entry about coding in the open</a>.</p>
+
+<p>Keys, passwords and other secrets must always be stored safely and securely away from source code <a href="http://en.wikipedia.org/wiki/Kerckhoffs%27_principle">following Kerckhoffs’s principle</a>. This separation of project code from deployed instances of a project is good development practice regardless of whether or not the software itself is shared in public.</p>
+
+<p>For projects with a high-impact level, particularly with a small number of participating developers, it’s advisable to have a private space to discuss security issues and develop a patch. This practice will prevent flagging a vulnerability before a fix has been deployed.</p>
 
 <h2 id="why-we-do-this">Why we do this</h2>
-<p>Choosing technology is important, but it’s probably not quite as important as you think. What is important are the users of that technology and being able to deliver quality at a sustainable pace and suitable cost. When making technology choices, and importantly as you develop your product and constantly reassess your selections, try and make decisions that:</p>
+<p>Choosing technology is important, but it’s probably not quite as important as you think. What’s important are the users of that technology and being able to create quality at a sustainable pace and suitable cost. When making technology choices, and importantly as you develop your product and constantly reassess your selections, try to make decisions that:</p>
 
 <ul>
   <li>maximise developer productivity</li>
@@ -297,6 +312,7 @@ c) directly threaten our national security</p>
 
 <h2 id="further-reading">Further reading</h2>
 <p><a href="/service-manual/making-software/open-standards-and-licensing.html">Open standards considerations</a></p>
+
 
 
       <nav class="page-tools">
@@ -374,8 +390,8 @@ c) directly threaten our national security</p>
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1381318168" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381318168" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1381406350" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381406350" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/stylesheets/print.css?cache=1381318168" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1381406350" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -145,9 +145,9 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-setup-monitoring-early"><a href="#setup-monitoring-early">Setup monitoring early</a>
+<li class="level-set-up-monitoring-early"><a href="#set-up-monitoring-early">Set up monitoring early</a>
 </li>
-<li class="level-include-high-level-checks"><a href="#include-high-level-checks">Include high level checks</a>
+<li class="level-include-high-level-checks"><a href="#include-high-level-checks">Include high-level checks</a>
 </li>
 <li class="level-errors-are-interesting"><a href="#errors-are-interesting">Errors are interesting</a>
 </li>
@@ -161,27 +161,27 @@
     </div>
 
     <div class="inner">
-      <p>Any online application should have some tools dedicated to alerting the people running the service to problems. This might involve low level issues involving the infrastructure underpinning the service to a sudden high rate of user errors.</p>
+      <p>Any online application should have some tools dedicated to alerting the people running the service to problems. This might involve low-level issues involving the infrastructure underpinning the service to a sudden high rate of user errors.</p>
 
-<p>Knowing the current state of your service and infrastructure can help identify problems before they happen, as well as alert you to issues that need immediate attention. The main goals are:</p>
+<p>Knowing the current state of your service and infrastructure can help identify problems before they happen, as well as alert you to issues that need immediate attention. The main goals are to:</p>
 
 <ul>
-  <li>to be alerted to problems affecting the availability of the service so they can be resolved</li>
-  <li>to aid with capacity planning activities by providing metrics over time</li>
-  <li>to identify potential future problems</li>
-  <li>to find areas of improvement, for instance badly performing systems or inefficient services</li>
-  <li>to be able to identify the root cause of an outage after the fact, based on data collected during the problematic event</li>
+  <li>be alerted to problems affecting the availability of the service so they can be resolved</li>
+  <li>aid with capacity planning activities by providing metrics over time</li>
+  <li>identify potential future problems</li>
+  <li>find areas of improvement, for instance badly performing systems or inefficient services</li>
+  <li>be able to identify the root cause of an outage after the fact, based on data collected during the problematic event</li>
 </ul>
 
-<h2 id="setup-monitoring-early">Setup monitoring early</h2>
+<h2 id="set-up-monitoring-early">Set up monitoring early</h2>
 
-<p>Monitoring is not something that should be left to the end, to be tacked on as part of running the final production service. By talking about monitoring, and agreeing an approach, you are more likely to build useful checks as you go along. Writing tests at the same time as writing code is common, monitoring checks can be viewed as tests for the running system.</p>
+<p>Monitoring is not something that should be left to the end, to be tacked on as part of running the final production service. By talking about monitoring, and agreeing an approach, you’re more likely to build useful checks as you go along. Writing tests at the same time as writing code is common; monitoring checks can be viewed as tests for the running system.</p>
 
-<h2 id="include-high-level-checks">Include high level checks</h2>
+<h2 id="include-high-level-checks">Include high-level checks</h2>
 
 <p>Often monitoring is seen through a very technical lens, so teams may only look at web application performance, available disk space or memory usage. Although these are important it’s also essential to track these alongside more business related metrics. </p>
 
-<p>For example being able to compare page loading tests with failed transactions and application errors can alert you to problems and help identify the cause at the same time. It also grounds conversations about low level problems (disk space, slow performance) in terms of the service performance. </p>
+<p>For example, being able to compare page loading tests with failed transactions and application errors can alert you to problems and help identify the cause at the same time. It also grounds conversations about low-level problems (disk space, slow performance) in terms of the service performance. </p>
 
 <h2 id="errors-are-interesting">Errors are interesting</h2>
 
@@ -191,7 +191,7 @@
 
 <h2 id="widely-available">Widely available</h2>
 
-<p>The monitoring system, or rather any dashboards, interactive tools or reports, should be as widely available as possible. They should ideally be useful outside just the group responsible for the day to day operations and systems administration.</p>
+<p>The monitoring system, or rather any dashboards, interactive tools or reports, should be as widely available as possible. They should ideally be useful outside just the group responsible for the day-to-day operations and systems administration.</p>
 
 <h2 id="further-reading">Further reading</h2>
 
@@ -277,8 +277,8 @@
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1381318168" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381318168" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1381406350" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381406350" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/stylesheets/print.css?cache=1381318168" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1381406350" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -171,19 +171,19 @@
 </li>
 <li class="level-types-of-testing"><a href="#types-of-testing">Types of testing</a>
 <ol>
-<li class="level-code-testing"><a href="#code-testing">Code Testing</a>
+<li class="level-code-testing"><a href="#code-testing">Code testing</a>
 </li>
-<li class="level-exploratory-testing"><a href="#exploratory-testing">Exploratory Testing</a>
+<li class="level-exploratory-testing"><a href="#exploratory-testing">Exploratory testing</a>
 </li>
-<li class="level-load--performance-testing"><a href="#load--performance-testing">Load & Performance Testing</a>
+<li class="level-load-and-performance-testing"><a href="#load-and-performance-testing">Load and performance testing</a>
 </li>
-<li class="level-penetration-testing"><a href="#penetration-testing">Penetration Testing</a>
+<li class="level-penetration-testing"><a href="#penetration-testing">Penetration testing</a>
 </li>
-<li class="level-accessibility-testing"><a href="#accessibility-testing">Accessibility Testing</a>
+<li class="level-accessibility-testing"><a href="#accessibility-testing">Accessibility testing</a>
 </li>
-<li class="level-crowd-sourced-testing"><a href="#crowd-sourced-testing">Crowd Sourced Testing</a>
+<li class="level-crowdsourced-testing"><a href="#crowdsourced-testing">Crowdsourced testing</a>
 </li>
-<li class="level-test-your-ideas"><a href="#test-your-ideas">Test Your Ideas</a>
+<li class="level-test-your-ideas"><a href="#test-your-ideas">Test your ideas</a>
 </li>
 </ol>
 </li>
@@ -193,17 +193,17 @@
     </div>
 
     <div class="inner">
-      <p>The basics of any testing approach still apply in the Agile world, but the aim of testing can be quite different.</p>
+      <p>The basics of any testing approach still apply in the agile world, but the aim of testing can be quite different.</p>
 
-<p>It is important to recognise why you are testing in the first place:</p>
+<p>It’s important to recognise you are testing in the first place to:</p>
 
 <ul>
-  <li>to build the best quality system you can</li>
-  <li>to make sure it does what the customer requires</li>
-  <li>that it’s done at a cost that everyone agrees can be afforded (cost being money, business change, risk etc.)</li>
+  <li>build the best quality system you can</li>
+  <li>make sure it does what the customer requires</li>
+  <li>compete it a cost that everyone agrees can be afforded (cost being money, business change, risk etc.)</li>
 </ul>
 
-<p>Too often the aim of testing is to validate what has been produced and nothing else. Your testing should be more about the following 7 concepts:</p>
+<p>Too often the aim of testing is to validate what has been produced and nothing else. Your testing should be more about these 7 concepts:</p>
 
 <ul>
   <li>building quality in</li>
@@ -271,13 +271,14 @@
 
 <h2 id="types-of-testing">Types of testing</h2>
 
-<p>The most noticeable difference with testing in an agile project is that the majority of your test efforts will be centred on automated tests. 
-These tests run in <a href="/service-manual/agile/continuous-delivery.html">continuous integration (C.I.)</a>, which means that they form part of your codebase - every time you make a change to your code, your tests are automatically run. You’ll get immediate feedback on the quality of your code and it’ll help to prevent bugs happening at a later stage (when they’re expensive and complicated to resolve.)</p>
+<p>The most noticeable difference with testing in an agile project is that the majority of your test efforts will be centred on automated tests. </p>
 
-<h3 id="code-testing">Code Testing</h3>
+<p>These tests run in continuous integration, which means that they form part of your codebase - every time you make a change to your code, your tests are automatically run. You’ll get immediate feedback on the quality of your code and it’ll help to prevent bugs happening at a later stage (when they’re expensive and complicated to resolve.)</p>
+
+<h3 id="code-testing">Code testing</h3>
 <p>Read the guidance about <a href="/service-manual/making-software/code-testing.html">testing code</a>.</p>
 
-<h3 id="exploratory-testing">Exploratory Testing</h3>
+<h3 id="exploratory-testing">Exploratory testing</h3>
 <p>Exploratory  testing is a term commonly used to describe unscripted manual testing. This is where the tester uses his or her knowledge, experience and intuition to go through through the software and identify bugs.</p>
 
 <p>The difference between unscripted and scripted tests is that a scripted test can only ever test a predetermined outcome. Exploratory testing (unscripted) doesn’t mean you don’t prepare for the testing.</p>
@@ -309,16 +310,16 @@ These tests run in <a href="/service-manual/agile/continuous-delivery.html">cont
 
 <p>Read <a href="http://www.kaner.com/pdfs/QAIExploring.pdf">Cem Kaner on exploratory testing</a></p>
 
-<h3 id="load--performance-testing">Load &amp; Performance Testing</h3>
-<p>Read the guidance about <a href="/service-manual/operations/load-and-performance-testing.html">load &amp; performance testing</a></p>
+<h3 id="load-and-performance-testing">Load and performance testing</h3>
+<p>Read the guidance about <a href="/service-manual/operations/load-and-performance-testing.html">load and performance testing</a></p>
 
-<h3 id="penetration-testing">Penetration Testing</h3>
+<h3 id="penetration-testing">Penetration testing</h3>
 <p>Read the guidance about <a href="/service-manual/operations/penetration-testing.html">penetration testing</a></p>
 
-<h3 id="accessibility-testing">Accessibility Testing</h3>
+<h3 id="accessibility-testing">Accessibility testing</h3>
 <p>Read the guidance about <a href="/service-manual/making-software/accessibility-testing.html">accessibility testing</a></p>
 
-<h3 id="crowd-sourced-testing">Crowd Sourced Testing</h3>
+<h3 id="crowdsourced-testing">Crowdsourced testing</h3>
 <p>Crowdsourced testing doesn’t use a set group of people to carry out testing (known as outsource testing). It uses different people from different places in different jobs. It’s a good way of speeding up your manual testing and/or covering more ground.</p>
 
 <p>There are external companies who provide this as a service, but GDS do it internally by:</p>
@@ -337,7 +338,7 @@ These tests run in <a href="/service-manual/agile/continuous-delivery.html">cont
   <li>the detailed checking of hundreds of pieces of content on GOV.UK against old content on DirectGov and BusinessLink</li>
 </ul>
 
-<h3 id="test-your-ideas">Test Your Ideas</h3>
+<h3 id="test-your-ideas">Test your ideas</h3>
 <p>Don’t forget, don’t just test the product itself - test your ideas.   For information on how to do this read <a href="/service-manual/user-centered-design/introduction-to-user-research.html">the guidance about user research</a>.</p>
 
 
@@ -416,8 +417,8 @@ These tests run in <a href="/service-manual/agile/continuous-delivery.html">cont
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1381318168" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381318168" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1381406350" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381406350" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

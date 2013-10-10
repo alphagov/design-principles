@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381318168" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1381406350" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/stylesheets/print.css?cache=1381318168" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1381406350" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -161,7 +161,11 @@
 </li>
 <li class="level-where-there-arent-alternatives"><a href="#where-there-arent-alternatives">Where there aren't alternatives</a>
 </li>
+<li class="level-credentials"><a href="#credentials">Credentials</a>
+</li>
 <li class="level-examples"><a href="#examples">Examples</a>
+</li>
+<li class="level-also-see"><a href="#also-see">Also see</a>
 </li>
 </ol>
 
@@ -169,28 +173,47 @@
     </div>
 
     <div class="inner">
-      <p>Our advice is that teams <strong>do not</strong> build login systems.</p>
+      <p>Our advice is that teams do not build login systems.</p>
 
-<p>Building a login system is a significant undertaking. While there are numerous open source libraries that make it trivial to add login functionality to your service, the moment you add that feature you’re significantly increasing your user support overhead (people forget how to sign in, lose their passwords, etc), you’re accruing personal data that you will need to constantly review and protect, and you’re adding a relatively complex interaction for users to complete.</p>
+<p>Building a login system is a significant undertaking. While there are numerous
+open source libraries that make it trivial to add login functionality to your
+service, there are significant downsides:</p>
+
+<ul>
+  <li>significantly increasing your user support overhead (people forget how to
+sign in, lose their passwords, etc)</li>
+  <li>gathering personal data that you will need to constantly review and protect</li>
+  <li>adding a relatively complex interaction for users to complete</li>
+</ul>
 
 <h2 id="find-alternatives">Find alternatives</h2>
 
-<p>Many features that are often implemented using login systems can be completed in other (and potentially more useful) ways.</p>
+<p>Many features that are often implemented using login systems can be completed
+in other (and potentially more useful) ways.</p>
 
-<p>Saving search results, for example, doesn’t require a login but just a way of helping users remember a specific URL. Instead of having them log in you could provide a tool to help send the URL to an email address or instructions on creating a bookmark in their browser. Or perhaps you could just take their email address and let them know if the search results change?</p>
+<p>Saving search results, for example, doesn’t require a login but just a way of
+helping users remember a specific URL. Instead of having them log in, you could
+provide a tool to help send the URL to an email address or instructions on
+creating a bookmark in their browser. Or perhaps you could just take their
+email address and let them know if the search results change?</p>
 
-<p>The precise details will vary according to what users need from your service, but if there’s an alternative to a login system that should be preferred.</p>
+<p>The precise details will vary according to what users need from your service,
+but if there’s an alternative to a login system, that should be preferred.</p>
 
 <h2 id="where-there-arent-alternatives">Where there aren’t alternatives</h2>
 
-<p>If after careful review and design work there is no option but to build a login system you will need to consider a few questions:</p>
+<p>If after careful review and design work there is no option but to build a
+login system you will need to consider a few questions:</p>
 
 <ul>
   <li>are you providing a login service for a small number of agents (administrative users, accredited partners, etc) or for a broad range of citizens or businesses?</li>
   <li>do you already have all the data you need in order to establish trust with those users or will you need to match them against other services (online or offline)?</li>
 </ul>
 
-<p>If building a service for a small number of clearly identified agents then it is probably safe to proceed. You should ensure that any authentication and authorisation code written for your system is carefully separated from the application in such a way that you can:</p>
+<p>If building a service for a small number of clearly identified agents then
+it’s probably safe to proceed. You should ensure that any authentication
+and authorisation code written for your system is carefully separated from
+the application in such a way that you can:</p>
 
 <ul>
   <li>specifically monitor use of the system for attempts to gain access, with identifiers such as unusually high number of failed login attempts over a short period of time, or a sequence of failed logins on a given account over a long period of time</li>
@@ -198,11 +221,54 @@
   <li>swap to a new identity system such as the <a href="/service-manual/identity-assurance">identity assurance</a> scheme without invasive changes to the rest of your codebase</li>
 </ul>
 
-<p>If you need to build a system for a broad range of citizens and businesses, or you need to do sophisticated matching with other systems in order to build trust in the identity of your users then you should explore the <a href="/service-manual/identity-assurance">advice published by the ID Assurance team</a>.</p>
+<p>If you need to build a system for a broad range of citizens and businesses,
+or you need to do sophisticated matching with other systems in order to build
+trust in the identity of your users then you should explore the
+<a href="/service-manual/identity-assurance">advice published by the ID Assurance team</a>.</p>
+
+<h2 id="credentials">Credentials</h2>
+
+<p>You should help your users to pick strong, secure passwords or phrases and
+consider whether it’s appropriate to require 2-factor authentication for
+extra security.</p>
+
+<p>As a minimum passphrases should be eight characters long and include a mix
+of letters, numbers and symbols, but ideally they’ll be longer than that. We
+refer to passphrases as a phrase is usually easier to remember but harder to
+guess than a short collection of symbols or a single word.</p>
+
+<blockquote>
+  <p>For some admin systems for GOV.UK we created the
+  <a href="https://github.com/alphagov/passphrase_entropy">passphrase entropy</a>
+  library that measures how hard it would be for a computer to crack a
+  passphrase using brute-force methods. That library is used to validate
+  new passphrases and insist on strong passphrases. It’s only one measure,
+  but it increased our confidence that our users would be picking good
+  passphrases.</p>
+</blockquote>
+
+<p>All new government services should be served over
+<a href="/service-manual/domain-names/https.html">HTTPS</a> to ensure the
+communication between the user and the service is encrypted. This is
+especially important when logging in.</p>
 
 <h2 id="examples">Examples</h2>
 
-<p>The ELMS license application system on Business Link required a login to complete an application. In building a new version of the system for <a href="https://www.gov.uk/browse/business/licences">GOV.UK</a> we removed that requirement and usage rates have increased considerably. There is still a login system for approved users in local authorities who need to process those applications.</p>
+<p>The Electronic License Management System (ELMS) license application system
+on Business Link required a login to complete an application. In building
+a new version of the system for
+<a href="https://www.gov.uk/browse/business/licences">GOV.UK</a> we removed that
+requirement and usage rates have increased considerably. There’s still a
+login system for approved users in local authorities who need to process
+those applications.</p>
+
+<h2 id="also-see">Also see</h2>
+
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/Password_policy#Password_length_and_formation">Wikipedia on Password policies</a></li>
+  <li><a href="https://www.gov.uk/government/publications/identity-assurance-enabling-trusted-transactions">CESG Good Practice Guide 44: authentication credentials in support of HMG online services</a></li>
+  <li><a href="https://xkcd.com/936/">xkcd cartoon explaining password vs. passphrase</a></li>
+</ul>
 
 
       <nav class="page-tools">
@@ -280,8 +346,8 @@
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/javascript/toggler.js?cache=1381318168" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381318168" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1381406350" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1381406350" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
