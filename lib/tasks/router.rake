@@ -29,8 +29,8 @@ namespace :router do
         @logger.error "Error registering route: #{e.message}"
         raise
       end
-      @router_api.commit_routes
     end
+    @router_api.commit_routes
   end
 
   desc "Register design principles application and routes with the router (run this task on server in cluster)"
