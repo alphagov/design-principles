@@ -1,0 +1,49 @@
+<% content_for :title do %>GDS design principles<% end %>
+
+<div id="wrapper" class="design-principles styleguide">
+  <%= render "styleguide_description" %>
+
+  <%= render "styleguide_sections" %>
+
+  <ol class="principles" id="style-guide">
+    <li class="principle">
+      <article>
+        <h1>Policy advisory groups</h1>
+        <h2>What these pages are for</h2>
+        <p>Use for profiling groups of expert advisers who meet regularly to help guide policy in a particular area. The idea is to be open about the policy advice the government is getting from outside – making it possible, for example, to identify potential conflicts of interest.</p>
+        <p>Don’t use for purely internal groups or delivery teams (though a policy advisory group might include one or more civil servants as well as outside experts).</p>
+        <p>Include a policy advisory group if it meets these criteria:</p>
+        <ul>
+          <li>its remit is to advise onpolicy (not, for example, on business or operational issues)</li>
+          <li>it’s senior enough to have a significant impact on policy decisions (ie it has a direct relationship with ministers or senior officials involved in policy making)</li>
+          <li>it has a formal terms of reference (we’re looking to represent formally-constituted groups that play a defined role in policy making – not informal groups that provide ad-hoc advice) </li>
+        </ul>
+        <p>Structure the page as shown below.</p>
+        <p>It’s important that policy advisory group pages don’t effectively become ‘microsites’. Keep them simple and don’t include any additional information.</p>
+        <h3 class="heading-level-3">Summary</h3>
+        <p>Describe what the group does in one sentence. Use plain English, but include any technical terms needed for search purposes.</p>
+        <h3 class="heading-level-3">Role of the group (optional)</h3>
+        <p>If it’s not possible to capture what the group does in the summary, you can go into a little more detail here. Use no more than 2 or 3 sentences, avoid jargon and focus on what’s important about the group’s work.</p>
+        <h3 class="heading-level-3">Terms of reference</h3>
+        <p>Attach the group’s terms of reference to the page. Use a ‘callout’ style attachment.</p>
+        <h3 class="heading-level-3">Membership</h3>
+        <p>Lead in with ‘Current members are:’, then create a bullet point list.</p>
+        <p>List the chair of the group first, and indicate their role by putting ‘Chair’ in brackets.</p>
+        <p>Just give the member’s name, their job title and the organisation they represent (if it’s not obvious). In general, avoid titles and honorifics.</p>
+        <h3 class="heading-level-3">Minutes</h3>
+        <p>Attach minutes from recent meetings to the page (attach the most recent as a ‘callout’ style attachment – the others using ‘inline’ style attachments). Use this format for the link text – ‘19 January, 2013: minutes’.</p>
+        <p>Link to the National Archives for minutes more than a year old (use this format for the link text  – ‘See the National Archives website for minutes from June 2013 and earlier’).</p>
+        <h3 class="heading-level-3">Code of conduct (optional)</h3>
+        <p>If the group has a formal code of conduct, you can attach it to the page here.</p>
+        <ul>
+          <li>code of conduct (attachment, optional)</li>
+          <li>secretariat contact details (optional)</li>
+        </ul>
+        <h3 class="heading-level-3">Contact details (optional)</h3>
+        <p>If you want to add contact details for the group secretariat, do it here.</p>
+        <p>Good example:</p>
+        <p><%= image_tag "group-description-example.png", :alt => "good example of a good policy group page", :title => "good example of a of a policy group page" %></p>
+      </article>
+    </li>
+  </ol>
+</div>
