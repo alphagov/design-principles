@@ -37,6 +37,7 @@ DesignPrinciples::Application.routes.draw do
     get "/designprinciples/whatsnew", :to => redirect("/designprinciples/styleguide/whats-new")
     get "/designprinciples/seo", :to => redirect("/designprinciples/styleguide/writing-for-govuk#seo")
   else
+    get "/designprinciples/styleguide", :to => "root#styleguide"
     get "/designprinciples/mainstream", :to => "root#mainstream"
     get "/designprinciples/insidegovernment", :to => "root#insidegovernment"
     get "/designprinciples/detailedguides", :to => "root#detailedguides"
