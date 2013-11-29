@@ -2,7 +2,7 @@ class StyleguideController < ApplicationController
   before_filter :set_expiry
 
   def index
-    render "style-points"
+    render "writing-for-govuk"
   end
 
   def writing_for_govuk
