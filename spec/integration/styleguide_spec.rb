@@ -6,7 +6,7 @@ describe "The styleguide page" do
     visit "/designprinciples/styleguide"
 
     page.should have_content("Content style guide")
-    page.should have_content("Americanisms")
+    page.should have_content("GOV.UK is for anyone")
   end
 
   it "should render answers" do

@@ -12,7 +12,7 @@ end
 describe "The area-specific pages" do
   it "should redirect the mainstream page to content formats" do
     visit "/designprinciples/mainstream"
-    page.should have_content("Americanisms")
+    page.should have_content("GOV.UK is for anyone")
   end
 
   it "should redirect the detailed guidance page to content formats" do
@@ -35,7 +35,7 @@ describe "The style guide" do
   it "should render" do
     visit "/designprinciples/styleguide"
     page.should have_content("Content style guide")
-    page.should have_content("Americanisms")
+    page.should have_content("GOV.UK is for anyone")
   end
 end
 
