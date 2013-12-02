@@ -200,10 +200,6 @@ html {
       position: relative;
       list-style: none;
       padding-bottom: 30px;
-
-      article {
-        clear: both;
-      }
     }
 
     h1 {
@@ -469,10 +465,6 @@ html {
       }
     }
 
-    nav {
-      padding-bottom: 255px;
-    }
-
     .principles {
 
       h2 {
@@ -490,30 +482,6 @@ html {
 
     }
 
-  }
-
-  .sections {
-
-    li {
-      float: left;
-      clear: left;
-      width: 45.5%;
-
-      &:nth-child(even) {
-        float: right;
-        clear: none;
-      }
-
-      @include media-down(mobile) {
-        float: none;
-        width: 100%;
-        margin-left: 0;
-
-        &:nth-child(even) {
-          float: none;
-        }
-      }
-    }
   }
 
   table {
