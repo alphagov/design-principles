@@ -293,7 +293,7 @@ html {
 
   }
 
-  .examples {
+  .examples, .content-types {
     clear: both;
 
     h2 {
@@ -526,7 +526,7 @@ html {
   background-position: -5000px top;
   background-repeat: no-repeat;
 
-  .examples {
+  .examples, .content-types {
     overflow: hidden;
 
     h2 {

@@ -14,6 +14,12 @@ jQuery(document).ready(function() {
         return false;
     });
   }
+
+  $(".content-types > span.caption").on("click", function(e) {
+    $(this).parent(".content-types").toggleClass("open-section");
+    e.preventDefault();
+    return false;
+  });
 });
 
 
