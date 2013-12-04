@@ -38,7 +38,7 @@ namespace :router do
     ].each do |path, type, destination|
       begin
         @logger.info "Registering #{type} redirect route from #{path} -> #{destination}"
-        @router_api.add_redirect_route(path, type, destination, :skip_commit => true)
+        @router_api.add_redirect_route(path, type, destination, "permanent", :skip_commit => true)
       rescue => e
         @logger.error "Error registering route: #{e.message}"
         raise
