@@ -140,4 +140,26 @@ describe "The styleguide page" do
     page.should have_content("Content style guide")
     page.should have_content("writing well for the web is very different")
   end
+
+  describe "secondary navigation" do
+    it "should be hidden when showing other parts of the style guide" do
+      visit "/design-principles/style-guide/whats-new"
+
+      page.should_not have_css("section.open-section")
+    end
+
+    describe "when active" do
+      it "should show the navigation" do
+        visit "/design-principles/style-guide/answers"
+
+        page.should have_css("section.open-section")
+      end
+
+      it "should highlight the current navigation" do
+        visit "/design-principles/style-guide/answers"
+
+        page.should have_css("a.current")
+      end
+    end
+  end
 end

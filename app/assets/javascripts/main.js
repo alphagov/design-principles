@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
     });
   }
 
-  $(".content-types > span.caption").on("click", function(e) {
+  $(".content-types > a").on("click", function(e) {
     $(this).parent(".content-types").toggleClass("open-section");
     e.preventDefault();
     return false;

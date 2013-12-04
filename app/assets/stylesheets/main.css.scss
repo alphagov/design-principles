@@ -422,6 +422,13 @@ html {
     }
   }
 
+  .content-types {
+    & .content {
+      left: 20px;
+      top: -10px;
+    }
+  }
+
   .alpha-feedback {
     position: relative;
     margin-top: 80px;
@@ -526,7 +533,7 @@ html {
   background-position: -5000px top;
   background-repeat: no-repeat;
 
-  .examples, .content-types {
+  .examples {
     overflow: hidden;
 
     h2 {
@@ -552,6 +559,10 @@ html {
           text-transform: none;
         }
       }
+    }
+
+    #nested-nav.content {
+      display: none;
     }
 
     .content {
@@ -595,4 +606,27 @@ html {
     }
   }
 
+  .content-types {
+
+    #nested-nav.content {
+      display: none;
+    }
+
+    &.open-section {
+
+      #nested-nav.content {
+        display: block;
+        left: 20px;
+        top: -10px;
+      }
+
+      .content {
+        position: relative;
+        height: auto;
+        article {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
