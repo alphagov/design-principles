@@ -30,6 +30,20 @@ namespace :router do
         raise
       end
     end
+
+    # Redirections for old content
+    [
+      %w(/service-manual/user-centered-design/writing-government-services /service-manual/user-centered-design/information-design-principles exact),
+      %w(/service-manual/user-centered-design/writing-government-services.html /service-manual/user-centered-design/information-design-principles exact),
+    ].each do |path, destination, type|
+      begin
+        @logger.info "Registering #{type} redirect route from #{path} -> #{destination}"
+        @router_api.add_redirect_route(path, type, destination, :skip_commit => true)
+      rescue => e
+        @logger.error "Error registering route: #{e.message}"
+        raise
+      end
+    end
     @router_api.commit_routes
   end
 
