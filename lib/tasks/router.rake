@@ -33,9 +33,9 @@ namespace :router do
 
     # Redirections for old content
     [
-      %w(/service-manual/user-centered-design/writing-government-services /service-manual/user-centered-design/information-design-principles exact),
-      %w(/service-manual/user-centered-design/writing-government-services.html /service-manual/user-centered-design/information-design-principles exact),
-    ].each do |path, destination, type|
+      ["/service-manual/user-centered-design/writing-government-services", "exact", "/service-manual/content-designers/transactions-style-guide"],
+      ["/service-manual/user-centered-design/writing-government-services.html", "exact", "/service-manual/content-designers/transactions-style-guide"],
+    ].each do |path, type, destination|
       begin
         @logger.info "Registering #{type} redirect route from #{path} -> #{destination}"
         @router_api.add_redirect_route(path, type, destination, :skip_commit => true)
