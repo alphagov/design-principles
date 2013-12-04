@@ -9,24 +9,24 @@
 
 <!--[if gt IE 8]><!-->
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-dd07ebece57f6837682d304d58d525fd.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/main-c0b818b566462a951ad8f9271f5360e7.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1386171419" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie6-2146054bb41b9533a070daa18801359c.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/main-ie6-483f3b454e7a39bb86e16c2006aec64c.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1386171419" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie7-f4557bba26ac1ad2f71d1c93df6e1100.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/main-ie7-e70ca3de80261fb965442a0b1c833516.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1386171419" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
   <link href="https://assets.digital.cabinet-office.gov.uk/static/header-footer-only-ie8-557e276442cba9c0ede68e1b2e6522a7.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="/service-manual/assets/main-ie8-072843381f0844df8acc7cb0426b4ef6.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1386171419" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
 
 <link href="https://assets.digital.cabinet-office.gov.uk/static/print-7bdad4013aad13ea10c21a3b38b9ddee.css" media="print" rel="stylesheet" type="text/css" />
-<link href="/service-manual/assets/print-50a9647da07b6e1c81213f2e14578829.css" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1386171419" media="print" rel="stylesheet" type="text/css" />
 
 <!--[if IE 8]>
 <script type="text/javascript">
@@ -160,18 +160,41 @@
     <div class="inner">
       <h2 id="how-servicegovuk-domain-names-are-managed">How service.gov.uk domain names are managed</h2>
 
-<p>Once <a href="/service-manual/domain-names/setting-up.html">a domain name for a service has been agreed</a>, the GDS Infrastructure Team allocates service.gov.uk domain names
-by delegating control to the team running the service. The team should provide the details of nameservers and GDS
-will delegate {service-name}.service.gov.uk to those nameservers. At that point the service team will be able to
+<p>Once <a href="/service-manual/domain-names/setting-up.html">a domain name for a service has been agreed</a>, the
+GDS Infrastructure Team allocates service.gov.uk domain names by delegating control to the team running
+the service. The team should provide the details of nameservers and GDS will delegate
+{service-name}.service.gov.uk to those nameservers. At that point the service team will be able to
 manage the detailed configuration of which servers the domain name points to, and so on.</p>
 
-<h3 id="why-do-we-do-this">Why do we do this?</h3>
+<h2 id="how-is-this-different-to-how-directgovuk-domains-have-been-managed">How is this different to how direct.gov.uk domains have been managed?</h2>
 
-<p>It is likely that as you build and iterate your service you will need to make a number of changes to its configuration.
-You might introduce load balancers or content delivery networks, you may move hosting providers, or your provider might
-need to change the IP addresses that your servers are assigned. In any of those cases it is important that your team
-is able to quickly respond to the situation and make any relevant changes with as few intermediaries as possible.
-By delegating control GDS ensures that control is in the hands of the service team.</p>
+<p>The domain direct.gov.uk was managed by the DirectGov Service Desk directly (and inherited by GDS).
+All domains were administered by DirectGov and each subdomain did not have its own DNS servers.</p>
+
+<p>This meant that services would need to give details of the names and IP addresses of their webservers
+to DirectGov, who would directly create the necessary A and CNAME records. The DirectGov Service Desk
+were also a critical part of any DNS change.</p>
+
+<p>The new model for service.gov.uk domains requires that you provide your own DNS servers which can
+respond to requests for {something}.{servicename}.service.gov.uk. It is not necessary that you run
+and manage your own separate DNS servers:</p>
+
+<ol>
+  <li>There are service providers on GCloud who will provide DNS Hosting with a web-interface for you
+to manage your DNS records.</li>
+  <li>Many infrastructure hosting providers also provide DNS services for the use of their customers.</li>
+  <li>As a last resort (or for larger services) you may wish to ask the supplier to provide DNS services
+by any means they consider reasonable (including utilising options 1 and 2 above).</li>
+</ol>
+
+<h2 id="why-do-we-do-this">Why do we do this?</h2>
+
+<p>It is likely that as you build and iterate your service you will need to make a number of changes to its
+configuration. You might introduce load balancers or content delivery networks, you may move hosting
+providers, or your provider might need to change the IP addresses that your servers are assigned. In any
+of those cases it is important that your team is able to quickly respond to the situation and make any
+relevant changes with as few intermediaries as possible. By delegating control GDS ensures that control
+is in the hands of the service team and not blocked by a central authority.</p>
 
     </div>
   </div>
@@ -241,8 +264,8 @@ By delegating control GDS ensures that control is in the hands of the service te
   <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
 <script src="https://assets.digital.cabinet-office.gov.uk/static/application-16a0e5d6d1ce6bd26e15682116fda736.js" type="text/javascript"></script>
 
-<script src="/service-manual/assets/toggler-acea2d682c72dc791f9145789cae8963.js"></script>
-<script src="/service-manual/assets/media-player-loader-5cbe38d53a95d6677945db02e259206f.js"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1386171419" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1386171419" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
@@ -269,7 +292,6 @@ By delegating control GDS ensures that control is in the hands of the service te
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
 
 </body>
 </html>
