@@ -2,52 +2,52 @@ require 'design_principles'
 
 DesignPrinciples::Application.routes.draw do
 
-  get "/designprinciples", :to => "root#designprinciples"
+  get "/design-principles", :to => "root#designprinciples"
 
   if DesignPrinciples.display_content_formats?
-    get "/designprinciples/styleguide", :to => "styleguide#index"
-    get "/designprinciples/styleguide/writing-for-govuk", :to => "styleguide#writing_for_govuk"
-    get "/designprinciples/styleguide/style-points", :to => "styleguide#style_points"
-    get "/designprinciples/styleguide/writing-for-the-web", :to => "styleguide#writing_for_the_web"
-    get "/designprinciples/styleguide/answers", :to => "styleguide#answers"
-    get "/designprinciples/styleguide/benefits-and-schemes", :to => "styleguide#benefits_and_schemes"
-    get "/designprinciples/styleguide/case-studies", :to => "styleguide#case_studies"
-    get "/designprinciples/styleguide/consultations", :to => "styleguide#consultations"
-    get "/designprinciples/styleguide/corporate-information", :to => "styleguide#corporate_information"
-    get "/designprinciples/styleguide/detailed-guides", :to => "styleguide#detailed_guides"
-    get "/designprinciples/styleguide/document-collections", :to => "styleguide#document_collections"
-    get "/designprinciples/styleguide/government-responses", :to => "styleguide#government_responses"
-    get "/designprinciples/styleguide/guides", :to => "styleguide#guides"
-    get "/designprinciples/styleguide/images", :to => "styleguide#images"
-    get "/designprinciples/styleguide/news-stories-and-press-releases", :to => "styleguide#news_stories_and_press_releases"
-    get "/designprinciples/styleguide/organisation-homepage", :to => "styleguide#organisation_homepage"
-    get "/designprinciples/styleguide/people-and-roles", :to => "styleguide#people_and_roles"
-    get "/designprinciples/styleguide/policy-advisory-groups", :to => "styleguide#policy_advisory_groups"
-    get "/designprinciples/styleguide/policy-pages", :to => "styleguide#policy_pages"
-    get "/designprinciples/styleguide/publications", :to => "styleguide#publications"
-    get "/designprinciples/styleguide/speeches", :to => "styleguide#speeches"
-    get "/designprinciples/styleguide/statements-to-parliament", :to => "styleguide#statements_to_parliament"
-    get "/designprinciples/styleguide/whats-new", :to => "styleguide#whats_new"
+    get "/design-principles/style-guide", :to => "styleguide#index"
+    get "/design-principles/style-guide/writing-for-govuk", :to => "styleguide#writing_for_govuk"
+    get "/design-principles/style-guide/style-points", :to => "styleguide#style_points"
+    get "/design-principles/style-guide/writing-for-the-web", :to => "styleguide#writing_for_the_web"
+    get "/design-principles/style-guide/answers", :to => "styleguide#answers"
+    get "/design-principles/style-guide/benefits-and-schemes", :to => "styleguide#benefits_and_schemes"
+    get "/design-principles/style-guide/case-studies", :to => "styleguide#case_studies"
+    get "/design-principles/style-guide/consultations", :to => "styleguide#consultations"
+    get "/design-principles/style-guide/corporate-information", :to => "styleguide#corporate_information"
+    get "/design-principles/style-guide/detailed-guides", :to => "styleguide#detailed_guides"
+    get "/design-principles/style-guide/document-collections", :to => "styleguide#document_collections"
+    get "/design-principles/style-guide/government-responses", :to => "styleguide#government_responses"
+    get "/design-principles/style-guide/guides", :to => "styleguide#guides"
+    get "/design-principles/style-guide/images", :to => "styleguide#images"
+    get "/design-principles/style-guide/news-stories-and-press-releases", :to => "styleguide#news_stories_and_press_releases"
+    get "/design-principles/style-guide/organisation-homepage", :to => "styleguide#organisation_homepage"
+    get "/design-principles/style-guide/people-and-roles", :to => "styleguide#people_and_roles"
+    get "/design-principles/style-guide/policy-advisory-groups", :to => "styleguide#policy_advisory_groups"
+    get "/design-principles/style-guide/policy-pages", :to => "styleguide#policy_pages"
+    get "/design-principles/style-guide/publications", :to => "styleguide#publications"
+    get "/design-principles/style-guide/speeches", :to => "styleguide#speeches"
+    get "/design-principles/style-guide/statements-to-parliament", :to => "styleguide#statements_to_parliament"
+    get "/design-principles/style-guide/whats-new", :to => "styleguide#whats_new"
 
     # redirect the old URLs
-    get "/designprinciples/mainstream", :to => redirect("/designprinciples/styleguide")
-    get "/designprinciples/insidegovernment", :to => redirect("/designprinciples/styleguide/writing-for-govuk")
-    get "/designprinciples/detailedguides", :to => redirect("/designprinciples/styleguide/detailed-guides")
-    get "/designprinciples/accessiblepdfs", :to => "root#accessiblepdfs"
-    get "/designprinciples/performanceframework", :to => "root#performanceframework"
-    get "/designprinciples/whatsnew", :to => redirect("/designprinciples/styleguide/whats-new")
-    get "/designprinciples/seo", :to => redirect("/designprinciples/styleguide/writing-for-govuk#seo")
+    get "/design-principles/mainstream", :to => redirect("/design-principles/style-guide")
+    get "/design-principles/insidegovernment", :to => redirect("/design-principles/style-guide/writing-for-govuk")
+    get "/design-principles/detailedguides", :to => redirect("/design-principles/style-guide/detailed-guides")
+    get "/design-principles/accessiblepdfs", :to => "root#accessiblepdfs"
+    get "/design-principles/performanceframework", :to => "root#performanceframework"
+    get "/design-principles/whatsnew", :to => redirect("/design-principles/style-guide/whats-new")
+    get "/design-principles/seo", :to => redirect("/design-principles/style-guide/writing-for-govuk#seo")
   else
-    get "/designprinciples/styleguide", :to => "root#styleguide"
-    get "/designprinciples/mainstream", :to => "root#mainstream"
-    get "/designprinciples/insidegovernment", :to => "root#insidegovernment"
-    get "/designprinciples/detailedguides", :to => "root#detailedguides"
-    get "/designprinciples/accessiblepdfs", :to => "root#accessiblepdfs"
-    get "/designprinciples/performanceframework", :to => "root#performanceframework"
-    get "/designprinciples/whatsnew", :to => "root#whatsnew"
-    get "/designprinciples/seo", :to => "root#seo"
+    get "/design-principles/style-guide", :to => "root#styleguide"
+    get "/design-principles/mainstream", :to => "root#mainstream"
+    get "/design-principles/insidegovernment", :to => "root#insidegovernment"
+    get "/design-principles/detailedguides", :to => "root#detailedguides"
+    get "/design-principles/accessiblepdfs", :to => "root#accessiblepdfs"
+    get "/design-principles/performanceframework", :to => "root#performanceframework"
+    get "/design-principles/whatsnew", :to => "root#whatsnew"
+    get "/design-principles/seo", :to => "root#seo"
   end
 
   get "/:prefix/search", :to => 'search#index'
-  root :to => redirect("/designprinciples")
+  root :to => redirect("/design-principles")
 end
