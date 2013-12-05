@@ -31,8 +31,12 @@ namespace :router do
       end
     end
 
-    # Redirections for old content
     [
+      # Redirections because the slugs changed.
+      %w(/designprinciples prefix /design-principles),
+      %w(/designprinciples/styleguide prefix /design-principles/style-guide),
+
+      # Redirections for old content
       ["/service-manual/user-centered-design/writing-government-services", "exact", "/service-manual/content-designers/transactions-style-guide"],
       ["/service-manual/user-centered-design/writing-government-services.html", "exact", "/service-manual/content-designers/transactions-style-guide"],
     ].each do |path, type, destination|
