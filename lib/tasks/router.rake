@@ -18,7 +18,7 @@ namespace :router do
 
   task :register_routes => [ :router_environment ] do
     [
-      %w(/designprinciples prefix),
+      %w(/design-principles prefix),
       %w(/service-manual prefix),
       %w(/transformation prefix),
     ].each do |path, type|
