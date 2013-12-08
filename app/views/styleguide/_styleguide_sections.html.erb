@@ -11,96 +11,49 @@
         <% end %>
       </li>
       <li>
-        <section class="content-types">
-          <span class="icon">&gt;</span>
-          <span class="caption">Content types</span>
-          <div class="content">
+        <%
+          content_types = [
+            { action: "answers", caption: "Answers" },
+            { action: "benefits_and_schemes", caption: "Benefits and schemes" },
+            { action: "case_studies", caption: "Case studies" },
+            { action: "consultations", caption: "Consultations" },
+            { action: "corporate_information", caption: "Corporate information" },
+            { action: "detailed_guides", caption: "Detailed guides" },
+            { action: "government_responses", caption: "Government responses" },
+            { action: "guides", caption: "Guides" },
+            { action: "images", caption: "Images" },
+            { action: "news_stories_and_press_releases", caption: "News stories and press releases" },
+            { action: "organisation_homepage", caption: "Organisation homepage" },
+            { action: "people_and_roles", caption: "People and roles" },
+            { action: "policy_advisory_groups", caption: "Policy advisory groups" },
+            { action: "policy_pages", caption: "Policy pages" },
+            { action: "publications", caption: "Publications" },
+            { action: "speeches", caption: "Speeches" },
+            { action: "statements_to_parliament", caption: "Statements to Parliament" },
+          ]
+
+          content_type_actions = content_types.map {|i| i[:action]}
+
+          sub_nav_class = "content-types"
+          is_expanded = content_type_actions.member?(controller.action_name)
+
+          if is_expanded
+            sub_nav_class += " open-section"
+          end
+        %>
+        <section class="<%=sub_nav_class %>">
+          <a href="">
+            <span class="caption">Content types</span>
+          </a>
+          <div id="nested-nav" class="content">
             <ul>
+              <% content_types.each do |type| %>
               <li>
-                <%= nav_link_to({action: "answers"}, {class: "Content formats"}) do %>
-                  <span class="caption">Answers</span>
+                <%= nav_link_to({action: type[:action]}, {class: "Content formats" }) do %>
+                <span class="caption"><%= type[:caption] %></span>
                 <% end %>
               </li>
-              <li>
-                <%= nav_link_to({action: "benefits_and_schemes"}, {class: "Content formats"}) do %>
-                  <span class="caption">Benefits and schemes</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "case_studies"}, {class: "Content formats"}) do %>
-                  <span class="caption">Case studies</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "consultations"}, {class: "Content formats"}) do %>
-                  <span class="caption">Consultations</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "corporate_information"}, {class: "Content formats"}) do %>
-                  <span class="caption">Corporate information</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "detailed_guides"}, {class: "Content formats"}) do %>
-                  <span class="caption">Detailed guides</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "government_responses"}, {class: "Content formats"}) do %>
-                  <span class="caption">Government responses</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "guides"}, {class: "Content formats"}) do %>
-                  <span class="caption">Guides</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "images"}, {class: "Content formats"}) do %>
-                  <span class="caption">Images</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "news_stories_and_press_releases"}, {class: "Content formats"}) do %>
-                  <span class="caption">News stories and press releases</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "organisation_homepage"}, {class: "Content formats"}) do %>
-                  <span class="caption">Organisation homepage</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "people_and_roles"}, {class: "Content formats"}) do %>
-                  <span class="caption">People and roles</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "policy_advisory_groups"}, {class: "Content formats"}) do %>
-                  <span class="caption">Policy advisory groups</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "policy_pages"}, {class: "Content formats"}) do %>
-                  <span class="caption">Policy pages</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "publications"}, {class: "Content formats"}) do %>
-                  <span class="caption">Publications</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "speeches"}, {class: "Content formats"}) do %>
-                  <span class="caption">Speeches</span>
-                <% end %>
-              </li>
-              <li>
-                <%= nav_link_to({action: "statements_to_parliament"}, {class: "Content formats"}) do %>
-                  <span class="caption">Statements to Parliament</span>
-                <% end %>
-              </li>
+              <% end %>
             </ul>
           </div>
         </section>
