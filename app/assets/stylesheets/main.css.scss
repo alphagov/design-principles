@@ -423,6 +423,11 @@ html {
   }
 
   .content-types {
+    & > a > .caption {
+      background: $highlight-color image-url('dropdown_arrow_closed.png') no-repeat right center;
+      padding: 0px 50px 0px 10px;
+    }
+
     & .content {
       left: 20px;
       top: -10px;
@@ -613,6 +618,10 @@ html {
     }
 
     &.open-section {
+
+      & > a > .caption {
+        background: $highlight-color image-url('dropdown_arrow_open.png') no-repeat right center;
+      }
 
       #nested-nav.content {
         display: block;
