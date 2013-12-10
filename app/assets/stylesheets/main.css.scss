@@ -93,7 +93,12 @@ html {
       margin: 0;
     }
 
-    a {
+    span {
+      display: block;
+      padding: 8px 0 7px;
+    }
+
+    a, .phase {
       position: relative;
       float: left;
       margin-right: 15px;
@@ -105,11 +110,6 @@ html {
       font-weight: bold;
       letter-spacing: 0.2em;
       background: $highlight-color;
-    }
-
-    span {
-      display: block;
-      padding: 8px 0 7px;
     }
   }
 
