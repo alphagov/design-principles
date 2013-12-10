@@ -49,7 +49,7 @@
             <ul>
               <% content_types.each do |type| %>
               <li>
-                <%= nav_link_to({action: type[:action]}, {class: "Content formats" }) do %>
+                <%= nav_link_to({action: type[:action], anchor: "style-guide"}, {class: "Content formats" }) do %>
                 <span class="caption"><%= type[:caption] %></span>
                 <% end %>
               </li>
