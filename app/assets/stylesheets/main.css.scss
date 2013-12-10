@@ -93,7 +93,12 @@ html {
       margin: 0;
     }
 
-    a {
+    span {
+      display: block;
+      padding: 8px 0 7px;
+    }
+
+    a, .phase {
       position: relative;
       float: left;
       margin-right: 15px;
@@ -105,11 +110,6 @@ html {
       font-weight: bold;
       letter-spacing: 0.2em;
       background: $highlight-color;
-    }
-
-    span {
-      display: block;
-      padding: 8px 0 7px;
     }
   }
 
@@ -423,6 +423,11 @@ html {
   }
 
   .content-types {
+    & > a > .caption {
+      background: $highlight-color image-url('dropdown_arrow_closed.png') no-repeat right center;
+      padding: 0px 50px 0px 10px;
+    }
+
     & .content {
       left: 20px;
       top: -10px;
@@ -613,6 +618,10 @@ html {
     }
 
     &.open-section {
+
+      & > a > .caption {
+        background: $highlight-color image-url('dropdown_arrow_open.png') no-repeat right center;
+      }
 
       #nested-nav.content {
         display: block;
