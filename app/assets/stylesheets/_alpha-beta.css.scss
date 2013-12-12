@@ -1,13 +1,10 @@
 $alpha-colour: $pink;
-$beta-colour: $orange;
 
 @mixin phase-banner($state: alpha) {
   padding: 0.5em 0;
 
   @if $state == alpha {
     background-color: $alpha-colour;
-  } @else if $state == beta {
-    background-color: $beta-colour;
   }
 
   p {
@@ -38,8 +35,6 @@ $beta-colour: $orange;
 
   @if $state == alpha {
     background-color: $alpha-colour;
-  } @else if $state == beta {
-    background-color: $beta-colour;
   }
 
   color: #fff;
@@ -55,8 +50,4 @@ $beta-colour: $orange;
 
 #wrapper.styleguide div.alpha-banner {
   @include phase-banner(alpha);
-}
-
-div.beta-banner {
-  @include phase-banner(beta);
 }
