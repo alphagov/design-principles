@@ -8,43 +8,45 @@
   <ol class="principles" id="style-guide">
     <li class="principle">
       <article>
-        <h1>Images</h1>
-        <p>Use images only when they give useful additional context or information. A picture of a computer keyboard when talking about online services is probably not useful to users. A picture of a new state-of-the-art hospital when it’s opened probably is useful.</p>
-        <h2>How to choose an image</h2>
-        <p>All images should be 960 pixels wide by 640 pixels high at 72 DPI. You can resize images using free software like <a href="http://www.gimp.org">gimp</a> or online photo editors like <a href="http:/www.pixlr.com">pixlr.com</a>.</p>
-        <p>When choosing an image for a news story or home page feature slot, remember that images directly related to the story are the most effective. For example, the below picture was used to illustrate a story about the appointment of a Chief Social Worker for Children by Education Secretary Michael Gove.</p>
-        <p><%= image_tag "relevant-example.png", :alt => "example of a relevant image", :title => "example of a relevant image" %></p>
-        <h2>Image quality and things to avoid</h2>
-        <p>Use good quality imagery. This doesn’t mean images have to be professionally shot: smartphone images are acceptable if the quality is good enough.</p>
-        <p>Smaller file sizes mean that pages load faster, so reduce image file sizes as far as you can without affecting quality. You can do this using free software like <a href="http://www.gimp.org/">gimp</a> (if you install a ‘Save for web’ plug-in, gimp will optimise images for the web automatically). Or alternatively use a free online photo editors like <a href="http://pixlr.com/">pixlr.com</a>.</p>
-        <p>Always preview the image and check the quality before you publish it.</p>
-        <p><%= image_tag "image-quality-example.png", :alt => "comparison of image quality", :title => "comparison of image quality" %></p>
-        <p>If you don’t have access to a photo library, then the <a href="http://www.flickr.com/creativecommons/">Flickr Creative Commons</a> pages are a great place to start looking. (Go to the <a href="http://www.flickr.com/search/advanced/">advanced search section</a> and click ‘Only search within Creative Commons-licensed content.’)</p>
-        <p>Whatever image you use, it should not be blurry, grainy, stretched, pixelated or badly lit.</p>
-        <p>Avoid obvious stock photography like the ones below: they can look cheesy and false. Try not to say too much with the feature images. When in doubt keep the image simple and let the text tell the story.</p>
-        <p>Also avoid using images of marketing material containing a lot of text. Instead, use the main image from the marketing material and put the relevant text in the story title and description.</p>
-        <p><%= image_tag "noisy-text-example.png", :alt => "comparison of image containing lots of text versus no text", :title => "comparison of image containing lots of text versus no text" %></p>
-        <h2>How to format images</h2>
-        <p>Avoid putting borders around images: the image should go right to the edge of the frame (called ‘full bleed’).</p>
-        <p>For images with a white background – such as minister portraits – add a light grey overlay to help them stand out from the website background.</p>
-        <p><%= image_tag "white-background-example.png", :alt => "comparison of image with a white background versus grey overlay", :title => "comparison of image with a white background versus grey overlay" %></p>
-        <h2>Image file names</h2>
-        <p>When you save the image to your desktop, give it a meaningful file name. This helps it to show up in search engines.</p>
-        <p>For example, jeremy-hunt-health-secretary.jpg is a good file name for a portrait of Jeremy Hunt, the Secretary of State for Health.</p>
-        <p>Avoid meaningless file names like IMG00023.JPG.</p>
-        <h2>Alt text</h2>
-        <p>Alt text is used as an alternative to an image for people who use screen readers.</p>
-        <p>Use alt text where you need to help users understand the visual content. Don’t always make the alt text a literal description of the image: think about what point the image is making. One <a href="http://webstyleguide.com/wsg3/11-graphics/8-web-graphics-markup.html#alt-text">excellent piece of advice</a> is to imagine that you’re reading out the content of the page down a telephone. When you get to the image, what would you say about it to help the listener understand the point the page is making?</p>
-        <p>If an image is not essential to understanding the content, use empty quote marks: "" as the alt text. For example, don’t tell people there’s a logo on the page. But if there’s a picture of a minister in a tank, put in appropriate alt text describing what’s happening.</p>
-        <h2>Captions</h2>
-        <p>Use to describe the image, not to summarise the story.</p>
-        <p>Captions are there to clarify what’s happening in the image, who is pictured etc. They are optional: if you don’t need one, don’t include it.</p>
-        <h2>How to attribute images</h2>
-        <p>Always provide attribution for images (unless it’s an Open Government Licence (OGL) image – in which case there’s no need because it’s already covered by the general statement that GOV.UK content is available under the OGL, unless we say otherwise).  </p>
-        <p>Attribution should appear at the bottom of the content page that the image is associated with (it isn’t currently possible to put text attribution on organisation homepages). </p>
-        <p>For Creative Commons images, link to the original photo with the person’s name and link to <a href="http://www.creativecommons.org/licenses/by-nc-nd/3.0/">this licence</a> with the words ‘Creative Commons’:</p>
-        <p>(Photo above by John Smith on Flickr. Used under <a href="http://www.creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons</a>).</p>
-        <p>If possible, contact the person to check if it’s okay. Think about the context: avoid showing identifiable people in connection with things that may cause offence.</p>
+        <section aria-labelledby="images-heading">
+          <h1 id="images-heading">Images</h1>
+          <p>Use images only when they give useful additional context or information. A picture of a computer keyboard when talking about online services is probably not useful to users. A picture of a new state-of-the-art hospital when it’s opened probably is useful.</p>
+          <h2>How to choose an image</h2>
+          <p>All images should be 960 pixels wide by 640 pixels high at 72 DPI. You can resize images using free software like <a href="http://www.gimp.org">gimp</a> or online photo editors like <a href="http:/www.pixlr.com">pixlr.com</a>.</p>
+          <p>When choosing an image for a news story or home page feature slot, remember that images directly related to the story are the most effective. For example, the below picture was used to illustrate a story about the appointment of a Chief Social Worker for Children by Education Secretary Michael Gove.</p>
+          <p><%= image_tag "relevant-example.png", :alt => "example of a relevant image", :title => "example of a relevant image" %></p>
+          <h2>Image quality and things to avoid</h2>
+          <p>Use good quality imagery. This doesn’t mean images have to be professionally shot: smartphone images are acceptable if the quality is good enough.</p>
+          <p>Smaller file sizes mean that pages load faster, so reduce image file sizes as far as you can without affecting quality. You can do this using free software like <a href="http://www.gimp.org/">gimp</a> (if you install a ‘Save for web’ plug-in, gimp will optimise images for the web automatically). Or alternatively use a free online photo editors like <a href="http://pixlr.com/">pixlr.com</a>.</p>
+          <p>Always preview the image and check the quality before you publish it.</p>
+          <p><%= image_tag "image-quality-example.png", :alt => "comparison of image quality", :title => "comparison of image quality" %></p>
+          <p>If you don’t have access to a photo library, then the <a href="http://www.flickr.com/creativecommons/">Flickr Creative Commons</a> pages are a great place to start looking. (Go to the <a href="http://www.flickr.com/search/advanced/">advanced search section</a> and click ‘Only search within Creative Commons-licensed content.’)</p>
+          <p>Whatever image you use, it should not be blurry, grainy, stretched, pixelated or badly lit.</p>
+          <p>Avoid obvious stock photography like the ones below: they can look cheesy and false. Try not to say too much with the feature images. When in doubt keep the image simple and let the text tell the story.</p>
+          <p>Also avoid using images of marketing material containing a lot of text. Instead, use the main image from the marketing material and put the relevant text in the story title and description.</p>
+          <p><%= image_tag "noisy-text-example.png", :alt => "comparison of image containing lots of text versus no text", :title => "comparison of image containing lots of text versus no text" %></p>
+          <h2>How to format images</h2>
+          <p>Avoid putting borders around images: the image should go right to the edge of the frame (called ‘full bleed’).</p>
+          <p>For images with a white background – such as minister portraits – add a light grey overlay to help them stand out from the website background.</p>
+          <p><%= image_tag "white-background-example.png", :alt => "comparison of image with a white background versus grey overlay", :title => "comparison of image with a white background versus grey overlay" %></p>
+          <h2>Image file names</h2>
+          <p>When you save the image to your desktop, give it a meaningful file name. This helps it to show up in search engines.</p>
+          <p>For example, jeremy-hunt-health-secretary.jpg is a good file name for a portrait of Jeremy Hunt, the Secretary of State for Health.</p>
+          <p>Avoid meaningless file names like IMG00023.JPG.</p>
+          <h2>Alt text</h2>
+          <p>Alt text is used as an alternative to an image for people who use screen readers.</p>
+          <p>Use alt text where you need to help users understand the visual content. Don’t always make the alt text a literal description of the image: think about what point the image is making. One <a href="http://webstyleguide.com/wsg3/11-graphics/8-web-graphics-markup.html#alt-text">excellent piece of advice</a> is to imagine that you’re reading out the content of the page down a telephone. When you get to the image, what would you say about it to help the listener understand the point the page is making?</p>
+          <p>If an image is not essential to understanding the content, use empty quote marks: "" as the alt text. For example, don’t tell people there’s a logo on the page. But if there’s a picture of a minister in a tank, put in appropriate alt text describing what’s happening.</p>
+          <h2>Captions</h2>
+          <p>Use to describe the image, not to summarise the story.</p>
+          <p>Captions are there to clarify what’s happening in the image, who is pictured etc. They are optional: if you don’t need one, don’t include it.</p>
+          <h2>How to attribute images</h2>
+          <p>Always provide attribution for images (unless it’s an Open Government Licence (OGL) image – in which case there’s no need because it’s already covered by the general statement that GOV.UK content is available under the OGL, unless we say otherwise).  </p>
+          <p>Attribution should appear at the bottom of the content page that the image is associated with (it isn’t currently possible to put text attribution on organisation homepages). </p>
+          <p>For Creative Commons images, link to the original photo with the person’s name and link to <a href="http://www.creativecommons.org/licenses/by-nc-nd/3.0/">this licence</a> with the words ‘Creative Commons’:</p>
+          <p>(Photo above by John Smith on Flickr. Used under <a href="http://www.creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons</a>).</p>
+          <p>If possible, contact the person to check if it’s okay. Think about the context: avoid showing identifiable people in connection with things that may cause offence.</p>
+        </section>
       </article>
     </li>
   </ol>
