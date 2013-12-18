@@ -1,3 +1,4 @@
+@import 'alpha-beta';
 
 $text-color: black;
 $background-color: white;
@@ -490,6 +491,10 @@ html {
           padding-left: 5px;
           margin-bottom: 5px;
         }
+      }
+
+      article section h3 {
+        font-weight: 700;
       }
 
     }
