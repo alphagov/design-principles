@@ -469,7 +469,6 @@ html {
     }
   }
 
-
   &.styleguide {
 
     @media (max-width: 640px) {
@@ -524,6 +523,20 @@ html {
 
     h2, p, ol, ul {
       margin: 0;
+    }
+  }
+  
+  table.terms{
+    caption.a-z {
+      font-weight: bold;
+      text-transform: capitalize;  
+    }
+
+    td.term{
+      width: 30%;
+    }
+    td.description{
+      width: 70%;
     }
   }
 

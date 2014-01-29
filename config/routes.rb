@@ -6,6 +6,7 @@ DesignPrinciples::Application.routes.draw do
 
   if DesignPrinciples.display_content_formats?
     get "/design-principles/style-guide", :to => "styleguide#index"
+    get "/design-principles/style-guide/a-z", :to => "styleguide#a_z"
     get "/design-principles/style-guide/writing-for-govuk", :to => "styleguide#writing_for_govuk"
     get "/design-principles/style-guide/style-points", :to => "styleguide#style_points"
     get "/design-principles/style-guide/writing-for-the-web", :to => "styleguide#writing_for_the_web"

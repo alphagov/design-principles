@@ -86,4 +86,7 @@ class StyleguideController < ApplicationController
     render "whats-new"
   end
 
+  def a_z
+    render "a-z"
+  end
 end
