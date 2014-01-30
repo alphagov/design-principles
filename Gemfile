@@ -28,4 +28,5 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
   gem 'capybara', '1.1.2'
   gem 'mocha', '0.13.3', require: false
+  gem 'thin'
 end
