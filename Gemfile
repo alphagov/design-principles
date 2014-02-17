@@ -3,7 +3,7 @@ source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
 gem 'rails', '3.2.16'
 gem 'unicorn', '4.3.1'
-gem 'logstasher', '0.4.1'
+gem 'logstasher', '0.4.8'
 gem 'rack-rewrite', '1.3.3'
 gem 'govuk_frontend_toolkit', '0.32.2'
 gem 'plek', '1.5.0'
