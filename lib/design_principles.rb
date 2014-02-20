@@ -1,6 +1,6 @@
 module DesignPrinciples
   def self.display_az?
-    false
+    true
   end
 
   def self.display_content_formats?
