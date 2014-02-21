@@ -2,7 +2,13 @@ class StyleguideController < ApplicationController
   before_filter :set_expiry
 
   def index
-    render "writing-for-govuk"
+    respond_to do |format|
+      format.html { render "writing-for-govuk" }
+      format.atom do
+        @changes = Change.all
+        render "whats-new"
+      end
+    end
   end
 
   def writing_for_govuk
