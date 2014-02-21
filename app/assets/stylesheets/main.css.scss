@@ -498,6 +498,14 @@ html {
 
     }
 
+    a.feed {
+      background: image-url('feed-icon-black.png') 0 40% no-repeat;
+      font-weight: bold;
+      margin-right: 10px;
+      padding: 0 10px 0 20px;
+      text-decoration: none;
+    }
+
   }
 
   table {
