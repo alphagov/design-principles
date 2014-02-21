@@ -89,6 +89,7 @@ class StyleguideController < ApplicationController
   end
 
   def whats_new
+    @changes = Change.all
     render "whats-new"
   end
 
