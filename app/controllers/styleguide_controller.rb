@@ -1,11 +1,11 @@
 class StyleguideController < ApplicationController
   before_filter :set_expiry
+  before_filter :load_changes
 
   def index
     respond_to do |format|
       format.html { render "writing-for-govuk" }
       format.atom do
-        @changes = Change.all
         render "whats-new"
       end
     end
@@ -89,11 +89,15 @@ class StyleguideController < ApplicationController
   end
 
   def whats_new
-    @changes = Change.all
     render "whats-new"
   end
 
   def a_z
     render "a-z"
+  end
+
+private
+  def load_changes
+    @changes = Change.all
   end
 end
