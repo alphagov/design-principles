@@ -4,7 +4,7 @@
     </p>
   </div>
   <div class="inner">
-    <p><span>Last updated 20 February 2014</span></p>
+    <p><span>Last updated <%= @changes.first.updated_at.strftime('%e %B %Y') %></span> <a href="/design-principles/style-guide.atom" class="feed">feed</a></p>
   </div>
 
   <header>
