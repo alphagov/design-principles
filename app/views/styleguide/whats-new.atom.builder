@@ -1,7 +1,7 @@
 atom_feed language: 'en-GB', root_url: "style-guide.atom" do |feed|
   feed.title 'Content style guide changes'
   feed.author do |author|
-    author.name 'HM Government'
+    author.name 'UK government'
   end
   @changes.each do |change|
     feed.entry(change,
