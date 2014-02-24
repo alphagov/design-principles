@@ -5,7 +5,7 @@
 
 - content: !xml |
       <h3>GOV.UK style changes/improvements</h3>
-      <p>Only one change today: we've added the <a href="a-z">A to Z</a>.</p>
+      <p>Only one change today: we've added the <a href="/design-principles/style-guide/a-z">A to Z</a>.</p>
   updated_at: 2014-02-20
 
 - content: !xml |
