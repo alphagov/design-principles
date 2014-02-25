@@ -1,5 +1,5 @@
 atom_feed language: 'en-GB', root_url: "/design-principles/style-guide" do |feed|
-  feed.title 'Content style guide changes'
+  feed.title 'GDS Content style guide changes'
   feed.author do |author|
     author.name 'UK government'
   end
