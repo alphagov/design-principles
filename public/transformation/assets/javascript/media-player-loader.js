@@ -20,7 +20,7 @@ jQuery(function($) {
             media:link,
             captions:captionsf,
             url: youTubeURL,
-            flashHeight: '350px'
+            flashHeight: '323px'
         });
     });
 });
