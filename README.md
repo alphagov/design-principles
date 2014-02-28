@@ -19,3 +19,15 @@ it is ready to go public.
 * Content for search should be placed in JSON files in ```db/index``` eg. ```db/index/service-manual.json``` (this is done during the compilation step that adds the manual content to this repository)
 * The rake task ```rake rummager:index``` will post these to the rummager service for inclusion in an index called 'service-manual'
 * That task is run upon deployment
+
+# Content Style guide
+
+The [style guide for GOV.UK](https://www.gov.uk/design-principles/style-guide).
+
+## What's New section for the Style guide
+
+This section is [generated from a](blob/master/config/whats-new.yaml)
+[YAML](http://en.wikipedia.org/wiki/YAML) file, to provide an
+[Atom](http://en.wikipedia.org/wiki/Atom_(standard))
+[feed](https://www.gov.uk/design-principles/style-guide.atom) and
+[HTML representation](https://www.gov.uk/design-principles/style-guide/whats-new).
