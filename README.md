@@ -26,7 +26,7 @@ The [style guide for GOV.UK](https://www.gov.uk/design-principles/style-guide).
 
 ## What's New section for the Style guide
 
-This section is [generated from a](blob/master/config/whats-new.yaml)
+This section is [generated from a](config/whats-new.yaml)
 [YAML](http://en.wikipedia.org/wiki/YAML) file, to provide an
 [Atom](http://en.wikipedia.org/wiki/Atom_(standard))
 [feed](https://www.gov.uk/design-principles/style-guide.atom) and
