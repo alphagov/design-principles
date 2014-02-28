@@ -19,7 +19,7 @@ Assumes the GDS development environment is setup via puppet.
     ./startup.sh
 
 
-## Content Style guide
+# Content Style guide
 
 The [style guide for GOV.UK](https://www.gov.uk/design-principles/style-guide).
 
@@ -31,13 +31,13 @@ This section is [generated from a](config/whats-new.yaml)
 [feed](https://www.gov.uk/design-principles/style-guide.atom) and
 [HTML representation](https://www.gov.uk/design-principles/style-guide/whats-new).
 
-## Digital by Default Service Manual
-### How Search Works
+# Digital by Default Service Manual
+## How Search Works
 
 This app provides a search interface for the Digital by Default Service Manual.
 That search is exposed at /service-manual/search.
 
-#### Indexing content
+### Indexing content
 
 * Content for search should be placed in JSON files in ```db/index``` eg. ```db/index/service-manual.json``` (this is done during the compilation step that adds the manual content to this repository)
 * The rake task ```rake rummager:index``` will post these to the rummager service for inclusion in an index called 'service-manual'
