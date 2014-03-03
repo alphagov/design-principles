@@ -10,3 +10,6 @@ matrix:
     - rvm: 2.0.0
 notifications:
   email: false
+branches:
+  except:
+    - release
