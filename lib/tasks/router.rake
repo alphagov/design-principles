@@ -39,6 +39,8 @@ namespace :router do
       # Redirections for old content
       ["/service-manual/user-centered-design/writing-government-services", "exact", "/service-manual/content-designers/transactions-style-guide"],
       ["/service-manual/user-centered-design/writing-government-services.html", "exact", "/service-manual/content-designers/transactions-style-guide"],
+      ["/service-manual/user-centered-design/what-should-service-look-like", "exact", "/service-manual/user-centered-design/service-look-and-feel"],
+      ["/service-manual/user-centered-design/what-should-service-look-like.html", "exact", "/service-manual/user-centered-design/service-look-and-feel"],
     ].each do |path, type, destination|
       begin
         @logger.info "Registering #{type} redirect route from #{path} -> #{destination}"
