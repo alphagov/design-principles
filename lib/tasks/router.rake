@@ -37,6 +37,8 @@ namespace :router do
       %w(/designprinciples/styleguide prefix /design-principles/style-guide),
 
       # Redirections for old content
+      ["/service-manual/identity-assurance/guidance-for-government-service-providers", "exact", "/service-manual/identity-assurance"],
+      ["/service-manual/identity-assurance/guidance-for-government-service-providers.html", "exact", "/service-manual/identity-assurance"],
       ["/service-manual/user-centered-design/writing-government-services", "exact", "/service-manual/content-designers/transactions-style-guide"],
       ["/service-manual/user-centered-design/writing-government-services.html", "exact", "/service-manual/content-designers/transactions-style-guide"],
       ["/service-manual/user-centered-design/what-should-service-look-like", "exact", "/service-manual/user-centered-design/service-look-and-feel"],
