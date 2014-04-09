@@ -45,6 +45,7 @@ namespace :router do
       ["/service-manual/user-centered-design/what-should-service-look-like.html", "exact", "/service-manual/user-centered-design/service-look-and-feel"],
       ["/service-manual/user-centered-design/user-research/guerilla-testing", "prefix", "/service-manual/user-centered-design/user-research/guerrilla-testing"],
       ["/transformation/property-register", "prefix", "/transformation/land-register"],
+      ["/transformation/criminal-record-check", "prefix", "/transformation/passports"],
     ].each do |path, type, destination|
       begin
         @logger.info "Registering #{type} redirect route from #{path} -> #{destination}"
