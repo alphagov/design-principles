@@ -37,10 +37,10 @@ namespace :router do
       %w(/designprinciples/styleguide prefix /design-principles/style-guide),
 
       # Redirections for old content
-      ["/service-manual/digital-by-default/assessments-before-2014", "exact", "/service-manual/digital-by-default/"],
-      ["/service-manual/digital-by-default/assessments-before-2014.html", "exact", "/service-manual/digital-by-default/"],
-      ["/service-manual/digital-by-default/go-live-panel", "exact", "/service-manual/digital-by-default/"],
-      ["/service-manual/digital-by-default/go-live-panel.html", "exact", "/service-manual/digital-by-default/"],
+      ["/service-manual/digital-by-default/assessments-before-2014", "exact", "/service-manual/digital-by-default"],
+      ["/service-manual/digital-by-default/assessments-before-2014.html", "exact", "/service-manual/digital-by-default"],
+      ["/service-manual/digital-by-default/go-live-panel", "exact", "/service-manual/digital-by-default"],
+      ["/service-manual/digital-by-default/go-live-panel.html", "exact", "/service-manual/digital-by-default"],
       ["/service-manual/identity-assurance/guidance-for-government-service-providers", "exact", "/service-manual/identity-assurance"],
       ["/service-manual/identity-assurance/guidance-for-government-service-providers.html", "exact", "/service-manual/identity-assurance"],
       ["/service-manual/user-centered-design", "prefix", "/service-manual/user-centred-design"],
