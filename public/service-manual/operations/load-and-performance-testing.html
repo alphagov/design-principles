@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398181553" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398185484" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398181553" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398185484" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398181553" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398185484" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398181553" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398185484" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398181553" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398185484" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -194,43 +194,74 @@
     </div>
 
     <div class="inner">
-      <p>History is littered with countless government projects which collapsed under load or which worked slowly enough to frustrate users. As a government service it’s important that your systems and applications perform well and can deal with expected (and unexpected) levels of traffic. </p>
+      <p>History is littered with countless government projects that collapsed under load or worked so slowly it frustrated users.</p>
 
-<p>This means doing some capacity planning work up front but it also means doing specific load and performance testing. </p>
+<p>As a government service, it’s important that your systems and applications are highly efficient and can deal with expected (and unexpected) levels of traffic.</p>
+
+<p>This means you need to do:</p>
+
+<ul>
+  <li>capacity planning work at the beginning</li>
+  <li>specific load and performance testing</li>
+</ul>
 
 <h2 id="capacity-planning">Capacity planning</h2>
 
 <p>Capacity planning is the process of determining what amount of infrastructure and software is required to run a live system.</p>
 
-<p>Importantly you should also look at how this changes over time. Will traffic or database load increase every month as the site grows, or are some days or months (self assessment deadline or bank holidays) particularly spikey? </p>
+<p>You also need to look at how this changes over time:</p>
 
-<p>The output should help with both estimating ongoing costs as well as setting up realistic load and performance tests.</p>
+<ul>
+  <li>will traffic or database load increase every month as the site grows</li>
+  <li>are some days or months particularly spikey (self-assessment deadline or bank holidays)</li>
+</ul>
+
+<p>This planning will help with both estimating your ongoing costs as well as setting up realistic load and performance tests.</p>
 
 <h2 id="test-things-yourself-as-well-as-with-vendors">Test things yourself, as well as with vendors</h2>
 
-<p>There are several companies that offer products and services around load testing. In many cases working with these can be useful, especially for final testing or testing of mature components. </p>
+<p>Several companies offer products and services around load testing. In many cases it’s useful for you to work with these companies, especially for final testing or the testing of finished components.</p>
 
-<p>However it’s important to also have some capability within your development team to do more ad hoc load and performance testing. This is important to allow for a <a href="/service-manual/agile">rapid iterative development style</a>, otherwise scalability or performance issues may be introduced but caught late, when they are much harder to fix.</p>
+<p>Still, make sure you also have the capability within your development team to do more specific load and performance testing. Having this makes it possible to have a <a href="/service-manual/agile">rapid iterative development style</a>. Without it, your system can have scalability or performance issues that will only be caught later on – when they are much harder to fix.</p>
 
 <h2 id="types-of-testing">Types of testing</h2>
 
-<p>Although related, and tested in similar ways, load testing and performance testing are done for different reasons. It’s worth understanding the subtle difference and making sure you consider both when testing and analysing results.</p>
+<p>To make sure your system is efficient and able to deal with high levels or traffic, carry out:</p>
+
+<ul>
+  <li>performance testing</li>
+  <li>load testing</li>
+</ul>
+
+<p>Although related and tested in similar ways, load testing and performance testing are done for different reasons.</p>
+
+<p>It’s useful for you to understand the subtle differences. Make sure you consider both types when testing and analysing results.</p>
 
 <h3 id="load-testing">Load testing</h3>
 
-<p>We test sites and applications under realistic load to ensure that, when launched, they work for the people using them. This should involve testing in load in excess of expected traffic in order to simulate certain types of <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack">Denial of Service</a> (DoS) attack, including a <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack#Distributed_attack">Distributed Denial of Service</a> (DDoS) attack.</p>
+<p>This is when a site or application is given the most it can handle, while still being able to function properly.</p>
+
+<p>GDS test sites and applications under realistic load (traffic) to make sure that sites and applications work for the people using them.</p>
+
+<p>Load testing should involve testing load in excess of your expected traffic levels. Do this so you can simulate certain types of <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack">Denial of Service</a> (DoS) attack, including a <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack#Distributed_attack">Distributed Denial of Service</a> (DDoS) attack.</p>
 
 <h3 id="performance-testing">Performance testing</h3>
 
-<p>Even if a site or application is able to scale out successfully it doesn’t mean it’s fast. Site performance is a factor of many things, from the software running the site to the networks, proxies and caches involved in serving traffic over the internet. </p>
+<p>This is about testing stability and responsiveness.</p>
 
-<p>Fast sites are generally much more effective to the extent that Google now includes performance in its algorithms for determining which sites to feature in search results.</p>
+<p>Even if a site or application is able to scale out successfully it doesn’t mean it’s fast. Site performance is dependent on many factors like:</p>
+
+<ul>
+  <li>the software running the site</li>
+  <li>the networks, proxies and caches involved in serving traffic over the internet</li>
+</ul>
 
 <h2 id="further-reading">Further reading</h2>
 
 <ul>
   <li><a href="http://www.mattcutts.com/blog/site-speed/">Matt Cutts from Google on page speed</a></li>
-  <li><a href="http://www.slideshare.net/jallspaw/velocity2008-capacity-management1-484676">Capacity Planning Presentation</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Denial-of-service_attack">distributed Denial of Service attacks</a></li>
+  <li><a href="http://www.slideshare.net/jallspaw/velocity2008-capacity-management1-484676">capacity planning presentation</a></li>
 </ul>
 
 
@@ -315,10 +346,10 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398181553" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398181553" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398181553" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398181553" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398185484" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398185484" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398185484" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398185484" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
