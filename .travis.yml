@@ -13,3 +13,4 @@ notifications:
 branches:
   except:
     - release
+    - /^build-[0-9]+$/
