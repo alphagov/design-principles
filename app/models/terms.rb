@@ -10,7 +10,7 @@ class Terms
     ('a'..'z').each do |letter|
       output[letter] = []
     end
-    CSV.foreach(Rails.root.join('db', 'a-z.csv')) do |row|
+    CSV.foreach(Rails.root.join('db', 'a-z.csv'), headers: true) do |row|
       first_letter = row[0].first.downcase
       output[first_letter] << row
     end
