@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -224,7 +228,7 @@
     </div>
 
     <div class="inner">
-      <p><a href="https://www.gov.uk/government/publications/directgov-2010-and-beyond-revolution-not-evolution-a-report-by-martha-lane-fox">Martha Lane Fox’s report</a> called for government to act as a “wholesaler, as well as the retail shop front, for services and content by mandating the development and opening up of Application Programme Interfaces (<a href="http://en.wikipedia.org/wiki/Application_programming_interface"><abbr title="application programming interfaces">APIs</abbr></a>) to third parties.”</p>
+      <p><a href="/government/publications/directgov-2010-and-beyond-revolution-not-evolution-a-report-by-martha-lane-fox">Martha Lane Fox’s report</a> called for government to act as a “wholesaler, as well as the retail shop front, for services and content by mandating the development and opening up of Application Programme Interfaces (<a href="https://en.wikipedia.org/wiki/Application_programming_interface"><abbr title="application programming interfaces">APIs</abbr></a>) to third parties.”</p>
 
 <p>This section is a set of guiding principles for exposing a digital service as an <abbr title="application programming interface">API</abbr>.</p>
 
@@ -255,19 +259,19 @@ a worldwide audience is difficult. While proprietary and open technologies
 abound for machine-to-machine communication, none of them have the web’s
 interoperability, reach and ability to scale.</p>
 
-<p>Standards are powerful agreements, and nowhere are agreements more quickly established and adopted than on the web. Using <abbr title="Hypertext Transfer Protocol">HTTP</abbr> (Hypertext Transfer Protocol) and <abbr title="uniform resource locators">URLs</abbr> (uniform resource locator), the core technologies of the web, along with emergent standards such as <a href="http://www.json.org/">JSON</a> and <a href="http://en.wikipedia.org/wiki/OAuth">OAuth</a> changes a website from <a href="http://www.cabinetoffice.gov.uk/resource-library/directgov-2010-and-beyond-revolution-not-evolution">a retail shop window into a wholesaler</a>, meeting our design principle to <a href="https://www.gov.uk/design-principles#eighth">build digital services, not websites</a>.</p>
+<p>Standards are powerful agreements, and nowhere are agreements more quickly established and adopted than on the web. Using <abbr title="Hypertext Transfer Protocol">HTTP</abbr> (Hypertext Transfer Protocol) and <abbr title="uniform resource locators">URLs</abbr> (uniform resource locator), the core technologies of the web, along with emergent standards such as <a href="http://www.json.org/">JSON</a> and <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a> changes a website from <a href="/government/publications/directgov-2010-and-beyond-revolution-not-evolution-a-report-by-martha-lane-fox">a retail shop window into a wholesaler</a>, meeting our design principle to <a href="/design-principles#eighth">build digital services, not websites</a>.</p>
 
 <h3 id="give-each-thing-a-bookmarkable-url">Give each thing a bookmarkable <abbr title="uniform resource locator">URL</abbr></h3>
-<p>Expose data as a set of resources, offering a <a href="http://en.wikipedia.org/wiki/Clean_URL">clean <abbr title="uniform resource locator">URL</abbr></a> for each thing, and each collection of things.</p>
+<p>Expose data as a set of resources, offering a <a href="https://en.wikipedia.org/wiki/Clean_URL">clean <abbr title="uniform resource locator">URL</abbr></a> for each thing, and each collection of things.</p>
 
-<p>Only use <a href="http://en.wikipedia.org/wiki/Query_string">query strings</a> for <abbr title="uniform resource locators">URLs</abbr> with unordered parameters, such as options to search pages.</p>
+<p>Only use <a href="https://en.wikipedia.org/wiki/Query_string">query strings</a> for <abbr title="uniform resource locators">URLs</abbr> with unordered parameters like options to search pages.</p>
 
 <p>Consider creating <abbr title="uniform resource locators">URLs</abbr> for different granularity of resources. For example, <code>/members.json</code> could return a list of names, whilst <code>/members.json?detail=full</code> could return detailed information about each member in a list.</p>
 
 <p>These principles enable network effects which arise through linking and allow information published beyond the web, sent in alerts email, SMS, XMPP and other messages, to link back to the canonical content on the web.</p>
 
 <h3 id="use-http-methods-as-tim-intended">Use <abbr title="Hypertext Transfer Protocol">HTTP</abbr> methods as Tim intended</h3>
-<p>Ensure all <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> GET</a> requests are <a href="http://www.w3.org/2001/tag/doc/whenToUseGet.html">safe</a>, and actions which change state are conducted using a <a href="http://en.wikipedia.org/wiki/POST_(HTTP)">POST</a>, PUT or DELETE method.</p>
+<p>Ensure all <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> GET</a> requests are <a href="http://www.w3.org/2001/tag/doc/whenToUseGet.html">safe</a> and actions which change state are conducted using a <a href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST</a>, PUT or DELETE method.</p>
 
 <p>Use PUT and DELETE with caution, as they are commonly blocked by firewalls,
 intranet proxies, hotel Wi-Fi and mobile operators: always offer a POST
@@ -279,26 +283,26 @@ alternative.</p>
 <p>Offer content for each thing as a human-readable HTML, with links to content in alternative machine-readable representations:</p>
 
 <ul>
-  <li><a href="http://en.wikipedia.org/wiki/JSON">JSON</a> for convenient processing in most programming languages</li>
-  <li><a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a> and JSON with <a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> for client-side JavaScript</li>
-  <li><a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> for importing into spreadsheets</li>
-  <li><a href="http://en.wikipedia.org/wiki/Atom_(standard)">Atom</a> for <a href="http://en.wikipedia.org/wiki/Web_feed">feeds</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/JSON">JSON</a> for convenient processing in most programming languages</li>
+  <li><a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and JSON with <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> for client-side JavaScript</li>
+  <li><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> for importing into spreadsheets</li>
+  <li><a href="https://en.wikipedia.org/wiki/Atom_(standard)">Atom</a> for <a href="https://en.wikipedia.org/wiki/Web_feed">feeds</a></li>
 </ul>
 
 <p>Where possible, also offer other formats most suited to a specific domain, such as:</p>
 
 <ul>
-  <li><a href="http://en.wikipedia.org/wiki/ICalendar">iCalendar</a> for events</li>
-  <li><a href="http://en.wikipedia.org/wiki/VCard">vCard</a> for name and addresses</li>
-  <li><a href="http://en.wikipedia.org/wiki/Keyhole_Markup_Language">KML</a> and <a href="http://en.wikipedia.org/wiki/GeoRSS">geoRSS</a> for geographical data</li>
-  <li><a href="http://en.wikipedia.org/wiki/.m3u">m3u</a> for playlists</li>
+  <li><a href="https://en.wikipedia.org/wiki/ICalendar">iCalendar</a> for events</li>
+  <li><a href="https://en.wikipedia.org/wiki/VCard">vCard</a> for name and addresses</li>
+  <li><a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language">KML</a> and <a href="https://en.wikipedia.org/wiki/GeoRSS">geoRSS</a> for geographical data</li>
+  <li><a href="https://en.wikipedia.org/wiki/.m3u">m3u</a> for playlists</li>
 </ul>
 
 <p>This advice builds on our <a href="/service-manual/user-centred-design/choosing-appropriate-formats.html">more general guidance on data and content publication formats</a>.</p>
 
 <p>Include hyperlinks to alternative representations as <a href="http://www.w3.org/TR/html51/document-metadata.html#the-link-element">link headers</a> as well as in content.</p>
 
-<p>Consider also encoding metadata inside HTML content using semantic markup: <a href="http://microformats.org/">Microformats</a>, <a href="http://en.wikipedia.org/wiki/Rdfa">RDFa</a> or <a href="http://schema.org/">schema.org</a>.</p>
+<p>Consider also encoding metadata inside HTML content using semantic markup: <a href="http://microformats.org/">Microformats</a>, <a href="https://en.wikipedia.org/wiki/Rdfa">RDFa</a> or <a href="http://schema.org/">schema.org</a>.</p>
 
 <p>The representations supported by an <abbr title="application programming interface">API</abbr> for input will vary depending upon the complexity of the action, but where possible should include <code>application/x-www-form-urlencoded</code> to allow the construction of simple POST forms.</p>
 
@@ -320,13 +324,13 @@ Where possible, reuse names widely used elsewhere on the web, as with the <a hre
 
 <p>Open data increases the number of people able to use your data and service, and leads to feedback loops where consumers become motivated to resolve issues at source, feeding back issues and correction to your service and its data.</p>
 
-<p>Where content is sensitive, or requires authentication, use <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> encryption (Hypertext Transfer Protocol Secure) and a standard authentication such as <a href="http://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication</a> or <a href="http://en.wikipedia.org/wiki/OAuth">OAuth</a>, depending upon the sensitivity of your content.</p>
+<p>Where content is sensitive, or requires authentication, use <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> encryption (Hypertext Transfer Protocol Secure) and a standard authentication such as <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">basic authentication</a> or <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a>, depending upon the sensitivity of your content.</p>
 
 <h3 id="practice-service-evolution">Practice service evolution</h3>
 
-<p>Build for <a href="http://en.wikipedia.org/wiki/Forward_compatibility">forwards compatibility</a> by gracefully handling content that is unexpected. The <a href="http://en.wikipedia.org/wiki/Robustness_principle">robustness principle</a> — Postel’s Law explains the ability for the web and internet to evolve, though you shouldn’t ignore protocol errors, corrupted, or invalidly formatted content.</p>
+<p>Build for <a href="https://en.wikipedia.org/wiki/Forward_compatibility">forwards compatibility</a> by gracefully handling content that is unexpected. The <a href="https://en.wikipedia.org/wiki/Robustness_principle">robustness principle</a> – Postel’s Law – explains the ability for the web and internet to evolve, though you shouldn’t ignore protocol errors, corrupted, or invalidly formatted content.</p>
 
-<p>Preserve <a href="http://en.wikipedia.org/wiki/Backward_compatibility">backwards compatibility</a> with existing consumers of your <abbr title="application programming interface">API</abbr>, by sending expected fields and employing sensible default values for missing fields. Eschew changes to the semantics of content, eg don’t change a <code>title</code> field from meaning the title of the page, to meaning the prefix for a name to the person’s job title.</p>
+<p>Preserve <a href="https://en.wikipedia.org/wiki/Backward_compatibility">backwards compatibility</a> with existing consumers of your <abbr title="application programming interface">API</abbr>, by sending expected fields and employing sensible default values for missing fields. Eschew changes to the semantics of content, eg don’t change a <code>title</code> field from meaning the title of the page, to meaning the prefix for a name to the person’s job title.</p>
 
 <p>Where a revolutionary change is unavoidable, communicate a breaking change by changing the <abbr title="uniform resource locator">URL</abbr>.
 When changing <abbr title="uniform resource locators">URLs</abbr>, continue to honour old consumers, possibly use a <a href="https://gds.blog.gov.uk/2012/10/11/no-link-left-behind/">redirection</a>. <a href="http://www.w3.org/Provider/Style/URI.html">Cool URIs don’t change</a>.</p>
@@ -362,7 +366,7 @@ When changing <abbr title="uniform resource locators">URLs</abbr>, continue to h
 <h2 id="further-reading">Further reading</h2>
 
 <ul>
-  <li><a href="http://groups.google.com/group/api-craft"><abbr title="application programming interface">API</abbr> Craft</a> is a reasonably active public forum for discussing publishing <abbr title="application programming interfaces">APIs</abbr></li>
+  <li><a href="https://groups.google.com/group/api-craft"><abbr title="application programming interface">API</abbr> Craft</a> is a reasonably active public forum for discussing publishing <abbr title="application programming interfaces">APIs</abbr></li>
   <li>The Open Web Application Security Project (<a href="https://www.owasp.org">OWASP</a>) maintains a large repository of security information applicable to building <abbr title="application programming interfaces">APIs</abbr>, including a <a href="https://www.owasp.org/index.php/REST_Security_Cheat_Sheet">REST Security Cheat Sheet</a></li>
   <li>The White House are developing <a href="https://github.com/WhiteHouse/api-standards"><abbr title="application programming interface">API</abbr> standards</a> which are largely compatible with this guide</li>
 </ul>
@@ -450,10 +454,11 @@ When changing <abbr title="uniform resource locators">URLs</abbr>, continue to h
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

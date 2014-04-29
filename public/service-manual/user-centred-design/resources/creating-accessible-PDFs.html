@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Creating Accessible PDFs — Government Service Design Manual
+    <title>Creating accessible PDFs — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -159,7 +163,7 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Creating Accessible PDFs</h1>
+      <h1>Creating accessible PDFs</h1>
       
       <h2 class="subtitle">How to make PDFs that everyone can use</h2>
       
@@ -186,8 +190,6 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-overview"><a href="#overview">Overview</a>
-<ol>
 <li class="level-in-microsoft-word"><a href="#in-microsoft-word">In Microsoft Word</a>
 <ol>
 <li class="level-use-headings"><a href="#use-headings">Use headings</a>
@@ -249,16 +251,12 @@
 <li class="level-acknowledgements"><a href="#acknowledgements">Acknowledgements</a>
 </li>
 </ol>
-</li>
-</ol>
 
       </nav>
     </div>
 
     <div class="inner">
-      <h1 id="overview">Overview</h1>
-
-<p>The best way to create an accessible PDF is to create an accessible source document. Well structured Microsoft Word documents make good source documents for conversion to PDF. When a source document is converted into PDF it is tagged. The PDF tag tree reflects the structure of the document, and it’s this structure that assistive technologies like screen readers use to navigate the document.</p>
+      <p>The best way to create an accessible PDF is to create an accessible source document. Well structured Microsoft Word documents make good source documents for conversion to PDF. When a source document is converted into PDF it is tagged. The PDF tag tree reflects the structure of the document, and it’s this structure that assistive technologies like screen readers use to navigate the document.</p>
 
 <h2 id="in-microsoft-word">In Microsoft Word</h2>
 
@@ -280,7 +278,7 @@
 
 <p>Use left aligned text (unless the language of your document is read right to left). Don’t use justified text in your document.</p>
 
-<p>Choose a san serif font and use the styles in Word to set it as the default, with a minimum size of 12pt. If you need to include footnotes or other text of a smaller size, increase the size of the body text to 14pt, rather than reduce the size of text below 12pt.</p>
+<p>Choose a sans serif font and use the styles in Word to set it as the default, with a minimum size of 12pt. If you need to include footnotes or other text of a smaller size, increase the size of the body text to 14pt rather than reducing the size of any text below 12pt.</p>
 
 <p>Don’t use chunks of italicised or capitalised text, and don’t underline text unless it’s a link.</p>
 
@@ -320,7 +318,7 @@
 
 <h3 id="check-the-reflow-order">Check the reflow order</h3>
 
-<p>Use View &gt; Zoom &gt; reflow then check that the PDF still has a logical reading order. Note: It can sometimes be difficult to guarantee a logical reflow order for PDfs with complex content.</p>
+<p>Use View &gt; Zoom &gt; Reflow then check that the PDF still has a logical reading order. Note: It can sometimes be difficult to guarantee a logical reflow order for PDfs with complex content.</p>
 
 <h3 id="check-text-descriptions">Check text descriptions</h3>
 
@@ -344,7 +342,7 @@
 
 <h3 id="check-high-contrast">Check high contrast</h3>
 
-<p>Use File &gt; Preference &gt; Accessibility to set a high contrast colour scheme, and check the PDF remains readable. Note: It may not be possible to make high contrast mode work in all PDFs, in which case you should be prepared to make a high contrast version available on request.</p>
+<p>Use File &gt; Preference &gt; Accessibility to set a high contrast colour scheme, and check the PDF remains readable. It may not be possible to make high contrast mode work in all PDFs, in which case you should be prepared to make a high contrast version available on request.</p>
 
 <h3 id="display-document-title">Display document title</h3>
 
@@ -364,17 +362,18 @@
 
 <h3 id="use-nvda">Use NVDA</h3>
 
-<p><a href="http://www.nvda-project.org/">Non Visual Desktop Access (NVDA)</a> is a free open source screen reader for Windows. It can be installed to the desktop or run from a portable USB thumb drive.</p>
+<p><a href="http://www.nvaccess.org/">Non Visual Desktop Access (NVDA)</a> is a free open source screen reader for Windows. It can be installed to the desktop or run from a portable USB thumb drive.</p>
 
 <p>With NVDA running, open the PDF and use the following commands to check the PDF:</p>
 
 <ul>
-  <li>from the top of the PDF (with the Numlock off), use Numpad 0 + Numpad 2 to read the PDF from top to bottom and check the reading order;</li>
-  <li>use the tab key (repeatedly) to move through the PDF and check the tab order;</li>
-  <li>use the h key (repeatedly) to move through the PDF and check the heading structure;</li>
-  <li>use the g key (repeatedly) to move through the PDF and check for text descriptions.
-NB: These commands will also work with the Jaws screen reader from Freedom Scientific.</li>
+  <li>from the top of the PDF (with the Numlock off), use Numpad 0 + Numpad 2 to read the PDF from top to bottom and check the reading order</li>
+  <li>use the tab key (repeatedly) to move through the PDF and check the tab order</li>
+  <li>use the h key (repeatedly) to move through the PDF and check the heading structure</li>
+  <li>use the g key (repeatedly) to move through the PDF and check for text descriptions</li>
 </ul>
+
+<p>These commands will also work with the JAWS screen reader from Freedom Scientific.</p>
 
 <h3 id="use-voiceover">Use VoiceOver</h3>
 
@@ -383,10 +382,11 @@ NB: These commands will also work with the Jaws screen reader from Freedom Scien
 <p>With VoiceOver running open the PDF and use the following commands to check the PDF:</p>
 
 <ul>
-  <li>from the top of the PDF use a double finger down swipe, or Control + Option + a to read the PDF from top to bottom and check the reading order;</li>
-  <li>use the tab key (repeatedly) to move through the PDF and check the tab order.
-NB: VoiceOver does not provide shortcut keys for navigating by headings or graphics.</li>
+  <li>from the top of the PDF use a double finger down swipe, or Control + Option + A to read the PDF from top to bottom and check the reading order</li>
+  <li>use the tab key (repeatedly) to move through the PDF and check the tab order</li>
 </ul>
+
+<p>VoiceOver does not provide shortcut keys for navigating PDFs by headings or graphics.</p>
 
 <h2 id="acknowledgements">Acknowledgements</h2>
 
@@ -474,10 +474,11 @@ NB: VoiceOver does not provide shortcut keys for navigating by headings or graph
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

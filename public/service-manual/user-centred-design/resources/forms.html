@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -184,15 +188,13 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-writing-the-html-for-forms"><a href="#writing-the-html-for-forms">Writing the HTML for forms</a>
-</li>
 <li class="level-user-interface-patterns"><a href="#user-interface-patterns">User interface patterns</a>
 </li>
 <li class="level-aligning-controls-in-a-column"><a href="#aligning-controls-in-a-column">Aligning controls in a column</a>
 </li>
 <li class="level-aligning-controls-in-a-row"><a href="#aligning-controls-in-a-row">Aligning controls in a row</a>
 </li>
-<li class="level-pre-checked-radios-and-checkboxes"><a href="#pre-checked-radios-and-checkboxes">Pre-checked radios and checkboxes</a>
+<li class="level-pre-checked-radio-buttons-and-checkboxes"><a href="#pre-checked-radio-buttons-and-checkboxes">Pre-checked radio buttons and checkboxes</a>
 </li>
 <li class="level-wrapping-controls-in-a-label-tag"><a href="#wrapping-controls-in-a-label-tag">Wrapping controls in a label tag</a>
 </li>
@@ -220,7 +222,7 @@
 </li>
 <li class="level-examples-in-this-page"><a href="#examples-in-this-page">Examples in this page</a>
 </li>
-<li class="level-examples-on-govukhttpswwwgovuk"><a href="#examples-on-govukhttpswwwgovuk">Examples on [GOV.UK](https://www.gov.uk)</a>
+<li class="level-examples-on-govuk"><a href="#examples-on-govuk">Examples on GOV.UK</a>
 </li>
 </ol>
 
@@ -228,21 +230,19 @@
     </div>
 
     <div class="inner">
-      <h2 id="writing-the-html-for-forms">Writing the HTML for forms</h2>
-
-<p>Like other components of web pages, forms should be created following the principles of <a href="/service-manual/making-software/progressive-enhancement.html">progressive enhancement</a>.</p>
+      <p>Like other components of web pages, forms should be created following the principles of <a href="/service-manual/making-software/progressive-enhancement">progressive enhancement</a>.</p>
 
 <p>Browsers have default styling for forms. This is usually shared with the styling of the operating system user interface (UI), making it familiar to users. Ensure that any styling you add does not remove any of the native, highly accessible functionality offered by these defaults.</p>
 
-<p>The <a href="http://www.w3.org/TR/html51/">HTML5 specification</a> should be consulted for guidance on creating the HTML. This is more important than with other HTML elements as some types of user will depend on proper use of the language. For example it is important each form element has a label describing it otherwise screenreaders will not be able to identify it properly.</p>
+<p>The <a href="http://www.w3.org/TR/html51/">HTML5 specification</a> should be consulted for guidance on creating the HTML. This is more important for forms than other parts of HTML as some types of user will depend on proper use of the language. For example it is important each form element has a label describing it otherwise screenreaders will not be able to identify it properly.</p>
 
 <h2 id="user-interface-patterns">User interface patterns</h2>
 
-<p>In the forms created so far on <a href="https://www.gov.uk">GOV.UK</a> certain patterns of display have emerged as solutions to common UI problems. What follows is a guide to those patterns.</p>
+<p>In the forms created so far on GOV.UK certain patterns have emerged as solutions to common UI problems. What follows is a guide to those patterns.</p>
 
 <h2 id="aligning-controls-in-a-column">Aligning controls in a column</h2>
 
-<p>The base pattern for grouping controls is in a column with one row for each control and its label.</p>
+<p>The basic pattern for grouping controls is in a column with one row for each control and its label.</p>
 
 <div class="pattern-example">
     <div class="form-example-1">
@@ -272,21 +272,21 @@
   </div>
 </div>
 
-<h2 id="pre-checked-radios-and-checkboxes">Pre-checked radios and checkboxes</h2>
+<h2 id="pre-checked-radio-buttons-and-checkboxes">Pre-checked radio buttons and checkboxes</h2>
 
-<p>You may want to pre-check radios if:</p>
+<p>You may want to pre-check radio buttons if:</p>
 
 <ul>
-  <li>we already know the answer because it was given previously</li>
-  <li>there is a good business reason to steer users towards a particular answer, for instance ‘Contact me by email’ may be preferable to ‘Contact me by phone’ to help manage callcentre workload</li>
+  <li>you already know the answer because you were given it previously</li>
+  <li>there is a good business reason to steer users towards a particular answer, for instance ‘Contact me by email’ may be preferable to ‘Contact me by phone’ to help manage call centre workload</li>
   <li>there is a strong ‘common case’ bias towards a particular answer</li>
 </ul>
 
-<p>Do not pre-check radios if:</p>
+<p>Do not pre-check radio buttons if:</p>
 
 <ul>
-  <li>selecting none is a valid option (to be avoided for radios only, as they can’t be unchecked)</li>
-  <li>we want an unbiased opinion without leading the user</li>
+  <li>selecting none is a valid option (you should avoid using radio buttons for this as they can’t be unchecked)</li>
+  <li>you want an unbiased opinion without leading the user</li>
   <li>there is a legal requirement for the user to make a choice</li>
 </ul>
 
@@ -300,7 +300,7 @@
 
 <p>There are valid cases for top, left or right alignment of labels. The position of an element’s label does not effect how screenreaders announce it to users.</p>
 
-<p>The table below (from a <a href="http://uxdesign.smashingmagazine.com/2011/11/08/extensive-guide-web-form-usability/">great article on form design</a> in Smashing Magazine) outlines the relative advantages of each approach:</p>
+<p>The table below (from <a href="http://www.smashingmagazine.com/2011/11/08/extensive-guide-web-form-usability/">a great article on form design in Smashing Magazine</a>) outlines the relative advantages of each approach:</p>
 
 <table>
   <thead>
@@ -398,13 +398,13 @@
 
 <h2 id="styling-text-input-fields">Styling text input fields</h2>
 
-<p>When styling form elements we should try to achieve the same goals as the default styling through our own CSS.</p>
+<p>When styling form elements you should try to achieve the same goals as the default styling through our own CSS.</p>
 
-<p>A few examples of how to achieve this for input fields:</p>
+<p>You can achieve this for input fields by:</p>
 
 <ul>
-  <li>Light grey background: To make them stand out equally on a white page or coloured panel</li>
-  <li>Inset border style: By convention people type into ‘holes’ cut into the interface</li>
+  <li>using a light grey background to make them stand out equally on a white page or coloured panel</li>
+  <li>applying an inset border style as users are accustomed to typing into ‘holes’ cut in to the interface</li>
 </ul>
 
 <h2 id="fieldsets-and-legends">Fieldsets and legends</h2>
@@ -432,7 +432,7 @@
 <h3 id="nested-fieldsets">Nested fieldsets</h3>
 
 <p>There are times when you might want to treat a set of form controls like they were a single, compound control
-(a date-of-birth selector for example). One way to do this is with a nested fieldset.</p>
+(like a date of birth selector). One way to do this is with a nested fieldset.</p>
 
 <div class="pattern-example">
 
@@ -522,7 +522,7 @@
     </div>
 </div>
 
-<p>See the <a href="/service-manual/user-centred-design/resources/buttons.html">separate page on buttons</a> for more detailed guidance.</p>
+<p>See the <a href="/service-manual/user-centred-design/resources/buttons">separate page on buttons</a> for more detailed guidance.</p>
 
 <h2 id="validation-messages">Validation messages</h2>
 
@@ -544,48 +544,27 @@
     </div>
 </div>
 
-<p>Each link should jump the user down to the corresponding form control.</p>
+<p>Each link should jump the user down to the corresponding form control, where the control should display a red validation message.</p>
 
-<p>The red bar visually connects the summary to the messages in the form and aids quick scanning of the form for errors.</p>
+<p>The red summary visually connects the summary to the error messages in the form and aids quick scanning of the form for errors.</p>
 
 <h1 id="examples-in-this-page">Examples in this page</h1>
 
-<p>To see all the examples above in a single form, check out the <a href="/service-manual/user-centred-design/resources/registration-form.html">registration form example</a>. The CSS for those styles is derived from this <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_forms.scss">SASS file</a>.</p>
+<p>To see all the examples above in a single form, check out the <a href="/service-manual/user-centred-design/resources/registration-form">registration form example</a>. The CSS for those styles is derived from <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_forms.scss">this Sass file</a>.</p>
 
-<h1 id="examples-on-govukhttpswwwgovuk">Examples on <a href="https://www.gov.uk">GOV.UK</a></h1>
+<h1 id="examples-on-govuk">Examples on GOV.UK</h1>
 
-<p>Examples of forms currently in use across <a href="https://www.gov.uk">GOV.UK</a> are:</p>
+<p>Examples of forms currently in use across GOV.UK are:</p>
 
 <ul>
-  <li><a href="https://www.gov.uk/contact/govuk">Contact page</a></li>
-  <li><a href="https://www.gov.uk/contact/foi">Freedom of information request form</a></li>
-  <li><a href="https://www.gov.uk/search?q=tax">Search results page</a></li>
-  <li><a href="https://www.gov.uk/notapage">404 page</a></li>
-  <li><a href="https://www.gov.uk/vat">Report a problem form</a> (click the ‘Report a problem’ link to view)</li>
-  <li><a href="https://www.gov.uk/licence-finder/sectors">Licence finder</a></li>
-  <li><a href="https://www.gov.uk/trade-tariff/sections">Trade Tariff</a></li>
+  <li><a href="/contact/govuk">Contact page</a></li>
+  <li><a href="/contact/foi">Freedom of information request form</a></li>
+  <li><a href="/search?q=tax">Search results page</a></li>
+  <li><a href="/notapage">404 page</a></li>
+  <li><a href="/vat">Report a problem form</a> (click ‘Is there anything wrong with this page?’ at the bottom to view the form)</li>
+  <li><a href="/licence-finder/sectors">Licence finder</a></li>
+  <li><a href="/trade-tariff/sections">Trade Tariff</a></li>
 </ul>
-
-<script>
-  $(function() {
-
-    // Style toggle for pattern examples
-    // Takes the text of the clicked 'option' and assigns it as
-    // a class to the element named in the 'data-for' attribute
-    $('.class-toggle .option').click(function(){
-      $('.class-toggle .option').removeClass('selected');
-      $(this).addClass('selected');
-      var selectedClass = $(this).text();
-      var selectedElement = "#" + $(this).parents('.class-toggle').data("for");
-      $(selectedElement).removeClass().addClass(selectedClass);
-      return false;
-    });
-
-
-
-  });
-</script>
-
 
 
       <nav class="page-tools">
@@ -669,10 +648,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

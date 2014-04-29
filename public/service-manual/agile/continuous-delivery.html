@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -216,9 +220,9 @@
   <li>test expectations about your end product</li>
 </ul>
 
-<p>If your software isn’t ready to be used then it’s not creating any real value. Treat it as stock piling up - and stock is waste.</p>
+<p>If your software isn’t ready to be used then it’s not creating any real value. Treat it as stock piling up – and stock is waste.</p>
 
-<p>The <a href="http://en.wikipedia.org/wiki/Lean_software_development">Lean software development philosophy</a> tells us to:</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Lean_software_development">Lean software development philosophy</a> tells us to:</p>
 
 <blockquote>
   <p>Test all iterations of your software, either through public user testing or automated testing (using separate software to perform the testing).</p>
@@ -231,7 +235,7 @@
 
 <p>Don’t plan production release slots far in advance. You can’t be certain what will be ready in 6 months’ time.</p>
 
-<p>Make your release planning simpler - make sure it’s flexible enough that any feature or update to your software can be deployed when it’s ready. Then, if a feature needs to miss a release slot, it can easily be rescheduled for tomorrow or next week, rather than in 6 months, or more if the next slot is already full.</p>
+<p>Make your release planning simpler – make sure it’s flexible enough that any feature or update to your software can be deployed when it’s ready. Then, if a feature needs to miss a release slot, it can easily be rescheduled for tomorrow or next week, rather than in 6 months, or more if the next slot is already full.</p>
 
 <p>Another advantage is being able to quickly respond to security patches or similar changes in underlying  libraries or frameworks used by your application. You can quickly make a change and watch the update flow through the various gates in your deployment pipeline, confident that nothing has been broken.</p>
 
@@ -256,7 +260,7 @@
 </ul>
 
 <h3 id="the-commit-stage">The commit stage</h3>
-<p>When your developer checks into <a href="/service-manual/making-software/version-control.html">version control</a> (where all code, including previous versions, are stored), <a href="/service-manual/making-software/testing-in-agile.html">a range of tests</a> should be run against the latest version of the code. Any quick, easy-to-identify defects, like <a href="http://en.wikipedia.org/wiki/Compilation_error">compile errors</a> or <a href="https://en.wikipedia.org/wiki/Unit_testing">unit test failures</a>, will be found at this stage. If the tests pass, the code progresses to the next stage and should be considered for release into production.</p>
+<p>When your developer checks into <a href="/service-manual/making-software/version-control">version control</a> (where all code, including previous versions, are stored), <a href="/service-manual/making-software/testing-in-agile">a range of tests</a> should be run against the latest version of the code. Any quick, easy-to-identify defects, like <a href="https://en.wikipedia.org/wiki/Compilation_error">compile errors</a> or <a href="https://en.wikipedia.org/wiki/Unit_testing">unit test failures</a> will be found at this stage. If the tests pass, the code progresses to the next stage and should be considered for release into production.</p>
 
 <h3 id="shared-sandbox-environment">Shared sandbox environment</h3>
 <p>Send the code to a shared <a href="/service-manual/making-software/sandbox-and-staging-servers.html">sandbox</a> (testing) environment. This is the first environment where the application is deployed and run. It’s also the first stage where it can be visually inspected for <a href="/service-manual/agile/quality.html">quality</a> by anybody on the team.</p>
@@ -364,10 +368,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

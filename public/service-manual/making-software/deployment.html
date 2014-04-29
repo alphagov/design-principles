@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -383,7 +387,7 @@ be deployed to production without having been tested in every previous
 environment first.</p>
 
 <p>This does not need to be a strict linear ordering. Some sets of tests
-may be run in parallel - such as user acceptance testing and
+may be run in parallel – such as user acceptance testing and
 performance testing. However there is very often one single production
 environment which is later than all others, and one single entry point
 which precedes all others.</p>
@@ -411,7 +415,7 @@ and start services until the machine is in a good state.</p>
 manual changes to configuration, your system must be robust enough to
 take a machine from an unknown state to a known state. There are a
 number of tools for managing your infrastructure configuration,
-such as <a href="http://cfengine.com/">CFEngine</a>, <a href="http://www.opscode.com/chef/">Chef</a>, and <a href="https://puppetlabs.com/">Puppet</a>. Each of these is
+such as <a href="http://cfengine.com/">CFEngine</a>, <a href="http://www.getchef.com/chef/">Chef</a>, and <a href="https://puppetlabs.com/">Puppet</a>. Each of these is
 designed such that they can be run repeatedly on a machine to
 alleviate configuration drift.</p>
 
@@ -441,7 +445,7 @@ discarded. Configuration drift is avoided because servers have short
 lifespans and are frequently replaced by new instances. This is a
 natural fit in virtualised environments and where the application
 artefact is a virtual machine template with the app pre-deployed, but
-can also be achieved using containerisation technology such as <a href="http://lxc.sourceforge.net/">lxc</a>.</p>
+can also be achieved using containerisation technology such as <a href="https://linuxcontainers.org/">lxc</a>.</p>
 
 <h2 id="repeatable-deployments-of-code">Repeatable deployments of code</h2>
 
@@ -502,7 +506,7 @@ servers, the database server does not need to know the  SSL (secure sockets laye
 keys for the site, nor does the web server need to know the database credentials.</p>
 
 <p>If you are using hiera, then <a href="https://github.com/crayfishx/hiera-gpg">hiera-gpg</a> provides a solution to this
-problem. It allows the injection of values from <a href="http://www.gnupg.org/">GPG</a>-encrypted
+problem. It allows the injection of values from <a href="https://www.gnupg.org/">GPG</a>-encrypted
 files. Only those with an appropriate private key can access the
 contents. By creating a GPG key for each host in an environment, you
 can decide on a host-by-host basis which host can access which sets of
@@ -594,7 +598,7 @@ test failure and cancel the deployment or roll back to the previous
 version.</p>
 
 <p>An ideal solution would not even add the new version of the
-application to the production <a href="http://www.wikipedia.org/wiki/Load_balancer">load balancer</a> until it has been smoke
+application to the production <a href="https://en.wikipedia.org/wiki/Load_balancer">load balancer</a> until it has been smoke
 tested and verified good. If the application fails the smoke test, it
 is simply discarded; no rollback is necessary, and no interruption in
 service happens. This works particularly well with the immutable
@@ -699,10 +703,11 @@ deployment of a fix to production.</p>
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -188,17 +192,11 @@
 </li>
 <li class="level-where-to-find-our-code"><a href="#where-to-find-our-code">Where to find our code</a>
 <ol>
-<li class="level-static"><a href="#static">Static</a>
-</li>
-<li class="level-frontend"><a href="#frontend">Frontend</a>
+<li class="level-govuktemplate"><a href="#govuktemplate">govuk_template</a>
 </li>
 <li class="level-govukfrontendtoolkit"><a href="#govukfrontendtoolkit">govuk_frontend_toolkit</a>
 </li>
 </ol>
-</li>
-<li class="level-linking-to-shared-assets"><a href="#linking-to-shared-assets">Linking to shared assets</a>
-</li>
-<li class="level-keeping-shared-assets-up-to-date"><a href="#keeping-shared-assets-up-to-date">Keeping shared assets up-to-date</a>
 </li>
 </ol>
 
@@ -215,73 +213,53 @@ branding on multiple services.</p>
 to share your frontend assets so that they can be easily reused as
 required.</p>
 
-<p>There are two additional benefits to this approach:</p>
+<p>There are two more benefits to this approach:</p>
 
 <ul>
-  <li>Single serve assets are
-<a href="https://developer.yahoo.com/performance/rules.html#num_http">recommended by Yahoo! as a performance best practice</a></li>
+  <li><a href="https://developer.yahoo.com/performance/rules.html#num_http">Yahoo recommends minimising HTTP requests</a>
+to improve performance</li>
   <li>All used libraries are kept at known versions, which guarantees
 compatibility and reduces the risk of security vulnerabilities
-through external server compromise.</li>
+through external server compromise</li>
 </ul>
 
 <h2 id="where-to-find-our-code">Where to find our code</h2>
 
-<p>The templates on <a href="https://www.gov.uk">GOV.UK</a> are constantly changing as we react to user
+<p>The templates on GOV.UK are constantly changing as we react to user
 feedback and evolving best practice, so the best place to find them is
-on our open source frontend libraries - more explanation of these to
-follow:</p>
+by looking at the code we publish:</p>
 
 <ul>
-  <li><a href="https://github.com/alphagov/static">Static</a></li>
-  <li><a href="https://github.com/alphagov/frontend">Frontend</a></li>
+  <li><a href="https://github.com/alphagov/govuk_template">govuk_template</a></li>
   <li><a href="https://github.com/alphagov/govuk_frontend_toolkit">govuk_frontend_toolkit</a></li>
 </ul>
 
-<h3 id="static">Static</h3>
+<h3 id="govuktemplate">govuk_template</h3>
 
-<p>The <a href="https://github.com/alphagov/static">static repository</a> contains
-our
-<a href="https://github.com/alphagov/static/tree/master/app/views/root">wrapper templates</a>,
-our
-<a href="https://github.com/alphagov/static/tree/master/app/assets/stylesheets">basic CSS</a>,
-and our
-<a href="https://github.com/alphagov/static/tree/master/app/assets/javascripts">basic Javascript</a>. Anything
-added to this repository is built to be used across the entire GOV.UK
-website and is used to provide a consistent look and feel.</p>
+<p>The GOV.UK template is a project that provides the GOV.UK header and footer, as well as associated
+assets. It generates a variety of output formats and you can extend it with more depending on
+the language your service is written in.</p>
 
-<h3 id="frontend">Frontend</h3>
+<p>GOV.UK’s <a href="https://github.com/alphagov/static/blob/release_1994/Gemfile#L27-30">static</a> consumes the Ruby version of the template application, which in turn
+provides shared resources like footer links across the various frontend apps that run GOV.UK.</p>
 
-<p>The <a href="https://github.com/alphagov/frontend">frontend repository</a>
-contains the wrapper templates and views for many of the various pages
-used across GOV.UK. It gives a good indication as to how to structure
-HTML and assets together.</p>
+<p>The Performance Platform’s <a href="https://github.com/alphagov/spotlight">Node.js application</a> uses the `` version of the template.</p>
+
+<p>You should be able to become a consumer of the template in exactly the same way these two projects
+are, by adding it to your application’s dependencies.</p>
 
 <h3 id="govukfrontendtoolkit">govuk_frontend_toolkit</h3>
 
-<p>Please see
-<a href="/service-manual/user-centred-design/resources/sass-repositories.html">Sass repositories</a> for
+<p>The service manual article on
+<a href="/service-manual/user-centred-design/resources/sass-repositories">Sass repositories</a> has
 more information on this repository.</p>
 
-<h2 id="linking-to-shared-assets">Linking to shared assets</h2>
+<p>GDS is continuously improving GOV.UK, which means that template and asset code changes regularly.</p>
 
-<p>The template code contains direct links to CSS and JavaScript assets hosted on
-the <a href="https://www.gov.uk">GOV.UK</a> domain. We recommend that you leave these links as is whilst you
-develop your service (as opposed to linking to your own copies of these files).
-That way, you’ll always be using the latest version of the assets and when they
-change you can identify and resolve any conflicts immediately.</p>
-
-<p>Once the service is ready for production we’ll need to decide whether you should
-continue to link to the assets in this way or whether you should now use your
-own copies of them. Please contact GDS to discuss this at the appropriate time.</p>
-
-<h2 id="keeping-shared-assets-up-to-date">Keeping shared assets up-to-date</h2>
-
-<p><a href="https://www.gov.uk">GOV.UK</a> is continuously being improved, which means that template and asset code
-changes regularly. All services on GOV.UK are expected to keep their templates
-and assets up-to-date. How you do this will depend on how you implement the
-templates and where your service is hosted. Please contact the GDS team to
-discuss options.</p>
+<p>All services on GOV.UK are expected to keep their templates and assets updated. How you do this will
+depend on how your frontend is implemented, but if you include the template and the toolkit as
+dependencies in your application it should be relatively easy to update as GDS publishes new
+versions. Please contact the GDS team for help or advice.</p>
 
 
       <nav class="page-tools">
@@ -365,10 +343,11 @@ discuss options.</p>
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

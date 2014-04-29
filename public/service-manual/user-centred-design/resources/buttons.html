@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -240,7 +244,7 @@
 
 <h2 id="button-colours">Button colours</h2>
 
-<p>Buttons should have a default colour (such as green). Alternative colours should be possible but only to indicate different actions.</p>
+<p>Buttons should have a default colour (like green). Alternative colours should be possible but only to indicate different actions.</p>
 
 <h3 id="example">Example</h3>
 
@@ -288,7 +292,7 @@
 </div>
 
 <ul>
-  <li>Secondary actions modify the current view</li>
+  <li>Secondary actions change the current view</li>
   <li>They don’t move users to the next step</li>
   <li>There can be multiple secondary actions per page</li>
   <li>They should be less prominent than the primary action</li>
@@ -305,7 +309,7 @@
   <li>Actions that have irreversible effects should look ‘scary’</li>
   <li>Keep them away from the other actions</li>
   <li>Make the action reversible / ‘undo’-able</li>
-  <li>If that isn’t possible to implement, use an alert to check that the user really wants to do this</li>
+  <li>If that isn’t possible to implement, ask the user for confirmation before continuing with the action</li>
 </ul>
 
 <h3 id="launch-button">Launch button</h3>
@@ -317,7 +321,7 @@
 </div>
 
 <ul>
-  <li>Use to initiate a transaction</li>
+  <li>Use to start a transaction</li>
   <li>Let users know if they’ll be taken to a different website</li>
 </ul>
 
@@ -334,13 +338,15 @@
 <p>Don’t use:</p>
 
 <ul>
-  <li>technical terms - eg use ‘delete’, not ‘form reset’, use one of the common actions below instead of ‘submit’</li>
-  <li>lots of words - eye tracking shows users are less likely to read long labels</li>
+  <li>technical terms – eg use ‘delete’, not ‘form reset’, use one of the common actions below instead of ‘submit’</li>
+  <li>lots of words – eye tracking shows users are less likely to read long labels</li>
 </ul>
+
+<p>A simple guide is to see if the text passes the <a href="http://www.uxbooth.com/articles/the-grammar-of-interactivity/">‘Would you like to … ? /  I would like to …’</a> test.</p>
 
 <h3 id="common-actions">Common actions</h3>
 
-<p>Many of these can be used in place of ‘Submit’, which is a technical term to be avoided.</p>
+<p>Many of these can be used in place of ‘Submit’, which is a technical term that you should avoid.</p>
 
 <dl>
   <dt>‘Start now’</dt>
@@ -361,11 +367,11 @@
 
 <h3 id="compound-actions">Compound actions</h3>
 
-<p>Sometimes you want a single button to perform more than one action. For example, ‘Save and quit’.</p>
+<p>Sometimes you want a single button to perform more than one action like ‘Save and quit’.</p>
 
 <p>It’s worth trying to avoid this situation but if you can’t, use common sense. If one of the actions is obvious or not important to know, don’t mention it.</p>
 
-<p>For example, if a button saves the current state and moves the user to the next screen, don’t use ‘Save and next’, just use ‘Next’, because users will assume the former. When in doubt, test with real users.</p>
+<p>For example, if a button saves the current state and moves the user to the next screen, don’t use ‘Save and next’, just use ‘Next’, because users will assume the former. When in doubt, <a href="/service-manual/user-centred-design/user-research">test with real users</a>.</p>
 
 
 
@@ -450,10 +456,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

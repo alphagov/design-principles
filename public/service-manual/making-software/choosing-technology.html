@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -261,11 +265,11 @@
 <p>In general, you should avoid making long-term commitments to any particular technology, product or supplier until you fully understand the problem you’re trying to solve. Even then, you should make sure you maximise your future development options and avoid technology lock-in if possible.</p>
 
 <h2 id="when-to-make-new-software-versus-using-existing-software">When to make new software versus using existing software</h2>
-<p>Where there is an existing software solution which solves your problem, you should certainly consider using it. You’re more likely to use existing software than to make new software when you have a commodity need. You may even be facing a niche problem that’s peculiar to government which has already been solved by another part of the government – or indeed another government - and <a href="https://github.com/alphagov/">released as open source software</a>. </p>
+<p>Where there is an existing software solution which solves your problem, you should certainly consider using it. You’re more likely to use existing software than to make new software when you have a commodity need. You may even be facing a niche problem that’s peculiar to government which has already been solved by another part of the government – or indeed another government – and <a href="https://github.com/alphagov/">released as open source software</a>. </p>
 
 <p>Development tools, build tools, utility libraries, databases and monitoring tools are all examples of software where many projects will have the same need, and it makes little sense to reinvent the wheel.</p>
 
-<p>For software that serves a rare or niche need you’re less likely to find a tool which serves and will continue to serve your needs. In this situation you will likely have to create new software. Software that’s developed to meet the needs of the government – whether it’s developed by government employees, contractors or by a supplier - should be shared wherever possible under a permissive, – compatible open source licence (eg <a href="http://opensource.org/licenses/MIT">MIT</a>/<a href="http://directory.fsf.org/wiki/License:X11">X11</a> or <a href="http://directory.fsf.org/wiki/License:BSD_3Clause">3-clause BSD</a>) so that it can be widely used and improved. </p>
+<p>For software that serves a rare or niche need you’re less likely to find a tool which serves and will continue to serve your needs. In this situation you will likely have to create new software. Software that’s developed to meet the needs of the government – whether it’s developed by government employees, contractors or by a supplier – should be shared wherever possible under a permissive, – compatible open source licence (eg <a href="http://opensource.org/licenses/MIT">MIT</a>/<a href="http://directory.fsf.org/wiki/License:X11">X11</a> or <a href="http://directory.fsf.org/wiki/License:BSD_3Clause">3-clause BSD</a>) so that it can be widely used and improved. </p>
 
 <p>This allows the software to be used and improved by anyone in the world who has a similar need. It’s important that other governments in particular have the opportunity to reuse the software you’ve created, because everyone deserves to have <a href="/service-manual/digital-by-default">digital services so good that people prefer to use them</a>.</p>
 
@@ -300,7 +304,7 @@
 <h2 id="coding-in-the-open">Coding in the open</h2>
 <p>A successful open source project will garner contributions from a large number of sources, both inside and outside of a single organisation. Allow developers time to review contributions, and answer issues and discussion raised by others using the software.</p>
 
-<p>Larger open source projects often evolve an extension model to enable others to continue to use the service in a variety of often unexpected and possibly undesirable ways while keeping the core project coherent under the editorship of a small, trusted group of <a href="http://en.wikipedia.org/wiki/Committer">committers</a>.</p>
+<p>Larger open source projects often evolve an extension model to enable others to continue to use the service in a variety of often unexpected and possibly undesirable ways while keeping the core project coherent under the editorship of a small, trusted group of <a href="https://en.wikipedia.org/wiki/Committer">committers</a>.</p>
 
 <p>Make sure developers have:</p>
 
@@ -308,7 +312,7 @@
   <li>the ability to install and experiment with open source software</li>
   <li>environments to easily publish prototype services on the web</li>
   <li>convenient access to a wide variety of network connected devices for testing websites</li>
-  <li>unrestricted access to collaboration tools like <a href="https://github.com">GitHub</a>, <a href="http://stackoverflow.com/">Stack Overflow</a> and <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a></li>
+  <li>unrestricted access to collaboration tools like <a href="https://github.com">GitHub</a>, <a href="https://stackoverflow.com/">Stack Overflow</a> and <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a></li>
 </ul>
 
 <p>Take every opportunity to contribute back to open source projects you use. Contributions may be in the form of:</p>
@@ -323,9 +327,9 @@
   <li>giving public attribution to projects </li>
 </ul>
 
-<p>Cite the open source code you use, as in the <a href="https://gds.blog.gov.uk/govuk-launch-colophon/">GOV.UK colophon</a> - you can read more about this approach on the <a href="https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/">GDS blog entry about coding in the open</a>.</p>
+<p>Cite the open source code you use, as in the <a href="https://gds.blog.gov.uk/govuk-launch-colophon/">GOV.UK colophon</a> – you can read more about this approach on the <a href="https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/">GDS blog entry about coding in the open</a>.</p>
 
-<p>Keys, passwords and other secrets must always be stored safely and securely away from source code <a href="http://en.wikipedia.org/wiki/Kerckhoffs%27_principle">following Kerckhoffs’s principle</a>. This separation of project code from deployed instances of a project is good development practice regardless of whether or not the software itself is shared in public.</p>
+<p>Keys, passwords and other secrets must always be stored safely and securely away from source code <a href="https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle">following Kerckhoffs’s principle</a>. This separation of project code from deployed instances of a project is good development practice regardless of whether or not the software itself is shared in public.</p>
 
 <p>For projects with a high-impact level, particularly with a small number of participating developers, it’s advisable to have a private space to discuss security issues and develop a patch. This practice will prevent flagging a vulnerability before a fix has been deployed.</p>
 
@@ -425,10 +429,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

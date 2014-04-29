@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398245961" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1398768893" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1398245961" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1398768893" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -131,9 +131,13 @@
     </div>
 
     <section id="user-satisfaction-survey" class="visible">
-  <div class="wrapper">
-    <h1>Tell us what you think</h1>
-    <p><a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">Take the 3 minute survey</a>. This will open a short survey on another website</p>
+  <div class="inner">
+    <p>
+    	<a href="https://www.surveymonkey.com/s/servicemanual" id="take-survey" target="_blank">
+    		<strong>Tell us what you think</strong> 
+    		<span>(opens a 3 minute survey on another website)</span>
+    	</a>
+    </p>
   </div>
 </section>
 
@@ -184,12 +188,6 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-guidance"><a href="#guidance">Guidance</a>
-<ol>
-<li class="level-dont-use-this"><a href="#dont-use-this">Don't use this:</a>
-</li>
-</ol>
-</li>
 <li class="level-using-the-mixin"><a href="#using-the-mixin">Using the mixin</a>
 </li>
 <li class="level-simple-example"><a href="#simple-example">Simple example</a>
@@ -216,7 +214,7 @@
 </li>
 </ol>
 </li>
-<li class="level-cross-browser-support"><a href="#cross-browser-support">Cross browser support</a>
+<li class="level-browser-support"><a href="#browser-support">Browser support</a>
 </li>
 </ol>
 
@@ -224,31 +222,32 @@
     </div>
 
     <div class="inner">
-      <h2 id="guidance">Guidance</h2>
+      <p>Use this mixin if you need to arrange content in a grid or split part of a page into columns. You might want to do this for an image gallery, product catalogue or home page layout. It’s particularly useful if you don’t want to explicitly represent rows or columns in the markup.</p>
 
-<p>Use this mixin if you need to arrange content in a grid, or split part of a page into columns. You might want to do this for an image gallery, product catalogue or home page layout for example. It’s particularly useful if you don’t want to explicitly represent rows or columns in the markup.</p>
-
-<h3 id="dont-use-this">Don’t use this:</h3>
+<p>Don’t use this</p>
 
 <ul>
-  <li>When a simple linear layout will work</li>
-  <li>When a data table is more appropriate</li>
-  <li>For full page layouts (it’s not that kind of grid)</li>
+  <li>when a simple linear layout will work</li>
+  <li>when a data table is more appropriate</li>
+  <li>for full page layouts (it’s not that kind of grid)</li>
 </ul>
 
 <h2 id="using-the-mixin">Using the mixin</h2>
 
-<p>The <a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_grid.scss">mixin</a> accepts the following arguments:</p>
+<p><a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_grid.scss">The grid mixin</a> accepts the following arguments:</p>
 
-<p><code>$columns</code> : The number of columns in the grid, or an array representing the relative width of each column.</p>
+<dl>
+  <dt><code>$columns</code></dt>
+  <dd>The number of columns in the grid, or an array representing the relative width of each column.</dd>
+  <dt><code>$min-height</code></dt>
+  <dd>An optional minimum height for grid elements. Useful if your grid elements contain varied amounts of content.</dd>
+  <dt><code>$max-rows</code></dt>
+  <dd>Adds IE7 and IE8 support for grids with varied column widths. See below for details.</dd>
+</dl>
 
-<p><code>$min-height</code> : An optional minimum height for grid elements. Useful if your grid elements contain varied amounts of content.</p>
-
-<p><code>$max-rows</code> : Adds IE7,8 support for grids with varied column widths. See below for details.</p>
-
-<p>The mixin is tag-agnostic, so the elements can be list items, divs, paragraphs etc.
-Avoid applying border effects to the elements as this will throw out the widths.
-Instead, style the contents of those elements.</p>
+<p>The mixin is tag-agnostic, so the elements can be list items, divs, paragraphs or anything else.
+Avoid applying border effects to the elements as this will make the width calculation incorrect.
+Style the contents of those elements instead.</p>
 
 <p>At mobile screen sizes the grid elements switch to being full-width.</p>
 
@@ -267,32 +266,32 @@ Instead, style the contents of those elements.</p>
 
 <h3 id="html">HTML</h3>
 
-<pre><code>  &lt;ul class="grid example-1"&gt;
-    &lt;li&gt;&lt;p&gt;Item 1&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 2&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 3&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 4&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 5&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 6&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 7&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;Item 8&lt;/p&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+<pre><code>&lt;ul class="grid example-1"&gt;
+  &lt;li&gt;&lt;p&gt;Item 1&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 2&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 3&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 4&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 5&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 6&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 7&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Item 8&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
 
 <h3 id="sass">Sass</h3>
 
-<pre><code>  @import "grid"
+<pre><code>@import "grid"
 
-  .example-1{
-    @include grid(4);
-  }
+.example-1{
+  @include grid(4);
+}
 </code></pre>
 
 <h2 id="regular-grids">Regular grids</h2>
 
-<p>You can create grids of equally-sized elements by passing in a single value representing the number of elements in a row.</p>
+<p>You can create grids of equally sized elements by passing in a single value representing the number of elements in a row.</p>
 
-<p>The following examples are for demonstration purposes only, and not ones we’d ever recommend.</p>
+<p>The following examples are for demonstration purposes only and not ones we’d ever recommend.</p>
 
 <h3 id="example">Example</h3>
 
@@ -329,11 +328,11 @@ Instead, style the contents of those elements.</p>
 
 <h2 id="irregular-grids">Irregular grids</h2>
 
-<p>You can create grids of unequally-sized elements by passing in an array representing the relative widths of the elements in a row.</p>
+<p>You can create grids of unequally sized elements by passing in an array representing the relative widths of the elements in a row.</p>
 
 <h3 id="ratio-example">5,3 ratio example</h3>
 
-<pre><code>    @include grid((5,3), $max-rows: 2);
+<pre><code>@include grid((5,3), $max-rows: 2);
 </code></pre>
 
 <ul class="grid example-5">
@@ -345,7 +344,7 @@ Instead, style the contents of those elements.</p>
 
 <h3 id="ratio-example-1">2,2,1 ratio example</h3>
 
-<pre><code>    @include grid((2,2,1), $max-rows: 2);
+<pre><code>@include grid((2,2,1), $max-rows: 2);
 </code></pre>
 
 <ul class="grid example-6">
@@ -359,7 +358,7 @@ Instead, style the contents of those elements.</p>
 
 <h3 id="ratio-example-2">2,1 ratio example</h3>
 
-<pre><code>    @include grid((2,1), $max-rows: 2);
+<pre><code>@include grid((2,1), $max-rows: 2);
 </code></pre>
 
 <ul class="grid example-7">
@@ -369,14 +368,15 @@ Instead, style the contents of those elements.</p>
   <li><p>Item 4</p></li>
 </ul>
 
-<h2 id="cross-browser-support">Cross browser support</h2>
+<h2 id="browser-support">Browser support</h2>
 
-<ul>
-  <li>Chrome, FF, Safari, IE9: All good</li>
-  <li>IE 7,8: Regular grids are fine. Irregular grids use first-child rather than nth-child. For multiple rows you’ll need to pass in a $max-rows variable representing the maximum number of rows in the grid.</li>
-  <li>IE 6: All grid elements display 100% width</li>
-</ul>
+<p>This Sass is supported perfectly by Chrome, Firefox, Safari and Internet Explorer 9 and higher.</p>
 
+<p>In Internet Explorer 7 and 8, regular grids are fine but irregular grids use <code>first-child</code> rather
+than <code>nth-child</code>. For multiple rows you’ll need to pass in a <code>$max-rows</code> variable representing the
+maximum number of rows in the grid.</p>
+
+<p>In Internet Explorer 6, all grid elements take up the entire width of the page.</p>
 
 
       <nav class="page-tools">
@@ -460,10 +460,11 @@ Instead, style the contents of those elements.</p>
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1398245961" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398245961" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1398768893" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1398768893" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
