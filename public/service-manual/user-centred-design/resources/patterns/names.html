@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Form example -- Registration — Government Service Design Manual
+    <title>People's names — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674229" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -75,7 +75,7 @@
 
   </head>
 
-  <body class="gsdm-body mainstream full-width detailed-guidance registration ">
+  <body class="gsdm-body mainstream full-width wide design-pattern ">
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -149,9 +149,11 @@
 <div id="global-breadcrumb" class="header-context">
 	<ol role="breadcrumbs" class="group">
 	  
-	  <li><a href="/service-manual">Home</a></li>
+	  <li><a href="/service-manual/index.html">Home</a></li>
 	  
-	  <li><a href="/service-manual/user-centred-design">User centred design</a></li>
+	  <li><a href="/service-manual/user-centred-design/index.html">User centred design</a></li>
+	  
+	  <li><a href="/service-manual/user-centred-design/resources/patterns/index.html">Design patterns</a></li>
 	  
 	</ol>
 </div>
@@ -160,201 +162,114 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Form example -- Registration</h1>
-      
-      <h2 class="subtitle">Build to the GOV.UK style</h2>
+      <h1><span>Design pattern</span>People's names</h1>
       
     </div>
   </header>
 
   <div class="article-container group">
-    <div class="contents">
-      <nav>
-        <h2>Contents</h2>
-
-        <ol>
-<li class="level-example"><a href="#example">Example</a>
-</li>
-</ol>
-
-      </nav>
-    </div>
-
     <div class="inner">
-      <p>This example form incorporates most of the basic user interface (UI) patterns for forms and lets you play with different label alignments.</p>
+      <p class="intro">Be sensitive to different cultural conventions when asking for people’s names.
+If you can, use a single name field.</p>
 
-<p>For a detailed breakdown of each element and how to code and style it, see our <a href="/service-manual/user-centred-design/resources/forms">forms design pattern page</a>.</p>
+<h2 id="single-name-field">Single name field</h2>
 
-<p>Click the label alignment options in the snippet below to see how they affect the layout.</p>
+<p>A single text field where the user can enter their full name, including title if they wish.</p>
 
-<h3 id="example">Example</h3>
-
-<div class="pattern-example">
-
-  <p class="class-toggle" data-for="form-example-2">
-    <strong>Label alignment: </strong>
-    <span class="option selected">top</span> |
-    <span class="option">left</span> |
-    <span class="option">right</span>
-  </p>
-
-    <div id="form-example-2" class="top">
-      <div class="validation-summary">
-        <h1>There was a problem submitting the form</h1>
-        <p>Please try the following:</p>
-        <ol>
-          <li><a href="#error1">Enter your first name</a></li>
-          <li><a href="#error2">Enter your last name</a></li>
-          <li><a href="#error3">Re-type your email address</a></li>
-          <li><a href="#error4">Select at least one area of interest</a></li>
-        </ol>
-      </div>
-      <form>
-        <fieldset>
-          <legend>Your details</legend>
-          <p class="group">
-            <label for="title">Title</label>
-            <select id="title">
-              <option value="Mr">Mr.</option>
-              <option value="Mrs">Mrs.</option>
-              <option value="Miss">Miss</option>
-              <option value="Ms.">Ms.</option>
-              <option value="Dr.">Dr.</option>
-              <option value="Other">Other</option>
-            </select>
-          </p>
-          <p class="group validation">
-            <span class="validation-message" id="error1">1. Enter your first name</span>
-            <label for="first-name">First name</label>
-            <input id="first-name" type="text" class="name" />
-          </p>
-          <p class="group validation">
-            <span class="validation-message" id="error2">2. Enter your last name</span>
-            <label for="last-name">Last name</label>
-            <input id="last-name" type="text" class="name" />
-          </p>
-
-          <fieldset>
-            <legend><span>Date of birth</span></legend>
-            <div class="inline group">
-              <p class="group">
-                <label for="day" class="visuallyhidden">Day</label>
-                <select id="day" type="text">
-                  <option value="Day">Day</option>
-                  <!-- Other options go here -->
-                </select>
-              </p>
-              <p class="group">
-                <label for="month" class="visuallyhidden">Month</label>
-                <select id="month" type="text">
-                  <option value="Month">Month</option>
-                  <!-- Other options go here -->
-                </select>
-              </p>
-              <p class="group">
-                <label for="year" class="visuallyhidden">Year</label>
-                <select id="year" type="text">
-                  <option value="Year">Year</option>
-                  <!-- Other options go here -->
-                </select>
-              </p>
-            </div>
-          </fieldset>
-
-
-        <fieldset>
-          <legend><span>Gender</span></legend>
-          <p class="inline option group">
-            <label><input type="radio" name="gender" /> Male</label>
-            <label><input type="radio" name="gender" /> Female</label>
-          </p>
-        </fieldset>
-
-        </fieldset>
-
-        <fieldset>
-          <legend>Email address</legend>
-          <p class="group">
-            <label for="email">Enter email</label>
-            <input id="email" type="email" class="email" />
-          </p>
-          <p class="group validation">
-            <span class="validation-message" id="error3">3. Re-type your email address</span>
-            <label for="email-confirm">Re-type email</label>
-            <input id="email-confirm" type="email" class="email" />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Telephone number</legend>
-          <p class="group">
-            <label for="telephone">Telephone</label>
-            <input id="telephone" type="text" class="telephone" />
-            <span class="hint">Include your country code</span>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Postal address</legend>
-          <p class="group">
-            <label for="street1">Street</label>
-            <input id="street1" type="text" class="street" />
-          </p>
-          <p class="group">
-            <label for="street2" class="visuallyhidden">Street line two</label>
-            <input id="street2" type="text" class="street" />
-          </p>
-          <p class="group">
-            <label for="town">Town/City</label>
-            <input id="town" type="text" class="town" />
-          </p>
-          <p class="group">
-            <label for="postcode">Postcode</label>
-            <input id="postcode" type="text" class="postcode" />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Biography</legend>
-          <p class="group">
-            <label for="biography">Write a few short words about yourself</label>
-            <textarea id="biography" class="big" placeholder="Enter text here"></textarea>
-          </p>
-          <p class="option group">
-            <label for="public"><input id="public" type="checkbox" /> Make this biography public</label>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>I am interested in</legend>
-          <p class="option group validation">
-            <span class="validation-message" id="error4">4. Select at least one area of interest</span>
-            <label for="jobs"><input type="checkbox" id="jobs" /> Job offers</label>
-            <label for="networking"><input type="checkbox" id="networking" /> Networking</label>
-            <label for="business"><input type="checkbox" id="business" /> Business opportunities</label>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>I prefer to be contacted by</legend>
-          <ul class="option group">
-            <li><label for="contact-email"><input id="contact-email" type="radio" name="preferred-contact" checked="" /> Email</label></li>
-            <li><label for="contact-telephone"><input id="contact-telephone" type="radio" name="preferred-contact" /> Telephone</label></li>
-            <li><label for="contact-post"><input id="contact-post" type="radio" name="preferred-contact" /> Post</label></li>
-          </ul>
-        </fieldset>
-        <p class="action group">
-          <input class="button" type="submit" value="Submit form" />
-        </p>
-      </form>
-    </div>
+<div class="example">
+  <img src="/service-manual/assets/images/design-patterns/single-name-field.png" alt="An example of a single name field" />
 </div>
 
+<p><strong>The good:</strong></p>
 
-      <nav class="page-tools">
-        <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/user-centred-design/resources/registration-form.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/user-centred-design/resources/registration-form.md">Page source</a>
-        </ol>
-      </nav>
+<ul>
+  <li>can accomodate any kind of name</li>
+  <li>requires the least effort to use</li>
+  <li>avoids the issue of how to label multiple fields</li>
+</ul>
+
+<p><strong>The bad:</strong></p>
+
+<ul>
+  <li>difficult if you need to parse out things like last name</li>
+  <li>can’t use formal contractions in correspondence (like ‘Mr. Smith’)</li>
+  <li>may be difficult to integrate this apporach with legacy back-end systems</li>
+</ul>
+
+<hr />
+
+<h2 id="multiple-name-fields">Multiple name fields</h2>
+
+<p>If you’re constrained by business or technical requirements you can use multiple fields.</p>
+
+<div class="example">
+  <img src="/service-manual/assets/images/design-patterns/multiple-name-fields.png" alt="An example of multiple name fields" />
+</div>
+
+<h3 id="the-good">The good</h3>
+
+<p>Depending on your audience you’ll be able to extract the parts of the name and do stuff with them.</p>
+
+<h3 id="the-bad">The bad</h3>
+
+<p>As soon as you adopt multiple fields you introduce the possibility that:</p>
+
+<ul>
+  <li>a person’s name won’t fit the format you’ve chosen</li>
+  <li>they enter their names in the wrong order</li>
+  <li>they try to enter their full name in the first field</li>
+</ul>
+
+<h3 id="labels">Labels</h3>
+
+<p>If you need to use multiple name fields then the preferred labelling is ‘First name’, ‘Last name’. 
+Don’t include ‘Middle names’ unless you absolutely have to and make sure it’s optional (you don’t need to mark it as optional as users will understand this).</p>
+
+<h3 id="titles">Titles</h3>
+
+<p>We recommend against asking for people’s title. </p>
+
+<p>It’s extra work for users and you’re forcing them to potentially reveal their gender and marital status, 
+which they may not want to do. There are appropriate ways of addressing people in correspondence without using titles.</p>
+
+<p>If you have to implement a title field, make it an optional free-text field, not a drop-down list.
+Predicting the range of titles your users will have is impossible, and you’ll always end up upsetting someone. 
+Remember to deal with the name data sensibly in any resulting correspondence.</p>
+
+<h3 id="internationalisation">Internationalisation</h3>
+
+<p>Users of GOV.UK services come from many different cultural backgrounds, each with their own conventions regarding personal names.</p>
+
+<p>If you can’t use a single name field and your service is used by many users outside the UK you can use this format:</p>
+
+<ul>
+  <li>Given name(s)</li>
+  <li>Family name</li>
+  <li>Any other names (eg maiden name)</li>
+</ul>
+
+<hr />
+
+<h2 id="further-reading">Further reading</h2>
+
+<p>For a more detailed overview of issues relating to personal names, read these articles:</p>
+
+<ul>
+  <li><a href="http://baymard.com/blog/mobile-form-usability-single-input-fields">http://baymard.com/blog/mobile-form-usability-single-input-fields</a></li>
+  <li><a href="http://www.w3.org/International/questions/qa-personal-names">http://www.w3.org/International/questions/qa-personal-names</a></li>
+  <li><a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/</a></li>
+</ul>
+
+<hr />
+
+<p><a href="https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt">Discuss this page on Hackpad</a></p>
+
+
     </div>
   </div>
 </article>
+
+
 
 
   </main>
@@ -427,11 +342,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674229" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

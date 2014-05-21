@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Grids — Government Service Design Manual
+    <title>Form structure — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674229" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -75,7 +75,7 @@
 
   </head>
 
-  <body class="gsdm-body mainstream full-width detailed-guidance grid ">
+  <body class="gsdm-body mainstream full-width wide design-pattern ">
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -149,9 +149,11 @@
 <div id="global-breadcrumb" class="header-context">
 	<ol role="breadcrumbs" class="group">
 	  
-	  <li><a href="/service-manual">Home</a></li>
+	  <li><a href="/service-manual/index.html">Home</a></li>
 	  
-	  <li><a href="/service-manual/user-centred-design">User centred design</a></li>
+	  <li><a href="/service-manual/user-centred-design/index.html">User centred design</a></li>
+	  
+	  <li><a href="/service-manual/user-centred-design/resources/patterns/index.html">Design patterns</a></li>
 	  
 	</ol>
 </div>
@@ -160,219 +162,176 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Grids</h1>
-      
-      <h2 class="subtitle">Quickly lay out lists of items in a grid</h2>
+      <h1><span>Design pattern</span>Form structure</h1>
       
     </div>
   </header>
 
   <div class="article-container group">
-    <div class="contents">
-      <nav>
-        <h2>Contents</h2>
-
-        <ol>
-<li class="level-using-the-mixin"><a href="#using-the-mixin">Using the mixin</a>
-</li>
-<li class="level-simple-example"><a href="#simple-example">Simple example</a>
-<ol>
-<li class="level-html"><a href="#html">HTML</a>
-</li>
-<li class="level-sass"><a href="#sass">Sass</a>
-</li>
-</ol>
-</li>
-<li class="level-regular-grids"><a href="#regular-grids">Regular grids</a>
-<ol>
-<li class="level-example"><a href="#example">Example</a>
-</li>
-</ol>
-</li>
-<li class="level-irregular-grids"><a href="#irregular-grids">Irregular grids</a>
-<ol>
-<li class="level-ratio-example"><a href="#ratio-example">5,3 ratio example</a>
-</li>
-<li class="level-ratio-example-1"><a href="#ratio-example-1">2,2,1 ratio example</a>
-</li>
-<li class="level-ratio-example-2"><a href="#ratio-example-2">2,1 ratio example</a>
-</li>
-</ol>
-</li>
-<li class="level-browser-support"><a href="#browser-support">Browser support</a>
-</li>
-</ol>
-
-      </nav>
-    </div>
-
     <div class="inner">
-      <p>Use this mixin if you need to arrange content in a grid or split part of a page into columns. You might want to do this for an image gallery, product catalogue or home page layout. It’s particularly useful if you don’t want to explicitly represent rows or columns in the markup.</p>
+      <p class="intro">Choose a structure for your forms that most naturally fits they way people need to use them.</p>
 
-<p>Don’t use this</p>
+<h3 id="on-this-page">On this page:</h3>
+
+<ol>
+  <li><a href="#asking-questions">Asking questions</a></li>
+  <li><a href="#structuring-forms">Structuring forms</a></li>
+  <li><a href="#example-structures">Example structures</a></li>
+</ol>
+
+<hr />
+
+<h2 id="asking-questions">1. Asking questions</h2>
+
+<p>You can use a question or statement format. 
+For example ‘What is your date of birth?’ or ‘Date of birth’.
+Just remember to be consistent across the transaction.</p>
+
+<p>Guidance:</p>
 
 <ul>
-  <li>when a simple linear layout will work</li>
-  <li>when a data table is more appropriate</li>
-  <li>for full page layouts (it’s not that kind of grid)</li>
+  <li>use questions or statements, but be consistent</li>
+  <li>ask for as little information as you can</li>
+  <li>keep the questions short and straightforward </li>
+  <li>explain why you’re asking a question if it’s not obvious</li>
 </ul>
 
-<h2 id="using-the-mixin">Using the mixin</h2>
+<hr />
 
-<p><a href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/assets/stylesheets/design-patterns/_grid.scss">The grid mixin</a> accepts the following arguments:</p>
+<h2 id="structuring-forms">2. Structuring forms</h2>
 
-<dl>
-  <dt><code>$columns</code></dt>
-  <dd>The number of columns in the grid, or an array representing the relative width of each column.</dd>
-  <dt><code>$min-height</code></dt>
-  <dd>An optional minimum height for grid elements. Useful if your grid elements contain varied amounts of content.</dd>
-  <dt><code>$max-rows</code></dt>
-  <dd>Adds IE7 and IE8 support for grids with varied column widths. See below for details.</dd>
-</dl>
+<p>Ask yourself:</p>
 
-<p>The mixin is tag-agnostic, so the elements can be list items, divs, paragraphs or anything else.
-Avoid applying border effects to the elements as this will make the width calculation incorrect.
-Style the contents of those elements instead.</p>
-
-<p>At mobile screen sizes the grid elements switch to being full-width.</p>
-
-<h2 id="simple-example">Simple example</h2>
-
-<ul class="grid example-1">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
-  <li><p>Item 5</p></li>
-  <li><p>Item 6</p></li>
-  <li><p>Item 7</p></li>
-  <li><p>Item 8</p></li>
+<ul>
+  <li>how many questions are there?</li>
+  <li>will users need to answer the questions in a fixed order?</li>
+  <li>will they need to complete the transaction in a single session?</li>
+  <li>will their answers affect other parts of the transaction?</li>
+  <li>will certain answers result in the user having to abandon the transaction?</li>
+  <li>will they need to add or remove items from a list, or change the order of items?</li>
+  <li>how many parties are involved in the transaction?</li>
+  <li>do any parts of the transaction take place offline?</li>
+  <li>at what point is the transaction regarded as complete?</li>
 </ul>
 
-<h3 id="html">HTML</h3>
+<hr />
 
-<pre><code>&lt;ul class="grid example-1"&gt;
-  &lt;li&gt;&lt;p&gt;Item 1&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 2&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 3&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 4&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 5&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 6&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 7&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;p&gt;Item 8&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+<h2 id="example-structures">3. Example structures</h2>
 
-<h3 id="sass">Sass</h3>
+<p>Thinking about the above will help you decide on an appropriate structure.
+Here are some of the more common approaches:</p>
 
-<pre><code>@import "grid"
+<h3 id="single-page-of-questions">1. Single page of questions</h3>
 
-.example-1{
-  @include grid(4);
-}
-</code></pre>
+<p>All questions are placed on a single page.</p>
 
-<h2 id="regular-grids">Regular grids</h2>
+<p class="left"><img src="/service-manual/assets/images/designing-transactions/one-page.png" alt="Diagram showing all sections on a page" /></p>
 
-<p>You can create grids of equally sized elements by passing in a single value representing the number of elements in a row.</p>
+<p><strong>The good:</strong></p>
 
-<p>The following examples are for demonstration purposes only and not ones we’d ever recommend.</p>
-
-<h3 id="example">Example</h3>
-
-<ul class="grid example-4">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
+<ul>
+  <li>there’s only one submit button to press</li>
+  <li>a single URL gives access to all form fields</li>
+  <li>it doesn’t force a fixed order of completion</li>
+  <li>you benefit from context of neighbouring sections</li>
+  <li>progress is self-evident</li>
 </ul>
 
-<ul class="grid example-1">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
+<p><strong>The bad:</strong></p>
+
+<ul>
+  <li>long forms can be overwhelming and off-putting</li>
+  <li>it’s less well suited to branching or non-linear flow</li>
+  <li>how do you save partial progress?</li>
+  <li>can be harder to track analytics like drop-off rates</li>
+  <li>making validation errors usable is harder</li>
 </ul>
 
-<ul class="grid example-2">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
-  <li><p>Item 5</p></li>
+<hr />
+
+<h3 id="one-question-per-page">2. One question per page</h3>
+
+<p>Each question goes on its own page.</p>
+
+<p><img src="/service-manual/assets/images/designing-transactions/wizard.png" alt="Diagram showing each section on it's own page" /></p>
+
+<p><strong>The good:</strong></p>
+
+<ul>
+  <li>it’s easier to handle branching and dependencies between questions</li>
+  <li>it’s easier to let the user save progress</li>
+  <li>a transaction can feel more manageable</li>
+  <li>easier to guide a user through an unfamiliar process</li>
+  <li>easier to capture analytics like drop-off rates for each section</li>
 </ul>
 
-<ul class="grid example-3">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
-  <li><p>Item 5</p></li>
-  <li><p>Item 6</p></li>
-  <li><p>Item 7</p></li>
-  <li><p>Item 8</p></li>
+<p><strong>The bad:</strong></p>
+
+<ul>
+  <li>harder to show progress</li>
+  <li>uers have to click more to progress through the questions</li>
+  <li>you lose the context of neighbouring questions</li>
+  <li>you need to build a seperate page to review and edit questions</li>
+  <li>doesn’t naturally handle non-linear processes like looping, adding and removing</li>
 </ul>
 
-<h2 id="irregular-grids">Irregular grids</h2>
+<hr />
 
-<p>You can create grids of unequally sized elements by passing in an array representing the relative widths of the elements in a row.</p>
+<h3 id="accordion-form">3. Accordion form</h3>
 
-<h3 id="ratio-example">5,3 ratio example</h3>
+<p>All questions on a single page, but each new question only appears once the previous section has been completed.</p>
 
-<pre><code>@include grid((5,3), $max-rows: 2);
-</code></pre>
+<p><img src="/service-manual/assets/images/designing-transactions/accordion-3.png" alt="Diagram showing an accordion form" /></p>
 
-<ul class="grid example-5">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
+<p><strong>The good:</strong></p>
+
+<ul>
+  <li>can handle branching and dependencies between sections</li>
+  <li>users can review and edit previous questions at any time</li>
+  <li>can help guide a user through an unfamiliar process</li>
+  <li>user still benefits from some surrounding context</li>
+  <li>progress is clear</li>
 </ul>
 
-<h3 id="ratio-example-1">2,2,1 ratio example</h3>
+<p><strong>The bad:</strong></p>
 
-<pre><code>@include grid((2,2,1), $max-rows: 2);
-</code></pre>
-
-<ul class="grid example-6">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
-  <li><p>Item 5</p></li>
-  <li><p>Item 6</p></li>
+<ul>
+  <li>Implementation and interface is more complex</li>
 </ul>
 
-<h3 id="ratio-example-2">2,1 ratio example</h3>
+<p>Done well, option 3 is a hybrid of the other two that has benefits of both the other options.
+Within this hybrid option there are still some important design decisions to make. For example:</p>
 
-<pre><code>@include grid((2,1), $max-rows: 2);
-</code></pre>
-
-<ul class="grid example-7">
-  <li><p>Item 1</p></li>
-  <li><p>Item 2</p></li>
-  <li><p>Item 3</p></li>
-  <li><p>Item 4</p></li>
+<ul>
+  <li>Will future questions be shown in any way or will you only see the questions you’ve answered?</li>
+  <li>What happens if you go back and edit a previous question?
+    <ul>
+      <li>Does the current question stay open or closed?</li>
+      <li>How do you get back to the current question once you’ve edited a previous one?</li>
+      <li>Do you lose all your answers to questions that follow the one you go back to edit?</li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="browser-support">Browser support</h2>
+<h3 id="hybrid">4. Hybrid</h3>
 
-<p>This Sass is supported perfectly by Chrome, Firefox, Safari and Internet Explorer 9 and higher.</p>
+<p>For more complicated transactions, some combination of the other options might be your best bet.</p>
 
-<p>In Internet Explorer 7 and 8, regular grids are fine but irregular grids use <code>first-child</code> rather
-than <code>nth-child</code>. For multiple rows you’ll need to pass in a <code>$max-rows</code> variable representing the
-maximum number of rows in the grid.</p>
+<p><img src="/service-manual/assets/images/designing-transactions/hybrid.png" alt="Diagram showing a hybrid transaction" /></p>
 
-<p>In Internet Explorer 6, all grid elements take up the entire width of the page.</p>
+<p>Again, done well this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help people to understand when they have moved into a different part of the transaction, and break up the monotony of filling in forms.</p>
 
+<p>As always, these design decisions must have a strong, user-centred rationale behind them.</p>
 
-      <nav class="page-tools">
-        <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/user-centred-design/resources/grids.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/user-centred-design/resources/grids.md">Page source</a>
-        </ol>
-      </nav>
+<hr />
+
+<p><a href="https://designpatterns.hackpad.com/Question-pages-ZztvLlQ7VDV">Discuss this page on Hackpad</a></p>
+
     </div>
   </div>
 </article>
+
+
 
 
   </main>
@@ -445,11 +404,11 @@ maximum number of rows in the grid.</p>
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674229" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

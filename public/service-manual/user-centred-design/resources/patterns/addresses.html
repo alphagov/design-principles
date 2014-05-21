@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Buttons — Government Service Design Manual
+    <title>Addresses — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674229" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674229" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -75,7 +75,7 @@
 
   </head>
 
-  <body class="gsdm-body mainstream full-width detailed-guidance buttons ">
+  <body class="gsdm-body mainstream full-width wide design-pattern ">
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -149,9 +149,11 @@
 <div id="global-breadcrumb" class="header-context">
 	<ol role="breadcrumbs" class="group">
 	  
-	  <li><a href="/service-manual">Home</a></li>
+	  <li><a href="/service-manual/index.html">Home</a></li>
 	  
-	  <li><a href="/service-manual/user-centred-design">User centred design</a></li>
+	  <li><a href="/service-manual/user-centred-design/index.html">User centred design</a></li>
+	  
+	  <li><a href="/service-manual/user-centred-design/resources/patterns/index.html">Design patterns</a></li>
 	  
 	</ol>
 </div>
@@ -160,215 +162,134 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Buttons</h1>
-      
-      <h2 class="subtitle">How to code them, how to word them and when to use them</h2>
+      <h1><span>Design pattern</span>Addresses</h1>
       
     </div>
   </header>
 
   <div class="article-container group">
-    <div class="contents">
-      <nav>
-        <h2>Contents</h2>
-
-        <ol>
-<li class="level-button-styles"><a href="#button-styles">Button styles</a>
-</li>
-<li class="level-button-colours"><a href="#button-colours">Button colours</a>
-<ol>
-<li class="level-example"><a href="#example">Example</a>
-</li>
-</ol>
-</li>
-<li class="level-disabling-buttons"><a href="#disabling-buttons">Disabling buttons</a>
-<ol>
-<li class="level-example-1"><a href="#example-1">Example</a>
-</li>
-</ol>
-</li>
-<li class="level-types-of-button"><a href="#types-of-button">Types of button</a>
-<ol>
-<li class="level-primary-actions"><a href="#primary-actions">Primary actions</a>
-</li>
-<li class="level-secondary-actions"><a href="#secondary-actions">Secondary actions</a>
-</li>
-<li class="level-warning-actions"><a href="#warning-actions">Warning actions</a>
-</li>
-<li class="level-launch-button"><a href="#launch-button">Launch button</a>
-</li>
-</ol>
-</li>
-<li class="level-writing-button-text"><a href="#writing-button-text">Writing button text</a>
-<ol>
-<li class="level-common-actions"><a href="#common-actions">Common actions</a>
-</li>
-<li class="level-compound-actions"><a href="#compound-actions">Compound actions</a>
-</li>
-</ol>
-</li>
-</ol>
-
-      </nav>
-    </div>
-
     <div class="inner">
-      <p>Buttons should be used to signify actions that the user can perform.</p>
+      <p class="intro">If you need to ask for an address on a form, consider where the addresess will be from and what you need to do with the data.</p>
 
-<h2 id="button-styles">Button styles</h2>
+<h3 id="on-this-page">On this page:</h3>
 
-<p>Buttons can be made of links, inputs and button tags. CSS should be used to separate the technical implementation of a button from its style so it looks the same whatever tag is used, like this:</p>
+<ol>
+  <li><a href="#free-text-box">Free text box</a></li>
+  <li><a href="#multiple-fields">Multiple fields</a></li>
+  <li><a href="#address-finder">Address finder</a></li>
+</ol>
 
-<div class="pattern-example">
-  <p>
-    <button class="button">Button tag</button>
-    <a class="button">Link tag</a>
-    <input class="button" type="submit" value="Input tag" />
-  </p>
+<hr />
+
+<h2 class="heading-36" id="free-text-box">1. Free text box</h2>
+
+<p>A single, multi-line text box where users write out the address in full.</p>
+
+<div class="example">
+  <img src="/service-manual/assets/images/design-patterns/full-address.png" alt="An example of a single multi-line address field" />
 </div>
 
-<h2 id="button-colours">Button colours</h2>
-
-<p>Buttons should have a default colour (like green). Alternative colours should be possible but only to indicate different actions.</p>
-
-<h3 id="example">Example</h3>
-
-<div class="pattern-example">
-  <p>
-    <a href="#" class="button">Primary action</a>
-    <a href="#" class="button-secondary">Secondary action</a>
-    <a href="#" class="button-warning">Warning action</a>
-  </p>
-</div>
-
-<h2 id="disabling-buttons">Disabling buttons</h2>
-
-<p>As with the default browser style, buttons will need a disabled style to indicate when the <code>disabled</code> attribute is set.</p>
-
-<h3 id="example-1">Example</h3>
-
-<div class="pattern-example">
-  <p>
-    <button class="button" disabled="disabled">Button tag</button>
-    <a class="disabled button">Link tag</a>
-    <input class="button" disabled="" type="submit" value="Input tag" />
-  </p>
-</div>
-
-<h2 id="types-of-button">Types of button</h2>
-
-<h3 id="primary-actions">Primary actions</h3>
-<div class="pattern-example">
-  <p>
-    <a href="#" class="button">Next step</a>
-  </p>
-</div>
+<p><strong>The good:</strong></p>
 
 <ul>
-  <li>Primary actions move the user on to the next part of the transaction</li>
-  <li>Avoid having multiple primary actions on a single page</li>
+  <li>it can handle any possible address format</li>
+  <li>people can copy and paste addresses from the clipboard</li>
+  <li>people don’t have to work out which part of the address goes in which field</li>
 </ul>
 
-<h3 id="secondary-actions">Secondary actions</h3>
-<div class="pattern-example">
-  <p>
-    <a href="#" class="button-secondary">Save</a>
-  </p>
+<p><strong>The bad:</strong></p>
+
+<ul>
+  <li>parsing addresses for sub-parts (region, street etc.) is hard, and impossible to do with 100% accuracy</li>
+  <li>many legacy back-end systems expect multi-field addresses</li>
+</ul>
+
+<h3 id="guidance">Guidance</h3>
+
+<p>Use when you’re expecting a very broad range of address formats and you don’t need to use specific sub-parts of the address.</p>
+
+<hr />
+
+<h2 class="heading-36" id="multiple-fields">2. Multiple fields</h2>
+
+<p>The address is broken down into multiple fields. Here’s an example that works for simple UK addresses:</p>
+
+<div class="example">
+  <img src="/service-manual/assets/images/design-patterns/multi-line-address.png" alt="An example of multiple address fields" />
 </div>
 
+<p><strong>The good:</strong></p>
+
 <ul>
-  <li>Secondary actions change the current view</li>
-  <li>They don’t move users to the next step</li>
-  <li>There can be multiple secondary actions per page</li>
-  <li>They should be less prominent than the primary action</li>
+  <li>you can easily extract the parts of an address and do things with them</li>
+  <li>you can give help for or validate each part of the address separately</li>
+  <li>works well with browsers that have auto-complete enabled</li>
 </ul>
 
-<h3 id="warning-actions">Warning actions</h3>
-<div class="pattern-example">
-  <p>
-    <a href="#" class="button-warning">Delete account</a>
-  </p>
+<p><strong>The bad:</strong></p>
+
+<ul>
+  <li>hard to find a single format that works for a broad range of regions</li>
+  <li>no guarantee that people will use the fields as you intended</li>
+  <li>can’t easily paste addresses from the clipboard</li>
+</ul>
+
+<h3 id="guidance-1">Guidance</h3>
+
+<p>Only use multiple address fields when you know which regions the addresses will come from and can find a format that supports them all.</p>
+
+<p><strong>UK addresses:</strong></p>
+
+<ul>
+  <li>‘postcode’ is one word</li>
+  <li>let people enter postcodes with or without spaces</li>
+  <li>avoid making individual fields mandatory (but warn users if they don’t fill in any fields)</li>
+  <li>Royal Mail do not need a county as long as the town and postcode are included</li>
+  <li>include a county field though - it lets people who don’t know the postcode give a valid address</li>
+  <li>make the field lengths appropriate - it helps people understand the form</li>
+</ul>
+
+<hr />
+
+<h2 class="heading-36" id="address-finder">3. Address finder</h2>
+
+<p>Sometimes referred to as ‘postcode lookup’. An address finder lets users specify a UK address by inputing their postcode (and optionally street name or number) and selecting the address from a list.</p>
+
+<p>Here’s how this pattern was implemented on the <a href="https://lastingpowerofattorney.service.gov.uk/">Lasting Power of Attorney</a> service.</p>
+
+<div class="example">
+  <img src="/service-manual/assets/images/design-patterns/postcode-lookup.gif" alt="An example of an address finder" />
 </div>
 
-<ul>
-  <li>Actions that have irreversible effects should look ‘scary’</li>
-  <li>Keep them away from the other actions</li>
-  <li>Make the action reversible / ‘undo’-able</li>
-  <li>If that isn’t possible to implement, ask the user for confirmation before continuing with the action</li>
-</ul>
-
-<h3 id="launch-button">Launch button</h3>
-<div class="pattern-example">
-  <p>
-    <a href="#" class="button" rel="external" title="Get started on the HMRC website">Get started</a>
-     on the HMRC website
-  </p>
-</div>
+<p><strong>The good:</strong></p>
 
 <ul>
-  <li>Use to start a transaction</li>
-  <li>Let users know if they’ll be taken to a different website</li>
+  <li>people entering UK addresses don’t have to enter as much information</li>
+  <li>reduces the chance of mis-typed UK addresses</li>
 </ul>
 
-<h2 id="writing-button-text">Writing button text</h2>
-
-<p>Do use:</p>
+<p><strong>The bad:</strong></p>
 
 <ul>
-  <li>verbs and an active voice</li>
-  <li>clear, informative and succinct language</li>
-  <li>sentence case</li>
+  <li>requires greater effort to implement</li>
 </ul>
 
-<p>Don’t use:</p>
+<h3 id="guidance-2">Guidance</h3>
 
 <ul>
-  <li>technical terms – eg use ‘delete’, not ‘form reset’, use one of the common actions below instead of ‘submit’</li>
-  <li>lots of words – eye tracking shows users are less likely to read long labels</li>
+  <li>make it clear that the address finder only works for UK addresses</li>
+  <li>provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database</li>
 </ul>
 
-<p>A simple guide is to see if the text passes the <a href="http://www.uxbooth.com/articles/the-grammar-of-interactivity/">‘Would you like to … ? /  I would like to …’</a> test.</p>
+<hr />
 
-<h3 id="common-actions">Common actions</h3>
+<p><a href="https://designpatterns.hackpad.com/Addresses-CgrMSGRAhRc">Discuss this page on Hackpad</a></p>
 
-<p>Many of these can be used in place of ‘Submit’, which is a technical term that you should avoid.</p>
-
-<dl>
-  <dt>‘Start now’</dt>
-  <dd>Use at the beginning of the service</dd>
-  <dt>‘Next’</dt>
-  <dd>Not ‘forward’, ‘go’ etc.</dd>
-  <dt>‘Finish’</dt>
-  <dd>Use at the end of a service before the final confirmation screen</dd>
-  <dt>‘Back’</dt>
-  <dd>Not ‘previous’</dd>
-  <dt>‘Sign in’ and ‘Sign out’</dt>
-  <dd>Not ‘log-in’ or ‘log-out’</dd>
-  <dt>‘Sign up’</dt>
-  <dd>Only use this for mailing lists</dd>
-  <dt>‘Create an account’</dt>
-  <dd>Not ‘register’</dd>
-</dl>
-
-<h3 id="compound-actions">Compound actions</h3>
-
-<p>Sometimes you want a single button to perform more than one action like ‘Save and quit’.</p>
-
-<p>It’s worth trying to avoid this situation but if you can’t, use common sense. If one of the actions is obvious or not important to know, don’t mention it.</p>
-
-<p>For example, if a button saves the current state and moves the user to the next screen, don’t use ‘Save and next’, just use ‘Next’, because users will assume the former. When in doubt, <a href="/service-manual/user-centred-design/user-research">test with real users</a>.</p>
-
-
-
-      <nav class="page-tools">
-        <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/user-centred-design/resources/buttons.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/user-centred-design/resources/buttons.md">Page source</a>
-        </ol>
-      </nav>
     </div>
   </div>
 </article>
+
+
 
 
   </main>
@@ -441,11 +362,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674229" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674229" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
