@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>End pages — Government Service Design Manual
+    <title>Cloud security — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -75,7 +75,7 @@
 
   </head>
 
-  <body class="gsdm-body mainstream full-width wide design-pattern ">
+  <body class="gsdm-body mainstream full-width detailed-guidance ">
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -149,11 +149,9 @@
 <div id="global-breadcrumb" class="header-context">
 	<ol role="breadcrumbs" class="group">
 	  
-	  <li><a href="/service-manual/index.html">Home</a></li>
+	  <li><a href="/service-manual">Home</a></li>
 	  
-	  <li><a href="/service-manual/user-centred-design/index.html">User-centred design</a></li>
-	  
-	  <li><a href="/service-manual/user-centred-design/resources/patterns/index.html">Design patterns</a></li>
+	  <li><a href="/service-manual/operations">Operations</a></li>
 	  
 	</ol>
 </div>
@@ -162,35 +160,133 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1><span>Design pattern</span>End pages</h1>
+      <h1>Cloud security</h1>
+      
+      <h2 class="subtitle">Secure use of third party cloud services</h2>
       
     </div>
   </header>
 
   <div class="article-container group">
-    <div class="inner">
-      <p>The end page of any transaction should be a page on the GOV.UK domain.</p>
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
 
-<p>These pages should let the user know:</p>
+        <ol>
+<li class="level-cloud-first"><a href="#cloud-first">Cloud first</a>
+</li>
+<li class="level-cloud-security-principles"><a href="#cloud-security-principles">Cloud security principles</a>
+</li>
+<li class="level-implementing-the-cloud-security-principles"><a href="#implementing-the-cloud-security-principles">Implementing the cloud security principles</a>
+</li>
+<li class="level-not-all-principles-are-relevant-to-all-services"><a href="#not-all-principles-are-relevant-to-all-services">Not all principles are relevant to all services</a>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <h2 id="cloud-first">Cloud first</h2>
+
+<p>Government currently has a <a href="https://www.gov.uk/government/news/government-adopts-cloud-first-policy-for-public-sector-it">Cloud First</a>
+policy for public sector IT. This policy specifically states that:</p>
+
+<blockquote>
+  <p>public sector organisations should consider and fully evaluate potential
+cloud solutions first – before they consider any other option</p>
+</blockquote>
+
+<p>It is worth noting as well that:</p>
+
+<blockquote>
+  <p>This approach is mandated to central government and strongly recommended
+to the wider public sector. Departments will remain free to choose an
+alternative to the cloud if they can demonstrate that it offers better
+value for money.</p>
+</blockquote>
+
+<h2 id="cloud-security-principles">Cloud security principles</h2>
+
+<p>With the move to using third party hosted and managed services comes a series
+of new security challenges. With that in mind <a href="https://www.cesg.gov.uk/">CESG</a>,
+the national technical authority, have produced a set of guidance.</p>
+
+<p>The <a href="https://www.gov.uk/government/publications/cloud-security-guidance-introduction/cloud-security-guidance-introduction">introduction </a>
+covers how the guidance was developed and how it can be used to
+build trust in cloud based systems and suppliers.</p>
+
+<p>This guidance begins with outlining <a href="https://www.gov.uk/government/publications/cloud-service-security-principles/cloud-service-security-principles">14 principles</a>
+through which we can analyse the security of a cloud based system.</p>
+
+<ol>
+  <li>Data in transit protection</li>
+  <li>Asset protection and resilience</li>
+  <li>Separation between consumers</li>
+  <li>Governance</li>
+  <li>Operational security</li>
+  <li>Personnel security</li>
+  <li>Secure development</li>
+  <li>Supply chain security</li>
+  <li>Secure consumer management</li>
+  <li>Identity and authentication</li>
+  <li>External interface protection</li>
+  <li>Secure service administration</li>
+  <li>Audit information provision to consumers</li>
+  <li>Secure use of the service by the consumer</li>
+</ol>
+
+<h2 id="implementing-the-cloud-security-principles">Implementing the cloud security principles</h2>
+
+<p>The guidance also includes an <a href="https://www.gov.uk/government/publications/implementing-the-cloud-security-principles/implementing-the-cloud-security-principles">implementation guide</a>
+which contains for each of the above principles</p>
 
 <ul>
-  <li>that they have successfully completed the transaction</li>
-  <li>their reference number if there is one</li>
-  <li>what further actions they need to perform, and when</li>
-  <li>what further actions they can expect from the service, and when</li>
-  <li>who they should contact with any queries or complaints</li>
-  <li>about any related information and services</li>
+  <li>A description of the principle – what it is and why it is important</li>
+  <li>A number of implementation objectives – how the principle should be satisfied</li>
+  <li>A number of approaches that can be taken to meet the implementation objectives, attracting different residual risks</li>
 </ul>
 
-<hr />
+<p>Rather than replicate the good work of existing standards bodies this guidance
+references existing work wherever possible. In particular extensive reference
+is made to:</p>
 
-<p><a href="https://designpatterns.hackpad.com/Transaction-end-pages-xkOPGx6R1iM">Discuss this page on Hackpad</a></p>
+<ul>
+  <li><a href="http://www.iso.org/iso/home/standards/management-standards/iso27001.htm">ISO/IEC 27001 – information security management</a></li>
+  <li><a href="https://cloudsecurityalliance.org/research/ccm/">Cloud Security Alliance – cloud controls matrix</a></li>
+</ul>
 
+<h2 id="not-all-principles-are-relevant-to-all-services">Not all principles are relevant to all services</h2>
+
+<p>The guidance also includes recommendations for integrating this with
+existing <a href="https://www.gov.uk/government/publications/cloud-security-guidance-risk-management/cloud-security-guidance-risk-management">risk management processes</a>.
+In particular this recommends asking</p>
+
+<blockquote>
+  <p>Which security principles are relevant?</p>
+</blockquote>
+
+<p>The 14 principles should not be viewed as a checklist to be used in all cases.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/collections/cloud-security-guidance">Cloud security guidance home page</a></li>
+</ul>
+
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/operations/cloud-security.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/operations/cloud-security.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>
-
-
 
 
   </main>

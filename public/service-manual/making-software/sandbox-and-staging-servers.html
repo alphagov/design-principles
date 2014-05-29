@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1401378615" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -173,9 +173,11 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-shared-context"><a href="#shared-context">Shared context</a>
+<li class="level-shared-environments"><a href="#shared-environments">Shared environments</a>
 </li>
-<li class="level-example"><a href="#example">Example</a>
+<li class="level-govuk-development-environments"><a href="#govuk-development-environments">GOV.UK development environments</a>
+</li>
+<li class="level-why-govuk-does-this"><a href="#why-govuk-does-this">Why GOV.UK does this</a>
 </li>
 <li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
@@ -185,27 +187,39 @@
     </div>
 
     <div class="inner">
-      <p>Everyone working on design, development or maintenance of a service should have a clear, easily accessible place to review the latest version of the software. Those working hands-on building the software for the service should be able to run their own reasonable replica of the entire service. </p>
+      <p>Everyone working on the design, development or maintenance of your service should have a clear, easily accessible place to review the latest version of the software. Those working hands-on to build the software should be able to run their own reasonable replica of the entire service.</p>
 
-<p>There should be a clear staging environment where changes are reviewed and tested in the context of the entire end-to-end service before they are deployed.</p>
+<p>Make sure you have a clear staging environment where changes are reviewed and tested in the setting of the entire end-to-end service before they are deployed.</p>
 
-<h2 id="shared-context">Shared context</h2>
+<h2 id="shared-environments">Shared environments</h2>
 
-<p>Everyone working on a service should be able to see progress and understand their work in its full context. That means a shared environment where any team member can see the current state of the service and where stories can be signed off, and individual sandboxes where more experimental or early stage work can take place and be reviewed.</p>
+<p>Make it possible for everyone working on your service to see progress and understand their work in its full context. That means having a shared environment where:</p>
 
-<p>In addition to those environments it can be helpful to have a separate staging environment where final quality assurance and testing can take place before changes are deployed to the live/production environment. This should be identical to the production environment so it can be used effectively for performance testing.</p>
+<ul>
+  <li>any team member can see the current state of the service</li>
+  <li>stories can be signed off</li>
+  <li>individual sandboxes are used - more experimental or early stage work can take place and be reviewed</li>
+</ul>
 
-<h2 id="example">Example</h2>
+<p>In addition to those environments, it’s helpful to have a separate staging environment where final quality assurance and testing takes place before changes are deployed to the live/production environment. Make this identical to the production environment so it can be used effectively for performance testing.</p>
 
-<p>For those working on GOV.UK we use the <a href="https://www.vagrantup.com/">Vagrant</a> tool to provide all developers with a development environment configured similarly to the production environment.</p>
+<h2 id="govuk-development-environments">GOV.UK development environments</h2>
 
-<p>We then have a preview environment that is updated by our <a href="https://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a> system whenever tests have passed on a change. There’s then a staging environment for review of specific changes before they go to the production environment. It’s updated and reviewed as part of the release process.</p>
+<p>Those working on GOV.UK use:</p>
 
-<p>We follow this procedure because:</p>
+<ul>
+  <li>the <a href="https://www.vagrantup.com/">Vagrant</a> tool to provide all developers with a development environment built similarly to the production environment</li>
+  <li>a preview environment that’s updated by a <a href="https://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a> system whenever tests have passed on a change</li>
+  <li>a staging environment for review of specific changes before they go to the production environment (it’s updated and reviewed as part of the release process)</li>
+</ul>
+
+<h2 id="why-govuk-does-this">Why GOV.UK does this</h2>
+
+<p>We set up the development environment in this way because:</p>
 
 <ul>
   <li>everyone on the team should be able to understand progress to date by using running software</li>
-  <li>people working on the service should be able to understand the impact of their work by seeing it working in context</li>
+  <li>people working on the service should be able to understand the effect of their work by seeing it working in context</li>
   <li>the team should be confident that the service as a whole works before shipping those changes to the public</li>
 </ul>
 
@@ -296,11 +310,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1401378615" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

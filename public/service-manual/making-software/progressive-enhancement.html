@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1401378615" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -189,43 +189,62 @@
     </div>
 
     <div class="inner">
-      <p>When creating web pages, the only part of it that you can rely upon working is the HTML (and even that can fail, but without it there is no web page and everything else becomes moot). The attitude towards building for the web with this in mind is called <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>.</p>
+      <p>When creating web pages, the only part of a page that you can rely upon working is the HTML. Even that can fail, but without HTML there is no web page and everything else becomes moot. The attitude towards building for the web with this in mind is called <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>.</p>
 
-<p>This means in essence that each extra layer (images, styling, behaviour, video, audio) of the page should be seen as optional. If you build pages with the idea that parts other than HTML are optional, you will create a better and stronger web page.</p>
+<p>This means in essence that each extra layer (images, styling, behaviour, video, audio) of a page should be seen as optional. If you build pages with the idea that parts other than HTML are optional, you’ll create a better and stronger web page.</p>
 
 <h2 id="first-just-make-it-work">First, just make it work</h2>
 
-<p>Any new page or feature should first be made to work with HTML only. No images, no CSS, no JavaScript, nothing but HTML. Interactive elements are only those capable of being implemented with <a href="https://en.wikipedia.org/wiki/Form_(HTML)">forms</a> and server-side processing.</p>
+<p>Make any new page or feature work with HTML alone – no images, no CSS, no JavaScript, nothing but HTML. Interactive elements are only those capable of being implemented with <a href="https://en.wikipedia.org/wiki/Form_(HTML)">forms</a> and server-side processing.</p>
 
-<p>This gives a baseline experience which will work in practically every browser, allowing your site to work for as many people and devices as possible, including older, legacy browsers and devices.</p>
+<p>This gives a baseline experience, which will work in practically every browser. It allows your site to work for as many people and devices as possible, including older legacy browsers and devices.</p>
 
 <h2 id="second-make-it-work-better">Second, make it work better</h2>
 
-<p>From this baseline, the extra layers can be added. The page can have images added, advanced styling can be applied. Interactions can be made smoother and faster without the need to refresh the entire page. Validation of submitted data can be performed before it hits the network. Charts and data tables can be turned into visualisations with interactive elements.</p>
+<p>From this baseline, extra layers can then be added:</p>
 
-<p>However, it’s important that each addition is seen as just that — an addition. Something extra that the more modern browsers are capable of doing <em>on top</em> of an already accessible and usable experience with as much of the content and interactivity as possible available already.</p>
+<ul>
+  <li>the page can have images</li>
+  <li>advance styling can be applied</li>
+  <li>interactions can be made smoother and faster without the need to refresh the entire page</li>
+  <li>validation of submitted data can be performed before it hits the network</li>
+  <li>charts and data tables can be turned into visualisations with interactive elements</li>
+</ul>
+
+<p>Remember to see each addition as just that – an addition. Additions are just something extra that the more modern browsers are capable of doing. That’s along with an already accessible and usable experience that has as much content and interactivity available as possible.</p>
 
 <h2 id="it-isnt-about-javascript-off">It isn’t about “JavaScript off”</h2>
 
-<p>A common misunderstanding is that designing sites to work without CSS, JavaScript or anything else is that this is not about a conscious choice made by the person visiting the web page that we can ignore. Nor can we treat this as an error or mistake, and it isn’t a case of “just fix your browser”.</p>
+<p>A common misunderstanding is that designing sites to work without CSS, JavaScript or anything else is because a user chooses to switch it off, considering it as an error or mistake on their part. It isn’t just a case of “fix your browser”.</p>
 
-<p>There are many scenarios where the extra layers can fail to load, including temporary network errors and DNS lookup failures. The server that the resource is found on could be overloaded or down, and fail to respond in time or at all.</p>
+<p>There are many scenarios where the extra layers can fail to load or are deliberately filtered, which can be due to:</p>
 
-<p>On top of failures there’s deliberate filtering of the internet. Many large institutions (eg banks and financial institutions, some government departments) have corporate firewalls that block, remove or alter content from the internet. Mobile network providers have been known to resample images and otherwise alter content in order to make the load times faster and reduce bandwidth consumed. Also some antivirus and personal firewall software will alter and/or block content.</p>
+<ul>
+  <li>temporary network errors</li>
+  <li>DNS lookup failures</li>
+  <li>sever that the resource is found on could be overloaded or down, and fail to respond in time or at all</li>
+  <li>large institutions (eg banks and financial institutions, some government departments) having corporate firewalls that block, remove or alter content from the Internet</li>
+  <li>mobile network providers resampling images and altering content so that load times faster and reduce bandwidth consumed</li>
+  <li>antivirus and personal firewall software that will alter and/or block content</li>
+</ul>
 
-<p>And, of course, there are people who do turn off features in their browsers deliberately. We should respect their decision and still provide them with a usable and useful service.</p>
+<p>Of course, there are people who do turn off features in their browsers deliberately. Respect their decision and still provide them with a usable and useful service.</p>
 
 <h2 id="it-isnt-only-about-javascript">It isn’t only about JavaScript</h2>
 
-<p>Another common misunderstanding is that progressive enhancement is only about JavaScript. Anything more than HTML is an enhancement and should be treated as such.</p>
+<p>Another common misunderstanding is that progressive enhancement is only about JavaScript - it’s not. Treat anything other than HTML as an enhancement, not just JavaScript.</p>
 
 <p>Adding an image to a page requires suitable alternative text (and may also need a longer description) for people with visual impairment, and simply for when the image fails to load.</p>
 
-<p>Styling cannot be the only method by which information is shared. “Text in bold” is not enough when you can’t differentiate bold from normal text. “Red items are required” is not enough when you don’t have the colours applied, cannot see the colours or cannot distinguish them because of colour blindness.</p>
+<p>Styling cannot be the only way to share information:</p>
 
-<p>Video and audio without transcripts and/or subtitles are unsuitable for hearing impaired people. Information appearing in a video in a visual-only form (eg a question then answered by the people on screen in an interview) is unsuitable for people with visual impairments.</p>
-
-<p>Making an interactive element that requires a mouse (eg a hover effect, a drag and drop operation) is unusable by someone who only uses a keyboard or a touch-only device such as a smartphone or tablet.</p>
+<ul>
+  <li>“text in bold” is not enough when you can’t tell the difference between bold and normal text</li>
+  <li>“red items are required” is not enough when you don’t have colours applied, cannot see the colours or cannot distinguish them because of colour blindness</li>
+  <li>video and audio without transcripts and/or subtitles are unsuitable for hearing impaired people</li>
+  <li>information appearing in a video in a visual-only form (eg a question answered by people on screen with no audio) is unsuitable for people with visual impairments</li>
+  <li>making an interactive element that requires a mouse (eg a hover effect, a drag and drop operation) is unusable by someone who only uses a keyboard or a touch-only device such as a smartphone or tablet</li>
+</ul>
 
 <h2 id="further-reading">Further reading</h2>
 
@@ -318,11 +337,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1401378615" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

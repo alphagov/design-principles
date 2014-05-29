@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1401378615" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -175,11 +175,11 @@
         <ol>
 <li class="level-find-alternatives"><a href="#find-alternatives">Find alternatives</a>
 </li>
-<li class="level-where-there-arent-alternatives"><a href="#where-there-arent-alternatives">Where there aren't alternatives</a>
+<li class="level-when-there-isnt-an-alternative"><a href="#when-there-isnt-an-alternative">When there isn't an alternative</a>
 </li>
 <li class="level-credentials"><a href="#credentials">Credentials</a>
 </li>
-<li class="level-examples"><a href="#examples">Examples</a>
+<li class="level-lower-usage-rates"><a href="#lower-usage-rates">Lower usage rates</a>
 </li>
 <li class="level-also-see"><a href="#also-see">Also see</a>
 </li>
@@ -189,58 +189,65 @@
     </div>
 
     <div class="inner">
-      <p>Our advice is that teams do not build login systems.</p>
+      <p>GDS advise that teams do not build login systems.</p>
 
-<p>Building a login system is a significant undertaking. While there are numerous
+<p>Building a login system is no easy task. While there are numerous
 open source libraries that make it trivial to add login functionality to your
-service, there are significant downsides:</p>
+service, the moment you add that feature you’re:</p>
 
 <ul>
   <li>significantly increasing your user support overhead (people forget how to
 sign in, lose their passwords etc)</li>
-  <li>gathering personal data that you will need to constantly review and protect</li>
+  <li>gathering personal data that you’ll need to constantly review and protect</li>
   <li>adding a relatively complex interaction for users to complete</li>
 </ul>
 
 <h2 id="find-alternatives">Find alternatives</h2>
 
-<p>Many features that are often implemented using login systems can be completed
+<p>Many features that often come with using a login system can be completed
 in other (and potentially more useful) ways.</p>
 
 <p>Saving search results, for example, doesn’t require a login but just a way of
-helping users remember a specific URL. Instead of having them log in, you could
-provide a tool to help send the URL to an email address or instructions on
-creating a bookmark in their browser. Or perhaps you could just take their
-email address and let them know if the search results change?</p>
-
-<p>The precise details will vary according to what users need from your service,
-but if there’s an alternative to a login system, that should be preferred.</p>
-
-<h2 id="where-there-arent-alternatives">Where there aren’t alternatives</h2>
-
-<p>If after careful review and design work there is no option but to build a
-login system you will need to consider a few questions:</p>
+helping users remember a specific URL. Instead of having users log in, you could:</p>
 
 <ul>
-  <li>are you providing a login service for a small number of agents (administrative users, accredited partners etc) or for a broad range of citizens or businesses?</li>
-  <li>do you already have all the data you need in order to establish trust with those users or will you need to match them against other services (online or offline)?</li>
+  <li>provide a tool to help send the URL to an email address</li>
+  <li>have instructions on creating a bookmark in their browser</li>
+  <li>take their email address and let them know if the search results change</li>
 </ul>
 
-<p>If building a service for a small number of clearly identified agents then
-it’s probably safe to proceed. You should ensure that any authentication
-and authorisation code written for your system is carefully separated from
-the application in such a way that you can:</p>
+<p>The exact details will vary according to what users need from your service,
+but if there’s an alternative to a login system – use it.</p>
+
+<h2 id="when-there-isnt-an-alternative">When there isn’t an alternative</h2>
+
+<p>If, after careful review and design work, there’s no option but to build a
+login system, you’ll need to consider:</p>
 
 <ul>
-  <li>specifically monitor use of the system for attempts to gain access, with identifiers such as unusually high number of failed login attempts over a short period of time, or a sequence of failed logins on a given account over a long period of time</li>
-  <li>segment user data from other data you hold to avoid aggregating a large amount of identifiable information</li>
-  <li>swap to a new identity system such as the <a href="/service-manual/identity-assurance">identity assurance</a> scheme without invasive changes to the rest of your codebase</li>
+  <li>who you’re providing a login service for – a small number of agents (administrative users, accredited partners etc) or for a broad range of citizens or businesses?</li>
+  <li>if you have enough user data – enough to build trust with users or will you need to match them against other services (online or offline)?</li>
 </ul>
 
-<p>If you need to build a system for a broad range of citizens and businesses,
-or you need to do sophisticated matching with other systems in order to build
-trust in the identity of your users then you should explore the
-<a href="/service-manual/identity-assurance">advice published by the ID Assurance team</a>.</p>
+<p>It’s probably safe to carry on if you’re building a service for a small number of clearly identified agents. Make sure that any authentication and authorisation code written for your system is carefully separated from the application so that you can:</p>
+
+<ul>
+  <li>specifically monitor use of the system for attempts to gain access, like
+    <ul>
+      <li>unusually high numbers of failed login attempts over a short period of time</li>
+      <li>a sequence of failed logins on a given account over a long period of time</li>
+    </ul>
+  </li>
+  <li>separate user data from other data you hold to avoid collecting a large amount of identifiable information</li>
+  <li>swap to a new identity system, like the <a href="/service-manual/identity-assurance">identity assurance</a> scheme, without invasive changes to the rest of your codebase</li>
+</ul>
+
+<p>Read the <a href="/service-manual/identity-assurance">advice published by the identity assurance team</a> if you need to:</p>
+
+<ul>
+  <li>build a system for a broad range of citizens and businesses</li>
+  <li>do sophisticated matching with other systems so you can build confidence in the identity of your users</li>
+</ul>
 
 <h2 id="credentials">Credentials</h2>
 
@@ -268,7 +275,7 @@ guess than a short collection of symbols or a single word.</p>
 communication between the user and the service is encrypted. This is
 especially important when logging in.</p>
 
-<h2 id="examples">Examples</h2>
+<h2 id="lower-usage-rates">Lower usage rates</h2>
 
 <p>The Electronic License Management System (ELMS) license application system
 on Business Link required a login to complete an application. In building
@@ -368,11 +375,11 @@ those applications.</p>
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1401378615" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};

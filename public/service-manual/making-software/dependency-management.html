@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>End pages — Government Service Design Manual
+    <title>Managing software dependencies — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -75,7 +75,7 @@
 
   </head>
 
-  <body class="gsdm-body mainstream full-width wide design-pattern ">
+  <body class="gsdm-body mainstream full-width detailed-guidance ">
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -149,11 +149,9 @@
 <div id="global-breadcrumb" class="header-context">
 	<ol role="breadcrumbs" class="group">
 	  
-	  <li><a href="/service-manual/index.html">Home</a></li>
+	  <li><a href="/service-manual">Home</a></li>
 	  
-	  <li><a href="/service-manual/user-centred-design/index.html">User-centred design</a></li>
-	  
-	  <li><a href="/service-manual/user-centred-design/resources/patterns/index.html">Design patterns</a></li>
+	  <li><a href="/service-manual/making-software">Making software</a></li>
 	  
 	</ol>
 </div>
@@ -162,35 +160,210 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1><span>Design pattern</span>End pages</h1>
+      <h1>Managing software dependencies</h1>
+      
+      <h2 class="subtitle">Making use of third party libraries and frameworks</h2>
       
     </div>
   </header>
 
   <div class="article-container group">
-    <div class="inner">
-      <p>The end page of any transaction should be a page on the GOV.UK domain.</p>
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
 
-<p>These pages should let the user know:</p>
+        <ol>
+<li class="level-not-reinventing-the-wheel"><a href="#not-reinventing-the-wheel">Not reinventing the wheel</a>
+</li>
+<li class="level-strategies"><a href="#strategies">Strategies</a>
+<ol>
+<li class="level-vendor-dependencies"><a href="#vendor-dependencies">Vendor dependencies</a>
+</li>
+<li class="level-trust-but-verify"><a href="#trust-but-verify">Trust but verify</a>
+</li>
+<li class="level-fork-dependencies"><a href="#fork-dependencies">Fork dependencies</a>
+</li>
+</ol>
+</li>
+<li class="level-different-language-communities-are-different"><a href="#different-language-communities-are-different">Different language communities are different</a>
+</li>
+<li class="level-dependency-management-tools"><a href="#dependency-management-tools">Dependency management tools</a>
+</li>
+<li class="level-managing-risks-in-third-party-code"><a href="#managing-risks-in-third-party-code">Managing risks in third party code</a>
+<ol>
+<li class="level-tooling"><a href="#tooling">Tooling</a>
+</li>
+<li class="level-mailing-lists"><a href="#mailing-lists">Mailing lists</a>
+</li>
+</ol>
+</li>
+<li class="level-further-reading"><a href="#further-reading">Further reading</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
+    <div class="inner">
+      <p>Most software projects, especially those using open source technologies, will
+use third party code. This approach brings with it many advantages and some
+challenges.</p>
+
+<h2 id="not-reinventing-the-wheel">Not reinventing the wheel</h2>
+
+<p>The amount of software available to reuse in your project is huge. This may be open
+source libraries or frameworks, or it may be commercial software appliances or
+applications, or it may be code already written by your organisation. Ultimately very
+very few software development projects will write absolutely everything from scratch.</p>
+
+<p>Where possible and sensible, aiming to reuse existing code makes sense and will
+reduce the time taken to develop the software you are tasked with building. Areas
+that are general, and not specific to your domain, are good examples of where a
+third party library is likely to exist. For instance for managing:</p>
 
 <ul>
-  <li>that they have successfully completed the transaction</li>
-  <li>their reference number if there is one</li>
-  <li>what further actions they need to perform, and when</li>
-  <li>what further actions they can expect from the service, and when</li>
-  <li>who they should contact with any queries or complaints</li>
-  <li>about any related information and services</li>
+  <li>time and dates</li>
+  <li>money</li>
+  <li>routing HTTP requests</li>
+  <li>rendering HTML</li>
+  <li>maths and statistics</li>
 </ul>
 
-<hr />
+<h2 id="strategies">Strategies</h2>
 
-<p><a href="https://designpatterns.hackpad.com/Transaction-end-pages-xkOPGx6R1iM">Discuss this page on Hackpad</a></p>
+<p>There are a number of different strategies for reusing code, some of which are
+described below. In many cases a single project may use more than one of these, but
+in all cases it is worth doing so consciously.</p>
 
+<h3 id="vendor-dependencies">Vendor dependencies</h3>
+
+<p>One approach to managing dependencies is simply to copy the code into your project.
+If you do take this approach be aware that not all open source licenses allow for this,
+while others will force you to license your code in the same way as the dependency.</p>
+
+<p>In general this approach is likely to be the last resort. Vendoring (as it is called)
+breaks the link with the third party code, meaning that tracking upstream changes becomes
+a manual (and likely slow, inconsistent and time consuming) job. Vendored code
+tends to become out of date quickly, ideally this should be avoided for more
+structured approaches.</p>
+
+<h3 id="trust-but-verify">Trust but verify</h3>
+
+<p>A common approach, especially amongst the open source community, is to pull in
+third party dependencies automatically using a dependency management tool
+– either at runtime, deploy time or compile time. The assurance that this third
+party code is working is provided by extensive testing, generally of an automated
+nature.</p>
+
+<p>This should include testing of security characteristics. For example if a library
+used to generate a web form introduces a SQL injection vulnerability, then your acceptance
+tests should fail. It is important under this model that a suitable level of verification
+is done, rather than just trusting any third party dependency completely. It’s also important
+to have trust in the specific code and version you are using, rather than just the library
+or framework in general. What is suitable will vary between services depending on the risk
+profile.</p>
+
+<h3 id="fork-dependencies">Fork dependencies</h3>
+
+<p>Sometimes simply trusting a third party code repository does not provide the level
+of assurance required. In these cases, one approach is to fork, or copy, the third
+party code into a separate repository managed by you. This decouples updates
+to the upstream code from updates to your organisations copy of that code, but importantly
+maintains the link with the original. Your fork of the code can be updated
+periodically or based on required new functionality. The process for updating
+your fork may involve code reviews, virus scanning, checks against known vulnerabilities,
+etc. It would also be possible to modify the code at this point for your own internal
+use.</p>
+
+<p>The downside of this approach compared with the trust but verify approach above is
+the time taken to maintain the fork and to pull in changes from upstream. Not
+keeping up to date with upstream at all increases these costs and has the same issues
+as vendoring described above.</p>
+
+<h2 id="different-language-communities-are-different">Different language communities are different</h2>
+
+<p>It is worth noting that different programming language communities tend to view
+dependencies differently. It is very common for instance within the Ruby or JavaScript
+communities to find tiny libraries that do one trivial thing well. This tends to lead
+to projects with hundreds of dependencies very quickly. For instance the popular
+<a href="http://rubyonrails.org/">Ruby on Rails</a> framework has 31 external dependencies at
+the time of writing.</p>
+
+<p>Within other communities it is less common to have so many independent dependencies,
+but it is worth noting that this tends to mean either a more comprehensive
+standard library (eg Python) or larger dependencies (eg Java).</p>
+
+<p>Ultimately the problem of dependency management exists within all programming
+communities, but the differences in tooling and approach are worth noting.</p>
+
+<h2 id="dependency-management-tools">Dependency management tools</h2>
+
+<p>Most programming languages will have a small number of popular dependency management
+tools. The following list has a number of examples from a variety of languages.</p>
+
+<ul>
+  <li><a href="http://maven.apache.org/">Maven</a> (Java)</li>
+  <li><a href="http://bundler.io/">Bundler</a> (Ruby)</li>
+  <li><a href="https://pypi.python.org/pypi/pip">Pip</a> (Python)</li>
+  <li><a href="http://www.scala-sbt.org/">sbt</a> (Scala)</li>
+  <li><a href="http://leiningen.org/">Leiningen</a> (Clojure)</li>
+  <li><a href="https://getcomposer.org/">Composer</a> (PHP)</li>
+  <li><a href="http://bower.io/">Bower</a> (JavaScript, CSS)</li>
+</ul>
+
+<h2 id="managing-risks-in-third-party-code">Managing risks in third party code</h2>
+
+<p>By including third party dependencies in your application you are potentially including
+code with known or unknown vulnerabilities. Accepting this risk is important in
+order to mitigate it. In some cases code reviews of third party code may be required,
+in others good testing practices can be enough.</p>
+
+<h3 id="tooling">Tooling</h3>
+
+<p>Commercial tools do exist for some languages which aim to alert you to vulnerabilities
+in third party dependencies and can help with building trust in code.</p>
+
+<ul>
+  <li><a href="https://gemnasium.com/">Gemnasium</a></li>
+  <li><a href="http://www.sonatype.com/clm/overview">Sonatype CLM</a></li>
+</ul>
+
+<p>These are often based on publicly available vulnerability disclosure lists so it is
+also possible to track those individually.</p>
+
+<h3 id="mailing-lists">Mailing lists</h3>
+
+<p>Most operating systems, vendors and some open source projects  will also have mailing lists
+to advise about security vulnerabilities in third party code. You should always be
+monitoring these lists where they exist for software you use. Some common examples include:</p>
+
+<ul>
+  <li><a href="https://access.redhat.com/site/security/updates/advisory/">RedHat</a></li>
+  <li><a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce">Ubuntu</a></li>
+  <li><a href="http://technet.microsoft.com/en-us/security/dd252948.aspx">Microsoft</a></li>
+  <li><a href="https://www.cert.gov.uk/register-for-alerts/">CERT-UK</a></li>
+</ul>
+
+<p>The above is a small example of what is available. Having these emails come into an
+internal mailing list is also advisable, rather than rely on a single individual to
+alert everyone else.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="/service-manual/making-software/configuration-management">Configuration management</a></li>
+</ul>
+
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/dependency-management.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/dependency-management.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>
-
-
 
 
   </main>

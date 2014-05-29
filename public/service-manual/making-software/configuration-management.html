@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1400674364" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1401378615" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1400674364" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1401378615" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -162,7 +162,7 @@
     <div class="hgroup">
       <h1>Configuration management</h1>
       
-      <h2 class="subtitle">Manage a team's approach to configuration</h2>
+      <h2 class="subtitle">Manage a team's approach to software configuration</h2>
       
     </div>
   </header>
@@ -183,7 +183,7 @@
 </li>
 </ol>
 </li>
-<li class="level-why-we-do-this"><a href="#why-we-do-this">Why we do this</a>
+<li class="level-why-gds-do-this"><a href="#why-gds-do-this">Why GDS do this</a>
 </li>
 <li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
@@ -193,19 +193,29 @@
     </div>
 
     <div class="inner">
-      <p>Your system is likely to be much larger than a single application, relying on other supporting infrastructure components. Even a simple application probably requires some configuration, to provide database credentials or a web service endpoint for instance.</p>
+      <p>Configuration management is about managing how the pieces of your software and/or service work together.</p>
 
-<p>In order to build robust, scalable and portable systems this configuration data should be well managed.</p>
+<p>It’s important to get it right as your system is likely to be much larger than a single application, relying on other supporting infrastructure components. Even a simple application probably requires some configuration, like providing database credentials or a web service endpoint.</p>
+
+<p>Managing your configuration data well will mean you can build a stable, scalable and portable system.</p>
 
 <h2 id="management-tools">Management tools</h2>
 
-<p>Configuration management tools help with documenting and maintaining the configuration and dependencies of a software system. Although this could be done using hand-made software, it’s common to use existing tools.</p>
+<p>Configuration management tools will help with documenting and maintaining the configuration and dependencies of your software system. Although you can do this using hand-made software, it’s common to use existing tools.</p>
 
-<p>Three examples of existing open source configuration management tools are <a href="http://cfengine.com/">CFEngine</a>, <a href="http://www.getchef.com/chef/">Chef</a> and <a href="https://puppetlabs.com/">Puppet</a>.</p>
+<p>Three examples of existing open source configuration management tools are:</p>
+
+<ul>
+  <li><a href="http://cfengine.com/">CFEngine</a></li>
+  <li><a href="http://www.getchef.com/chef/">Chef</a></li>
+  <li><a href="https://puppetlabs.com/">Puppet</a></li>
+</ul>
 
 <h3 id="infrastructure-as-code">Infrastructure as code</h3>
 
-<p>One approach to managing configuration is to describe the configuration and the software dependencies in code. This brings with it all the advantages of programming in general, including:</p>
+<p>One approach to managing configuration is to describe in code the configuration and software dependencies (what your software needs to perform its function).</p>
+
+<p>This brings with it all the advantages of programming in general, including:</p>
 
 <ul>
   <li>testability</li>
@@ -214,28 +224,41 @@
   <li>common and constrained language to describe a problem domain</li>
 </ul>
 
-<p>Once described in code the infrastructure configuration is executed against the servers, networks and software in question.</p>
+<p>Once written in code, the infrastructure configuration is then run against the servers, networks and software in question.</p>
 
 <h3 id="build-for-portability">Build for portability</h3>
 
-<p>Moving software systems between providers can be difficult and time-consuming. Even with compatible providers and simpler procurement rules it’s possible to lock yourself in through technical inertia alone.</p>
+<p>Moving software systems between providers can be difficult and time-consuming. Even with compatible providers and simpler procurement rules, it’s possible to lock yourself in through inaction alone.</p>
 
-<p>Configuration management encourages a deep understanding of the configuration of the system and this can be used to move software easily between providers.</p>
+<p>Configuration management encourages a deep understanding of the configuration of your system. Use this understand to move software easily between providers, if needed.</p>
 
 <h3 id="use-the-same-tools-for-development-and-production">Use the same tools for development and production</h3>
 
-<p>A common problem in software systems is seen when code written by a development team works on their machine or a test environment but not on the production environment. A common cause of this is differences in configuration – different versions of software, different types of database or application server. This can be avoided by using the same tools for both development and production environments.</p>
+<p>A common problem in software systems is when code written by a development team works on their machine or a test environment, but not on the production environment. A common cause of this is differences in configuration:</p>
 
-<h2 id="why-we-do-this">Why we do this</h2>
+<ul>
+  <li>different versions of software</li>
+  <li>different types of database</li>
+  <li>different application servers</li>
+</ul>
 
-<p>Existing approaches to managing configuration are often manual, process heavy, slow and error prone. Ultimately people are bad at carrying out detailed monotonous tasks. And installing and configuring software across tens or hundreds of servers (if done by hand) is definitely monotonous.</p>
+<p>Avoid this by using the same tools for your development and production environments.</p>
 
-<p>Even if this could be done to provide everything correctly configured on day 0, over time configuration drifts if not kept in check. One traditional approach to this problem is to make configuration changes hard, thereby limiting the number of them. When trying to build agile and flexible software systems rapid change is needed and manual processes break down.</p>
+<h2 id="why-gds-do-this">Why GDS do this</h2>
+
+<p>Existing methods to managing configuration are often manual, process-heavy, slow and error prone.</p>
+
+<p>Ultimately, people are bad at carrying out detailed monotonous tasks - and installing and configuring software across tens or hundreds of servers (if done by hand) is definitely monotonous.</p>
+
+<p>Even if this could be done to provide everything correctly configured on day 0, configuration will drift if not kept in check. A traditional solution to this problem is to make it harder to change configuration, which then limits the number of changes that can made.</p>
+
+<p>Overall, the ability to change rapidly is essential when trying to build agile and flexible software systems, which means breaking down those restrictive manual processes.</p>
 
 <h2 id="further-reading">Further reading</h2>
 
 <ul>
   <li><a href="https://speakerdeck.com/garethr/infrastructure-as-code">Infrastructure as Code</a></li>
+  <li><a href="/service-manual/making-software/dependency-management">Managing dependencies</a></li>
 </ul>
 
 
@@ -320,11 +343,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1400674364" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1400674364" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1401378615" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1401378615" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
