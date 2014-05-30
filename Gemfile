@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 source 'https://BnrJb6FZyzspBboNJzYZ@gem.fury.io/govuk/'
 
+gem 'airbrake', '3.1.17'
 gem 'rails', '3.2.17'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
