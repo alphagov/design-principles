@@ -36,6 +36,15 @@ namespace :router do
       %w(/designprinciples prefix /design-principles),
       %w(/designprinciples/styleguide prefix /design-principles/style-guide),
 
+      # Missed redirections from service manual (post-beta only)
+      ["/service-manual/browsers-and-devices", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+      ["/service-manual/browsers-and-devices/index", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+      ["/service-manual/browsers-and-devices/index.html", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+      ["/service-manual/content-and-design/browsers-and-devices", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+      ["/service-manual/content-and-design/browsers-and-devices.html", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+      ["/service-manual/design-and-content/browsers-and-devices", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+      ["/service-manual/design-and-content/browsers-and-devices.html", "exact", "/service-manual/user-centred-design/browsers-and-devices"],
+
       # Redirections for old content
       ["/service-manual/digital-by-default/assessments-before-2014", "exact", "/service-manual/digital-by-default"],
       ["/service-manual/digital-by-default/assessments-before-2014.html", "exact", "/service-manual/digital-by-default"],
