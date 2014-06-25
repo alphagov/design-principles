@@ -1,4 +1,4 @@
-@import 'alpha-beta';
+@import "design-patterns/alpha-beta";
 
 $text-color: black;
 $background-color: white;
@@ -470,6 +470,10 @@ html {
   }
 
   &.styleguide {
+
+    .alpha-banner {
+      @include phase-banner(alpha);
+    }
 
     @media (max-width: 640px) {
       nav .icon {
