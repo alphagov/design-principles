@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Header and footer — Government Service Design Manual
+    <title>GOV.UK header and footer — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1403185821" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1403793552" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1403185821" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1403793552" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1403185821" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1403793552" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1403185821" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1403793552" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1403185821" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1403793552" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -160,9 +160,9 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Header and footer</h1>
+      <h1>GOV.UK header and footer</h1>
       
-      <h2 class="subtitle">Guidance on using the GOV.UK header</h2>
+      <h2 class="subtitle">How to make your service look like GOV.UK</h2>
       
     </div>
   </header>
@@ -173,27 +173,13 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-headers"><a href="#headers">Headers</a>
-<ol>
-<li class="level-design-patterns"><a href="#design-patterns">Design patterns</a>
+<li class="level-when-to-use-the-govuk-header-and-footer"><a href="#when-to-use-the-govuk-header-and-footer">When to use the GOV.UK header and footer</a>
 </li>
-<li class="level-pattern-1-no-title"><a href="#pattern-1-no-title">Pattern 1: No title</a>
+<li class="level-header-and-footer-code"><a href="#header-and-footer-code">Header and footer code</a>
 </li>
-<li class="level-pattern-2-title"><a href="#pattern-2-title">Pattern 2: Title</a>
+<li class="level-choosing-the-right-header"><a href="#choosing-the-right-header">Choosing the right header</a>
 </li>
-<li class="level-pattern-3-title-and-navigation"><a href="#pattern-3-title-and-navigation">Pattern 3: Title and navigation</a>
-</li>
-<li class="level-search"><a href="#search">Search</a>
-</li>
-<li class="level-soliciting-user-feedback"><a href="#soliciting-user-feedback">Soliciting user feedback</a>
-</li>
-<li class="level-using-the-govuk-logotype"><a href="#using-the-govuk-logotype">Using the GOV.UK logotype</a>
-</li>
-</ol>
-</li>
-<li class="level-footers"><a href="#footers">Footers</a>
-</li>
-<li class="level-templates-and-styles"><a href="#templates-and-styles">Templates and styles</a>
+<li class="level-choosing-the-right-footer"><a href="#choosing-the-right-footer">Choosing the right footer</a>
 </li>
 </ol>
 
@@ -201,95 +187,70 @@
     </div>
 
     <div class="inner">
-      <p>Users need to know if your service is in <a href="/service-manual/phases/alpha">alpha</a> or <a href="/service-manual/phases/beta">beta</a>. Many will not recognise these terms or know what they mean so it’s up to you to make them aware that a service is not officially live and they should use it at their own risk. That means labelling the service clearly and explaining what it means for them.</p>
+      <p class="intro">This guide explains when and how to use the GOV.UK header, footer, logo and typeface.</p>
 
-<h2 id="headers">Headers</h2>
+<hr />
 
-<p>Your service must be clearly labelled as alpha or beta using one of the three design patterns described below.</p>
+<h2 id="when-to-use-the-govuk-header-and-footer">When to use the GOV.UK header and footer</h2>
 
-<h3 id="design-patterns">Design patterns</h3>
+<p>If your service is available from www.gov.uk, service.gov.uk or blog.gov.uk then it must use the GOV.UK header and footer. This includes the crown device, the GOV.UK logotype and the New Transport typeface.</p>
 
-<p>So far, we have identified three patterns that fit the situations we have encountered, we may update this list as the exemplar programme matures and we have strong evidence on how they perform.</p>
+<p>If it’s not available from one of these domains (including other gov.uk domains like data.gov.uk) then it must not use the GOV.UK header and footer.</p>
 
-<p>Each design pattern also has a banner below the title, which should briefly explain the stage of the project – ‘alpha’ or ‘beta’ – and that it is a trial service.</p>
+<p>If your service isn’t yet in beta then you don’t need to use the GOV.UK header and footer. The important thing is to make something and make it quickly, before testing it with real users.</p>
 
-<p>The text for the banners should be as follows:</p>
+<hr />
 
-<blockquote>
-  <p><strong>ALPHA</strong>: This is a prototype</p>
-</blockquote>
+<h2 id="header-and-footer-code">Header and footer code</h2>
 
-<blockquote>
-  <p><strong>BETA</strong>: This is a trial service</p>
-</blockquote>
+<p>All the code and assets you need to implement the header and footer are available via the <a href="https://github.com/alphagov/govuk_template">GOV.UK template app on GitHub</a>.</p>
 
-<p>Services that aren’t a transaction funnel may optionally choose to link to a feedback survey and description of alpha or beta:</p>
+<hr />
 
-<blockquote>
-  <p><strong>ALPHA</strong>: This is a prototype – your <a href="">feedback</a> will help us to improve it. <a href="/service-manual/phases/alpha">Find out more</a></p>
-</blockquote>
+<h2 id="choosing-the-right-header">Choosing the right header</h2>
 
-<blockquote>
-  <p><strong>BETA</strong>: This is a trial service – your <a href="">feedback</a> will help us to improve it. <a href="/service-manual/phases/beta">Find out more</a></p>
-</blockquote>
+<p>There are different versions of the GOV.UK header for different types of page. For simple services on GOV.UK use this:</p>
 
-<p>Services should only add these links when it is acceptable for a user to be taken away from their existing flow.</p>
+<div class="example">
+  <img src="/service-manual/assets/images/header-footer/header-pattern-1.png" alt="Header option 1" />
+</div>
 
-<p>In all cases the GOV.UK logotype must link to <code>www.gov.uk</code>.</p>
-
-<h3 id="pattern-1-no-title">Pattern 1: No title</h3>
-
-<p>This is simply the GOV.UK header as is, without a title. This is relevant if your service is small and straightforward, taking place over only a few screens.</p>
-
-<p>You should also use this on the first page of your service if you are using the title of the service as the main heading the body.</p>
-
-<p><img src="/service-manual/assets/images/header-footer/header-pattern-1.png" alt="Pattern 1: No title" /></p>
-
-<h3 id="pattern-2-title">Pattern 2: Title</h3>
-
-<p>This is the pattern that will be used in most cases. Your service will not need any internal navigation, but will need a title to identify itself.</p>
-
-<p>The service title should link to the service start page unless there is a reason why this would not work.</p>
-
-<p><img src="/service-manual/assets/images/header-footer/header-pattern-2.png" alt="Pattern 2: Title" /></p>
-
-<h3 id="pattern-3-title-and-navigation">Pattern 3: Title and navigation</h3>
-
-<p>If you service needs to show navigation, then this should sit below the service title. The service title should link to the service start page.</p>
-
-<p><img src="/service-manual/assets/images/header-footer/header-pattern-3.png" alt="Pattern 3: Title and navigation" /></p>
-
-<p>In this case “Your tax account” is not a transactional funnel, so it can also include links to feedback and information.</p>
-
-<h3 id="search">Search</h3>
-
-<p>If your service requires a search function this should sit in the header. The search form should be clearly labelled, indicating that it is only searching your service and not the entire GOV.UK domain.</p>
-
-<p>You should try to not complicate the interface by having multiple search boxes on a single page, though you may need to use in-page filters. These should be clearly and accessibly labelled and given appropriate ARIA attributes. They should also be visually differentiated from the main search box.</p>
-
-<h3 id="soliciting-user-feedback">Soliciting user feedback</h3>
-
-<p>Users can provide data that is invaluable for developing and improving your service. You should ask for feedback by providing a link to your service’s feedback mechanism from the ‘alpha’/’beta’ banner. The link could:</p>
+<p>Remember:</p>
 
 <ul>
-  <li>open a blank email in the user’s email client, using the <a href="https://www.ietf.org/rfc/rfc2368.txt"><code>mailto</code> URL scheme</a></li>
-  <li>toggle the appearance of an embedded web form</li>
-  <li>take the user to a dedicated feedback web form on another page within your service</li>
+  <li>always link the GOV.UK logotype back to the GOV.UK home page</li>
+  <li>set the coloured bar width to be the same as the content area. The default is 960px at full width</li>
+  <li>the coloured bar is always $govuk-blue (#005ea5)</li>
 </ul>
 
-<h3 id="using-the-govuk-logotype">Using the GOV.UK logotype</h3>
+<p>If your service is more than a few pages long, you can help users understand where they are by adding the service title, like this:</p>
 
-<p>You can only use the GOV.UK logotype if your service is <a href="/service-manual/user-centred-design/service-look-and-feel">currently available on GOV.UK</a>. If the service is on a temporary domain then you must use an alternative header that does not show the GOV.UK logotype or crown. The logotype must link back to GOV.UK.</p>
+<div class="example">
+  <img src="/service-manual/assets/images/header-footer/header-pattern-2.png" alt="Header option 2" />
+</div>
 
-<h2 id="footers">Footers</h2>
+<p>If you need to include contact or account management links, do this:</p>
 
-<p>The footer of your service should follow the design patterns used by the GOV.UK footer. It should include links to secondary information for your service that would allow users to contact you directly or provide feedback about your service (like email addresses, phone numbers or contact forms).</p>
+<div class="example">
+  <img src="/service-manual/assets/images/header-footer/header-pattern-3.png" alt="Header option 3" />
+</div>
 
-<p>The footer should also display the appropriate copyright and licence notices.</p>
+<p><a href="https://github.com/alphagov/govuk_template#propositional-title-and-navigation">Here’s how to code the service title and navigation</a></p>
 
-<h2 id="templates-and-styles">Templates and styles</h2>
+<hr />
 
-<p>If you need access to the templates and styles, please make a request using <a href="/support/internal">the GOV.UK support form</a>.</p>
+<h2 id="choosing-the-right-footer">Choosing the right footer</h2>
+
+<p>Services on GOV.UK should use the standard GOV.UK home page footer, but with the browse links removed. You may also add a link back to the department responsible and to other language options.</p>
+
+<p>Here’s an example from the ‘Renew a tax disc’ service:</p>
+
+<div class="example">
+  <a href="/service-manual/assets/images/header-footer/tax-disc-footer.png">
+  <img src="/service-manual/assets/images/header-footer/tax-disc-footer.png" alt="An example footer from the Renew a tax disc service" />
+  </a>
+</div>
+
 
 
       <nav class="page-tools">
@@ -373,11 +334,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1403185821" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1403185821" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1403185821" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1403185821" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1403185821" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1403793552" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1403793552" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1403793552" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1403793552" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1403793552" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
