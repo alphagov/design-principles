@@ -52,6 +52,8 @@ namespace :router do
       ["/service-manual/digital-by-default/go-live-panel.html", "exact", "/service-manual/digital-by-default"],
       ["/service-manual/identity-assurance/guidance-for-government-service-providers", "exact", "/service-manual/identity-assurance"],
       ["/service-manual/identity-assurance/guidance-for-government-service-providers.html", "exact", "/service-manual/identity-assurance"],
+      ["/service-manual/making-software/accessibility-testing", "exact", "/service-manual/user-centred-design/user-research/accessibility-testing"],
+      ["/service-manual/making-software/accessibility-testing.html", "exact", "/service-manual/user-centred-design/user-research/accessibility-testing"],
       ["/service-manual/user-centered-design", "prefix", "/service-manual/user-centred-design"],
       ["/service-manual/user-centered-design/user-research/guerilla-testing", "prefix", "/service-manual/user-centred-design/user-research/guerrilla-testing"],
       ["/service-manual/user-centered-design/user-research/guerrilla-testing", "prefix", "/service-manual/user-centred-design/user-research/guerrilla-testing"],
@@ -59,6 +61,10 @@ namespace :router do
       ["/service-manual/user-centered-design/what-should-service-look-like.html", "exact", "/service-manual/user-centred-design/service-look-and-feel"],
       ["/service-manual/user-centered-design/writing-government-services", "exact", "/service-manual/content-designers/transactions-style-guide"],
       ["/service-manual/user-centered-design/writing-government-services.html", "exact", "/service-manual/content-designers/transactions-style-guide"],
+      ["/service-manual/user-centred-design/know-your-users", "exact", "/service-manual/user-centred-design/user-needs"],
+      ["/service-manual/user-centred-design/know-your-users.html", "exact", "/service-manual/user-centred-design/user-needs"],
+      ["/service-manual/user-centred-design/introduction-to-user-research", "exact", "/service-manual/user-centred-design/user-research"],
+      ["/service-manual/user-centred-design/introduction-to-user-research.html", "exact", "/service-manual/user-centred-design/user-research"],
       ["/transformation/property-register", "prefix", "/transformation/land-registry"],
     ].each do |path, type, destination|
       begin
