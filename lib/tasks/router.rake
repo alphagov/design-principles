@@ -54,6 +54,8 @@ namespace :router do
       ["/service-manual/identity-assurance/guidance-for-government-service-providers.html", "exact", "/service-manual/identity-assurance"],
       ["/service-manual/making-software/accessibility-testing", "exact", "/service-manual/user-centred-design/user-research/accessibility-testing"],
       ["/service-manual/making-software/accessibility-testing.html", "exact", "/service-manual/user-centred-design/user-research/accessibility-testing"],
+      ["/service-manual/the-team/induction-and-development", "exact", "/service-manual/the-team/learning-and-development"],
+      ["/service-manual/the-team/induction-and-development.html", "exact", "/service-manual/the-team/learning-and-development"],
       ["/service-manual/user-centered-design", "prefix", "/service-manual/user-centred-design"],
       ["/service-manual/user-centred-design/service-look-and-feel", "exact", "/service-manual/user-centred-design/service-user-experience"],
       ["/service-manual/user-centred-design/service-look-and-feel.html", "exact", "/service-manual/user-centred-design/service-user-experience"],
