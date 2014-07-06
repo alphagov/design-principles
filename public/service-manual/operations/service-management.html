@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Progressive enhancement — Government Service Design Manual
+    <title>Service management — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -151,7 +151,7 @@
 	  
 	  <li><a href="/service-manual">Home</a></li>
 	  
-	  <li><a href="/service-manual/making-software">Making software</a></li>
+	  <li><a href="/service-manual/operations">Operations</a></li>
 	  
 	</ol>
 </div>
@@ -160,9 +160,9 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Progressive enhancement</h1>
+      <h1>Service management</h1>
       
-      <h2 class="subtitle">How to create pages that work regardless of browser capability</h2>
+      <h2 class="subtitle">Managing a running service</h2>
       
     </div>
   </header>
@@ -173,13 +173,39 @@
         <h2>Contents</h2>
 
         <ol>
-<li class="level-first-just-make-it-work"><a href="#first-just-make-it-work">First, just make it work</a>
+<li class="level-agile-and-service-management"><a href="#agile-and-service-management">Agile and service management</a>
 </li>
-<li class="level-second-make-it-work-better"><a href="#second-make-it-work-better">Second, make it work better</a>
+<li class="level-itil"><a href="#itil">ITIL</a>
+<ol>
+<li class="level-service-strategy"><a href="#service-strategy">Service Strategy</a>
 </li>
-<li class="level-it-isnt-about-javascript-off"><a href="#it-isnt-about-javascript-off">It isn't about "JavaScript off"</a>
+<li class="level-service-design"><a href="#service-design">Service Design</a>
 </li>
-<li class="level-it-isnt-only-about-javascript"><a href="#it-isnt-only-about-javascript">It isn't only about JavaScript</a>
+<li class="level-service-transition"><a href="#service-transition">Service Transition</a>
+</li>
+<li class="level-service-operation"><a href="#service-operation">Service Operation</a>
+</li>
+<li class="level-continual-service-improvement"><a href="#continual-service-improvement">Continual Service Improvement</a>
+</li>
+<li class="level-functions"><a href="#functions">Functions</a>
+</li>
+</ol>
+</li>
+<li class="level-the-important-of-implementation"><a href="#the-important-of-implementation">The important of implementation</a>
+<ol>
+<li class="level-an-example----service-transition"><a href="#an-example----service-transition">An example -- service transition</a>
+</li>
+</ol>
+</li>
+<li class="level-other-frameworks-exist"><a href="#other-frameworks-exist">Other frameworks exist</a>
+</li>
+<li class="level-problematic-concepts"><a href="#problematic-concepts">Problematic concepts</a>
+<ol>
+<li class="level-projects"><a href="#projects">Projects</a>
+</li>
+<li class="level-business-as-usual"><a href="#business-as-usual">Business as usual</a>
+</li>
+</ol>
 </li>
 <li class="level-further-reading"><a href="#further-reading">Further reading</a>
 </li>
@@ -189,77 +215,232 @@
     </div>
 
     <div class="inner">
-      <p>When creating web pages, the only part of a page that you can rely upon working is the HTML. Even that can fail, but without HTML there is no web page and everything else becomes moot. The attitude towards building for the web with this in mind is called <a href="https://en.wikipedia.org/wiki/Progressive_enhancement">progressive enhancement</a>.</p>
+      <p>The <a href="/service-manual/digital-by-default/">Digital by Default standard</a>
+says that organisations should (emphasis on <em>operate</em> added):</p>
 
-<p>This means in essence that each extra layer (images, styling, behaviour, video, audio) of a page should be seen as optional. If you build pages with the idea that parts other than HTML are optional, you’ll create a better and stronger web page.</p>
+<blockquote>
+  <p>Put in place a sustainable multidisciplinary team that can design, build
+and <em>operate</em> the service, led by a suitably skilled and senior service manager
+with decision-making responsibility.</p>
+</blockquote>
 
-<h2 id="first-just-make-it-work">First, just make it work</h2>
+<p>This implies a change to how many organisations have traditionally run services,
+often with a team or organisation building a service separate from the one running it.
+This change however does not mean ignoring existing good practice when it comes to service
+management.</p>
 
-<p>Make any new page or feature work with HTML alone – no images, no CSS, no JavaScript, nothing but HTML. Interactive elements are only those capable of being implemented with <a href="https://en.wikipedia.org/wiki/Form_(HTML)">forms</a> and server-side processing.</p>
+<h2 id="agile-and-service-management">Agile and service management</h2>
 
-<p>This gives a baseline experience, which will work in practically every browser. It allows your site to work for as many people and devices as possible, including older legacy browsers and devices.</p>
+<p>The principles of IT service management (ITSM) and those of agile do not necessarily
+conflict – issues can arise however when organisations implement rigid processes
+without considering wider service delivery matters, or design and build services
+without thinking about how they will be operated.</p>
 
-<h2 id="second-make-it-work-better">Second, make it work better</h2>
-
-<p>From this baseline, extra layers can then be added:</p>
-
-<ul>
-  <li>the page can have images</li>
-  <li>advance styling can be applied</li>
-  <li>interactions can be made smoother and faster without the need to refresh the entire page</li>
-  <li>validation of submitted data can be performed before it hits the network</li>
-  <li>charts and data tables can be turned into visualisations with interactive elements</li>
-</ul>
-
-<p>Remember to see each addition as just that – an addition. Additions are just something extra that the more modern browsers are capable of doing. That’s along with an already accessible and usable experience that has as much content and interactivity available as possible.</p>
-
-<h2 id="it-isnt-about-javascript-off">It isn’t about “JavaScript off”</h2>
-
-<p>A common misunderstanding is that designing sites to work without CSS, JavaScript or anything else is because a user chooses to switch it off, considering it as an error or mistake on their part. It isn’t just a case of “fix your browser”.</p>
-
-<p>There are many scenarios where the extra layers can fail to load or are deliberately filtered, which can be due to:</p>
+<p>The <a href="http://agilemanifesto.org/">agile manifesto</a> makes the case for:</p>
 
 <ul>
-  <li>temporary network errors</li>
-  <li>DNS lookup failures</li>
-  <li>sever that the resource is found on could be overloaded or down, and fail to respond in time or at all</li>
-  <li>large institutions (eg banks and financial institutions, some government departments) having corporate firewalls that block, remove or alter content from the Internet</li>
-  <li>mobile network providers resampling images and altering content so that load times faster and reduce bandwidth consumed</li>
-  <li>antivirus and personal firewall software that will alter and/or block content</li>
+  <li>Individuals and interactions over processes and tools</li>
+  <li>Working software over comprehensive documentation</li>
+  <li>Customer collaboration over contract negotiation</li>
+  <li>Responding to change over following a plan</li>
 </ul>
 
-<p>Of course, there are people who do turn off features in their browsers deliberately. Respect their decision and still provide them with a usable and useful service.</p>
+<p>It is too easy to position service management as opposed to agile as
+traditional service management practices can be viewed as focusing on processes, tools,
+documentation, planning and contract negotiation – the items on the right hand
+side of the points above.</p>
 
-<h2 id="it-isnt-only-about-javascript">It isn’t only about JavaScript</h2>
+<p>However, the agile manifesto goes on to say:</p>
 
-<p>Another common misunderstanding is that progressive enhancement is only about JavaScript - it’s not. Treat anything other than HTML as an enhancement, not just JavaScript.</p>
+<blockquote>
+  <p>That is, while there is value in the items on the right, we
+value the items on the left more.</p>
+</blockquote>
 
-<p>Adding an image to a page requires suitable alternative text (and may also need a longer description) for people with visual impairment, and simply for when the image fails to load.</p>
+<p>To build and run a successful service you will need to work on suitable
+processes and manage third party relationships. Using existing service management
+frameworks (especially as a starting point) is one approach to this problem.</p>
 
-<p>Styling cannot be the only way to share information:</p>
+<h2 id="itil">ITIL</h2>
+
+<p><a href="http://www.itil-officialsite.com/">ITIL</a> (the Information Technology Infrastructure
+Library) is one such framework. ITIL does a particularly good job of facilitating shared
+language. For instance it’s definition of a service is:</p>
+
+<blockquote>
+  <p>A service is a means of delivering value to customers by facilitating outcomes
+customers want to achieve.</p>
+</blockquote>
+
+<p>The current version of ITIL currently provides 5 volumes and 26 processes
+describing in detail various aspects of service management:</p>
+
+<h3 id="service-strategy">Service Strategy</h3>
 
 <ul>
-  <li>“text in bold” is not enough when you can’t tell the difference between bold and normal text</li>
-  <li>“red items are required” is not enough when you don’t have colours applied, cannot see the colours or cannot distinguish them because of colour blindness</li>
-  <li>video and audio without transcripts and/or subtitles are unsuitable for hearing impaired people</li>
-  <li>information appearing in a video in a visual-only form (eg a question answered by people on screen with no audio) is unsuitable for people with visual impairments</li>
-  <li>making an interactive element that requires a mouse (eg a hover effect, a drag and drop operation) is unusable by someone who only uses a keyboard or a touch-only device such as a smartphone or tablet</li>
+  <li>IT service management</li>
+  <li>Service portfolio management</li>
+  <li>Financial management for IT services</li>
+  <li>Demand management</li>
+  <li>Business relationship management</li>
 </ul>
+
+<h3 id="service-design">Service Design</h3>
+
+<ul>
+  <li>Design coordination</li>
+  <li>Service Catalogue management</li>
+  <li>Service level management</li>
+  <li>Availability management</li>
+  <li>Capacity Management</li>
+  <li>IT service continuity management</li>
+  <li>Information security management system</li>
+  <li>Supplier management</li>
+</ul>
+
+<h3 id="service-transition">Service Transition</h3>
+
+<ul>
+  <li>Transition planning and support</li>
+  <li>Change management</li>
+  <li>Service asset and configuration management</li>
+  <li>Release and deployment management</li>
+  <li>Service validation and testing</li>
+  <li>Change evaluation</li>
+  <li>Knowledge management</li>
+</ul>
+
+<h3 id="service-operation">Service Operation</h3>
+
+<ul>
+  <li>Event management</li>
+  <li>Incident management</li>
+  <li>Request fulfillment</li>
+  <li>Problem management</li>
+  <li>Identity management</li>
+</ul>
+
+<h3 id="continual-service-improvement">Continual Service Improvement</h3>
+
+<h3 id="functions">Functions</h3>
+
+<p>ITIL also describes four functions that should cooperate together to form
+an effective service management capability.</p>
+
+<ul>
+  <li>Service operations</li>
+  <li>Technical management</li>
+  <li>Application management</li>
+  <li>Operations management</li>
+</ul>
+
+<h2 id="the-important-of-implementation">The important of implementation</h2>
+
+<p>The above processes and functions make for an excellent high level list of topics
+to discuss when establishing an operating model for your service, whether
+or not you adopt the formal methods. In many cases if you have well understood,
+well established and well documented processes in place for all of the above
+you should be in a good position to run your service.</p>
+
+<p>When looking to combine much of the rest of guidance on <a href="/service-manual">the service manual</a>
+with ITIL or other service management frameworks it is important to challenge
+existing implementations. This is less about the actual implementation and more often
+about the problems that implementation was designed to originally solve.</p>
+
+<h3 id="an-example----service-transition">An example – service transition</h3>
+
+<p>As an example ITIL talks a great deal about Service Transition – getting working functionality
+into the hands of the users of the service. This is a key topic for The Digital Service Standard
+too which says that teams should:</p>
+
+<blockquote>
+  <p>Make sure that you have the capacity and technical flexibility to update and
+improve the service on a very frequent basis.</p>
+</blockquote>
+
+<p><a href="https://www.gov.uk/">GOV.UK</a> for instance made more than 100 production releases
+<a href="https://gds.blog.gov.uk/2012/11/02/regular-releases-reduce-risk/">during its first two weeks</a> after launch.</p>
+
+<p>This high rate of change tends to challenge existing processes designed for a
+slower rate of change. If you are releasing your service every month or every 6 months
+then a manual process (like a weekly or monthly in-person change approval board or CAB) may be
+the most suitable approach. If you’re releasing many times a day then the approach to how
+change is evaluated, tested and managed tends towards being more automated. This
+moves effort from occasional but manual activities to upfront design and automation
+work. More work is put in to assure the processes rather than putting all the effort
+into assuring a specific <em>transition</em>.</p>
+
+<p>Service management frameworks tend to acknowledge this, for instance ITIL has a
+concept of a standard change (something commonly done, with known risks
+and hence pre-approved), but a specific implementation in a given organisation
+might not.</p>
+
+<h2 id="other-frameworks-exist">Other frameworks exist</h2>
+
+<p>It is important to note that other service management frameworks and standards
+exist, including some that are of a similar size and scope to ITIL:</p>
+
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/ISO/IEC_20000">ISO/IEC 20000</a></li>
+  <li><a href="http://www.microsoft.com/MOF">Microsoft Operations Framework</a></li>
+</ul>
+
+<p>Many organisations also use smaller processes and integrate them together.
+The needs of your service and organisation will determine what works best for you.</p>
+
+<h2 id="problematic-concepts">Problematic concepts</h2>
+
+<p>Some traditional language tends to cause some confusion when discussing service
+management alongside agile. It’s generally best to avoid the following terms when possible,
+although given their widespread usage this isn’t always possible. It is however worth
+being aware of the problems these concepts raise.</p>
+
+<h3 id="projects">Projects</h3>
+
+<p>Projects tend to imply a start and an end. The main goal of project work is to
+complete it, to reach the end. Especially for software development the project can
+too often be viewed as <em>done</em> when the software is released. What happens after that
+is another problem entirely – and often someone else’s problem.</p>
+
+<p>However when building services the main goal is to meet <a href="/user-centred-design/user-needs.html">user needs</a>.
+These needs may change over time, and are only met by software that is running in
+production and available to those users.</p>
+
+<p>This doesn’t mean not breaking work down into easily understandable parts, but <a href="/service-manual/agile/writing-user-stories">stories</a>,
+<a href="/service-manual/agile/features-of-agile#sprints">sprints</a> and epics are much more
+suited to agile service delivery.</p>
+
+<h3 id="business-as-usual">Business as usual</h3>
+
+<p>The concept of business as usual also clashes with a model of continuous
+service improvement. It immediately brings to mind before and after
+states, often with the assumption that change is both much slower and
+more constrained during <em>business as usual</em>. In reality, until you put your
+service in the hands of real users as part of an <a href="/service-manual/phases/alpha">alpha</a>
+or <a href="/service-manual/phases/beta">beta</a> you won’t have all the information
+needed to build the correct service. And even once you pass the <a href="/service-manual/digital-by-default/maintaining-the-standard">live standard</a>
+you will be expected to:</p>
+
+<blockquote>
+  <p>continuously update and improve the service on the basis of user feedback,
+performance data, changes to best practice and service demand</p>
+</blockquote>
 
 <h2 id="further-reading">Further reading</h2>
 
 <ul>
-  <li><a href="https://en.wikipedia.org/wiki/Progressive_enhancement">Progressive enhancement</a> on Wikipedia</li>
-  <li><a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding progressive enhancement</a> on A List Apart</li>
-  <li><a href="http://alistapart.com/article/for-a-future-friendly-web">For a Future-Friendly Web</a> on A List Apart</li>
-  <li><a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard">Cutting the mustard</a> on the BBC News responsive design blog</li>
+  <li><a href="http://www.slideshare.net/nuwulang/functions-in-service-operation">Functions in service management</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/ITIL">ITIL on Wikipedia</a></li>
+  <li><a href="http://www.best-management-practice.com/gempdf/itsmf_an_introductory_overview_of_itil_v3.pdf">Introduction to ILIL v3</a></li>
+  <li><a href="http://blog.ingineering.it/post/59414765140/itil-vs-devops-slugfest-or-lovefest">Discussion of Devops and ITIL</a></li>
+  <li><a href="http://changeandrelease.com/2014/04/05/devops-and-itil-continuous-delivery-doesnt-stop-at-software/">Discussion of ITIL and Continuous Delivery</a></li>
 </ul>
 
 
       <nav class="page-tools">
         <ol>
-          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/progressive-enhancement.md">Page history</a>
-          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/progressive-enhancement.md">Page source</a>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/operations/service-management.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/operations/service-management.md">Page source</a>
         </ol>
       </nav>
     </div>
