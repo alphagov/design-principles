@@ -58,7 +58,7 @@ GEM
       null_logger
       plek
       rest-client (~> 1.6.3)
-    govuk_frontend_toolkit (0.32.2)
+    govuk_frontend_toolkit (1.4.0)
       rails (>= 3.1.0)
       sass (>= 3.2.0)
     hike (1.2.3)
@@ -186,7 +186,7 @@ DEPENDENCIES
   airbrake (= 3.1.17)
   capybara (= 1.1.2)
   gds-api-adapters (= 7.18.0)
-  govuk_frontend_toolkit (= 0.32.2)
+  govuk_frontend_toolkit (= 1.4.0)
   logstasher (= 0.4.8)
   mocha (= 0.13.3)
   plek (= 1.5.0)
