@@ -1,5 +1,10 @@
 - content: !xml |
       <h3>GOV.UK style changes/improvements</h3>
+      <p>Only one change today: we've updated the <a href="/design-principles/style-guide/publications#publications-statistics">guidance about statistics</a>.</p>
+  updated_at: 2014-07-18
+
+- content: !xml |
+      <h3>GOV.UK style changes/improvements</h3>
       <p>Only one change today: we've updated the guidance about when it is <a href="/design-principles/style-guide/style-points#style-organisations">acceptable to use the definite article with organisation names</a>.</p>
   updated_at: 2014-03-03
 
