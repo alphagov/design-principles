@@ -6,6 +6,6 @@ require 'spec_helper'
 describe :JekylledApps do
   it "should not contain git merge artifacts" do
     merge_artifacts = Dir['**/*.orig'].select { |f| File.file?(f) }
-    merge_artifacts.should be_empty
+    expect(merge_artifacts).to be_empty, merge_artifacts
   end
 end
