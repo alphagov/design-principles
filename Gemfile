@@ -8,7 +8,6 @@ gem 'logstasher', '0.4.8'
 gem 'rack-rewrite', '1.3.3'
 gem 'govuk_frontend_toolkit', '1.4.0'
 gem 'plek', '1.5.0'
-gem 'rummageable'
 gem 'gds-api-adapters', '7.18.0'
 
 if ENV['SLIMMER_DEV']
