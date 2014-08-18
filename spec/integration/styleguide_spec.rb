@@ -94,7 +94,7 @@ describe "The styleguide page" do
   end
 
   it "should render groups" do
-    visit "/design-principles/style-guide/policy-advisory-groups"
+    visit "/design-principles/style-guide/groups"
 
     page.should have_content("Content style guide")
     page.should have_content("The groups format is used for policy advisory groups")

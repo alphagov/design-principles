@@ -52,6 +52,9 @@ class StyleguideController < ApplicationController
     render "government-responses"
   end
 
+  def groups
+  end
+
   def guides
   end
 
@@ -68,10 +71,6 @@ class StyleguideController < ApplicationController
 
   def people_and_roles
     render "people-and-roles"
-  end
-
-  def policy_advisory_groups
-    render "policy-advisory-groups"
   end
 
   def policy_pages
