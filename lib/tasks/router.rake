@@ -35,6 +35,7 @@ namespace :router do
       # Redirections because the slugs changed.
       %w(/designprinciples prefix /design-principles),
       %w(/designprinciples/styleguide prefix /design-principles/style-guide),
+      %w(/design-principles/style-guide/policy-advisory-groups prefix /design-principles/style-guide/groups),
 
       # Missed redirections from service manual (post-beta only)
       ["/service-manual/browsers-and-devices", "exact", "/service-manual/user-centred-design/browsers-and-devices"],

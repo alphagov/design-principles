@@ -93,11 +93,11 @@ describe "The styleguide page" do
     page.should have_content("Use these pages to let people know who is responsible for running the organisation")
   end
 
-  it "should render policy advisory groups" do
-    visit "/design-principles/style-guide/policy-advisory-groups"
+  it "should render groups" do
+    visit "/design-principles/style-guide/groups"
 
     page.should have_content("Content style guide")
-    page.should have_content("Use for profiling groups of expert advisers")
+    page.should have_content("The groups format is used for policy advisory groups")
   end
 
   it "should render policy pages" do
