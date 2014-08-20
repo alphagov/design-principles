@@ -20,7 +20,7 @@ end
 # in production environments by default.
 group :assets do
   gem 'sass-rails', '3.2.5'
-  gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', '0.12.1', :platforms => :ruby
   gem 'uglifier', '1.2.6'
 end
 
