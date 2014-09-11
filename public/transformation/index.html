@@ -1,825 +1,1381 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="lte-ie8 " lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en" class=""><!--<![endif]-->
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Digital Transformation – GOV.UK</title>
-<meta name="description" content="Digital services so good people prefer to use them. The Government Digital Strategy and departmental digital strategies commit us to the redesigning and rebuilding of 25 significant 'exemplar' services. We're going to make them simpler, clearer and faster to use.">
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>Digital Transformation &mdash; GOV.UK</title>
+
+    <meta name="description" content="Digital services so good people prefer to use them. The Government Digital Strategy and departmental digital strategies commit us to the redesigning and rebuilding of 25 significant 'exemplar' services. We're going to make them simpler, clearer and faster to use.">
+
+    <script type="text/javascript">
+      (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+    </script>
+
+    <!--[if gt IE 8]><!--><link href="/transformation/assets/govuk-template-a767d4ed76eb5bbb7f039081da5b3a8a.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if IE 6]><link href="/transformation/assets/govuk-template-ie6-f0dd9bebf8b4d004562d99517c6f316b.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="/transformation/assets/govuk-template-ie7-88b5e1b33deb74760feeaa3eace1252b.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="/transformation/assets/govuk-template-ie8-86ef351e730ffe38296a84a2774ce144.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <link href="/transformation/assets/govuk-template-print-2893fd74ba17e48ff518a975f7ea6639.css" media="print" rel="stylesheet" type="text/css" />
+
+    <!--[if IE 8]>
+    <script type="text/javascript">
+      (function(){if(window.opera){return;}
+       setTimeout(function(){var a=document,g,b={families:(g=
+       ["nta"]),urls:["/transformation/assets/fonts-ie8-6423351a5525ec008f4e30bb7f3f555e.css"]},
+       c="/transformation/assets/vendor/goog/webfont-debug-752596c5abe71baff84c942046af7a8e.js",d="script",
+       e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+       ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+       .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+      })()
+    </script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+      <link href="/transformation/assets/fonts-2e0febbc9f7a3d2a4b65e9ca9b8e014e.css" media="all" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
 
 
+    <!--[if lt IE 9]>
+      <script src="/transformation/assets/ie-694528df423ed0a706e22f9ee20f75f2.js" type="text/javascript"></script>
+    <![endif]-->
 
-<script type="text/javascript">
-  (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
-</script>
+    <link rel="shortcut icon" href="/transformation/assets/images/favicon.ico" type="image/x-icon" />
 
-<!--[if gt IE 8]><!-->
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-a75ed8fe7ded5740f6e2592bb758ac22.css" media="screen" rel="stylesheet" type="text/css">
-<!--<![endif]-->
-<!--[if IE 6]><link href="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-ie6-bb42fae92bf9ff59544bf7cdbc8a6809.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 7]><link href="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-ie7-952d4c24eff92f0e43412631c0775101.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 8]><link href="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-ie8-25eab64900ca53a083795258de5a2dd0.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/transformation/assets/images/apple-touch-icon-144x144.png">
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/transformation/assets/images/apple-touch-icon-114x114.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/transformation/assets/images/apple-touch-icon-72x72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/transformation/assets/images/apple-touch-icon-57x57.png">
 
-<link href="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-print-e8347470022aae909a6076606e53d420.css" media="print" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/transformation/assets/images/opengraph-image.png">
 
-<!--[if IE 8]>
-  <script type="text/javascript">
-    (function(){if(window.opera){return;}
-     setTimeout(function(){var a=document,g,b={families:(g=
-     ["nta"]),urls:["https://assets.digital.cabinet-office.gov.uk/static/fonts-ie8-a7369d48db4c172b4371ab9def59c5c9.css"]},
-     c="https://assets.digital.cabinet-office.gov.uk/static/vendor/goog/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js",d="script",
-     e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
-     ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
-     .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
-    })()
-  </script>
-<![endif]-->
+    <!--[if gt IE 8]><!--><link href="/transformation/assets/application-5047ebe48c7b8d47384e6b96da211b67.css" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
 
-<!--[if gte IE 9]><!-->
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/fonts-607c54f71c7c1f98257595cedaa13a34.css" media="all" rel="stylesheet" type="text/css">
-<!--<![endif]-->
-<!--[if lt IE 9]>
-  <script src="https://assets.digital.cabinet-office.gov.uk/static/ie-fc5bd25c5f46587b9bff917417ab2b7f.js" type="text/javascript"></script>
-<![endif]-->
+<!--[if IE 6]><link href="/transformation/assets/application-ie6-3a7f99c05412828b02bc6a419b43e866.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 7]><link href="/transformation/assets/application-ie7-4f5d44030f94566a96ee7f63180985c5.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 8]><link href="/transformation/assets/application-ie8-72b62047ba460c08d491236d682f02b8.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
-<link rel="shortcut icon" href="https://assets.digital.cabinet-office.gov.uk/static/favicon-447e4ac1ab790342660eacfe3dcce264.ico" type="image/x-icon">
-<!-- For third-generation iPad with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png">
-<!-- For iPhone with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png">
-<!-- For first- and second-generation iPad: -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png">
-<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-<link rel="apple-touch-icon-precomposed" href="https://assets.digital.cabinet-office.gov.uk/static/apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png">
+<link href="/transformation/assets/application-print-acc1621502fcb06ff9c75f1df65a8459.css" media="print" rel="stylesheet" type="text/css" />
+  </head>
 
+  <body class="">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
-
-<!--[if gt IE 8]><!-->
-  <link href="https://assets.digital.cabinet-office.gov.uk/static/application-40c36315aa223e2e3fad3a57a2c7d5e1.css" media="screen" rel="stylesheet" type="text/css">
-<!--<![endif]-->
-<!--[if IE 6]><link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie6-7592c2bf9a6bbc2f4dc1a7cf72bec180.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 7]><link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie7-0e6d8f655a0f6efc890d48b02856aeff.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 8]><link href="https://assets.digital.cabinet-office.gov.uk/static/application-ie8-9a1e5fd1fa336e72298e45784a474863.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-
-<link href="https://assets.digital.cabinet-office.gov.uk/static/print-962d6ad53c9d2dc9f033d26dcab8c33a.css" media="print" rel="stylesheet" type="text/css">
-
-
-
-<!--[if gt IE 8]><!-->
-  <link href="/transformation/assets/stylesheets/transformation.css?cache=1409133004" media="screen" rel="stylesheet" type="text/css" />
-<!--<![endif]-->
-<!--[if IE 6]>
-  <link href="/transformation/assets/stylesheets/transformation-ie6.css?cache=1409133004" media="screen" rel="stylesheet" type="text/css" />
-<![endif]-->
-<!--[if IE 7]>
-  <link href="/transformation/assets/stylesheets/transformation-ie7.css?cache=1409133004" media="screen" rel="stylesheet" type="text/css" />
-<![endif]-->
-<!--[if IE 8]>
-  <link href="/transformation/assets/stylesheets/transformation-ie8.css?cache=1409133004" media="screen" rel="stylesheet" type="text/css" />
-<![endif]-->
-
-
-
-
-
-
-
-</head>
-<body class="mainstream full-width  ">
-  <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script><a href="#content" class="visuallyhidden">Skip to main content</a>
-
-  <!--start header-->
-<header role="banner" id="global-header" class="">
-  <div class="header-wrapper">
-    <div class="header-global">
-      <div class="header-logo">
-        <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
-          <img src="https://assets.digital.cabinet-office.gov.uk/static/gov.uk_logotype_crown-c09acb07e4d1d5d558f5a0bc53e9e36d.png" alt=""> GOV.UK
-        </a>
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
       </div>
     </div>
-  </div>
-</header>
-<!--end header-->
-
-  <div id="global-cookie-message">
-    <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
-  </div>
-
-  <div id="wrapper" class="transaction-dashboard">
-    <main id="content" role="main" class="group">
-
-      
-<div id="global-breadcrumb" class="header-context">
-  <nav role="navigation">
-    <ol class="group">
-      
-      <li><a href="/">Home</a></li>
-      
-    </ol>
-  </nav>
-</div>
 
 
+    <header role="banner" id="global-header" class="">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
+              <img src="/transformation/assets/images/gov.uk_logotype_crown.png" width="35" height="31" alt=""> GOV.UK
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </header>
+    <!--end header-->
 
-<article>
-  <header class="page-header group">
-    <div class="hgroup">
-      <h1>Digital Transformation</h1>
-      <h2>Government is building digital services that are simpler, clearer and faster to use. We’re starting with these 25 services. You can follow our progress on this page.</h2>
+
+    
+
+    <div id="global-cookie-message">
+
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+
     </div>
+
+    
+
+
+
+
+
+  
+    
+    
+            
+    
+  
+
+  
+    
+    
+            
+    
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+    
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+    
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+    
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+        
+  
+
+  
+    
+    
+            
+    
+  
+
+
+<nav role="navigation" class="breadcrumbs">
+  <ol class="group">
+    <li><a href="/">Home</a></li>
+  </ol>
+</nav>
+
+<main class="main-content" role="main">
+
+  <header class="homepage-header">
+    <h1>Digital Transformation</h1>
+    <p>Government is building digital services that are simpler, clearer and faster to use. We’re starting with these 25 services. You can follow our progress on this page.</p>
   </header>
 
-  <ul class="phases group">
-    <li class="discovery">
-      <h2><a href="https://www.gov.uk/service-manual/phases/discovery">Discovery</a></h2>
+  <article role="article">
 
-      <div class="num-transactions">0</div>
+    <h2 class="visuallyhidden">Current status</h2>
 
-      <p>User needs are researched and identified</p>
-      <p><a href="https://www.gov.uk/service-manual/phases/discovery">Learn more about the discovery phase</a></p>
-    </li>
-    <li class="alpha">
-      <h2><a href="https://www.gov.uk/service-manual/phases/alpha">Alpha</a></h2>
+    <ul class="phases group">
+      <li class="discovery">
+        <h3><a href="https://www.gov.uk/service-manual/phases/discovery">Discovery</a></h3>
+        <div class="lrg-number phase-count">0</div>
+        <p>User needs are researched and identified</p>
+        <p><a href="https://www.gov.uk/service-manual/phases/discovery">Learn more about the discovery phase</a></p>
+      </li>
 
-      <div class="num-transactions">3</div>
+      <li class="alpha">
+        <h3><a href="https://www.gov.uk/service-manual/phases/alpha">Alpha</a></h3>
+        <div class="lrg-number phase-count">3</div>
+        <p>A core service is built to meet the main user needs</p>
+        <p><a href="https://www.gov.uk/service-manual/phases/alpha">Learn more about the alpha phase</a></p>
+      </li>
 
-      <p>A core service is built to meet the main user needs</p>
-      <p><a href="https://www.gov.uk/service-manual/phases/alpha">Learn more about the alpha phase</a></p>
-    </li>
-    <li class="beta">
-      <h2><a href="https://www.gov.uk/service-manual/phases/beta">Beta</a></h2>
+      <li class="beta">
+        <h3><a href="https://www.gov.uk/service-manual/phases/beta">Beta</a></h3>
+        <div class="lrg-number phase-count">16</div>
+        <p>The service is improved, then tested in public</p>
+        <p><a href="https://www.gov.uk/service-manual/phases/beta">Learn more about the beta phase</a></p>
+      </li>
 
-      <div class="num-transactions">17</div>
+      <li class="live">
+        <h3><a href="https://www.gov.uk/service-manual/phases/live">Live</a></h3>
+        <div class="lrg-number phase-count">6</div>
+        <p>The service is public and works well. It’ll be continually improved to meet user needs</p>
+        <p><a href="https://www.gov.uk/service-manual/phases/live">Learn more about the live phase</a></p>
+      </li>
+    </ul>
 
-      <p>The service is improved, then tested in public</p>
-      <p><a href="https://www.gov.uk/service-manual/phases/beta">Learn more about the beta phase</a></p>
-    </li>
-    <li class="live">
-      <h2><a href="https://www.gov.uk/service-manual/phases/live">Live</a></h2>
+  </article>
 
-      <div class="num-transactions">5</div>
 
-      <p>The service is public and works well. It’ll be continually improved to meet user needs</p>
-      <p><a href="https://www.gov.uk/service-manual/phases/live">Learn more about the live phase</a></p>
-    </li>
-  </ul>
+  <article role="article">
 
-  <div class="about">
+    <h2 class="visuallyhidden">The transformation programme</h2>
 
     <div class="transformation-logo">
-      <img src="/transformation/assets/images/transformation-logo.png" alt="Transformation programme logo" />
+      <img src="assets/images/transformation-logo.png" alt="Transformation programme logo" />
     </div>
 
     <div class="transformation-intro">
-      <h3>Digital services so good that people prefer to use them</h3>
 
-      <p>The <a href="/government/collections/government-digital-strategy-reports-and-research">Government Digital Strategy</a> and <a href="/government/collections/government-digital-strategy-reports-and-research#departmental-digital-strategies">departmental digital strategies</a> commit us to the redesigning and rebuilding of 25 significant ‘exemplar’ services. We’re going to make them simpler, clearer and faster to use. All these are to meet the <a href="/service-manual/digital-by-default">Digital By Default Service Standard</a> by April 2014 and be completed by March 2015.</p>
+      <h3>Digital services so good people prefer to use them</h3>
 
-      <p>This dashboard shows you which transactions are in the programme, what progress is being made, and the estimated scale of the digital service.</p>
+<p>The <a href="https://www.gov.uk/government/collections/government-digital-strategy-reports-and-research">Government Digital Strategy</a> and <a href="https://www.gov.uk/government/collections/government-digital-strategy-reports-and-research#departmental-digital-strategies">departmental digital strategies</a> commit us to the redesigning and rebuilding of 25 significant ‘exemplar’ services. We’re going to make them simpler, clearer and faster to use. All these are to meet the <a href="https://www.gov.uk/service-manual/digital-by-default">Digital By Default Service Standard</a> by April 2014 and be completed by March 2015.</p>
 
-      <p>You can read more about the transformation programme on <a href="https://digitaltransformation.blog.gov.uk/">our blog</a>.</p>
+<p>This dashboard shows you which transactions are in the programme, what progress is being made, and the estimated scale of the digital service.</p>
+
+<p>You can read more about the transformation programme on <a href="https://digitaltransformation.blog.gov.uk/">our blog</a>.</p>
+
 
       <h3>This month&rsquo;s highlights</h3>
       <ul>
-        <li><a href="/transformation/driving-record">View driving record</a> passed its live <a href="/service-manual/digital-by-default">Service Standard</a> assessment</li>
-        <li><a href="/transformation/court-claims">Civil claims</a> had its live <a href="/service-manual/digital-by-default">Service Standard</a> assessment</li>
-        <li>The <a href="/transformation/passports">Passports</a> team began work on the beta service</li>
-      </ul>
+<li><a href="/transformation/court-claims.html">Civil claims</a> went live</li>
+<li><a href="/transformation/book-prison-visit.html">Prison visit booking</a> went live</li>
+</ul>
+
 
       <h3>Next month</h3>
       <ul>
-        <li><a href="/transformation/book-prison-visit">Prison visit booking</a> will have a <a href="/service-manual/digital-by-default">Service Standard</a> assessment before going live</li>
-        <li><a href="/transformation/driving-record">View driving record</a> goes live</li>
-        <li><a href="/transformation/court-claims">Civil claims</a> goes live</li>
-        <li>The <a href="/transformation/personalised-number-plates">Personalised registrations</a> team begins work on the beta service</li>
-        <li><a href="/transformation/land-registry">Land Registry</a> moves to GOV.UK</li>
-      </ul>
+<li><a href="/transformation/driving-record.html">View driving licence</a> goes live</li>
+<li><a href="/transformation/apply-registered-traveller.html">Registered Traveller Service</a> moves into public beta</li>
+</ul>
+
 
     </div>
 
-  </div>
+    <div class="videos">
 
-  <div class="media">
-    <h4>A quick look at Electoral registration, which went live in June 2014</h4>
-    <figure class="media-player-wrapper video">
-      <a href="https://www.youtube.com/watch?v=RqZ9e1GXJLo">Video about Electoral registration, which went live in June 2014</a>
-    </figure>
-  </div>
+      
 
-  <div class="exemplars">
-    <table>
+      <h3>A quick look at Register to vote, which went live in June 2014:</h3>
+
+      <div class="media-player-wrapper">
+        <a href="https://www.youtube.com/watch?v=RqZ9e1GXJLo" class="media-player-link">A quick look at Register to vote, which went live in June 2014.</a>
+      </div>
+      
+      
+
+    </div>
+
+  </article>
+
+  <article role="article">
+    <h2 class="visuallyhidden">The exemplars</h2>
+    <table class="exemplar-listing">
       <thead class="visuallyhidden">
         <tr>
-          <th class="num">&nbsp;</th>
-          <th class="description">Description</th>
-          <th class="vol">Anticipated service volume</th>
-          <th class="dept">Responsible department</th>
+          <th scope="col">Exemplar</th>
+          <th scope="col">Description</th>
+          <th scope="col">Anticipated service volume</th>
+          <th scope="col">Responsible department</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="num">1</td>
-          <td class="description">
-            <h3><a href="/transformation/register-to-vote">Electoral registration</a> <span class="phase-tag live">Live</span></h3>
-            <p>A digital service to make registering to vote simpler, clearer and faster</p>
-          </td>
-          <td class="vol">
-            46m
-            <span>Confirmed on the electoral register in first year</span>
-          </td>
-          <td class="dept">
-            <div class="cabinet-office">
-              <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">1</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/register-to-vote.html">Register to vote</a>
+                
+                  <span class="phase-tag live">Live</span>
+                
+              </h3>
+              <p>A digital service to make registering to vote simpler, clearer and faster</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">46m</span>
+                      <span class="volume-caption">Confirmed on the electoral register in first year</span>
+                  
+              
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/cabinet-office" class="organisation-logo co">
                 <span>Cabinet Office</span>
-              </span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="num">2</td>
-          <td class="description">
-            <h3><a href="/transformation/apprenticeships">Apprenticeship applications</a> <span class="phase-tag beta">Beta</span></h3>
-            <p>If you want to advertise or apply for an apprenticeship you’ll be able to do it quickly and easily online</p>
-          </td>
-          <td class="vol">
-            1.38m
-            <span>Applications a year</span>
-          </td>
-          <td class="dept">
-            <div class="department-for-business-innovation-skills">
-              <span class="organisation-logo organisation-logo-stacked-bis organisation-logo-stacked-bis-medium">
-                <span>Department <br />for Business <br />Innovation &amp; Skills</span>
-              </span>
-            </div>
-          </td>
-        </tr>
+              </a>
+            </td>
+          </tr>
+          
 
+        
 
-        <tr>
-          <td class="num">3</td>
-          <td class="description">
-            <h3><a href="/transformation/redundancy-payment">Redundancy payments</a> <span class="phase-tag beta">Beta</span></h3>
-            <p>If your company has recently become insolvent you’ll be able to apply for redundancy payment online</p>
-          </td>
-          <td class="vol">
-            270k
-            <span>Transactions a year</span>
-          </td>
-          <td class="dept">
-            <div class="department-for-business-innovation-skills">
-              <span class="organisation-logo organisation-logo-stacked-bis organisation-logo-stacked-bis-medium">
-                <span>Department <br />for Business <br />Innovation &amp; Skills</span>
-              </span>
-            </div>
-          </td>
-        </tr>
+          
 
-        <tr>
-          <td class="num">4</td>
-          <td class="description">
-            <h3><a href="/transformation/renew-patent">Renew a patent</a> <span class="phase-tag live">Live</span></h3>
-            <p>If you want to renew a patent you’ll be able to do it quickly and easily online</p>
-          </td>
-          <td class="vol">
-            380k
-            <span>Renewals a year</span>
-          </td>
-          <td class="dept"><div class="department-for-business-innovation-skills">
-            <span class="organisation-logo organisation-logo-stacked-bis organisation-logo-stacked-bis-medium">
-              <span>Department <br />for Business <br />Innovation &amp; Skills</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          <tr>
+            <td class="exemplar-number">2</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apprenticeships.html">Apprenticeship applications</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If you want to advertise or apply for an apprenticeship you’ll be able to do it quickly and easily online</p>
 
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">1.38m</span>
+                      <span class="volume-caption">Applications a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills" class="organisation-logo bis">
+                <span>Department<br>for Business<br>Innovation & Skills</span>
+              </a>
+            </td>
+          </tr>
+          
 
-      <tr>
-        <td class="num">5</td>
-        <td class="description">
-          <h3><a href="/transformation/land-registry">Land registry</a> <span class="phase-tag alpha">Alpha</span></h3>
-          <p>A digital-first service that will support buying or selling a house</p>
-        </td>
-        <td class="vol">
-            30m
-            <span>Transactions a year</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-business-innovation-skills">
-            <span class="organisation-logo organisation-logo-stacked-bis organisation-logo-stacked-bis-medium">
-              <span>Department <br />for Business <br />Innovation &amp; Skills</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+        
 
-      <tr>
-        <td class="num">6</td>
-        <td class="description">
-          <h3><a href="/transformation/apply-for-student-finance">Student finance</a> <span class="phase-tag live">Live</span></h3>
-          <p>If you have, or are applying for, student loans and grants you’ll be able to manage them using an improved online service</p>
-        </td>
-        <td class="vol">
-          1.3m
-          <span>Students supported</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-business-innovation-skills">
-            <span class="organisation-logo organisation-logo-stacked-bis organisation-logo-stacked-bis-medium">
-              <span>Department <br />for Business <br />Innovation &amp; Skills</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          
 
-      <tr>
-        <td class="num">7</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/apply-to-carry-waste">Waste carrier registration</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>You can register as a waste carrier using this quick and easy online service</p>
-        </td>
-        <td class="vol">
-          100k
-          <span>Registrations in first year</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-environment-food-rural-affairs">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Environment <br />Food &amp; Rural Affairs</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          <tr>
+            <td class="exemplar-number">3</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/redundancy-payment.html">Redundancy payments</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If your company has recently become insolvent you’ll be able to apply for redundancy payment online</p>
 
-      <tr>
-        <td class="num">8</td>
-        <td class="description">
-          <h3><a href="/transformation/rural-support">Rural support (Common Agricultural Policy)</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>You’ll be able to submit accurate and verifiable information online about how you use your land, so you can claim subsidies under the Common Agricultural Policy</p>
-        </td>
-        <td class="vol">
-          105k
-          <span>Applications in first year</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-environment-food-rural-affairs">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Environment <br />Food &amp; Rural Affairs</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">270k</span>
+                      <span class="volume-caption">Transactions a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills" class="organisation-logo bis">
+                <span>Department<br>for Business<br>Innovation & Skills</span>
+              </a>
+            </td>
+          </tr>
+          
 
-      <tr>
-        <td class="num">9</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/driving-record">View driving record</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you’re a driver you’ll be able to view information from your record, including what vehicles you can drive and any penalty points and disqualifications</p>
-        </td>
-        <td class="vol">
-          6m
-          <span>Driver enquiries a year</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-transport">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Transport</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+        
 
-      <tr>
-        <td class="num">10</td>
-        <td class="description">
-          <h3><a href="/transformation/personalised-number-plates">Personalised registrations</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>If you want to transfer or apply for a number plate you’ll be able do it online, without having to visit a DVLA office</p>
-        </td>
-        <td class="vol">
-          1.6m
-          <span>Transactions a year</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-transport">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Transport</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          
 
-      <tr>
-        <td class="num">11</td>
-        <td class="description">
-          <h3><a href="/transformation/manage-vehicle">Vehicle management</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>If you want to transfer ownership of a car you’ll be able to do it yourself online or using an intermediary</p>
-        </td>
-        <td class="vol">
-          18m
-          <span>Transactions a year</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-transport">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Transport</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          <tr>
+            <td class="exemplar-number">4</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/renew-patent.html">Renew a patent</a>
+                
+                  <span class="phase-tag live">live</span>
+                
+              </h3>
+              <p>If you want to renew a patent you’ll be able to do it quickly and easily online</p>
 
-      <tr>
-        <td class="num">12</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/apply-carers-allowance">Carer’s Allowance</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you’re a carer you’ll be able to apply for financial help from government using a simple online service</p>
-        </td>
-        <td class="vol">
-          3.2m
-          <span>Carers supported</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-work-pensions">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Work &amp; <br />Pensions</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">380k</span>
+                      <span class="volume-caption">Renewals a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills" class="organisation-logo bis">
+                <span>Department<br>for Business<br>Innovation & Skills</span>
+              </a>
+            </td>
+          </tr>
+          
 
-      <tr>
-        <td class="num">13</td>
-        <td class="description">
-          <h3><a href="/transformation/apply-pip">Claim Personal Independence Payment (PIP)</a> <span class="phase-tag alpha">Alpha</span></h3>
-          <p>If you’re applying for financial help from government for living with disabilities there’ll be a simple digital service for you to use</p>
-        </td>
-        <td class="vol">
-          2m
-          <span>People supported</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-work-pensions">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Work &amp; <br />Pensions</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+        
 
-      <tr>
-        <td class="num">14</td>
-        <td class="description">
-          <h3><a href="/transformation/apply-universal-credit">Universal Credit</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>Universal Credit will roll 6 benefits and tax credits into 1 to simplify the system and ensure people are better off in work</p>
-        </td>
-        <td class="vol">
-          10m <span>Adults supported</span>
-        </td>
-        <td class="dept">
-          <div class="department-for-work-pensions">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Department <br />for Work &amp; <br />Pensions</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          
 
-      <tr>
-        <td class="num">15</td>
-        <td class="description">
-          <h3><a href="/transformation/paye">PAYE for employees</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>If you want to check or update your PAYE status you’ll be able to do it online, and see the effect on the tax you pay</p>
-        </td>
-        <td class="vol">
-          2m
-          <span>Employees a year</span>
-        </td>
-        <td class="dept"><div class="hm-revenue-customs"><span class="organisation-logo organisation-logo-stacked-hmrc organisation-logo-stacked-hmrc-medium"><span>HM Revenue <br />&amp; Customs</span></span></div></td>
-      </tr>
+          <tr>
+            <td class="exemplar-number">5</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/land-registry.html">Land Registry</a>
+                
+                  <span class="phase-tag alpha">alpha</span>
+                
+              </h3>
+              <p>A digital-first service that will support buying or selling a house</p>
 
-      <tr>
-        <td class="num">16</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/self-assessment">Digital self-assessment</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you’re registered for self-assessment you’ll be able to manage your tax affairs with a fully digital service, without any more confusing paper correspondence</p>
-        </td>
-        <td class="vol">
-          10m
-          <span>Registered for self-assessment</span>
-        </td>
-        <td class="dept"><div class="hm-revenue-customs"><span class="organisation-logo organisation-logo-stacked-hmrc organisation-logo-stacked-hmrc-medium"><span>HM Revenue <br />&amp; Customs</span></span></div></td>
-      </tr>
+            </td>
+            <td class="volume">
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills" class="organisation-logo bis">
+                <span>Department<br>for Business<br>Innovation & Skills</span>
+              </a>
+            </td>
+          </tr>
+          
 
-      <tr>
-        <td class="num">17</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/business-tax-account">Your tax account</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you run a business you’ll be able to check how much tax you owe, learn about what you can and can’t claim, and pay your tax &mdash; all in one place</p>
-        </td>
-        <td class="vol">
-          2.5m
-          <span>Registered for corporation tax</span>
-        </td>
-        <td class="dept"><div class="hm-revenue-customs"><span class="organisation-logo organisation-logo-stacked-hmrc organisation-logo-stacked-hmrc-medium"><span>HM Revenue <br />&amp; Customs</span></span></div></td>
-      </tr>
+        
 
-      <tr>
-        <td class="num">18</td>
-        <td class="description">
-          <h3><a href="/transformation/register-as-tax-agent">Agent online self-serve</a> <span class="phase-tag alpha">Alpha</span></h3>
-          <p>If you’re a tax agent you’ll be able to fully manage your clients’ tax with a simple online service</p>
-        </td>
-        <td class="vol">
-          120k
-          <span>Tax agents</span>
-        </td>
-        <td class="dept"><div class="hm-revenue-customs"><span class="organisation-logo organisation-logo-stacked-hmrc organisation-logo-stacked-hmrc-medium"><span>HM Revenue <br />&amp; Customs</span></span></div></td>
-      </tr>
+          
 
-      <tr>
-        <td class="num">19</td>
-        <td class="description">
-          <h3><a href="/transformation/apply-registered-traveller">Registered traveller service</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>If you’re an eligible, frequent traveller to the UK you’ll be able to easily apply to use e-passport gates, cutting time queuing at airports</p>
-        </td>
-        <td class="vol">
-          1m
-          <span>Journeys per year within 5 years</span>
-        </td>
-        <td class="dept">
-          <div class="home-office">
-            <span class="organisation-logo organisation-logo-stacked-ho organisation-logo-stacked-ho-medium">
-              <span>Home Office</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          <tr>
+            <td class="exemplar-number">6</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apply-for-student-finance.html">Student finance</a>
+                
+                  <span class="phase-tag live">live</span>
+                
+              </h3>
+              <p>If you have, or are applying for, student loans and grants you’ll be able to manage them using an improved online service</p>
 
-      <tr>
-        <td class="num">20</td>
-        <td class="description">
-          <h3><a href="/transformation/passports">Passports</a> <span class="phase-tag beta">Beta</span></h3>
-          <p>If you need to renew your passport you’ll be able to do it using a simple online service</p>
-        </td>
-        <td class="vol">
-          5.64m
-          <span>Transactions each year</span>
-        </td>
-        <td class="dept">
-          <div class="home-office">
-            <span class="organisation-logo organisation-logo-stacked-ho organisation-logo-stacked-ho-medium">
-              <span>Home Office</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">1.3m</span>
+                      <span class="volume-caption">Students supported</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills" class="organisation-logo bis">
+                <span>Department<br>for Business<br>Innovation & Skills</span>
+              </a>
+            </td>
+          </tr>
+          
 
-      <tr>
-        <td class="num">21</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/apply-visa">Visas</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you need a visa to visit the UK you’ll be able to apply using a simple online service</p>
-        </td>
-        <td class="vol">
-          3.4m
-          <span>Visas issued a year</span>
-        </td>
-        <td class="dept">
-          <div class="home-office">
-            <span class="organisation-logo organisation-logo-stacked-ho organisation-logo-stacked-ho-medium">
-              <span>Home Office</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+        
 
-      <tr>
-        <td class="num">22</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/court-claims">Civil claims</a>
-            <span class="phase-tag live">Live</span>
-          </h3>
-          <p>Saving people money and hassle by creating a digital service for small claims, including money and possession claims</p>
-        </td>
-        <td class="vol">
-          1.5m
-          <span>Claims a year</span>
-        </td>
-        <td class="dept">
-          <div class="ministry-of-justice">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Ministry <br />of Justice</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          
 
-      <tr>
-        <td class="num">23</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/pay-tribunal-fees">Apply to an employment tribunal</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you're lodging an appeal to an employment tribunal you’ll be able to apply and pay the accompanying fee online</p>
-        </td>
-        <td class="vol">
-          200k
-          <span>Transactions per year</span>
-        </td>
-        <td class="dept">
-          <div class="ministry-of-justice">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Ministry <br />of Justice</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+          <tr>
+            <td class="exemplar-number">7</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apply-to-carry-waste.html">Waste carrier registration</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>You can register as a waste carrier using this quick and easy online service</p>
 
-      <tr>
-        <td class="num">24</td>
-        <td class="description">
-          <h3>
-            <a href="/transformation/book-prison-visit">Prison visit booking</a>
-            <span class="phase-tag beta">Beta</span>
-            <span class="phase-tag public">Public</span>
-          </h3>
-          <p>If you're visiting a prison you’ll be able to book using a single service, offering a simpler, faster experience for families, friends and professionals</p>
-        </td>
-        <td class="vol">
-          1.5m
-          <span>Visits a year</span>
-        </td>
-        <td class="dept">
-          <div class="ministry-of-justice">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Ministry <br />of Justice</span>
-            </span>
-          </div>
-        </td>
-      </tr>
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">100k</span>
+                      <span class="volume-caption">Registrations in first year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-business-innovation-skills" class="organisation-logo defra">
+                <span>Department<br>for Environment<br>Food & Rural Affairs</span>
+              </a>
+            </td>
+          </tr>
+          
 
-      <tr>
-        <td class="num">25</td>
-        <td class="description">
-          <h3><a href="/transformation/lasting-power-of-attorney">Lasting power of attorney</a> <span class="phase-tag live">Live</span></h3>
-          <p>If you’re making a lasting power of attorney, it’ll be easier using a simple online service, helping people to plan ahead for an uncertain future</p>
-        </td>
-        <td class="vol">
-          300k
-          <span>Applications a year</span>
-        </td>
-        <td class="dept">
-          <div class="ministry-of-justice">
-            <span class="organisation-logo organisation-logo-stacked-single-identity organisation-logo-stacked-single-identity-medium">
-              <span>Ministry <br />of Justice</span>
-            </span>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">8</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/rural-support.html">Rural support (Common Agricultural Policy)</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>You’ll be able to submit accurate and verifiable information online about how you use your land, so you can claim subsidies under the Common Agricultural Policy</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">105k</span>
+                      <span class="volume-caption">Transactions a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" class="organisation-logo defra">
+                <span>Department<br>for Environment<br>Food & Rural Affairs</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">9</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/driving-record.html">View driving licence</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>If you’re a driver you’ll be able to view information from your record, including what vehicles you can drive and any penalty points and disqualifications. </p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">6m</span>
+                      <span class="volume-caption">Driver enquiries a year</span>
+                  
+              
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-transport" class="organisation-logo dft">
+                <span>Department<br>for Transport</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">10</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/personalised-number-plates.html">Personalised registrations</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If you want to transfer or apply for a number plate you’ll be able do it online, without having to visit a DVLA office</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">1.6m</span>
+                      <span class="volume-caption">Transactions a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-transport" class="organisation-logo dft">
+                <span>Department<br>for Transport</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">11</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/manage-vehicle.html">Vehicle management</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If you want to transfer ownership of a car you’ll be able to do it yourself online or using an intermediary</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">18m</span>
+                      <span class="volume-caption">Transactions every year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-transport" class="organisation-logo dft">
+                <span>Department<br>for Transport</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">12</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apply-carers-allowance.html">Carer’s Allowance</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>If you’re a carer you’ll be able to apply for financial help from government using a simple online service</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">3.2m</span>
+                      <span class="volume-caption">Carers in the UK</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-work-pensions" class="organisation-logo dwp">
+                <span>Department<br>for Work &<br>Pensions</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">13</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apply-pip.html">Claim Personal Independence Payment (PIP)</a>
+                
+                  <span class="phase-tag alpha">Alpha</span>
+                
+              </h3>
+              <p>If you’re applying for financial help from government for living with disabilities there’ll be a simple digital service for you to use</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">2m</span>
+                      <span class="volume-caption">People supported</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-work-pensions" class="organisation-logo dwp">
+                <span>Department<br>for Work &<br>Pensions</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">14</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/universal-credit.html">Universal Credit</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>Universal Credit will roll 6 benefits and tax credits into 1 to simplify the system and ensure people are better off in work</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">10m</span>
+                      <span class="volume-caption">Adults supported</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/department-for-work-pensions" class="organisation-logo dwp">
+                <span>Department<br>for Work &<br>Pensions</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">15</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/paye.html">PAYE for employees</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If you want to check or update your PAYE status you’ll be able to do it online, and see the effect on the tax you pay</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">41m</span>
+                      <span class="volume-caption">Registered PAYE employees</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/hm-revenue-customs" class="organisation-logo hmrc">
+                <span>HM Revenue<br>& Customs</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">16</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/business-tax-account.html">Digital self-assessment</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>If you’re registered for self-assessment you’ll be able to manage your tax with a fully digital service, without any more confusing paper correspondence</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">10m</span>
+                      <span class="volume-caption">Registered for self-assessment</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/hm-revenue-customs" class="organisation-logo hmrc">
+                <span>HM Revenue<br>& Customs</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">17</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/self-assessment.html">Your tax account</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>If you run a business you’ll be able to check how much tax you owe, learn about what you can and can’t claim, and pay your tax &mdash; all in one place</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">4.9m</span>
+                      <span class="volume-caption">Small businesses and people in self assessment</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/hm-revenue-customs" class="organisation-logo hmrc">
+                <span>HM Revenue<br>& Customs</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">18</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/register-as-tax-agent.html">Agent online self-serve</a>
+                
+                  <span class="phase-tag alpha">alpha</span>
+                
+              </h3>
+              <p>If you’re a tax agent you’ll be able to fully manage your clients’ tax with a simple online service</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">120k</span>
+                      <span class="volume-caption">Tax agents</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/hm-revenue-customs" class="organisation-logo hmrc">
+                <span>HM Revenue<br>& Customs</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">19</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apply-registered-traveller.html">Registered Traveller Service</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If you’re an eligible, frequent traveller to the UK you’ll be able to easily apply to use e-passport gates, cutting time queuing at airports</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">1m</span>
+                      <span class="volume-caption">Journeys per year within 5 years</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/home-office" class="organisation-logo ho">
+                <span>Home Office</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">20</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/passports.html">Passports</a>
+                
+                  <span class="phase-tag beta">beta</span>
+                
+              </h3>
+              <p>If you need to renew your passport you’ll be able to do it using a simple online service</p>
+
+            </td>
+            <td class="volume">
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/home-office" class="organisation-logo ho">
+                <span>Home Office</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">21</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/apply-visa.html">Visas</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>If you need a visa to visit the UK you’ll be able to apply using a simple online service</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">3.4m</span>
+                      <span class="volume-caption">Visas issued a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+                  
+              <a href="https://www.gov.uk/government/organisations/home-office" class="organisation-logo ho">
+                <span>Home Office</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">22</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/court-claims.html">Civil claims</a>
+                
+                  <span class="phase-tag live">live</span>
+                
+              </h3>
+              <p>Saving people money and hassle by creating a digital service for small claims, including money and possession claims</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">1.5m</span>
+                      <span class="volume-caption">Claims a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+              
+              <a href="https://www.gov.uk/government/organisations/ministry-of-justice" class="organisation-logo moj">
+                <span>Ministry<br>of Justice</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">23</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/pay-tribunal-fees.html">Apply to an employment tribunal</a>
+                
+                  <span class="phase-tag beta">Beta</span>
+                  <span class="phase-tag public">Public</span>
+                
+              </h3>
+              <p>If you&rsquo;re lodging an appeal to an employment tribunal you’ll be able to apply and pay the accompanying fee online</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">200k</span>
+                      <span class="volume-caption">Transactions per year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+              
+              <a href="https://www.gov.uk/government/organisations/ministry-of-justice" class="organisation-logo moj">
+                <span>Ministry<br>of Justice</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">24</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/book-prison-visit.html">Prison visit booking</a>
+                
+                  <span class="phase-tag live">live</span>
+                
+              </h3>
+              <p>If you&rsquo;re visiting a prison you’ll be able to book using a single service, offering a simpler, faster experience for families, friends and professionals</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">1.5m</span>
+                      <span class="volume-caption">Visits per year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+              
+              <a href="https://www.gov.uk/government/organisations/ministry-of-justice" class="organisation-logo moj">
+                <span>Ministry<br>of Justice</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+
+          
+
+          <tr>
+            <td class="exemplar-number">25</td>
+            <td class="description">
+              <h3>
+                <a href="/transformation/lasting-power-of-attorney.html">Lasting power of attorney</a>
+                
+                  <span class="phase-tag live">live</span>
+                
+              </h3>
+              <p>If you&rsquo;re making a lasting power of attorney, it’ll be easier using a simple online service, helping people to plan ahead for an uncertain future</p>
+
+            </td>
+            <td class="volume">
+              
+                  
+                      <span class="volume-number">300k</span>
+                      <span class="volume-caption">Applications a year</span>
+                  
+              
+            </td>
+            <td class="department">
+              
+              
+                    
+              
+              <a href="https://www.gov.uk/government/organisations/ministry-of-justice" class="organisation-logo moj">
+                <span>Ministry<br>of Justice</span>
+              </a>
+            </td>
+          </tr>
+          
+
+        
+      </tbody>
+    </table>
+  </article>
+
+</main>
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        <div class="footer-categories">
+  <div class="footer-explore">
+    <h2>Services and information</h2>
+
+    <ul>
+        <li><a href="/browse/driving">Driving and transport</a></li>
+        <li><a href="/browse/benefits">Benefits</a></li>
+        <li><a href="/browse/business">Businesses and self-employed</a></li>
+        <li><a href="/browse/employing-people">Employing people</a></li>
+        <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
+        <li><a href="/browse/education">Education and learning</a></li>
+        <li><a href="/browse/working">Working, jobs and pensions</a></li>
+        <li><a href="/browse/housing">Housing and local services</a></li>
+        <li><a href="/browse/justice">Crime, justice and the law</a></li>
+        <li><a href="/browse/tax">Money and tax</a></li>
+        <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
+        <li><a href="/browse/disabilities">Disabled people</a></li>
+        <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-inside-government">
+    <h2>Departments and policy</h2>
+
+    <ul>
+      <li><a href="/government/how-government-works">How government works</a></li>
+      <li><a href="/government/organisations">Departments</a></li>
+      <li><a href="/government/world">Worldwide</a></li>
+      <li><a href="/government/topics">Topics</a></li>
+      <li><a href="/government/policies">Policies</a></li>
+      <li><a href="/government/publications">Publications</a></li>
+      <li><a href="/government/announcements">Announcements</a></li>
+    </ul>
+  </div>
 </div>
-</article>
 
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+            <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/cymraeg">Cymraeg</a></li>
+  <li>Built by the <a href="https://gds.blog.gov.uk/">Government Digital Service</a></li>
+</ul>
 
-    </main>
-  </div><!--end wrapper-->
+            <div class="open-government-licence">
+              <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence</a></h2>
+              <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
 
-  <footer class="group js-footer" id="footer" role="contentinfo">
-
-  <div class="footer-wrapper">
-    <div class="footer-categories">
-      <div class="footer-explore">
-        <h2>Services and information</h2>
-
-        <ul>
-          <li><a href="/browse/driving">Driving and transport</a></li>
-          <li><a href="/browse/benefits">Benefits</a></li>
-          <li><a href="/browse/business">Businesses and self-employed</a></li>
-          <li><a href="/browse/employing-people">Employing people</a></li>
-          <li><a href="/browse/abroad">Passports, travel and living abroad</a></li>
-          <li><a href="/browse/education">Education and learning</a></li>
-          <li><a href="/browse/working">Working, jobs and pensions</a></li>
-          <li><a href="/browse/housing">Housing and local services</a></li>
-          <li><a href="/browse/justice">Crime, justice and the law</a></li>
-          <li><a href="/browse/tax">Money and tax</a></li>
-          <li><a href="/browse/births-deaths-marriages">Births, deaths, marriages and care</a></li>
-          <li><a href="/browse/disabilities">Disabled people</a></li>
-          <li><a href="/browse/citizenship">Citizenship and life in the UK</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-inside-government">
-        <h2>Departments and policy</h2>
-
-        <ul>
-          <li><a href="/government/how-government-works">How government works</a></li>
-          <li><a href="/government/organisations">Departments</a></li>
-          <li><a href="/government/world">Worldwide</a></li>
-          <li><a href="/government/topics">Topics</a></li>
-          <li><a href="/government/policies">Policies</a></li>
-          <li><a href="/government/publications">Publications</a></li>
-          <li><a href="/government/announcements">Announcements</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-meta">
-      <div class="footer-meta-inner">
-        <h2 class="visuallyhidden">Support links</h2>
-        <ul>
-          <li><a href="/help">Help</a></li>
-          <li><a href="/help/cookies">Cookies</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/cymraeg">Cymraeg</a></li>
-          <li>Built by the <a href="http://digital.cabinetoffice.gov.uk/">Government Digital Service</a></li>
-        </ul>
-
-        <div class="open-government-licence">
-          <h2><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2"><img src="https://assets.digital.cabinet-office.gov.uk/static/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png" alt="OGL"></a></h2>
-          <p>All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2">Open Government Licence v2.0</a>, except where otherwise stated</p>
+          <div class="copyright">
+            <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+          </div>
         </div>
       </div>
+    </footer>
 
-      <div class="copyright">
-        <a href="http://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown Copyright</a>
-      </div>
-    </div>
-  </div>
-</footer>
-<!--end footer-->
+    <!--end footer-->
 
-  
+    <div id="global-app-error" class="app-error hidden"></div>
 
-<script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" type="text/javascript"></script>
-<script defer src="https://assets.digital.cabinet-office.gov.uk/static/application-cb3c62aea18ac3de006eac8554c5126a.js" type="text/javascript"></script>
+    <script src="/transformation/assets/govuk-template-65aac62e4e7eaf0a5538c0759525cc79.js" type="text/javascript"></script>
 
-
-
-
-<script src="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-724fe6d14191deb75213ea14cf80e5d0.js" type="text/javascript"></script>
-
-
-
-
-<link href="https://assets.digital.cabinet-office.gov.uk/frontend/media-player-4d52c02c18a460340db1ed476b807bf6.css" media="screen" rel="stylesheet" type="text/css">
-<script src="/transformation/assets/javascript/media-player-loader.js?cache=1409133004" type="text/javascript"></script>
-
-
-<script id="ga-params" type="text/javascript">
-  var GOVUK = GOVUK || {};
-  GOVUK.Analytics = GOVUK.Analytics || {};
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26179049-1']);
-  if(document.domain=='www.gov.uk') {
-    _gaq.push(['_setDomainName', '.www.gov.uk']);
-  } else {
-    _gaq.push(['_setDomainName', document.domain]);
-  }
-  _gaq.push(['_setAllowLinker', true]);
-    // track pixel density ratio
-  if (window.devicePixelRatio) {
-    _gaq.push(['_setCustomVar', 11, 'Pixel Ratio', String(window.devicePixelRatio), 2 ]);
-  }
-_gaq.push(["_setCustomVar",2,"Format","homepage",3]);
-GOVUK.Analytics.Format = "homepage";</script><script type="text/javascript">
-  _gaq.push(['_gat._anonymizeIp']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-  
-</body>
+    <script src="/transformation/assets/app-fe08820833d445b3f72d5d71fc591766.js" type="text/javascript"></script>
+  </body>
 </html>
