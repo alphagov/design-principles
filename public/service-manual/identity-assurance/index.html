@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Identity assurance guidance — Government Service Design Manual
+    <title>GOV.UK Verify guidance — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1411135959" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1412258401" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1411135959" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1412258401" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1411135959" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1412258401" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1411135959" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1412258401" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1411135959" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1412258401" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -158,7 +158,7 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Identity assurance guidance</h1>
+      <h1>GOV.UK Verify guidance</h1>
       
       <h2 class="subtitle">For government service providers</h2>
       
@@ -173,7 +173,7 @@
         <ol>
 <li class="level-introduction"><a href="#introduction">Introduction</a>
 </li>
-<li class="level-how-the-identity-assurance-service-works"><a href="#how-the-identity-assurance-service-works">How the identity assurance service works</a>
+<li class="level-how-the-govuk-verify-service-works"><a href="#how-the-govuk-verify-service-works">How the GOV.UK Verify service works</a>
 <ol>
 <li class="level-user-is-directed-to-the-hub-to-sign-in"><a href="#user-is-directed-to-the-hub-to-sign-in">1. User is directed to the hub to sign in</a>
 </li>
@@ -185,9 +185,9 @@
 </li>
 </ol>
 </li>
-<li class="level-how-to-assess-the-identity-assurance-requirements-of-a-digital-service"><a href="#how-to-assess-the-identity-assurance-requirements-of-a-digital-service">How to assess the identity assurance requirements of a digital service</a>
+<li class="level-how-to-assess-the-govuk-verify-requirements-of-a-digital-service"><a href="#how-to-assess-the-govuk-verify-requirements-of-a-digital-service">How to assess the GOV.UK Verify requirements of a digital service</a>
 </li>
-<li class="level-how-to-work-with-the-identity-assurance-programme-to-prepare-to-use-identity-assurance"><a href="#how-to-work-with-the-identity-assurance-programme-to-prepare-to-use-identity-assurance">How to work with the identity assurance programme to prepare to use identity assurance</a>
+<li class="level-how-to-work-with-the-govuk-verify-programme-to-prepare-to-use-govuk-verify"><a href="#how-to-work-with-the-govuk-verify-programme-to-prepare-to-use-govuk-verify">How to work with the GOV.UK Verify programme to prepare to use GOV.UK Verify</a>
 </li>
 <li class="level-how-to-match-assured-identities-to-service-records"><a href="#how-to-match-assured-identities-to-service-records">How to match assured identities to service records</a>
 </li>
@@ -201,27 +201,27 @@
 
 <p>Users of digital government services need to be able to sign in securely and conveniently to access services and records, and be confident that their data is secure and their privacy protected.</p>
 
-<p>Identity assurance is the way that users of digital services can sign in securely to digital services, and digital services can be confident that users are who they say they are. A good background description can be found <a href="https://gds.blog.gov.uk/2014/01/23/what-is-identity-assurance/">on this blog post</a>.</p>
+<p>GOV.UK Verify is the way that users of digital services can sign in securely to digital services, and digital services can be confident that users are who they say they are. A good background description can be found <a href="https://gds.blog.gov.uk/2014/01/23/what-is-identity-assurance/">on this blog post</a>.</p>
 
 <p>Service providers can be assured they’re providing their service to the right individual or business after matching an assured identity to their own records.</p>
 
-<p>This guidance is for government digital service providers that need to use the identity assurance service. Service providers are referred to as ‘relying parties’ to avoid confusion between those providing the government service to the user and those providing the identity service to the user.</p>
+<p>This guidance is for government digital service providers that need to use the GOV.UK Verify service. Service providers are referred to as ‘relying parties’ to avoid confusion between those providing the government service to the user and those providing the identity service to the user.</p>
 
-<p>The guidance gives an overview of the identity assurance service and explains what relying parties will need to do to prepare to start using the identity assurance service.</p>
+<p>The guidance gives an overview of the GOV.UK Verify service and explains what relying parties will need to do to prepare to start using the GOV.UK Verify service.</p>
 
-<p>Relying parties that need to use the identity assurance service will need to:</p>
+<p>Relying parties that need to use the GOV.UK Verify service will need to:</p>
 
 <ul>
-  <li>assess the level and type of identity assurance they require</li>
+  <li>assess the level and type of GOV.UK Verify they require</li>
   <li>build a service to request and consume Security Assertion Markup Language (SAML) identity assertions</li>
   <li>build a matching service to match assured identities to their own records</li>
 </ul>
 
-<h2 id="how-the-identity-assurance-service-works">How the identity assurance service works</h2>
+<h2 id="how-the-govuk-verify-service-works">How the GOV.UK Verify service works</h2>
 
 <h3 id="user-is-directed-to-the-hub-to-sign-in">1. User is directed to the hub to sign in</h3>
 
-<p>When users try to use a service provided by a relying party, they will be directed to the identity assurance hub at the point in the user journey where the relying party needs to know who they are.</p>
+<p>When users try to use a service provided by a relying party, they will be directed to the GOV.UK Verify hub at the point in the user journey where the relying party needs to know who they are.</p>
 
 <p>The hub manages communications between users, relying parties and identity providers. It makes sure that users can assert their identities securely and safely, and that relying parties can be confident that users are who they say they are.</p>
 
@@ -252,19 +252,19 @@
   <li>handling the case of multiple (many records found) or no matches (user not found)</li>
 </ul>
 
-<p>Once matching has taken place, the user is directed to the correct record within the relying party’s service. The identity assurance team can advise services on how to develop their matching service.</p>
+<p>Once matching has taken place, the user is directed to the correct record within the relying party’s service. The GOV.UK Verify team can advise services on how to develop their matching service.</p>
 
 <h3 id="user-is-given-access-to-their-account-within-the-service-they-want-to-use">4. User is given access to their account within the service they want to use</h3>
 
-<p>Once a user has registered with an identity provider, they will be able to sign in to all digital services that use the identity assurance service and require the same level of assurance, using credentials provided to them by their identity provider.</p>
+<p>Once a user has registered with an identity provider, they will be able to sign in to all digital services that use the GOV.UK Verify service and require the same level of assurance, using credentials provided to them by their identity provider.</p>
 
-<p>The first government services to start using the identity assurance service will connect to the hub in early 2014. Each other service will connect at a time agreed with the programme team. Relying parties that have identity assurance requirements should contact the identity assurance programme team to start planning their connection to the service.</p>
+<p>The first government services to start using the GOV.UK Verify service will connect to the hub in early 2014. Each other service will connect at a time agreed with the programme team. Relying parties that have GOV.UK Verify requirements should contact the GOV.UK Verify programme team to start planning their connection to the service.</p>
 
-<p>Read the <a href="https://identityassurance.blog.gov.uk/">blog posts from the identity assurance programme team</a> for more information and updates about the development of the identity assurance service,</p>
+<p>Read the <a href="https://identityassurance.blog.gov.uk/">blog posts from the GOV.UK Verify programme team</a> for more information and updates about the development of the identity assurance service,</p>
 
-<h2 id="how-to-assess-the-identity-assurance-requirements-of-a-digital-service">How to assess the identity assurance requirements of a digital service</h2>
+<h2 id="how-to-assess-the-govuk-verify-requirements-of-a-digital-service">How to assess the GOV.UK Verify requirements of a digital service</h2>
 
-<p>Relying parties can assess their identity assurance needs by using <a href="https://www.gov.uk/government/collections/identity-assurance-enabling-trusted-transactions">guidance published by the Cabinet Office</a>. Each relying party must carry out a risk assessment of their digital service, using <a href="https://www.gov.uk/government/publications/requirements-for-secure-delivery-of-online-public-services">Good Practice Guide 43: Requirements for secure delivery of online public services</a>.</p>
+<p>Relying parties can assess their GOV.UK Verify needs by using <a href="https://www.gov.uk/government/collections/identity-assurance-enabling-trusted-transactions">guidance published by the Cabinet Office</a>. Each relying party must carry out a risk assessment of their digital service, using <a href="https://www.gov.uk/government/publications/requirements-for-secure-delivery-of-online-public-services">Good Practice Guide 43: Requirements for secure delivery of online public services</a>.</p>
 
 <p>The identity’s ‘level of assurance’ is the degree of confidence the relying party requires that a user is who they say they are:</p>
 
@@ -272,7 +272,7 @@
   <li>level of assurance 1 is used when a relying party needs to know that it is the same user returning to the service but does not need to know who that user is</li>
   <li>level of assurance 2 is used when a relying party needs to know on the balance of probabilities who the user is and that that they are a real person</li>
   <li>level of assurance 3 is used when a relying party needs to know beyond reasonable doubt who the user is and that that they are a real person</li>
-  <li>level of assurance 4 is as level of assurance 3, but with a biometric profile captured at the point of registration. This level is not within the scope of this stage in the identity assurance programme</li>
+  <li>level of assurance 4 is as level of assurance 3, but with a biometric profile captured at the point of registration. This level is not within the scope of this stage in the GOV.UK Verify programme</li>
 </ul>
 
 <p>The different levels of assurance available and how they are reached are defined by the Cabinet Office’s good practice guides. Each relying party must determine the level of assurance required for each digital service:</p>
@@ -283,22 +283,22 @@
   <li><a href="https://www.gov.uk/government/publications/identity-assurance-organisation-identity">Good Practice Guide 46: Organisation Identity</a> explains the level of identity needed by organisations for proofing and verification</li>
 </ul>
 
-<h2 id="how-to-work-with-the-identity-assurance-programme-to-prepare-to-use-identity-assurance">How to work with the identity assurance programme to prepare to use identity assurance</h2>
+<h2 id="how-to-work-with-the-govuk-verify-programme-to-prepare-to-use-govuk-verify">How to work with the GOV.UK Verify programme to prepare to use GOV.UK Verify</h2>
 
 <p>Each relying party will need to go through the programme’s induction process. This process consists of 4 structured stages:</p>
 
 <ol>
-  <li>Introduction – identify a need for identity assurance.</li>
-  <li>Needs Analysis – identify the service’s identity assurance requirements (levels and types), users and dependencies. Agree a provisional date for connection to hub.</li>
+  <li>Introduction – identify a need for GOV.UK Verify.</li>
+  <li>Needs Analysis – identify the service’s GOV.UK Verify requirements (levels and types), users and dependencies. Agree a provisional date for connection to hub.</li>
   <li>Planning – complete a readiness assessment. Agree a detailed plan setting out what the service and GDS will each do and when. Get internal approvals within GDS and the relying party’s organisation.</li>
-  <li>Connect to hub – agree a memorandum of understanding between the Identity Assurance Programme and the department responsible for the service.</li>
+  <li>Connect to hub – agree a memorandum of understanding between the GOV.UK Verify Programme and the department responsible for the service.</li>
 </ol>
 
-<p>Government providers of digital services that want to find out more about identity assurance, with a view to becoming relying parties, should contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#097;&#110;&#101;&#116;&#046;&#104;&#117;&#103;&#104;&#101;&#115;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">Janet Hughes</a>.</p>
+<p>Government providers of digital services that want to find out more about GOV.UK Verify, with a view to becoming relying parties, should contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#097;&#110;&#101;&#116;&#046;&#104;&#117;&#103;&#104;&#101;&#115;&#064;&#100;&#105;&#103;&#105;&#116;&#097;&#108;&#046;&#099;&#097;&#098;&#105;&#110;&#101;&#116;&#045;&#111;&#102;&#102;&#105;&#099;&#101;&#046;&#103;&#111;&#118;&#046;&#117;&#107;">Janet Hughes</a>.</p>
 
 <h2 id="how-to-match-assured-identities-to-service-records">How to match assured identities to service records</h2>
 
-<p>Each relying party will need to set up a matching service that can accept digital assertions of identity and match them to their internally held records. This process makes sure they can use the identity assertions provided by the identity assurance service.</p>
+<p>Each relying party will need to set up a matching service that can accept digital assertions of identity and match them to their internally held records. This process makes sure they can use the identity assertions provided by the GOV.UK Verify service.</p>
 
 <p>Matching assured identities to the records held by relying parties is likely to be complicated – each relying party will need to establish the most efficient and effective way of doing this depending on the quality of its data and how it’s stored and managed.</p>
 
@@ -390,11 +390,11 @@
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1411135959" type="text/javascript"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1411135959" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1411135959" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1411135959" type="text/javascript"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1411135959" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1412258401" type="text/javascript"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1412258401" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1412258401" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1412258401" type="text/javascript"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1412258401" type="text/javascript"></script>
 
 <script id="ga-params" type="text/javascript">
   var GOVUK = GOVUK || {};
