@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: https://gem.fury.io/govuk/
   specs:
     PriorityQueue (0.1.2)
     actionmailer (3.2.20)
