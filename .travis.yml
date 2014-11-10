@@ -1,13 +1,10 @@
 language: ruby
 bundler_args: --without development
 script:
-  - RAILS_ENV=test bundle exec rake spec
+  - RAILS_ENV=test bundle exec rake
+  - RAILS_ENV=test GOVUK_APP_DOMAIN=test.gov.uk bundle exec rake assets:precompile
 rvm:
-  - 2.0.0
-  - 1.9.3
-matrix:
-  allow_failures:
-    - rvm: 2.0.0
+  - 2.1.4
 notifications:
   email: false
 branches:
