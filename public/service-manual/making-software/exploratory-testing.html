@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Measurement — Government Service Design Manual
+    <title>Exploratory testing — Government Service Design Manual
 </title>
 
     <script type="text/javascript">
@@ -75,7 +75,7 @@
 
   </head>
 
-  <body class="gsdm-body mainstream full-width category-index ">
+  <body class="gsdm-body mainstream full-width detailed-guidance ">
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -151,6 +151,8 @@
 	  
 	  <li><a href="/service-manual">Home</a></li>
 	  
+	  <li><a href="/service-manual/making-software">Making software</a></li>
+	  
 	</ol>
 </div>
 
@@ -158,42 +160,206 @@
 <article role="article" class="group">
   <header class="page-header group">
     <div class="hgroup">
-      <h1>Measurement</h1>
+      <h1>Exploratory testing</h1>
       
-      <h2 class="subtitle">Data you need to measure and monitor</h2>
+      <h2 class="subtitle">What is exploratory testing and how to use it</h2>
       
     </div>
   </header>
 
   <div class="article-container group">
+    <div class="contents">
+      <nav>
+        <h2>Contents</h2>
+
+        <ol>
+<li class="level-the-value-of-exploratory-testing-over-other-testing-methods"><a href="#the-value-of-exploratory-testing-over-other-testing-methods">The value of exploratory testing over other testing methods</a>
+</li>
+<li class="level-approach-to-exploratory-testing"><a href="#approach-to-exploratory-testing">Approach to exploratory testing</a>
+</li>
+<li class="level-team-requirements"><a href="#team-requirements">Team requirements</a>
+</li>
+<li class="level-when-to-do-exploratory-testing"><a href="#when-to-do-exploratory-testing">When to do exploratory testing</a>
+</li>
+<li class="level-techniques--outputs"><a href="#techniques--outputs">Techniques & outputs</a>
+</li>
+<li class="level-test-charters"><a href="#test-charters">Test charters</a>
+</li>
+<li class="level-mind-maps"><a href="#mind-maps">Mind maps</a>
+</li>
+<li class="level-timeboxing"><a href="#timeboxing">Timeboxing</a>
+</li>
+<li class="level-collecting-evidence"><a href="#collecting-evidence">Collecting evidence</a>
+</li>
+<li class="level-tools-for-exploratory-testing"><a href="#tools-for-exploratory-testing">Tools for exploratory testing</a>
+</li>
+</ol>
+
+      </nav>
+    </div>
+
     <div class="inner">
-      <p>It’s essential to measure how your service is performing, so you can make sure that your service continues to meet user needs in a cost-effective and efficient way.</p>
+      <p>The goal of exploratory testing is to explore a system as a user would, possibly finding new defects as you go.</p>
 
-<p>Do this by monitoring your metrics. Your metrics are a way to start discussing the strengths and weaknesses of your service, and will help your team to find ways of improving your service over time.</p>
+<p>There are no instructions to follow because you’re not looking into anything specific. For this reason exploratory testing is sometimes referred to as unscripted testing.</p>
 
-<h2 id="what-you-will-measure">What you will measure</h2>
+<p>Unlike following a script to test a predetermined outcome, exploratory testing relies on a tester’s knowledge, experience and intuition to fully check a system.</p>
 
-<p>The <a href="/service-manual/digital-by-default">digital by default service standard</a> states 4 key performance indicators (<abbr title="key performance indicators">KPIs</abbr>) which should be used to measure the success of your service:</p>
+<h2 id="the-value-of-exploratory-testing-over-other-testing-methods">The value of exploratory testing over other testing methods</h2>
+
+<p>Exploratory testing:</p>
 
 <ul>
-  <li><a href="/service-manual/measurement/cost-per-transaction.html">cost per transaction</a></li>
-  <li><a href="/service-manual/measurement/user-satisfaction.html">user satisfaction</a></li>
-  <li><a href="/service-manual/measurement/completion-rate.html">completion rate</a></li>
-  <li><a href="/service-manual/measurement/digital-takeup.html">digital take-up</a></li>
+  <li>
+    <p>detects subtle or complex bugs in a system (that are not detected in targeted testing)</p>
+  </li>
+  <li>
+    <p>provides user-oriented feedback to developers and business analysts</p>
+  </li>
 </ul>
 
-<p>These aren’t the only things your service should measure. Identify unique indicators to your service to help judge its effectiveness. Read our <a href="/service-manual/measurement/other-kpis.html">guidance on establishing <abbr title="key performance indicators">KPIs</abbr> specific to your service</a>.</p>
+<p>Exploratory testing aims to find new and undiscovered problems. This contrasts with other more prescribed methods of testing, such as test automation, which aims to show scripted tests can complete successfully without defects.</p>
 
-<h2 id="what-happens-to-your-data">What happens to your data</h2>
+<h2 id="approach-to-exploratory-testing">Approach to exploratory testing</h2>
 
-<p>Once live, the performance of your service will be monitored and displayed on the <a href="/service-manual/measurement/performance-platform.html">Performance Platform</a>. This data will be presented in modules capable of being uniquely configured, and (where possible) will be visible to the public.</p>
+<p>Practitioners tend to avoid describing exploratory testing as ‘ad hoc’ as this implies the testing is unplanned, unstructured and unfocused. Exploratory testing is a disciplined approach and requires specific techniques.</p>
 
-<p>Use this data to <a href="/service-manual/measurement/using-data.html">investigate how well a service is performing, and as a prompt for further investigation and testing</a>.</p>
+<p>State a goal for each testing session and document the session as it progresses, particularly when you identify defects.</p>
+
+<h2 id="team-requirements">Team requirements</h2>
+
+<p>Exploratory testing is ideally performed by experienced testers as they tend to have:</p>
+
+<ul>
+  <li>
+    <p>analytical skills</p>
+  </li>
+  <li>
+    <p>an ability to behave like users</p>
+  </li>
+  <li>
+    <p>a knack of finding defects</p>
+  </li>
+</ul>
+
+<p>If you’re an experienced tester, you’ll easily adapt to exploratory testing without prior knowledge of the field. On-the-job-training, mentoring or reading about the discipline can help you prepare for your first test.</p>
+
+<p>You can carry out exploratory testing in isolation, allowing yourself to focus on what the system does rather than what it ought to do.</p>
+
+<p>Alternatively, you can often achieve good results working alongside developers and business analysts, who can offer insights into system functionality or intended user journeys.</p>
+
+<h2 id="when-to-do-exploratory-testing">When to do exploratory testing</h2>
+
+<p>Exploratory testing works best on a system that holds enough functionality for you to interact with in a meaningful way.</p>
+
+<p>The system needs to be relatively stable and mature, but you can prioritise your development activities so you can do exploratory testing as early as possible, eg build functionality in slices so you can test from start to finish as early as possible.</p>
+
+<h2 id="techniques--outputs">Techniques &amp; outputs</h2>
+
+<p>Apply the techniques of test charters, mind maps and timeboxing to achieve best practice during exploratory testing. These techniques will put some general restrictions around your testing, helping you judge whether it’s a success.</p>
+
+<h2 id="test-charters">Test charters</h2>
+
+<p>Test charters give exploratory testing sessions a mission without being prescriptive, eg a charter won’t detail what problems you’re looking for.</p>
+
+<p>Your charter can outline:</p>
+
+<ul>
+  <li>
+    <p>what parts of the system you’ll be looking at (also known as your mission scope)</p>
+  </li>
+  <li>
+    <p>your testing goals, eg make sure a system is secure enough for people to use</p>
+  </li>
+  <li>
+    <p>details of the team doing the exploratory testing</p>
+  </li>
+  <li>
+    <p>the date and times of the testing</p>
+  </li>
+  <li>
+    <p>the test environment, eg the software you’ll use to do the test</p>
+  </li>
+  <li>
+    <p>mock data you’ll need for testing, eg a mock username or password</p>
+  </li>
+</ul>
+
+<p>As the exploratory testing session progresses, update the charter to log any observations or issues you’ve come across and note down ideas for further testing.</p>
+
+<h2 id="mind-maps">Mind maps</h2>
+
+<p>Mind maps follow a similar approach to test charters but display the information graphically.</p>
+
+<p>Mind-maps are seen as appropriate for exploratory testing as they reflect the non-linear nature of the session.</p>
+
+<h2 id="timeboxing">Timeboxing</h2>
+
+<p>You can limit your exploratory test session to a set timescale, a practice also known as timeboxing. This can help you focus on the project’s specific goals and scope, rather than drift into unfocused exploration.</p>
+
+<p>More on these techniques can be found in an article posted online by Jonathan Bach:<a href="http://www.satisfice.com/articles/sbtm.pdf"> http://www.satisfice.com/articles/sbtm.pdf</a></p>
+
+<h2 id="collecting-evidence">Collecting evidence</h2>
+
+<p>Document all your queries and observations during the exploratory testing session. Capture the evidence as notes, screenshots and log files to help the testing be replicated or further investigated.</p>
+
+<p>An exploratory test that discovers a bug can be developed into a test scenario and automated.</p>
+
+<p>When you need to formally document the outcome of a session, your report may include:</p>
+
+<ul>
+  <li>
+    <p>a charter</p>
+  </li>
+  <li>
+    <p>features tested</p>
+  </li>
+  <li>
+    <p>notes on how testing was conducted</p>
+  </li>
+  <li>
+    <p>notes on any bugs found</p>
+  </li>
+  <li>
+    <p>list of issues (questions and concerns about the product or project that have arisen during testing)</p>
+  </li>
+  <li>
+    <p>extra materials used to support testing</p>
+  </li>
+</ul>
+
+<p>You can also report how much of the exploratory testing session you spent on each different activity, including:</p>
+
+<ul>
+  <li>
+    <p>creating and executing tests</p>
+  </li>
+  <li>
+    <p>investigating and reporting bugs</p>
+  </li>
+  <li>
+    <p>setting up the session</p>
+  </li>
+</ul>
+
+<h2 id="tools-for-exploratory-testing">Tools for exploratory testing</h2>
+
+<p>There are many different tools you can use for exploratory testing, eg fully automated video capture and logging tools, planning tools, or walls full of process diagrams and feature descriptions.</p>
+
+<p>However, the only tools you need are a pen and some paper. The better tools are nice to have, but don’t put off your testing if you don’t have access to them.</p>
 
 
+
+      <nav class="page-tools">
+        <ol>
+          <li><a title="View the page history on GitHub" href="https://github.com/alphagov/government-service-design-manual/commits/master/service-manual/making-software/exploratory-testing.md">Page history</a>
+          <li><a title="View and suggest changes to the page source on GitHub" href="https://github.com/alphagov/government-service-design-manual/blob/master/service-manual/making-software/exploratory-testing.md">Page source</a>
+        </ol>
+      </nav>
     </div>
   </div>
 </article>
+
 
   </main>
 </div><!--end wrapper-->
