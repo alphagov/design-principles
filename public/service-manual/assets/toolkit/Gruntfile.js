@@ -30,10 +30,13 @@ module.exports = function(grunt) {
       javascripts: {
         src: [
           'node_modules/jquery-browser/lib/jquery.js',
+          'javascripts/govuk/analytics/google-analytics-classic-tracker.js',
+          'javascripts/govuk/analytics/google-analytics-universal-tracker.js',
+          'javascripts/govuk/analytics/tracker.js',
           'javascripts/**/*.js'
         ],
         options: {
-          specs: 'spec/unit/*Spec.js',
+          specs: 'spec/unit/**/*Spec.js',
           helpers: 'spec/unit/*Helper.js'
         }
       }
@@ -50,11 +53,24 @@ module.exports = function(grunt) {
           style: 'nested',
         }
       },
+    },
+    scsslint: {
+      allFiles: [
+        'stylesheets/*.scss',
+        'stylesheets/**/*.scss'
+      ],
+      options: {
+        bundleExec: true,
+        config: '.scss-lint.yaml'
+      }
     }
   });
+
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('test', ['sass', 'clean', 'jasmine']);
+  grunt.loadNpmTasks('grunt-scss-lint');
+
+  grunt.registerTask('test', ['sass', 'clean', 'jasmine', 'scsslint']);
   grunt.registerTask('default', ['test']);
 };
