@@ -1,5 +1,6 @@
 namespace :rummager do
   task :index do
+    require 'plek'
     require 'rummageable'
 
     puts File.expand_path("../../../db/index/*.json", __FILE__)
@@ -7,7 +8,9 @@ namespace :rummager do
       content = File.read(indexable)
       parsed = JSON.parse(content)
       puts "Handling #{parsed.count} records from #{indexable}"
-      Rummageable.index(parsed, '/service-manual')
+
+      rummageable_index = Rummageable::Index.new(Plek.current.find('rummager'), '/service-manual')
+      rummageable_index.add_batch(parsed)
     end
   end
 end
