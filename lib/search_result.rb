@@ -19,8 +19,12 @@ class SearchResult
     @result = result.stringify_keys!
   end
 
+  def title
+    result["title"].gsub(/\AGovernment Service Design Manual: /, '')
+  end
+
   PASS_THROUGH_KEYS = [
-    :presentation_format, :link, :title, :description,
+    :presentation_format, :link, :description,
     :format, :humanized_format
   ]
   PASS_THROUGH_KEYS.each do |key|
