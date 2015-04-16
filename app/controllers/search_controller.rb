@@ -12,10 +12,10 @@ class SearchController < ApplicationController
 
     @search_term = params[:q]
 
-    if params[:q].blank?
+    if @search_term.blank?
       @results = []
     else
-      res = search_client.search(params[:q])
+      res = search_client.unified_search(q: @search_term, filter_manual: "service-manual")
       @results = res["results"].map { |r| SearchResult.new(r) }
     end
   rescue GdsApi::BaseError => e
@@ -25,7 +25,7 @@ class SearchController < ApplicationController
   protected
 
   def search_client
-    @search_client ||= GdsApi::Rummager.new(Plek.current.find('search') + '/service-manual')
+    @search_client ||= GdsApi::Rummager.new(Plek.current.find('rummager'))
   end
 
   def set_expiry(duration = 30.minutes)
