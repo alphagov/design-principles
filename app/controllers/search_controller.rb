@@ -18,8 +18,6 @@ class SearchController < ApplicationController
       res = search_client.unified_search(q: @search_term, filter_manual: "service-manual")
       @results = res["results"].map { |r| SearchResult.new(r) }
     end
-  rescue GdsApi::BaseError => e
-    @results = ["HELP!"]
   end
 
   protected
