@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'airbrake', '3.1.17'
-gem 'rails', '3.2.20'
+gem 'rails', '3.2.22'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'rack-rewrite', '1.3.3'
