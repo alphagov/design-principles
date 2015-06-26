@@ -19,8 +19,8 @@ html {
   @include core-19;
   margin: 0 auto;
   padding: 0 $margin;
-  width: 960px - $margin*2;
-  max-width: 960px - $margin*2;
+  width: 720px;
+  max-width: 720px;
   color: $text-color;
   background: transparent;
 //  background-position: left 1px;
@@ -115,8 +115,8 @@ html {
   }
 
   h1 {
-    margin-top: 70px;
-    margin-bottom: 40px;
+    margin-top: 90px;
+    margin-bottom: 75px;
     @include core-36;
     color: $grey-1;
 
@@ -154,6 +154,7 @@ html {
     }
 
     .icon {
+      @include core-19($tabular-numbers: true);
       position: relative;
       float: left;
       margin-left: $margin*-1;
@@ -219,7 +220,6 @@ html {
         margin-left: $margin*-1;
         width: $margin*0.75;
         text-align: right;
-        font-weight: normal;
 
         @media (max-width: 640px) {
           margin-left: 0;
@@ -287,12 +287,21 @@ html {
       }
     }
 
-    .outline p {
+    .outline {
       @include core-24;
+    }
+
+    .outline p {
       margin-bottom: -1px;
     }
 
+    .outline li {
+      list-style: disc;
+      margin-bottom: 6px;
+    }
+
   }
+
 
   .examples, .content-types {
     clear: both;
@@ -541,7 +550,7 @@ html {
   table.terms{
     caption.a-z {
       font-weight: bold;
-      text-transform: capitalize;  
+      text-transform: capitalize;
     }
 
     td.term{
