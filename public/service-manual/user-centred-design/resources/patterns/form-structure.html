@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1433498625" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1435847215" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1433498625" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1435847215" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1433498625" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1435847215" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1433498625" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1435847215" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1433498625" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1435847215" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -170,159 +170,108 @@
 
   <div class="article-container group">
     <div class="inner">
-      <p class="intro">Choose a structure for your forms that most naturally fits the way people need to use them.</p>
+      <p class="intro">How to structure web forms for GOV.UK services.</p>
 
 <h3 id="on-this-page">On this page:</h3>
 
 <ol>
-  <li><a href="#asking-questions">Asking questions</a></li>
-  <li><a href="#structuring-forms">Structuring forms</a></li>
-  <li><a href="#example-structures">Example structures</a></li>
+  <li><a href="#section-1">Know why you’re asking every question</a></li>
+  <li><a href="#section-2">Design for the most common scenarios first</a></li>
+  <li><a href="#section-3">Start with one thing per page</a></li>
+  <li><a href="#section-4">Examples</a></li>
+  <li><a href="#section-5">Further reading</a></li>
 </ol>
 
 <hr />
 
-<h2 id="asking-questions">1. Asking questions</h2>
+<h2 class="heading-36" id="section-1">1. Know why you’re asking every question</h2>
 
-<p>You can use a question or statement format. 
-For example ‘What is your date of birth?’ or ‘Date of birth’.
-Just remember to be consistent across the transaction.</p>
-
-<p>Guidance:</p>
+<p>Before you start, make a list of all the questions you want to ask. For each question, you need to know:</p>
 
 <ul>
-  <li>use questions or statements, but be consistent</li>
-  <li>ask for as little information as you can</li>
-  <li>keep the questions short and straightforward </li>
-  <li>explain why you’re asking a question if it’s not obvious</li>
+  <li>why does the service need that information?</li>
+  <li>who uses the information and what for?</li>
+  <li>which users need to provide the information?</li>
+  <li>how will you check that the information is accurate?</li>
+  <li>how will you keep the information up to date?</li>
 </ul>
+
+<p>We call this list a ‘question protocol’; it’s different from the form itself, because it’s about <em>how</em> you use the answers.</p>
+
+<p>A question protocol forces you (and your department) to question why you’re asking users for each item of information, and gives you a way of challenging and pushing back if you need to.</p>
 
 <hr />
 
-<h2 id="structuring-forms">2. Structuring forms</h2>
+<h2 class="heading-36" id="section-2">2. Design for the most common scenarios first</h2>
 
-<p>Ask yourself:</p>
+<p>Once you have a question protocol you can start to decide how to order the questions.</p>
 
-<ul>
-  <li>how many questions are there?</li>
-  <li>will users need to answer the questions in a fixed order?</li>
-  <li>will they need to complete the transaction in a single session?</li>
-  <li>will their answers affect other parts of the transaction?</li>
-  <li>will certain answers result in the user having to abandon the transaction?</li>
-  <li>will they need to add or remove items from a list, or change the order of items?</li>
-  <li>how many parties are involved in the transaction?</li>
-  <li>do any parts of the transaction take place offline?</li>
-  <li>at what point is the transaction regarded as complete?</li>
-</ul>
+<p>Structure the form so most users have a simple, quick path. Use branching questions to hide questions from people who don’t need to answer them.</p>
+
+<p>You’ll need to make difficult decisions about which users to prioritise, so make sure you have good data from the business about them.</p>
 
 <hr />
 
-<h2 id="example-structures">3. Example structures</h2>
+<h2 class="heading-36" id="section-3">3. Start with one thing per page</h2>
 
-<p>Thinking about the above will help you decide on an appropriate structure.
-Here are some of the more common approaches:</p>
-
-<h3 id="single-page-of-questions">1. Single page of questions</h3>
-
-<p>All questions are placed on a single page.</p>
-
-<p class="left"><img src="/service-manual/assets/images/designing-transactions/one-page.png" alt="Diagram showing all sections on a page" /></p>
-
-<p><strong>The good:</strong></p>
+<p>Most public-facing government service are used infrequently, by people with a broad range of digital skills and confidence. Because of this, we recommend that you:</p>
 
 <ul>
-  <li>there’s only one submit button to press</li>
-  <li>a single URL gives access to all form fields</li>
-  <li>it doesn’t force a fixed order of completion</li>
-  <li>you benefit from context of neighbouring sections</li>
-  <li>progress is self-evident</li>
+  <li>having one thing per page</li>
+  <li>only merge pages when you have clear evidence from user research that this would improve the user experience</li>
 </ul>
 
-<p><strong>The bad:</strong></p>
+<p>‘One thing’ could be:</p>
 
 <ul>
-  <li>long forms can be overwhelming and off-putting</li>
-  <li>it’s less well suited to branching or non-linear flow</li>
-  <li>how do you save partial progress?</li>
-  <li>can be harder to track analytics like drop-off rates</li>
-  <li>making validation errors usable is harder</li>
+  <li>one piece of information to understand</li>
+  <li>one decision to make</li>
+  <li>one question to answer</li>
 </ul>
+
+<p>We’ve found that this approach works for both high and low confidence internet users, and that people are generally very tolerant of clicking through multiple pages.</p>
+
+<p>Having only one thing on a page helps people to:</p>
+
+<ul>
+  <li>understand what they’re being asked to do </li>
+  <li>focus on the specific question and its answer</li>
+  <li>find their way through an unfamiliar process</li>
+  <li>use the service on a mobile device</li>
+  <li>recover easily from form errors</li>
+</ul>
+
+<p>It also helps you to:</p>
+
+<ul>
+  <li>save people’s work automatically as they go</li>
+  <li>capture analytics about each question</li>
+  <li>handle branching questions and loops</li>
+</ul>
+
+<h3 id="tips">Tips</h3>
+
+<p>‘One question’ doesn’t necessarily mean one form field. For example, date of birth is best captured with three text fields.</p>
+
+<p>For page titles you can use either a question or a statement. For example - ‘What is your date of birth?’ or just ‘Date of birth’.</p>
+
+<p>Use questions or statements consistently to help users get into a rhythm of answering. This lets them focus on the content of the questions rather than their presentation.</p>
+
+<p>Try to ask questions that might result in the user being ineligible for the service as soon as possible, so you don’t waste people’s time.</p>
 
 <hr />
 
-<h3 id="one-question-per-page">2. One question per page</h3>
+<h2 class="heading-36" id="section-4">4. Examples</h2>
 
-<p>Each question goes on its own page.</p>
+<p>For a good example of this approach, try the <a href="https://www.gov.uk/register-to-vote">Register to vote</a> service on GOV.UK (you can get to the last page without submitting any data).</p>
 
-<p><img src="/service-manual/assets/images/designing-transactions/wizard.png" alt="Diagram showing each section on it's own page" /></p>
-
-<p><strong>The good:</strong></p>
-
-<ul>
-  <li>it’s easier to handle branching and dependencies between questions</li>
-  <li>it’s easier to let the user save progress</li>
-  <li>a transaction can feel more manageable</li>
-  <li>easier to guide a user through an unfamiliar process</li>
-  <li>easier to capture analytics like drop-off rates for each section</li>
-</ul>
-
-<p><strong>The bad:</strong></p>
-
-<ul>
-  <li>harder to show progress</li>
-  <li>uers have to click more to progress through the questions</li>
-  <li>you lose the context of neighbouring questions</li>
-  <li>you need to build a seperate page to review and edit questions</li>
-  <li>doesn’t naturally handle non-linear processes like looping, adding and removing</li>
-</ul>
+<p>Joe Lanman has written more about the <a href="https://designnotes.blog.gov.uk/2014/07/14/things-we-learnt-designing-register-to-vote/">things we learned designing ‘Register to vote’</a>.</p>
 
 <hr />
 
-<h3 id="accordion-form">3. Accordion form</h3>
+<h2 class="heading-36" id="section-5">5. Further reading</h2>
 
-<p>All questions on a single page, but each new question only appears once the previous section has been completed.</p>
-
-<p><img src="/service-manual/assets/images/designing-transactions/accordion-3.png" alt="Diagram showing an accordion form" /></p>
-
-<p><strong>The good:</strong></p>
-
-<ul>
-  <li>can handle branching and dependencies between sections</li>
-  <li>users can review and edit previous questions at any time</li>
-  <li>can help guide a user through an unfamiliar process</li>
-  <li>user still benefits from some surrounding context</li>
-  <li>progress is clear</li>
-</ul>
-
-<p><strong>The bad:</strong></p>
-
-<ul>
-  <li>Implementation and interface is more complex</li>
-</ul>
-
-<p>Done well, option 3 is a hybrid of the other two that has benefits of both the other options.
-Within this hybrid option there are still some important design decisions to make. For example:</p>
-
-<ul>
-  <li>Will future questions be shown in any way or will you only see the questions you’ve answered?</li>
-  <li>What happens if you go back and edit a previous question?
-    <ul>
-      <li>Does the current question stay open or closed?</li>
-      <li>How do you get back to the current question once you’ve edited a previous one?</li>
-      <li>Do you lose all your answers to questions that follow the one you go back to edit?</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="hybrid">4. Hybrid</h3>
-
-<p>For more complicated transactions, some combination of the other options might be your best bet.</p>
-
-<p><img src="/service-manual/assets/images/designing-transactions/hybrid.png" alt="Diagram showing a hybrid transaction" /></p>
-
-<p>Again, done well this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help people to understand when they have moved into a different part of the transaction, and break up the monotony of filling in forms.</p>
-
-<p>As always, these design decisions must have a strong, user-centred rationale behind them.</p>
+<p><a href="http://www.uxmatters.com/mt/archives/2010/06/the-question-protocol-how-to-make-sure-every-form-field-is-necessary.php">The Question Protocol: How to Make Sure Every Form Field Is Necessary</a></p>
 
 <hr />
 
@@ -410,14 +359,14 @@ Within this hybrid option there are still some important design decisions to mak
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1433498625"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1433498625"></script>
-<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/google-analytics-universal-tracker.js?cache=1433498625"></script>
-<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/analytics.js?cache=1433498625"></script>
-<script src="/service-manual/assets/javascript/analytics-init.js?cache=1433498625"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1433498625"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1433498625"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1433498625"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1435847215"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1435847215"></script>
+<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/google-analytics-universal-tracker.js?cache=1435847215"></script>
+<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/analytics.js?cache=1435847215"></script>
+<script src="/service-manual/assets/javascript/analytics-init.js?cache=1435847215"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1435847215"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1435847215"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1435847215"></script>
 
   </body>
 </html>
