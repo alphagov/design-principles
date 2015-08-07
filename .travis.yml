@@ -1,4 +1,5 @@
 language: ruby
+sudo: false
 bundler_args: --without development
 script:
   - RAILS_ENV=test bundle exec rake
