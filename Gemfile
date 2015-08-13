@@ -6,9 +6,9 @@ gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'rack-rewrite', '1.3.3'
 gem 'govuk_frontend_toolkit', '1.4.0'
-gem 'plek', '1.5.0'
+gem 'plek', '1.11.0'
 gem 'rummageable', '1.2.0'
-gem 'gds-api-adapters', '20.1.1'
+gem 'gds-api-adapters', '23.2.2'
 
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
