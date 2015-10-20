@@ -55,19 +55,19 @@
     <meta property="og:image" content="/service-manual/assets/govuk_template/images/opengraph-image.png">
 
     <!--[if gt IE 8]><!-->
-  <link href="/service-manual/assets/stylesheets/main.css?cache=1444658576" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main.css?cache=1445340491" media="screen" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 <!--[if IE 6]>
-  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1444658576" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie6.css?cache=1445340491" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1444658576" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie7.css?cache=1445340491" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1444658576" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/service-manual/assets/stylesheets/main-ie8.css?cache=1445340491" media="screen" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<link href="/service-manual/assets/stylesheets/print.css?cache=1444658576" media="print" rel="stylesheet" type="text/css" />
+<link href="/service-manual/assets/stylesheets/print.css?cache=1445340491" media="print" rel="stylesheet" type="text/css" />
 
 
 
@@ -170,115 +170,81 @@
 
   <div class="article-container group">
     <div class="inner">
-      <p class="intro">Use these to reassure users that they’re making progress and give an indication 
-of how much further there is to go.</p>
+      <p class="intro">Help people understand where they are in a transaction and give them the confidence to continue.</p>
 
 <h3 id="on-this-page">On this page:</h3>
 
 <ol>
-  <li><a href="#step-indicator">Step indicator</a></li>
-  <li><a href="#progress-bar">Progress bar</a></li>
-  <li><a href="#summary-menu">Summary menu</a></li>
+  <li><a href="#section-1">Start without a progress indicator</a></li>
+  <li><a href="#progress-bar">If you do use one, keep it simple</a></li>
+  <li><a href="#section-3">Avoid complex progress indicators</a></li>
 </ol>
 
 <hr />
 
-<h2 class="heading-36" id="step-indicator">1. Step indicator</h2>
+<h2 class="heading-36" id="section-1">1. Start without a progress indicator</h2>
 
-<p>Tell the user what step they’re on.</p>
+<p>Test your service first without any progress indicators at all. It may be simple enough that you don’t need them. If it isn’t, then at least you’ll discover the point at which people start to struggle.</p>
+
+<p>It’s often the order, type or number of questions that causes issues, so try improving these first.</p>
+
+<p>If people still have problems then try adding a simple progress indicator.</p>
+
+<hr />
+
+<h2 class="heading-36" id="section-2">2. If you do use one, keep it simple</h2>
+
+<p>If you do need a progress indicator, just add the step or question number at the top of the page, like this:</p>
 
 <div class="example">
-  <div class="ribbon">Recommended</div>
   <div class="inner-block">
-    
+
     <img src="/service-manual/assets/images/design-patterns/step-indicator.png" alt="Example of a step indicator" />
-    
+
   </div>
 </div>
 
-<p><strong>The good:</strong></p>
+<p>Only include the total number if you can do so reliably.</p>
 
-<ul>
-  <li>simple, compact and accessible</li>
-</ul>
-
-<p><strong>The bad:</strong></p>
-
-<ul>
-  <li>doesn’t give details of future steps</li>
-</ul>
-
-<p>As this is the simplest approach we recommend you try it before any others.
-It’s often all users need to reassure them that they’re making progress.</p>
+<p>This approach is compact, accessible and usually enough to give people the confidence to continue.</p>
 
 <hr />
 
-<h2 class="heading-36" id="progress-bar">2. Progress bar</h2>
-
-<p>Show the steps horizontally across the top of the page, with the current step highlighted.</p>
+<h2 class="heading-36" id="section-3">3. Avoid complex progress indicators</h2>
 
 <div class="example">
   <div class="inner-block">
-    
-    <img src="/service-manual/assets/images/design-patterns/progress-bar.png" alt="Example of a progress bar" />
-    
+
+    <img src="/service-manual/assets/images/design-patterns/progress-bar.png" alt="Don't use horizontal progress bars" />
+
   </div>
 </div>
 
-<p><strong>The good:</strong></p>
+<p>We recommend against these because:</p>
 
 <ul>
-  <li>provides an overiew of the entire process</li>
-  <li>steps can be used as navigation</li>
+  <li>they’re rarely used</li>
+  <li>they take up valuable space</li>
+  <li>they don’t scale well on small screens</li>
+  <li>they can distract and confuse some people</li>
+  <li>it’s hard to write good labels for the steps</li>
+  <li>it’s hard to handle conditional questions</li>
 </ul>
 
-<p><strong>The bad:</strong></p>
+<p>Complex progress indicators have been safely removed from a number of services on GOV.UK. For example, the Carer’s Allowance team removed a 12-step horizontal progress indicator from their live service, with no effect on completion rates or times.</p>
 
-<ul>
-  <li>takes up a lot of space, particularly on small screen devices</li>
-  <li>adds visual noise which may distract from the important content</li>
-</ul>
+<h1 id="progress-indicators-as-navigation">Progress indicators as navigation</h1>
 
-<p><strong>Guidance:</strong></p>
+<p>We occasionally see progress indicators (usually vertical ones) used as navigation. These suffer from many of the issues listed above.</p>
 
-<ul>
-  <li>don’t assume you’ll need one of these</li>
-  <li>only use with a small, fixed sequence of steps</li>
-  <li>number the steps to reinforce their sequential nature</li>
-  <li>don’t rely on progress bars for navigation - you’ll still need to provide ‘Back’ and ‘Next’ links on each screen</li>
-</ul>
+<p>If people really need to be able to jump around the transaction, try meeting this need on a separate page.</p>
 
 <hr />
 
-<h2 class="heading-36" id="summary-menu">3. Summary menu</h2>
-
-<p><a href="https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us">This pattern is still under discussion</a></p>
-
-<p>Provide a vertical list of links to each section. Let users complete the sections in any order.</p>
-
-<div class="example">
-  <div class="inner-block">
-  
-    <img src="/service-manual/assets/images/design-patterns/summary-menu.png" alt="Example of a summary menu" />
-
-  </div>
-</div>
-
-<p><strong>The good:</strong></p>
+<h2 class="heading-36" id="section-4">Further reading</h2>
 
 <ul>
-  <li>section titles can be longer</li>
-  <li>room for more sections</li>
-  <li>users can complete sections in an order that suits them</li>
-  <li>users can jump around and preview sections before completing them</li>
-</ul>
-
-<p><strong>The bad:</strong></p>
-
-<ul>
-  <li>takes up a lot of space</li>
-  <li>requires more effort to implement</li>
-  <li>some usability challenges - for example, letting users know they’ve finished all the sections</li>
+  <li><a href="https://designnotes.blog.gov.uk/2014/07/07/do-less-problems-as-shared-spaces/">Do Less: Problems as shared spaces</a>. Ben Holliday talks about removing the progress indicator from the Carer’s Allowance service.</li>
 </ul>
 
 <hr />
@@ -369,14 +335,14 @@ It’s often all users need to reassure them that they’re making progress.</p>
     <script src="/service-manual/assets/govuk_template/javascripts/govuk-template.js" type="text/javascript"></script>
 
     <script src="/service-manual/assets/javascript/jquery-1.7.2.js"></script>
-<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1444658576"></script>
-<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1444658576"></script>
-<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/google-analytics-universal-tracker.js?cache=1444658576"></script>
-<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/analytics.js?cache=1444658576"></script>
-<script src="/service-manual/assets/javascript/analytics-init.js?cache=1444658576"></script>
-<script src="/service-manual/assets/javascript/toggler.js?cache=1444658576"></script>
-<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1444658576"></script>
-<script src="/service-manual/assets/javascript/forms.js?cache=1444658576"></script>
+<script src="/service-manual/assets/javascript/jquery-ui-1.10.2.custom.js?cache=1445340491"></script>
+<script src="/service-manual/assets/toolkit/javascripts/vendor/jquery/jquery.player.min.js?cache=1445340491"></script>
+<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/google-analytics-universal-tracker.js?cache=1445340491"></script>
+<script src="/service-manual/assets/toolkit/javascripts/govuk/analytics/analytics.js?cache=1445340491"></script>
+<script src="/service-manual/assets/javascript/analytics-init.js?cache=1445340491"></script>
+<script src="/service-manual/assets/javascript/toggler.js?cache=1445340491"></script>
+<script src="/service-manual/assets/javascript/media-player-loader.js?cache=1445340491"></script>
+<script src="/service-manual/assets/javascript/forms.js?cache=1445340491"></script>
 
   </body>
 </html>
