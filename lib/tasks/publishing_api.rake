@@ -18,6 +18,7 @@ class PublishSpecialRoutesHelper
     logger.info("Registering redirect of '#{base_path}' -> '#{destination_path}'")
 
     redirect = {
+      "content_id" => content_id,
       "format" => "redirect",
       "publishing_app" => publishing_app,
       "update_type" => "major",
