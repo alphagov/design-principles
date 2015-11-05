@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   before_filter :turn_off_report_a_problem
 
   include Slimmer::Template
-  slimmer_template 'wrapper'
 
 protected
   def set_expiry(duration = 30.minutes)
