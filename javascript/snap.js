@@ -30,16 +30,16 @@ page.settings.userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleW
 
 // If you want to set a cookie, just add your details below in the following way.
 
-// phantom.addCookie({
-//     'name': 'ckns_policy',
-//     'value': '111',
-//     'domain': '.bbc.co.uk'
-// });
-// phantom.addCookie({
-//     'name': 'locserv',
-//     'value': '1#l1#i=6691484:n=Oxford+Circus:h=e@w1#i=8:p=London@d1#1=l:2=e:3=e:4=2@n1#r=40',
-//     'domain': '.bbc.co.uk'
-// });
+phantom.addCookie({
+    'name': 'seen_cookie_message',
+    'value': 'yes',
+    'domain': '.dev.gov.uk'
+});
+phantom.addCookie({
+    'name': 'govuk_takenUserSatisfactionSurvey',
+    'value': 'yes',
+    'domain': '.dev.gov.uk'
+});
 
 page.onResourceRequested = function(req) {
   current_requests += 1;
