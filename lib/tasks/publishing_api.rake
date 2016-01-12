@@ -46,12 +46,16 @@ private
   end
 
   def special_route_publisher
-    GdsApi::PublishingApi::SpecialRoutePublisher.new(logger: logger)
+    GdsApi::PublishingApi::SpecialRoutePublisher.new(
+      logger: logger,
+      publishing_api: publishing_api
+    )
   end
 
   def publishing_api
     GdsApi::PublishingApiV2.new(
       Plek.new.find('publishing-api'),
+      bearer_token: ENV['PUBLISHING_API_BEARER_TOKEN'] || 'example'
     )
   end
 end
