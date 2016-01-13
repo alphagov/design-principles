@@ -53,7 +53,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.0.11)
-    gds-api-adapters (23.2.2)
+    gds-api-adapters (26.7.0)
       link_header
       lrucache (~> 0.1.1)
       null_logger
@@ -197,7 +197,7 @@ PLATFORMS
 DEPENDENCIES
   airbrake (= 3.1.17)
   capybara (= 1.1.2)
-  gds-api-adapters (= 23.2.2)
+  gds-api-adapters (= 26.7.0)
   govuk_frontend_toolkit (= 1.4.0)
   logstasher (= 0.4.8)
   mocha (= 0.13.3)
