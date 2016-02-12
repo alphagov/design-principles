@@ -73,7 +73,7 @@ namespace :publishing_api do
         base_path: '/design-principles',
       },
       {
-        title: 'GDS Service Manual',
+        title: 'Service manual',
         description: '',
         content_id: '51dd8775-cd2a-4fb3-b6df-8ed03591122d',
         base_path: '/service-manual',
