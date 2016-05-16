@@ -17,7 +17,7 @@ describe SearchController, :type => :controller do
 
   it "should pass our query parameter in to the search client" do
     controller.search_client.expects(:unified_search)
-                            .with(q: "search-term", filter_manual: "service-manual")
+                            .with(q: "search-term", filter_manual: "/service-manual")
                             .returns("results" => []).once
     do_search
   end
