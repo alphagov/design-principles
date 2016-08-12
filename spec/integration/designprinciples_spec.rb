@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "The designprinciples page" do
+describe "The designprinciples page", type: :feature do
   it "should render without blowing up" do
     visit "/design-principles"
 
@@ -9,14 +9,14 @@ describe "The designprinciples page" do
   end
 end
 
-describe "The accessible PDFs page" do
+describe "The accessible PDFs page", type: :feature do
   it "should render" do
     visit "/design-principles/accessiblepdfs"
     page.should have_content("Accessible PDFs")
   end
 end
 
-describe "The Performance Framework page" do
+describe "The Performance Framework page", type: :feature do
   it "should render" do
     visit "/design-principles/performanceframework"
     page.should have_content("Performance Framework")
