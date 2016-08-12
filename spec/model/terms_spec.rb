@@ -12,7 +12,10 @@ describe Terms do
       letter.each do |definition|
         # definition should have the term and the explanation. Anything else is
         # probably bad quoting in the CSV
-        definition.should have(2).items, definition
+        definition.should have_key('term')
+        definition.should have_key('explanation')
+
+        definition.length.should == 2
       end
     end
   end

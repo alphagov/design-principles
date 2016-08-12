@@ -39,6 +39,6 @@ describe :erb do
 
       res
     }
-    expect(files_with_markdown).to be_empty, files_with_markdown
+    expect(files_with_markdown).to be_empty
   end
 end

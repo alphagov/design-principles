@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'airbrake', '3.1.17'
-gem 'rails', '3.2.22.1'
+gem 'rails', '3.2.22.3'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'rack-rewrite', '1.3.3'
@@ -25,8 +25,8 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '2.11.0'
-  gem 'capybara', '1.1.2'
+  gem 'rspec-rails'
+  gem 'capybara'
   gem 'mocha', '0.13.3', require: false
   gem 'thin'
 end
