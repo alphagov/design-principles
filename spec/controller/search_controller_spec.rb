@@ -3,7 +3,7 @@ require "spec_helper"
 
 describe SearchController, :type => :controller do
   def stub_client
-    stub_search_client = stub("search", unified_search: { "results" => [] })
+    stub_search_client = double("search", unified_search: { "results" => [] })
     controller.stubs(:search_client).returns(stub_search_client)
   end
 
