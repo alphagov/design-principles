@@ -3,7 +3,6 @@ ENV["RAILS_ENV"] ||= 'test'
 ENV["RACK_ENV"] = ENV["RAILS_ENV"] # Needed to put slimmer into strict mode.
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-require 'rspec/autorun'
 require 'mocha/setup'
 
 # Requires supporting ruby files with custom matchers and macros etc,
