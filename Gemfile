@@ -8,7 +8,7 @@ gem 'rack-rewrite', '1.3.3'
 gem 'govuk_frontend_toolkit', '1.4.0'
 gem 'plek', '1.11.0'
 gem 'rummageable', '1.2.0'
-gem 'gds-api-adapters', '26.7.0'
+gem 'gds-api-adapters', '34.1.0'
 
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
