@@ -3,7 +3,7 @@ require "spec_helper"
 
 describe SearchController, :type => :controller do
   def stub_client
-    stub_search_client = double("search", unified_search: { "results" => [] })
+    stub_search_client = double("search", search: { "results" => [] })
     controller.stubs(:search_client).returns(stub_search_client)
   end
 
@@ -16,7 +16,7 @@ describe SearchController, :type => :controller do
   end
 
   it "should pass our query parameter in to the search client" do
-    controller.search_client.expects(:unified_search)
+    controller.search_client.expects(:search)
                             .with(q: "search-term", filter_manual: "/service-manual")
                             .returns("results" => []).once
     do_search
@@ -28,7 +28,7 @@ describe SearchController, :type => :controller do
   end
 
   it "should return unlimited results" do
-    controller.search_client.stubs(:unified_search)
+    controller.search_client.stubs(:search)
                             .returns("results" => Array.new(75, {}))
 
     do_search('Test')
