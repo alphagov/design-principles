@@ -5,7 +5,7 @@ describe "The designprinciples page", type: :feature do
     visit "/design-principles"
 
     page.should have_content("Design Principles")
-    page.should have_content("Start with needs")
+    page.should have_content("Start with user needs")
   end
 end
 
