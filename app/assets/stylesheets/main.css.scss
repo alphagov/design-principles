@@ -74,10 +74,7 @@ html {
     &:focus {
       color: $anchor-color;
     }
-
-    &:active {
-      color: $highlight-color;
-    }
+    
   }
 
   .beta-notice {
@@ -268,11 +265,6 @@ html {
       &#tenth:before {
         content: "10";
       }
-    }
-
-    h1#first+h2 {
-      font-weight: normal;
-      color: $highlight-color;
     }
 
     h1+.example img:first-child {
