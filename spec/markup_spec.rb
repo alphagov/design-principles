@@ -1,4 +1,4 @@
-# Service Manual and Transformation are bundled into this Rails app
+# Transformation is bundled into this Rails app
 # This test ensures that nothing unexpected happens as part of that bundling process
 
 require 'spec_helper'
