@@ -4,10 +4,8 @@ gem 'airbrake', '3.1.17'
 gem 'rails', '3.2.22.3'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
-gem 'rack-rewrite', '1.3.3'
 gem 'govuk_frontend_toolkit', '1.4.0'
 gem 'plek', '1.11.0'
-gem 'rummageable', '1.2.0'
 gem 'gds-api-adapters', '34.1.0'
 
 if ENV['SLIMMER_DEV']
