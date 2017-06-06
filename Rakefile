@@ -5,3 +5,10 @@
 require File.expand_path('../config/application', __FILE__)
 
 DesignPrinciples::Application.load_tasks
+
+
+require 'rake/testtask'
+
+Rake::TestTask.new do |t|
+  t.test_files = FileList['test/*_test.rb']
+end

@@ -62,6 +62,9 @@ module DesignPrinciples
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    config.assets.prefix = "/design-principles"
+
+
     config.assets.precompile += %w(
       application.css
       application-ie6.css
@@ -72,13 +75,13 @@ module DesignPrinciples
     )
 
     # Path within public/ where assets are compiled to
-    config.assets.prefix = 'designprinciples'
-    config.assets.manifest = Rails.root.join 'public/designprinciples'
+    # config.assets.prefix = 'designprinciples'
+    # config.assets.manifest = Rails.root.join 'public/designprinciples'
 
     # Paths used by helpers when generating links to assets
-    config.action_controller.assets_dir = Rails.root.join 'public/designprinciples'
-    config.action_controller.javascripts_dir = Rails.root.join 'public/designprinciples/javascripts'
-    config.action_controller.stylesheets_dir = Rails.root.join 'public/designprinciples/stylesheets'
+    # config.action_controller.assets_dir = Rails.root.join 'public/designprinciples'
+    # config.action_controller.javascripts_dir = Rails.root.join 'public/designprinciples/javascripts'
+    # config.action_controller.stylesheets_dir = Rails.root.join 'public/designprinciples/stylesheets'
 
     # Disable Rack::Cache
     config.action_dispatch.rack_cache = nil

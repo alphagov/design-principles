@@ -28,6 +28,8 @@ DesignPrinciples::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  config.serve_static_assets = true
+
 
   config.slimmer.asset_host = ENV["STATIC_DEV"] || "https://assets-origin.preview.alphagov.co.uk"
 end
