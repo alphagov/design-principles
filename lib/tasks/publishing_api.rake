@@ -84,7 +84,7 @@ namespace :publishing_api do
     [
       # Redirections because the slugs changed.
       %w(b9b74acd-58bd-4e6b-8318-e6926a25c84d /designprinciples prefix /design-principles),
-      %w(d0e21ccf-530c-4326-93a7-5badfa087754 /designprinciples/styleguide prefix /design-principles/style-guide),
+      %w(d0e21ccf-530c-4326-93a7-5badfa087754 /designprinciples/styleguide prefix /topic/government-digital-guidance/content-publishing),
       %w(f17a55b1-cffd-4e4f-b6e3-47ec5e2e8fd0 /design-principles/style-guide/policy-advisory-groups prefix /design-principles/style-guide/groups),
     ].each(&helper.method(:publish_redirect))
   end
