@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'airbrake', '3.1.17'
 gem 'rails', '~> 4.2.0'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'govuk_frontend_toolkit', '1.4.0'
 gem 'plek', '1.11.0'
 gem 'gds-api-adapters', '~> 48.0.0'
+gem 'govuk_app_config', '~> 0.3.0'
 
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
