@@ -1,6 +1,6 @@
 require 'design_principles'
 
-DesignPrinciples::Application.routes.draw do
+Rails.application.routes.draw do
 
   get "/design-principles", :to => "root#designprinciples"
 

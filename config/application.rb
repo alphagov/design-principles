@@ -23,18 +23,6 @@ module DesignPrinciples
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.assets.precompile += %w(
-      application.css
-      application-ie6.css
-      application-ie7.css
-      application-ie8.css
-      search.css
-      main.js
-    )
-
-    # Path within public/ where assets are compiled to
-    config.assets.prefix = 'designprinciples'
-
     # Disable Rack::Cache
     config.action_dispatch.rack_cache = nil
   end
