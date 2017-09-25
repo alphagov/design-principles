@@ -6,12 +6,12 @@ gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'govuk_frontend_toolkit', '1.4.0'
 gem 'plek', '1.11.0'
-gem 'gds-api-adapters', '41.2.0'
+gem 'gds-api-adapters', '~> 48.0.0'
 
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
 else
-  gem 'slimmer', '9.0.0'
+  gem 'slimmer', '~> 11.1'
 end
 
 gem 'sass-rails', '~> 5.0'
