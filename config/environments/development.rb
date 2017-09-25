@@ -28,5 +28,8 @@ DesignPrinciples::Application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.slimmer.asset_host = ENV["STATIC_DEV"] || "https://assets-origin.preview.alphagov.co.uk"
+  config.slimmer.asset_host = ENV["STATIC_DEV"] || Plek.new.find('static')
+  if ENV['GOVUK_ASSET_ROOT'].present?
+    config.asset_host = ENV['GOVUK_ASSET_ROOT']
+  end
 end
