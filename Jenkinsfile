@@ -32,8 +32,7 @@ node {
       }
 
       stage("Deploy to integration") {
-        build job: 'integration-app-deploy',
-        parameters: [string(name: GOVUK_APP_NAME, value: 'release_' + env.BUILD_NUMBER)]
+        govuk.deployIntegration(GOVUK_APP_NAME, env.BRANCH_NAME, 'release_' + env.BUILD_NUMBER, 'deploy')
       }
     }
 
