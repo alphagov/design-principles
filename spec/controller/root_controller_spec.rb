@@ -7,8 +7,8 @@ describe RootController, :type => :controller do
       response.headers["Cache-Control"].should == "max-age=1800, public"
     end
 
-    it "should be for styleguide" do
-      get :styleguide
+    it "should be for accessiblepdfs" do
+      get :accessiblepdfs
       response.headers["Cache-Control"].should == "max-age=1800, public"
     end
 

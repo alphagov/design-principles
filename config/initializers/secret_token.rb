@@ -1,7 +1,16 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-DesignPrinciples::Application.config.secret_token = 'ee0d598834f5969b679cf6f0de4e31d8e5291c6f0f646f83c61bc4650f8d45723845c4c04baecb09d62c7847653bdeab7e8542a9bae306074def57c1e33e0a25'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+
+# Because we don't use sessions we don't need a secret key base. Pick a random
+# one to satisfy Rails. If we ever were to start using sessions the key would
+# need to be made static.
+Rails.application.config.secret_key_base = SecureRandom.hex

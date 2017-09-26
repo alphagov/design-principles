@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
 
   include Slimmer::Template
 
+  slimmer_template 'wrapper'
+
 protected
   def set_expiry(duration = 30.minutes)
     unless Rails.env.development?

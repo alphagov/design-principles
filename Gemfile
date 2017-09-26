@@ -1,26 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'airbrake', '3.1.17'
-gem 'rails', '3.2.22.3'
+gem 'rails', '~> 4.2.0'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'govuk_frontend_toolkit', '1.4.0'
 gem 'plek', '1.11.0'
-gem 'gds-api-adapters', '41.2.0'
+gem 'gds-api-adapters', '~> 48.0.0'
+gem 'govuk_app_config', '~> 0.3.0'
 
 if ENV['SLIMMER_DEV']
   gem 'slimmer', :path => '../slimmer'
 else
-  gem 'slimmer', '9.0.0'
+  gem 'slimmer', '~> 11.1'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails', '3.2.5'
-  gem 'therubyracer', '0.12.2', :platforms => :ruby
-  gem 'uglifier', '1.2.6'
-end
+gem 'sass-rails', '~> 5.0'
+gem 'therubyracer', platforms: :ruby
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'rspec-rails'
