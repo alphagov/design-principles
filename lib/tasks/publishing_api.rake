@@ -68,12 +68,6 @@ namespace :publishing_api do
 
     [
       {
-        title: 'GDS Design Principles',
-        description: '',
-        content_id: '8b7b20d4-4144-4f52-922a-2fec92e1a346',
-        base_path: '/design-principles',
-      },
-      {
         title: 'Transformation programme',
         description: '',
         content_id: '00573998-7254-407c-ba28-776dd222cda3',
@@ -83,7 +77,8 @@ namespace :publishing_api do
 
     [
       # Redirections because the slugs changed.
-      %w(b9b74acd-58bd-4e6b-8318-e6926a25c84d /designprinciples prefix /design-principles),
+      %w(8b7b20d4-4144-4f52-922a-2fec92e1a346 /design-principles prefix /guidance/government-design-principles),
+      %w(b9b74acd-58bd-4e6b-8318-e6926a25c84d /designprinciples prefix /guidance/government-design-principles),
       %w(d0e21ccf-530c-4326-93a7-5badfa087754 /designprinciples/styleguide prefix /topic/government-digital-guidance/content-publishing),
       %w(f17a55b1-cffd-4e4f-b6e3-47ec5e2e8fd0 /design-principles/style-guide/policy-advisory-groups prefix /design-principles/style-guide/groups),
     ].each(&helper.method(:publish_redirect))
