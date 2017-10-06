@@ -2,6 +2,7 @@ class RootController < ApplicationController
   before_filter :set_expiry
 
   def designprinciples
+    redirect_to "/guidance/government-design-principles"
   end
 
   def styleguide
