@@ -15,6 +15,5 @@ Rails.application.routes.draw do
   get "/design-principles/whatsnew", :to => redirect("/design-principles/style-guide/whats-new")
   get "/design-principles/seo", :to => redirect("/design-principles/style-guide/writing-for-govuk#seo")
 
-  get "/:prefix/search", :to => 'search#index'
   root :to => redirect("/design-principles")
 end
