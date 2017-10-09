@@ -4,12 +4,14 @@ require 'gds_api/publishing_api/special_route_publisher'
 
 class PublishSpecialRoutesHelper
   def publish_special_route(special_route)
+    reserve_path(special_route[:base_path])
+
     special_route_publisher.publish(
       {
         type: "exact",
         description: "",
         publishing_app: publishing_app,
-        rendering_app: 'designprinciples'
+        rendering_app: publishing_app
       }.merge(special_route)
     )
   end
@@ -17,6 +19,7 @@ class PublishSpecialRoutesHelper
   def publish_redirect(redirect)
     (content_id, base_path, type, destination_path) = redirect
     logger.info("Registering redirect of '#{base_path}' -> '#{destination_path}'")
+    reserve_path(base_path)
 
     redirect = {
       "content_id" => content_id,
@@ -38,9 +41,17 @@ class PublishSpecialRoutesHelper
     publishing_api.publish(content_id, "major")
   end
 
+  def reserve_path(path)
+    publishing_api_v1.put_path(
+      path,
+      publishing_app: publishing_app,
+      override_existing: true
+    )
+  end
+
 private
   def publishing_app
-    'design-principles'
+    'service-manual-frontend'
   end
 
   def logger
@@ -56,6 +67,13 @@ private
 
   def publishing_api
     GdsApi::PublishingApiV2.new(
+      Plek.new.find('publishing-api'),
+      bearer_token: ENV['PUBLISHING_API_BEARER_TOKEN'] || 'example'
+    )
+  end
+
+  def publishing_api_v1
+    GdsApi::PublishingApi.new(
       Plek.new.find('publishing-api'),
       bearer_token: ENV['PUBLISHING_API_BEARER_TOKEN'] || 'example'
     )
