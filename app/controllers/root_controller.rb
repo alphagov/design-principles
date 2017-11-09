@@ -1,5 +1,5 @@
 class RootController < ApplicationController
-  before_filter :set_expiry
+  before_action :set_expiry
 
   def designprinciples
   end

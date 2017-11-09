@@ -1,6 +1,6 @@
 class StyleguideController < ApplicationController
-  before_filter :set_expiry
-  before_filter :load_changes
+  before_action :set_expiry
+  before_action :load_changes
 
   def index
     respond_to do |format|

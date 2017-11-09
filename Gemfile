@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 5.1.4'
 gem 'unicorn', '4.3.1'
 gem 'logstasher', '0.4.8'
 gem 'govuk_frontend_toolkit', '1.4.0'
