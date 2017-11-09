@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :turn_off_report_a_problem
+  before_action :turn_off_report_a_problem
 
   include Slimmer::Template
 
